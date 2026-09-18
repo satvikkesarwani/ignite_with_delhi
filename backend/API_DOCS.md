@@ -145,6 +145,37 @@ and vector retrieval and returns `{ verified: true/false }`).
 
 ---
 
+## 8️⃣ Tavily — Live Web Search (fresh data for the graph)
+
+| Method | Path                          | Purpose                                                                                                                  |
+| ------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| GET    | `/api/tavily/status`          | Key configured? + setup hint                                                                                             |
+| POST   | `/api/tavily/search`          | Web search: `{ query, searchDepth?, topic?, maxResults?, timeRange?, includeDomains?, excludeDomains?, includeAnswer? }` |
+| POST   | `/api/tavily/extract`         | Pull clean page content: `{ urls (1-20), query?, extractDepth?, format? }`                                               |
+| POST   | `/api/tavily/research`        | **Search + Nemotron synthesis**: cited answer from live web results                                                      |
+| POST   | `/api/tavily/ingest-to-graph` | **Web → Knowledge Graph**: search results → claim-check → Cognee ECL → AuraDB                                            |
+
+Key: `TAVILY_API_KEY` in `backend/.env` (format `tvly-...`). Without a key every
+endpoint returns honest `503` + setup hint (never fake success). Credits: basic
+search = 1, advanced = 2; 429 responses honor Tavily's `Retry-After` automatically.
+
+```bash
+# Live web search (with LLM answer):
+curl -X POST $BACKEND/api/tavily/search -H "Content-Type: application/json" \
+  -d '{"query":"latest FATF regulations 2026","topic":"news","maxResults":5}'
+
+# THE KILLER COMBO — fresh web data becomes knowledge-graph facts in one call:
+curl -X POST $BACKEND/api/tavily/ingest-to-graph -H "Content-Type: application/json" \
+  -d '{"query":"latest shell company enforcement cases","datasetName":"web_research"}'
+# → sources staged via claim-check → cognified → queryable via /api/cognify/query
+
+# Web-grounded cited answer:
+curl -X POST $BACKEND/api/tavily/research -H "Content-Type: application/json" \
+  -d '{"query":"...","maxResults":5}'
+```
+
+---
+
 # 🚨 PS DROP PLAYBOOK — new problem statement → fully connected demo
 
 ### Step 0 — Boot (1 min)
