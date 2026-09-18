@@ -39,6 +39,8 @@ def _read_claim_payload(claim_uri: str) -> str:
     Claim-check pattern (study.md §7): the task receives a lightweight URI, never
     the raw payload. Supports file:// (local / Render disk) and http(s)://
     (S3 / Cloudflare R2 / any presigned URL).
+    Fail-fast: an unresolvable claim URI raises — a task retried/marked FAILED on
+    the dashboard is honest, a placeholder-text "success" is not.
     """
     parsed = urlparse(claim_uri)
     if parsed.scheme in ("http", "https"):
@@ -51,8 +53,9 @@ def _read_claim_payload(claim_uri: str) -> str:
         logger.info("Reading local claim buffer | path=%s", local_path)
         with open(local_path, "r", encoding="utf-8", errors="ignore") as f:
             return f.read()
-    logger.warning("Claim URI is neither a URL nor a local file — using placeholder")
-    return f"Ingested from claim reference: {claim_uri}"
+    raise ValueError(
+        f"Claim URI is not a resolvable file:// or http(s):// location: {claim_uri!r}"
+    )
 
 
 @app.task(
