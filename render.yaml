@@ -37,3 +37,34 @@ services:
       # honest simulation mode instead of failing (see cognifyService.js).
       - key: COGNEE_SERVICE_URL
         sync: false
+
+  # ---- Render Workflows: durable ECL pipeline (study.md §7-§8) ----
+  # Deploy when hackathon credits are applied to the workspace:
+  #   Dashboard -> Apply Blueprint (creates the workflow service), or
+  #   New + > Workflow pointing at services/cognee-service.
+  # Trigger: POST /api/workflow/run-task on the backend
+  #   {"task": "ignite-cognee-pipeline/pipeline", "input": [claimUri, dataset, prompt]}
+  # Observability: dashboard -> Workflows -> run history (per-run logs, retries).
+  - type: workflow
+    name: ignite-cognee-pipeline
+    runtime: python
+    rootDir: services/cognee-service
+    buildCommand: uv pip install --python .venv/bin/python -r requirements.txt
+    startCommand: ./.venv/bin/python workflows.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: '3.12.13'
+      # Task logs at INFO; switch to DEBUG for wire-level detail
+      - key: LOG_LEVEL
+        value: INFO
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USERNAME
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: NVIDIA_API_KEYS
+        sync: false
+      # Vector/graph paths live inside the build image; keep access control off
+      - key: ENABLE_BACKEND_ACCESS_CONTROL
+        value: 'false'

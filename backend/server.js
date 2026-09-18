@@ -299,6 +299,29 @@ app.post('/api/workflow/trigger', async (req, res) => {
 });
 
 /**
+ * Render WORKFLOWS task-run trigger (durable ECL pipeline, study.md §7-§8).
+ * Requires the workflow service (ignite-cognee-pipeline) deployed with credits.
+ * Body: { "task": "ignite-cognee-pipeline/pipeline", "input": [claimUri, dataset, prompt] }
+ * Observability: dashboard -> Workflows -> run history (logs, retries, timings).
+ */
+app.post('/api/workflow/run-task', async (req, res) => {
+  try {
+    const { task, input = [] } = req.body;
+    if (!task) {
+      return res
+        .status(400)
+        .json({ success: false, error: 'task is required (e.g. ignite-cognee-pipeline/pipeline)' });
+    }
+    const result = await renderWorkflowService.triggerTaskRun(task, input);
+    req.log.info('Workflow task-run result', { task, success: result.success });
+    res.json(result);
+  } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
  * Cognee Cognitive Memory Bridge (Node <-> Python FastAPI microservice)
  * The Python service runs locally via `npm run cognee:start` (or set COGNEE_SERVICE_URL).
  * Every endpoint degrades gracefully: if the microservice is down, callers get an

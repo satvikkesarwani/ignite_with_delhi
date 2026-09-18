@@ -11,6 +11,8 @@ import asyncio
 import time
 from urllib.parse import urlparse
 
+import requests
+
 from logging_setup import setup_logging
 from engine import cognitive_engine
 from schemas import AVAILABLE_SCHEMAS
