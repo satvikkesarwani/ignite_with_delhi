@@ -52,7 +52,7 @@ Respond with only clean Python code snippet containing the classes.
         "messages": [
             {
                 "role": "system",
-                "content": "You are an expert Cognee graph ontology engineer. Output only valid Python Pydantic classes.",
+                "content": "You are an expert Cognee graph ontology engineer. Output only valid Python Pydantic classes. /no_think — output only the final code, never your step-by-step thinking.",
             },
             {"role": "user", "content": prompt},
         ],
@@ -78,6 +78,8 @@ Respond with only clean Python code snippet containing the classes.
             if resp.status_code == 200:
                 logger.info("Schema generated via NVIDIA key #%s", index + 1)
                 content = resp.json()["choices"][0]["message"]["content"]
+                # Strip any residual reasoning block the model may emit
+                content = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL)
                 # Extract code block if present
                 code_match = re.search(r"```python(.*?)```", content, re.DOTALL)
                 code = code_match.group(1).strip() if code_match else content.strip()

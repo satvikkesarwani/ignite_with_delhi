@@ -71,8 +71,21 @@ class CognitiveEngine:
         )
         started = time.time()
         try:
-            await cognee.cognify(datasets=[ds], custom_prompt=prompt)
-            logger.info("Cognify+Load stage <- | dataset=%s duration=%.2fs", ds, time.time() - started)
+            # study.md §5: explicit forensic chunk size — cognee's chunk_size=None
+            # auto-calculates from LLM context and IGNORES our CHUNK_SIZE env, so
+            # pass it through directly.
+            chunk_size = int(CONFIG.get("CHUNK_SIZE", "500") or 500)
+            await cognee.cognify(
+                datasets=[ds],
+                custom_prompt=prompt,
+                chunk_size=chunk_size,
+            )
+            logger.info(
+                "Cognify+Load stage <- | dataset=%s chunk_size=%s duration=%.2fs",
+                ds,
+                chunk_size,
+                time.time() - started,
+            )
             return {"status": "cognified", "dataset": ds, "prompt": prompt, "duration_seconds": round(time.time() - started, 2)}
         except Exception as e:
             logger.exception("Cognify+Load stage FAILED | dataset=%s duration=%.2fs", ds, time.time() - started)
