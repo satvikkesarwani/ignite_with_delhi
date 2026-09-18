@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import crypto from 'crypto';
 import dotenv from 'dotenv';
 import { startKeepAlive } from './keepAlive.js';
 import { generateChat } from './aiService.js';
@@ -7,11 +8,32 @@ import { neo4jService } from './neo4jService.js';
 import { claimCheckService } from './claimCheckService.js';
 import { renderWorkflowService } from './renderWorkflowService.js';
 import { cognifyService } from './cognifyService.js';
+import { logger, createLogger } from './logger.js';
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
+const httpLog = createLogger('http');
+
+// ---- Global crash safety net: nothing escapes without a log line ----
+process.on('uncaughtException', (err) => {
+  logger.fatal('uncaughtException — process keeps running', {
+    message: err.message,
+    stack: err.stack,
+  });
+});
+process.on('unhandledRejection', (reason) => {
+  logger.fatal('unhandledRejection', {
+    reason: reason instanceof Error ? { message: reason.message, stack: reason.stack } : reason,
+  });
+});
+['SIGTERM', 'SIGINT'].forEach((signal) => {
+  process.on(signal, () => {
+    logger.info(`Received ${signal} — shutting down gracefully`);
+    process.exit(0);
+  });
+});
 
 // Enable CORS for all origins in development and production
 app.use(
@@ -23,6 +45,24 @@ app.use(
 );
 
 app.use(express.json());
+
+// ---- Request logging middleware: stamps every request with a correlation id ----
+app.use((req, res, next) => {
+  req.requestId = req.headers['x-request-id'] || crypto.randomUUID().slice(0, 12);
+  req.log = httpLog.withContext({ requestId: req.requestId });
+  res.setHeader('X-Request-Id', req.requestId);
+
+  const start = Date.now();
+  req.log.info(`${req.method} ${req.originalUrl} →`);
+  res.on('finish', () => {
+    const durationMs = Date.now() - start;
+    const entry = { status: res.statusCode, durationMs };
+    if (res.statusCode >= 500) req.log.error(`${req.method} ${req.originalUrl} ←`, entry);
+    else if (res.statusCode >= 400) req.log.warn(`${req.method} ${req.originalUrl} ←`, entry);
+    else req.log.info(`${req.method} ${req.originalUrl} ←`, entry);
+  });
+  next();
+});
 
 // In-memory mock data for hackathon quickstart
 let hackathonProjects = [
@@ -140,7 +180,7 @@ app.post('/api/ai/generate', async (req, res) => {
     const result = await generateChat({ messages, temperature, maxTokens });
     res.json(result);
   } catch (err) {
-    console.error('AI Generation Error:', err.message);
+    req.log.error('AI generation failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -155,7 +195,7 @@ app.post('/api/ai/chat', async (req, res) => {
     const result = await generateChat({ messages, temperature, maxTokens });
     res.json(result);
   } catch (err) {
-    console.error('AI Chat Error:', err.message);
+    req.log.error('AI chat failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -168,6 +208,7 @@ app.get('/api/graph/status', async (req, res) => {
     const health = await neo4jService.checkHealth();
     res.json(health);
   } catch (err) {
+    req.log.error('Graph status check failed', { message: err.message, stack: err.stack });
     res.status(500).json({ status: 'error', error: err.message });
   }
 });
@@ -178,6 +219,7 @@ app.get('/api/graph/visualize', async (req, res) => {
     const graphData = await neo4jService.getGraphVisualization(limit);
     res.json(graphData);
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -191,6 +233,7 @@ app.post('/api/graph/query', async (req, res) => {
     const result = await neo4jService.runCypherQuery(cypher, params);
     res.json(result);
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -200,6 +243,7 @@ app.get('/api/graph/warmup', async (req, res) => {
     const result = await neo4jService.warmUp();
     res.json(result);
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -209,6 +253,7 @@ app.post('/api/graph/warmup', async (req, res) => {
     const result = await neo4jService.warmUp();
     res.json(result);
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -229,6 +274,7 @@ app.post('/api/claim/upload', async (req, res) => {
     );
     res.status(201).json({ success: true, claim });
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -247,6 +293,7 @@ app.post('/api/workflow/trigger', async (req, res) => {
     const result = await renderWorkflowService.triggerTask(command, planId);
     res.json(result);
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -262,6 +309,7 @@ app.get('/api/cognify/status', async (req, res) => {
     const status = await cognifyService.checkServiceHealth();
     res.json({ success: true, ...status, simulationHint: 'npm run cognee:start' });
   } catch (err) {
+    req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -279,10 +327,15 @@ app.post('/api/cognify/run', async (req, res) => {
       Buffer.from(content, 'utf-8'),
       'text/plain'
     );
-    const pipeline = await cognifyService.runEclPipeline({ content, datasetName, prompt });
+    const pipeline = await cognifyService.runEclPipeline({
+      content,
+      datasetName,
+      prompt,
+      requestId: req.requestId,
+    });
     res.json({ success: true, claim, pipeline });
   } catch (err) {
-    console.error('Cognify pipeline error:', err.message);
+    req.log.error('Cognify pipeline failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -295,7 +348,11 @@ app.post('/api/cognify/query', async (req, res) => {
     }
 
     // Stage 1: GraphRAG retrieval from cognitive memory (empty when service is down)
-    const retrieval = await cognifyService.searchMemory({ query, datasetName });
+    const retrieval = await cognifyService.searchMemory({
+      query,
+      datasetName,
+      requestId: req.requestId,
+    });
 
     // Stage 2: Grounded synthesis — graph context when live, raw text when falling back
     const graphContext = retrieval.results.length
@@ -323,7 +380,7 @@ app.post('/api/cognify/query', async (req, res) => {
       synthesis,
     });
   } catch (err) {
-    console.error('Cognify query error:', err.message);
+    req.log.error('Cognify query failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -340,12 +397,35 @@ app.post('/api/echo', (req, res) => {
   });
 });
 
+// ---- 404 catch-all: unknown routes are logged, not silently dropped ----
+app.use((req, res) => {
+  req.log.warn(`Route not found: ${req.method} ${req.originalUrl}`);
+  res.status(404).json({ success: false, error: 'Route not found' });
+});
+
+// ---- Final error handler: anything thrown out of a route lands here ----
+app.use((err, req, res, _next) => {
+  req.log
+    ? req.log.error('Unhandled route error', { message: err.message, stack: err.stack })
+    : logger.error('Unhandled route error (no request context)', {
+        message: err.message,
+        stack: err.stack,
+      });
+  res.status(500).json({ success: false, error: err.message });
+});
+
 // Start Server
 app.listen(PORT, '0.0.0.0', () => {
+  logger.info(`Server started`, {
+    port: PORT,
+    environment: process.env.NODE_ENV || 'development',
+    node: process.version,
+  });
   console.log(`========================================`);
   console.log(`🚀 Server running on port: ${PORT}`);
   console.log(`📡 Local: http://localhost:${PORT}`);
   console.log(`🩺 Health: http://localhost:${PORT}/health`);
+  console.log(`📝 Logs: backend/logs/backend.log`);
   console.log(`========================================`);
 
   // Initialize anti-sleep self-pinger

@@ -7,10 +7,15 @@ Rotates through the 5-key pool with a 45s per-key timeout before falling back.
 
 import os
 import re
+import logging
 import requests
 from dotenv import load_dotenv
 
+from logging_setup import setup_logging
+
 load_dotenv()
+
+logger = setup_logging("schema-generator")
 
 NVIDIA_KEYS = [
     os.getenv("NVIDIA_API_KEY_1", "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"),
@@ -71,6 +76,7 @@ Respond with only clean Python code snippet containing the classes.
                 timeout=REQUEST_TIMEOUT_SECONDS,
             )
             if resp.status_code == 200:
+                logger.info("Schema generated via NVIDIA key #%s", index + 1)
                 content = resp.json()["choices"][0]["message"]["content"]
                 # Extract code block if present
                 code_match = re.search(r"```python(.*?)```", content, re.DOTALL)
@@ -82,12 +88,12 @@ Respond with only clean Python code snippet containing the classes.
                     "key_index": index + 1,
                 }
             last_error = f"key #{index + 1} returned HTTP {resp.status_code}"
-            print(f"[SchemaGenerator] {last_error}, rotating to next key...")
+            logger.warning("Schema generation key failed — rotating | %s", last_error)
         except Exception as e:
             last_error = f"key #{index + 1} failed ({e})"
-            print(f"[SchemaGenerator] {last_error}, rotating to next key...")
+            logger.warning("Schema generation key failed — rotating | %s", last_error)
 
-    print(f"[SchemaGenerator] All keys exhausted ({last_error}), using deterministic heuristic fallback.")
+    logger.error("All schema generation keys exhausted (%s) — using deterministic fallback", last_error)
 
     # Deterministic Heuristic Fallback
     fallback_code = f'''from typing import Any, Optional

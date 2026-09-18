@@ -2,6 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { fileURLToPath } from 'url';
+import { createLogger } from './logger.js';
+
+const log = createLogger('claim-check');
 
 class ClaimCheckService {
   constructor() {
@@ -20,6 +23,12 @@ class ClaimCheckService {
 
     await fs.promises.writeFile(targetPath, contentBuffer);
     const stats = await fs.promises.stat(targetPath);
+    log.info('Payload staged', {
+      claimId,
+      filename: safeFilename,
+      sizeBytes: stats.size,
+      mimeType,
+    });
 
     return {
       claimId,
@@ -34,8 +43,10 @@ class ClaimCheckService {
   async retrievePayload(claimUri) {
     const filePath = claimUri.replace('file://', '');
     if (!fs.existsSync(filePath)) {
+      log.error('Claim file not found', { claimUri, resolvedPath: filePath });
       throw new Error(`Claim file not found at: ${filePath}`);
     }
+    log.info('Payload retrieved', { claimUri, sizeBytes: (await fs.promises.stat(filePath)).size });
     return fs.promises.readFile(filePath, 'utf-8');
   }
 }

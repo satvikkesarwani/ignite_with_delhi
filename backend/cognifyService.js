@@ -1,7 +1,10 @@
 import dotenv from 'dotenv';
 import { Agent, fetch as undiciFetch } from 'undici';
+import { createLogger } from './logger.js';
 
 dotenv.config();
+
+const log = createLogger('cognify-bridge');
 
 // Node's global fetch (built-in undici) aborts with "fetch failed" once its internal
 // 300s headersTimeout fires — real cognify runs take 2-6 minutes. We use the external
@@ -21,12 +24,18 @@ const HEALTH_TIMEOUT_MS = 2500;
 const PIPELINE_TIMEOUT_MS = 480000; // Nemotron reasoning makes a real cognify take 2-5 min
 const SEARCH_TIMEOUT_MS = 180000;
 
-async function fetchWithTimeout(url, options = {}, timeoutMs = 10000) {
+/**
+ * fetchWithTimeout wraps the long-haul undici fetch with an abort deadline.
+ * `requestId` is forwarded as X-Request-Id so the Python service logs every
+ * stage with the same correlation id the Express request started with.
+ */
+async function fetchWithTimeout(url, options = {}, timeoutMs = 10000, requestId) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
     return await undiciFetch(url, {
       ...options,
+      headers: { ...(options.headers || {}), 'X-Request-Id': requestId || '-' },
       signal: controller.signal,
       dispatcher: longHaulAgent,
     });
@@ -38,19 +47,44 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 10000) {
 class CognifyService {
   constructor() {
     this.serviceUrl = COGNEE_URL;
+    log.info('Cognify bridge initialized', { serviceUrl: this.serviceUrl || '(disabled)' });
   }
 
-  async checkServiceHealth() {
+  async checkServiceHealth(requestId) {
     if (!this.serviceUrl) {
+      log.debug('Health check skipped — service URL not configured');
       return { available: false, reason: 'COGNEE_SERVICE_URL not configured in this environment' };
     }
+    const startedAt = Date.now();
     try {
-      const res = await fetchWithTimeout(`${this.serviceUrl}/health`, {}, HEALTH_TIMEOUT_MS);
+      const res = await fetchWithTimeout(
+        `${this.serviceUrl}/health`,
+        {},
+        HEALTH_TIMEOUT_MS,
+        requestId
+      );
       if (!res.ok) {
+        log.warn('Cognee health check failed', {
+          requestId,
+          status: res.status,
+          durationMs: Date.now() - startedAt,
+        });
         return { available: false, reason: `Cognee service health returned HTTP ${res.status}` };
       }
-      return { available: true, url: this.serviceUrl, info: await res.json() };
+      const info = await res.json();
+      log.debug('Cognee health check OK', {
+        requestId,
+        durationMs: Date.now() - startedAt,
+        graphProvider: info.graph_provider,
+      });
+      return { available: true, url: this.serviceUrl, info };
     } catch (err) {
+      log.warn('Cognee health check unreachable', {
+        requestId,
+        durationMs: Date.now() - startedAt,
+        error: err.message,
+        abort: err.name === 'AbortError',
+      });
       return {
         available: false,
         reason: `Cognee service unreachable (${err.name === 'AbortError' ? 'timeout' : err.message})`,
@@ -63,10 +97,18 @@ class CognifyService {
    * Returns mode:"live" on success, or mode:"simulation" when the service is down
    * so the UI can degrade gracefully instead of failing a demo.
    */
-  async runEclPipeline({ content, datasetName = 'hackathon_domain_memory', prompt }) {
+  async runEclPipeline({ content, datasetName = 'hackathon_domain_memory', prompt, requestId }) {
     const startedAt = Date.now();
-    const health = await this.checkServiceHealth();
+    const reqLog = log.withContext({
+      requestId,
+      dataset: datasetName,
+      contentChars: content?.length,
+    });
+    const health = await this.checkServiceHealth(requestId);
     if (!health.available) {
+      reqLog.warn('ECL pipeline degraded to simulation — service unavailable', {
+        reason: health.reason,
+      });
       return {
         mode: 'simulation',
         available: false,
@@ -78,6 +120,8 @@ class CognifyService {
 
     const headers = { 'Content-Type': 'application/json' };
 
+    reqLog.info('ECL stage 1/2: ingest →');
+    const ingestStart = Date.now();
     const ingestRes = await fetchWithTimeout(
       `${this.serviceUrl}/api/ingest`,
       {
@@ -85,13 +129,22 @@ class CognifyService {
         headers,
         body: JSON.stringify({ content, dataset_name: datasetName }),
       },
-      PIPELINE_TIMEOUT_MS
+      PIPELINE_TIMEOUT_MS,
+      requestId
     );
     if (!ingestRes.ok) {
-      throw new Error(`Cognee ingest failed: HTTP ${ingestRes.status} — ${await ingestRes.text()}`);
+      const body = await ingestRes.text();
+      reqLog.error('ECL ingest failed', { status: ingestRes.status, body: body.slice(0, 500) });
+      throw new Error(`Cognee ingest failed: HTTP ${ingestRes.status} — ${body}`);
     }
     const ingest = await ingestRes.json();
+    reqLog.info('ECL stage 1/2: ingest ←', {
+      status: ingest.status,
+      durationMs: Date.now() - ingestStart,
+    });
 
+    reqLog.info('ECL stage 2/2: cognify → (LLM extraction + graph load, can take minutes)');
+    const cognifyStart = Date.now();
     const cognifyRes = await fetchWithTimeout(
       `${this.serviceUrl}/api/cognify`,
       {
@@ -99,15 +152,26 @@ class CognifyService {
         headers,
         body: JSON.stringify({ dataset_name: datasetName, custom_prompt: prompt }),
       },
-      PIPELINE_TIMEOUT_MS
+      PIPELINE_TIMEOUT_MS,
+      requestId
     );
     if (!cognifyRes.ok) {
-      throw new Error(
-        `Cognee cognify failed: HTTP ${cognifyRes.status} — ${await cognifyRes.text()}`
-      );
+      const body = await cognifyRes.text();
+      reqLog.error('ECL cognify failed', {
+        status: cognifyRes.status,
+        durationMs: Date.now() - cognifyStart,
+        body: body.slice(0, 500),
+      });
+      throw new Error(`Cognee cognify failed: HTTP ${cognifyRes.status} — ${body}`);
     }
     const cognify = await cognifyRes.json();
+    reqLog.info('ECL stage 2/2: cognify ←', {
+      status: cognify.status,
+      durationMs: Date.now() - cognifyStart,
+    });
 
+    const elapsedMs = Date.now() - startedAt;
+    reqLog.info('ECL pipeline complete', { mode: 'live', elapsedMs });
     return {
       mode: 'live',
       available: true,
@@ -115,7 +179,7 @@ class CognifyService {
       dataset: datasetName,
       ingest,
       cognify,
-      elapsedMs: Date.now() - startedAt,
+      elapsedMs,
     };
   }
 
@@ -123,12 +187,17 @@ class CognifyService {
    * GraphRAG retrieval from cognitive memory. Falls back to an empty result set
    * when the service is down — callers then synthesize from raw context instead.
    */
-  async searchMemory({ query, datasetName = 'hackathon_domain_memory' }) {
-    const health = await this.checkServiceHealth();
+  async searchMemory({ query, datasetName = 'hackathon_domain_memory', requestId }) {
+    const health = await this.checkServiceHealth(requestId);
     if (!health.available) {
+      log.warn('GraphRAG retrieval fell back — service unavailable', {
+        requestId,
+        reason: health.reason,
+      });
       return { mode: 'fallback', reason: health.reason, results: [] };
     }
 
+    const startedAt = Date.now();
     try {
       const res = await fetchWithTimeout(
         `${this.serviceUrl}/api/search`,
@@ -141,17 +210,39 @@ class CognifyService {
             search_type: 'GRAPH_COMPLETION',
           }),
         },
-        SEARCH_TIMEOUT_MS
+        SEARCH_TIMEOUT_MS,
+        requestId
       );
       if (!res.ok) {
+        log.warn('GraphRAG search HTTP failure', {
+          requestId,
+          status: res.status,
+          durationMs: Date.now() - startedAt,
+        });
         return { mode: 'fallback', reason: `search HTTP ${res.status}`, results: [] };
       }
       const data = await res.json();
       if (!data.success) {
+        log.warn('GraphRAG search returned failure', {
+          requestId,
+          error: data.error,
+          durationMs: Date.now() - startedAt,
+        });
         return { mode: 'fallback', reason: data.error || 'search failed', results: [] };
       }
+      log.info('GraphRAG search complete', {
+        requestId,
+        resultCount: (data.results || []).length,
+        durationMs: Date.now() - startedAt,
+      });
       return { mode: 'live', results: data.results || [] };
     } catch (err) {
+      log.error('GraphRAG search request failed', {
+        requestId,
+        durationMs: Date.now() - startedAt,
+        error: err.message,
+        abort: err.name === 'AbortError',
+      });
       return { mode: 'fallback', reason: err.message, results: [] };
     }
   }

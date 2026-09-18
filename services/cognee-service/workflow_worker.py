@@ -11,41 +11,43 @@ import asyncio
 import time
 from urllib.parse import urlparse
 
+from logging_setup import setup_logging
 from engine import cognitive_engine
 from schemas import AVAILABLE_SCHEMAS
 
+logger = setup_logging("render-worker")
+
 async def run_worker_task(claim_uri: str, dataset_name: str, custom_prompt: str):
     start_time = time.time()
-    print("=================================================================")
-    print("🚀 [Render Workflows Worker] Initializing Claim-Check Background Job")
-    print(f"   Claim URI: {claim_uri}")
-    print(f"   Target Dataset: {dataset_name}")
-    print("=================================================================")
+    logger.info("Claim-check worker starting | claim_uri=%s dataset=%s", claim_uri, dataset_name)
 
     parsed = urlparse(claim_uri)
     file_content = None
 
     if parsed.scheme == "file" or os.path.exists(claim_uri):
         local_path = parsed.path if parsed.scheme == "file" else claim_uri
-        print(f"[Worker] Resolving local claim buffer: {local_path}...")
+        logger.info("Resolving local claim buffer | path=%s", local_path)
         with open(local_path, "r", encoding="utf-8", errors="ignore") as f:
             file_content = f.read()
     else:
         # Direct raw payload or mock URL
+        logger.warning("Claim URI not a local file — using placeholder content")
         file_content = f"Ingested from claim reference: {claim_uri}"
 
-    print(f"[Worker] Ingesting dataset payload ({len(file_content)} characters)...")
+    logger.info("Claim payload resolved | chars=%s", len(file_content))
     await cognitive_engine.ingest_content(file_content, dataset_name=dataset_name)
 
-    print("[Worker] Executing ECL Cognify phase (Token Chunking + Graph Synthesis)...")
+    logger.info("Executing ECL cognify phase (token chunking + graph synthesis)")
     cognify_res = await cognitive_engine.run_cognify(
         dataset_name=dataset_name,
         custom_prompt=custom_prompt
     )
 
     elapsed = time.time() - start_time
-    print(f"✅ [Render Workflows Worker] Job completed successfully in {elapsed:.2f}s!")
-    print(f"   Status: {cognify_res.get('status')}")
+    if cognify_res.get("status") == "error":
+        logger.error("Worker job FAILED after %.2fs | error=%s", elapsed, cognify_res.get("message"))
+        return 1
+    logger.info("Worker job completed successfully | status=%s elapsed=%.2fs", cognify_res.get("status"), elapsed)
     return 0
 
 def main():

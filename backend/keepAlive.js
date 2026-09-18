@@ -5,12 +5,15 @@
  */
 import https from 'https';
 import http from 'http';
+import { createLogger } from './logger.js';
+
+const log = createLogger('keep-alive');
 
 export function startKeepAlive() {
   const url = process.env.RENDER_EXTERNAL_URL || process.env.KEEP_ALIVE_URL;
   if (!url) {
-    console.log(
-      'ℹ️ Keep-alive: No public URL set (RENDER_EXTERNAL_URL or KEEP_ALIVE_URL). Skipping internal pinger.'
+    log.info(
+      'No public URL set (RENDER_EXTERNAL_URL or KEEP_ALIVE_URL) — internal pinger disabled'
     );
     return;
   }
@@ -19,20 +22,23 @@ export function startKeepAlive() {
   const intervalMs = pingIntervalMinutes * 60 * 1000;
   const healthEndpoint = `${url.replace(/\/$/, '')}/health`;
 
-  console.log(
-    `🛡️ Anti-Sleep Keep-Alive initialized. Pinging ${healthEndpoint} every ${pingIntervalMinutes}m.`
-  );
+  log.info('Anti-sleep pinger initialized', {
+    endpoint: healthEndpoint,
+    intervalMinutes: pingIntervalMinutes,
+  });
 
   setInterval(() => {
+    const startedAt = Date.now();
     const client = healthEndpoint.startsWith('https') ? https : http;
     const req = client.get(healthEndpoint, (res) => {
-      console.log(
-        `[${new Date().toISOString()}] Keep-alive ping sent to ${healthEndpoint} - Status: ${res.statusCode}`
-      );
+      log.info('Self-ping sent', {
+        status: res.statusCode,
+        durationMs: Date.now() - startedAt,
+      });
     });
 
     req.on('error', (err) => {
-      console.error(`[${new Date().toISOString()}] Keep-alive ping failed:`, err.message);
+      log.error('Self-ping failed', { message: err.message, code: err.code });
     });
   }, intervalMs);
 }

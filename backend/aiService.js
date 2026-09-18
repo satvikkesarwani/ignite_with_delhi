@@ -1,9 +1,12 @@
 import https from 'https';
+import { createLogger } from './logger.js';
 
 /**
  * NVIDIA NIM API Service with Smart Key Rotation & Automatic Failover
  * Rotates through 5 API keys with round-robin and automatic fallback on 429/errors.
  */
+
+const log = createLogger('nvidia');
 
 const DEFAULT_KEYS = [
   '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',
@@ -84,16 +87,19 @@ function makeNvidiaRequest(apiKey, payload) {
  */
 export async function generateChat({ messages, temperature = 0.6, maxTokens = 1024 }) {
   if (!API_KEYS.length) {
+    log.error('No NVIDIA API keys configured');
     throw new Error('No NVIDIA API keys configured');
   }
 
   let attempts = 0;
   let lastError = null;
+  const startedAt = Date.now();
 
   while (attempts < API_KEYS.length) {
     const keyIdx = getNextKeyIndex();
     const apiKey = API_KEYS[keyIdx];
     attempts++;
+    const keyStartedAt = Date.now();
 
     try {
       const payload = {
@@ -107,6 +113,16 @@ export async function generateChat({ messages, temperature = 0.6, maxTokens = 10
       const choice = response.choices?.[0];
       const content = choice?.message?.content || choice?.text || '';
 
+      log.info('Completion OK', {
+        keyIndex: keyIdx + 1,
+        attempts,
+        durationMs: Date.now() - keyStartedAt,
+        totalMs: Date.now() - startedAt,
+        promptTokens: response.usage?.prompt_tokens,
+        completionTokens: response.usage?.completion_tokens,
+        contentChars: content.length,
+      });
+
       return {
         success: true,
         content,
@@ -117,12 +133,21 @@ export async function generateChat({ messages, temperature = 0.6, maxTokens = 10
       };
     } catch (err) {
       lastError = err;
-      console.warn(
-        `⚠️ NVIDIA NIM Key #${keyIdx + 1} failed (HTTP ${err.statusCode || 'Error'}: ${err.message}). Rotating to next key...`
-      );
+      log.warn('Key failed — rotating to next', {
+        keyIndex: keyIdx + 1,
+        attempt: attempts,
+        httpStatus: err.statusCode || null,
+        durationMs: Date.now() - keyStartedAt,
+        message: err.message,
+      });
       // If error is 429 (Rate Limit) or 5xx, continue to next key immediately
     }
   }
 
+  log.error('All API keys exhausted', {
+    totalKeys: API_KEYS.length,
+    totalMs: Date.now() - startedAt,
+    lastError: lastError?.message,
+  });
   throw new Error(`All ${API_KEYS.length} NVIDIA API keys exhausted: ${lastError?.message}`);
 }

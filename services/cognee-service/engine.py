@@ -1,14 +1,23 @@
 """
 Cognee ECL (Extract-Cognify-Load) Engine Wrapper
 Handles ingestion, custom directive prompting, and hybrid GraphRAG retrieval.
+Every stage is timed and logged so pipeline stalls/failures are immediately visible.
 """
 
 from typing import Any, Optional, List
+import time
 
-# Ensure config environment is applied before cognee initialization
 from config import CONFIG
+import logging
+
+from logging_setup import setup_logging
+
 import cognee
 from cognee import SearchType
+
+# cognee reconfigures root logging on import (colored stdout, no file) —
+# re-apply our handlers so every log carries request ids and hits the file.
+logger = setup_logging("cognee-engine")
 
 
 def _normalize_results(results: List[Any]) -> List[Any]:
@@ -37,8 +46,10 @@ class CognitiveEngine:
         Extract Stage: Ingests text, file path, or raw document into Cognee.
         """
         ds = dataset_name or self.default_dataset
-        print(f"[CognitiveEngine] Ingesting content into dataset: '{ds}'...")
+        logger.info("Extract stage -> | dataset=%s content_chars=%s", ds, len(str(data)))
+        started = time.time()
         await cognee.add(data, dataset_name=ds)
+        logger.info("Extract stage <- | dataset=%s duration=%.2fs", ds, time.time() - started)
         return {"status": "ingested", "dataset": ds}
 
     async def run_cognify(
@@ -55,15 +66,16 @@ class CognitiveEngine:
             "Extract all domain entities, financial accounts, organizations, directors, "
             "and risk associations. Ignore conversational noise and irrelevant text."
         )
-        print(f"[CognitiveEngine] Running Cognify on dataset '{ds}' with directive prompt...")
-
-        # Run cognify
+        logger.info(
+            "Cognify+Load stage -> | dataset=%s prompt=%r", ds, prompt[:120]
+        )
+        started = time.time()
         try:
             await cognee.cognify(datasets=[ds], custom_prompt=prompt)
-            print(f"[CognitiveEngine] ✅ Cognify complete for dataset '{ds}'.")
-            return {"status": "cognified", "dataset": ds, "prompt": prompt}
+            logger.info("Cognify+Load stage <- | dataset=%s duration=%.2fs", ds, time.time() - started)
+            return {"status": "cognified", "dataset": ds, "prompt": prompt, "duration_seconds": round(time.time() - started, 2)}
         except Exception as e:
-            print(f"[CognitiveEngine] ⚠️ Cognify encountered: {e}")
+            logger.exception("Cognify+Load stage FAILED | dataset=%s duration=%.2fs", ds, time.time() - started)
             return {"status": "error", "message": str(e), "dataset": ds}
 
     async def search_memory(
@@ -84,7 +96,8 @@ class CognitiveEngine:
         else:
             query_type = search_type or SearchType.GRAPH_COMPLETION
 
-        print(f"[CognitiveEngine] Querying memory: '{query}' (Type: {query_type.value})...")
+        logger.info("Search stage -> | dataset=%s query_type=%s query=%r", ds, query_type.value, query[:120])
+        started = time.time()
         try:
             results = await cognee.search(
                 query_text=query,
@@ -95,13 +108,23 @@ class CognitiveEngine:
                 # doing it twice just doubles the latency).
                 only_context=True,
             )
+            normalized = _normalize_results(results)
+            logger.info(
+                "Search stage <- | dataset=%s result_count=%s duration=%.2fs",
+                ds,
+                len(normalized),
+                time.time() - started,
+            )
             return {
                 "success": True,
                 "query": query,
                 "dataset": ds,
-                "results": _normalize_results(results),
+                "results": normalized,
             }
         except Exception as e:
+            logger.exception(
+                "Search stage FAILED | dataset=%s duration=%.2fs", ds, time.time() - started
+            )
             return {
                 "success": False,
                 "query": query,
@@ -110,7 +133,7 @@ class CognitiveEngine:
 
     async def reset(self):
         """Wipes cognitive memory state for clean testing."""
-        print("[CognitiveEngine] Resetting memory state...")
+        logger.info("Resetting cognitive memory state")
         await cognee.prune.prune_data()
         return {"status": "pruned"}
 

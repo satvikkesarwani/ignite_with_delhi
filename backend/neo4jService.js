@@ -2,6 +2,9 @@ import neo4j from 'neo4j-driver';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import { createLogger } from './logger.js';
+
+const log = createLogger('neo4j');
 
 const candidateEnvs = [
   path.resolve('.env'),
@@ -28,7 +31,10 @@ class Neo4jService {
     const password = process.env.NEO4J_PASSWORD || process.env.GRAPH_DATABASE_PASSWORD;
 
     if (!uri || !password || uri.includes('example') || uri.includes('xxxx')) {
-      console.log('ℹ️ [Neo4jService] No valid NEO4J_URI found. Initializing in DEMO/MOCK mode.');
+      log.warn('No valid NEO4J_URI configured — operating in DEMO/MOCK graph mode', {
+        uriSet: Boolean(uri),
+        passwordSet: Boolean(password),
+      });
       this.isMockMode = true;
       return;
     }
@@ -39,11 +45,15 @@ class Neo4jService {
         connectionTimeout: 5000,
         maxTransactionRetryTime: 10000,
       });
-      console.log(`🔌 [Neo4jService] Driver configured for: ${uri}`);
+      log.info('Driver configured for AuraDB', {
+        uri: uri.replace(/\/\/([^@]+@)?/, '//***@'),
+        poolSize: 50,
+      });
     } catch (err) {
-      console.warn(
-        `⚠️ [Neo4jService] Driver creation failed (${err.message}). Falling back to MOCK mode.`
-      );
+      log.error('Driver creation failed — falling back to MOCK mode', {
+        message: err.message,
+        stack: err.stack,
+      });
       this.isMockMode = true;
     }
   }
@@ -71,6 +81,7 @@ class Neo4jService {
       const nodeCount = nodeResult.records[0].get('count').toNumber();
       const relCount = relResult.records[0].get('count').toNumber();
 
+      log.info('AuraDB health check OK', { nodeCount: nodeCount, relCount: relCount });
       return {
         status: 'connected',
         connected: true,
@@ -82,7 +93,11 @@ class Neo4jService {
         },
       };
     } catch (err) {
-      console.warn(`⚠️ [Neo4jService] Health check failed (${err.message}). Using mock fallback.`);
+      log.error('Health check failed — using mock fallback', {
+        message: err.message,
+        code: err.code,
+        stack: err.stack,
+      });
       return {
         status: 'demo_fallback',
         connected: false,
@@ -176,6 +191,11 @@ class Neo4jService {
         });
       });
 
+      log.info('Visualization query complete', {
+        nodes: nodesMap.size,
+        links: links.length,
+        limit,
+      });
       return {
         nodes: Array.from(nodesMap.values()),
         links,
@@ -184,9 +204,11 @@ class Neo4jService {
         totalLinks: links.length,
       };
     } catch (err) {
-      console.warn(
-        `⚠️ [Neo4jService] Visualization query error (${err.message}). Returning mock data.`
-      );
+      log.error('Visualization query failed — returning mock data', {
+        message: err.message,
+        code: err.code,
+        stack: err.stack,
+      });
       return this.getMockGraph();
     } finally {
       await session.close();
@@ -194,6 +216,8 @@ class Neo4jService {
   }
 
   async runCypherQuery(cypher, params = {}) {
+    const startedAt = Date.now();
+    log.info('Cypher query →', { cypher: cypher.slice(0, 200), params });
     if (this.isMockMode || !this.driver) {
       return {
         success: true,
@@ -217,8 +241,18 @@ class Neo4jService {
         });
         return obj;
       });
+      log.info('Cypher query ←', {
+        records: records.length,
+        durationMs: Date.now() - startedAt,
+      });
       return { success: true, isMock: false, records };
     } catch (err) {
+      log.error('Cypher query failed', {
+        cypher: cypher.slice(0, 200),
+        message: err.message,
+        code: err.code,
+        stack: err.stack,
+      });
       return { success: false, error: err.message };
     } finally {
       await session.close();

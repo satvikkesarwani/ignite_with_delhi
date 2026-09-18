@@ -45,3 +45,6 @@ __pycache__/
 backend/uploads/
 uploads/
 
+
+# Local log output
+logs/

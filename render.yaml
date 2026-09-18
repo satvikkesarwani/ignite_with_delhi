@@ -16,3 +16,6 @@ services:
         value: 5000
       - key: KEEP_ALIVE_INTERVAL
         value: 10
+      # DEBUG locally for deep debugging; INFO keeps production logs readable
+      - key: LOG_LEVEL
+        value: INFO
