@@ -26,15 +26,23 @@ async def run_worker_task(claim_uri: str, dataset_name: str, custom_prompt: str)
     parsed = urlparse(claim_uri)
     file_content = None
 
-    if parsed.scheme == "file" or os.path.exists(claim_uri):
+    if parsed.scheme in ("http", "https"):
+        # Claim-check over network: S3 / R2 / any presigned URL (study.md §7)
+        logger.info("Downloading claim payload | uri=%s", claim_uri[:120])
+        resp = requests.get(claim_uri, timeout=120)
+        resp.raise_for_status()
+        file_content = resp.text
+    elif parsed.scheme == "file" or os.path.exists(claim_uri):
         local_path = parsed.path if parsed.scheme == "file" else claim_uri
         logger.info("Resolving local claim buffer | path=%s", local_path)
         with open(local_path, "r", encoding="utf-8", errors="ignore") as f:
             file_content = f.read()
     else:
-        # Direct raw payload or mock URL
-        logger.warning("Claim URI not a local file — using placeholder content")
-        file_content = f"Ingested from claim reference: {claim_uri}"
+        # Fail-fast: a bad claim URI must fail loudly, never silently "succeed"
+        # with placeholder text that would poison the graph.
+        raise FileNotFoundError(
+            f"Claim URI is not a resolvable file:// or http(s):// location: {claim_uri!r}"
+        )
 
     logger.info("Claim payload resolved | chars=%s", len(file_content))
     await cognitive_engine.ingest_content(file_content, dataset_name=dataset_name)
