@@ -14,6 +14,13 @@ export default function App() {
   const [apiResponse, setApiResponse] = useState(null);
   const [loadingReq, setLoadingReq] = useState(false);
 
+  // NVIDIA AI Playground State
+  const [aiPrompt, setAiPrompt] = useState(
+    'Write a 2-sentence pitch for our hackathon project that saves lives.'
+  );
+  const [aiOutput, setAiOutput] = useState(null);
+  const [loadingAi, setLoadingAi] = useState(false);
+
   const checkHealth = useCallback(async () => {
     const startTime = performance.now();
     try {
@@ -73,6 +80,27 @@ export default function App() {
       setApiResponse({ error: err.message || 'Request failed' });
     } finally {
       setLoadingReq(false);
+    }
+  };
+
+  const runAiGeneration = async () => {
+    setLoadingAi(true);
+    setAiOutput(null);
+    const start = performance.now();
+    try {
+      const cleanUrl = apiUrl.replace(/\/$/, '');
+      const res = await fetch(`${cleanUrl}/api/ai/generate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt: aiPrompt, maxTokens: 512 }),
+      });
+      const data = await res.json();
+      const elapsed = Math.round(performance.now() - start);
+      setAiOutput({ ...data, elapsedMs: elapsed });
+    } catch (err) {
+      setAiOutput({ success: false, error: err.message || 'AI request failed' });
+    } finally {
+      setLoadingAi(false);
     }
   };
 
@@ -262,6 +290,104 @@ export default function App() {
             </pre>
           </div>
         </div>
+      </div>
+
+      {/* NVIDIA AI Section */}
+      <div
+        className="card"
+        style={{
+          marginBottom: '2rem',
+          border: '1px solid rgba(168, 85, 247, 0.3)',
+          background:
+            'linear-gradient(180deg, rgba(26, 20, 48, 0.6) 0%, rgba(18, 24, 38, 0.8) 100%)',
+        }}
+      >
+        <div className="card-title">
+          <div className="icon-wrap">
+            <span style={{ fontSize: '1.25rem' }}>🤖</span>
+            <span>NVIDIA Nemotron 3.5 Lightning (30B) — Key Rotation Active</span>
+          </div>
+          <span
+            className="status-badge healthy"
+            style={{
+              background: 'rgba(168, 85, 247, 0.15)',
+              color: '#c084fc',
+              borderColor: 'rgba(168, 85, 247, 0.3)',
+            }}
+          >
+            5 API Keys Rotating
+          </span>
+        </div>
+
+        <div className="input-group">
+          <label className="input-label" htmlFor="ai-prompt-input">
+            Test AI Prompt (Endpoint: <code>POST /api/ai/generate</code>):
+          </label>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <input
+              id="ai-prompt-input"
+              type="text"
+              value={aiPrompt}
+              onChange={(e) => setAiPrompt(e.target.value)}
+              placeholder="Ask anything..."
+              className="text-input"
+              style={{ flex: 1, minWidth: '280px' }}
+              onKeyDown={(e) => e.key === 'Enter' && runAiGeneration()}
+            />
+            <button
+              onClick={runAiGeneration}
+              disabled={loadingAi}
+              className="btn btn-primary"
+              style={{ background: 'linear-gradient(135deg, #a855f7, #6366f1)', minWidth: '140px' }}
+            >
+              {loadingAi ? '⚡ Generating...' : '✨ Ask AI'}
+            </button>
+          </div>
+        </div>
+
+        {aiOutput && (
+          <div
+            style={{
+              marginTop: '1rem',
+              background: 'rgba(0, 0, 0, 0.35)',
+              padding: '1rem',
+              borderRadius: '10px',
+              border: '1px solid rgba(255, 255, 255, 0.06)',
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: '0.5rem',
+                fontSize: '0.8rem',
+                color: '#94a3b8',
+              }}
+            >
+              <span>
+                Model:{' '}
+                <code style={{ color: '#38bdf8' }}>
+                  {aiOutput.model || 'nvidia/nemotron-3.5-lightning-30b-a3b'}
+                </code>
+              </span>
+              <span>
+                Key: <strong style={{ color: '#10b981' }}>#{aiOutput.keyIndexUsed || 1}</strong> |
+                Time: {aiOutput.elapsedMs || '--'}ms
+              </span>
+            </div>
+            <div
+              style={{
+                color: '#f1f5f9',
+                whiteSpace: 'pre-wrap',
+                lineHeight: 1.6,
+                fontSize: '0.92rem',
+              }}
+            >
+              {aiOutput.content || aiOutput.error || JSON.stringify(aiOutput)}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Bottom Checklist: Hackathon Readiness */}

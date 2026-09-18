@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { startKeepAlive } from './keepAlive.js';
+import { generateChat } from './aiService.js';
 
 dotenv.config();
 
@@ -98,6 +99,61 @@ app.post('/api/projects', (req, res) => {
 
   hackathonProjects.push(newProject);
   res.status(201).json({ success: true, data: newProject });
+});
+
+/**
+ * NVIDIA AI Quick-Connect Endpoints (Model: nvidia/nemotron-3.5-lightning-30b-a3b)
+ * Features: Automatic 5-Key Pool Rotation & Failover
+ */
+app.get('/api/ai/status', (req, res) => {
+  res.json({
+    success: true,
+    provider: 'NVIDIA NIM',
+    model: process.env.NVIDIA_MODEL || 'nvidia/nemotron-3.5-lightning-30b-a3b',
+    keyRotationEnabled: true,
+    totalKeys: 5,
+    status: 'Ready',
+  });
+});
+
+app.post('/api/ai/generate', async (req, res) => {
+  try {
+    const {
+      prompt,
+      systemPrompt = 'You are a helpful, fast hackathon AI assistant.',
+      temperature = 0.6,
+      maxTokens = 1024,
+    } = req.body;
+    if (!prompt) {
+      return res.status(400).json({ success: false, error: 'Prompt is required' });
+    }
+
+    const messages = [
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: prompt },
+    ];
+
+    const result = await generateChat({ messages, temperature, maxTokens });
+    res.json(result);
+  } catch (err) {
+    console.error('AI Generation Error:', err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/ai/chat', async (req, res) => {
+  try {
+    const { messages, temperature = 0.6, maxTokens = 1024 } = req.body;
+    if (!messages || !Array.isArray(messages) || !messages.length) {
+      return res.status(400).json({ success: false, error: 'Messages array is required' });
+    }
+
+    const result = await generateChat({ messages, temperature, maxTokens });
+    res.json(result);
+  } catch (err) {
+    console.error('AI Chat Error:', err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
 });
 
 app.post('/api/echo', (req, res) => {
