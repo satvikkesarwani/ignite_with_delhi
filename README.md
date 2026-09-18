@@ -54,9 +54,11 @@ npm --prefix backend install
 npm run dev
 ```
 
-- **Frontend UI**: [http://localhost:5173](http://localhost:5173)
-- **Backend API**: [http://localhost:5001](http://localhost:5001)
-- **Health Check**: [http://localhost:5001/health](http://localhost:5001/health)
+- **Frontend UI (Live Vercel)**: [https://frontend-beryl-seven-82.vercel.app](https://frontend-beryl-seven-82.vercel.app)
+- **Backend API (Live Render)**: [https://ignite-backend-kt07.onrender.com](https://ignite-backend-kt07.onrender.com)
+- **Backend Health Check**: [https://ignite-backend-kt07.onrender.com/health](https://ignite-backend-kt07.onrender.com/health)
+- **Local Frontend**: [http://localhost:5173](http://localhost:5173)
+- **Local Backend**: [http://localhost:5001](http://localhost:5001)
 
 ---
 
