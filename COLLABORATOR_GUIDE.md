@@ -38,6 +38,8 @@ Our problem statement for this hackathon is: [PASTE PROBLEM STATEMENT HERE]
 
 ---
 
+- **Every endpoint documented**: [backend/API_DOCS.md](./backend/API_DOCS.md) — includes the step-by-step "PS Drop Playbook" for wiring a fresh problem statement.
+
 ## 🚀 How to Run Locally
 
 ### 1. Clone and Install

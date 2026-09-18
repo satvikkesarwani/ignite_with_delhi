@@ -99,12 +99,25 @@ app.get('/', (req, res) => {
     cdPipeline: '100% Verified & Live (Auto-Deploys on Push)',
     e2eVerifiedAt: '2026-09-18',
     healthCheck: '/health',
-    docs: {
-      'GET /health': 'Server uptime & status',
-      'GET /api/hello': 'Basic connectivity test',
-      'GET /api/projects': 'Get sample project list',
-      'POST /api/projects': 'Add a new project (JSON: { title, status, score })',
-      'POST /api/echo': 'Echo back received JSON payload',
+    docs: 'Full API reference: backend/API_DOCS.md',
+    endpoints: {
+      system: [
+        'GET /health',
+        'GET /api/hello',
+        'GET /api/projects',
+        'POST /api/projects',
+        'POST /api/echo',
+      ],
+      ai: ['GET /api/ai/status', 'GET /api/ai/keys', 'POST /api/ai/generate', 'POST /api/ai/chat'],
+      graph: [
+        'GET /api/graph/status',
+        'GET /api/graph/visualize',
+        'POST /api/graph/query',
+        'GET|POST /api/graph/warmup',
+      ],
+      claimCheck: ['POST /api/claim/upload'],
+      workflows: ['POST /api/workflow/trigger', 'POST /api/workflow/run-task'],
+      cognify: ['GET /api/cognify/status', 'POST /api/cognify/run', 'POST /api/cognify/query'],
     },
   });
 });

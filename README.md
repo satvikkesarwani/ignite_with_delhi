@@ -5,6 +5,7 @@ Pre-configured with **React + Vite**, **Express Node.js**, **CORS**, **Auto-depl
 
 > 👥 **Collaborator / Teammate Quickstart**: Read [COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) for ready-to-use AI prompts and rapid hacking instructions!
 > 📚 **Neo4j + Cognee + Render Workflows Deep Dive**: Read [study.md](./study.md) for the complete architectural analysis, code templates, and winning project playbooks!
+> 📡 **Full API Reference + PS-Drop Playbook**: Read [backend/API_DOCS.md](./backend/API_DOCS.md) for every microservice endpoint and how to connect them on a new problem statement.
 
 ---
 
