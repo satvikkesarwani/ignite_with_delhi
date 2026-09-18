@@ -3,7 +3,8 @@
 An ultra-fast, zero-friction monorepo template built for hackathons.
 Pre-configured with **React + Vite**, **Express Node.js**, **CORS**, **Auto-deploy CI/CD on Vercel & Render**, **Anti-Sleep Keep-Alive**, **NVIDIA Nemotron 3.5 30B AI (5-Key Rotation)**, and **Pre-commit Automated Quality Checks**.
 
-> 👥 **Collaborator / Teammate Quickstart**: Read [COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) for ready-to-use AI prompts, code snippets, and rapid hacking instructions!
+> 👥 **Collaborator / Teammate Quickstart**: Read [COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) for ready-to-use AI prompts and rapid hacking instructions!
+> 📚 **Neo4j + Cognee + Render Workflows Deep Dive**: Read [study.md](./study.md) for the complete architectural analysis, code templates, and winning project playbooks!
 
 ---
 
