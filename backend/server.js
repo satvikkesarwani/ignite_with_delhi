@@ -348,7 +348,7 @@ app.post('/api/workflow/run-task', async (req, res) => {
  */
 app.get('/api/cognify/status', async (req, res) => {
   try {
-    const status = await cognifyService.checkServiceHealth();
+    const status = await cognifyService.checkServiceHealth(req.requestId);
     res.json({ success: true, ...status, simulationHint: 'npm run cognee:start' });
   } catch (err) {
     req.log.error('Endpoint failed', { message: err.message, stack: err.stack });
