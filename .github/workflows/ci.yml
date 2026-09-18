@@ -1,0 +1,37 @@
+name: CI - Code Quality & Build Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  code-quality:
+    name: Lint & Build Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Root Dependencies
+        run: npm ci || npm install
+
+      - name: 📦 Install Frontend Dependencies
+        run: npm --prefix frontend ci || npm --prefix frontend install
+
+      - name: 📦 Install Backend Dependencies
+        run: npm --prefix backend ci || npm --prefix backend install
+
+      - name: 🧹 Verify Code Formatting
+        run: npm run format:check
+
+      - name: 🏗️ Verify Frontend Production Build
+        run: npm run build

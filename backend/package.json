@@ -1,0 +1,21 @@
+{
+  "name": "ignite-backend",
+  "version": "1.0.0",
+  "description": "Hackathon ready Express backend with health checks, CORS, and auto-keepalive",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.21.0",
+    "nodemon": "^3.1.9"
+  }
+}

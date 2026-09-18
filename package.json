@@ -1,0 +1,35 @@
+{
+  "name": "ignite-with-delhi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hackathon Ready Monorepo (React + Vite + Express + Render + Vercel + CI/CD)",
+  "scripts": {
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,json,css,md,html,yml}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,json,css,md,html,yml}\"",
+    "keep-alive": "node scripts/keep_alive.js",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write"
+    ],
+    "*.{json,css,md,html,yml}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.2"
+  }
+}

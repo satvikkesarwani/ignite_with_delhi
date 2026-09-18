@@ -1,0 +1,31 @@
+name: Render Anti-Sleep Keep-Alive
+
+on:
+  schedule:
+    # Runs every 10 minutes (cron format: minute hour dom month dow)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  ping-render:
+    name: Keep Render Backend Awake
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛡️ Ping Render Health Endpoint
+        env:
+          RENDER_URL: ${{ secrets.RENDER_BACKEND_URL }}
+        run: |
+          TARGET_URL="${RENDER_URL:-https://ignite-backend.onrender.com}"
+          HEALTH_URL="${TARGET_URL%/}/health"
+          echo "Pinging: $HEALTH_URL at $(date -u)"
+
+          # Ping using curl with timeout
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$HEALTH_URL" || echo "FAILED")
+
+          echo "Response HTTP Status: $HTTP_STATUS"
+          if [ "$HTTP_STATUS" = "200" ]; then
+            echo "✅ Render backend is awake and healthy!"
+          else
+            echo "⚠️ Non-200 status received ($HTTP_STATUS). Server might be cold-starting or URL needs updating in GitHub Secrets."
+          fi
