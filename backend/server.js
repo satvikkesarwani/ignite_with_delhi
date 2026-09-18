@@ -8,6 +8,7 @@ import { neo4jService } from './neo4jService.js';
 import { claimCheckService } from './claimCheckService.js';
 import { renderWorkflowService } from './renderWorkflowService.js';
 import { cognifyService } from './cognifyService.js';
+import { tavilyService, TavilyError } from './tavilyService.js';
 import { logger, createLogger } from './logger.js';
 
 dotenv.config();
@@ -437,6 +438,74 @@ app.post('/api/cognify/query', async (req, res) => {
   } catch (err) {
     req.log.error('Cognify query failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * TAVILY — live web search microservice (study-grade RAG input source).
+ * Key: TAVILY_API_KEY in backend/.env (format tvly-...). All endpoints fail
+ * honestly with 503 + setup hint when the key is not configured.
+ */
+app.get('/api/tavily/status', (req, res) => {
+  res.json({ success: true, ...tavilyService.getStatus() });
+});
+
+app.post('/api/tavily/search', async (req, res) => {
+  try {
+    const result = await tavilyService.search(req.body, req.requestId);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Tavily search failed', { message: err.message, stack: err.stack });
+    res.status(err.status || 500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/tavily/extract', async (req, res) => {
+  try {
+    const result = await tavilyService.extract(req.body, req.requestId);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Tavily extract failed', { message: err.message, stack: err.stack });
+    res.status(err.status || 500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/tavily/research', async (req, res) => {
+  try {
+    const result = await tavilyService.research(req.body, req.requestId);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Tavily research failed', { message: err.message, stack: err.stack });
+    res.status(err.status || 500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * Web → Knowledge Graph bridge: Tavily search results are staged as a
+ * source-attributed document (claim-check) and cognified into AuraDB —
+ * fresh web facts become graph facts in one call.
+ */
+app.post('/api/tavily/ingest-to-graph', async (req, res) => {
+  try {
+    const { query, datasetName, prompt, maxResults } = req.body;
+    if (!query) {
+      return res.status(400).json({ success: false, error: 'query is required' });
+    }
+    const result = await tavilyService.ingestToGraph(
+      { query, datasetName, prompt, maxResults },
+      req.requestId
+    );
+    req.log.info('Web-to-graph ingestion complete', {
+      dataset: datasetName || 'web_research',
+      mode: result.pipeline.mode,
+    });
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Tavily web-to-graph ingestion failed', {
+      message: err.message,
+      stack: err.stack,
+    });
+    res.status(err.status || 500).json({ success: false, error: err.message });
   }
 });
 
