@@ -7,6 +7,7 @@
 
 ## 🧭 Table of Contents
 
+0. [🏛️ Master End-to-End System Architecture (All Technologies Integrated)](#0-master-end-to-end-system-architecture-all-technologies-integrated)
 1. [Theoretical Foundation: Cognitive Runtime vs. Standard Vector RAG](#1-theoretical-foundation-cognitive-runtime-vs-standard-vector-rag)
 2. [Hackathon Evaluation Matrix (The 35 / 35 / 30 Scoring Rule)](#2-hackathon-evaluation-matrix-the-35--35--30-scoring-rule)
 3. [Cognee ECL Pipeline: Custom DataPoint Schemas & SkipValidation](#3-cognee-ecl-pipeline-custom-datapoint-schemas--skipvalidation)
@@ -21,6 +22,134 @@
 12. [Ready-to-Run Validation Scripts & Edge Cases](#12-ready-to-run-validation-scripts--edge-cases)
 13. [Hackathon 3-Minute Winning Demo Script](#13-hackathon-3-minute-winning-demo-script)
 14. [Works Cited & Official References](#14-works-cited--official-references)
+
+---
+
+# 0. 🏛️ Master End-to-End System Architecture (All Technologies Integrated)
+
+```mermaid
+graph TB
+    %% ==========================================
+    %% 1. CLIENT & PRESENTATION LAYER
+    %% ==========================================
+    subgraph Client_Layer ["🌐 Presentation Layer (Vercel Edge Network)"]
+        UI["React + Vite Single-Page Application"]
+        GraphViz["2D Force-Directed Graph Visualizer"]
+        Console["Agentic Chat & Query Playground"]
+        UI --- GraphViz
+        UI --- Console
+    end
+
+    %% ==========================================
+    %% 2. AUTOMATION & RESILIENCE RUNNER
+    %% ==========================================
+    subgraph Anti_Sleep ["⏰ Anti-Sleep Daemon (GitHub Actions CI/CD)"]
+        CronRunner["10-Min Cron Keep-Alive Runner<br/>(.github/workflows/keep_alive.yml)"]
+        AuraWarmup["Neo4j 24h Non-Blocking Warm-Up<br/>(scripts/warmup_neo4j.py)"]
+    end
+
+    %% ==========================================
+    %% 3. CLOUD INGRESS & API GATEWAY TIER
+    %% ==========================================
+    subgraph Gateway_Tier ["⚡ Cloud Ingress & API Gateway (Render Web Service)"]
+        API_GW["Express / FastAPI Gateway (Port 5001)"]
+        RateLimiter["Rate Limiter (Max 100 req/min + Jitter Backoff)"]
+        AuthModule["Bearer Auth & Session Guard"]
+        ClaimUpload["Claim-Check Ingestion Controller"]
+
+        API_GW --> RateLimiter
+        RateLimiter --> AuthModule
+        AuthModule --> ClaimUpload
+    end
+
+    %% ==========================================
+    %% 4. STORAGE DECOUPLING (CLAIM-CHECK)
+    %% ==========================================
+    subgraph Storage_Tier ["💾 Decoupled Storage Tier (Claim-Check)"]
+        ObjectStore["Shared Object Storage / Render Persistent Disk<br/>(AWS S3 / Cloudflare R2 / Disk Volume)"]
+    end
+
+    %% ==========================================
+    %% 5. DISTRIBUTED WORKFLOWS & WORKERS
+    %% ==========================================
+    subgraph Workflow_Tier ["🔄 Distributed Orchestration Tier (Render Workflows)"]
+        Broker["Render Workflow Broker<br/>(ctx.run lightweight dispatch)"]
+        Worker["Background Workflow Worker Task<br/>(Stream file buffer from Claim URI)"]
+        Broker -->|Dispatches Job| Worker
+    end
+
+    %% ==========================================
+    %% 6. COGNEE ECL COGNITIVE RUNTIME
+    %% ==========================================
+    subgraph Cognee_Engine ["🧠 Cognee ECL Cognitive Runtime"]
+        direction TB
+        Extract["1. Extract: Token Chunker<br/>(CHUNK_SIZE=300-1500, CHUNK_OVERLAP=10)"]
+        Cognify["2. Cognify: Directive Prompt + LLM Extraction<br/>(Filter corporate & conversational noise)"]
+        Load["3. Load: Pydantic v2 DataPoints<br/>(SkipValidation + metadata index_fields)"]
+        Extract --> Cognify --> Load
+    end
+
+    %% ==========================================
+    %% 7. TRIPLE-STORE MEMORY SYSTEM
+    %% ==========================================
+    subgraph Triple_Store ["🗄️ Triple-Store Persistent Memory Layer"]
+        RelDB[("Relational Layer<br/>(SQLite / PostgreSQL)<br/>Auth, Session History & Task Logs")]
+        VecDB[("Dense Vector Store<br/>(LanceDB / PGVector)<br/>FastEmbed BAAI/bge-small-en-v1.5 ONNX")]
+        GraphDB[("Property Graph Store<br/>(Neo4j AuraDB Free Tier)<br/>Typed Nodes & Labeled Edges<br/>Native Cypher 1-3 Hop Traversal")]
+    end
+
+    %% ==========================================
+    %% 8. AI INFERENCE ENGINE
+    %% ==========================================
+    subgraph AI_Cluster ["🤖 Enterprise AI Inference Tier (NVIDIA NIM)"]
+        KeyPool["5-Key Auto-Rotating API Pool<br/>(Failover & Round-Robin)"]
+        Nemotron["NVIDIA Nemotron 3.5 Lightning 30B<br/>(nvidia/nemotron-3.5-lightning-30b-a3b)"]
+        KeyPool --> Nemotron
+    end
+
+    %% ==========================================
+    %% DATAFLOWS & CONNECTIONS
+    %% ==========================================
+    UI ==>|HTTPS / REST API / WSS| API_GW
+    CronRunner -.->|HTTP GET /health (Every 10 min)| API_GW
+    AuraWarmup -.->|Cypher Ping MATCH n RETURN count n| GraphDB
+
+    ClaimUpload -->|1. Upload Raw 50MB+ Dataset| ObjectStore
+    ClaimUpload -->|2. Trigger Task with URI Reference| Broker
+
+    Worker -->|3. Pull File Stream into Buffer| ObjectStore
+    Worker -->|4. Execute ECL Pipeline| Cognee_Engine
+
+    Cognify <==>|Steer Extraction Prompts| Nemotron
+    Load -->|Store Session & Metadata| RelDB
+    Load -->|Serialize index_fields Embeddings| VecDB
+    Load -->|Persist Topology & Labeled Edges| GraphDB
+
+    %% Query / Hybrid Search Flow
+    API_GW -->|Hybrid GraphRAG Search| Cognee_Engine
+    Cognee_Engine -->|1. Vector Similarity Match| VecDB
+    Cognee_Engine -->|2. Multi-Hop Cypher Traversal| GraphDB
+    Cognee_Engine -->|3. Grounded Context Synthesis| Nemotron
+    Nemotron -->|Stream Synthesized Response| API_GW
+    API_GW -->|Visual Graph Data + AI Answer| UI
+
+    %% Styling
+    classDef client fill:#1e1e2f,stroke:#6366f1,stroke-width:2px,color:#fff;
+    classDef gateway fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    classDef storage fill:#1e293b,stroke:#f59e0b,stroke-width:2px,color:#fff;
+    classDef workflow fill:#134e4a,stroke:#14b8a6,stroke-width:2px,color:#fff;
+    classDef cognee fill:#311042,stroke:#c084fc,stroke-width:2px,color:#fff;
+    classDef db fill:#1e1b4b,stroke:#818cf8,stroke-width:2px,color:#fff;
+    classDef ai fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff;
+
+    class UI,GraphViz,Console client;
+    class API_GW,RateLimiter,AuthModule,ClaimUpload gateway;
+    class ObjectStore storage;
+    class Broker,Worker workflow;
+    class Extract,Cognify,Load cognee;
+    class RelDB,VecDB,GraphDB db;
+    class KeyPool,Nemotron ai;
+```
 
 ---
 
