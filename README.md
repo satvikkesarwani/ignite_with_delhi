@@ -65,14 +65,14 @@ npm run dev
 ### 🅰️ Deploy Backend to Render (Free)
 
 1. Go to [dashboard.render.com](https://dashboard.render.com/) and click **New +** -> **Web Service**.
-2. Connect your GitHub repository: `satvikkesarwani-dotcom/ignite_with_delhi`.
+2. Connect your GitHub repository: `satvikkesarwani/ignite_with_delhi`.
 3. Fill in these settings:
    - **Name**: `ignite-backend` (or your hackathon project name)
    - **Root Directory**: `backend` _(CRITICAL)_
    - **Runtime**: `Node`
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
-   - **Instance Type**: `Free`
+   - **Plan**: `Free`
 4. Add Environment Variable (Optional for self-ping):
    - `RENDER_EXTERNAL_URL` = `https://your-service-name.onrender.com`
 5. Click **Create Web Service**. Copy your backend URL once live!
@@ -81,7 +81,7 @@ npm run dev
 
 ### 🅱️ Deploy Frontend to Vercel (Free)
 
-1. Go to [vercel.com/new](https://vercel.com/new) and import `satvikkesarwani-dotcom/ignite_with_delhi`.
+1. Go to [vercel.com/new](https://vercel.com/new) and import `satvikkesarwani/ignite_with_delhi`.
 2. In Project Settings:
    - **Root Directory**: Click edit and select `frontend` _(CRITICAL)_
    - **Framework Preset**: `Vite`
@@ -97,6 +97,7 @@ Render free tier sleeps after 15 minutes of inactivity (causing 50s+ cold starts
 
 1. **GitHub Actions Workflow** (Automated):
    - In your GitHub repo, go to **Settings** -> **Secrets and variables** -> **Actions** -> **New repository secret**.
+   - Direct link: [https://github.com/satvikkesarwani/ignite_with_delhi/settings/secrets/actions](https://github.com/satvikkesarwani/ignite_with_delhi/settings/secrets/actions)
    - Name: `RENDER_BACKEND_URL`
    - Value: `https://your-backend-name.onrender.com`
    - The workflow will automatically ping your backend every 10 minutes!

@@ -79,7 +79,7 @@ export default function App() {
           </div>
         </div>
         <a
-          href="https://github.com/satvikkesarwani-dotcom/ignite_with_delhi"
+          href="https://github.com/satvikkesarwani/ignite_with_delhi"
           target="_blank"
           rel="noreferrer"
           className="repo-pill"
