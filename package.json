@@ -2,21 +2,24 @@
   "name": "ignite-with-delhi",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Hackathon Ready Monorepo (React + Vite + Express + Render + Vercel + CI/CD)",
   "scripts": {
     "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build",
-    "lint": "eslint . --ext .js,.jsx",
-    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{js,jsx,json,css,md,html,yml}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,json,css,md,html,yml}\"",
+    "test": "npm --prefix backend run test && npm run build",
     "keep-alive": "node scripts/keep_alive.js",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "lint-staged": {
     "*.{js,jsx}": [
+      "eslint --fix",
       "prettier --write"
     ],
     "*.{json,css,md,html,yml}": [
@@ -27,9 +30,12 @@
     "@eslint/js": "^9.21.0",
     "concurrently": "^9.1.2",
     "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "prettier": "^3.5.2"
+    "prettier": "^3.5.2",
+    "vercel": "^59.23.1"
   }
 }

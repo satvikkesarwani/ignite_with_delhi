@@ -22,10 +22,7 @@ function ping() {
   const client = healthEndpoint.startsWith('https') ? https : http;
 
   const req = client.get(healthEndpoint, (res) => {
-    let rawData = '';
-    res.on('data', (chunk) => {
-      rawData += chunk;
-    });
+    res.on('data', () => {});
     res.on('end', () => {
       const duration = Date.now() - startTime;
       console.log(

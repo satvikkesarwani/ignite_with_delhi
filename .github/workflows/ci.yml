@@ -8,7 +8,7 @@ on:
 
 jobs:
   code-quality:
-    name: Lint & Build Verification
+    name: Lint, Syntax & Build Verification
     runs-on: ubuntu-latest
 
     steps:
@@ -30,8 +30,11 @@ jobs:
       - name: 📦 Install Backend Dependencies
         run: npm --prefix backend ci || npm --prefix backend install
 
-      - name: 🧹 Verify Code Formatting
+      - name: 🧹 Verify Code Formatting (Prettier)
         run: npm run format:check
 
-      - name: 🏗️ Verify Frontend Production Build
-        run: npm run build
+      - name: 🔍 Run Linter (ESLint)
+        run: npm run lint
+
+      - name: 🧪 Run Tests & Production Build
+        run: npm test

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export default function App() {
   const defaultApiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
@@ -38,9 +38,18 @@ export default function App() {
   }, [apiUrl]);
 
   useEffect(() => {
-    checkHealth();
-    const interval = setInterval(checkHealth, 15000);
-    return () => clearInterval(interval);
+    let isSubscribed = true;
+    const runCheck = async () => {
+      if (isSubscribed) {
+        await checkHealth();
+      }
+    };
+    runCheck();
+    const interval = setInterval(runCheck, 15000);
+    return () => {
+      isSubscribed = false;
+      clearInterval(interval);
+    };
   }, [checkHealth]);
 
   const sendApiRequest = async () => {
@@ -315,8 +324,11 @@ export default function App() {
       <div className="hack-tip">
         <strong>🔥 Hackathon Fast-Track Tip:</strong> Whenever you code new features tomorrow, just
         save and run{' '}
-        <code>git add . && git commit -m "feat: added new feature" && git push origin main</code>.
-        Both Vercel and Render will auto-deploy within 90 seconds without manual intervention!
+        <code>
+          git add . &amp;&amp; git commit -m &apos;feat: added new feature&apos; &amp;&amp; git push
+          origin main
+        </code>
+        . Both Vercel and Render will auto-deploy within 90 seconds without manual intervention!
       </div>
     </div>
   );
