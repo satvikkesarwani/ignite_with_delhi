@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "description": "Hackathon Ready Monorepo (React + Vite + Express + Render + Vercel + CI/CD)",
   "scripts": {
     "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
