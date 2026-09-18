@@ -1,437 +1,432 @@
-# 📚 The Master Blueprint: Neo4j + Cognee + Render Workflows
+# 📚 Enterprise Setup & Architecture Blueprint: Cognitive AI Memory Systems with Cognee, Neo4j & Render Workflows
 
-> **Hackathon Architecture Master Guide**  
-> This comprehensive study guide provides a deep-dive analysis, complete technical reference, and production-grade implementation patterns for **Neo4j**, **Cognee**, and **Render Workflows**. Use this guide to maximize your team's velocity and build an industry-grade GraphRAG system during the hackathon.
-
----
-
-## 🧭 Table of Contents
-
-1. [The Triumvirate: Why These 3 Technologies?](#1-the-triumvirate-why-these-3-technologies)
-2. [Deep Dive 1: Neo4j (The Knowledge Graph Core)](#2-deep-dive-1-neo4j-the-knowledge-graph-core)
-3. [Deep Dive 2: Cognee (AI Memory & Graph-RAG Engine)](#3-deep-dive-2-cognee-ai-memory--graph-rag-engine)
-4. [Deep Dive 3: Render Workflows (Distributed Durable Execution)](#4-deep-dive-3-render-workflows-distributed-durable-execution)
-5. [End-to-End Master Pipeline (Code Implementation)](#5-end-to-end-master-pipeline-code-implementation)
-6. [3 Winning Hackathon Project Architectures](#6-3-winning-hackathon-project-architectures)
-7. [Cypher & Cognee Cheatsheet](#7-cypher--cognee-cheatsheet)
+> **Enterprise Hackathon Reference Document**  
+> Synthesized from the official **Enterprise Cognitive Architecture Blueprint**, covering the **Extract-Cognify-Load (ECL)** design pattern, **Neo4j AuraDB** graph integration, **Render Workflows** serverless task orchestration, production edge-case bugfixes, and real-world project archetypes.
 
 ---
 
-# 1. The Triumvirate: Why These 3 Technologies?
+## 📑 Table of Contents
 
-Modern Generative AI has hit the **"Context Wall"**:
+1. [Executive Summary & Architectural Synergy](#1-executive-summary--architectural-synergy)
+2. [Triple-Store Memory Tier (The ECL Pattern)](#2-triple-store-memory-tier-the-ecl-pattern)
+3. [Neo4j AuraDB: Setup, Cypher & Python Driver](#3-neo4j-auradb-setup-cypher--python-driver)
+4. [Cognee Engine Configuration & Production Runtime Tuning](#4-cognee-engine-configuration--production-runtime-tuning)
+5. [Render Workflows: Distributed Serverless Task Execution](#5-render-workflows-distributed-serverless-task-execution)
+6. [4 High-Impact Project Archetypes](#6-4-high-impact-project-archetypes)
+7. [Production Declarative Blueprint (`render.yaml`)](#7-production-declarative-blueprint-renderyaml)
+8. [End-to-End Memory Validation Script](#8-end-to-end-memory-validation-script)
+9. [Critical Bug Fixes & Edge Cases (Must Read!)](#9-critical-bug-fixes--edge-cases-must-read)
 
-- **Traditional Vector RAG Flaws**: Slices text into disconnected chunks. When asked multi-hop questions (_"Who is the ultimate beneficial owner of the shell company that received funds from Vendor X?"_), Vector RAG fails because relationships across paragraphs are lost.
-- **Hallucinations**: Vector search only measures lexical/semantic proximity, not factual connection.
+---
 
-### How the Trio Solves This:
+# 1. Executive Summary & Architectural Synergy
+
+Modern AI applications are shifting from stateless prompt-response loops to **persistent, multi-agent cognitive systems** requiring long-term memory across extended sessions.
+
+### The Three Core Components:
+
+1. **Neo4j AuraDB**: Fully managed, native graph database serving as the persistent structural topology for relational facts, entities, and conceptual dependencies. Enables high-performance graph traversals for complex multi-hop reasoning.
+2. **Cognee**: Open-source AI memory engine operating on an **Extract-Cognify-Load (ECL)** design pattern. Converts unstructured data (documents, code, chats) into interconnected knowledge graphs paired with vector search.
+3. **Render Workflows**: Serverless distributed execution engine designed for long-running, multi-step backend operations, multi-agent orchestration, and batch data processing (scales to zero when idle, guarantees execution for up to 24 hours).
+
+### Key Architectural Advantages:
+
+- **Hallucination Reduction**: Standard RAG relies solely on vector similarity, missing multi-hop relationships. Cognee constructs deterministically queryable graphs in Neo4j alongside vector indices for grounded hybrid retrievals.
+- **Concurrency & No File-Locks**: Local file-based graph engines (like Kuzu) suffer from file-lock contention (`Could not set lock on file`) under parallel worker loads. Routing Cognee to hosted Neo4j AuraDB eliminates lock contention.
+- **Compute Decoupling**: Heavy entity extraction (taking 60–180s) is offloaded to Render Workflows ephemeral workers, preventing user-facing HTTP 504 gateway timeouts.
+
+---
+
+# 2. Triple-Store Memory Tier (The ECL Pattern)
+
+Cognee separates memory ingestion into 3 distinct runtime phases:
 
 ```mermaid
 graph TD
-    RawData["Raw Data / Documents / Invoices / PDFs"] -->|Triggered by User| RenderWorkflow["Render Workflows (Durable Orchestration)"]
+    Raw["Raw Input: Text, PDFs, Markdown, GitHub Code"] -->|1. EXTRACT| Extractor["Cognee Extractor Layer"]
+    Extractor -->|2. COGNIFY| Processor["Semantic Chunking + Entity/Relation Extraction + Embeddings"]
 
-    subgraph Execution_Layer["Distributed Compute Layer"]
-        RenderWorkflow -->|Task 1: Ingest & Chunk| Cognee["Cognee (AI Memory Layer)"]
-        Cognee -->|Task 2: Extract Entities & Relations| NvidiaLLM["NVIDIA Nemotron 3.5 (LLM Engine)"]
-        Cognee -->|Task 3: Construct Graph & Embeddings| Neo4j["Neo4j AuraDB (Knowledge Graph)"]
-    end
-
-    subgraph Retrieval_Layer["Query & Reasoning Layer"]
-        UserQuery["User Prompt / Query"] --> ExpressAPI["Express Backend Gateway"]
-        ExpressAPI <-->|Hybrid Vector + Cypher Graph Search| Neo4j
-        ExpressAPI -->|Multi-Hop Answer with Visual Subgraph| FrontendUI["React Glassmorphic UI"]
+    subgraph Triple_Store["3. LOAD (Triple-Store Storage Engine)"]
+        Processor -->|Relational State & Metadata| SQLite_PG["Relational DB (SQLite / Postgres)"]
+        Processor -->|Chunk Embeddings| LanceDB_PGV["Vector Store (LanceDB / PGVector)"]
+        Processor -->|Entity-Relationship Topology| Neo4jAura["Graph Database (Neo4j AuraDB)"]
     end
 ```
 
-1. **Neo4j**: Acts as the single source of truth for **relationships**, entities, and interconnected nodes.
-2. **Cognee**: Automates the pipeline of converting unstructured text into structured Knowledge Graphs and vector indexes.
-3. **Render Workflows**: Prevents HTTP timeouts (which occur during 60-120s entity extraction) by running the pipeline as a scalable, durable background DAG.
+1. **Extract**: Ingests raw data from strings, local files, PDFs, databases, or remote GitHub repositories.
+2. **Cognify**: Splits content into semantically coherent chunks, identifies core domain entities, extracts typed relationships via LLM, and computes vector embeddings.
+3. **Load**: Persists structured data across three complementary stores:
+   - **Relational DB** (SQLite / Postgres): Tracks application state, datasets, user access control, and metadata.
+   - **Vector DB** (LanceDB / PGVector): Stores chunk embeddings for similarity search.
+   - **Graph DB** (Neo4j): Stores entity-relationship topologies for multi-hop graph retrieval.
 
 ---
 
-# 2. Deep Dive 1: Neo4j (The Knowledge Graph Core)
+# 3. Neo4j AuraDB: Setup, Cypher & Python Driver
 
-Neo4j is the world's leading **Labeled Property Graph (LPG)** database.
+### Provisioning AuraDB Free Tier:
 
-### Core Concepts:
+1. Console: Go to [console.neo4j.io](https://console.neo4j.io/) and choose **AuraDB Free**.
+2. Create Database: Choose a blank database and name it (e.g., `cognee-agent-memory`).
+3. Credentials: Save the downloaded credentials text file immediately (contains password and URI).
+4. Protocol: Connects via Bolt with TLS: `neo4j+s://<instance-id>.databases.neo4j.io`.
 
-- **Node**: An entity (e.g., `(:Person)`, `(:Company)`, `(:Transaction)`, `(:Drug)`).
-- **Label**: The category or type of the node.
-- **Relationship (Edge)**: Directed connection between nodes (e.g., `-[:OWNS]->`, `-[:TRANSFERRED_FUNDS]->`, `-[:CAUSES_SYMPTOM]->`).
-- **Properties**: Key-value pairs stored directly on nodes or relationships (e.g., `{ amount: 50000, timestamp: "2026-09-18" }`).
-
-### Connecting to Neo4j AuraDB (Cloud):
-
-Sign up at [neo4j.com/cloud/aura-free/](https://neo4j.com/cloud/aura-free/) to get your free managed instance.
-
-#### Environment Variables (`.env`):
-
-```env
-NEO4J_URI=neo4j+s://<YOUR-INSTANCE-ID>.databases.neo4j.io
-NEO4J_USERNAME=neo4j
-NEO4J_PASSWORD=<YOUR-GENERATED-PASSWORD>
-```
-
-#### Node.js Connection Helper (`backend/neo4j.js`):
-
-```javascript
-import neo4j from 'neo4j-driver';
-
-const driver = neo4j.driver(
-  process.env.NEO4J_URI || 'neo4j+s://your-instance.databases.neo4j.io',
-  neo4j.auth.basic(
-    process.env.NEO4J_USERNAME || 'neo4j',
-    process.env.NEO4J_PASSWORD || 'your-password'
-  )
-);
-
-export async function runQuery(cypherQuery, params = {}) {
-  const session = driver.session();
-  try {
-    const result = await session.run(cypherQuery, params);
-    return result.records.map((record) => record.toObject());
-  } finally {
-    await session.close();
-  }
-}
-
-export async function verifyConnection() {
-  const serverInfo = await driver.getServerInfo();
-  console.log('✅ Neo4j Connected:', serverInfo.address);
-  return serverInfo;
-}
-```
-
-#### Python Connection (`python/neo4j_client.py`):
+### Native Python Driver Integration (`neo4j>=5.18.0`):
 
 ```python
-from neo4j import GraphDatabase
 import os
+from neo4j import GraphDatabase, RoutingControl
 
-URI = os.getenv("NEO4J_URI")
-AUTH = (os.getenv("NEO4J_USERNAME", "neo4j"), os.getenv("NEO4J_PASSWORD"))
+NEO4J_URI = os.getenv("GRAPH_DATABASE_URL", "neo4j+s://xxxxxx.databases.neo4j.io")
+NEO4J_USER = os.getenv("GRAPH_DATABASE_USERNAME", "neo4j")
+NEO4J_PASSWORD = os.getenv("GRAPH_DATABASE_PASSWORD", "your-password")
 
-def execute_cypher(query, parameters=None):
-    with GraphDatabase.driver(URI, auth=AUTH) as driver:
-        with driver.session() as session:
-            result = session.run(query, parameters or {})
-            return [record.data() for record in result]
-```
+class Neo4jClient:
+    def __init__(self, uri, auth):
+        self.driver = GraphDatabase.driver(uri, auth=auth)
 
----
+    def close(self):
+        self.driver.close()
 
-# 3. Deep Dive 2: Cognee (AI Memory & Graph-RAG Engine)
+    def verify_connectivity(self):
+        self.driver.verify_connectivity()
+        print("✅ Successfully connected to Neo4j AuraDB.")
 
-**Cognee** (`cognee.ai`) bridges the gap between LLMs and databases. It handles chunking, entity extraction, ontology mapping, vector embedding, and graph ingestion automatically.
+    def add_entity_relationship(self, source_name: str, target_name: str, rel_type: str):
+        query = (
+            f"MERGE (a:Entity {{name: $source_name}}) "
+            f"MERGE (b:Entity {{name: $target_name}}) "
+            f"MERGE (a)-[r:{rel_type}]->(b) "
+            f"RETURN a.name, type(r), b.name"
+        )
+        records, summary, keys = self.driver.execute_query(
+            query,
+            source_name=source_name,
+            target_name=target_name,
+            database_="neo4j",
+            routing_=RoutingControl.WRITE,
+        )
+        return records
 
-### The 3 Core Operations:
-
-1. **`cognee.add(data)`**: Accepts raw strings, files (PDFs, Markdown, TXT), or URLs.
-2. **`cognee.cognify()`**:
-   - Calls the LLM to identify entities and relationships.
-   - Generates vector embeddings for semantic similarity.
-   - Populates nodes and edges in Neo4j and vector embeddings in the vector index.
-3. **`cognee.search(query_text)` / `cognee.recall()`**: Performs a hybrid traversal: searches relevant vector embeddings, traverses adjacent graph nodes, and returns contextual graph context to the LLM.
-
-### Complete Cognee Setup with Neo4j & NVIDIA NIM:
-
-#### 1. Installation:
-
-```bash
-pip install "cognee[neo4j]"
-```
-
-#### 2. Cognee Configuration (`.env`):
-
-```env
-# LLM Provider Configuration (Using NVIDIA Nemotron 3.5 30B)
-LLM_PROVIDER=openai
-LLM_API_KEY=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
-LLM_BASE_URL=https://integrate.api.nvidia.com/v1
-LLM_MODEL=nvidia/nemotron-3.5-lightning-30b-a3b
-
-# Neo4j Graph Database Configuration
-GRAPH_DATABASE_PROVIDER=neo4j
-GRAPH_DATABASE_URL=neo4j+s://<YOUR-INSTANCE-ID>.databases.neo4j.io
-GRAPH_DATABASE_USERNAME=neo4j
-GRAPH_DATABASE_PASSWORD=<YOUR-AURA-PASSWORD>
-
-# Vector Store (Defaults to LanceDB or Qdrant)
-VECTOR_DB_PROVIDER=lancedb
-```
-
-#### 3. Python Pipeline Implementation (`worker/graph_pipeline.py`):
-
-```python
-import cognee
-import asyncio
-import os
-
-async def build_knowledge_graph(document_text: str):
-    print("📥 Ingesting document into Cognee...")
-    # Step 1: Add unstructured text or file
-    await cognee.add(document_text)
-
-    print("🧠 Cognifying (Extracting entities & building Neo4j Graph)...")
-    # Step 2: Cognify extracts nodes, relations and builds the graph
-    await cognee.cognify()
-    print("✅ Neo4j Knowledge Graph successfully constructed!")
-
-async def ask_graph_memory(question: str):
-    print(f"🔍 Searching Graph Memory for: {question}")
-    # Step 3: Hybrid search over Graph + Vectors
-    search_results = await cognee.search(question)
-    return search_results
-
-# Example Execution
 if __name__ == "__main__":
-    sample_data = """
-    Dr. Maya Lin leads the Oncology Research Team at BioGenix Labs in Boston.
-    BioGenix Labs developed the experimental kinase inhibitor compound 'BGX-901'.
-    Clinical trials showed BGX-901 strongly inhibits the BRAF-V600E mutation.
-    However, when combined with Warfarin, it significantly elevates blood plasma toxicity.
-    """
-    asyncio.run(build_knowledge_graph(sample_data))
-
-    query = "What happens if a patient taking Warfarin is prescribed BGX-901?"
-    results = asyncio.run(ask_graph_memory(query))
-    for r in results:
-        print("Result:", r)
+    client = Neo4jClient(NEO4J_URI, (NEO4J_USER, NEO4J_PASSWORD))
+    client.verify_connectivity()
+    client.add_entity_relationship("Agent_Alpha", "Neo4j_Graph", "MAINTAINS")
+    client.close()
 ```
 
 ---
 
-# 4. Deep Dive 3: Render Workflows (Distributed Durable Execution)
+# 4. Cognee Engine Configuration & Production Runtime Tuning
 
-**Render Workflows** (`render.com/workflows`) is Render's native code-first execution engine for compute-heavy, asynchronous, and multi-step background tasks.
+### Required Dependencies (`requirements.txt`):
 
-### Why Render Workflows is Essential for Cognee:
-
-- Calling `cognee.cognify()` on multiple documents or datasets takes between **30 to 180 seconds**.
-- Standard web requests fail with HTTP 504 timeouts.
-- Render Workflows executes these jobs outside your web server on isolated compute with **automatic retries, step checkpointing, and parallel fan-out**.
-
-### Core Architecture:
-
-- **`Workflows`**: The workflow application container.
-- **`@app.task`**: Decorator that turns a standard function into a durable, retriable cloud task.
-- **`TaskContext` (`ctx`)**: Automatically injected as the first argument. Allows spawning child tasks via `ctx.run()`, managing fan-out/fan-in parallel workers.
-
-### Implementation with Python SDK (`workflows/data_pipeline.py`):
-
-#### 1. Install SDK:
-
-```bash
-pip install render
+```txt
+cognee[neo4j]>=1.5.4
+neo4j>=5.18.0
+render-sdk>=0.1.0
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+python-dotenv>=1.0.1
 ```
 
-#### 2. Workflow Script:
+### Complete `.env` Specification:
+
+```env
+# Primary LLM & Embedding (Compatible with OpenAI or NVIDIA NIM)
+LLM_PROVIDER="openai"
+LLM_MODEL="gpt-4o-mini"
+LLM_API_KEY="your-api-key-here"
+# If using NVIDIA NIM:
+# LLM_BASE_URL="https://integrate.api.nvidia.com/v1"
+# LLM_MODEL="nvidia/nemotron-3.5-lightning-30b-a3b"
+
+EMBEDDING_PROVIDER="openai"
+EMBEDDING_MODEL="text-embedding-3-small"
+EMBEDDING_API_KEY="your-api-key-here"
+
+# Application State Database (Relational)
+DB_PROVIDER="sqlite"
+DB_NAME="cognee_db"
+
+# Vector Store Engine
+VECTOR_DB_PROVIDER="lancedb"
+
+# Graph Store Engine (Neo4j AuraDB Integration)
+GRAPH_DATABASE_PROVIDER="neo4j"
+GRAPH_DATABASE_URL="neo4j+s://xxxxxx.databases.neo4j.io"
+GRAPH_DATABASE_USERNAME="neo4j"
+GRAPH_DATABASE_PASSWORD="your-auradb-password"
+
+# Multi-Tenancy & Dataset Handler (CRITICAL SETTING)
+GRAPH_DATASET_DATABASE_HANDLER="neo4j_aura_dev"
+ENABLE_BACKEND_ACCESS_CONTROL="false"
+
+# Operational Performance Flags
+CACHING="true"
+AUTO_FEEDBACK="false"           # Set false in high-throughput hackathon demo to save tokens
+DATASET_QUEUE_ENABLED="true"    # Enforces max 6 concurrent datasets to avoid lock leaks
+```
+
+### Framework Integrations Supported by Cognee:
+
+- **LangGraph** (`cognee-integration-langgraph`): Graph-state persistence across multi-step node transitions.
+- **CrewAI** (`cognee-integration-crewai`): Shared crew-level memory graphs across autonomous agent roles.
+- **Claude Agent SDK** (`cognee-integration-claude`): Native tool-use hooks for persistent session memory.
+- **Code Graph** (`SearchType.CODE`): Indexes entire GitHub repos into typed symbols/routes without using LLM tokens.
+
+---
+
+# 5. Render Workflows: Distributed Serverless Task Execution
+
+### Compute Primitives Comparison on Render:
+
+| Service Type          | Traffic Handling          | Lifecycle Model        | Scale-to-Zero     | Max Execution       | Primary Use Case                                         |
+| :-------------------- | :------------------------ | :--------------------- | :---------------- | :------------------ | :------------------------------------------------------- |
+| **Web Service**       | Inbound Public HTTP       | Continuous             | No                | Continuous          | APIs, Dashboards, Webhooks                               |
+| **Background Worker** | Internal Queue Polling    | Continuous             | No                | Continuous          | Celery / BullMQ workers                                  |
+| **Cron Job**          | None (Scheduled)          | Ephemeral              | Yes               | 12 Hours            | Scheduled DB sync, Nightly cleanup                       |
+| **Render Workflow**   | **Triggered via SDK/API** | **On-Demand Task Run** | **Yes (in secs)** | **24 Hours / Task** | **Distributed ETL, Cognee Ingestion, Multi-Agent Loops** |
+
+### Defining & Triggering Render Workflows:
+
+#### Task Definition (`workflow_tasks.py`):
 
 ```python
-from render import Workflows, TaskContext
 import asyncio
+from render import Render
+import cognee
 
-app = Workflows()
+render_client = Render()
 
-@app.task
-def extract_and_cognify_task(ctx: TaskContext, document_payload: dict):
+async def process_document_memory_task(document_url: str, dataset_name: str):
     """
-    Background durable task: Parses text and runs Cognee graph construction
+    Long-running background task executed on Render Workflows.
+    Ingests text, builds knowledge graph in Neo4j, updates vector store.
     """
-    doc_id = document_payload.get("id")
-    content = document_payload.get("text")
+    print(f"Starting memory ingestion task for dataset: {dataset_name}")
 
-    print(f"Executing background task for Doc #{doc_id}...")
+    # Extract & Cognify into Neo4j
+    await cognee.add(document_url, dataset_name=dataset_name)
+    await cognee.cognify(dataset_name=dataset_name)
 
-    # Import inside task to keep cold-starts fast
-    import cognee
-
-    async def run_pipeline():
-        await cognee.add(content)
-        await cognee.cognify()
-
-    asyncio.run(run_pipeline())
-
+    # Test query to confirm graph indexing
+    search_results = await cognee.search(
+        query_text="What are the key entities?",
+        dataset_name=dataset_name
+    )
+    print(f"✅ Ingestion complete. Extracted {len(search_results)} primary nodes.")
     return {
-        "docId": doc_id,
-        "status": "COMPLETED",
-        "graphIndexed": True
+        "status": "SUCCESS",
+        "dataset": dataset_name,
+        "entities_processed": len(search_results)
     }
-
-@app.task
-def batch_document_workflow(ctx: TaskContext, document_list: list):
-    """
-    Orchestrator task: Distributes multiple documents across parallel workers (Fan-Out)
-    """
-    print(f"Dispatching {len(document_list)} documents across Render parallel compute...")
-
-    # Fan-out: Execute task concurrently for each document
-    results = []
-    for doc in document_list:
-        job = ctx.run(extract_and_cognify_task, doc)
-        results.append(job)
-
-    return {"totalBatched": len(results), "status": "ALL_TASKS_DISPATCHED"}
 ```
 
-#### 3. Triggering from Web Server (Node.js or Python):
+#### Triggering Non-Blockingly from Web API (`trigger_app.py`):
 
-You can trigger a Render Workflow run via simple HTTP POST to the Render API using your Render API key:
+```python
+from render import Render
+render = Render()
 
-```bash
-POST https://api.render.com/v1/workflows/{workflow_id}/runs
-Authorization: Bearer <RENDER_API_KEY>
-Content-Type: application/json
-
-{
-  "task": "batch_document_workflow",
-  "input": { "document_list": [...] }
-}
+def handle_user_upload(file_url: str, user_id: str):
+    # Triggers background task without blocking web thread
+    started_run = render.workflows.start_task(
+        "agent-memory-pipeline/process_document_memory_task",
+        [file_url, f"user_dataset_{user_id}"]
+    )
+    print(f"Dispatched task to Render Workflows. Run ID: {started_run.id}")
+    return {"message": "Processing started in background", "run_id": started_run.id}
 ```
 
 ---
 
-# 5. End-to-End Master Pipeline (Code Implementation)
+# 6. 4 High-Impact Project Archetypes
 
-Here is how you expose this entire flow to your React frontend:
+These are the 4 official architectural archetypes outlined for this stack:
 
-### Backend Express Route (`backend/server.js`):
+### 1. 🛡️ Autonomous Multi-Agent Software Auditor
 
-```javascript
-// Endpoint: Query Neo4j Graph directly for visual UI representation
-app.get('/api/graph/explore', async (req, res) => {
-  try {
-    const cypher = `
-      MATCH (n)-[r]->(m)
-      RETURN 
-        n.id AS sourceId, labels(n)[0] AS sourceType, n.name AS sourceName,
-        type(r) AS relationType,
-        m.id AS targetId, labels(m)[0] AS targetType, m.name AS targetName
-      LIMIT 100
-    `;
-    const records = await runQuery(cypher);
+- **Flow**: User submits GitHub repo URL -> Render Workflow clones repository -> Calls Cognee's GitHub code-graph connector (`SearchType.CODE`) to map symbols, dependencies, and storage calls in Neo4j **without using LLM tokens**.
+- **Query**: Specialized agents run Cypher queries to detect circular dependencies, security vulnerabilities, and dead code paths across entire repos.
 
-    // Format nodes and edges for React visualizer
-    const nodesMap = new Map();
-    const edges = [];
+### 2. 🌐 Continuous Enterprise Knowledge Graph (ETL)
 
-    records.forEach((row) => {
-      if (!nodesMap.has(row.sourceId)) {
-        nodesMap.set(row.sourceId, {
-          id: row.sourceId,
-          label: row.sourceName,
-          type: row.sourceType,
-        });
-      }
-      if (!nodesMap.has(row.targetId)) {
-        nodesMap.set(row.targetId, {
-          id: row.targetId,
-          label: row.targetName,
-          type: row.targetType,
-        });
-      }
-      edges.push({
-        source: row.sourceId,
-        target: row.targetId,
-        label: row.relationType,
-      });
-    });
+- **Flow**: Connectors poll Notion, Google Drive, and Slack on a schedule -> Render Workflows manages parallel ingestion tasks routing data into Cognee's ECL pipeline -> Entities mapped to centralized Neo4j database.
+- **Value**: Prevents knowledge fragmentation across disconnected SaaS tools.
 
-    res.json({
-      success: true,
-      nodes: Array.from(nodesMap.values()),
-      edges,
-    });
-  } catch (err) {
-    res.status(500).json({ success: false, error: err.message });
-  }
-});
+### 3. 💬 Adaptive Customer Support System with Long-Term User Memory
+
+- **Flow**: Fast vector search serves instant responses -> Background Render Workflow reads conversation history, extracts user preferences/decisions, and updates user node in Neo4j.
+- **Value**: Agents recall multi-month customer context, past tickets, and preference changes.
+
+### 4. ⚖️ Regulatory & Legal Document Graph Analyzer
+
+- **Flow**: Ingests 200+ page contracts and regulatory frameworks -> Render Workflows processes documents in parallel -> Cognee extracts legal clauses, entities, and cross-references in Neo4j.
+- **Query**: Run multi-hop queries: _"Find all sub-clauses affected by regulatory updates in Section 4"_.
+
+---
+
+# 7. Production Declarative Blueprint (`render.yaml`)
+
+This specification defines the multi-service topology for Cognee + Neo4j + Render Workflows:
+
+```yaml
+services:
+  # 1. User-Facing Web API (FastAPI / Express)
+  - type: web
+    name: agent-memory-api
+    runtime: python
+    plan: starter
+    buildCommand: 'pip install -r requirements.txt'
+    startCommand: 'uvicorn server:app --host 0.0.0.0 --port $PORT'
+    envVars:
+      - key: PYTHON_VERSION
+        value: '3.11.8'
+      - key: ENVIRONMENT
+        value: production
+      - fromGroup: cognee-neo4j-credentials
+
+  # 2. Distributed Task Execution Tier (Render Workflows)
+  - type: workflow
+    name: agent-memory-pipeline
+    runtime: python
+    plan: flex
+    buildCommand: 'pip install -r requirements.txt'
+    envVars:
+      - key: PYTHON_VERSION
+        value: '3.11.8'
+      - key: DATASET_QUEUE_ENABLED
+        value: 'true'
+      - fromGroup: cognee-neo4j-credentials
+
+# Shared Environment Variable Group
+envVarGroups:
+  - name: cognee-neo4j-credentials
+    envVars:
+      - key: LLM_PROVIDER
+        value: 'openai'
+      - key: LLM_MODEL
+        value: 'gpt-4o-mini'
+      - key: LLM_API_KEY
+        sync: false
+      - key: EMBEDDING_PROVIDER
+        value: 'openai'
+      - key: EMBEDDING_MODEL
+        value: 'text-embedding-3-small'
+      - key: EMBEDDING_API_KEY
+        sync: false
+      - key: GRAPH_DATABASE_PROVIDER
+        value: 'neo4j'
+      - key: GRAPH_DATABASE_URL
+        sync: false # e.g. neo4j+s://xxxxxx.databases.neo4j.io
+      - key: GRAPH_DATABASE_USERNAME
+        value: 'neo4j'
+      - key: GRAPH_DATABASE_PASSWORD
+        sync: false
+      - key: GRAPH_DATASET_DATABASE_HANDLER
+        value: 'neo4j_aura_dev'
+      - key: ENABLE_BACKEND_ACCESS_CONTROL
+        value: 'false'
 ```
 
 ---
 
-# 6. 3 Winning Hackathon Project Architectures
+# 8. End-to-End Memory Validation Script
 
-### 🥇 Project 1: "FinDetective" — Financial Laundering & Shell Network Tracing
+Save this as `scripts/test_memory.py` to test your pipeline:
 
-- **Dataset**: Panama Papers, synthetic wire transfer logs, company registration PDFs.
-- **Workflow**:
-  1. User uploads a zip file of 20 shell company transaction logs.
-  2. **Render Workflow** parallelizes document extraction across 5 workers.
-  3. **Cognee** maps accounts, directors, and banks in Neo4j.
-  4. User runs: _"Find circular transactions between Director A and Beneficiary B"_.
-  5. UI highlights the multi-hop fraud loop in glowing neon on the graph!
+```python
+import os
+import asyncio
+from dotenv import load_dotenv
 
-### 🥈 Project 2: "PharmaGraph AI" — Drug Discovery & Adverse Reaction Predictor
+# Load environment variables prior to importing cognee
+load_dotenv(override=True)
 
-- **Dataset**: FDA drug labels, PubMed clinical papers, gene interaction reports.
-- **Workflow**:
-  1. Ingests research abstracts on kinase inhibitors and metabolic enzymes.
-  2. **Cognee** builds: `(Compound) -[:INHIBITS]-> (Protein) -[:MUTATED_IN]-> (Disease)`.
-  3. Doctor enters a patient's multi-drug prescription.
-  4. The engine traverses the graph to catch lethal 3-hop interactions missed by standard vector RAG.
+import cognee
+from cognee.modules.search.types import SearchType
 
-### 🥉 Project 3: "DevOps Root-Cause Detective" — Autonomous Incident Resolution
+async def run_agent_memory_validation():
+    print("=========================================================")
+    print(" Initializing Cognee + Neo4j Agent Memory Pipeline ")
+    print("=========================================================")
 
-- **Dataset**: Kubernetes event logs, GitHub PR diffs, Slack incident channels, microservice dependency trees.
-- **Workflow**:
-  1. Real-time incident logs ingest via Webhook into **Render Workflows**.
-  2. **Cognee** graphs: `(Commit_A) -[:INTRODUCED_BUG]-> (AuthService) -[:OVERLOADED]-> (Redis)`.
-  3. LLM instantly reports the exact offending commit causing the outage.
+    # Step 1: Wipe local state to guarantee clean context
+    print("\n[Step 1] Resetting local system state...")
+    await cognee.forget(everything=True)
 
----
+    # Step 2: Define unstructured domain context
+    sample_domain_knowledge = (
+        "Project Orion is managed by Engineer Sarah. "
+        "The project relies on a Neo4j database deployed on AuraDB. "
+        "Render Workflows handle background task orchestration for Project Orion. "
+        "Cognee provides memory abstraction, converting raw documents into knowledge graphs."
+    )
 
-# 7. Cypher & Cognee Cheatsheet
+    # Step 3: Ingest knowledge into memory store
+    print("\n[Step 2] Ingesting unstructured knowledge into memory store...")
+    await cognee.add(sample_domain_knowledge, dataset_name="orion_project_memory")
 
-### 🔑 Essential Cypher Queries:
+    # Step 4: Run Cognify pipeline (Extracts entities & loads Neo4j graph)
+    print("\n[Step 3] Running Cognify pipeline (Extracting entities & building Neo4j graph)...")
+    await cognee.cognify(dataset_name="orion_project_memory")
+    print("✅ Cognify complete. Subgraph successfully loaded into Neo4j!")
 
-#### 1. Find all relationships connected to an entity:
+    # Step 5: Perform Hybrid Retrieval Query
+    print("\n[Step 4] Querying Memory Layer via Auto-Routing Search...")
+    query_string = "How is Project Orion orchestrated and stored?"
+    search_results = await cognee.search(
+        query_text=query_string,
+        dataset_name="orion_project_memory"
+    )
 
-```cypher
-MATCH (p:Person {name: "Satvik"})-[r]-(target)
-RETURN p, r, target
-```
+    print(f"\nSearch Query: '{query_string}'")
+    print("---------------------------------------------------------")
+    for idx, result in enumerate(search_results, 1):
+        print(f"Result [{idx}]: {result}")
 
-#### 2. Multi-hop Graph Traversal (Up to 3 degrees of separation):
+    print("\n=========================================================")
+    print(" Memory Pipeline Validation Successfully Completed ")
+    print("=========================================================")
 
-```cypher
-MATCH path = (source:Entity {name: "CompanyA"})-[*1..3]-(target:Entity {name: "BankB"})
-RETURN path
-LIMIT 10
-```
-
-#### 3. Shortest Path between two entities:
-
-```cypher
-MATCH (a:Person {name: "SuspectA"}), (b:Company {name: "OffshoreHoldings"})
-MATCH path = shortestPath((a)-[*]-(b))
-RETURN path
-```
-
-#### 4. Find High-Degree Hubs (Most connected entities):
-
-```cypher
-MATCH (n)-[r]-()
-RETURN n.name, count(r) AS connections
-ORDER BY connections DESC
-LIMIT 10
+if __name__ == "__main__":
+    asyncio.run(run_agent_memory_validation())
 ```
 
 ---
 
-### 🧠 Cognee API Methods Quick Reference:
+# 9. Critical Bug Fixes & Edge Cases (Must Read!)
 
-| Method                            | Description                                                    |
-| :-------------------------------- | :------------------------------------------------------------- |
-| `await cognee.add(data)`          | Ingests raw string, filepath (`.pdf`, `.txt`), or web URL      |
-| `await cognee.cognify()`          | Triggers LLM entity & relation extraction and builds the graph |
-| `await cognee.search(query)`      | Executes hybrid Vector + Graph traversal and returns context   |
-| `await cognee.prune.prune_data()` | Clears cache and database collections                          |
+### 🚨 1. Pydantic Environment Variable Mapping Bug (Cognee Issue #2697):
 
----
+- **Symptom**: When setting `ENABLE_BACKEND_ACCESS_CONTROL=true` with Neo4j, Cognee crashes with:
+  `OSError: The selected graph dataset to database handler does not work with the configured graph database provider`.
+- **Root Cause**: Pydantic expects `GRAPH_DATASET_DATABASE_HANDLER` rather than legacy conventions.
+- **Fix**: You **MUST** explicitly set in `.env`:
+  ```env
+  GRAPH_DATASET_DATABASE_HANDLER="neo4j_aura_dev"
+  # Or "neo4j_community" for self-hosted
+  ```
 
-### 🛡️ Hackathon Velocity Pro-Tips:
+### 🚨 2. Local Kuzu Lock Contention under Parallel Task Load:
 
-1. **Never parse PDFs on the main web thread**: Always offload parsing to Render Workflows or background scripts.
-2. **Keep entity types clear**: When prompting Cognee, specify entity classes (e.g. `Person, Organization, Transaction, Location`).
-3. **Show, Don't Just Tell**: Judges are wowed by **Visual Graphs**. An interactive graph canvas showing nodes expanding in real-time wins hackathons 9 times out of 10!
+- **Symptom**: `Could not set lock on file` error when running multiple workers locally.
+- **Fix**: Routing graph operations to **Neo4j AuraDB completely eliminates file-lock contention**. For local debugging without Neo4j, set:
+  ```env
+  SUBPROCESS_OPEN_LOCK_RETRIES=5
+  SUBPROCESS_IDLE_TTL_SECONDS=0
+  ```
+
+### 🚨 3. GitHub App OAuth State Timeouts:
+
+- Cognee's GitHub integration uses a signed state parameter that expires after **10 minutes**.
+- GitHub webhooks require public HTTPS; use **ngrok** for local testing.
+
+### 🚨 4. Blueprint Validation on Render:
+
+- Before pushing changes to `render.yaml`, validate locally using Render CLI:
+  ```bash
+  render blueprints validate
+  ```
