@@ -29,3 +29,22 @@ jobs:
           else
             echo "⚠️ Non-200 status received ($HTTP_STATUS). Server might be cold-starting or URL needs updating in GitHub Secrets."
           fi
+
+      - name: 🕸️ Warm Up Neo4j AuraDB (prevents 72h auto-pause — study.md §9)
+        env:
+          RENDER_URL: ${{ secrets.RENDER_BACKEND_URL }}
+        run: |
+          TARGET_URL="${RENDER_URL:-https://ignite-backend-kt07.onrender.com}"
+          WARMUP_URL="${TARGET_URL%/}/api/graph/warmup"
+          echo "Warming AuraDB via: $WARMUP_URL"
+          # Issues a MATCH (n) RETURN count(n) inside the backend — keeps the
+          # AuraDB instance active AND verifies the graph is reachable.
+          WARMUP_STATUS=$(curl -s -o /tmp/warmup.json -w "%{http_code}" --max-time 30 "$WARMUP_URL" || echo "FAILED")
+          echo "Warmup HTTP Status: $WARMUP_STATUS"
+          cat /tmp/warmup.json 2>/dev/null || true
+          echo ""
+          if [ "$WARMUP_STATUS" = "200" ]; then
+            echo "✅ AuraDB is warm and reachable."
+          else
+            echo "⚠️ AuraDB warmup returned $WARMUP_STATUS — check the graph status before your demo."
+          fi

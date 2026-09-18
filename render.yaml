@@ -19,3 +19,21 @@ services:
       # DEBUG locally for deep debugging; INFO keeps production logs readable
       - key: LOG_LEVEL
         value: INFO
+      # ---- Neo4j AuraDB (study.md §11 blueprint) ----
+      # sync:false = values are set once in the Render dashboard, never in git.
+      # These are ALREADY configured on the live ignite-backend service.
+      - key: NEO4J_URI
+        sync: false # e.g. neo4j+s://<instance>.databases.neo4j.io
+      - key: NEO4J_USERNAME
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      # ---- NVIDIA NIM key pool (comma-separated rotation pool) ----
+      - key: NVIDIA_API_KEYS
+        sync: false
+      # ---- Cognee microservice bridge ----
+      # The Python cognee service runs locally (npm run cognee:start, port 8100).
+      # Leave COGNEE_SERVICE_URL unset in production -> /api/cognify/* degrades to
+      # honest simulation mode instead of failing (see cognifyService.js).
+      - key: COGNEE_SERVICE_URL
+        sync: false
