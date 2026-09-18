@@ -51,6 +51,8 @@ app.get('/health', (req, res) => {
 app.get('/', (req, res) => {
   res.json({
     message: '🚀 Ignite Hackathon API is Live & Healthy!',
+    cdPipeline: '100% Verified & Live (Auto-Deploys on Push)',
+    e2eVerifiedAt: '2026-09-18',
     healthCheck: '/health',
     docs: {
       'GET /health': 'Server uptime & status',

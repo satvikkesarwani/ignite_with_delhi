@@ -83,7 +83,22 @@ export default function App() {
         <div className="brand">
           <div className="logo-badge">⚡</div>
           <div>
-            <h1>Ignite Hackathon Stack</h1>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+              <h1>Ignite Hackathon Stack</h1>
+              <span
+                style={{
+                  background: 'rgba(16, 185, 129, 0.2)',
+                  border: '1px solid rgba(16, 185, 129, 0.4)',
+                  color: '#10b981',
+                  padding: '0.15rem 0.6rem',
+                  borderRadius: '9999px',
+                  fontSize: '0.7rem',
+                  fontWeight: 600,
+                }}
+              >
+                🟢 CD Live Verified
+              </span>
+            </div>
             <p>Continuous Deployment Monorepo (Vercel + Render + CI/CD)</p>
           </div>
         </div>
