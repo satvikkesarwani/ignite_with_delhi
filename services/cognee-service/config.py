@@ -46,6 +46,19 @@ def _resolve_llm_api_key():
     return next((key.strip() for key in candidates if key and key.strip()), "")
 
 
+def _normalize_llm_model(model: str, provider: str) -> str:
+    """
+    litellm (cognee's inference backend) requires an explicit provider prefix for
+    OpenAI-compatible endpoints like NVIDIA NIM ("openai/nvidia/..."), otherwise it
+    rejects the call with "LLM Provider NOT provided". Normalize any un-prefixed
+    or nvidia/-prefixed model name when riding the openai provider.
+    """
+    model = (model or "").strip()
+    if provider.lower() == "openai" and not model.startswith("openai/"):
+        return f"openai/{model}"
+    return model
+
+
 def _has_real_graph_credentials():
     uri = os.environ.get("GRAPH_DATABASE_URL") or os.environ.get("NEO4J_URI") or ""
     password = os.environ.get("GRAPH_DATABASE_PASSWORD") or os.environ.get("NEO4J_PASSWORD") or ""
@@ -101,6 +114,10 @@ def configure_cognee_environment():
             # Provider/handler always follow credential reality to avoid
             # cognify crashes against paused or missing AuraDB instances.
             os.environ[key] = value
+        elif key == "LLM_MODEL":
+            # Always normalize — a raw "nvidia/..." value from .env or env would
+            # make every litellm call fail at runtime.
+            os.environ[key] = _normalize_llm_model(value, os.environ["LLM_PROVIDER"])
         elif key not in os.environ or not os.environ[key]:
             os.environ[key] = value
 

@@ -105,125 +105,142 @@ export default function GraphVisualizer({ backendUrl }) {
 
     let step = 0;
     const render = () => {
-      if (step < 200) {
-        // Node repulsion
-        for (let i = 0; i < nodes.length; i++) {
-          for (let j = i + 1; j < nodes.length; j++) {
-            const dx = nodes[j].x - nodes[i].x;
-            const dy = nodes[j].y - nodes[i].y;
-            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-            if (dist < 180) {
-              const force = (180 - dist) / 180;
-              const fx = (dx / dist) * force * 1.5;
-              const fy = (dy / dist) * force * 1.5;
-              if (draggedNodeRef.current !== nodes[i]) {
-                nodes[i].x -= fx;
-                nodes[i].y -= fy;
-              }
-              if (draggedNodeRef.current !== nodes[j]) {
-                nodes[j].x += fx;
-                nodes[j].y += fy;
+      try {
+        // Self-heal: a single NaN position silently draws nothing (no exception),
+        // which left the canvas permanently blank after physics settled.
+        nodes.forEach((n) => {
+          if (!Number.isFinite(n.x) || !Number.isFinite(n.y)) {
+            n.x = width / 2 + (Math.random() - 0.5) * 120;
+            n.y = height / 2 + (Math.random() - 0.5) * 120;
+          }
+        });
+
+        if (step < 200) {
+          // Node repulsion
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              const dx = nodes[j].x - nodes[i].x;
+              const dy = nodes[j].y - nodes[i].y;
+              const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+              if (dist < 180) {
+                const force = (180 - dist) / 180;
+                const fx = (dx / dist) * force * 1.5;
+                const fy = (dy / dist) * force * 1.5;
+                if (draggedNodeRef.current !== nodes[i]) {
+                  nodes[i].x -= fx;
+                  nodes[i].y -= fy;
+                }
+                if (draggedNodeRef.current !== nodes[j]) {
+                  nodes[j].x += fx;
+                  nodes[j].y += fy;
+                }
               }
             }
           }
+
+          // Link attraction
+          links.forEach((l) => {
+            const source = nodes.find((n) => n.id === l.source);
+            const target = nodes.find((n) => n.id === l.target);
+            if (source && target) {
+              const dx = target.x - source.x;
+              const dy = target.y - source.y;
+              const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+              const force = (dist - 110) * 0.02;
+              const fx = (dx / dist) * force;
+              const fy = (dy / dist) * force;
+              if (draggedNodeRef.current !== source) {
+                source.x += fx;
+                source.y += fy;
+              }
+              if (draggedNodeRef.current !== target) {
+                target.x -= fx;
+                target.y -= fy;
+              }
+            }
+          });
+          step++;
         }
 
-        // Link attraction
+        // Draw canvas
+        const view = transformRef.current;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.save();
+        ctx.translate(view.x, view.y);
+        ctx.scale(view.k, view.k);
+
+        // Draw Links
         links.forEach((l) => {
           const source = nodes.find((n) => n.id === l.source);
           const target = nodes.find((n) => n.id === l.target);
-          if (source && target) {
-            const dx = target.x - source.x;
-            const dy = target.y - source.y;
-            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-            const force = (dist - 110) * 0.02;
-            const fx = (dx / dist) * force;
-            const fy = (dy / dist) * force;
-            if (draggedNodeRef.current !== source) {
-              source.x += fx;
-              source.y += fy;
-            }
-            if (draggedNodeRef.current !== target) {
-              target.x -= fx;
-              target.y -= fy;
-            }
-          }
+          if (!source || !target) return;
+
+          ctx.beginPath();
+          ctx.moveTo(source.x, source.y);
+          ctx.lineTo(target.x, target.y);
+          ctx.strokeStyle =
+            l.type === 'FLAGGED_TRANSACTION'
+              ? 'rgba(239, 68, 68, 0.7)'
+              : 'rgba(148, 163, 184, 0.25)';
+          ctx.lineWidth = l.type === 'FLAGGED_TRANSACTION' ? 2 : 1.2;
+          ctx.stroke();
+
+          // Edge label
+          const midX = (source.x + target.x) / 2;
+          const midY = (source.y + target.y) / 2;
+          ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
+          ctx.font = '9px Outfit, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText(l.label || l.type, midX, midY - 4);
         });
-        step++;
+
+        // Draw Nodes
+        const activeSearch = searchRef.current;
+        const activeSelection = selectedRef.current;
+        nodes.forEach((n) => {
+          const isMatch =
+            !activeSearch ||
+            n.label.toLowerCase().includes(activeSearch.toLowerCase()) ||
+            n.type.toLowerCase().includes(activeSearch.toLowerCase());
+          const color = TYPE_COLORS[n.type] || TYPE_COLORS.Default;
+          const radius = n.radius || 18;
+
+          // Glow
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, radius + (n === activeSelection ? 6 : 2), 0, Math.PI * 2);
+          ctx.fillStyle = isMatch ? color : 'rgba(100, 116, 139, 0.2)';
+          ctx.globalAlpha = isMatch ? 0.25 : 0.05;
+          ctx.fill();
+          ctx.globalAlpha = 1.0;
+
+          // Circle
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, radius, 0, Math.PI * 2);
+          ctx.fillStyle = n === activeSelection ? '#ffffff' : isMatch ? color : '#334155';
+          ctx.fill();
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = '#0f172a';
+          ctx.stroke();
+
+          // Label
+          ctx.fillStyle = isMatch ? '#f8fafc' : '#64748b';
+          ctx.font = '11px Outfit, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText(n.label, n.x, n.y + radius + 14);
+
+          // Type badge text
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+          ctx.font = '8px Outfit, sans-serif';
+          ctx.fillText(n.type.substring(0, 4).toUpperCase(), n.x, n.y + 3);
+        });
+
+        ctx.restore();
+      } catch (err) {
+        console.warn('[GraphVisualizer] frame draw error:', err);
+      } finally {
+        // Always reschedule — a thrown frame must never kill the animation loop
+        simulationRef.current.animId = requestAnimationFrame(render);
       }
-
-      // Draw canvas
-      const view = transformRef.current;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.save();
-      ctx.translate(view.x, view.y);
-      ctx.scale(view.k, view.k);
-
-      // Draw Links
-      links.forEach((l) => {
-        const source = nodes.find((n) => n.id === l.source);
-        const target = nodes.find((n) => n.id === l.target);
-        if (!source || !target) return;
-
-        ctx.beginPath();
-        ctx.moveTo(source.x, source.y);
-        ctx.lineTo(target.x, target.y);
-        ctx.strokeStyle =
-          l.type === 'FLAGGED_TRANSACTION' ? 'rgba(239, 68, 68, 0.7)' : 'rgba(148, 163, 184, 0.25)';
-        ctx.lineWidth = l.type === 'FLAGGED_TRANSACTION' ? 2 : 1.2;
-        ctx.stroke();
-
-        // Edge label
-        const midX = (source.x + target.x) / 2;
-        const midY = (source.y + target.y) / 2;
-        ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
-        ctx.font = '9px Outfit, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText(l.label || l.type, midX, midY - 4);
-      });
-
-      // Draw Nodes
-      const activeSearch = searchRef.current;
-      const activeSelection = selectedRef.current;
-      nodes.forEach((n) => {
-        const isMatch =
-          !activeSearch ||
-          n.label.toLowerCase().includes(activeSearch.toLowerCase()) ||
-          n.type.toLowerCase().includes(activeSearch.toLowerCase());
-        const color = TYPE_COLORS[n.type] || TYPE_COLORS.Default;
-        const radius = n.radius || 18;
-
-        // Glow
-        ctx.beginPath();
-        ctx.arc(n.x, n.y, radius + (n === activeSelection ? 6 : 2), 0, Math.PI * 2);
-        ctx.fillStyle = isMatch ? color : 'rgba(100, 116, 139, 0.2)';
-        ctx.globalAlpha = isMatch ? 0.25 : 0.05;
-        ctx.fill();
-        ctx.globalAlpha = 1.0;
-
-        // Circle
-        ctx.beginPath();
-        ctx.arc(n.x, n.y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = n === activeSelection ? '#ffffff' : isMatch ? color : '#334155';
-        ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = '#0f172a';
-        ctx.stroke();
-
-        // Label
-        ctx.fillStyle = isMatch ? '#f8fafc' : '#64748b';
-        ctx.font = '11px Outfit, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText(n.label, n.x, n.y + radius + 14);
-
-        // Type badge text
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-        ctx.font = '8px Outfit, sans-serif';
-        ctx.fillText(n.type.substring(0, 4).toUpperCase(), n.x, n.y + 3);
-      });
-
-      ctx.restore();
-      simulationRef.current.animId = requestAnimationFrame(render);
     };
 
     simulationRef.current.animId = requestAnimationFrame(render);
@@ -237,10 +254,21 @@ export default function GraphVisualizer({ backendUrl }) {
   }, [graphData]);
 
   // Canvas Mouse Interactions (Pan & Node Selection)
+  // The canvas stretches via CSS (width/height 100%), so screen coords must be
+  // mapped into the internal 880x550 drawing space before hit-testing.
+  const canvasToGraphCoords = (e) => {
+    const canvas = canvasRef.current;
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    return {
+      x: ((e.clientX - rect.left) * scaleX - transform.x) / transform.k,
+      y: ((e.clientY - rect.top) * scaleY - transform.y) / transform.k,
+    };
+  };
+
   const handleMouseDown = (e) => {
-    const rect = canvasRef.current.getBoundingClientRect();
-    const mouseX = (e.clientX - rect.left - transform.x) / transform.k;
-    const mouseY = (e.clientY - rect.top - transform.y) / transform.k;
+    const { x: mouseX, y: mouseY } = canvasToGraphCoords(e);
 
     const clicked = simulationRef.current.nodes.find((n) => {
       const dx = n.x - mouseX;
@@ -259,9 +287,9 @@ export default function GraphVisualizer({ backendUrl }) {
 
   const handleMouseMove = (e) => {
     if (draggedNodeRef.current) {
-      const rect = canvasRef.current.getBoundingClientRect();
-      draggedNodeRef.current.x = (e.clientX - rect.left - transform.x) / transform.k;
-      draggedNodeRef.current.y = (e.clientY - rect.top - transform.y) / transform.k;
+      const { x, y } = canvasToGraphCoords(e);
+      draggedNodeRef.current.x = x;
+      draggedNodeRef.current.y = y;
     } else if (isDragging) {
       setTransform((prev) => ({
         ...prev,

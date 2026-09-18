@@ -43,7 +43,7 @@ function makeNvidiaRequest(apiKey, payload) {
         Authorization: `Bearer ${apiKey}`,
         'Content-Length': Buffer.byteLength(postData),
       },
-      timeout: 45000,
+      timeout: 120000, // Nemotron emits a visible thinking phase; simple prompts take 25s+
     };
 
     const req = https.request(options, (res) => {

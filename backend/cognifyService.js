@@ -1,6 +1,13 @@
 import dotenv from 'dotenv';
+import { Agent, fetch as undiciFetch } from 'undici';
 
 dotenv.config();
+
+// Node's global fetch (built-in undici) aborts with "fetch failed" once its internal
+// 300s headersTimeout fires — real cognify runs take 2-6 minutes. We use the external
+// undici package's own fetch + Agent together (mixing its Agent with the global fetch
+// throws "invalid onRequestStart method").
+const longHaulAgent = new Agent({ headersTimeout: 0, bodyTimeout: 0, connectTimeout: 15000 });
 
 // In production (Render) there is no Python microservice unless COGNEE_SERVICE_URL is set;
 // locally we default to the FastAPI service started via `npm run cognee:start` (port 8100 —
@@ -18,7 +25,11 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 10000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    return await fetch(url, { ...options, signal: controller.signal });
+    return await undiciFetch(url, {
+      ...options,
+      signal: controller.signal,
+      dispatcher: longHaulAgent,
+    });
   } finally {
     clearTimeout(timer);
   }

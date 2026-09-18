@@ -307,7 +307,7 @@ app.post('/api/cognify/query', async (req, res) => {
         {
           role: 'system',
           content:
-            'You are a Knowledge-Grounded Cognitive Runtime agent. Reason over the supplied knowledge-graph context and cite specific entity relationships deterministically.',
+            'You are a Knowledge-Grounded Cognitive Runtime agent. Reason over the supplied knowledge-graph context and cite specific entity relationships deterministically. /no_think — output only the final structured answer; never expose your step-by-step thinking process.',
         },
         {
           role: 'user',

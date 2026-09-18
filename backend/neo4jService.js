@@ -107,8 +107,12 @@ class Neo4jService {
 
     const session = this.driver.session();
     try {
+      // Hide cognee's internal bookkeeping nodes (chunking/summary/metadata) so the
+      // canvas shows only meaningful domain entities and their relationships.
       const cypher = `
         MATCH (n)-[r]->(m)
+        WHERE NOT n:DocumentChunk AND NOT n:TextSummary AND NOT n:GraphMetadata
+          AND NOT m:DocumentChunk AND NOT m:TextSummary AND NOT m:GraphMetadata
         RETURN n, r, m
         LIMIT $limit
       `;
@@ -117,6 +121,17 @@ class Neo4jService {
       if (result.records.length === 0) {
         return this.getMockGraph();
       }
+
+      // Cognee labels every node "__Node__" plus its real type — pick the real one.
+      const displayType = (labels) => labels.find((l) => l !== '__Node__') || labels[0] || 'Entity';
+      // UUID-ish names are internal entities — prefer a human description when present.
+      const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i;
+      const displayLabel = (props, type, fallbackId) => {
+        const name = props.name || props.account_number || props.id;
+        if (name && !UUID_RE.test(String(name))) return String(name);
+        if (props.description) return String(props.description).slice(0, 48);
+        return `${type}_${String(fallbackId).slice(-6)}`;
+      };
 
       const nodesMap = new Map();
       const links = [];
@@ -130,23 +145,23 @@ class Neo4jService {
         const mId = m.elementId || m.identity.toString();
 
         if (!nodesMap.has(nId)) {
+          const type = displayType(n.labels);
           nodesMap.set(nId, {
             id: nId,
-            label:
-              n.properties.name || n.properties.account_number || n.properties.id || `Node_${nId}`,
-            type: n.labels[0] || 'Entity',
-            group: n.labels[0] || 'Default',
+            label: displayLabel(n.properties, type, nId),
+            type,
+            group: type,
             properties: n.properties,
           });
         }
 
         if (!nodesMap.has(mId)) {
+          const type = displayType(m.labels);
           nodesMap.set(mId, {
             id: mId,
-            label:
-              m.properties.name || m.properties.account_number || m.properties.id || `Node_${mId}`,
-            type: m.labels[0] || 'Entity',
-            group: m.labels[0] || 'Default',
+            label: displayLabel(m.properties, type, mId),
+            type,
+            group: type,
             properties: m.properties,
           });
         }

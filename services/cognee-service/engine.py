@@ -90,6 +90,10 @@ class CognitiveEngine:
                 query_text=query,
                 query_type=query_type,
                 datasets=[ds],
+                # Retrieve raw graph context only — skip cognee's internal LLM answer
+                # generation (the Node bridge synthesizes with Nemotron itself, so
+                # doing it twice just doubles the latency).
+                only_context=True,
             )
             return {
                 "success": True,
