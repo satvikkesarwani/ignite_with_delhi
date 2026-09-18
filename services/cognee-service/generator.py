@@ -2,11 +2,11 @@
 Dynamic Problem Statement Schema Formulator
 Uses NVIDIA NIM Nemotron (or offline template heuristic) to dynamically
 synthesize domain-tailored Pydantic v2 DataPoint schemas from any hackathon prompt.
+Rotates through the 5-key pool with a 45s per-key timeout before falling back.
 """
 
 import os
 import re
-import json
 import requests
 from dotenv import load_dotenv
 
@@ -19,6 +19,10 @@ NVIDIA_KEYS = [
     os.getenv("NVIDIA_API_KEY_4", "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"),
     os.getenv("NVIDIA_API_KEY_5", "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"),
 ]
+
+# Nemotron is a reasoning model — give it room to finish (backend aiService.js uses 45s too).
+REQUEST_TIMEOUT_SECONDS = 45
+
 
 def generate_schema_for_problem_statement(problem_statement: str):
     """
@@ -38,34 +42,52 @@ Problem Statement:
 Respond with only clean Python code snippet containing the classes.
 """
 
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {NVIDIA_KEYS[0]}"
-    }
     payload = {
         "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
         "messages": [
-            {"role": "system", "content": "You are an expert Cognee graph ontology engineer. Output only valid Python Pydantic classes."},
-            {"role": "user", "content": prompt}
+            {
+                "role": "system",
+                "content": "You are an expert Cognee graph ontology engineer. Output only valid Python Pydantic classes.",
+            },
+            {"role": "user", "content": prompt},
         ],
         "temperature": 0.2,
-        "max_tokens": 1024
+        "max_tokens": 1024,
     }
 
-    try:
-        resp = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers=headers, json=payload, timeout=15)
-        if resp.status_code == 200:
-            content = resp.json()["choices"][0]["message"]["content"]
-            # Extract code block if present
-            code_match = re.search(r"```python(.*?)```", content, re.DOTALL)
-            code = code_match.group(1).strip() if code_match else content.strip()
-            return {
-                "success": True,
-                "generated_code": code,
-                "source": "nvidia/nemotron-3.5-lightning-30b-a3b"
-            }
-    except Exception as e:
-        print(f"[SchemaGenerator] API call failed ({e}), using deterministic heuristic fallback.")
+    last_error = None
+    for index, api_key in enumerate(NVIDIA_KEYS):
+        if not api_key:
+            continue
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+        }
+        try:
+            resp = requests.post(
+                "https://integrate.api.nvidia.com/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=REQUEST_TIMEOUT_SECONDS,
+            )
+            if resp.status_code == 200:
+                content = resp.json()["choices"][0]["message"]["content"]
+                # Extract code block if present
+                code_match = re.search(r"```python(.*?)```", content, re.DOTALL)
+                code = code_match.group(1).strip() if code_match else content.strip()
+                return {
+                    "success": True,
+                    "generated_code": code,
+                    "source": "nvidia/nemotron-3.5-lightning-30b-a3b",
+                    "key_index": index + 1,
+                }
+            last_error = f"key #{index + 1} returned HTTP {resp.status_code}"
+            print(f"[SchemaGenerator] {last_error}, rotating to next key...")
+        except Exception as e:
+            last_error = f"key #{index + 1} failed ({e})"
+            print(f"[SchemaGenerator] {last_error}, rotating to next key...")
+
+    print(f"[SchemaGenerator] All keys exhausted ({last_error}), using deterministic heuristic fallback.")
 
     # Deterministic Heuristic Fallback
     fallback_code = f'''from typing import Any, Optional
@@ -90,8 +112,9 @@ class ProblemActionItem(DataPoint):
     return {
         "success": True,
         "generated_code": fallback_code,
-        "source": "deterministic_fallback"
+        "source": "deterministic_fallback",
     }
+
 
 if __name__ == "__main__":
     sample_ps = "Build an autonomous AI agent to trace fraudulent offshore shell company networks and flag high-risk transactions across jurisdictions."

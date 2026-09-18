@@ -118,6 +118,11 @@ app.get('/api/your-feature', (req, res) => {
 - **Directive Extraction**: Uses `custom_prompt` to filter corporate/conversational noise.
 - **Zero-Cost Embeddings**: FastEmbed ONNX runs locally on CPU with zero OpenAI bill!
 - **Multi-Hop Reasoning**: Side-by-side graph path traversal + NVIDIA Nemotron 30B response.
+- **Backend API** (auto-detects the Python microservice; falls back to simulation mode if it's down):
+  - `GET /api/cognify/status`: Is the Cognee microservice reachable?
+  - `POST /api/cognify/run`: Full ECL pipeline — `{ content, prompt }` → claim token + graph build.
+  - `POST /api/cognify/query`: GraphRAG retrieval + Nemotron synthesis — `{ query, context }`.
+- **Python microservice** (`services/cognee-service/`, Port **8100**): FastAPI with Cognee 1.5.4, FastEmbed `BAAI/bge-small-en-v1.5`, and an embedded Ladybug graph by default. Uses Neo4j AuraDB automatically when `GRAPH_DATABASE_*` credentials are set.
 
 ### 3. 🛠️ Useful Commands:
 
@@ -125,14 +130,15 @@ app.get('/api/your-feature', (req, res) => {
 # Start Frontend & Backend concurrently
 npm run dev
 
+# In a SECOND terminal: start the Cognee microservice (Port 8100)
+# Without this, the Cognitive Studio runs in honest simulation mode
+npm run cognee:start
+
 # Run full monorepo test (syntax + build)
 npm test
 
 # Run Cognee & schema unit tests
 npm run cognee:test
-
-# Start Cognee FastAPI microservice (Port 8000)
-npm run cognee:start
 
 # Ping Neo4j AuraDB instance to keep warm
 npm run graph:warmup

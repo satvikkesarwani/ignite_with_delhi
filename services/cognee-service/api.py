@@ -83,5 +83,10 @@ def generate_schema(req: SchemaRequest):
     return generate_schema_for_problem_statement(req.problem_statement)
 
 if __name__ == "__main__":
+    import os
+
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+    # 8100 avoids colliding with other local FastAPI projects that commonly squat on 8000
+    port = int(os.environ.get("COGNEE_SERVICE_PORT", "8100"))
+    uvicorn.run(app, host="0.0.0.0", port=port)

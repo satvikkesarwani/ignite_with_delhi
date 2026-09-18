@@ -6,6 +6,7 @@ import { generateChat } from './aiService.js';
 import { neo4jService } from './neo4jService.js';
 import { claimCheckService } from './claimCheckService.js';
 import { renderWorkflowService } from './renderWorkflowService.js';
+import { cognifyService } from './cognifyService.js';
 
 dotenv.config();
 
@@ -246,6 +247,83 @@ app.post('/api/workflow/trigger', async (req, res) => {
     const result = await renderWorkflowService.triggerTask(command, planId);
     res.json(result);
   } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * Cognee Cognitive Memory Bridge (Node <-> Python FastAPI microservice)
+ * The Python service runs locally via `npm run cognee:start` (or set COGNEE_SERVICE_URL).
+ * Every endpoint degrades gracefully: if the microservice is down, callers get an
+ * explicit simulation/fallback mode instead of a failed demo.
+ */
+app.get('/api/cognify/status', async (req, res) => {
+  try {
+    const status = await cognifyService.checkServiceHealth();
+    res.json({ success: true, ...status, simulationHint: 'npm run cognee:start' });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/cognify/run', async (req, res) => {
+  try {
+    const { content, datasetName = 'hackathon_domain_memory', prompt } = req.body;
+    if (!content) {
+      return res.status(400).json({ success: false, error: 'Content payload is required' });
+    }
+
+    // Claim-Check: persist the raw dataset first, pass only the URI downstream
+    const claim = await claimCheckService.storePayload(
+      `${datasetName}.txt`,
+      Buffer.from(content, 'utf-8'),
+      'text/plain'
+    );
+    const pipeline = await cognifyService.runEclPipeline({ content, datasetName, prompt });
+    res.json({ success: true, claim, pipeline });
+  } catch (err) {
+    console.error('Cognify pipeline error:', err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/cognify/query', async (req, res) => {
+  try {
+    const { query, datasetName = 'hackathon_domain_memory', context = '' } = req.body;
+    if (!query) {
+      return res.status(400).json({ success: false, error: 'Query is required' });
+    }
+
+    // Stage 1: GraphRAG retrieval from cognitive memory (empty when service is down)
+    const retrieval = await cognifyService.searchMemory({ query, datasetName });
+
+    // Stage 2: Grounded synthesis — graph context when live, raw text when falling back
+    const graphContext = retrieval.results.length
+      ? retrieval.results.map((r) => (typeof r === 'string' ? r : JSON.stringify(r))).join('\n- ')
+      : context;
+
+    const synthesis = await generateChat({
+      messages: [
+        {
+          role: 'system',
+          content:
+            'You are a Knowledge-Grounded Cognitive Runtime agent. Reason over the supplied knowledge-graph context and cite specific entity relationships deterministically.',
+        },
+        {
+          role: 'user',
+          content: `Knowledge graph context:\n- ${graphContext}\n\nQuery: ${query}\n\nProvide a multi-hop reasoning answer citing specific entities, relationships, and risk factors.`,
+        },
+      ],
+    });
+
+    res.json({
+      success: true,
+      grounding: retrieval.mode === 'live' ? 'cognee_graph' : 'raw_text_fallback',
+      retrievalResults: retrieval.results.length,
+      synthesis,
+    });
+  } catch (err) {
+    console.error('Cognify query error:', err.message);
     res.status(500).json({ success: false, error: err.message });
   }
 });

@@ -16,7 +16,7 @@ jobs:
         env:
           RENDER_URL: ${{ secrets.RENDER_BACKEND_URL }}
         run: |
-          TARGET_URL="${RENDER_URL:-https://ignite-backend.onrender.com}"
+          TARGET_URL="${RENDER_URL:-https://ignite-backend-kt07.onrender.com}"
           HEALTH_URL="${TARGET_URL%/}/health"
           echo "Pinging: $HEALTH_URL at $(date -u)"
 

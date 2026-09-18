@@ -3,15 +3,30 @@ Cognee ECL (Extract-Cognify-Load) Engine Wrapper
 Handles ingestion, custom directive prompting, and hybrid GraphRAG retrieval.
 """
 
-import os
-import sys
-import asyncio
-from typing import Optional, List, Any
+from typing import Any, Optional, List
 
 # Ensure config environment is applied before cognee initialization
 from config import CONFIG
 import cognee
 from cognee import SearchType
+
+
+def _normalize_results(results: List[Any]) -> List[Any]:
+    """
+    Cognee search returns plain strings or SearchResult objects depending on
+    query_type. Normalize everything into JSON-serializable values.
+    """
+    clean = []
+    for item in results or []:
+        if isinstance(item, str):
+            clean.append(item)
+            continue
+        try:
+            clean.append(item.model_dump())
+        except AttributeError:
+            clean.append(str(item))
+    return clean
+
 
 class CognitiveEngine:
     def __init__(self):
@@ -33,7 +48,7 @@ class CognitiveEngine:
     ):
         """
         Cognify & Load Stage: Splits text by token count, steers LLM extraction
-        using custom_prompt, and loads nodes & edges into Neo4j and vector index.
+        using custom_prompt, and loads nodes & edges into the graph and vector index.
         """
         ds = dataset_name or self.default_dataset
         prompt = custom_prompt or (
@@ -41,7 +56,7 @@ class CognitiveEngine:
             "and risk associations. Ignore conversational noise and irrelevant text."
         )
         print(f"[CognitiveEngine] Running Cognify on dataset '{ds}' with directive prompt...")
-        
+
         # Run cognify
         try:
             await cognee.cognify(datasets=[ds], custom_prompt=prompt)
@@ -55,30 +70,38 @@ class CognitiveEngine:
         self,
         query: str,
         dataset_name: Optional[str] = None,
-        search_type: SearchType = SearchType.GRAPH_COMPLETION,
+        search_type: Any = SearchType.GRAPH_COMPLETION,
     ):
         """
         Query Stage: Executes hybrid graph-vector search over cognitive memory.
+
+        cognee >= 1.5 expects `query_type` (not `search_type`) and `datasets` (a list,
+        not `dataset_name`) — both are mapped here so plain strings are accepted too.
         """
         ds = dataset_name or self.default_dataset
-        print(f"[CognitiveEngine] Querying memory: '{query}' (Type: {search_type})...")
+        if isinstance(search_type, str):
+            query_type = SearchType(search_type)
+        else:
+            query_type = search_type or SearchType.GRAPH_COMPLETION
+
+        print(f"[CognitiveEngine] Querying memory: '{query}' (Type: {query_type.value})...")
         try:
             results = await cognee.search(
                 query_text=query,
-                dataset_name=ds,
-                search_type=search_type
+                query_type=query_type,
+                datasets=[ds],
             )
             return {
                 "success": True,
                 "query": query,
                 "dataset": ds,
-                "results": results
+                "results": _normalize_results(results),
             }
         except Exception as e:
             return {
                 "success": False,
                 "query": query,
-                "error": str(e)
+                "error": str(e),
             }
 
     async def reset(self):
@@ -86,5 +109,6 @@ class CognitiveEngine:
         print("[CognitiveEngine] Resetting memory state...")
         await cognee.prune.prune_data()
         return {"status": "pruned"}
+
 
 cognitive_engine = CognitiveEngine()

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const PRESETS = [
   {
@@ -37,9 +37,11 @@ export default function CognitiveStudio({ backendUrl }) {
   const [directivePrompt, setDirectivePrompt] = useState(PRESETS[0].prompt);
   const [isProcessing, setIsProcessing] = useState(false);
   const [eclStep, setEclStep] = useState(0); // 0: idle, 1: token chunking, 2: directive extraction, 3: neo4j graph sync
+  const [pipelineResult, setPipelineResult] = useState(null);
   const [queryText, setQueryText] = useState(PRESETS[0].sampleQuery);
   const [queryResult, setQueryResult] = useState(null);
   const [queryLoading, setQueryLoading] = useState(false);
+  const stepTimerRef = useRef(null);
 
   const handleSelectPreset = (preset) => {
     setSelectedPreset(preset);
@@ -47,33 +49,42 @@ export default function CognitiveStudio({ backendUrl }) {
     setDirectivePrompt(preset.prompt);
     setQueryText(preset.sampleQuery);
     setQueryResult(null);
+    setPipelineResult(null);
   };
 
   const handleRunCognify = async () => {
     setIsProcessing(true);
-    setEclStep(1); // Token chunking
+    setPipelineResult(null);
+    setEclStep(1); // Token chunking starts immediately
 
-    setTimeout(() => setEclStep(2), 1000); // Directive LLM Extraction
-    setTimeout(() => setEclStep(3), 2200); // Neo4j Graph Sync
+    // Advance to the LLM extraction stage while the real pipeline is running
+    clearTimeout(stepTimerRef.current);
+    stepTimerRef.current = setTimeout(() => setEclStep(2), 2500);
 
     try {
-      // First save payload via Claim-Check
-      await fetch(`${backendUrl}/api/claim/upload`, {
+      const res = await fetch(`${backendUrl}/api/cognify/run`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ filename: `${selectedPreset.id}_dataset.txt`, content: inputText }),
+        body: JSON.stringify({ content: inputText, prompt: directivePrompt }),
       });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
 
-      // Warm up graph
-      await fetch(`${backendUrl}/api/graph/warmup`, { method: 'POST' });
-
+      clearTimeout(stepTimerRef.current);
+      setEclStep(3); // Graph sync complete
+      setPipelineResult(data);
+      // Notify the graph canvas to pull the freshly built topology
+      window.dispatchEvent(new CustomEvent('graph:refresh'));
       setTimeout(() => {
         setIsProcessing(false);
         setEclStep(0);
-        alert('✅ Cognify Complete! Knowledge Graph loaded into Neo4j & LanceDB.');
-      }, 3200);
+      }, 700);
     } catch (err) {
+      clearTimeout(stepTimerRef.current);
       console.warn('Cognify trigger error:', err);
+      setPipelineResult({ success: false, error: err.message });
       setIsProcessing(false);
       setEclStep(0);
     }
@@ -85,24 +96,25 @@ export default function CognitiveStudio({ backendUrl }) {
     setQueryResult(null);
 
     try {
-      const res = await fetch(`${backendUrl}/api/ai/generate`, {
+      const res = await fetch(`${backendUrl}/api/cognify/query`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          prompt: `Based on the following knowledge context and knowledge graph facts:\n\nContext:\n${inputText}\n\nQuery:\n${queryText}\n\nProvide an authoritative, multi-hop reasoning analysis citing specific entity relationships, jurisdictions, and risk factors.`,
-          systemPrompt:
-            'You are a Knowledge-Grounded Cognitive Runtime agent. Answer deterministically using graph entities.',
-        }),
+        body: JSON.stringify({ query: queryText, context: inputText }),
       });
-
       const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
       setQueryResult(data);
     } catch (err) {
-      setQueryResult({ error: err.message });
+      setQueryResult({ success: false, error: err.message });
     } finally {
       setQueryLoading(false);
     }
   };
+
+  const pipelineMode = pipelineResult?.pipeline?.mode;
+  const synthesis = queryResult?.synthesis;
 
   return (
     <div className="cognitive-studio-container">
@@ -168,15 +180,62 @@ export default function CognitiveStudio({ backendUrl }) {
                 </span>
                 <span className="step-arrow">➔</span>
                 <span className={`step-badge ${eclStep >= 3 ? 'active' : ''}`}>
-                  3. Neo4j Loading
+                  3. Graph Loading
                 </span>
               </div>
-              <p className="step-status">Processing ECL pipeline across distributed workers...</p>
+              <p className="step-status">
+                Processing ECL pipeline (first live run can take 1-3 minutes: model warm-up + LLM
+                extraction)...
+              </p>
             </div>
           ) : (
             <button onClick={handleRunCognify} className="btn-primary-action">
-              🚀 Run ECL Pipeline & Build Graph
+              🚀 Run ECL Pipeline &amp; Build Graph
             </button>
+          )}
+
+          {pipelineResult && !isProcessing && (
+            <div
+              className={`pipeline-result ${pipelineResult.success ? 'result-live' : 'result-error'}`}
+            >
+              {pipelineResult.success ? (
+                <>
+                  <div className="result-badges">
+                    <span
+                      className={`mode-badge ${pipelineMode === 'live' ? 'badge-live' : 'badge-sim'}`}
+                    >
+                      {pipelineMode === 'live'
+                        ? '🟢 LIVE Cognee ECL Pipeline'
+                        : '🟡 Simulated ECL (microservice down)'}
+                    </span>
+                    {pipelineMode === 'live' && pipelineResult.pipeline.elapsedMs != null && (
+                      <span className="elapsed-badge">
+                        {(pipelineResult.pipeline.elapsedMs / 1000).toFixed(1)}s
+                      </span>
+                    )}
+                  </div>
+                  <p className="result-detail">
+                    Claim <code>{pipelineResult.claim?.claimId}</code> staged (
+                    {pipelineResult.claim?.sizeBytes ?? 0} bytes)
+                    {pipelineMode === 'live' && (
+                      <>
+                        {' '}
+                        • dataset <code>{pipelineResult.pipeline.dataset}</code> →{' '}
+                        {pipelineResult.pipeline.cognify?.status || 'processed'}
+                      </>
+                    )}
+                  </p>
+                  {pipelineMode !== 'live' && (
+                    <p className="result-hint">
+                      Run <code>npm run cognee:start</code> in a second terminal, then re-run the
+                      pipeline for real Cognee extraction (FastEmbed + Neo4j persistence).
+                    </p>
+                  )}
+                </>
+              ) : (
+                <p className="result-error-text">❌ Pipeline failed: {pipelineResult.error}</p>
+              )}
+            </div>
           )}
         </div>
 
@@ -219,15 +278,21 @@ export default function CognitiveStudio({ backendUrl }) {
               queryResult.success ? (
                 <div className="result-content">
                   <div className="result-header">
-                    <span className="source-tag">Grounded Graph Path Synthesized</span>
-                    <span className="key-tag">NVIDIA Key #{queryResult.keyIndex || 1}</span>
-                  </div>
-                  <p className="response-text">{queryResult.content}</p>
-                  <div className="meta-footer">
-                    <span>Model: {queryResult.model}</span>
-                    <span>
-                      Tokens: {queryResult.usage ? queryResult.usage.total_tokens : 'N/A'}
+                    <span className="source-tag">
+                      {queryResult.grounding === 'cognee_graph'
+                        ? '🕸️ Cognee Graph Context'
+                        : '📄 Raw Text Context (start cognee service for graph grounding)'}
                     </span>
+                    <span className="key-tag">
+                      NVIDIA Key #{synthesis?.keyIndexUsed || 1}
+                      {queryResult.retrievalResults > 0 &&
+                        ` • ${queryResult.retrievalResults} graph facts`}
+                    </span>
+                  </div>
+                  <p className="response-text">{synthesis?.content}</p>
+                  <div className="meta-footer">
+                    <span>Model: {synthesis?.model}</span>
+                    <span>Tokens: {synthesis?.usage ? synthesis.usage.total_tokens : 'N/A'}</span>
                   </div>
                 </div>
               ) : (

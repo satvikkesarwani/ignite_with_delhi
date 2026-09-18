@@ -30,6 +30,22 @@ export default function GraphVisualizer({ backendUrl }) {
 
   const draggedNodeRef = useRef(null);
 
+  // Refs mirror interactive state so the 60fps physics loop is not torn down
+  // on every pan/zoom/filter/selection change (only graphData restarts it).
+  const transformRef = useRef(transform);
+  const searchRef = useRef(searchFilter);
+  const selectedRef = useRef(selectedNode);
+
+  useEffect(() => {
+    transformRef.current = transform;
+  }, [transform]);
+  useEffect(() => {
+    searchRef.current = searchFilter;
+  }, [searchFilter]);
+  useEffect(() => {
+    selectedRef.current = selectedNode;
+  }, [selectedNode]);
+
   const fetchGraph = useCallback(async () => {
     setLoading(true);
     try {
@@ -45,29 +61,17 @@ export default function GraphVisualizer({ backendUrl }) {
   }, [backendUrl]);
 
   useEffect(() => {
-    let isMounted = true;
-    const initialLoad = async () => {
-      try {
-        const res = await fetch(`${backendUrl}/api/graph/visualize?limit=50`);
-        const data = await res.json();
-        if (isMounted) {
-          setGraphData(data);
-          setIsMock(Boolean(data.isMock));
-          setLoading(false);
-        }
-      } catch (err) {
-        console.warn('Failed initial graph fetch:', err);
-        if (isMounted) {
-          setLoading(false);
-        }
-      }
-    };
-    initialLoad();
+    // Defer so fetchGraph's synchronous setLoading(true) is not a setState-in-effect
+    const initialTimer = setTimeout(fetchGraph, 0);
+    return () => clearTimeout(initialTimer);
+  }, [fetchGraph]);
 
-    return () => {
-      isMounted = false;
-    };
-  }, [backendUrl]);
+  // CognitiveStudio dispatches 'graph:refresh' after a successful ECL pipeline run
+  useEffect(() => {
+    const handleRefresh = () => fetchGraph();
+    window.addEventListener('graph:refresh', handleRefresh);
+    return () => window.removeEventListener('graph:refresh', handleRefresh);
+  }, [fetchGraph]);
 
   // Initialize node positions & simple force physics
   useEffect(() => {
@@ -149,10 +153,11 @@ export default function GraphVisualizer({ backendUrl }) {
       }
 
       // Draw canvas
+      const view = transformRef.current;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.save();
-      ctx.translate(transform.x, transform.y);
-      ctx.scale(transform.k, transform.k);
+      ctx.translate(view.x, view.y);
+      ctx.scale(view.k, view.k);
 
       // Draw Links
       links.forEach((l) => {
@@ -178,17 +183,19 @@ export default function GraphVisualizer({ backendUrl }) {
       });
 
       // Draw Nodes
+      const activeSearch = searchRef.current;
+      const activeSelection = selectedRef.current;
       nodes.forEach((n) => {
         const isMatch =
-          !searchFilter ||
-          n.label.toLowerCase().includes(searchFilter.toLowerCase()) ||
-          n.type.toLowerCase().includes(searchFilter.toLowerCase());
+          !activeSearch ||
+          n.label.toLowerCase().includes(activeSearch.toLowerCase()) ||
+          n.type.toLowerCase().includes(activeSearch.toLowerCase());
         const color = TYPE_COLORS[n.type] || TYPE_COLORS.Default;
         const radius = n.radius || 18;
 
         // Glow
         ctx.beginPath();
-        ctx.arc(n.x, n.y, radius + (n === selectedNode ? 6 : 2), 0, Math.PI * 2);
+        ctx.arc(n.x, n.y, radius + (n === activeSelection ? 6 : 2), 0, Math.PI * 2);
         ctx.fillStyle = isMatch ? color : 'rgba(100, 116, 139, 0.2)';
         ctx.globalAlpha = isMatch ? 0.25 : 0.05;
         ctx.fill();
@@ -197,7 +204,7 @@ export default function GraphVisualizer({ backendUrl }) {
         // Circle
         ctx.beginPath();
         ctx.arc(n.x, n.y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = n === selectedNode ? '#ffffff' : isMatch ? color : '#334155';
+        ctx.fillStyle = n === activeSelection ? '#ffffff' : isMatch ? color : '#334155';
         ctx.fill();
         ctx.lineWidth = 2;
         ctx.strokeStyle = '#0f172a';
@@ -227,7 +234,7 @@ export default function GraphVisualizer({ backendUrl }) {
         cancelAnimationFrame(sim.animId);
       }
     };
-  }, [graphData, transform, selectedNode, searchFilter]);
+  }, [graphData]);
 
   // Canvas Mouse Interactions (Pan & Node Selection)
   const handleMouseDown = (e) => {
@@ -269,14 +276,22 @@ export default function GraphVisualizer({ backendUrl }) {
     draggedNodeRef.current = null;
   };
 
-  const handleWheel = (e) => {
-    e.preventDefault();
-    const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
-    setTransform((prev) => ({
-      ...prev,
-      k: Math.max(0.4, Math.min(3.0, prev.k * zoomFactor)),
-    }));
-  };
+  // Zoom needs a non-passive native listener — React's synthetic onWheel is passive
+  // and would let the page scroll instead of zooming the canvas.
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return undefined;
+    const onWheel = (e) => {
+      e.preventDefault();
+      const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
+      setTransform((prev) => ({
+        ...prev,
+        k: Math.max(0.4, Math.min(3.0, prev.k * zoomFactor)),
+      }));
+    };
+    canvas.addEventListener('wheel', onWheel, { passive: false });
+    return () => canvas.removeEventListener('wheel', onWheel);
+  }, []);
 
   return (
     <div className="graph-visualizer-container">
@@ -326,7 +341,6 @@ export default function GraphVisualizer({ backendUrl }) {
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
-          onWheel={handleWheel}
           className="interactive-canvas"
         />
 

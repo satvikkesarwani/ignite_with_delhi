@@ -1,10 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
+import { fileURLToPath } from 'url';
 
 class ClaimCheckService {
   constructor() {
-    this.storageDir = path.resolve('backend/uploads');
+    // Resolve relative to this module so the uploads dir is stable no matter the cwd
+    const moduleDir = path.dirname(fileURLToPath(import.meta.url));
+    this.storageDir = path.join(moduleDir, 'uploads');
     if (!fs.existsSync(this.storageDir)) {
       fs.mkdirSync(this.storageDir, { recursive: true });
     }
