@@ -83,9 +83,96 @@ function makeNvidiaRequest(apiKey, payload) {
 }
 
 /**
- * Generate completion with automatic rotation and failover across all keys
+ * Live per-key health check — pings each key with a minimal completion.
+ * Used by GET /api/ai/keys so tomorrow morning one call proves the whole pool.
  */
-export async function generateChat({ messages, temperature = 0.6, maxTokens = 1024 }) {
+export async function checkKeysHealth() {
+  const results = await Promise.all(
+    API_KEYS.map(
+      (apiKey, idx) =>
+        new Promise((resolve) => {
+          const startedAt = Date.now();
+          const payload = JSON.stringify({
+            model: MODEL_NAME,
+            messages: [
+              { role: 'system', content: '/no_think' },
+              { role: 'user', content: 'Reply with exactly: OK' },
+            ],
+            max_tokens: 5,
+          });
+          const req = https.request(
+            {
+              hostname: 'integrate.api.nvidia.com',
+              path: '/v1/chat/completions',
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${apiKey}`,
+                'Content-Length': Buffer.byteLength(payload),
+              },
+              timeout: 45000,
+            },
+            (res) => {
+              let body = '';
+              res.on('data', (c) => (body += c));
+              res.on('end', () => {
+                const latencyMs = Date.now() - startedAt;
+                let parsed = {};
+                try {
+                  parsed = JSON.parse(body);
+                } catch {
+                  /* non-JSON failure body */
+                }
+                const alive = res.statusCode < 300 && Boolean(parsed.choices);
+                resolve({
+                  keyIndex: idx + 1,
+                  alive,
+                  httpStatus: res.statusCode,
+                  latencyMs,
+                  error: alive ? null : parsed.error?.message || body.slice(0, 80),
+                });
+              });
+            }
+          );
+          req.on('error', (err) =>
+            resolve({
+              keyIndex: idx + 1,
+              alive: false,
+              latencyMs: Date.now() - startedAt,
+              error: err.message,
+            })
+          );
+          req.on('timeout', () => {
+            req.destroy();
+            resolve({
+              keyIndex: idx + 1,
+              alive: false,
+              latencyMs: Date.now() - startedAt,
+              error: 'timeout',
+            });
+          });
+          req.write(payload);
+          req.end();
+        })
+    )
+  );
+  const aliveCount = results.filter((r) => r.alive).length;
+  log.info('Key pool health check', { alive: aliveCount, total: API_KEYS.length });
+  return { checkedAt: new Date().toISOString(), aliveCount, total: API_KEYS.length, keys: results };
+}
+
+/**
+ * Generate completion with automatic rotation and failover across all keys.
+ * `thinking: true` opts back into Nemotron's reasoning phase (default OFF —
+ * verified via NIM probes that enable_thinking:false yields clean, 5x faster
+ * answers; otherwise reasoning leaks into content or burns the token budget).
+ */
+export async function generateChat({
+  messages,
+  temperature = 0.6,
+  maxTokens = 1024,
+  thinking = false,
+}) {
   if (!API_KEYS.length) {
     log.error('No NVIDIA API keys configured');
     throw new Error('No NVIDIA API keys configured');
@@ -107,11 +194,16 @@ export async function generateChat({ messages, temperature = 0.6, maxTokens = 10
         messages,
         temperature,
         max_tokens: maxTokens,
+        // NIM: disables Nemotron's inline reasoning phase — clean, fast answers
+        ...(thinking ? {} : { chat_template_kwargs: { enable_thinking: false } }),
       };
 
       const response = await makeNvidiaRequest(apiKey, payload);
       const choice = response.choices?.[0];
-      const content = choice?.message?.content || choice?.text || '';
+      // Defensive strip: some NIM responses inline <think> blocks in content
+      const content = (choice?.message?.content || choice?.text || '')
+        .replace(/<think>[\s\S]*?<\/think>/g, '')
+        .trim();
 
       log.info('Completion OK', {
         keyIndex: keyIdx + 1,

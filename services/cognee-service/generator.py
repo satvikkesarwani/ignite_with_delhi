@@ -58,6 +58,8 @@ Respond with only clean Python code snippet containing the classes.
         ],
         "temperature": 0.2,
         "max_tokens": 1024,
+        # Disable Nemotron's inline reasoning — clean code output only
+        "chat_template_kwargs": {"enable_thinking": False},
     }
 
     last_error = None

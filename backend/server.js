@@ -3,7 +3,7 @@ import cors from 'cors';
 import crypto from 'crypto';
 import dotenv from 'dotenv';
 import { startKeepAlive } from './keepAlive.js';
-import { generateChat } from './aiService.js';
+import { generateChat, checkKeysHealth } from './aiService.js';
 import { neo4jService } from './neo4jService.js';
 import { claimCheckService } from './claimCheckService.js';
 import { renderWorkflowService } from './renderWorkflowService.js';
@@ -160,11 +160,30 @@ app.get('/api/ai/status', (req, res) => {
   });
 });
 
+/**
+ * Live per-key NVIDIA health check — one call proves the whole 5-key pool.
+ * Costs 5 tiny completions; use it before the demo, not on every page load.
+ */
+app.get('/api/ai/keys', async (req, res) => {
+  try {
+    const report = await checkKeysHealth();
+    req.log.info('AI key pool check', {
+      alive: report.aliveCount,
+      total: report.total,
+    });
+    res.json({ success: true, ...report });
+  } catch (err) {
+    req.log.error('AI key pool check failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 app.post('/api/ai/generate', async (req, res) => {
   try {
     const {
       prompt,
-      systemPrompt = 'You are a helpful, fast hackathon AI assistant.',
+      // /no_think keeps Nemotron's reasoning phase out of the visible answer
+      systemPrompt = 'You are a helpful, fast hackathon AI assistant. /no_think — output only the final answer.',
       temperature = 0.6,
       maxTokens = 1024,
     } = req.body;
