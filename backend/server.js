@@ -3,6 +3,9 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { startKeepAlive } from './keepAlive.js';
 import { generateChat } from './aiService.js';
+import { neo4jService } from './neo4jService.js';
+import { claimCheckService } from './claimCheckService.js';
+import { renderWorkflowService } from './renderWorkflowService.js';
 
 dotenv.config();
 
@@ -152,6 +155,97 @@ app.post('/api/ai/chat', async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error('AI Chat Error:', err.message);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * Neo4j Knowledge Graph Endpoints
+ */
+app.get('/api/graph/status', async (req, res) => {
+  try {
+    const health = await neo4jService.checkHealth();
+    res.json(health);
+  } catch (err) {
+    res.status(500).json({ status: 'error', error: err.message });
+  }
+});
+
+app.get('/api/graph/visualize', async (req, res) => {
+  try {
+    const limit = req.query.limit ? parseInt(req.query.limit, 10) : 100;
+    const graphData = await neo4jService.getGraphVisualization(limit);
+    res.json(graphData);
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/graph/query', async (req, res) => {
+  try {
+    const { cypher, params = {} } = req.body;
+    if (!cypher) {
+      return res.status(400).json({ success: false, error: 'Cypher query string is required' });
+    }
+    const result = await neo4jService.runCypherQuery(cypher, params);
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/graph/warmup', async (req, res) => {
+  try {
+    const result = await neo4jService.warmUp();
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/graph/warmup', async (req, res) => {
+  try {
+    const result = await neo4jService.warmUp();
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * Claim-Check Storage Decoupling Endpoint
+ */
+app.post('/api/claim/upload', async (req, res) => {
+  try {
+    const { filename = 'dataset.txt', content = '', mimeType = 'text/plain' } = req.body;
+    if (!content) {
+      return res.status(400).json({ success: false, error: 'Content payload is required' });
+    }
+    const claim = await claimCheckService.storePayload(
+      filename,
+      Buffer.from(content, 'utf-8'),
+      mimeType
+    );
+    res.status(201).json({ success: true, claim });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * Render Workflows Dispatch Endpoint
+ */
+app.post('/api/workflow/trigger', async (req, res) => {
+  try {
+    const { command, planId = 'starter' } = req.body;
+    if (!command) {
+      return res
+        .status(400)
+        .json({ success: false, error: 'Command is required to trigger Render job' });
+    }
+    const result = await renderWorkflowService.triggerTask(command, planId);
+    res.json(result);
+  } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
 });

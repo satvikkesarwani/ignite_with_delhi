@@ -1,0 +1,9 @@
+cognee>=0.1.30
+neo4j>=5.28.0
+fastembed>=0.3.0
+pydantic>=2.7.0
+fastapi>=0.111.0
+uvicorn>=0.30.0
+python-dotenv>=1.0.0
+requests>=2.32.0
+aiofiles>=24.1.0

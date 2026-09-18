@@ -1,8 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
+import GraphVisualizer from './components/GraphVisualizer';
+import CognitiveStudio from './components/CognitiveStudio';
 
 export default function App() {
   const defaultApiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
   const [apiUrl, setApiUrl] = useState(defaultApiUrl);
+  const [activeTab, setActiveTab] = useState('overview'); // 'overview', 'graph', 'cognitive', 'ai'
   const [healthData, setHealthData] = useState(null);
   const [healthStatus, setHealthStatus] = useState('checking'); // 'healthy', 'offline', 'checking'
   const [latency, setLatency] = useState(null);
@@ -164,231 +167,270 @@ export default function App() {
         </div>
       </div>
 
-      {/* Main Grid: Health Monitor + API Playground */}
-      <div className="grid-2">
-        {/* Backend Live Status Card */}
-        <div className="card">
-          <div className="card-title">
-            <div className="icon-wrap">
-              <span>🩺</span>
-              <span>Backend Status</span>
+      {/* Tab Navigation */}
+      <div className="tab-bar">
+        <button
+          className={`tab-btn ${activeTab === 'overview' ? 'active' : ''}`}
+          onClick={() => setActiveTab('overview')}
+        >
+          📊 System Overview & Health
+        </button>
+        <button
+          className={`tab-btn ${activeTab === 'graph' ? 'active' : ''}`}
+          onClick={() => setActiveTab('graph')}
+        >
+          🕸️ Neo4j Knowledge Graph
+        </button>
+        <button
+          className={`tab-btn ${activeTab === 'cognitive' ? 'active' : ''}`}
+          onClick={() => setActiveTab('cognitive')}
+        >
+          🧠 Cognitive ECL Studio
+        </button>
+        <button
+          className={`tab-btn ${activeTab === 'ai' ? 'active' : ''}`}
+          onClick={() => setActiveTab('ai')}
+        >
+          🤖 NVIDIA NIM AI Playground
+        </button>
+      </div>
+
+      {activeTab === 'graph' && <GraphVisualizer backendUrl={apiUrl} />}
+
+      {activeTab === 'cognitive' && <CognitiveStudio backendUrl={apiUrl} />}
+
+      {/* Main Grid: Health Monitor + API Playground (Active on 'overview') */}
+      {activeTab === 'overview' && (
+        <div className="grid-2">
+          {/* Backend Live Status Card */}
+          <div className="card">
+            <div className="card-title">
+              <div className="icon-wrap">
+                <span>🩺</span>
+                <span>Backend Status</span>
+              </div>
+              <span className={`status-badge ${healthStatus}`}>
+                <span className="ping-dot" />
+                {healthStatus}
+              </span>
             </div>
-            <span className={`status-badge ${healthStatus}`}>
-              <span className="ping-dot" />
-              {healthStatus}
-            </span>
+
+            <div className="stat-row">
+              <span className="stat-label">Latency (Round-trip)</span>
+              <span className="stat-value" style={{ color: latency < 300 ? '#10b981' : '#f59e0b' }}>
+                {latency !== null ? `${latency} ms` : '--'}
+              </span>
+            </div>
+
+            <div className="stat-row">
+              <span className="stat-label">Server Uptime</span>
+              <span className="stat-value">
+                {healthData?.uptimeSeconds !== undefined ? `${healthData.uptimeSeconds}s` : '--'}
+              </span>
+            </div>
+
+            <div className="stat-row">
+              <span className="stat-label">Environment</span>
+              <span className="stat-value">{healthData?.environment || 'unknown'}</span>
+            </div>
+
+            <div className="stat-row">
+              <span className="stat-label">Render Anti-Sleep</span>
+              <span className="stat-value" style={{ color: '#06b6d4' }}>
+                Active (10m Ping)
+              </span>
+            </div>
+
+            <div style={{ marginTop: '1.25rem' }}>
+              <span className="input-label">Raw Health Payload:</span>
+              <pre className="response-box" style={{ marginTop: '0.5rem', maxHeight: '130px' }}>
+                {healthData ? JSON.stringify(healthData, null, 2) : 'Connecting...'}
+              </pre>
+            </div>
           </div>
 
-          <div className="stat-row">
-            <span className="stat-label">Latency (Round-trip)</span>
-            <span className="stat-value" style={{ color: latency < 300 ? '#10b981' : '#f59e0b' }}>
-              {latency !== null ? `${latency} ms` : '--'}
-            </span>
-          </div>
+          {/* API Playground Card */}
+          <div className="card">
+            <div className="card-title">
+              <div className="icon-wrap">
+                <span>🧪</span>
+                <span>API Playground</span>
+              </div>
+              <div style={{ display: 'flex', gap: '0.4rem' }}>
+                <button
+                  onClick={() => {
+                    setRequestMethod('GET');
+                    setActiveEndpoint('/api/hello');
+                  }}
+                  className={`btn ${activeEndpoint === '/api/hello' ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ padding: '0.35rem 0.65rem', fontSize: '0.75rem' }}
+                >
+                  GET /hello
+                </button>
+                <button
+                  onClick={() => {
+                    setRequestMethod('GET');
+                    setActiveEndpoint('/api/projects');
+                  }}
+                  className={`btn ${activeEndpoint === '/api/projects' ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ padding: '0.35rem 0.65rem', fontSize: '0.75rem' }}
+                >
+                  GET /projects
+                </button>
+                <button
+                  onClick={() => {
+                    setRequestMethod('POST');
+                    setActiveEndpoint('/api/projects');
+                  }}
+                  className={`btn ${activeEndpoint === '/api/projects' && requestMethod === 'POST' ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ padding: '0.35rem 0.65rem', fontSize: '0.75rem' }}
+                >
+                  POST /projects
+                </button>
+              </div>
+            </div>
 
-          <div className="stat-row">
-            <span className="stat-label">Server Uptime</span>
-            <span className="stat-value">
-              {healthData?.uptimeSeconds !== undefined ? `${healthData.uptimeSeconds}s` : '--'}
-            </span>
-          </div>
+            {requestMethod === 'POST' && (
+              <div className="input-group">
+                <label className="input-label" htmlFor="json-payload">
+                  JSON Body:
+                </label>
+                <textarea
+                  id="json-payload"
+                  value={requestBody}
+                  onChange={(e) => setRequestBody(e.target.value)}
+                  rows={3}
+                  className="text-input"
+                  style={{ resize: 'vertical' }}
+                />
+              </div>
+            )}
 
-          <div className="stat-row">
-            <span className="stat-label">Environment</span>
-            <span className="stat-value">{healthData?.environment || 'unknown'}</span>
-          </div>
+            <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem' }}>
+              <button
+                onClick={sendApiRequest}
+                disabled={loadingReq}
+                className="btn btn-primary"
+                style={{ width: '100%' }}
+              >
+                {loadingReq ? 'Sending...' : `Send ${requestMethod} ${activeEndpoint}`}
+              </button>
+            </div>
 
-          <div className="stat-row">
-            <span className="stat-label">Render Anti-Sleep</span>
-            <span className="stat-value" style={{ color: '#06b6d4' }}>
-              Active (10m Ping)
-            </span>
-          </div>
-
-          <div style={{ marginTop: '1.25rem' }}>
-            <span className="input-label">Raw Health Payload:</span>
-            <pre className="response-box" style={{ marginTop: '0.5rem', maxHeight: '130px' }}>
-              {healthData ? JSON.stringify(healthData, null, 2) : 'Connecting...'}
-            </pre>
+            <div>
+              <span className="input-label">Response:</span>
+              <pre className="response-box" style={{ marginTop: '0.5rem', maxHeight: '160px' }}>
+                {apiResponse
+                  ? JSON.stringify(apiResponse, null, 2)
+                  : '// Click send to test endpoint'}
+              </pre>
+            </div>
           </div>
         </div>
+      )}
 
-        {/* API Playground Card */}
-        <div className="card">
+      {/* NVIDIA AI Section (Active on 'ai' or 'overview') */}
+      {(activeTab === 'ai' || activeTab === 'overview') && (
+        <div
+          className="card"
+          style={{
+            marginBottom: '2rem',
+            border: '1px solid rgba(168, 85, 247, 0.3)',
+            background:
+              'linear-gradient(180deg, rgba(26, 20, 48, 0.6) 0%, rgba(18, 24, 38, 0.8) 100%)',
+          }}
+        >
           <div className="card-title">
             <div className="icon-wrap">
-              <span>🧪</span>
-              <span>API Playground</span>
+              <span style={{ fontSize: '1.25rem' }}>🤖</span>
+              <span>NVIDIA Nemotron 3.5 Lightning (30B) — Key Rotation Active</span>
             </div>
-            <div style={{ display: 'flex', gap: '0.4rem' }}>
+            <span
+              className="status-badge healthy"
+              style={{
+                background: 'rgba(168, 85, 247, 0.15)',
+                color: '#c084fc',
+                borderColor: 'rgba(168, 85, 247, 0.3)',
+              }}
+            >
+              5 API Keys Rotating
+            </span>
+          </div>
+
+          <div className="input-group">
+            <label className="input-label" htmlFor="ai-prompt-input">
+              Test AI Prompt (Endpoint: <code>POST /api/ai/generate</code>):
+            </label>
+            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+              <input
+                id="ai-prompt-input"
+                type="text"
+                value={aiPrompt}
+                onChange={(e) => setAiPrompt(e.target.value)}
+                placeholder="Ask anything..."
+                className="text-input"
+                style={{ flex: 1, minWidth: '280px' }}
+                onKeyDown={(e) => e.key === 'Enter' && runAiGeneration()}
+              />
               <button
-                onClick={() => {
-                  setRequestMethod('GET');
-                  setActiveEndpoint('/api/hello');
+                onClick={runAiGeneration}
+                disabled={loadingAi}
+                className="btn btn-primary"
+                style={{
+                  background: 'linear-gradient(135deg, #a855f7, #6366f1)',
+                  minWidth: '140px',
                 }}
-                className={`btn ${activeEndpoint === '/api/hello' ? 'btn-primary' : 'btn-secondary'}`}
-                style={{ padding: '0.35rem 0.65rem', fontSize: '0.75rem' }}
               >
-                GET /hello
-              </button>
-              <button
-                onClick={() => {
-                  setRequestMethod('GET');
-                  setActiveEndpoint('/api/projects');
-                }}
-                className={`btn ${activeEndpoint === '/api/projects' ? 'btn-primary' : 'btn-secondary'}`}
-                style={{ padding: '0.35rem 0.65rem', fontSize: '0.75rem' }}
-              >
-                GET /projects
-              </button>
-              <button
-                onClick={() => {
-                  setRequestMethod('POST');
-                  setActiveEndpoint('/api/projects');
-                }}
-                className={`btn ${activeEndpoint === '/api/projects' && requestMethod === 'POST' ? 'btn-primary' : 'btn-secondary'}`}
-                style={{ padding: '0.35rem 0.65rem', fontSize: '0.75rem' }}
-              >
-                POST /projects
+                {loadingAi ? '⚡ Generating...' : '✨ Ask AI'}
               </button>
             </div>
           </div>
 
-          {requestMethod === 'POST' && (
-            <div className="input-group">
-              <label className="input-label" htmlFor="json-payload">
-                JSON Body:
-              </label>
-              <textarea
-                id="json-payload"
-                value={requestBody}
-                onChange={(e) => setRequestBody(e.target.value)}
-                rows={3}
-                className="text-input"
-                style={{ resize: 'vertical' }}
-              />
+          {aiOutput && (
+            <div
+              style={{
+                marginTop: '1rem',
+                background: 'rgba(0, 0, 0, 0.35)',
+                padding: '1rem',
+                borderRadius: '10px',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '0.5rem',
+                  fontSize: '0.8rem',
+                  color: '#94a3b8',
+                }}
+              >
+                <span>
+                  Model:{' '}
+                  <code style={{ color: '#38bdf8' }}>
+                    {aiOutput.model || 'nvidia/nemotron-3.5-lightning-30b-a3b'}
+                  </code>
+                </span>
+                <span>
+                  Key: <strong style={{ color: '#10b981' }}>#{aiOutput.keyIndexUsed || 1}</strong> |
+                  Time: {aiOutput.elapsedMs || '--'}ms
+                </span>
+              </div>
+              <div
+                style={{
+                  color: '#f1f5f9',
+                  whiteSpace: 'pre-wrap',
+                  lineHeight: 1.6,
+                  fontSize: '0.92rem',
+                }}
+              >
+                {aiOutput.content || aiOutput.error || JSON.stringify(aiOutput)}
+              </div>
             </div>
           )}
-
-          <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem' }}>
-            <button
-              onClick={sendApiRequest}
-              disabled={loadingReq}
-              className="btn btn-primary"
-              style={{ width: '100%' }}
-            >
-              {loadingReq ? 'Sending...' : `Send ${requestMethod} ${activeEndpoint}`}
-            </button>
-          </div>
-
-          <div>
-            <span className="input-label">Response:</span>
-            <pre className="response-box" style={{ marginTop: '0.5rem', maxHeight: '160px' }}>
-              {apiResponse
-                ? JSON.stringify(apiResponse, null, 2)
-                : '// Click send to test endpoint'}
-            </pre>
-          </div>
         </div>
-      </div>
-
-      {/* NVIDIA AI Section */}
-      <div
-        className="card"
-        style={{
-          marginBottom: '2rem',
-          border: '1px solid rgba(168, 85, 247, 0.3)',
-          background:
-            'linear-gradient(180deg, rgba(26, 20, 48, 0.6) 0%, rgba(18, 24, 38, 0.8) 100%)',
-        }}
-      >
-        <div className="card-title">
-          <div className="icon-wrap">
-            <span style={{ fontSize: '1.25rem' }}>🤖</span>
-            <span>NVIDIA Nemotron 3.5 Lightning (30B) — Key Rotation Active</span>
-          </div>
-          <span
-            className="status-badge healthy"
-            style={{
-              background: 'rgba(168, 85, 247, 0.15)',
-              color: '#c084fc',
-              borderColor: 'rgba(168, 85, 247, 0.3)',
-            }}
-          >
-            5 API Keys Rotating
-          </span>
-        </div>
-
-        <div className="input-group">
-          <label className="input-label" htmlFor="ai-prompt-input">
-            Test AI Prompt (Endpoint: <code>POST /api/ai/generate</code>):
-          </label>
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <input
-              id="ai-prompt-input"
-              type="text"
-              value={aiPrompt}
-              onChange={(e) => setAiPrompt(e.target.value)}
-              placeholder="Ask anything..."
-              className="text-input"
-              style={{ flex: 1, minWidth: '280px' }}
-              onKeyDown={(e) => e.key === 'Enter' && runAiGeneration()}
-            />
-            <button
-              onClick={runAiGeneration}
-              disabled={loadingAi}
-              className="btn btn-primary"
-              style={{ background: 'linear-gradient(135deg, #a855f7, #6366f1)', minWidth: '140px' }}
-            >
-              {loadingAi ? '⚡ Generating...' : '✨ Ask AI'}
-            </button>
-          </div>
-        </div>
-
-        {aiOutput && (
-          <div
-            style={{
-              marginTop: '1rem',
-              background: 'rgba(0, 0, 0, 0.35)',
-              padding: '1rem',
-              borderRadius: '10px',
-              border: '1px solid rgba(255, 255, 255, 0.06)',
-            }}
-          >
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                marginBottom: '0.5rem',
-                fontSize: '0.8rem',
-                color: '#94a3b8',
-              }}
-            >
-              <span>
-                Model:{' '}
-                <code style={{ color: '#38bdf8' }}>
-                  {aiOutput.model || 'nvidia/nemotron-3.5-lightning-30b-a3b'}
-                </code>
-              </span>
-              <span>
-                Key: <strong style={{ color: '#10b981' }}>#{aiOutput.keyIndexUsed || 1}</strong> |
-                Time: {aiOutput.elapsedMs || '--'}ms
-              </span>
-            </div>
-            <div
-              style={{
-                color: '#f1f5f9',
-                whiteSpace: 'pre-wrap',
-                lineHeight: 1.6,
-                fontSize: '0.92rem',
-              }}
-            >
-              {aiOutput.content || aiOutput.error || JSON.stringify(aiOutput)}
-            </div>
-          </div>
-        )}
-      </div>
+      )}
 
       {/* Bottom Checklist: Hackathon Readiness */}
       <div className="grid-3">

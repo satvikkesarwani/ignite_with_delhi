@@ -33,3 +33,15 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Python & Cognitive Engine
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.cognee/
+.cognee_system/
+backend/uploads/
+uploads/
+

@@ -101,6 +101,43 @@ app.get('/api/your-feature', (req, res) => {
 - Styling tokens & glassmorphic classes: `frontend/src/index.css`
 - Assets & icons: `lucide-react` is already installed (`import { Zap, Heart, Shield } from 'lucide-react'`).
 
+## 🧠 Built-in Services & Architecture
+
+### 1. 🕸️ Neo4j Knowledge Graph Visualizer:
+
+- **Interactive 2D Canvas**: Open tab **"🕸️ Neo4j Knowledge Graph"** in the frontend to explore real-time force-directed entity relations, drag nodes, zoom/pan, and inspect node properties.
+- **Backend API**:
+  - `GET /api/graph/status`: Live connection health & stats.
+  - `GET /api/graph/visualize`: Formatted `{ nodes, links }` for canvas rendering.
+  - `POST /api/graph/query`: Execute Cypher queries.
+  - `GET /api/graph/warmup`: Pings Neo4j to prevent 72h auto-pause.
+
+### 2. 🧠 Cognitive Memory Studio (Cognee ECL):
+
+- **Unstructured Ingestion**: Open tab **"🧠 Cognitive ECL Studio"** to paste documents or problem statements.
+- **Directive Extraction**: Uses `custom_prompt` to filter corporate/conversational noise.
+- **Zero-Cost Embeddings**: FastEmbed ONNX runs locally on CPU with zero OpenAI bill!
+- **Multi-Hop Reasoning**: Side-by-side graph path traversal + NVIDIA Nemotron 30B response.
+
+### 3. 🛠️ Useful Commands:
+
+```bash
+# Start Frontend & Backend concurrently
+npm run dev
+
+# Run full monorepo test (syntax + build)
+npm test
+
+# Run Cognee & schema unit tests
+npm run cognee:test
+
+# Start Cognee FastAPI microservice (Port 8000)
+npm run cognee:start
+
+# Ping Neo4j AuraDB instance to keep warm
+npm run graph:warmup
+```
+
 ---
 
 ## 🚀 How to Deploy (Continuous Deployment)

@@ -1,0 +1,362 @@
+import { useEffect, useRef, useState, useCallback } from 'react';
+
+const TYPE_COLORS = {
+  Organization: '#38bdf8', // Cyan
+  Director: '#a855f7', // Purple
+  ShellAccount: '#f59e0b', // Amber/Orange
+  Transaction: '#10b981', // Emerald Green
+  RiskAlert: '#ef4444', // Crimson Red
+  Jurisdiction: '#ec4899', // Pink
+  Default: '#64748b', // Slate
+};
+
+export default function GraphVisualizer({ backendUrl }) {
+  const canvasRef = useRef(null);
+  const [graphData, setGraphData] = useState({ nodes: [], links: [] });
+  const [selectedNode, setSelectedNode] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [isMock, setIsMock] = useState(true);
+  const [searchFilter, setSearchFilter] = useState('');
+  const [transform, setTransform] = useState({ x: 0, y: 0, k: 1 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+
+  // Physics simulation state stored in ref for 60fps canvas loop
+  const simulationRef = useRef({
+    nodes: [],
+    links: [],
+    animId: null,
+  });
+
+  const draggedNodeRef = useRef(null);
+
+  const fetchGraph = useCallback(async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(`${backendUrl}/api/graph/visualize?limit=50`);
+      const data = await res.json();
+      setGraphData(data);
+      setIsMock(Boolean(data.isMock));
+    } catch (err) {
+      console.warn('Failed to fetch graph from backend, using internal demo fallback:', err);
+    } finally {
+      setLoading(false);
+    }
+  }, [backendUrl]);
+
+  useEffect(() => {
+    let isMounted = true;
+    const initialLoad = async () => {
+      try {
+        const res = await fetch(`${backendUrl}/api/graph/visualize?limit=50`);
+        const data = await res.json();
+        if (isMounted) {
+          setGraphData(data);
+          setIsMock(Boolean(data.isMock));
+          setLoading(false);
+        }
+      } catch (err) {
+        console.warn('Failed initial graph fetch:', err);
+        if (isMounted) {
+          setLoading(false);
+        }
+      }
+    };
+    initialLoad();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [backendUrl]);
+
+  // Initialize node positions & simple force physics
+  useEffect(() => {
+    if (!graphData.nodes || !graphData.nodes.length) return;
+
+    const width = 800;
+    const height = 550;
+
+    const nodes = graphData.nodes.map((n, i) => {
+      const angle = (i / graphData.nodes.length) * 2 * Math.PI;
+      const radius = 160 + (i % 3) * 60;
+      return {
+        ...n,
+        x: width / 2 + Math.cos(angle) * radius,
+        y: height / 2 + Math.sin(angle) * radius,
+        vx: 0,
+        vy: 0,
+        radius: n.type === 'Organization' || n.type === 'RiskAlert' ? 22 : 18,
+      };
+    });
+
+    const links = (graphData.links || []).map((l) => ({ ...l }));
+
+    simulationRef.current.nodes = nodes;
+    simulationRef.current.links = links;
+
+    // Run simple force relaxation
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let step = 0;
+    const render = () => {
+      if (step < 200) {
+        // Node repulsion
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[j].x - nodes[i].x;
+            const dy = nodes[j].y - nodes[i].y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            if (dist < 180) {
+              const force = (180 - dist) / 180;
+              const fx = (dx / dist) * force * 1.5;
+              const fy = (dy / dist) * force * 1.5;
+              if (draggedNodeRef.current !== nodes[i]) {
+                nodes[i].x -= fx;
+                nodes[i].y -= fy;
+              }
+              if (draggedNodeRef.current !== nodes[j]) {
+                nodes[j].x += fx;
+                nodes[j].y += fy;
+              }
+            }
+          }
+        }
+
+        // Link attraction
+        links.forEach((l) => {
+          const source = nodes.find((n) => n.id === l.source);
+          const target = nodes.find((n) => n.id === l.target);
+          if (source && target) {
+            const dx = target.x - source.x;
+            const dy = target.y - source.y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            const force = (dist - 110) * 0.02;
+            const fx = (dx / dist) * force;
+            const fy = (dy / dist) * force;
+            if (draggedNodeRef.current !== source) {
+              source.x += fx;
+              source.y += fy;
+            }
+            if (draggedNodeRef.current !== target) {
+              target.x -= fx;
+              target.y -= fy;
+            }
+          }
+        });
+        step++;
+      }
+
+      // Draw canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.save();
+      ctx.translate(transform.x, transform.y);
+      ctx.scale(transform.k, transform.k);
+
+      // Draw Links
+      links.forEach((l) => {
+        const source = nodes.find((n) => n.id === l.source);
+        const target = nodes.find((n) => n.id === l.target);
+        if (!source || !target) return;
+
+        ctx.beginPath();
+        ctx.moveTo(source.x, source.y);
+        ctx.lineTo(target.x, target.y);
+        ctx.strokeStyle =
+          l.type === 'FLAGGED_TRANSACTION' ? 'rgba(239, 68, 68, 0.7)' : 'rgba(148, 163, 184, 0.25)';
+        ctx.lineWidth = l.type === 'FLAGGED_TRANSACTION' ? 2 : 1.2;
+        ctx.stroke();
+
+        // Edge label
+        const midX = (source.x + target.x) / 2;
+        const midY = (source.y + target.y) / 2;
+        ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
+        ctx.font = '9px Outfit, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(l.label || l.type, midX, midY - 4);
+      });
+
+      // Draw Nodes
+      nodes.forEach((n) => {
+        const isMatch =
+          !searchFilter ||
+          n.label.toLowerCase().includes(searchFilter.toLowerCase()) ||
+          n.type.toLowerCase().includes(searchFilter.toLowerCase());
+        const color = TYPE_COLORS[n.type] || TYPE_COLORS.Default;
+        const radius = n.radius || 18;
+
+        // Glow
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, radius + (n === selectedNode ? 6 : 2), 0, Math.PI * 2);
+        ctx.fillStyle = isMatch ? color : 'rgba(100, 116, 139, 0.2)';
+        ctx.globalAlpha = isMatch ? 0.25 : 0.05;
+        ctx.fill();
+        ctx.globalAlpha = 1.0;
+
+        // Circle
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, radius, 0, Math.PI * 2);
+        ctx.fillStyle = n === selectedNode ? '#ffffff' : isMatch ? color : '#334155';
+        ctx.fill();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#0f172a';
+        ctx.stroke();
+
+        // Label
+        ctx.fillStyle = isMatch ? '#f8fafc' : '#64748b';
+        ctx.font = '11px Outfit, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(n.label, n.x, n.y + radius + 14);
+
+        // Type badge text
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.font = '8px Outfit, sans-serif';
+        ctx.fillText(n.type.substring(0, 4).toUpperCase(), n.x, n.y + 3);
+      });
+
+      ctx.restore();
+      simulationRef.current.animId = requestAnimationFrame(render);
+    };
+
+    simulationRef.current.animId = requestAnimationFrame(render);
+    const sim = simulationRef.current;
+
+    return () => {
+      if (sim && sim.animId) {
+        cancelAnimationFrame(sim.animId);
+      }
+    };
+  }, [graphData, transform, selectedNode, searchFilter]);
+
+  // Canvas Mouse Interactions (Pan & Node Selection)
+  const handleMouseDown = (e) => {
+    const rect = canvasRef.current.getBoundingClientRect();
+    const mouseX = (e.clientX - rect.left - transform.x) / transform.k;
+    const mouseY = (e.clientY - rect.top - transform.y) / transform.k;
+
+    const clicked = simulationRef.current.nodes.find((n) => {
+      const dx = n.x - mouseX;
+      const dy = n.y - mouseY;
+      return Math.sqrt(dx * dx + dy * dy) <= (n.radius || 18);
+    });
+
+    if (clicked) {
+      setSelectedNode(clicked);
+      draggedNodeRef.current = clicked;
+    } else {
+      setIsDragging(true);
+      setDragStart({ x: e.clientX - transform.x, y: e.clientY - transform.y });
+    }
+  };
+
+  const handleMouseMove = (e) => {
+    if (draggedNodeRef.current) {
+      const rect = canvasRef.current.getBoundingClientRect();
+      draggedNodeRef.current.x = (e.clientX - rect.left - transform.x) / transform.k;
+      draggedNodeRef.current.y = (e.clientY - rect.top - transform.y) / transform.k;
+    } else if (isDragging) {
+      setTransform((prev) => ({
+        ...prev,
+        x: e.clientX - dragStart.x,
+        y: e.clientY - dragStart.y,
+      }));
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    draggedNodeRef.current = null;
+  };
+
+  const handleWheel = (e) => {
+    e.preventDefault();
+    const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
+    setTransform((prev) => ({
+      ...prev,
+      k: Math.max(0.4, Math.min(3.0, prev.k * zoomFactor)),
+    }));
+  };
+
+  return (
+    <div className="graph-visualizer-container">
+      <div className="graph-header">
+        <div className="graph-title-block">
+          <h3>🕸️ Neo4j Knowledge Graph Visualizer</h3>
+          <span className={`status-pill ${isMock ? 'pill-warning' : 'pill-success'}`}>
+            {isMock ? 'Demo Simulated Graph' : '🟢 Live Neo4j AuraDB'}
+          </span>
+          <span className="stats-pill">
+            {graphData.nodes ? graphData.nodes.length : 0} Nodes •{' '}
+            {graphData.links ? graphData.links.length : 0} Edges
+          </span>
+        </div>
+
+        <div className="graph-actions">
+          <input
+            type="text"
+            placeholder="Filter nodes (e.g. Panama, Shell)..."
+            value={searchFilter}
+            onChange={(e) => setSearchFilter(e.target.value)}
+            className="graph-search-input"
+          />
+          <button onClick={fetchGraph} disabled={loading} className="btn-action">
+            {loading ? 'Refreshing...' : '🔄 Refresh'}
+          </button>
+          <button onClick={() => setTransform({ x: 0, y: 0, k: 1 })} className="btn-action">
+            🎯 Reset View
+          </button>
+        </div>
+      </div>
+
+      <div className="graph-legend">
+        {Object.entries(TYPE_COLORS).map(([type, color]) => (
+          <div key={type} className="legend-item">
+            <span className="legend-dot" style={{ backgroundColor: color }} />
+            <span className="legend-label">{type}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="graph-canvas-wrapper">
+        <canvas
+          ref={canvasRef}
+          width={880}
+          height={550}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onWheel={handleWheel}
+          className="interactive-canvas"
+        />
+
+        {selectedNode && (
+          <div className="node-details-card">
+            <div className="card-header">
+              <span
+                className="type-badge"
+                style={{ backgroundColor: TYPE_COLORS[selectedNode.type] || '#64748b' }}
+              >
+                {selectedNode.type}
+              </span>
+              <button onClick={() => setSelectedNode(null)} className="close-btn">
+                ×
+              </button>
+            </div>
+            <h4>{selectedNode.label}</h4>
+            <div className="props-list">
+              {Object.entries(selectedNode.properties || {}).map(([key, val]) => (
+                <div key={key} className="prop-row">
+                  <span className="prop-key">{key}:</span>
+                  <span className="prop-val">
+                    {typeof val === 'object' ? JSON.stringify(val) : String(val)}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
