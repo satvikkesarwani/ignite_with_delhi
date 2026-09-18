@@ -57,8 +57,37 @@ npm run dev
 - **Frontend UI (Live Vercel)**: [https://frontend-beryl-seven-82.vercel.app](https://frontend-beryl-seven-82.vercel.app)
 - **Backend API (Live Render)**: [https://ignite-backend-kt07.onrender.com](https://ignite-backend-kt07.onrender.com)
 - **Backend Health Check**: [https://ignite-backend-kt07.onrender.com/health](https://ignite-backend-kt07.onrender.com/health)
+- **NVIDIA AI Status**: [https://ignite-backend-kt07.onrender.com/api/ai/status](https://ignite-backend-kt07.onrender.com/api/ai/status)
 - **Local Frontend**: [http://localhost:5173](http://localhost:5173)
 - **Local Backend**: [http://localhost:5001](http://localhost:5001)
+
+---
+
+## 🤖 NVIDIA AI Quick-Connect (Nemotron 3.5 Lightning 30B)
+
+Pre-configured with **5-Key Automatic Pool Rotation & Failover**. Never hit rate limits during demo!
+
+### AI Endpoints:
+
+- `GET /api/ai/status`: Check model status & active key pool.
+- `POST /api/ai/generate`:
+  ```json
+  {
+    "prompt": "Your hackathon prompt here",
+    "systemPrompt": "Optional system prompt",
+    "temperature": 0.6,
+    "maxTokens": 1024
+  }
+  ```
+- `POST /api/ai/chat`:
+  ```json
+  {
+    "messages": [
+      { "role": "system", "content": "You are an assistant." },
+      { "role": "user", "content": "Hello!" }
+    ]
+  }
+  ```
 
 ---
 
