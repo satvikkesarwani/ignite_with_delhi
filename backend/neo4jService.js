@@ -1,6 +1,18 @@
 import neo4j from 'neo4j-driver';
 import dotenv from 'dotenv';
+import fs from 'fs';
+import path from 'path';
 
+const candidateEnvs = [
+  path.resolve('.env'),
+  path.resolve('backend/.env'),
+  path.resolve('../backend/.env'),
+];
+for (const envPath of candidateEnvs) {
+  if (fs.existsSync(envPath)) {
+    dotenv.config({ path: envPath, override: false });
+  }
+}
 dotenv.config();
 
 class Neo4jService {

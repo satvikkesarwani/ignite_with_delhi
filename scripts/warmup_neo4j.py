@@ -7,6 +7,13 @@ Prevents 72-hour auto-pausing and validates connectivity 15 minutes before demo 
 import os
 import sys
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv('backend/.env')
+    load_dotenv('services/cognee-service/.env')
+except ImportError:
+    pass
+
 def check_and_warmup():
     uri = os.environ.get("NEO4J_URI", os.environ.get("GRAPH_DATABASE_URL", "neo4j+s://demo.databases.neo4j.io"))
     user = os.environ.get("NEO4J_USERNAME", os.environ.get("GRAPH_DATABASE_USERNAME", "neo4j"))
