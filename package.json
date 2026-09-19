@@ -18,6 +18,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,css,md,html,yml}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,json,css,md,html,yml}\"",
     "test": "npm --prefix backend run test && npm run build",
+    "data:generate": "node scripts/generate_data.mjs",
+    "data:validate": "node scripts/validate_data.js",
     "cognee:test": "./services/cognee-service/.venv/bin/python services/cognee-service/test_ecl_pipeline.py",
     "cognee:start": "./services/cognee-service/.venv/bin/python services/cognee-service/api.py",
     "graph:warmup": "./services/cognee-service/.venv/bin/python scripts/warmup_neo4j.py",

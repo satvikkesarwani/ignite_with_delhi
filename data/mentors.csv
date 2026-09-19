@@ -1,0 +1,31 @@
+mentor_id,full_name,expertise,company,years_experience,linkedin_url
+M001,Ananth Singhal,Product Design,Sprinklr,18,https://linkedin.com/in/ananth-singhal-m1
+M002,Siddharth Yadav,Payments Infrastructure,PhonePe,10,https://linkedin.com/in/siddharth-yadav-m2
+M003,Darsh Joshi,Growth Engineering,Paytm,8,https://linkedin.com/in/darsh-joshi-m3
+M004,Vivaan Pandey,Mobile Engineering,Chargebee,8,https://linkedin.com/in/vivaan-pandey-m4
+M005,Aryan Das,Frontend Architecture,Delhivery,6,https://linkedin.com/in/aryan-das-m5
+M006,Harsh Reddy,Cloud Infrastructure,Atlan,10,https://linkedin.com/in/harsh-reddy-m6
+M007,Reyansh Tandon,Cloud Infrastructure,Urban Company,12,https://linkedin.com/in/reyansh-tandon-m7
+M008,Aradhya Das,Applied NLP,BrowserStack,5,https://linkedin.com/in/aradhya-das-m8
+M009,Jatin Chadha,Site Reliability,BrowserStack,9,https://linkedin.com/in/jatin-chadha-m9
+M010,Ishita Varma,Frontend Architecture,CRED,4,https://linkedin.com/in/ishita-varma-m10
+M011,Madhav Das,Data Engineering,Chargebee,4,https://linkedin.com/in/madhav-das-m11
+M012,Akash Yadav,Graph Databases,Sprinklr,5,https://linkedin.com/in/akash-yadav-m12
+M013,Dev Varma,Mobile Engineering,Meesho,12,https://linkedin.com/in/dev-varma-m13
+M014,Tanvi Srivastava,Payments Infrastructure,Flipkart,11,https://linkedin.com/in/tanvi-srivastava-m14
+M015,Aryan Yadav,Developer Experience,Dream11,12,https://linkedin.com/in/aryan-yadav-m15
+M016,Tara Mittal,Payments Infrastructure,InMobi,3,https://linkedin.com/in/tara-mittal-m16
+M017,Neel Prasad,Mobile Engineering,Postman,9,https://linkedin.com/in/neel-prasad-m17
+M018,Rishabh Kaur,Machine Learning,Zoho,15,https://linkedin.com/in/rishabh-kaur-m18
+M019,Myra Kaur,Mobile Engineering,Zoho,4,https://linkedin.com/in/myra-kaur-m19
+M020,Anirudh Chauhan,Security,CRED,4,https://linkedin.com/in/anirudh-chauhan-m20
+M021,Nikhil Chauhan,Graph Databases,Delhivery,14,https://linkedin.com/in/nikhil-chauhan-m21
+M022,Aditi Gandhi,Frontend Architecture,CRED,8,https://linkedin.com/in/aditi-gandhi-m22
+M023,Chirag Patel,Data Engineering,Atlan,14,https://linkedin.com/in/chirag-patel-m23
+M024,Kunal Sethi,Data Engineering,Urban Company,17,https://linkedin.com/in/kunal-sethi-m24
+M025,Lavanya Krishnan,Product Design,Meesho,11,https://linkedin.com/in/lavanya-krishnan-m25
+M026,Raghav Pillai,Machine Learning,Zomato,8,https://linkedin.com/in/raghav-pillai-m26
+M027,Kavya Subramanian,Growth Engineering,Flipkart,4,https://linkedin.com/in/kavya-subramanian-m27
+M028,Tara Khatri,Applied NLP,Swiggy,8,https://linkedin.com/in/tara-khatri-m28
+M029,Tanmay Bhat,Site Reliability,Swiggy,9,https://linkedin.com/in/tanmay-bhat-m29
+M030,Kavya Goel,Distributed Systems,Meesho,13,https://linkedin.com/in/kavya-goel-m30

@@ -1,0 +1,469 @@
+session_id,user_id,mentor_id,hackathon_id,session_date,duration_min,mentor_score,notes
+S0001,U0001,M020,H003,2024-04-06,30,5,Came in with the architecture already sketched and asked precise questions about scope control. Needed almost no help.
+S0002,U0001,M001,H006,2024-08-08,45,4,"Competent with data cleaning once unblocked, but was stuck for a while before asking for help."
+S0003,U0001,M028,H010,2025-01-10,20,5,Took feedback on state management without getting defensive and shipped the change within the hour.
+S0004,U0001,M004,H014,2025-06-12,20,5,Took feedback on schema design without getting defensive and shipped the change within the hour.
+S0005,U0001,M024,H018,2025-11-18,15,4,Good progress on data cleaning. Needs to test with real input sooner rather than later.
+S0006,U0002,M011,H012,2025-03-27,15,3,Good progress on schema design. Needs to test with real input sooner rather than later.
+S0007,U0003,M011,H007,2024-09-14,30,4,Spent too long on caching strategy polish when the core flow was still broken. Redirected them.
+S0008,U0003,M008,H014,2025-06-12,45,4,"Understood API design conceptually, less sure how to implement it. Walked through a concrete example."
+S0009,U0005,M022,H004,2024-05-21,45,5,Already knew the tradeoffs in schema design; we spent the time on presentation strategy instead.
+S0010,U0005,M024,H010,2025-01-10,15,4,"Knows data cleaning well enough; the bottleneck was team coordination, not skill."
+S0011,U0006,M010,H020,2026-02-19,30,5,"Confident on retrieval quality and good at explaining it to their own team, which matters more."
+S0012,U0007,M002,H003,2024-04-06,30,5,Already knew the tradeoffs in demo narrative; we spent the time on presentation strategy instead.
+S0013,U0007,M007,H005,2024-06-25,20,5,Already knew the tradeoffs in prompt structure; we spent the time on presentation strategy instead.
+S0014,U0007,M026,H009,2024-12-04,20,5,Very strong on data cleaning. I suggested they cut scope and they immediately agreed and did it.
+S0015,U0007,M029,H014,2025-06-12,60,5,"Confident on schema design and good at explaining it to their own team, which matters more."
+S0016,U0007,M011,H015,2025-07-23,30,5,Already knew the tradeoffs in caching strategy; we spent the time on presentation strategy instead.
+S0017,U0007,M025,H019,2026-01-03,15,4,"Understood prompt structure conceptually, less sure how to implement it. Walked through a concrete example."
+S0018,U0008,M017,H007,2024-09-14,60,4,"Understood state management conceptually, less sure how to implement it. Walked through a concrete example."
+S0019,U0008,M020,H011,2025-02-17,20,4,Making steady progress. Advised them to cut two features and finish data cleaning properly.
+S0020,U0008,M028,H014,2025-06-12,20,5,"Asked the best question of the session, about failure modes in data cleaning. Clear thinker."
+S0021,U0009,M007,H018,2025-11-18,20,4,Spent too long on prompt structure polish when the core flow was still broken. Redirected them.
+S0022,U0009,M006,H020,2026-02-18,30,5,"Confident on graph modelling and good at explaining it to their own team, which matters more."
+S0023,U0009,M013,H022,2026-05-23,30,5,"Confident on data cleaning and good at explaining it to their own team, which matters more."
+S0024,U0009,M021,H024,2026-08-08,30,4,Solid on API design but was heading toward an overcomplicated design. Suggested a simpler path.
+S0025,U0010,M008,H001,2024-01-14,15,3,"Knows state management well enough; the bottleneck was team coordination, not skill."
+S0026,U0010,M025,H003,2024-04-06,30,3,"Competent with model selection once unblocked, but was stuck for a while before asking for help."
+S0027,U0010,M028,H005,2024-06-25,30,3,Good progress on model selection. Needs to test with real input sooner rather than later.
+S0028,U0010,M026,H007,2024-09-14,30,3,"Competent with retrieval quality once unblocked, but was stuck for a while before asking for help."
+S0029,U0012,M007,H006,2024-08-07,30,5,Came in with the architecture already sketched and asked precise questions about error handling. Needed almost no help.
+S0030,U0012,M011,H010,2025-01-10,45,4,"Knows prompt structure well enough; the bottleneck was team coordination, not skill."
+S0031,U0012,M020,H014,2025-06-12,20,5,Debugged a schema design issue on their own while we talked; I mostly confirmed the approach.
+S0032,U0012,M023,H018,2025-11-18,45,5,"Asked the best question of the session, about failure modes in graph modelling. Clear thinker."
+S0033,U0012,M007,H023,2026-07-01,30,5,"Asked the best question of the session, about failure modes in model selection. Clear thinker."
+S0034,U0012,M008,H006,2024-08-08,15,5,Came in with the architecture already sketched and asked precise questions about graph modelling. Needed almost no help.
+S0035,U0012,M002,H010,2025-01-10,20,5,Took feedback on caching strategy without getting defensive and shipped the change within the hour.
+S0036,U0013,M003,H017,2025-10-04,60,5,Took feedback on state management without getting defensive and shipped the change within the hour.
+S0037,U0013,M019,H021,2026-04-05,15,4,"Knows caching strategy well enough; the bottleneck was team coordination, not skill."
+S0038,U0013,M014,H023,2026-07-01,30,5,Came in with the architecture already sketched and asked precise questions about deployment. Needed almost no help.
+S0039,U0014,M013,H013,2025-05-09,30,4,"Understood evaluation conceptually, less sure how to implement it. Walked through a concrete example."
+S0040,U0014,M003,H017,2025-10-04,60,5,Debugged a graph modelling issue on their own while we talked; I mostly confirmed the approach.
+S0041,U0014,M030,H022,2026-05-22,20,5,Took feedback on error handling without getting defensive and shipped the change within the hour.
+S0042,U0015,M012,H009,2024-12-04,30,3,Making steady progress. Advised them to cut two features and finish API design properly.
+S0043,U0015,M003,H015,2025-07-22,60,4,"Knows prompt structure well enough; the bottleneck was team coordination, not skill."
+S0044,U0016,M024,H008,2024-10-24,15,4,Making steady progress. Advised them to cut two features and finish evaluation properly.
+S0045,U0016,M022,H013,2025-05-09,45,4,Spent too long on retrieval quality polish when the core flow was still broken. Redirected them.
+S0046,U0017,M017,H011,2025-02-16,30,4,"Knows error handling well enough; the bottleneck was team coordination, not skill."
+S0047,U0018,M014,H002,2024-02-22,30,4,Asked reasonable questions about graph modelling. Some gaps in fundamentals but closing fast.
+S0048,U0019,M029,H015,2025-07-21,60,3,Making steady progress. Advised them to cut two features and finish error handling properly.
+S0049,U0019,M010,H018,2025-11-18,15,3,Making steady progress. Advised them to cut two features and finish state management properly.
+S0050,U0019,M024,H015,2025-07-22,60,5,Already knew the tradeoffs in schema design; we spent the time on presentation strategy instead.
+S0051,U0022,M016,H003,2024-04-06,15,4,Asked reasonable questions about prompt structure. Some gaps in fundamentals but closing fast.
+S0052,U0024,M008,H016,2025-08-27,15,4,Spent too long on demo narrative polish when the core flow was still broken. Redirected them.
+S0053,U0025,M019,H007,2024-09-15,45,5,Excellent grasp of demo narrative. I pointed them at one library and they had it integrated by the next check-in.
+S0054,U0026,M001,H010,2025-01-10,30,3,Making steady progress. Advised them to cut two features and finish caching strategy properly.
+S0055,U0026,M013,H022,2026-05-23,30,4,Asked reasonable questions about graph modelling. Some gaps in fundamentals but closing fast.
+S0056,U0027,M012,H007,2024-09-14,30,4,Spent too long on API design polish when the core flow was still broken. Redirected them.
+S0057,U0027,M011,H012,2025-03-26,30,5,"Confident on graph modelling and good at explaining it to their own team, which matters more."
+S0058,U0027,M005,H007,2024-09-15,15,5,Already knew the tradeoffs in API design; we spent the time on presentation strategy instead.
+S0059,U0028,M020,H003,2024-04-06,30,5,Debugged a schema design issue on their own while we talked; I mostly confirmed the approach.
+S0060,U0028,M013,H003,2024-04-06,15,5,Already knew the tradeoffs in error handling; we spent the time on presentation strategy instead.
+S0061,U0029,M014,H002,2024-02-22,30,3,"Knows deployment well enough; the bottleneck was team coordination, not skill."
+S0062,U0029,M013,H005,2024-06-25,45,1,Needed a lot of hand-holding on API design. Willing to learn but out of their depth for this scope.
+S0063,U0032,M005,H015,2025-07-22,30,5,"Confident on model selection and good at explaining it to their own team, which matters more."
+S0064,U0032,M008,H016,2025-08-27,45,2,"Team was not aligned on what they were building; scope control was the symptom, not the cause."
+S0065,U0033,M020,H006,2024-08-09,45,5,Very strong on demo narrative. I suggested they cut scope and they immediately agreed and did it.
+S0066,U0033,M006,H012,2025-03-27,45,3,Good progress on caching strategy. Needs to test with real input sooner rather than later.
+S0067,U0036,M022,H011,2025-02-17,30,5,Came in with the architecture already sketched and asked precise questions about retrieval quality. Needed almost no help.
+S0068,U0039,M003,H001,2024-01-13,15,4,"Knows error handling well enough; the bottleneck was team coordination, not skill."
+S0069,U0039,M025,H015,2025-07-21,30,4,Spent too long on error handling polish when the core flow was still broken. Redirected them.
+S0070,U0039,M030,H001,2024-01-13,30,5,"Asked the best question of the session, about failure modes in state management. Clear thinker."
+S0071,U0044,M015,H008,2024-10-25,15,3,"Understood API design conceptually, less sure how to implement it. Walked through a concrete example."
+S0072,U0044,M012,H015,2025-07-22,60,3,"Understood API design conceptually, less sure how to implement it. Walked through a concrete example."
+S0073,U0047,M003,H022,2026-05-23,20,5,Took feedback on prompt structure without getting defensive and shipped the change within the hour.
+S0074,U0047,M027,H022,2026-05-22,60,3,Spent too long on model selection polish when the core flow was still broken. Redirected them.
+S0075,U0047,M027,H022,2026-05-23,45,4,Solid on caching strategy but was heading toward an overcomplicated design. Suggested a simpler path.
+S0076,U0053,M027,H021,2026-04-06,30,4,Making steady progress. Advised them to cut two features and finish evaluation properly.
+S0077,U0053,M006,H021,2026-04-06,15,3,"Competent with scope control once unblocked, but was stuck for a while before asking for help."
+S0078,U0055,M010,H014,2025-06-12,30,4,Asked reasonable questions about caching strategy. Some gaps in fundamentals but closing fast.
+S0079,U0055,M019,H014,2025-06-12,15,4,Solid on data cleaning but was heading toward an overcomplicated design. Suggested a simpler path.
+S0080,U0062,M022,H001,2024-01-13,30,4,Spent too long on retrieval quality polish when the core flow was still broken. Redirected them.
+S0081,U0066,M020,H005,2024-06-25,20,4,Asked reasonable questions about prompt structure. Some gaps in fundamentals but closing fast.
+S0082,U0066,M019,H010,2025-01-10,60,5,Debugged a API design issue on their own while we talked; I mostly confirmed the approach.
+S0083,U0066,M006,H012,2025-03-27,60,5,"Confident on data cleaning and good at explaining it to their own team, which matters more."
+S0084,U0069,M030,H002,2024-02-22,30,5,Already knew the tradeoffs in scope control; we spent the time on presentation strategy instead.
+S0085,U0073,M014,H005,2024-06-25,30,4,"Competent with evaluation once unblocked, but was stuck for a while before asking for help."
+S0086,U0075,M028,H002,2024-02-22,30,2,Copied a scope control tutorial without understanding it and could not modify it. Worked through the basics.
+S0087,U0076,M011,H002,2024-02-22,30,2,"Team was not aligned on what they were building; deployment was the symptom, not the cause."
+S0088,U0076,M020,H012,2025-03-25,30,4,Solid on error handling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0089,U0076,M001,H014,2025-06-12,30,3,Making steady progress. Advised them to cut two features and finish caching strategy properly.
+S0090,U0089,M001,H004,2024-05-21,45,4,Spent too long on model selection polish when the core flow was still broken. Redirected them.
+S0091,U0090,M011,H007,2024-09-15,30,4,"Competent with prompt structure once unblocked, but was stuck for a while before asking for help."
+S0092,U0090,M017,H007,2024-09-15,30,5,Came in with the architecture already sketched and asked precise questions about evaluation. Needed almost no help.
+S0093,U0090,M002,H007,2024-09-14,15,1,Needed a lot of hand-holding on model selection. Willing to learn but out of their depth for this scope.
+S0094,U0091,M001,H001,2024-01-13,45,5,Took feedback on evaluation without getting defensive and shipped the change within the hour.
+S0095,U0091,M025,H022,2026-05-22,30,4,"Understood retrieval quality conceptually, less sure how to implement it. Walked through a concrete example."
+S0096,U0096,M010,H004,2024-05-21,30,5,Already knew the tradeoffs in model selection; we spent the time on presentation strategy instead.
+S0097,U0098,M013,H015,2025-07-22,20,4,Solid on error handling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0098,U0103,M011,H002,2024-02-22,20,3,"Knows data cleaning well enough; the bottleneck was team coordination, not skill."
+S0099,U0103,M010,H023,2026-07-01,20,4,Spent too long on retrieval quality polish when the core flow was still broken. Redirected them.
+S0100,U0106,M030,H012,2025-03-27,45,4,Making steady progress. Advised them to cut two features and finish demo narrative properly.
+S0101,U0109,M021,H005,2024-06-25,30,4,"Knows prompt structure well enough; the bottleneck was team coordination, not skill."
+S0102,U0109,M004,H006,2024-08-09,45,4,"Understood schema design conceptually, less sure how to implement it. Walked through a concrete example."
+S0103,U0110,M015,H017,2025-10-04,30,3,Solid on API design but was heading toward an overcomplicated design. Suggested a simpler path.
+S0104,U0113,M027,H022,2026-05-21,20,5,Very strong on caching strategy. I suggested they cut scope and they immediately agreed and did it.
+S0105,U0113,M024,H022,2026-05-22,20,3,"Understood prompt structure conceptually, less sure how to implement it. Walked through a concrete example."
+S0106,U0113,M024,H022,2026-05-23,60,5,Already knew the tradeoffs in prompt structure; we spent the time on presentation strategy instead.
+S0107,U0114,M019,H003,2024-04-06,60,3,"Competent with deployment once unblocked, but was stuck for a while before asking for help."
+S0108,U0118,M014,H002,2024-02-22,60,5,Very strong on deployment. I suggested they cut scope and they immediately agreed and did it.
+S0109,U0119,M005,H007,2024-09-15,60,3,"Understood scope control conceptually, less sure how to implement it. Walked through a concrete example."
+S0110,U0119,M006,H013,2025-05-09,30,5,Excellent grasp of prompt structure. I pointed them at one library and they had it integrated by the next check-in.
+S0111,U0120,M004,H003,2024-04-06,15,5,Debugged a error handling issue on their own while we talked; I mostly confirmed the approach.
+S0112,U0120,M003,H003,2024-04-06,45,3,Asked reasonable questions about graph modelling. Some gaps in fundamentals but closing fast.
+S0113,U0122,M025,H008,2024-10-24,20,5,Debugged a evaluation issue on their own while we talked; I mostly confirmed the approach.
+S0114,U0122,M028,H012,2025-03-25,45,4,Asked reasonable questions about deployment. Some gaps in fundamentals but closing fast.
+S0115,U0129,M028,H009,2024-12-04,45,5,Already knew the tradeoffs in caching strategy; we spent the time on presentation strategy instead.
+S0116,U0129,M023,H018,2025-11-19,20,5,Debugged a model selection issue on their own while we talked; I mostly confirmed the approach.
+S0117,U0129,M012,H019,2026-01-04,45,5,Came in with the architecture already sketched and asked precise questions about graph modelling. Needed almost no help.
+S0118,U0132,M019,H012,2025-03-25,60,5,"Asked the best question of the session, about failure modes in state management. Clear thinker."
+S0119,U0132,M012,H020,2026-02-20,30,5,"Asked the best question of the session, about failure modes in state management. Clear thinker."
+S0120,U0132,M017,H012,2025-03-27,45,5,"Confident on demo narrative and good at explaining it to their own team, which matters more."
+S0121,U0134,M023,H003,2024-04-06,60,2,Needed a lot of hand-holding on demo narrative. Willing to learn but out of their depth for this scope.
+S0122,U0137,M011,H018,2025-11-18,30,5,Came in with the architecture already sketched and asked precise questions about deployment. Needed almost no help.
+S0123,U0137,M028,H018,2025-11-18,20,5,Very strong on scope control. I suggested they cut scope and they immediately agreed and did it.
+S0124,U0142,M008,H016,2025-08-27,45,4,Making steady progress. Advised them to cut two features and finish demo narrative properly.
+S0125,U0142,M001,H016,2025-08-27,30,3,"Competent with error handling once unblocked, but was stuck for a while before asking for help."
+S0126,U0143,M018,H009,2024-12-04,30,1,Scope is unrealistic for the time left. Advised cutting to one working flow around deployment.
+S0127,U0143,M024,H022,2026-05-23,45,4,Making steady progress. Advised them to cut two features and finish model selection properly.
+S0128,U0144,M030,H007,2024-09-15,15,5,Came in with the architecture already sketched and asked precise questions about data cleaning. Needed almost no help.
+S0129,U0144,M008,H018,2025-11-18,15,4,Making steady progress. Advised them to cut two features and finish retrieval quality properly.
+S0130,U0144,M002,H007,2024-09-15,30,5,Already knew the tradeoffs in caching strategy; we spent the time on presentation strategy instead.
+S0131,U0146,M018,H002,2024-02-22,60,4,Solid on error handling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0132,U0148,M003,H007,2024-09-14,30,2,Scope is unrealistic for the time left. Advised cutting to one working flow around scope control.
+S0133,U0148,M003,H008,2024-10-25,60,4,Solid on data cleaning but was heading toward an overcomplicated design. Suggested a simpler path.
+S0134,U0148,M021,H010,2025-01-10,30,4,"Knows schema design well enough; the bottleneck was team coordination, not skill."
+S0135,U0153,M008,H004,2024-05-20,45,3,Making steady progress. Advised them to cut two features and finish evaluation properly.
+S0136,U0153,M017,H008,2024-10-25,30,4,Making steady progress. Advised them to cut two features and finish deployment properly.
+S0137,U0154,M010,H006,2024-08-09,60,4,"Understood state management conceptually, less sure how to implement it. Walked through a concrete example."
+S0138,U0156,M016,H020,2026-02-18,30,4,"Knows state management well enough; the bottleneck was team coordination, not skill."
+S0139,U0156,M026,H020,2026-02-19,30,5,Came in with the architecture already sketched and asked precise questions about schema design. Needed almost no help.
+S0140,U0156,M001,H020,2026-02-19,60,4,Making steady progress. Advised them to cut two features and finish demo narrative properly.
+S0141,U0161,M025,H020,2026-02-19,45,5,Debugged a retrieval quality issue on their own while we talked; I mostly confirmed the approach.
+S0142,U0164,M014,H002,2024-02-22,15,5,Very strong on prompt structure. I suggested they cut scope and they immediately agreed and did it.
+S0143,U0164,M017,H008,2024-10-24,30,4,Making steady progress. Advised them to cut two features and finish state management properly.
+S0144,U0166,M030,H017,2025-10-04,20,5,Already knew the tradeoffs in caching strategy; we spent the time on presentation strategy instead.
+S0145,U0166,M030,H017,2025-10-04,45,4,"Understood demo narrative conceptually, less sure how to implement it. Walked through a concrete example."
+S0146,U0166,M007,H017,2025-10-04,45,3,Making steady progress. Advised them to cut two features and finish scope control properly.
+S0147,U0169,M013,H005,2024-06-25,45,5,"Asked the best question of the session, about failure modes in API design. Clear thinker."
+S0148,U0169,M029,H021,2026-04-06,20,4,Good progress on prompt structure. Needs to test with real input sooner rather than later.
+S0149,U0170,M001,H022,2026-05-21,45,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.
+S0150,U0170,M010,H022,2026-05-21,45,3,Solid on deployment but was heading toward an overcomplicated design. Suggested a simpler path.
+S0151,U0170,M016,H022,2026-05-23,20,5,"Confident on retrieval quality and good at explaining it to their own team, which matters more."
+S0152,U0172,M017,H010,2025-01-10,20,2,Needed a lot of hand-holding on graph modelling. Willing to learn but out of their depth for this scope.
+S0153,U0172,M018,H021,2026-04-06,60,2,Scope is unrealistic for the time left. Advised cutting to one working flow around scope control.
+S0154,U0172,M003,H010,2025-01-10,60,3,"Competent with graph modelling once unblocked, but was stuck for a while before asking for help."
+S0155,U0177,M030,H003,2024-04-06,15,5,Already knew the tradeoffs in deployment; we spent the time on presentation strategy instead.
+S0156,U0178,M010,H009,2024-12-04,15,4,Making steady progress. Advised them to cut two features and finish model selection properly.
+S0157,U0179,M007,H023,2026-07-02,60,5,"Confident on state management and good at explaining it to their own team, which matters more."
+S0158,U0183,M026,H003,2024-04-06,30,2,Copied a data cleaning tutorial without understanding it and could not modify it. Worked through the basics.
+S0159,U0184,M019,H010,2025-01-10,30,4,"Competent with demo narrative once unblocked, but was stuck for a while before asking for help."
+S0160,U0186,M005,H010,2025-01-10,60,5,Very strong on state management. I suggested they cut scope and they immediately agreed and did it.
+S0161,U0186,M028,H010,2025-01-10,15,5,Took feedback on retrieval quality without getting defensive and shipped the change within the hour.
+S0162,U0186,M028,H010,2025-01-10,60,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.
+S0163,U0190,M001,H020,2026-02-18,30,5,Took feedback on data cleaning without getting defensive and shipped the change within the hour.
+S0164,U0194,M002,H016,2025-08-27,20,4,"Knows retrieval quality well enough; the bottleneck was team coordination, not skill."
+S0165,U0194,M005,H020,2026-02-18,60,5,"Confident on error handling and good at explaining it to their own team, which matters more."
+S0166,U0194,M021,H016,2025-08-27,30,4,Good progress on model selection. Needs to test with real input sooner rather than later.
+S0167,U0200,M027,H008,2024-10-26,15,5,Very strong on schema design. I suggested they cut scope and they immediately agreed and did it.
+S0168,U0200,M014,H010,2025-01-10,15,2,"Team was not aligned on what they were building; scope control was the symptom, not the cause."
+S0169,U0200,M012,H014,2025-06-12,30,4,"Competent with model selection once unblocked, but was stuck for a while before asking for help."
+S0170,U0201,M010,H002,2024-02-22,30,2,"Team was not aligned on what they were building; state management was the symptom, not the cause."
+S0171,U0201,M025,H008,2024-10-24,60,4,Solid on API design but was heading toward an overcomplicated design. Suggested a simpler path.
+S0172,U0206,M007,H005,2024-06-25,15,5,Excellent grasp of prompt structure. I pointed them at one library and they had it integrated by the next check-in.
+S0173,U0206,M004,H008,2024-10-25,60,5,Already knew the tradeoffs in scope control; we spent the time on presentation strategy instead.
+S0174,U0206,M007,H012,2025-03-26,30,3,Making steady progress. Advised them to cut two features and finish state management properly.
+S0175,U0207,M011,H013,2025-05-09,20,3,Good progress on prompt structure. Needs to test with real input sooner rather than later.
+S0176,U0207,M006,H016,2025-08-27,30,4,Solid on prompt structure but was heading toward an overcomplicated design. Suggested a simpler path.
+S0177,U0215,M026,H006,2024-08-09,30,4,"Understood schema design conceptually, less sure how to implement it. Walked through a concrete example."
+S0178,U0216,M023,H001,2024-01-14,45,4,Good progress on demo narrative. Needs to test with real input sooner rather than later.
+S0179,U0216,M022,H006,2024-08-07,30,1,Needed a lot of hand-holding on state management. Willing to learn but out of their depth for this scope.
+S0180,U0216,M005,H016,2025-08-27,60,4,Solid on evaluation but was heading toward an overcomplicated design. Suggested a simpler path.
+S0181,U0222,M005,H007,2024-09-14,15,5,Took feedback on retrieval quality without getting defensive and shipped the change within the hour.
+S0182,U0222,M020,H013,2025-05-09,60,5,Came in with the architecture already sketched and asked precise questions about error handling. Needed almost no help.
+S0183,U0222,M025,H007,2024-09-14,30,5,Already knew the tradeoffs in state management; we spent the time on presentation strategy instead.
+S0184,U0231,M015,H007,2024-09-14,60,4,Good progress on error handling. Needs to test with real input sooner rather than later.
+S0185,U0231,M024,H013,2025-05-09,30,4,Solid on graph modelling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0186,U0237,M010,H007,2024-09-15,15,5,"Confident on graph modelling and good at explaining it to their own team, which matters more."
+S0187,U0243,M020,H002,2024-02-22,45,5,Debugged a demo narrative issue on their own while we talked; I mostly confirmed the approach.
+S0188,U0243,M012,H014,2025-06-12,30,5,Debugged a API design issue on their own while we talked; I mostly confirmed the approach.
+S0189,U0243,M014,H002,2024-02-22,30,5,Took feedback on prompt structure without getting defensive and shipped the change within the hour.
+S0190,U0244,M021,H006,2024-08-08,15,4,Good progress on state management. Needs to test with real input sooner rather than later.
+S0191,U0249,M011,H012,2025-03-27,30,3,"Competent with scope control once unblocked, but was stuck for a while before asking for help."
+S0192,U0249,M011,H020,2026-02-20,60,1,Struggling with prompt structure fundamentals. Recommended they drop it and use a managed alternative.
+S0193,U0251,M019,H009,2024-12-04,45,5,Took feedback on error handling without getting defensive and shipped the change within the hour.
+S0194,U0253,M002,H002,2024-02-22,15,5,Took feedback on data cleaning without getting defensive and shipped the change within the hour.
+S0195,U0255,M028,H013,2025-05-09,30,4,"Competent with schema design once unblocked, but was stuck for a while before asking for help."
+S0196,U0258,M011,H015,2025-07-22,60,5,"Confident on caching strategy and good at explaining it to their own team, which matters more."
+S0197,U0259,M016,H001,2024-01-13,15,4,"Knows scope control well enough; the bottleneck was team coordination, not skill."
+S0198,U0259,M025,H007,2024-09-14,30,5,Very strong on deployment. I suggested they cut scope and they immediately agreed and did it.
+S0199,U0260,M014,H013,2025-05-09,45,3,"Understood state management conceptually, less sure how to implement it. Walked through a concrete example."
+S0200,U0263,M015,H014,2025-06-12,60,3,"Competent with deployment once unblocked, but was stuck for a while before asking for help."
+S0201,U0263,M019,H018,2025-11-19,30,5,Very strong on evaluation. I suggested they cut scope and they immediately agreed and did it.
+S0202,U0265,M003,H007,2024-09-15,20,4,Good progress on schema design. Needs to test with real input sooner rather than later.
+S0203,U0265,M012,H016,2025-08-27,45,5,Debugged a demo narrative issue on their own while we talked; I mostly confirmed the approach.
+S0204,U0265,M004,H007,2024-09-14,15,5,"Asked the best question of the session, about failure modes in evaluation. Clear thinker."
+S0205,U0268,M017,H021,2026-04-05,45,4,"Knows graph modelling well enough; the bottleneck was team coordination, not skill."
+S0206,U0270,M009,H006,2024-08-08,45,4,"Understood retrieval quality conceptually, less sure how to implement it. Walked through a concrete example."
+S0207,U0270,M020,H020,2026-02-18,30,3,"Understood data cleaning conceptually, less sure how to implement it. Walked through a concrete example."
+S0208,U0270,M019,H006,2024-08-07,30,2,"Team was not aligned on what they were building; schema design was the symptom, not the cause."
+S0209,U0271,M023,H015,2025-07-22,45,1,Copied a caching strategy tutorial without understanding it and could not modify it. Worked through the basics.
+S0210,U0272,M011,H004,2024-05-21,30,5,Debugged a caching strategy issue on their own while we talked; I mostly confirmed the approach.
+S0211,U0272,M025,H006,2024-08-07,45,3,Solid on error handling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0212,U0272,M027,H015,2025-07-22,30,4,Asked reasonable questions about state management. Some gaps in fundamentals but closing fast.
+S0213,U0274,M004,H018,2025-11-18,20,5,Very strong on model selection. I suggested they cut scope and they immediately agreed and did it.
+S0214,U0274,M019,H018,2025-11-18,15,5,Debugged a demo narrative issue on their own while we talked; I mostly confirmed the approach.
+S0215,U0278,M004,H003,2024-04-06,20,4,Good progress on evaluation. Needs to test with real input sooner rather than later.
+S0216,U0278,M024,H012,2025-03-27,20,4,Making steady progress. Advised them to cut two features and finish deployment properly.
+S0217,U0278,M021,H018,2025-11-18,30,5,Already knew the tradeoffs in demo narrative; we spent the time on presentation strategy instead.
+S0218,U0280,M024,H005,2024-06-25,60,1,Copied a prompt structure tutorial without understanding it and could not modify it. Worked through the basics.
+S0219,U0280,M009,H013,2025-05-09,30,3,Good progress on deployment. Needs to test with real input sooner rather than later.
+S0220,U0281,M018,H010,2025-01-10,45,4,Solid on demo narrative but was heading toward an overcomplicated design. Suggested a simpler path.
+S0221,U0281,M004,H014,2025-06-12,30,1,Needed a lot of hand-holding on model selection. Willing to learn but out of their depth for this scope.
+S0222,U0283,M021,H008,2024-10-25,30,1,Had not started implementing when we met. Spent the session planning model selection instead of reviewing.
+S0223,U0283,M015,H008,2024-10-26,30,5,Excellent grasp of state management. I pointed them at one library and they had it integrated by the next check-in.
+S0224,U0283,M013,H008,2024-10-24,30,4,Good progress on data cleaning. Needs to test with real input sooner rather than later.
+S0225,U0288,M014,H013,2025-05-09,60,4,Spent too long on retrieval quality polish when the core flow was still broken. Redirected them.
+S0226,U0288,M029,H013,2025-05-09,30,5,Took feedback on evaluation without getting defensive and shipped the change within the hour.
+S0227,U0290,M019,H005,2024-06-25,30,4,"Knows retrieval quality well enough; the bottleneck was team coordination, not skill."
+S0228,U0290,M001,H021,2026-04-05,15,5,Took feedback on state management without getting defensive and shipped the change within the hour.
+S0229,U0290,M003,H005,2024-06-25,15,4,Making steady progress. Advised them to cut two features and finish evaluation properly.
+S0230,U0291,M014,H024,2026-08-08,20,4,Asked reasonable questions about API design. Some gaps in fundamentals but closing fast.
+S0231,U0291,M005,H024,2026-08-08,30,5,Took feedback on retrieval quality without getting defensive and shipped the change within the hour.
+S0232,U0291,M027,H024,2026-08-08,15,3,"Understood retrieval quality conceptually, less sure how to implement it. Walked through a concrete example."
+S0233,U0293,M003,H020,2026-02-19,30,5,Excellent grasp of error handling. I pointed them at one library and they had it integrated by the next check-in.
+S0234,U0293,M021,H020,2026-02-19,30,5,Took feedback on evaluation without getting defensive and shipped the change within the hour.
+S0235,U0296,M020,H017,2025-10-04,30,4,Making steady progress. Advised them to cut two features and finish error handling properly.
+S0236,U0296,M002,H019,2026-01-03,30,5,"Confident on error handling and good at explaining it to their own team, which matters more."
+S0237,U0296,M010,H017,2025-10-04,45,2,Scope is unrealistic for the time left. Advised cutting to one working flow around schema design.
+S0238,U0298,M026,H009,2024-12-04,15,4,Good progress on prompt structure. Needs to test with real input sooner rather than later.
+S0239,U0299,M012,H007,2024-09-14,20,5,Excellent grasp of retrieval quality. I pointed them at one library and they had it integrated by the next check-in.
+S0240,U0299,M027,H007,2024-09-15,30,5,"Asked the best question of the session, about failure modes in demo narrative. Clear thinker."
+S0241,U0306,M015,H006,2024-08-09,20,5,Came in with the architecture already sketched and asked precise questions about data cleaning. Needed almost no help.
+S0242,U0306,M029,H011,2025-02-16,45,5,Came in with the architecture already sketched and asked precise questions about API design. Needed almost no help.
+S0243,U0311,M002,H022,2026-05-22,60,4,Making steady progress. Advised them to cut two features and finish scope control properly.
+S0244,U0311,M018,H022,2026-05-22,45,5,Excellent grasp of deployment. I pointed them at one library and they had it integrated by the next check-in.
+S0245,U0315,M021,H007,2024-09-14,20,5,Came in with the architecture already sketched and asked precise questions about scope control. Needed almost no help.
+S0246,U0315,M026,H010,2025-01-10,15,1,"Team was not aligned on what they were building; prompt structure was the symptom, not the cause."
+S0247,U0315,M020,H007,2024-09-15,30,3,"Understood model selection conceptually, less sure how to implement it. Walked through a concrete example."
+S0248,U0321,M030,H023,2026-07-03,15,4,Good progress on schema design. Needs to test with real input sooner rather than later.
+S0249,U0321,M027,H023,2026-07-03,45,5,Debugged a evaluation issue on their own while we talked; I mostly confirmed the approach.
+S0250,U0323,M030,H002,2024-02-22,30,4,"Understood scope control conceptually, less sure how to implement it. Walked through a concrete example."
+S0251,U0325,M023,H011,2025-02-16,20,4,Solid on retrieval quality but was heading toward an overcomplicated design. Suggested a simpler path.
+S0252,U0325,M001,H017,2025-10-04,30,4,Making steady progress. Advised them to cut two features and finish deployment properly.
+S0253,U0325,M028,H019,2026-01-03,30,1,"Team was not aligned on what they were building; evaluation was the symptom, not the cause."
+S0254,U0326,M023,H009,2024-12-04,30,5,Debugged a retrieval quality issue on their own while we talked; I mostly confirmed the approach.
+S0255,U0327,M002,H016,2025-08-27,30,5,Took feedback on schema design without getting defensive and shipped the change within the hour.
+S0256,U0327,M024,H022,2026-05-23,60,3,Spent too long on graph modelling polish when the core flow was still broken. Redirected them.
+S0257,U0327,M005,H023,2026-07-01,30,5,Already knew the tradeoffs in state management; we spent the time on presentation strategy instead.
+S0258,U0331,M007,H007,2024-09-15,15,5,"Asked the best question of the session, about failure modes in retrieval quality. Clear thinker."
+S0259,U0342,M022,H018,2025-11-19,30,5,Very strong on graph modelling. I suggested they cut scope and they immediately agreed and did it.
+S0260,U0345,M013,H020,2026-02-18,45,4,Solid on error handling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0261,U0345,M023,H020,2026-02-18,60,4,"Competent with graph modelling once unblocked, but was stuck for a while before asking for help."
+S0262,U0346,M020,H013,2025-05-09,30,3,"Knows evaluation well enough; the bottleneck was team coordination, not skill."
+S0263,U0346,M016,H014,2025-06-12,30,5,Excellent grasp of error handling. I pointed them at one library and they had it integrated by the next check-in.
+S0264,U0346,M019,H021,2026-04-05,45,4,Asked reasonable questions about demo narrative. Some gaps in fundamentals but closing fast.
+S0265,U0352,M030,H009,2024-12-04,30,1,Struggling with scope control fundamentals. Recommended they drop it and use a managed alternative.
+S0266,U0355,M001,H001,2024-01-14,45,5,Took feedback on retrieval quality without getting defensive and shipped the change within the hour.
+S0267,U0355,M014,H002,2024-02-22,15,5,Very strong on deployment. I suggested they cut scope and they immediately agreed and did it.
+S0268,U0355,M016,H019,2026-01-03,20,4,"Knows prompt structure well enough; the bottleneck was team coordination, not skill."
+S0269,U0358,M024,H024,2026-08-08,30,5,Very strong on caching strategy. I suggested they cut scope and they immediately agreed and did it.
+S0270,U0360,M023,H012,2025-03-27,30,3,"Competent with data cleaning once unblocked, but was stuck for a while before asking for help."
+S0271,U0363,M010,H004,2024-05-21,20,3,Good progress on prompt structure. Needs to test with real input sooner rather than later.
+S0272,U0363,M025,H013,2025-05-09,60,2,Needed a lot of hand-holding on data cleaning. Willing to learn but out of their depth for this scope.
+S0273,U0363,M030,H004,2024-05-21,30,5,Came in with the architecture already sketched and asked precise questions about error handling. Needed almost no help.
+S0274,U0364,M021,H022,2026-05-21,30,4,"Understood model selection conceptually, less sure how to implement it. Walked through a concrete example."
+S0275,U0364,M001,H022,2026-05-23,45,4,"Competent with evaluation once unblocked, but was stuck for a while before asking for help."
+S0276,U0366,M019,H011,2025-02-17,60,3,Spent too long on state management polish when the core flow was still broken. Redirected them.
+S0277,U0368,M008,H004,2024-05-21,30,3,Solid on data cleaning but was heading toward an overcomplicated design. Suggested a simpler path.
+S0278,U0368,M023,H012,2025-03-25,15,3,Spent too long on state management polish when the core flow was still broken. Redirected them.
+S0279,U0368,M009,H004,2024-05-21,15,3,Making steady progress. Advised them to cut two features and finish scope control properly.
+S0280,U0372,M022,H016,2025-08-27,20,5,"Confident on schema design and good at explaining it to their own team, which matters more."
+S0281,U0372,M020,H018,2025-11-18,45,1,"Team was not aligned on what they were building; scope control was the symptom, not the cause."
+S0282,U0375,M010,H018,2025-11-19,15,4,Spent too long on graph modelling polish when the core flow was still broken. Redirected them.
+S0283,U0379,M029,H019,2026-01-04,60,4,"Understood caching strategy conceptually, less sure how to implement it. Walked through a concrete example."
+S0284,U0379,M007,H019,2026-01-03,30,2,Struggling with deployment fundamentals. Recommended they drop it and use a managed alternative.
+S0285,U0379,M016,H019,2026-01-04,60,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.
+S0286,U0380,M011,H013,2025-05-09,45,4,Good progress on retrieval quality. Needs to test with real input sooner rather than later.
+S0287,U0380,M025,H013,2025-05-09,60,3,Asked reasonable questions about error handling. Some gaps in fundamentals but closing fast.
+S0288,U0380,M029,H013,2025-05-09,60,1,Copied a graph modelling tutorial without understanding it and could not modify it. Worked through the basics.
+S0289,U0385,M010,H006,2024-08-08,30,2,"Team was not aligned on what they were building; demo narrative was the symptom, not the cause."
+S0290,U0385,M013,H007,2024-09-15,20,3,Solid on retrieval quality but was heading toward an overcomplicated design. Suggested a simpler path.
+S0291,U0386,M004,H004,2024-05-20,20,5,Debugged a graph modelling issue on their own while we talked; I mostly confirmed the approach.
+S0292,U0386,M006,H020,2026-02-20,30,1,Struggling with error handling fundamentals. Recommended they drop it and use a managed alternative.
+S0293,U0389,M012,H008,2024-10-25,60,5,Took feedback on demo narrative without getting defensive and shipped the change within the hour.
+S0294,U0389,M004,H008,2024-10-24,60,5,Came in with the architecture already sketched and asked precise questions about demo narrative. Needed almost no help.
+S0295,U0389,M027,H008,2024-10-25,20,5,"Confident on data cleaning and good at explaining it to their own team, which matters more."
+S0296,U0391,M006,H013,2025-05-09,60,4,"Competent with scope control once unblocked, but was stuck for a while before asking for help."
+S0297,U0391,M007,H013,2025-05-09,20,3,Good progress on demo narrative. Needs to test with real input sooner rather than later.
+S0298,U0400,M002,H001,2024-01-13,60,4,Asked reasonable questions about caching strategy. Some gaps in fundamentals but closing fast.
+S0299,U0400,M027,H024,2026-08-08,30,2,Had not started implementing when we met. Spent the session planning graph modelling instead of reviewing.
+S0300,U0400,M016,H001,2024-01-13,20,2,Had not started implementing when we met. Spent the session planning data cleaning instead of reviewing.
+S0301,U0401,M005,H001,2024-01-14,15,3,"Knows API design well enough; the bottleneck was team coordination, not skill."
+S0302,U0403,M003,H005,2024-06-25,45,5,Took feedback on graph modelling without getting defensive and shipped the change within the hour.
+S0303,U0403,M030,H009,2024-12-04,15,4,Making steady progress. Advised them to cut two features and finish API design properly.
+S0304,U0403,M002,H005,2024-06-25,20,4,Good progress on error handling. Needs to test with real input sooner rather than later.
+S0305,U0405,M008,H002,2024-02-22,20,5,"Confident on data cleaning and good at explaining it to their own team, which matters more."
+S0306,U0405,M026,H003,2024-04-06,30,4,Making steady progress. Advised them to cut two features and finish prompt structure properly.
+S0307,U0405,M011,H024,2026-08-08,45,2,Needed a lot of hand-holding on API design. Willing to learn but out of their depth for this scope.
+S0308,U0408,M016,H007,2024-09-14,45,4,"Knows prompt structure well enough; the bottleneck was team coordination, not skill."
+S0309,U0408,M030,H014,2025-06-12,30,4,"Understood evaluation conceptually, less sure how to implement it. Walked through a concrete example."
+S0310,U0409,M005,H007,2024-09-14,45,5,Very strong on error handling. I suggested they cut scope and they immediately agreed and did it.
+S0311,U0409,M030,H007,2024-09-14,30,3,Good progress on state management. Needs to test with real input sooner rather than later.
+S0312,U0409,M028,H007,2024-09-15,30,5,Came in with the architecture already sketched and asked precise questions about evaluation. Needed almost no help.
+S0313,U0410,M008,H002,2024-02-22,30,2,"Team was not aligned on what they were building; demo narrative was the symptom, not the cause."
+S0314,U0410,M004,H004,2024-05-21,30,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.
+S0315,U0420,M006,H002,2024-02-22,15,5,Came in with the architecture already sketched and asked precise questions about model selection. Needed almost no help.
+S0316,U0420,M006,H004,2024-05-21,20,2,Had not started implementing when we met. Spent the session planning graph modelling instead of reviewing.
+S0317,U0420,M018,H005,2024-06-25,30,2,"Team was not aligned on what they were building; deployment was the symptom, not the cause."
+S0318,U0423,M003,H013,2025-05-09,30,5,Came in with the architecture already sketched and asked precise questions about retrieval quality. Needed almost no help.
+S0319,U0423,M007,H018,2025-11-19,20,2,Struggling with data cleaning fundamentals. Recommended they drop it and use a managed alternative.
+S0320,U0423,M027,H022,2026-05-21,30,4,"Knows error handling well enough; the bottleneck was team coordination, not skill."
+S0321,U0424,M003,H010,2025-01-10,20,3,Asked reasonable questions about graph modelling. Some gaps in fundamentals but closing fast.
+S0322,U0424,M008,H012,2025-03-25,30,4,Good progress on retrieval quality. Needs to test with real input sooner rather than later.
+S0323,U0424,M015,H010,2025-01-10,30,5,Already knew the tradeoffs in prompt structure; we spent the time on presentation strategy instead.
+S0324,U0426,M017,H016,2025-08-27,30,5,Very strong on scope control. I suggested they cut scope and they immediately agreed and did it.
+S0325,U0426,M015,H016,2025-08-27,20,3,Asked reasonable questions about evaluation. Some gaps in fundamentals but closing fast.
+S0326,U0428,M003,H002,2024-02-22,20,4,"Understood graph modelling conceptually, less sure how to implement it. Walked through a concrete example."
+S0327,U0428,M013,H014,2025-06-12,45,4,Good progress on data cleaning. Needs to test with real input sooner rather than later.
+S0328,U0429,M024,H016,2025-08-27,20,4,"Competent with schema design once unblocked, but was stuck for a while before asking for help."
+S0329,U0429,M025,H016,2025-08-27,45,2,Scope is unrealistic for the time left. Advised cutting to one working flow around error handling.
+S0330,U0429,M025,H016,2025-08-27,45,3,Making steady progress. Advised them to cut two features and finish graph modelling properly.
+S0331,U0430,M024,H024,2026-08-08,60,5,Already knew the tradeoffs in schema design; we spent the time on presentation strategy instead.
+S0332,U0434,M004,H005,2024-06-25,30,5,Excellent grasp of model selection. I pointed them at one library and they had it integrated by the next check-in.
+S0333,U0437,M009,H006,2024-08-08,20,3,Making steady progress. Advised them to cut two features and finish graph modelling properly.
+S0334,U0439,M024,H011,2025-02-16,20,5,Took feedback on deployment without getting defensive and shipped the change within the hour.
+S0335,U0439,M015,H011,2025-02-16,60,3,Good progress on caching strategy. Needs to test with real input sooner rather than later.
+S0336,U0439,M019,H011,2025-02-15,60,5,Already knew the tradeoffs in state management; we spent the time on presentation strategy instead.
+S0337,U0440,M003,H007,2024-09-15,20,4,Solid on scope control but was heading toward an overcomplicated design. Suggested a simpler path.
+S0338,U0441,M027,H005,2024-06-25,15,2,Scope is unrealistic for the time left. Advised cutting to one working flow around state management.
+S0339,U0442,M014,H001,2024-01-14,15,5,Debugged a model selection issue on their own while we talked; I mostly confirmed the approach.
+S0340,U0442,M017,H008,2024-10-25,30,3,Good progress on caching strategy. Needs to test with real input sooner rather than later.
+S0341,U0442,M011,H023,2026-07-02,20,5,Debugged a model selection issue on their own while we talked; I mostly confirmed the approach.
+S0342,U0449,M027,H016,2025-08-27,45,5,Already knew the tradeoffs in scope control; we spent the time on presentation strategy instead.
+S0343,U0455,M006,H005,2024-06-25,15,5,Very strong on graph modelling. I suggested they cut scope and they immediately agreed and did it.
+S0344,U0455,M015,H011,2025-02-17,15,4,"Knows demo narrative well enough; the bottleneck was team coordination, not skill."
+S0345,U0455,M021,H005,2024-06-25,30,1,Scope is unrealistic for the time left. Advised cutting to one working flow around demo narrative.
+S0346,U0456,M013,H001,2024-01-14,30,1,Struggling with demo narrative fundamentals. Recommended they drop it and use a managed alternative.
+S0347,U0458,M022,H001,2024-01-13,20,4,Asked reasonable questions about model selection. Some gaps in fundamentals but closing fast.
+S0348,U0458,M007,H008,2024-10-26,20,3,Good progress on error handling. Needs to test with real input sooner rather than later.
+S0349,U0458,M006,H014,2025-06-12,30,5,"Asked the best question of the session, about failure modes in schema design. Clear thinker."
+S0350,U0461,M023,H002,2024-02-22,15,3,Asked reasonable questions about prompt structure. Some gaps in fundamentals but closing fast.
+S0351,U0461,M023,H002,2024-02-22,30,2,Scope is unrealistic for the time left. Advised cutting to one working flow around state management.
+S0352,U0462,M024,H005,2024-06-25,30,2,Needed a lot of hand-holding on state management. Willing to learn but out of their depth for this scope.
+S0353,U0462,M021,H005,2024-06-25,20,3,Solid on caching strategy but was heading toward an overcomplicated design. Suggested a simpler path.
+S0354,U0468,M026,H005,2024-06-25,30,4,Asked reasonable questions about evaluation. Some gaps in fundamentals but closing fast.
+S0355,U0468,M010,H006,2024-08-08,20,3,"Understood prompt structure conceptually, less sure how to implement it. Walked through a concrete example."
+S0356,U0468,M029,H020,2026-02-18,30,3,"Understood API design conceptually, less sure how to implement it. Walked through a concrete example."
+S0357,U0469,M006,H015,2025-07-22,45,4,Solid on API design but was heading toward an overcomplicated design. Suggested a simpler path.
+S0358,U0469,M028,H015,2025-07-23,15,4,Spent too long on error handling polish when the core flow was still broken. Redirected them.
+S0359,U0469,M013,H015,2025-07-21,45,5,Excellent grasp of caching strategy. I pointed them at one library and they had it integrated by the next check-in.
+S0360,U0471,M006,H002,2024-02-22,30,4,Solid on data cleaning but was heading toward an overcomplicated design. Suggested a simpler path.
+S0361,U0471,M005,H002,2024-02-22,20,5,Already knew the tradeoffs in state management; we spent the time on presentation strategy instead.
+S0362,U0471,M020,H002,2024-02-22,45,5,"Confident on schema design and good at explaining it to their own team, which matters more."
+S0363,U0472,M003,H009,2024-12-04,30,5,Excellent grasp of evaluation. I pointed them at one library and they had it integrated by the next check-in.
+S0364,U0472,M020,H009,2024-12-04,45,4,Making steady progress. Advised them to cut two features and finish retrieval quality properly.
+S0365,U0473,M003,H013,2025-05-09,45,5,"Confident on data cleaning and good at explaining it to their own team, which matters more."
+S0366,U0473,M011,H013,2025-05-09,30,4,"Understood schema design conceptually, less sure how to implement it. Walked through a concrete example."
+S0367,U0480,M014,H001,2024-01-14,20,5,"Confident on retrieval quality and good at explaining it to their own team, which matters more."
+S0368,U0481,M013,H022,2026-05-22,45,5,Excellent grasp of evaluation. I pointed them at one library and they had it integrated by the next check-in.
+S0369,U0481,M004,H022,2026-05-21,45,5,Already knew the tradeoffs in schema design; we spent the time on presentation strategy instead.
+S0370,U0481,M027,H022,2026-05-21,45,4,Asked reasonable questions about scope control. Some gaps in fundamentals but closing fast.
+S0371,U0487,M015,H006,2024-08-09,20,4,Asked reasonable questions about state management. Some gaps in fundamentals but closing fast.
+S0372,U0487,M006,H020,2026-02-18,15,4,"Knows data cleaning well enough; the bottleneck was team coordination, not skill."
+S0373,U0487,M010,H006,2024-08-07,20,4,Solid on prompt structure but was heading toward an overcomplicated design. Suggested a simpler path.
+S0374,U0490,M028,H002,2024-02-22,30,4,Solid on evaluation but was heading toward an overcomplicated design. Suggested a simpler path.
+S0375,U0490,M002,H002,2024-02-22,45,5,Took feedback on deployment without getting defensive and shipped the change within the hour.
+S0376,U0490,M017,H002,2024-02-22,30,4,Solid on model selection but was heading toward an overcomplicated design. Suggested a simpler path.
+S0377,U0492,M019,H008,2024-10-24,30,5,"Asked the best question of the session, about failure modes in graph modelling. Clear thinker."
+S0378,U0492,M005,H008,2024-10-26,30,5,"Asked the best question of the session, about failure modes in deployment. Clear thinker."
+S0379,U0498,M018,H005,2024-06-25,45,5,Excellent grasp of data cleaning. I pointed them at one library and they had it integrated by the next check-in.
+S0380,U0500,M009,H002,2024-02-22,20,4,"Competent with evaluation once unblocked, but was stuck for a while before asking for help."
+S0381,U0502,M023,H017,2025-10-04,15,3,"Competent with retrieval quality once unblocked, but was stuck for a while before asking for help."
+S0382,U0502,M013,H017,2025-10-04,45,4,"Understood schema design conceptually, less sure how to implement it. Walked through a concrete example."
+S0383,U0502,M006,H017,2025-10-04,20,3,Solid on schema design but was heading toward an overcomplicated design. Suggested a simpler path.
+S0384,U0504,M007,H004,2024-05-21,20,5,Already knew the tradeoffs in caching strategy; we spent the time on presentation strategy instead.
+S0385,U0505,M023,H006,2024-08-08,15,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.
+S0386,U0505,M029,H006,2024-08-08,45,4,Asked reasonable questions about scope control. Some gaps in fundamentals but closing fast.
+S0387,U0505,M001,H006,2024-08-08,60,4,"Competent with caching strategy once unblocked, but was stuck for a while before asking for help."
+S0388,U0512,M011,H009,2024-12-04,45,3,Solid on error handling but was heading toward an overcomplicated design. Suggested a simpler path.
+S0389,U0512,M006,H011,2025-02-15,45,4,Solid on evaluation but was heading toward an overcomplicated design. Suggested a simpler path.
+S0390,U0512,M019,H012,2025-03-27,15,4,Spent too long on model selection polish when the core flow was still broken. Redirected them.
+S0391,U0517,M009,H015,2025-07-22,30,2,Copied a retrieval quality tutorial without understanding it and could not modify it. Worked through the basics.
+S0392,U0518,M008,H008,2024-10-25,20,5,Excellent grasp of retrieval quality. I pointed them at one library and they had it integrated by the next check-in.
+S0393,U0518,M010,H008,2024-10-24,30,5,Debugged a API design issue on their own while we talked; I mostly confirmed the approach.
+S0394,U0518,M011,H008,2024-10-26,45,3,"Understood caching strategy conceptually, less sure how to implement it. Walked through a concrete example."
+S0395,U0519,M013,H003,2024-04-06,30,4,Good progress on error handling. Needs to test with real input sooner rather than later.
+S0396,U0519,M021,H003,2024-04-06,20,4,Solid on demo narrative but was heading toward an overcomplicated design. Suggested a simpler path.
+S0397,U0519,M008,H003,2024-04-06,30,4,"Competent with graph modelling once unblocked, but was stuck for a while before asking for help."
+S0398,U0523,M007,H002,2024-02-22,45,4,Good progress on evaluation. Needs to test with real input sooner rather than later.
+S0399,U0528,M002,H017,2025-10-04,30,5,Debugged a retrieval quality issue on their own while we talked; I mostly confirmed the approach.
+S0400,U0531,M028,H018,2025-11-19,45,4,"Understood error handling conceptually, less sure how to implement it. Walked through a concrete example."
+S0401,U0539,M030,H001,2024-01-13,30,4,"Knows schema design well enough; the bottleneck was team coordination, not skill."
+S0402,U0539,M011,H012,2025-03-25,45,3,Asked reasonable questions about state management. Some gaps in fundamentals but closing fast.
+S0403,U0539,M022,H022,2026-05-22,30,1,"Team was not aligned on what they were building; API design was the symptom, not the cause."
+S0404,U0543,M009,H001,2024-01-13,15,3,"Understood demo narrative conceptually, less sure how to implement it. Walked through a concrete example."
+S0405,U0543,M018,H004,2024-05-20,15,4,Spent too long on schema design polish when the core flow was still broken. Redirected them.
+S0406,U0543,M007,H006,2024-08-08,20,5,Took feedback on deployment without getting defensive and shipped the change within the hour.
+S0407,U0544,M010,H002,2024-02-22,30,4,Asked reasonable questions about data cleaning. Some gaps in fundamentals but closing fast.
+S0408,U0544,M010,H014,2025-06-12,20,5,"Confident on error handling and good at explaining it to their own team, which matters more."
+S0409,U0544,M014,H002,2024-02-22,45,5,Came in with the architecture already sketched and asked precise questions about schema design. Needed almost no help.
+S0410,U0546,M014,H016,2025-08-27,15,5,Already knew the tradeoffs in evaluation; we spent the time on presentation strategy instead.
+S0411,U0546,M030,H016,2025-08-27,45,3,Solid on evaluation but was heading toward an overcomplicated design. Suggested a simpler path.
+S0412,U0547,M030,H014,2025-06-12,20,3,Spent too long on scope control polish when the core flow was still broken. Redirected them.
+S0413,U0547,M023,H014,2025-06-12,30,3,Good progress on graph modelling. Needs to test with real input sooner rather than later.
+S0414,U0548,M017,H011,2025-02-15,60,3,Solid on scope control but was heading toward an overcomplicated design. Suggested a simpler path.
+S0415,U0549,M009,H002,2024-02-22,30,4,Good progress on demo narrative. Needs to test with real input sooner rather than later.
+S0416,U0549,M029,H002,2024-02-22,15,4,Asked reasonable questions about API design. Some gaps in fundamentals but closing fast.
+S0417,U0550,M028,H013,2025-05-09,45,4,Good progress on scope control. Needs to test with real input sooner rather than later.
+S0418,U0550,M002,H013,2025-05-09,45,3,"Competent with API design once unblocked, but was stuck for a while before asking for help."
+S0419,U0553,M023,H011,2025-02-16,30,2,Scope is unrealistic for the time left. Advised cutting to one working flow around retrieval quality.
+S0420,U0555,M026,H002,2024-02-22,30,4,"Understood prompt structure conceptually, less sure how to implement it. Walked through a concrete example."
+S0421,U0555,M026,H004,2024-05-21,30,1,"Team was not aligned on what they were building; error handling was the symptom, not the cause."
+S0422,U0559,M028,H011,2025-02-15,45,3,Spent too long on scope control polish when the core flow was still broken. Redirected them.
+S0423,U0574,M017,H004,2024-05-21,45,2,Struggling with data cleaning fundamentals. Recommended they drop it and use a managed alternative.
+S0424,U0574,M004,H023,2026-07-01,45,5,Very strong on deployment. I suggested they cut scope and they immediately agreed and did it.
+S0425,U0574,M002,H004,2024-05-21,60,3,Asked reasonable questions about scope control. Some gaps in fundamentals but closing fast.
+S0426,U0582,M006,H007,2024-09-14,45,3,"Competent with retrieval quality once unblocked, but was stuck for a while before asking for help."
+S0427,U0582,M012,H016,2025-08-27,30,5,Came in with the architecture already sketched and asked precise questions about demo narrative. Needed almost no help.
+S0428,U0582,M023,H007,2024-09-14,30,4,"Competent with prompt structure once unblocked, but was stuck for a while before asking for help."
+S0429,U0584,M023,H001,2024-01-14,20,3,Spent too long on data cleaning polish when the core flow was still broken. Redirected them.
+S0430,U0584,M007,H006,2024-08-08,20,5,Excellent grasp of retrieval quality. I pointed them at one library and they had it integrated by the next check-in.
+S0431,U0584,M027,H012,2025-03-26,60,5,"Asked the best question of the session, about failure modes in graph modelling. Clear thinker."
+S0432,U0585,M008,H015,2025-07-21,30,4,Asked reasonable questions about prompt structure. Some gaps in fundamentals but closing fast.
+S0433,U0587,M005,H009,2024-12-04,45,4,Good progress on API design. Needs to test with real input sooner rather than later.
+S0434,U0587,M025,H009,2024-12-04,20,3,Solid on caching strategy but was heading toward an overcomplicated design. Suggested a simpler path.
+S0435,U0588,M018,H003,2024-04-06,45,4,"Competent with state management once unblocked, but was stuck for a while before asking for help."
+S0436,U0590,M002,H013,2025-05-09,60,5,Very strong on schema design. I suggested they cut scope and they immediately agreed and did it.
+S0437,U0594,M015,H001,2024-01-13,15,2,Needed a lot of hand-holding on deployment. Willing to learn but out of their depth for this scope.
+S0438,U0594,M010,H001,2024-01-13,20,4,Asked reasonable questions about API design. Some gaps in fundamentals but closing fast.
+S0439,U0594,M022,H001,2024-01-13,60,5,Debugged a graph modelling issue on their own while we talked; I mostly confirmed the approach.
+S0440,U0599,M030,H021,2026-04-06,20,5,Took feedback on deployment without getting defensive and shipped the change within the hour.
+S0441,U0599,M024,H024,2026-08-08,45,5,Already knew the tradeoffs in evaluation; we spent the time on presentation strategy instead.
+S0442,U0599,M003,H021,2026-04-05,15,4,"Competent with evaluation once unblocked, but was stuck for a while before asking for help."
+S0443,U0602,M002,H009,2024-12-04,60,1,Scope is unrealistic for the time left. Advised cutting to one working flow around demo narrative.
+S0444,U0602,M015,H009,2024-12-04,15,4,"Competent with error handling once unblocked, but was stuck for a while before asking for help."
+S0445,U0604,M023,H001,2024-01-14,30,3,Spent too long on data cleaning polish when the core flow was still broken. Redirected them.
+S0446,U0604,M023,H003,2024-04-06,15,3,"Understood demo narrative conceptually, less sure how to implement it. Walked through a concrete example."
+S0447,U0605,M026,H022,2026-05-21,45,4,Spent too long on error handling polish when the core flow was still broken. Redirected them.
+S0448,U0605,M016,H022,2026-05-23,20,4,"Competent with evaluation once unblocked, but was stuck for a while before asking for help."
+S0449,U0609,M026,H004,2024-05-20,45,4,Spent too long on API design polish when the core flow was still broken. Redirected them.
+S0450,U0613,M011,H008,2024-10-26,60,3,Asked reasonable questions about prompt structure. Some gaps in fundamentals but closing fast.
+S0451,U0613,M017,H009,2024-12-04,15,3,Good progress on API design. Needs to test with real input sooner rather than later.
+S0452,U0618,M015,H009,2024-12-04,30,5,Took feedback on state management without getting defensive and shipped the change within the hour.
+S0453,U0618,M025,H023,2026-07-02,20,4,"Knows retrieval quality well enough; the bottleneck was team coordination, not skill."
+S0454,U0618,M009,H009,2024-12-04,30,3,Making steady progress. Advised them to cut two features and finish retrieval quality properly.
+S0455,U0624,M027,H013,2025-05-09,60,5,Debugged a evaluation issue on their own while we talked; I mostly confirmed the approach.
+S0456,U0627,M015,H011,2025-02-15,60,5,Debugged a model selection issue on their own while we talked; I mostly confirmed the approach.
+S0457,U0627,M015,H015,2025-07-23,20,4,Making steady progress. Advised them to cut two features and finish error handling properly.
+S0458,U0630,M027,H016,2025-08-27,20,5,"Asked the best question of the session, about failure modes in deployment. Clear thinker."
+S0459,U0630,M014,H019,2026-01-04,30,3,Good progress on API design. Needs to test with real input sooner rather than later.
+S0460,U0632,M005,H005,2024-06-25,30,5,Already knew the tradeoffs in caching strategy; we spent the time on presentation strategy instead.
+S0461,U0632,M001,H014,2025-06-12,15,4,"Knows API design well enough; the bottleneck was team coordination, not skill."
+S0462,U0634,M022,H001,2024-01-13,60,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.
+S0463,U0634,M001,H001,2024-01-14,15,5,"Asked the best question of the session, about failure modes in schema design. Clear thinker."
+S0464,U0634,M025,H001,2024-01-13,30,4,Good progress on evaluation. Needs to test with real input sooner rather than later.
+S0465,U0636,M007,H005,2024-06-25,45,5,Came in with the architecture already sketched and asked precise questions about caching strategy. Needed almost no help.
+S0466,U0636,M020,H008,2024-10-26,60,4,"Knows graph modelling well enough; the bottleneck was team coordination, not skill."
+S0467,U0637,M018,H004,2024-05-21,30,5,Excellent grasp of schema design. I pointed them at one library and they had it integrated by the next check-in.
+S0468,U0637,M024,H004,2024-05-20,30,4,Solid on state management but was heading toward an overcomplicated design. Suggested a simpler path.

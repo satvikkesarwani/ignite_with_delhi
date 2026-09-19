@@ -1,0 +1,25 @@
+hackathon_id,name,start_date,end_date,mode,city,theme_track,sponsors,prize_pool_inr,max_team_size,organizer
+H001,Ignite Delhi Winter,2024-01-13,2024-01-14,offline,Noida,EdTech,Polygon|Google Cloud,300000,4,Delhi Hack Collective
+H002,CodeCapital,2024-02-22,2024-02-22,hybrid,Noida,FinTech,AWS|GitHub|Postman,500000,3,Delhi Hack Collective
+H003,BuildDelhi,2024-04-06,2024-04-06,offline,Gurugram,GenAI & Agents,Razorpay|DigitalOcean|Postman,450000,3,Delhi Hack Collective
+H004,HackFrontier,2024-05-20,2024-05-21,offline,Noida,Social Impact,DigitalOcean|Vercel|Razorpay,500000,3,Delhi Hack Collective
+H005,Yamuna Build Fest,2024-06-25,2024-06-25,offline,Delhi,HealthTech,Polygon|MongoDB|Postman,150000,4,Delhi Hack Collective
+H006,Ignite Delhi Spring,2024-08-07,2024-08-09,online,Remote,Open Source & DevTools,Notion|DigitalOcean,200000,3,Delhi Hack Collective
+H007,DevDelta,2024-09-14,2024-09-15,online,Remote,Climate & Sustainability,Polygon|Razorpay|Google Cloud,300000,5,Delhi Hack Collective
+H008,NorthStar Hacks,2024-10-24,2024-10-26,online,Remote,Smart Cities & IoT,Notion|Vercel,400000,4,Delhi Hack Collective
+H009,Capital Code Jam,2024-12-04,2024-12-04,hybrid,Gurugram,Web3,GitHub|Vercel|Polygon,700000,4,Delhi Hack Collective
+H010,Ignite Delhi Monsoon,2025-01-10,2025-01-10,offline,Delhi,Data & Graph,DigitalOcean|Polygon|Notion,650000,3,Delhi Hack Collective
+H011,StackSprint,2025-02-15,2025-02-17,hybrid,Delhi,FinTech,GitHub|MongoDB|Postman,250000,4,Delhi Hack Collective
+H012,HackTheCapital,2025-03-25,2025-03-27,offline,Delhi,EdTech,Postman|Polygon,600000,4,Delhi Hack Collective
+H013,Ignite Delhi Autumn,2025-05-09,2025-05-09,hybrid,Noida,GenAI & Agents,MongoDB|Postman|Razorpay,300000,3,Delhi Hack Collective
+H014,ProtoDelhi,2025-06-12,2025-06-12,offline,Noida,HealthTech,Vercel|Notion|Postman,300000,4,Delhi Hack Collective
+H015,CircuitBreak,2025-07-21,2025-07-23,offline,Delhi,Social Impact,DigitalOcean|Notion,500000,4,Delhi Hack Collective
+H016,Ignite Delhi Winter II,2025-08-27,2025-08-27,offline,Delhi,Climate & Sustainability,DigitalOcean|AWS,600000,3,Delhi Hack Collective
+H017,DeltaBuild,2025-10-04,2025-10-04,hybrid,Gurugram,Data & Graph,GitHub|Vercel|MongoDB,650000,4,Delhi Hack Collective
+H018,HackYamuna,2025-11-18,2025-11-19,hybrid,Gurugram,Open Source & DevTools,Polygon|MongoDB|Postman,250000,4,Delhi Hack Collective
+H019,Ignite Delhi Spring II,2026-01-03,2026-01-04,offline,Delhi,Smart Cities & IoT,Polygon|Google Cloud|Razorpay,450000,5,Delhi Hack Collective
+H020,MetroHacks,2026-02-18,2026-02-20,offline,Delhi,Web3,Polygon|AWS|MongoDB,700000,5,Delhi Hack Collective
+H021,ForgeDelhi,2026-04-05,2026-04-06,offline,Delhi,GenAI & Agents,Polygon|Postman,200000,4,Delhi Hack Collective
+H022,Ignite Delhi Monsoon II,2026-05-21,2026-05-23,offline,Delhi,GenAI & Agents,AWS|Postman|Tavily|Cognee|Neo4j,150000,3,Delhi Hack Collective
+H023,HackHorizon,2026-07-01,2026-07-03,hybrid,Delhi,Data & Graph,AWS|Postman|Google Cloud|Tavily|Cognee|Neo4j,450000,4,Delhi Hack Collective
+H024,Ignite Delhi Grand Finale,2026-08-08,2026-08-08,hybrid,Noida,GenAI & Agents,Vercel|GitHub|Tavily|Cognee|Neo4j,550000,4,Delhi Hack Collective

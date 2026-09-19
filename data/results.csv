@@ -1,0 +1,257 @@
+project_id,rank,prize_track,prize_amount_inr,score,judge_feedback
+P0001,2,Overall,60000,74,Good technical foundation. The team ran out of time on the interface and it showed.
+P0002,1,Overall,100000,75,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0003,,,,55,"Sensible engineering, unremarkable ambition. A safe submission."
+P0004,,,,56,Works as advertised. We would have liked more justification for the design choices.
+P0005,,,,63,"Sensible engineering, unremarkable ambition. A safe submission."
+P0006,3,Overall,30000,70,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0007,,,,57,Competent build. The problem framing was stronger than the solution.
+P0008,,,,44,"Significant parts were hard-coded, which the team did not disclose until questioned."
+P0009,,,,57,"The data work is better than the modelling here, which is unusual and worth noting."
+P0010,,,,45,"Good energy, insufficient planning. Nothing ran end to end."
+P0011,2,Overall,60000,71,"The data work is better than the modelling here, which is unusual and worth noting."
+P0012,,,,64,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0013,1,Overall,100000,84,"The data work is better than the modelling here, which is unusual and worth noting."
+P0014,,,,49,"Good energy, insufficient planning. Nothing ran end to end."
+P0015,,,,36,"Good energy, insufficient planning. Nothing ran end to end."
+P0016,,,,62,Works as advertised. We would have liked more justification for the design choices.
+P0017,3,Overall,30000,70,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0018,,,,54,"Sensible engineering, unremarkable ambition. A safe submission."
+P0019,,,,44,"Significant parts were hard-coded, which the team did not disclose until questioned."
+P0020,,,,37,Unclear problem statement and the solution did not obviously follow from it.
+P0021,,,,33,The presentation described a product that the code does not implement yet.
+P0022,1,Overall,100000,54,"Sensible engineering, unremarkable ambition. A safe submission."
+P0023,3,Overall,30000,41,Overscoped. Three services half-built instead of one complete path.
+P0024,2,Overall,60000,51,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0025,,,,53,"The data work is better than the modelling here, which is unusual and worth noting."
+P0026,,,,69,Works as advertised. We would have liked more justification for the design choices.
+P0027,,,,59,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0028,,,,61,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0029,2,Overall,60000,76,Works as advertised. We would have liked more justification for the design choices.
+P0030,,,,67,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0031,3,Overall,30000,72,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0032,,,,49,The demo failed twice. The underlying idea is reasonable and worth another attempt.
+P0033,,,,65,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0034,1,Overall,100000,80,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0035,,,,60,Works as advertised. We would have liked more justification for the design choices.
+P0036,,,,73,"Sensible engineering, unremarkable ambition. A safe submission."
+P0037,,,,72,Works as advertised. We would have liked more justification for the design choices.
+P0038,2,Overall,60000,84,Good technical foundation. The team ran out of time on the interface and it showed.
+P0039,3,Overall,30000,76,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0040,,,,40,The idea has merit but very little was working at demo time. Focus on finishing one flow next time.
+P0041,,,,68,"The data work is better than the modelling here, which is unusual and worth noting."
+P0042,,,,51,Reasonable scope and an honest presentation. The technical risk was low.
+P0043,,,,55,Reasonable scope and an honest presentation. The technical risk was low.
+P0044,,,,65,"The data work is better than the modelling here, which is unusual and worth noting."
+P0045,,,,49,"Significant parts were hard-coded, which the team did not disclose until questioned."
+P0046,,,,46,The presentation described a product that the code does not implement yet.
+P0047,1,Overall,100000,91,The architecture holds up to scrutiny and the team clearly built it themselves. Excellent.
+P0048,,,,64,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0049,,,,56,Reasonable scope and an honest presentation. The technical risk was low.
+P0050,,,,67,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0051,,,,46,"Good energy, insufficient planning. Nothing ran end to end."
+P0052,,,,73,Good technical foundation. The team ran out of time on the interface and it showed.
+P0053,,,,61,"Sensible engineering, unremarkable ambition. A safe submission."
+P0054,2,Overall,60000,76,"Sensible engineering, unremarkable ambition. A safe submission."
+P0055,,,,66,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0056,,,,71,Works as advertised. We would have liked more justification for the design choices.
+P0057,,,,61,"Sensible engineering, unremarkable ambition. A safe submission."
+P0058,3,Overall,30000,75,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0059,,,,69,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0060,,,,65,Works as advertised. We would have liked more justification for the design choices.
+P0061,,,,34,Unclear problem statement and the solution did not obviously follow from it.
+P0062,,,,48,"Good energy, insufficient planning. Nothing ran end to end."
+P0063,1,Overall,100000,82,Works as advertised. We would have liked more justification for the design choices.
+P0064,,,,58,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0065,,,,58,"The data work is better than the modelling here, which is unusual and worth noting."
+P0066,,,,56,Competent build. The problem framing was stronger than the solution.
+P0067,,,,62,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0068,1,Overall,100000,85,Competent build. The problem framing was stronger than the solution.
+P0069,,,,48,The idea has merit but very little was working at demo time. Focus on finishing one flow next time.
+P0070,,,,44,The demo failed twice. The underlying idea is reasonable and worth another attempt.
+P0071,,,,61,"The data work is better than the modelling here, which is unusual and worth noting."
+P0072,,,,53,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0073,2,Overall,60000,84,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0074,,,,43,The presentation described a product that the code does not implement yet.
+P0075,3,Overall,30000,68,"Sensible engineering, unremarkable ambition. A safe submission."
+P0076,,,,54,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0077,,,,52,Reasonable scope and an honest presentation. The technical risk was low.
+P0078,,,,67,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0079,1,Overall,100000,84,Good technical foundation. The team ran out of time on the interface and it showed.
+P0080,,,,65,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0081,,,,57,Good technical foundation. The team ran out of time on the interface and it showed.
+P0082,,,,67,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0083,,,,60,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0084,,,,66,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0085,3,Overall,30000,70,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0086,,,,59,"Sensible engineering, unremarkable ambition. A safe submission."
+P0087,,,,62,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0088,2,Overall,60000,78,"The data work is better than the modelling here, which is unusual and worth noting."
+P0089,,,,67,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0090,3,Overall,30000,70,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0091,,,,66,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0092,2,Overall,60000,77,Works as advertised. We would have liked more justification for the design choices.
+P0093,,,,69,"The data work is better than the modelling here, which is unusual and worth noting."
+P0094,1,Overall,100000,83,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0095,,,,42,Unclear problem statement and the solution did not obviously follow from it.
+P0096,,,,69,Competent build. The problem framing was stronger than the solution.
+P0097,,,,69,Competent build. The problem framing was stronger than the solution.
+P0098,,,,53,"The data work is better than the modelling here, which is unusual and worth noting."
+P0099,,,,74,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0100,,,,72,Reasonable scope and an honest presentation. The technical risk was low.
+P0101,,,,66,"The data work is better than the modelling here, which is unusual and worth noting."
+P0102,,,,49,Mostly configuration of existing tools with little original work.
+P0103,,,,70,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0104,,,,68,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0105,1,Overall,100000,84,Reasonable scope and an honest presentation. The technical risk was low.
+P0106,3,Overall,30000,81,Works as advertised. We would have liked more justification for the design choices.
+P0107,,,,42,"Good energy, insufficient planning. Nothing ran end to end."
+P0108,2,Overall,60000,83,Good technical foundation. The team ran out of time on the interface and it showed.
+P0109,,,,61,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0110,,,,60,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0111,2,Overall,60000,83,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0112,1,Overall,100000,90,Exceptionally well-scoped for the time available. The demo ran without a hitch and the team could answer every implementation question.
+P0113,,,,61,Reasonable scope and an honest presentation. The technical risk was low.
+P0114,,,,59,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0115,3,Overall,30000,62,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0116,,,,59,Competent build. The problem framing was stronger than the solution.
+P0117,,,,55,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0118,,,,65,Competent build. The problem framing was stronger than the solution.
+P0119,1,Overall,100000,72,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0120,,,,50,"The data work is better than the modelling here, which is unusual and worth noting."
+P0121,,,,66,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0122,,,,63,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0123,,,,64,Good technical foundation. The team ran out of time on the interface and it showed.
+P0124,,,,63,Competent build. The problem framing was stronger than the solution.
+P0125,2,Overall,60000,70,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0126,3,Overall,30000,69,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0127,2,Overall,60000,81,Reasonable scope and an honest presentation. The technical risk was low.
+P0128,1,Overall,100000,84,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0129,,,,70,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0130,,,,51,Reasonable scope and an honest presentation. The technical risk was low.
+P0131,,,,59,Works as advertised. We would have liked more justification for the design choices.
+P0132,3,Overall,30000,77,"Sensible engineering, unremarkable ambition. A safe submission."
+P0133,,,,69,Good technical foundation. The team ran out of time on the interface and it showed.
+P0134,,,,62,Competent build. The problem framing was stronger than the solution.
+P0135,,,,53,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0136,,,,72,Competent build. The problem framing was stronger than the solution.
+P0137,,,,63,Good technical foundation. The team ran out of time on the interface and it showed.
+P0138,,,,49,"Good energy, insufficient planning. Nothing ran end to end."
+P0139,,,,71,Competent build. The problem framing was stronger than the solution.
+P0140,1,Overall,100000,93,Polished end to end. Unusually good judgement about what to leave out.
+P0141,2,Overall,60000,86,Polished end to end. Unusually good judgement about what to leave out.
+P0142,,,,63,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0143,3,Overall,30000,79,Good technical foundation. The team ran out of time on the interface and it showed.
+P0144,,,,74,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0145,,,,32,Team struggled with the integration and spent the demo debugging. Worth retrying with a smaller scope.
+P0146,,,,46,Mostly configuration of existing tools with little original work.
+P0147,,,,40,Team struggled with the integration and spent the demo debugging. Worth retrying with a smaller scope.
+P0148,,,,70,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0149,,,,59,"Sensible engineering, unremarkable ambition. A safe submission."
+P0150,,,,33,"Good energy, insufficient planning. Nothing ran end to end."
+P0151,,,,46,"Good energy, insufficient planning. Nothing ran end to end."
+P0152,2,Overall,60000,88,Outstanding execution. The provenance trail in particular showed real engineering maturity.
+P0153,,,,48,Unclear problem statement and the solution did not obviously follow from it.
+P0154,3,Overall,30000,54,"Sensible engineering, unremarkable ambition. A safe submission."
+P0155,,,,47,The idea has merit but very little was working at demo time. Focus on finishing one flow next time.
+P0156,1,Overall,100000,90,Genuinely useful beyond the hackathon. We would like to see this continued.
+P0157,1,Overall,100000,89,Polished end to end. Unusually good judgement about what to leave out.
+P0158,2,Overall,60000,85,"The data work is better than the modelling here, which is unusual and worth noting."
+P0159,,,,53,Competent build. The problem framing was stronger than the solution.
+P0160,,,,55,Competent build. The problem framing was stronger than the solution.
+P0161,,,,42,Overscoped. Three services half-built instead of one complete path.
+P0162,,,,62,Reasonable scope and an honest presentation. The technical risk was low.
+P0163,,,,41,Overscoped. Three services half-built instead of one complete path.
+P0164,3,Overall,30000,83,Works as advertised. We would have liked more justification for the design choices.
+P0165,,,,52,"Sensible engineering, unremarkable ambition. A safe submission."
+P0166,,,,71,"The data work is better than the modelling here, which is unusual and worth noting."
+P0167,,,,77,Competent build. The problem framing was stronger than the solution.
+P0168,,,,48,"Good energy, insufficient planning. Nothing ran end to end."
+P0169,,,,67,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0170,,,,59,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0171,,,,74,Reasonable scope and an honest presentation. The technical risk was low.
+P0172,,,,49,Mostly configuration of existing tools with little original work.
+P0173,3,Overall,30000,79,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0174,,,,71,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0175,2,Overall,60000,81,Competent build. The problem framing was stronger than the solution.
+P0176,,,,69,Competent build. The problem framing was stronger than the solution.
+P0177,,,,65,"The data work is better than the modelling here, which is unusual and worth noting."
+P0178,1,Overall,100000,89,"Best use of the sponsor stack we saw all weekend, and the fallback design was thoughtful."
+P0179,,,,76,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0180,,,,76,"Sensible engineering, unremarkable ambition. A safe submission."
+P0181,,,,47,The idea has merit but very little was working at demo time. Focus on finishing one flow next time.
+P0182,,,,34,Unclear problem statement and the solution did not obviously follow from it.
+P0183,1,Overall,100000,89,Technically ambitious and it actually worked. The team handled the edge-case questions well.
+P0184,,,,71,Good technical foundation. The team ran out of time on the interface and it showed.
+P0185,,,,70,"Sensible engineering, unremarkable ambition. A safe submission."
+P0186,,,,39,Unclear problem statement and the solution did not obviously follow from it.
+P0187,,,,52,Good technical foundation. The team ran out of time on the interface and it showed.
+P0188,,,,52,"Sensible engineering, unremarkable ambition. A safe submission."
+P0189,2,Overall,60000,85,"The data work is better than the modelling here, which is unusual and worth noting."
+P0190,3,Overall,30000,84,"The data work is better than the modelling here, which is unusual and worth noting."
+P0191,,,,66,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0192,,,,41,Mostly configuration of existing tools with little original work.
+P0193,,,,48,Unclear problem statement and the solution did not obviously follow from it.
+P0194,,,,48,Overscoped. Three services half-built instead of one complete path.
+P0195,,,,50,Competent build. The problem framing was stronger than the solution.
+P0196,,,,53,Competent build. The problem framing was stronger than the solution.
+P0197,1,Overall,100000,63,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0198,,,,32,"Significant parts were hard-coded, which the team did not disclose until questioned."
+P0199,2,Overall,60000,62,Works as advertised. We would have liked more justification for the design choices.
+P0200,,,,41,Overscoped. Three services half-built instead of one complete path.
+P0201,3,Overall,30000,55,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0202,,,,32,Overscoped. Three services half-built instead of one complete path.
+P0203,,,,51,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0204,,,,40,Overscoped. Three services half-built instead of one complete path.
+P0205,,,,42,Unclear problem statement and the solution did not obviously follow from it.
+P0206,,,,68,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0207,1,Overall,100000,77,Good technical foundation. The team ran out of time on the interface and it showed.
+P0208,,,,54,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0209,2,Overall,60000,71,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0210,,,,56,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0211,,,,64,"The data work is better than the modelling here, which is unusual and worth noting."
+P0212,,,,68,"Sensible engineering, unremarkable ambition. A safe submission."
+P0213,3,Overall,30000,69,Good technical foundation. The team ran out of time on the interface and it showed.
+P0214,,,,39,The presentation described a product that the code does not implement yet.
+P0215,,,,65,Works as advertised. We would have liked more justification for the design choices.
+P0216,3,Overall,30000,72,"Sensible engineering, unremarkable ambition. A safe submission."
+P0217,,,,63,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0218,1,Overall,100000,78,"The data work is better than the modelling here, which is unusual and worth noting."
+P0219,,,,56,"Sensible engineering, unremarkable ambition. A safe submission."
+P0220,2,Overall,60000,75,"Sensible engineering, unremarkable ambition. A safe submission."
+P0221,,,,67,Reasonable scope and an honest presentation. The technical risk was low.
+P0222,,,,68,"Good teamwork and a clean demo, but the underlying method is off-the-shelf."
+P0223,,,,69,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0224,,,,45,Team struggled with the integration and spent the demo debugging. Worth retrying with a smaller scope.
+P0225,3,Overall,30000,82,Solid execution on a familiar problem. The demo worked but the differentiation from existing tools was not argued clearly.
+P0226,,,,36,The technical approach was not justified and the results were not measured.
+P0227,,,,42,The idea has merit but very little was working at demo time. Focus on finishing one flow next time.
+P0228,,,,42,"Significant parts were hard-coded, which the team did not disclose until questioned."
+P0229,1,Overall,100000,85,"The data work is better than the modelling here, which is unusual and worth noting."
+P0230,2,Overall,60000,84,Reasonable scope and an honest presentation. The technical risk was low.
+P0231,,,,48,The technical approach was not justified and the results were not measured.
+P0232,,,,53,Competent build. The problem framing was stronger than the solution.
+P0233,,Best use of Neo4j,25000,90,"Impressive breadth for a two-day build, with no hand-waving when questioned."
+P0234,,,,79,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0235,,,,65,"Nice idea, partially delivered. Two of the four features in the pitch were not working."
+P0236,,,,61,Works as advertised. We would have liked more justification for the design choices.
+P0237,,,,65,"The data work is better than the modelling here, which is unusual and worth noting."
+P0238,,Best use of Cognee,25000,78,"Interesting approach, though the evaluation was thin. Some claims were not backed by what was demoed."
+P0239,,Best use of Tavily,25000,88,Strongest submission in its track. Real technical depth and the presenters were honest about what was mocked.
+P0240,,,,61,"Sensible engineering, unremarkable ambition. A safe submission."
+P0241,,,,42,Unclear problem statement and the solution did not obviously follow from it.
+P0242,2,Overall,60000,69,Works as advertised. We would have liked more justification for the design choices.
+P0243,1,Overall,100000,78,Reasonable scope and an honest presentation. The technical risk was low.
+P0244,,Best use of Tavily,25000,76,Reasonable scope and an honest presentation. The technical risk was low.
+P0245,,Best use of Neo4j,25000,90,Genuinely useful beyond the hackathon. We would like to see this continued.
+P0246,,Best use of Cognee,25000,75,Good technical foundation. The team ran out of time on the interface and it showed.
+P0247,,,,52,The core flow is convincing; the surrounding scaffolding is not yet there.
+P0248,3,Overall,30000,58,"The data work is better than the modelling here, which is unusual and worth noting."
+P0249,2,Overall,60000,73,The prototype does what they said. Scaling it would need a different architecture and they know that.
+P0250,,Best use of Neo4j,25000,80,Competent build. The problem framing was stronger than the solution.
+P0251,1,Overall,100000,91,The architecture holds up to scrutiny and the team clearly built it themselves. Excellent.
+P0252,,Best use of Cognee,25000,89,"Clear problem, clear solution, working code. The evaluation numbers they showed were the differentiator."
+P0253,,,,62,Works as advertised. We would have liked more justification for the design choices.
+P0254,,,,54,Reasonable scope and an honest presentation. The technical risk was low.
+P0255,3,Overall,30000,63,"Sensible engineering, unremarkable ambition. A safe submission."
+P0256,,Best use of Tavily,25000,92,"Best use of the sponsor stack we saw all weekend, and the fallback design was thoughtful."
