@@ -18,6 +18,7 @@ import { getStats, listCandidates, getProfile, getSubgraph } from './contextServ
 import { resolve } from './resolveService.js';
 import { segment } from './retrievalService.js';
 import { chat } from './agentService.js';
+import { getGraphOverview } from './graphOverview.js';
 import { intakeRouter } from './intakeRoutes.js';
 import { outreachRouter } from './outreachRoutes.js';
 import { matchRouter } from './matchRoutes.js';
@@ -134,6 +135,14 @@ crmRouter.post(
     if (!message) return fail(req, res, 400, 'message is required');
     if (useMock()) return res.json(mock('chat.json'));
     res.json(await chat({ message, sessionId }));
+  })
+);
+
+// Dense slice of the context graph for the /crm/graph view.
+crmRouter.get(
+  '/api/crm/graph/overview',
+  route(async (req, res) => {
+    res.json({ success: true, ...(await getGraphOverview(req.query)) });
   })
 );
 

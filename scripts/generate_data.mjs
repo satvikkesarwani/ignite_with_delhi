@@ -935,6 +935,22 @@ function buildGithubProfiles(users, projects, teamMembers) {
   return profiles;
 }
 
+/**
+ * Deterministic demo hook: the headline organizer query is "DTU students who know React and
+ * Python and are interning". With random work histories nobody satisfied all four, so the demo
+ * answer would be empty. U0456 (the one DTU person with evidenced React + Python) gets a current
+ * internship. Synthetic data, labelled synthetic_seed like the rest of the profile.
+ */
+const DEMO_INTERNSHIPS = {
+  U0456: {
+    title: 'Full-Stack Developer Intern',
+    company: 'Razorpay',
+    start: '2026-06',
+    end: null,
+    description: 'Building internal dashboards in React with a Python backend.',
+  },
+};
+
 function buildLinkedinProfiles(users) {
   const profiles = {};
   for (const u of users) {
@@ -954,6 +970,7 @@ function buildLinkedinProfiles(users) {
         });
       }
     }
+    if (DEMO_INTERNSHIPS[u.user_id]) experience.push(DEMO_INTERNSHIPS[u.user_id]);
     profiles[u.linkedin_url] = {
       url: u.linkedin_url,
       headline: spec ? spec.headline : `${u.degree} ${u.branch} @ ${u.collegeShort} · ${u.role_pref}`,

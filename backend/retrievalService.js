@@ -194,8 +194,41 @@ function parseSince(text) {
  * Turn a sentence into structured filters. Pure regex + vocabulary — no LLM.
  * Returns null filters that were not present, so callers can tell what matched.
  */
+/**
+ * Organizers here write Hinglish ("DTU ke bache jo React jante hain aur abhi interning hain").
+ * Map the common words to English before parsing, so the same regex vocabulary handles both.
+ * Multi-word phrases first; the filler words that carry no meaning are dropped.
+ */
+export function normalizeHinglish(input) {
+  let t = ` ${String(input || '').toLowerCase()} `;
+  const rules = [
+    [/\b(jaante|jante|janta|jaanta) (hain|hai|ho)\b/g, ' know '],
+    [/\b(aata|aati|aate) (hai|hain)\b/g, ' know '],
+    [
+      /\b(gayab|kho gaye|kho gaya|chup ho gaye|active nahi|nahi aaye|nahin aaye)\b/g,
+      ' gone quiet ',
+    ],
+    [
+      /\b(dikhao|dikha do|dikhaiye|batao|bata do|dhundo|dhoondo|dhundho|nikalo|chahiye)\b/g,
+      ' find ',
+    ],
+    [/\b(bache|bachhe|bachche|log|ladke|ladkiyan|vidyarthi)\b/g, ' people '],
+    [/\b(jeete|jeeta|jeeti|jite|jita|jeet chuke)\b/g, ' won '],
+    [/\b(jo|jinhone|jinhe)\b/g, ' who '],
+    [/\b(abhi|filhal|currently)\b/g, ' currently '],
+    [/\b(aur)\b/g, ' and '],
+    [/\b(kitne)\b/g, ' how many '],
+    [
+      /\b(mujhe|humein|hume|mera|meri|wo|woh|ye|yeh|ke|ka|ki|ko|se|mein|me|hai|hain|ho|hoon|kar|karo|raha|rahe|rahi|wale|wali|wala)\b/g,
+      ' ',
+    ],
+  ];
+  for (const [re, to] of rules) t = t.replace(re, to);
+  return t.replace(/\s+/g, ' ').trim();
+}
+
 export function parseSegment(message) {
-  const text = String(message || '');
+  const text = normalizeHinglish(message);
   const lower = text.toLowerCase();
   const vocab = profileStore.vocab();
   const p = { filters: [], labels: [] };
@@ -343,6 +376,13 @@ export function parseSegment(message) {
     p.labels.push('consented, not unsubscribed');
   }
 
+  // "currently interning" — a current internship on the (synthetic) LinkedIn-shaped work history.
+  if (/\b(interns?|interning|internship|internships)\b/.test(lower)) {
+    p.interning = true;
+    p.filters.push('interning');
+    p.labels.push('currently interning');
+  }
+
   // Sorting / limit.
   const topN = lower.match(
     /\btop\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten|fifteen|twenty)\b/
@@ -446,6 +486,11 @@ export function buildCypher(p) {
     params.recent = d.toISOString().slice(0, 10);
     where.push('NOT EXISTS { (p)-[:RECEIVED]->(o:OutreachEvent) WHERE o.sent_at >= $recent }');
   }
+  if (p.interning) {
+    where.push(
+      "EXISTS { (p)-[w:WORKED_AT]->(:Company) WHERE w.end IS NULL AND toLower(w.title) CONTAINS 'intern' }"
+    );
+  }
   if (p.noReply) {
     params.minSent = p.noReply.minSent;
     where.push('size([(p)-[:RECEIVED]->(o:OutreachEvent) | o]) >= $minSent');
@@ -457,7 +502,7 @@ export function buildCypher(p) {
   const cypher = [
     'MATCH (cp:ContextProfile)-[:ABOUT]->(p:Person)',
     where.length ? `WHERE ${where.join('\n  AND ')}` : null,
-    `RETURN p.user_id AS user_id, ${orderProp} AS sort_value`,
+    `RETURN p.user_id AS user_id, ${orderProp} AS sort_value${p.interning ? ", [(p)-[w:WORKED_AT]->(c:Company) WHERE w.end IS NULL AND toLower(w.title) CONTAINS 'intern' | c.name + ' (' + w.title + ')'][0] AS interning_at" : ''}`,
     `ORDER BY sort_value DESC, p.full_name`,
     `LIMIT ${limit}`,
   ]
@@ -611,10 +656,27 @@ async function tier1(message, parsed) {
     totalMatches = filterInMemory({ ...parsed, limit: 9999 }).length;
   }
 
+  // The internship filter needs the graph's work history; the profile store cannot answer it, and an
+  // unfiltered fallback would list people who are NOT interning. Fail through to the honest tier instead.
+  if (parsed.interning && source !== 'graph')
+    throw new Error('interning filter needs the live graph');
+  const internAt =
+    source === 'graph' && parsed.interning
+      ? Object.fromEntries(res.records.map((r) => [r.user_id, r.interning_at]))
+      : {};
+
   const profiles = ids.map((id) => profileStore.get(id)).filter(Boolean);
   const rows = profiles.map(toRow);
   const rationale = Object.fromEntries(
-    profiles.map((pr) => [pr.user_id, rationaleFor(pr, parsed)])
+    profiles.map((pr) => [
+      pr.user_id,
+      [
+        internAt[pr.user_id] ? `interning at ${internAt[pr.user_id]}` : null,
+        rationaleFor(pr, parsed),
+      ]
+        .filter(Boolean)
+        .join(' · '),
+    ])
   );
 
   return {

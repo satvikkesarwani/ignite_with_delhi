@@ -27,14 +27,7 @@
         "description": "Graph neural networks for citation analysis."
       }
     ],
-    "skills": [
-      "Python",
-      "PyTorch",
-      "LangChain",
-      "RAG",
-      "FastAPI",
-      "Neo4j"
-    ],
+    "skills": ["Python", "PyTorch", "LangChain", "RAG", "FastAPI", "Neo4j"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -51,16 +44,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "PostgreSQL",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/shiv-verma-004": {
@@ -84,11 +69,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Figma",
-      "UX Research",
-      "Prototyping"
-    ],
+    "skills": ["Figma", "UX Research", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -105,12 +86,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Python",
-      "Pandas",
-      "SQL",
-      "Airflow"
-    ],
+    "skills": ["Python", "Pandas", "SQL", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -127,12 +103,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Python",
-      "Pandas",
-      "dbt",
-      "DuckDB"
-    ],
+    "skills": ["Python", "Pandas", "dbt", "DuckDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -157,17 +128,8 @@
         "description": "Semantic search over federated GraphQL schemas."
       }
     ],
-    "skills": [
-      "Python",
-      "PyTorch",
-      "HuggingFace",
-      "Transformers",
-      "LangChain",
-      "Vector Databases"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Python", "PyTorch", "HuggingFace", "Transformers", "LangChain", "Vector Databases"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/rohan-mehta-008": {
@@ -191,13 +153,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Go",
-      "Kubernetes",
-      "PostgreSQL",
-      "Redis",
-      "Docker"
-    ],
+    "skills": ["Go", "Kubernetes", "PostgreSQL", "Redis", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -214,16 +170,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "Node.js",
-      "TypeScript",
-      "FastAPI",
-      "LangChain"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["React", "Node.js", "TypeScript", "FastAPI", "LangChain"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/arjun-khanna-011": {
@@ -239,14 +187,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Product Management",
-      "Figma",
-      "SQL"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Product Management", "Figma", "SQL"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sneha-reddy-012": {
@@ -270,13 +212,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Python",
-      "FastAPI",
-      "PostgreSQL",
-      "Docker",
-      "GraphQL"
-    ],
+    "skills": ["Python", "FastAPI", "PostgreSQL", "Docker", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -293,17 +229,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Neo4j",
-      "Cypher",
-      "NetworkX",
-      "Python",
-      "Knowledge Graphs"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Neo4j", "Cypher", "NetworkX", "Python", "Knowledge Graphs"],
+    "certifications": ["Meta Frontend Developer", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ishita-bansal-014": {
@@ -319,13 +246,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Python",
-      "LangChain",
-      "RAG",
-      "Vector Databases",
-      "OpenAI API"
-    ],
+    "skills": ["Python", "LangChain", "RAG", "Vector Databases", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -350,12 +271,7 @@
         "description": "React component library work."
       }
     ],
-    "skills": [
-      "Machine Learning",
-      "Deep Learning",
-      "PyTorch",
-      "Python"
-    ],
+    "skills": ["Machine Learning", "Deep Learning", "PyTorch", "Python"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -380,12 +296,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Arduino",
-      "ESP32",
-      "Embedded C",
-      "MQTT"
-    ],
+    "skills": ["Arduino", "ESP32", "Embedded C", "MQTT"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -402,14 +313,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "PostgreSQL",
-      "TypeScript",
-      "MongoDB",
-      "Next.js",
-      "Tailwind CSS"
-    ],
+    "skills": ["tRPC", "PostgreSQL", "TypeScript", "MongoDB", "Next.js", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -426,13 +330,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "The Graph",
-      "Solidity",
-      "Foundry",
-      "IPFS",
-      "ethers.js"
-    ],
+    "skills": ["The Graph", "Solidity", "Foundry", "IPFS", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -449,13 +347,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "MongoDB",
-      "Express",
-      "Next.js",
-      "Vite",
-      "Framer"
-    ],
+    "skills": ["MongoDB", "Express", "Next.js", "Vite", "Framer"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -472,12 +364,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Firebase",
-      "Kotlin",
-      "Flutter",
-      "Swift"
-    ],
+    "skills": ["Firebase", "Kotlin", "Flutter", "Swift"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -494,14 +381,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Framer",
-      "Prototyping",
-      "UX Research",
-      "Design Systems",
-      "Figma",
-      "Express"
-    ],
+    "skills": ["Framer", "Prototyping", "UX Research", "Design Systems", "Figma", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -518,13 +398,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Foundry",
-      "Hardhat",
-      "IPFS",
-      "The Graph",
-      "Solidity"
-    ],
+    "skills": ["Foundry", "Hardhat", "IPFS", "The Graph", "Solidity"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -541,16 +415,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "MQTT",
-      "LoRaWAN",
-      "Raspberry Pi",
-      "Django"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["MQTT", "LoRaWAN", "Raspberry Pi", "Django"],
+    "certifications": ["Meta Frontend Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/shaurya-kulkarni-5715": {
@@ -566,11 +432,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "The Graph",
-      "IPFS",
-      "ethers.js"
-    ],
+    "skills": ["The Graph", "IPFS", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -587,13 +449,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "Framer",
-      "UX Research",
-      "Tableau"
-    ],
+    "skills": ["Motion Design", "Design Systems", "Framer", "UX Research", "Tableau"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -625,12 +481,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "ESP32",
-      "Arduino",
-      "Embedded C",
-      "Docker"
-    ],
+    "skills": ["ESP32", "Arduino", "Embedded C", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -647,13 +498,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "UX Research",
-      "Framer",
-      "Design Systems",
-      "Prototyping",
-      "Motion Design"
-    ],
+    "skills": ["UX Research", "Framer", "Design Systems", "Prototyping", "Motion Design"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -670,14 +515,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flutter",
-      "Kotlin",
-      "Firebase",
-      "Swift",
-      "Jetpack Compose",
-      "Vite"
-    ],
+    "skills": ["Flutter", "Kotlin", "Firebase", "Swift", "Jetpack Compose", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -702,13 +540,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Spark",
-      "Pandas",
-      "NumPy",
-      "Airflow",
-      "DuckDB"
-    ],
+    "skills": ["Spark", "Pandas", "NumPy", "Airflow", "DuckDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -740,14 +572,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Vite",
-      "Node.js",
-      "PostgreSQL",
-      "TypeScript",
-      "MongoDB",
-      "React"
-    ],
+    "skills": ["Vite", "Node.js", "PostgreSQL", "TypeScript", "MongoDB", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -772,17 +597,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Arduino",
-      "LoRaWAN",
-      "ESP32",
-      "Embedded C",
-      "MQTT",
-      "Django"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Arduino", "LoRaWAN", "ESP32", "Embedded C", "MQTT", "Django"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/nidhi-mittal-4839": {
@@ -813,16 +629,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Kubernetes",
-      "Terraform",
-      "Nginx",
-      "GitHub Actions"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Kubernetes", "Terraform", "Nginx", "GitHub Actions"],
+    "certifications": ["Meta Frontend Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/tanish-malik-5469": {
@@ -838,14 +646,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Node.js",
-      "Tailwind CSS",
-      "Vite",
-      "Express",
-      "MongoDB",
-      "tRPC"
-    ],
+    "skills": ["Node.js", "Tailwind CSS", "Vite", "Express", "MongoDB", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -862,13 +663,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "dbt",
-      "Airflow",
-      "Spark",
-      "Tableau",
-      "scikit-learn"
-    ],
+    "skills": ["dbt", "Airflow", "Spark", "Tableau", "scikit-learn"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -885,16 +680,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "AWS",
-      "GitHub Actions",
-      "GCP",
-      "Nginx"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["AWS", "GitHub Actions", "GCP", "Nginx"],
+    "certifications": ["Google Data Analytics", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/isha-verma-6635": {
@@ -925,13 +712,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Prometheus",
-      "Kubernetes",
-      "Nginx",
-      "GitHub Actions",
-      "GraphQL"
-    ],
+    "skills": ["Prometheus", "Kubernetes", "Nginx", "GitHub Actions", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -948,14 +729,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Spark",
-      "Airflow",
-      "NumPy",
-      "dbt",
-      "Pandas",
-      "SQL"
-    ],
+    "skills": ["Spark", "Airflow", "NumPy", "dbt", "Pandas", "SQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -972,16 +746,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Framer",
-      "Design Systems",
-      "Prototyping",
-      "DuckDB"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Motion Design", "Framer", "Design Systems", "Prototyping", "DuckDB"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/mahi-patel-9144": {
@@ -1012,12 +778,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "MQTT",
-      "Arduino",
-      "ESP32",
-      "Embedded C"
-    ],
+    "skills": ["MQTT", "Arduino", "ESP32", "Embedded C"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1049,12 +810,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "Node.js",
-      "tRPC",
-      "Tailwind CSS"
-    ],
+    "skills": ["TypeScript", "Node.js", "tRPC", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1079,11 +835,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "tRPC",
-      "Prototyping"
-    ],
+    "skills": ["TypeScript", "tRPC", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1115,15 +867,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "Foundry",
-      "IPFS"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "TensorFlow Developer"
-    ],
+    "skills": ["ethers.js", "Foundry", "IPFS"],
+    "certifications": ["AWS Cloud Practitioner", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/raghav-sen-9900": {
@@ -1147,17 +892,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "React",
-      "Node.js",
-      "Next.js",
-      "Express",
-      "MongoDB"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "TensorFlow Developer"
-    ],
+    "skills": ["React", "Node.js", "Next.js", "Express", "MongoDB"],
+    "certifications": ["Neo4j Certified Professional", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/jahnavi-sethi-4722": {
@@ -1173,11 +909,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "MongoDB",
-      "PostgreSQL",
-      "tRPC"
-    ],
+    "skills": ["MongoDB", "PostgreSQL", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1194,13 +926,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "PostgreSQL",
-      "Express",
-      "React",
-      "Redis"
-    ],
+    "skills": ["tRPC", "PostgreSQL", "Express", "React", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1217,16 +943,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flutter",
-      "React Native",
-      "Jetpack Compose",
-      "Kotlin",
-      "tRPC"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Flutter", "React Native", "Jetpack Compose", "Kotlin", "tRPC"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/madhav-ghosh-2060": {
@@ -1282,13 +1000,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "GitHub Actions",
-      "Nginx",
-      "AWS",
-      "Kubernetes",
-      "Prometheus"
-    ],
+    "skills": ["GitHub Actions", "Nginx", "AWS", "Kubernetes", "Prometheus"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1320,14 +1032,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "GraphQL",
-      "FastAPI",
-      "gRPC",
-      "Go",
-      "Flask",
-      "tRPC"
-    ],
+    "skills": ["GraphQL", "FastAPI", "gRPC", "Go", "Flask", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1352,11 +1057,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Next.js",
-      "React",
-      "Vite"
-    ],
+    "skills": ["Next.js", "React", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1373,12 +1074,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flutter",
-      "Jetpack Compose",
-      "Firebase",
-      "Vite"
-    ],
+    "skills": ["Flutter", "Jetpack Compose", "Firebase", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1410,13 +1106,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "GraphQL",
-      "Docker",
-      "Django",
-      "gRPC",
-      "FastAPI"
-    ],
+    "skills": ["GraphQL", "Docker", "Django", "gRPC", "FastAPI"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1433,13 +1123,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Design Systems",
-      "Figma",
-      "Motion Design",
-      "UX Research",
-      "Framer"
-    ],
+    "skills": ["Design Systems", "Figma", "Motion Design", "UX Research", "Framer"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1456,13 +1140,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Design Systems",
-      "Framer",
-      "Motion Design",
-      "Figma",
-      "Prototyping"
-    ],
+    "skills": ["Design Systems", "Framer", "Motion Design", "Figma", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1479,14 +1157,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Prototyping",
-      "Figma"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Motion Design", "Prototyping", "Figma"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/prateek-mittal-5396": {
@@ -1510,12 +1182,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "MongoDB",
-      "Tailwind CSS",
-      "PostgreSQL"
-    ],
+    "skills": ["TypeScript", "MongoDB", "Tailwind CSS", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1532,13 +1199,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "MQTT",
-      "Arduino",
-      "Embedded C",
-      "Raspberry Pi",
-      "LoRaWAN"
-    ],
+    "skills": ["MQTT", "Arduino", "Embedded C", "Raspberry Pi", "LoRaWAN"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1555,11 +1216,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Terraform",
-      "AWS",
-      "Java Spring"
-    ],
+    "skills": ["Terraform", "AWS", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1591,13 +1248,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Foundry",
-      "Hardhat",
-      "Solidity",
-      "The Graph",
-      "ethers.js"
-    ],
+    "skills": ["Foundry", "Hardhat", "Solidity", "The Graph", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1629,14 +1280,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Node.js",
-      "Next.js",
-      "Vite",
-      "Tailwind CSS",
-      "Express",
-      "gRPC"
-    ],
+    "skills": ["Node.js", "Next.js", "Vite", "Tailwind CSS", "Express", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1653,13 +1297,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Figma",
-      "Motion Design",
-      "Prototyping",
-      "Framer",
-      "Tailwind CSS"
-    ],
+    "skills": ["Figma", "Motion Design", "Prototyping", "Framer", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1676,14 +1314,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kotlin",
-      "Jetpack Compose",
-      "Firebase",
-      "Swift",
-      "Flutter",
-      "React Native"
-    ],
+    "skills": ["Kotlin", "Jetpack Compose", "Firebase", "Swift", "Flutter", "React Native"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1708,11 +1339,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Prototyping",
-      "DuckDB"
-    ],
+    "skills": ["Design Systems", "Prototyping", "DuckDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1729,14 +1356,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Embedded C",
-      "MQTT",
-      "gRPC"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Embedded C", "MQTT", "gRPC"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/mishka-shetty-3945": {
@@ -1760,11 +1381,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Vite",
-      "TypeScript",
-      "tRPC"
-    ],
+    "skills": ["Vite", "TypeScript", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1781,15 +1398,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GCP",
-      "Terraform",
-      "AWS"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["GCP", "Terraform", "AWS"],
+    "certifications": ["Google Data Analytics", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dhruv-agarwal-4496": {
@@ -1820,14 +1430,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "UX Research",
-      "Framer",
-      "Prototyping",
-      "Figma",
-      "Motion Design",
-      "Design Systems"
-    ],
+    "skills": ["UX Research", "Framer", "Prototyping", "Figma", "Motion Design", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1859,14 +1462,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "The Graph",
-      "Hardhat",
-      "IPFS",
-      "Foundry",
-      "Solidity",
-      "Vite"
-    ],
+    "skills": ["The Graph", "Hardhat", "IPFS", "Foundry", "Solidity", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1891,11 +1487,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "tRPC",
-      "Tailwind CSS",
-      "MongoDB"
-    ],
+    "skills": ["tRPC", "Tailwind CSS", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1912,12 +1504,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Framer",
-      "Figma",
-      "Design Systems",
-      "Spark"
-    ],
+    "skills": ["Framer", "Figma", "Design Systems", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1934,14 +1521,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "The Graph",
-      "IPFS",
-      "Solidity",
-      "Foundry",
-      "ethers.js",
-      "Tailwind CSS"
-    ],
+    "skills": ["The Graph", "IPFS", "Solidity", "Foundry", "ethers.js", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -1973,18 +1553,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "NumPy",
-      "dbt",
-      "Pandas",
-      "SQL",
-      "Tableau",
-      "OpenCV"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["NumPy", "dbt", "Pandas", "SQL", "Tableau", "OpenCV"],
+    "certifications": ["Meta Frontend Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aryan-krishnan-8366": {
@@ -2008,11 +1578,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "UX Research",
-      "Motion Design",
-      "Node.js"
-    ],
+    "skills": ["UX Research", "Motion Design", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2029,12 +1595,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kafka",
-      "Go",
-      "Django",
-      "Node.js"
-    ],
+    "skills": ["Kafka", "Go", "Django", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2051,13 +1612,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Jetpack Compose",
-      "Kotlin",
-      "Firebase",
-      "Swift",
-      "Flutter"
-    ],
+    "skills": ["Jetpack Compose", "Kotlin", "Firebase", "Swift", "Flutter"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2082,17 +1637,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Django",
-      "GraphQL",
-      "Go",
-      "Kafka",
-      "TypeScript"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Django", "GraphQL", "Go", "Kafka", "TypeScript"],
+    "certifications": ["Meta Frontend Developer", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/hemant-joshi-5920": {
@@ -2123,11 +1669,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Framer",
-      "UX Research",
-      "Design Systems"
-    ],
+    "skills": ["Framer", "UX Research", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2144,15 +1686,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "IPFS",
-      "Hardhat",
-      "ethers.js",
-      "Next.js"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["IPFS", "Hardhat", "ethers.js", "Next.js"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kabir-varma-5523": {
@@ -2168,12 +1703,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GraphQL",
-      "Docker",
-      "Go",
-      "MongoDB"
-    ],
+    "skills": ["GraphQL", "Docker", "Go", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2190,16 +1720,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Firebase",
-      "Swift",
-      "Jetpack Compose",
-      "React Native"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Firebase", "Swift", "Jetpack Compose", "React Native"],
+    "certifications": ["TensorFlow Developer", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/khushi-malik-4809": {
@@ -2230,12 +1752,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Raspberry Pi",
-      "Embedded C",
-      "Arduino",
-      "ESP32"
-    ],
+    "skills": ["Raspberry Pi", "Embedded C", "Arduino", "ESP32"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2260,12 +1777,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Raspberry Pi",
-      "ESP32",
-      "Embedded C",
-      "LoRaWAN"
-    ],
+    "skills": ["Raspberry Pi", "ESP32", "Embedded C", "LoRaWAN"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2282,14 +1794,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tableau",
-      "NumPy",
-      "DuckDB",
-      "Spark",
-      "SQL",
-      "OpenCV"
-    ],
+    "skills": ["Tableau", "NumPy", "DuckDB", "Spark", "SQL", "OpenCV"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2306,14 +1811,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Design Systems",
-      "Framer",
-      "Pandas"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Design Systems", "Framer", "Pandas"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/nisha-trivedi-9978": {
@@ -2344,11 +1843,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "Design Systems",
-      "Motion Design"
-    ],
+    "skills": ["Prototyping", "Design Systems", "Motion Design"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2365,13 +1860,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GraphQL",
-      "Redis",
-      "Go",
-      "Kafka",
-      "Next.js"
-    ],
+    "skills": ["GraphQL", "Redis", "Go", "Kafka", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2388,12 +1877,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GCP",
-      "GitHub Actions",
-      "Nginx",
-      "Kubernetes"
-    ],
+    "skills": ["GCP", "GitHub Actions", "Nginx", "Kubernetes"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2418,11 +1902,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Redis",
-      "Flask",
-      "Kafka"
-    ],
+    "skills": ["Redis", "Flask", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2447,15 +1927,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Tableau",
-      "NumPy",
-      "dbt"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Tableau", "NumPy", "dbt"],
+    "certifications": ["TensorFlow Developer", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/manan-chadha-5918": {
@@ -2479,13 +1952,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Tableau",
-      "Airflow",
-      "SQL",
-      "NumPy",
-      "RAG"
-    ],
+    "skills": ["Tableau", "Airflow", "SQL", "NumPy", "RAG"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2502,13 +1969,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "LangChain",
-      "OpenAI API",
-      "Python",
-      "scikit-learn",
-      "Transformers"
-    ],
+    "skills": ["LangChain", "OpenAI API", "Python", "scikit-learn", "Transformers"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2533,14 +1994,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "Figma",
-      "Prototyping",
-      "Framer",
-      "NumPy"
-    ],
+    "skills": ["Motion Design", "Design Systems", "Figma", "Prototyping", "Framer", "NumPy"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2572,12 +2026,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "OpenCV",
-      "HuggingFace",
-      "TensorFlow",
-      "LLM Fine-tuning"
-    ],
+    "skills": ["OpenCV", "HuggingFace", "TensorFlow", "LLM Fine-tuning"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2609,18 +2058,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "IPFS",
-      "Foundry",
-      "ethers.js",
-      "Hardhat",
-      "The Graph",
-      "Node.js"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["IPFS", "Foundry", "ethers.js", "Hardhat", "The Graph", "Node.js"],
+    "certifications": ["Google Data Analytics", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/manan-deshmukh-9212": {
@@ -2651,14 +2090,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "RAG",
-      "PyTorch",
-      "HuggingFace",
-      "OpenAI API",
-      "LLM Fine-tuning",
-      "Python"
-    ],
+    "skills": ["RAG", "PyTorch", "HuggingFace", "OpenAI API", "LLM Fine-tuning", "Python"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2675,12 +2107,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "TypeScript",
-      "tRPC",
-      "Express",
-      "Django"
-    ],
+    "skills": ["TypeScript", "tRPC", "Express", "Django"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2697,13 +2124,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tailwind CSS",
-      "TypeScript",
-      "PostgreSQL",
-      "tRPC",
-      "Vite"
-    ],
+    "skills": ["Tailwind CSS", "TypeScript", "PostgreSQL", "tRPC", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2728,13 +2149,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Kubernetes",
-      "AWS",
-      "GCP",
-      "Terraform",
-      "Prometheus"
-    ],
+    "skills": ["Kubernetes", "AWS", "GCP", "Terraform", "Prometheus"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2751,12 +2166,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "MongoDB",
-      "Express",
-      "Prototyping"
-    ],
+    "skills": ["PostgreSQL", "MongoDB", "Express", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2773,14 +2183,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Figma",
-      "Framer",
-      "UX Research",
-      "Prototyping",
-      "Motion Design",
-      "Design Systems"
-    ],
+    "skills": ["Figma", "Framer", "UX Research", "Prototyping", "Motion Design", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2797,14 +2200,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Transformers",
-      "TensorFlow",
-      "RAG",
-      "OpenAI API",
-      "LangChain",
-      "SQL"
-    ],
+    "skills": ["Transformers", "TensorFlow", "RAG", "OpenAI API", "LangChain", "SQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2821,13 +2217,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Docker",
-      "Go",
-      "GraphQL",
-      "Redis",
-      "gRPC"
-    ],
+    "skills": ["Docker", "Go", "GraphQL", "Redis", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2852,11 +2242,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "tRPC",
-      "React",
-      "Framer"
-    ],
+    "skills": ["tRPC", "React", "Framer"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2873,12 +2259,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "MQTT",
-      "Raspberry Pi",
-      "Embedded C",
-      "ESP32"
-    ],
+    "skills": ["MQTT", "Raspberry Pi", "Embedded C", "ESP32"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2895,11 +2276,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GitHub Actions",
-      "GCP",
-      "Flask"
-    ],
+    "skills": ["GitHub Actions", "GCP", "Flask"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2916,11 +2293,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "NumPy",
-      "DuckDB",
-      "Airflow"
-    ],
+    "skills": ["NumPy", "DuckDB", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2937,14 +2310,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Embedded C",
-      "MQTT",
-      "ESP32"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Embedded C", "MQTT", "ESP32"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/anirudh-varma-4663": {
@@ -2960,11 +2327,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "TypeScript",
-      "MongoDB"
-    ],
+    "skills": ["PostgreSQL", "TypeScript", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -2981,15 +2344,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flask",
-      "GraphQL",
-      "Java Spring",
-      "Go"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Flask", "GraphQL", "Java Spring", "Go"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/isha-khanna-8897": {
@@ -3005,12 +2361,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "UX Research",
-      "Figma",
-      "Prototyping",
-      "Design Systems"
-    ],
+    "skills": ["UX Research", "Figma", "Prototyping", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3027,11 +2378,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GitHub Actions",
-      "Nginx",
-      "GraphQL"
-    ],
+    "skills": ["GitHub Actions", "Nginx", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3056,13 +2403,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Java Spring",
-      "Redis",
-      "Kafka",
-      "Flask",
-      "Docker"
-    ],
+    "skills": ["Java Spring", "Redis", "Kafka", "Flask", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3094,13 +2435,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Swift",
-      "Jetpack Compose",
-      "React Native",
-      "Flutter",
-      "Kotlin"
-    ],
+    "skills": ["Swift", "Jetpack Compose", "React Native", "Flutter", "Kotlin"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3125,12 +2460,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "PyTorch",
-      "Python",
-      "LLM Fine-tuning",
-      "Airflow"
-    ],
+    "skills": ["PyTorch", "Python", "LLM Fine-tuning", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3155,13 +2485,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Kubernetes",
-      "Nginx",
-      "GCP",
-      "GitHub Actions",
-      "Prometheus"
-    ],
+    "skills": ["Kubernetes", "Nginx", "GCP", "GitHub Actions", "Prometheus"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3178,14 +2502,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "tRPC",
-      "Next.js",
-      "MongoDB",
-      "TypeScript",
-      "Node.js"
-    ],
+    "skills": ["React", "tRPC", "Next.js", "MongoDB", "TypeScript", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3210,12 +2527,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Figma",
-      "Motion Design",
-      "PostgreSQL"
-    ],
+    "skills": ["Design Systems", "Figma", "Motion Design", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3240,12 +2552,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "scikit-learn",
-      "RAG",
-      "OpenAI API",
-      "TensorFlow"
-    ],
+    "skills": ["scikit-learn", "RAG", "OpenAI API", "TensorFlow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3262,17 +2569,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Firebase",
-      "Kotlin",
-      "Jetpack Compose",
-      "React Native",
-      "Flutter",
-      "Vite"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Firebase", "Kotlin", "Jetpack Compose", "React Native", "Flutter", "Vite"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/shanaya-mehta-5292": {
@@ -3288,11 +2586,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Firebase",
-      "Jetpack Compose",
-      "Flutter"
-    ],
+    "skills": ["Firebase", "Jetpack Compose", "Flutter"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3309,11 +2603,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Firebase",
-      "Kotlin",
-      "Swift"
-    ],
+    "skills": ["Firebase", "Kotlin", "Swift"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3330,11 +2620,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tableau",
-      "Spark",
-      "dbt"
-    ],
+    "skills": ["Tableau", "Spark", "dbt"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3359,11 +2645,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Kafka",
-      "Flask",
-      "React"
-    ],
+    "skills": ["Kafka", "Flask", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3380,15 +2662,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "dbt",
-      "NumPy",
-      "Spark",
-      "Python"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["dbt", "NumPy", "Spark", "Python"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dev-sharma-1700": {
@@ -3419,14 +2694,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "UX Research",
-      "Framer",
-      "Motion Design",
-      "Prototyping",
-      "Figma",
-      "tRPC"
-    ],
+    "skills": ["UX Research", "Framer", "Motion Design", "Prototyping", "Figma", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3451,11 +2719,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Transformers",
-      "OpenCV",
-      "NumPy"
-    ],
+    "skills": ["Transformers", "OpenCV", "NumPy"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3472,12 +2736,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "RAG",
-      "scikit-learn",
-      "OpenCV",
-      "OpenAI API"
-    ],
+    "skills": ["RAG", "scikit-learn", "OpenCV", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3502,14 +2761,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Tailwind CSS",
-      "React",
-      "PostgreSQL",
-      "Vite",
-      "TypeScript",
-      "GraphQL"
-    ],
+    "skills": ["Tailwind CSS", "React", "PostgreSQL", "Vite", "TypeScript", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3541,11 +2793,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "IPFS",
-      "The Graph",
-      "ethers.js"
-    ],
+    "skills": ["IPFS", "The Graph", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3562,14 +2810,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Django",
-      "Docker",
-      "gRPC",
-      "Redis",
-      "Flask",
-      "Java Spring"
-    ],
+    "skills": ["Django", "Docker", "gRPC", "Redis", "Flask", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3594,14 +2835,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "dbt",
-      "DuckDB",
-      "Pandas",
-      "SQL",
-      "Spark",
-      "HuggingFace"
-    ],
+    "skills": ["dbt", "DuckDB", "Pandas", "SQL", "Spark", "HuggingFace"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3626,14 +2860,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Terraform",
-      "GCP",
-      "GitHub Actions"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Terraform", "GCP", "GitHub Actions"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ira-srivastava-5210": {
@@ -3657,12 +2885,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "tRPC",
-      "Vite",
-      "Node.js",
-      "React"
-    ],
+    "skills": ["tRPC", "Vite", "Node.js", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3687,13 +2910,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "DuckDB",
-      "Tableau",
-      "Airflow",
-      "Spark",
-      "Pandas"
-    ],
+    "skills": ["DuckDB", "Tableau", "Airflow", "Spark", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3710,11 +2927,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "UX Research"
-    ],
+    "skills": ["Motion Design", "Design Systems", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3731,14 +2944,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Embedded C",
-      "LoRaWAN",
-      "Raspberry Pi",
-      "MQTT",
-      "ESP32",
-      "Django"
-    ],
+    "skills": ["Embedded C", "LoRaWAN", "Raspberry Pi", "MQTT", "ESP32", "Django"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3770,14 +2976,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Prototyping",
-      "Motion Design",
-      "Figma",
-      "Framer",
-      "dbt"
-    ],
+    "skills": ["Design Systems", "Prototyping", "Motion Design", "Figma", "Framer", "dbt"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3802,12 +3001,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Node.js",
-      "MongoDB",
-      "React",
-      "PostgreSQL"
-    ],
+    "skills": ["Node.js", "MongoDB", "React", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3824,13 +3018,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "UX Research",
-      "Design Systems",
-      "Motion Design",
-      "Figma",
-      "DuckDB"
-    ],
+    "skills": ["UX Research", "Design Systems", "Motion Design", "Figma", "DuckDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3855,17 +3043,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "gRPC",
-      "Redis",
-      "Java Spring",
-      "Go",
-      "Next.js"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["gRPC", "Redis", "Java Spring", "Go", "Next.js"],
+    "certifications": ["Meta Frontend Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sarthak-chauhan-1037": {
@@ -3881,11 +3060,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "RAG",
-      "OpenCV",
-      "dbt"
-    ],
+    "skills": ["RAG", "OpenCV", "dbt"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3917,13 +3092,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "IPFS",
-      "Solidity",
-      "The Graph",
-      "ethers.js",
-      "Express"
-    ],
+    "skills": ["IPFS", "Solidity", "The Graph", "ethers.js", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -3940,17 +3109,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Solidity",
-      "IPFS",
-      "Foundry",
-      "The Graph",
-      "ethers.js",
-      "Express"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Solidity", "IPFS", "Foundry", "The Graph", "ethers.js", "Express"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sarthak-trivedi-6171": {
@@ -3981,11 +3141,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Transformers",
-      "OpenAI API",
-      "TensorFlow"
-    ],
+    "skills": ["Transformers", "OpenAI API", "TensorFlow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4002,11 +3158,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Airflow",
-      "Tableau",
-      "DuckDB"
-    ],
+    "skills": ["Airflow", "Tableau", "DuckDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4038,15 +3190,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Docker",
-      "GraphQL",
-      "Redis",
-      "gRPC"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Docker", "GraphQL", "Redis", "gRPC"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/avni-mishra-5668": {
@@ -4070,18 +3215,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "LLM Fine-tuning",
-      "OpenCV",
-      "Python",
-      "LangChain",
-      "TensorFlow",
-      "dbt"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["LLM Fine-tuning", "OpenCV", "Python", "LangChain", "TensorFlow", "dbt"],
+    "certifications": ["AWS Cloud Practitioner", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aanya-kumar-9566": {
@@ -4105,12 +3240,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "MongoDB",
-      "tRPC",
-      "TypeScript",
-      "Express"
-    ],
+    "skills": ["MongoDB", "tRPC", "TypeScript", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4127,17 +3257,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "AWS",
-      "Kubernetes",
-      "GCP",
-      "GitHub Actions",
-      "Terraform",
-      "FastAPI"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["AWS", "Kubernetes", "GCP", "GitHub Actions", "Terraform", "FastAPI"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/eesha-reddy-7834": {
@@ -4153,12 +3274,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "Next.js",
-      "Tailwind CSS",
-      "Express"
-    ],
+    "skills": ["PostgreSQL", "Next.js", "Tailwind CSS", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4175,16 +3291,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "FastAPI",
-      "Java Spring",
-      "Flask",
-      "Go",
-      "Django"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["FastAPI", "Java Spring", "Flask", "Go", "Django"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/jatin-nanda-9131": {
@@ -4200,14 +3308,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Solidity",
-      "Foundry",
-      "ethers.js"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Solidity", "Foundry", "ethers.js"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/akshara-sharma-3786": {
@@ -4223,13 +3325,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Vite",
-      "Tailwind CSS",
-      "tRPC",
-      "Node.js",
-      "React"
-    ],
+    "skills": ["Vite", "Tailwind CSS", "tRPC", "Node.js", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4261,14 +3357,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "HuggingFace",
-      "LLM Fine-tuning",
-      "Python",
-      "TensorFlow",
-      "PyTorch",
-      "scikit-learn"
-    ],
+    "skills": ["HuggingFace", "LLM Fine-tuning", "Python", "TensorFlow", "PyTorch", "scikit-learn"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4293,15 +3382,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "React Native",
-      "Firebase",
-      "Jetpack Compose"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["React Native", "Firebase", "Jetpack Compose"],
+    "certifications": ["Meta Frontend Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/rohan-dhillon-3351": {
@@ -4317,14 +3399,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Solidity",
-      "Hardhat",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Solidity", "Hardhat", "Tailwind CSS"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ishaan-sharma-5583": {
@@ -4348,12 +3424,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Docker",
-      "Flask",
-      "GraphQL",
-      "Redis"
-    ],
+    "skills": ["Docker", "Flask", "GraphQL", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4385,13 +3456,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB",
-      "Node.js"
-    ],
+    "skills": ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4408,12 +3473,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "MQTT",
-      "Embedded C",
-      "Raspberry Pi",
-      "Arduino"
-    ],
+    "skills": ["MQTT", "Embedded C", "Raspberry Pi", "Arduino"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4438,14 +3498,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "MongoDB",
-      "Node.js",
-      "TypeScript",
-      "React",
-      "PostgreSQL",
-      "tRPC"
-    ],
+    "skills": ["MongoDB", "Node.js", "TypeScript", "React", "PostgreSQL", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4462,15 +3515,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ESP32",
-      "Arduino",
-      "Raspberry Pi",
-      "MQTT"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["ESP32", "Arduino", "Raspberry Pi", "MQTT"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ananth-nair-9018": {
@@ -4501,17 +3547,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Embedded C",
-      "ESP32",
-      "MQTT",
-      "LoRaWAN",
-      "Arduino",
-      "Raspberry Pi"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Embedded C", "ESP32", "MQTT", "LoRaWAN", "Arduino", "Raspberry Pi"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dhruv-krishnan-7626": {
@@ -4542,13 +3579,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "TensorFlow",
-      "HuggingFace",
-      "LangChain",
-      "PyTorch",
-      "dbt"
-    ],
+    "skills": ["TensorFlow", "HuggingFace", "LangChain", "PyTorch", "dbt"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4580,14 +3611,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "tRPC",
-      "Tailwind CSS",
-      "Vite",
-      "MongoDB",
-      "Redis"
-    ],
+    "skills": ["TypeScript", "tRPC", "Tailwind CSS", "Vite", "MongoDB", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4604,18 +3628,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "FastAPI",
-      "Django",
-      "Docker",
-      "gRPC",
-      "Java Spring",
-      "Redis"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["FastAPI", "Django", "Docker", "gRPC", "Java Spring", "Redis"],
+    "certifications": ["TensorFlow Developer", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/harsh-ahuja-3959": {
@@ -4639,12 +3653,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Airflow",
-      "NumPy",
-      "Tableau",
-      "Spark"
-    ],
+    "skills": ["Airflow", "NumPy", "Tableau", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4661,17 +3670,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Prototyping",
-      "Design Systems",
-      "UX Research",
-      "Framer",
-      "tRPC"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Prototyping", "Design Systems", "UX Research", "Framer", "tRPC"],
+    "certifications": ["TensorFlow Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/mayank-kulkarni-2410": {
@@ -4687,14 +3687,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flutter",
-      "Kotlin",
-      "Swift",
-      "Jetpack Compose",
-      "React Native",
-      "MongoDB"
-    ],
+    "skills": ["Flutter", "Kotlin", "Swift", "Jetpack Compose", "React Native", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4726,13 +3719,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "RAG",
-      "PyTorch",
-      "OpenCV",
-      "scikit-learn",
-      "NumPy"
-    ],
+    "skills": ["RAG", "PyTorch", "OpenCV", "scikit-learn", "NumPy"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4757,13 +3744,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "MongoDB",
-      "Node.js",
-      "Next.js",
-      "Design Systems"
-    ],
+    "skills": ["PostgreSQL", "MongoDB", "Node.js", "Next.js", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4780,11 +3761,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Express",
-      "tRPC",
-      "Next.js"
-    ],
+    "skills": ["Express", "tRPC", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4809,14 +3786,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "ESP32",
-      "LoRaWAN",
-      "Arduino",
-      "Raspberry Pi",
-      "MQTT",
-      "FastAPI"
-    ],
+    "skills": ["ESP32", "LoRaWAN", "Arduino", "Raspberry Pi", "MQTT", "FastAPI"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4833,13 +3803,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Framer",
-      "UX Research",
-      "Figma",
-      "Design Systems"
-    ],
+    "skills": ["Motion Design", "Framer", "UX Research", "Figma", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4856,18 +3820,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Java Spring",
-      "FastAPI",
-      "Redis",
-      "Django",
-      "Kafka",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Java Spring", "FastAPI", "Redis", "Django", "Kafka", "Tailwind CSS"],
+    "certifications": ["Meta Frontend Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/gaurav-thakur-1389": {
@@ -4898,13 +3852,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "NumPy",
-      "Airflow",
-      "Spark",
-      "Tableau",
-      "Pandas"
-    ],
+    "skills": ["NumPy", "Airflow", "Spark", "Tableau", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4929,18 +3877,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "Hardhat",
-      "Solidity",
-      "IPFS",
-      "The Graph",
-      "Foundry"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["ethers.js", "Hardhat", "Solidity", "IPFS", "The Graph", "Foundry"],
+    "certifications": ["TensorFlow Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/reyansh-pandey-4739": {
@@ -4964,13 +3902,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "React",
-      "Vite",
-      "Node.js",
-      "Tailwind CSS",
-      "Figma"
-    ],
+    "skills": ["React", "Vite", "Node.js", "Tailwind CSS", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -4987,15 +3919,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kotlin",
-      "Flutter",
-      "Jetpack Compose"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Kotlin", "Flutter", "Jetpack Compose"],
+    "certifications": ["AWS Cloud Practitioner", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/om-sethi-7289": {
@@ -5026,12 +3951,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "LoRaWAN",
-      "Embedded C",
-      "ESP32",
-      "Java Spring"
-    ],
+    "skills": ["LoRaWAN", "Embedded C", "ESP32", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5063,12 +3983,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Framer",
-      "Prototyping",
-      "UX Research",
-      "Spark"
-    ],
+    "skills": ["Framer", "Prototyping", "UX Research", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5093,12 +4008,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Framer",
-      "UX Research",
-      "Motion Design",
-      "SQL"
-    ],
+    "skills": ["Framer", "UX Research", "Motion Design", "SQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5130,12 +4040,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Node.js",
-      "tRPC",
-      "MongoDB",
-      "Vite"
-    ],
+    "skills": ["Node.js", "tRPC", "MongoDB", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5167,17 +4072,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Terraform",
-      "GCP",
-      "Kubernetes",
-      "Prometheus",
-      "Nginx"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Google Data Analytics"
-    ],
+    "skills": ["Terraform", "GCP", "Kubernetes", "Prometheus", "Nginx"],
+    "certifications": ["AWS Cloud Practitioner", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/pihu-kapoor-5973": {
@@ -5208,13 +4104,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Swift",
-      "Flutter",
-      "Jetpack Compose",
-      "Kotlin",
-      "PostgreSQL"
-    ],
+    "skills": ["Swift", "Flutter", "Jetpack Compose", "Kotlin", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5239,12 +4129,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "PyTorch",
-      "OpenCV",
-      "RAG",
-      "LangChain"
-    ],
+    "skills": ["PyTorch", "OpenCV", "RAG", "LangChain"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5261,16 +4146,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "Tailwind CSS",
-      "PostgreSQL",
-      "Django"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["tRPC", "Tailwind CSS", "PostgreSQL", "Django"],
+    "certifications": ["Google Data Analytics", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kiara-krishnan-9977": {
@@ -5301,13 +4178,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "Hardhat",
-      "Solidity",
-      "IPFS",
-      "React"
-    ],
+    "skills": ["ethers.js", "Hardhat", "Solidity", "IPFS", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5324,14 +4195,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "dbt",
-      "Spark",
-      "DuckDB"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["dbt", "Spark", "DuckDB"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/yash-sahni-3316": {
@@ -5347,12 +4212,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "OpenCV",
-      "Python",
-      "RAG",
-      "OpenAI API"
-    ],
+    "skills": ["OpenCV", "Python", "RAG", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5369,14 +4229,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flask",
-      "gRPC",
-      "Docker",
-      "Redis",
-      "Go",
-      "Java Spring"
-    ],
+    "skills": ["Flask", "gRPC", "Docker", "Redis", "Go", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5393,13 +4246,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flutter",
-      "Jetpack Compose",
-      "Kotlin",
-      "Swift",
-      "React Native"
-    ],
+    "skills": ["Flutter", "Jetpack Compose", "Kotlin", "Swift", "React Native"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5416,14 +4263,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "SQL",
-      "Tableau"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["DuckDB", "SQL", "Tableau"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/vanya-nanda-8911": {
@@ -5447,16 +4288,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Nginx",
-      "Prometheus",
-      "Terraform",
-      "AWS"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Nginx", "Prometheus", "Terraform", "AWS"],
+    "certifications": ["Neo4j Certified Professional", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aman-gandhi-6718": {
@@ -5480,12 +4313,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Node.js",
-      "PostgreSQL",
-      "Express",
-      "React"
-    ],
+    "skills": ["Node.js", "PostgreSQL", "Express", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5510,15 +4338,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Tailwind CSS",
-      "Vite",
-      "Node.js"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Tailwind CSS", "Vite", "Node.js"],
+    "certifications": ["Meta Frontend Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/lakshya-basu-5995": {
@@ -5549,13 +4370,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Swift",
-      "Firebase",
-      "Kotlin",
-      "React Native",
-      "Express"
-    ],
+    "skills": ["Swift", "Firebase", "Kotlin", "React Native", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5587,13 +4402,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Prometheus",
-      "GitHub Actions",
-      "Kubernetes",
-      "Terraform",
-      "Flask"
-    ],
+    "skills": ["Prometheus", "GitHub Actions", "Kubernetes", "Terraform", "Flask"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5610,13 +4419,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tableau",
-      "NumPy",
-      "Airflow",
-      "DuckDB",
-      "Spark"
-    ],
+    "skills": ["Tableau", "NumPy", "Airflow", "DuckDB", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5633,14 +4436,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Redis",
-      "gRPC",
-      "FastAPI",
-      "Java Spring",
-      "Docker",
-      "tRPC"
-    ],
+    "skills": ["Redis", "gRPC", "FastAPI", "Java Spring", "Docker", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5657,12 +4453,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Arduino",
-      "LoRaWAN",
-      "Raspberry Pi",
-      "Embedded C"
-    ],
+    "skills": ["Arduino", "LoRaWAN", "Raspberry Pi", "Embedded C"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5679,11 +4470,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Arduino",
-      "ESP32",
-      "LoRaWAN"
-    ],
+    "skills": ["Arduino", "ESP32", "LoRaWAN"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5700,14 +4487,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Arduino",
-      "Raspberry Pi",
-      "LoRaWAN",
-      "MQTT",
-      "Embedded C",
-      "Docker"
-    ],
+    "skills": ["Arduino", "Raspberry Pi", "LoRaWAN", "MQTT", "Embedded C", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5724,13 +4504,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Spark",
-      "Tableau",
-      "dbt",
-      "DuckDB",
-      "Pandas"
-    ],
+    "skills": ["Spark", "Tableau", "dbt", "DuckDB", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5755,18 +4529,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Foundry",
-      "Solidity",
-      "Hardhat",
-      "ethers.js",
-      "IPFS",
-      "Express"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Foundry", "Solidity", "Hardhat", "ethers.js", "IPFS", "Express"],
+    "certifications": ["Meta Frontend Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sarthak-yadav-2895": {
@@ -5782,11 +4546,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Pandas",
-      "Tableau",
-      "Python"
-    ],
+    "skills": ["Pandas", "Tableau", "Python"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5811,12 +4571,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "React Native",
-      "Jetpack Compose",
-      "Firebase",
-      "Kotlin"
-    ],
+    "skills": ["React Native", "Jetpack Compose", "Firebase", "Kotlin"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5841,16 +4596,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Express",
-      "tRPC",
-      "MongoDB",
-      "Figma"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Express", "tRPC", "MongoDB", "Figma"],
+    "certifications": ["Meta Frontend Developer", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sahil-shah-3674": {
@@ -5881,13 +4628,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Prometheus",
-      "Kubernetes",
-      "Nginx",
-      "GitHub Actions",
-      "GraphQL"
-    ],
+    "skills": ["Prometheus", "Kubernetes", "Nginx", "GitHub Actions", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5919,14 +4660,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "AWS",
-      "Terraform",
-      "Kubernetes",
-      "Prometheus",
-      "Nginx",
-      "Java Spring"
-    ],
+    "skills": ["AWS", "Terraform", "Kubernetes", "Prometheus", "Nginx", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5958,11 +4692,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Next.js",
-      "Node.js",
-      "Tailwind CSS"
-    ],
+    "skills": ["Next.js", "Node.js", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -5994,18 +4724,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "Motion Design",
-      "Figma",
-      "Design Systems",
-      "UX Research",
-      "Pandas"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Prototyping", "Motion Design", "Figma", "Design Systems", "UX Research", "Pandas"],
+    "certifications": ["Meta Frontend Developer", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/neel-gupta-7078": {
@@ -6029,14 +4749,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Vite",
-      "TypeScript",
-      "Tailwind CSS",
-      "React",
-      "Node.js",
-      "Figma"
-    ],
+    "skills": ["Vite", "TypeScript", "Tailwind CSS", "React", "Node.js", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6068,17 +4781,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "Design Systems",
-      "Framer",
-      "Airflow"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Figma", "Prototyping", "Design Systems", "Framer", "Airflow"],
+    "certifications": ["Neo4j Certified Professional", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/rahul-yadav-1740": {
@@ -6094,14 +4798,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tableau",
-      "Pandas",
-      "Airflow",
-      "SQL",
-      "DuckDB",
-      "RAG"
-    ],
+    "skills": ["Tableau", "Pandas", "Airflow", "SQL", "DuckDB", "RAG"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6133,14 +4830,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "Motion Design",
-      "Design Systems",
-      "UX Research",
-      "Spark"
-    ],
+    "skills": ["Figma", "Prototyping", "Motion Design", "Design Systems", "UX Research", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6157,12 +4847,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "LoRaWAN",
-      "ESP32",
-      "Raspberry Pi",
-      "FastAPI"
-    ],
+    "skills": ["LoRaWAN", "ESP32", "Raspberry Pi", "FastAPI"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6179,12 +4864,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "HuggingFace",
-      "scikit-learn",
-      "Python",
-      "OpenCV"
-    ],
+    "skills": ["HuggingFace", "scikit-learn", "Python", "OpenCV"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6216,11 +4896,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "ESP32",
-      "Raspberry Pi",
-      "MQTT"
-    ],
+    "skills": ["ESP32", "Raspberry Pi", "MQTT"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6245,14 +4921,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "React",
-      "tRPC",
-      "Next.js",
-      "Tailwind CSS",
-      "Vite"
-    ],
+    "skills": ["TypeScript", "React", "tRPC", "Next.js", "Tailwind CSS", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6284,12 +4953,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "NumPy",
-      "Tableau",
-      "Spark",
-      "Airflow"
-    ],
+    "skills": ["NumPy", "Tableau", "Spark", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6306,11 +4970,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Next.js",
-      "Express",
-      "Framer"
-    ],
+    "skills": ["Next.js", "Express", "Framer"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6335,13 +4995,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "AWS",
-      "Kubernetes",
-      "GitHub Actions",
-      "Nginx",
-      "GCP"
-    ],
+    "skills": ["AWS", "Kubernetes", "GitHub Actions", "Nginx", "GCP"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6358,18 +5012,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Solidity",
-      "Hardhat",
-      "IPFS",
-      "The Graph",
-      "ethers.js",
-      "Next.js"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Solidity", "Hardhat", "IPFS", "The Graph", "ethers.js", "Next.js"],
+    "certifications": ["TensorFlow Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/gauri-basu-4569": {
@@ -6393,16 +5037,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Next.js",
-      "React",
-      "Vite",
-      "TypeScript"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Next.js", "React", "Vite", "TypeScript"],
+    "certifications": ["Meta Frontend Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kunal-nanda-3422": {
@@ -6418,11 +5054,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Express",
-      "tRPC",
-      "Java Spring"
-    ],
+    "skills": ["Express", "tRPC", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6454,17 +5086,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "UX Research",
-      "Design Systems",
-      "Prototyping",
-      "Figma",
-      "Framer",
-      "Express"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["UX Research", "Design Systems", "Prototyping", "Figma", "Framer", "Express"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/arjun-srivastava-2059": {
@@ -6495,12 +5118,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "dbt",
-      "DuckDB",
-      "SQL",
-      "Spark"
-    ],
+    "skills": ["dbt", "DuckDB", "SQL", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6525,12 +5143,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "Motion Design",
-      "TypeScript"
-    ],
+    "skills": ["Figma", "Prototyping", "Motion Design", "TypeScript"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6562,11 +5175,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Python",
-      "PyTorch",
-      "DuckDB"
-    ],
+    "skills": ["Python", "PyTorch", "DuckDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6591,14 +5200,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "MongoDB",
-      "Vite",
-      "React",
-      "TypeScript",
-      "UX Research"
-    ],
+    "skills": ["PostgreSQL", "MongoDB", "Vite", "React", "TypeScript", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6630,12 +5232,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Hardhat",
-      "Foundry",
-      "ethers.js",
-      "React"
-    ],
+    "skills": ["Hardhat", "Foundry", "ethers.js", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6652,11 +5249,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "OpenAI API",
-      "OpenCV",
-      "Transformers"
-    ],
+    "skills": ["OpenAI API", "OpenCV", "Transformers"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6673,14 +5266,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kubernetes",
-      "AWS",
-      "Nginx",
-      "GCP",
-      "GitHub Actions",
-      "Redis"
-    ],
+    "skills": ["Kubernetes", "AWS", "Nginx", "GCP", "GitHub Actions", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6705,11 +5291,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "HuggingFace",
-      "Transformers",
-      "TensorFlow"
-    ],
+    "skills": ["HuggingFace", "Transformers", "TensorFlow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6726,12 +5308,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Jetpack Compose",
-      "React Native",
-      "Kotlin",
-      "Vite"
-    ],
+    "skills": ["Jetpack Compose", "React Native", "Kotlin", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6763,11 +5340,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Express",
-      "Node.js",
-      "MongoDB"
-    ],
+    "skills": ["Express", "Node.js", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6784,16 +5357,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-      "Next.js",
-      "tRPC"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Express", "MongoDB", "Tailwind CSS", "Next.js", "tRPC"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/atharv-varma-6826": {
@@ -6817,11 +5382,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Express",
-      "PostgreSQL",
-      "Docker"
-    ],
+    "skills": ["Express", "PostgreSQL", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6838,11 +5399,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Figma",
-      "Motion Design",
-      "Next.js"
-    ],
+    "skills": ["Figma", "Motion Design", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6867,14 +5424,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Arduino",
-      "LoRaWAN",
-      "Raspberry Pi",
-      "MQTT",
-      "Embedded C",
-      "Kafka"
-    ],
+    "skills": ["Arduino", "LoRaWAN", "Raspberry Pi", "MQTT", "Embedded C", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6899,13 +5449,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "tRPC",
-      "Next.js",
-      "Vite",
-      "MongoDB"
-    ],
+    "skills": ["PostgreSQL", "tRPC", "Next.js", "Vite", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6937,11 +5481,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "Foundry",
-      "Vite"
-    ],
+    "skills": ["ethers.js", "Foundry", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6973,13 +5513,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Nginx",
-      "Prometheus",
-      "AWS",
-      "Kubernetes",
-      "GCP"
-    ],
+    "skills": ["Nginx", "Prometheus", "AWS", "Kubernetes", "GCP"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -6996,16 +5530,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Framer",
-      "Motion Design",
-      "Figma",
-      "Prototyping"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Framer", "Motion Design", "Figma", "Prototyping"],
+    "certifications": ["Google Data Analytics", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/prateek-rao-4730": {
@@ -7021,11 +5547,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GitHub Actions",
-      "Terraform",
-      "Docker"
-    ],
+    "skills": ["GitHub Actions", "Terraform", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7042,13 +5564,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Next.js",
-      "TypeScript",
-      "MongoDB",
-      "Vite",
-      "Django"
-    ],
+    "skills": ["Next.js", "TypeScript", "MongoDB", "Vite", "Django"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7065,16 +5581,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "NumPy",
-      "Tableau",
-      "SQL",
-      "DuckDB"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["NumPy", "Tableau", "SQL", "DuckDB"],
+    "certifications": ["Google Data Analytics", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kiara-thakur-2392": {
@@ -7098,15 +5606,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Arduino",
-      "Raspberry Pi",
-      "MQTT"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Arduino", "Raspberry Pi", "MQTT"],
+    "certifications": ["Google Data Analytics", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/avni-gupta-9565": {
@@ -7122,12 +5623,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "UX Research",
-      "Figma",
-      "Framer",
-      "Tableau"
-    ],
+    "skills": ["UX Research", "Figma", "Framer", "Tableau"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7159,15 +5655,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Next.js",
-      "PostgreSQL",
-      "TypeScript"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Next.js", "PostgreSQL", "TypeScript"],
+    "certifications": ["Meta Frontend Developer", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/eesha-chopra-8163": {
@@ -7183,18 +5672,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tailwind CSS",
-      "Node.js",
-      "PostgreSQL",
-      "Vite",
-      "tRPC",
-      "Design Systems"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Tailwind CSS", "Node.js", "PostgreSQL", "Vite", "tRPC", "Design Systems"],
+    "certifications": ["Google Data Analytics", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/nidhi-iyer-2346": {
@@ -7210,11 +5689,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "LoRaWAN",
-      "Raspberry Pi",
-      "Django"
-    ],
+    "skills": ["LoRaWAN", "Raspberry Pi", "Django"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7239,15 +5714,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Transformers",
-      "Python",
-      "TensorFlow"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Transformers", "Python", "TensorFlow"],
+    "certifications": ["TensorFlow Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/nidhi-agarwal-5435": {
@@ -7271,14 +5739,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "scikit-learn",
-      "OpenCV",
-      "LLM Fine-tuning",
-      "TensorFlow",
-      "LangChain",
-      "RAG"
-    ],
+    "skills": ["scikit-learn", "OpenCV", "LLM Fine-tuning", "TensorFlow", "LangChain", "RAG"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7303,17 +5764,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Embedded C",
-      "MQTT",
-      "LoRaWAN",
-      "Raspberry Pi",
-      "Java Spring"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Embedded C", "MQTT", "LoRaWAN", "Raspberry Pi", "Java Spring"],
+    "certifications": ["Google Data Analytics", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/tanmay-mishra-2503": {
@@ -7329,14 +5781,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "The Graph",
-      "Foundry",
-      "TypeScript"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["The Graph", "Foundry", "TypeScript"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/prateek-pillai-6068": {
@@ -7360,18 +5806,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Jetpack Compose",
-      "React Native",
-      "Flutter",
-      "Swift",
-      "Firebase",
-      "React"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Jetpack Compose", "React Native", "Flutter", "Swift", "Firebase", "React"],
+    "certifications": ["Google Data Analytics", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/shiv-reddy-8675": {
@@ -7387,12 +5823,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "IPFS",
-      "Foundry",
-      "Solidity",
-      "Hardhat"
-    ],
+    "skills": ["IPFS", "Foundry", "Solidity", "Hardhat"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7424,16 +5855,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "GitHub Actions",
-      "Prometheus",
-      "GCP",
-      "Nginx",
-      "AWS"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["GitHub Actions", "Prometheus", "GCP", "Nginx", "AWS"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/siddharth-dubey-2937": {
@@ -7464,14 +5887,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "Foundry",
-      "IPFS",
-      "Hardhat",
-      "The Graph",
-      "PostgreSQL"
-    ],
+    "skills": ["ethers.js", "Foundry", "IPFS", "Hardhat", "The Graph", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7488,18 +5904,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Prototyping",
-      "Figma",
-      "UX Research",
-      "Framer",
-      "Design Systems",
-      "Motion Design"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "Google Data Analytics"
-    ],
+    "skills": ["Prototyping", "Figma", "UX Research", "Framer", "Design Systems", "Motion Design"],
+    "certifications": ["Neo4j Certified Professional", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/yash-chadha-3925": {
@@ -7515,11 +5921,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "Spark",
-      "OpenAI API"
-    ],
+    "skills": ["DuckDB", "Spark", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7551,12 +5953,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "DuckDB",
-      "dbt",
-      "Tableau",
-      "NumPy"
-    ],
+    "skills": ["DuckDB", "dbt", "Tableau", "NumPy"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7588,11 +5985,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "GraphQL",
-      "Go",
-      "FastAPI"
-    ],
+    "skills": ["GraphQL", "Go", "FastAPI"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7624,15 +6017,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Express",
-      "PostgreSQL",
-      "TypeScript",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Express", "PostgreSQL", "TypeScript", "Tailwind CSS"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ankit-chadha-8717": {
@@ -7648,17 +6034,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Framer",
-      "Prototyping",
-      "Design Systems",
-      "Figma",
-      "UX Research",
-      "dbt"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Framer", "Prototyping", "Design Systems", "Figma", "UX Research", "dbt"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/reyansh-chauhan-7409": {
@@ -7674,14 +6051,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Prometheus",
-      "Kubernetes",
-      "GitHub Actions",
-      "AWS",
-      "Nginx",
-      "Redis"
-    ],
+    "skills": ["Prometheus", "Kubernetes", "GitHub Actions", "AWS", "Nginx", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7706,16 +6076,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "IPFS",
-      "The Graph",
-      "Hardhat",
-      "Solidity"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["ethers.js", "IPFS", "The Graph", "Hardhat", "Solidity"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aanya-basu-3838": {
@@ -7739,13 +6101,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Flutter",
-      "React Native",
-      "Jetpack Compose",
-      "Swift",
-      "Kotlin"
-    ],
+    "skills": ["Flutter", "React Native", "Jetpack Compose", "Swift", "Kotlin"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7777,13 +6133,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Prototyping",
-      "Figma",
-      "Framer",
-      "Next.js"
-    ],
+    "skills": ["Design Systems", "Prototyping", "Figma", "Framer", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7800,14 +6150,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ESP32",
-      "LoRaWAN",
-      "Arduino",
-      "MQTT",
-      "Raspberry Pi",
-      "Redis"
-    ],
+    "skills": ["ESP32", "LoRaWAN", "Arduino", "MQTT", "Raspberry Pi", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7839,11 +6182,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "MQTT",
-      "Arduino",
-      "FastAPI"
-    ],
+    "skills": ["MQTT", "Arduino", "FastAPI"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7860,12 +6199,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Flutter",
-      "Kotlin",
-      "Jetpack Compose",
-      "Next.js"
-    ],
+    "skills": ["Flutter", "Kotlin", "Jetpack Compose", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7897,16 +6231,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "IPFS",
-      "Hardhat",
-      "Foundry",
-      "The Graph",
-      "Solidity"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["IPFS", "Hardhat", "Foundry", "The Graph", "Solidity"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/oviya-pillai-6866": {
@@ -7930,12 +6256,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "MQTT",
-      "Raspberry Pi",
-      "LoRaWAN",
-      "Embedded C"
-    ],
+    "skills": ["MQTT", "Raspberry Pi", "LoRaWAN", "Embedded C"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7952,14 +6273,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "The Graph",
-      "Solidity",
-      "Foundry",
-      "ethers.js",
-      "IPFS",
-      "Next.js"
-    ],
+    "skills": ["The Graph", "Solidity", "Foundry", "ethers.js", "IPFS", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7976,13 +6290,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "scikit-learn",
-      "PyTorch",
-      "TensorFlow",
-      "OpenAI API",
-      "Transformers"
-    ],
+    "skills": ["scikit-learn", "PyTorch", "TensorFlow", "OpenAI API", "Transformers"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -7999,12 +6307,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Raspberry Pi",
-      "Arduino",
-      "LoRaWAN",
-      "Embedded C"
-    ],
+    "skills": ["Raspberry Pi", "Arduino", "LoRaWAN", "Embedded C"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8029,12 +6332,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Flutter",
-      "Jetpack Compose",
-      "Swift",
-      "React"
-    ],
+    "skills": ["Flutter", "Jetpack Compose", "Swift", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8051,11 +6349,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Vite",
-      "tRPC",
-      "Next.js"
-    ],
+    "skills": ["Vite", "tRPC", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8072,18 +6366,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Vite",
-      "MongoDB",
-      "TypeScript",
-      "Express",
-      "PostgreSQL",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Vite", "MongoDB", "TypeScript", "Express", "PostgreSQL", "Tailwind CSS"],
+    "certifications": ["Google Data Analytics", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kiara-trivedi-3953": {
@@ -8099,12 +6383,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "SQL",
-      "Tableau",
-      "Pandas"
-    ],
+    "skills": ["DuckDB", "SQL", "Tableau", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8129,17 +6408,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "IPFS",
-      "The Graph",
-      "Foundry",
-      "Hardhat",
-      "ethers.js",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["IPFS", "The Graph", "Foundry", "Hardhat", "ethers.js", "Tailwind CSS"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/avni-khanna-1042": {
@@ -8155,13 +6425,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "UX Research",
-      "Prototyping",
-      "Figma"
-    ],
+    "skills": ["Motion Design", "Design Systems", "UX Research", "Prototyping", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8193,16 +6457,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Vite",
-      "React",
-      "tRPC",
-      "Tailwind CSS",
-      "Next.js"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Vite", "React", "tRPC", "Tailwind CSS", "Next.js"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/amrita-shetty-2413": {
@@ -8218,14 +6474,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "AWS",
-      "Nginx",
-      "GitHub Actions",
-      "Terraform",
-      "Prometheus",
-      "Kubernetes"
-    ],
+    "skills": ["AWS", "Nginx", "GitHub Actions", "Terraform", "Prometheus", "Kubernetes"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8250,12 +6499,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Tableau",
-      "Pandas",
-      "DuckDB",
-      "NumPy"
-    ],
+    "skills": ["Tableau", "Pandas", "DuckDB", "NumPy"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8280,17 +6524,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "OpenCV",
-      "RAG",
-      "Transformers",
-      "Python",
-      "Pandas"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["OpenCV", "RAG", "Transformers", "Python", "Pandas"],
+    "certifications": ["Google Data Analytics", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/vihaan-menon-9845": {
@@ -8306,14 +6541,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "React",
-      "tRPC",
-      "TypeScript",
-      "MongoDB",
-      "Express"
-    ],
+    "skills": ["PostgreSQL", "React", "tRPC", "TypeScript", "MongoDB", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8338,12 +6566,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Vite",
-      "PostgreSQL",
-      "Next.js",
-      "Go"
-    ],
+    "skills": ["Vite", "PostgreSQL", "Next.js", "Go"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8360,18 +6583,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ethers.js",
-      "The Graph",
-      "Solidity",
-      "IPFS",
-      "Foundry",
-      "Tailwind CSS"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["ethers.js", "The Graph", "Solidity", "IPFS", "Foundry", "Tailwind CSS"],
+    "certifications": ["AWS Cloud Practitioner", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/raghav-kumar-4850": {
@@ -8395,16 +6608,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Framer",
-      "Motion Design",
-      "Design Systems",
-      "Figma",
-      "Airflow"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Framer", "Motion Design", "Design Systems", "Figma", "Airflow"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dev-bhat-6266": {
@@ -8420,14 +6625,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "PostgreSQL",
-      "TypeScript",
-      "Vite",
-      "React",
-      "Redis"
-    ],
+    "skills": ["tRPC", "PostgreSQL", "TypeScript", "Vite", "React", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8452,14 +6650,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "Hardhat",
-      "The Graph",
-      "Solidity",
-      "IPFS",
-      "Foundry"
-    ],
+    "skills": ["ethers.js", "Hardhat", "The Graph", "Solidity", "IPFS", "Foundry"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8491,17 +6682,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Express",
-      "tRPC",
-      "Node.js",
-      "React",
-      "TypeScript"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Express", "tRPC", "Node.js", "React", "TypeScript"],
+    "certifications": ["TensorFlow Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/keya-sahni-6071": {
@@ -8517,18 +6699,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "NumPy",
-      "Airflow",
-      "Tableau",
-      "Spark",
-      "Pandas"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Google Data Analytics"
-    ],
+    "skills": ["DuckDB", "NumPy", "Airflow", "Tableau", "Spark", "Pandas"],
+    "certifications": ["AWS Cloud Practitioner", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dia-sinha-4770": {
@@ -8552,15 +6724,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Flask",
-      "FastAPI",
-      "Java Spring",
-      "Django"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Flask", "FastAPI", "Java Spring", "Django"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/chirag-patel-5318": {
@@ -8591,18 +6756,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "LLM Fine-tuning",
-      "scikit-learn",
-      "RAG",
-      "Transformers",
-      "Python",
-      "OpenCV"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["LLM Fine-tuning", "scikit-learn", "RAG", "Transformers", "Python", "OpenCV"],
+    "certifications": ["Meta Frontend Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/zayan-rao-7436": {
@@ -8633,14 +6788,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "The Graph",
-      "Hardhat",
-      "IPFS",
-      "Solidity",
-      "Foundry"
-    ],
+    "skills": ["ethers.js", "The Graph", "Hardhat", "IPFS", "Solidity", "Foundry"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8672,14 +6820,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "TypeScript",
-      "Redis"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["PostgreSQL", "TypeScript", "Redis"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kavya-goel-3852": {
@@ -8695,13 +6837,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "Node.js",
-      "Express",
-      "Tailwind CSS",
-      "tRPC"
-    ],
+    "skills": ["React", "Node.js", "Express", "Tailwind CSS", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8726,11 +6862,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "FastAPI",
-      "Go",
-      "Tailwind CSS"
-    ],
+    "skills": ["FastAPI", "Go", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8755,14 +6887,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Figma",
-      "UX Research",
-      "Design Systems",
-      "Prototyping",
-      "Motion Design",
-      "Spark"
-    ],
+    "skills": ["Figma", "UX Research", "Design Systems", "Prototyping", "Motion Design", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8787,11 +6912,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Django",
-      "Java Spring",
-      "GraphQL"
-    ],
+    "skills": ["Django", "Java Spring", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8808,11 +6929,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kubernetes",
-      "Nginx",
-      "Terraform"
-    ],
+    "skills": ["Kubernetes", "Nginx", "Terraform"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8837,12 +6954,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "gRPC",
-      "Java Spring",
-      "Go",
-      "Redis"
-    ],
+    "skills": ["gRPC", "Java Spring", "Go", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8859,17 +6971,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React Native",
-      "Kotlin",
-      "Firebase",
-      "Jetpack Compose",
-      "Express"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["React Native", "Kotlin", "Firebase", "Jetpack Compose", "Express"],
+    "certifications": ["TensorFlow Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/samaira-srivastava-6922": {
@@ -8893,14 +6996,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "AWS",
-      "Prometheus",
-      "GitHub Actions",
-      "Kubernetes",
-      "Nginx",
-      "GraphQL"
-    ],
+    "skills": ["AWS", "Prometheus", "GitHub Actions", "Kubernetes", "Nginx", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8925,11 +7021,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Terraform",
-      "AWS",
-      "Go"
-    ],
+    "skills": ["Terraform", "AWS", "Go"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8954,11 +7046,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "TensorFlow",
-      "OpenCV",
-      "PyTorch"
-    ],
+    "skills": ["TensorFlow", "OpenCV", "PyTorch"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8975,11 +7063,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Figma",
-      "UX Research",
-      "Design Systems"
-    ],
+    "skills": ["Figma", "UX Research", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -8996,14 +7080,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Embedded C",
-      "LoRaWAN",
-      "ESP32",
-      "MQTT",
-      "Raspberry Pi",
-      "Flask"
-    ],
+    "skills": ["Embedded C", "LoRaWAN", "ESP32", "MQTT", "Raspberry Pi", "Flask"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9020,16 +7097,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Hardhat",
-      "The Graph",
-      "IPFS",
-      "MongoDB"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Hardhat", "The Graph", "IPFS", "MongoDB"],
+    "certifications": ["TensorFlow Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ananya-rao-3997": {
@@ -9053,12 +7122,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Embedded C",
-      "LoRaWAN",
-      "ESP32",
-      "Raspberry Pi"
-    ],
+    "skills": ["Embedded C", "LoRaWAN", "ESP32", "Raspberry Pi"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9075,14 +7139,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Pandas",
-      "Airflow",
-      "DuckDB",
-      "SQL",
-      "NumPy",
-      "LangChain"
-    ],
+    "skills": ["Pandas", "Airflow", "DuckDB", "SQL", "NumPy", "LangChain"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9114,11 +7171,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Arduino",
-      "Raspberry Pi",
-      "gRPC"
-    ],
+    "skills": ["Arduino", "Raspberry Pi", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9143,13 +7196,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Hardhat",
-      "Solidity",
-      "IPFS",
-      "ethers.js",
-      "Next.js"
-    ],
+    "skills": ["Hardhat", "Solidity", "IPFS", "ethers.js", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9166,11 +7213,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React Native",
-      "Swift",
-      "MongoDB"
-    ],
+    "skills": ["React Native", "Swift", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9187,16 +7230,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "PostgreSQL",
-      "React",
-      "Vite"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["tRPC", "PostgreSQL", "React", "Vite"],
+    "certifications": ["AWS Cloud Practitioner", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/advika-menon-1770": {
@@ -9220,16 +7255,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Kafka",
-      "FastAPI",
-      "Flask",
-      "Node.js"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Kafka", "FastAPI", "Flask", "Node.js"],
+    "certifications": ["AWS Cloud Practitioner", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/advika-dubey-6853": {
@@ -9253,11 +7280,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "MQTT",
-      "ESP32",
-      "Go"
-    ],
+    "skills": ["MQTT", "ESP32", "Go"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9282,13 +7305,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Node.js",
-      "PostgreSQL",
-      "Next.js",
-      "Tailwind CSS",
-      "Prototyping"
-    ],
+    "skills": ["Node.js", "PostgreSQL", "Next.js", "Tailwind CSS", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9313,11 +7330,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Express",
-      "Next.js",
-      "Vite"
-    ],
+    "skills": ["Express", "Next.js", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9349,13 +7362,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Spark",
-      "Pandas",
-      "DuckDB",
-      "SQL",
-      "dbt"
-    ],
+    "skills": ["Spark", "Pandas", "DuckDB", "SQL", "dbt"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9372,14 +7379,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "TensorFlow",
-      "Python",
-      "LLM Fine-tuning",
-      "scikit-learn",
-      "RAG",
-      "Pandas"
-    ],
+    "skills": ["TensorFlow", "Python", "LLM Fine-tuning", "scikit-learn", "RAG", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9411,14 +7411,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Framer",
-      "Design Systems",
-      "Motion Design",
-      "Prototyping",
-      "Figma",
-      "UX Research"
-    ],
+    "skills": ["Framer", "Design Systems", "Motion Design", "Prototyping", "Figma", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9443,15 +7436,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Spark",
-      "SQL",
-      "Tableau",
-      "HuggingFace"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Spark", "SQL", "Tableau", "HuggingFace"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/arjun-mittal-8437": {
@@ -9475,11 +7461,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "Vite",
-      "Express"
-    ],
+    "skills": ["PostgreSQL", "Vite", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9511,12 +7493,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Swift",
-      "Flutter",
-      "Firebase",
-      "Jetpack Compose"
-    ],
+    "skills": ["Swift", "Flutter", "Firebase", "Jetpack Compose"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9533,14 +7510,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Nginx",
-      "AWS",
-      "Prometheus",
-      "GitHub Actions",
-      "GCP",
-      "Kafka"
-    ],
+    "skills": ["Nginx", "AWS", "Prometheus", "GitHub Actions", "GCP", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9565,14 +7535,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "LangChain",
-      "RAG",
-      "PyTorch",
-      "HuggingFace",
-      "LLM Fine-tuning",
-      "Tableau"
-    ],
+    "skills": ["LangChain", "RAG", "PyTorch", "HuggingFace", "LLM Fine-tuning", "Tableau"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9589,17 +7552,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Transformers",
-      "HuggingFace",
-      "LangChain",
-      "OpenCV",
-      "Python"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Transformers", "HuggingFace", "LangChain", "OpenCV", "Python"],
+    "certifications": ["TensorFlow Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/madhav-bhardwaj-8056": {
@@ -9630,11 +7584,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "tRPC",
-      "PostgreSQL",
-      "React"
-    ],
+    "skills": ["tRPC", "PostgreSQL", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9666,12 +7616,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "React",
-      "Vite",
-      "MongoDB",
-      "Django"
-    ],
+    "skills": ["React", "Vite", "MongoDB", "Django"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9688,16 +7633,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Hardhat",
-      "Solidity",
-      "IPFS",
-      "The Graph",
-      "ethers.js"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Hardhat", "Solidity", "IPFS", "The Graph", "ethers.js"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ishaan-iyer-9374": {
@@ -9713,16 +7650,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "TypeScript",
-      "Vite",
-      "Node.js"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["React", "TypeScript", "Vite", "Node.js"],
+    "certifications": ["Google Data Analytics", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/harsh-mishra-5082": {
@@ -9746,12 +7675,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Flutter",
-      "Firebase",
-      "Kotlin",
-      "Jetpack Compose"
-    ],
+    "skills": ["Flutter", "Firebase", "Kotlin", "Jetpack Compose"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9783,11 +7707,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Java Spring",
-      "GraphQL",
-      "Next.js"
-    ],
+    "skills": ["Java Spring", "GraphQL", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9804,16 +7724,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Framer",
-      "Figma",
-      "Prototyping",
-      "Design Systems",
-      "UX Research"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Framer", "Figma", "Prototyping", "Design Systems", "UX Research"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/rajat-mittal-8441": {
@@ -9829,12 +7741,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Java Spring",
-      "Kafka",
-      "Docker",
-      "gRPC"
-    ],
+    "skills": ["Java Spring", "Kafka", "Docker", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9859,14 +7766,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "gRPC",
-      "Docker",
-      "Kafka",
-      "Django",
-      "GraphQL",
-      "PostgreSQL"
-    ],
+    "skills": ["gRPC", "Docker", "Kafka", "Django", "GraphQL", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9883,17 +7783,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kubernetes",
-      "GitHub Actions",
-      "Nginx",
-      "Terraform",
-      "Redis"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Kubernetes", "GitHub Actions", "Nginx", "Terraform", "Redis"],
+    "certifications": ["Meta Frontend Developer", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/shreya-khatri-4500": {
@@ -9924,14 +7815,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "LangChain",
-      "RAG",
-      "OpenCV",
-      "scikit-learn",
-      "OpenAI API",
-      "Airflow"
-    ],
+    "skills": ["LangChain", "RAG", "OpenCV", "scikit-learn", "OpenAI API", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9948,14 +7832,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "TypeScript",
-      "Tailwind CSS",
-      "React",
-      "Express",
-      "tRPC",
-      "Vite"
-    ],
+    "skills": ["TypeScript", "Tailwind CSS", "React", "Express", "tRPC", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -9972,14 +7849,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "SQL",
-      "Spark",
-      "OpenCV"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["SQL", "Spark", "OpenCV"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/eesha-kumar-5473": {
@@ -10010,11 +7881,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "ESP32",
-      "MQTT",
-      "Raspberry Pi"
-    ],
+    "skills": ["ESP32", "MQTT", "Raspberry Pi"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10046,12 +7913,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Hardhat",
-      "IPFS",
-      "ethers.js",
-      "Foundry"
-    ],
+    "skills": ["Hardhat", "IPFS", "ethers.js", "Foundry"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10068,12 +7930,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "tRPC",
-      "PostgreSQL",
-      "gRPC"
-    ],
+    "skills": ["React", "tRPC", "PostgreSQL", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10105,14 +7962,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "GitHub Actions",
-      "Nginx",
-      "GCP",
-      "Kubernetes",
-      "AWS",
-      "Redis"
-    ],
+    "skills": ["GitHub Actions", "Nginx", "GCP", "Kubernetes", "AWS", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10129,16 +7979,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "LoRaWAN",
-      "ESP32",
-      "Arduino",
-      "Embedded C",
-      "Flask"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["LoRaWAN", "ESP32", "Arduino", "Embedded C", "Flask"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/gaurav-malhotra-1345": {
@@ -10162,11 +8004,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Express",
-      "Next.js",
-      "Motion Design"
-    ],
+    "skills": ["Express", "Next.js", "Motion Design"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10191,17 +8029,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Nginx",
-      "Prometheus",
-      "Terraform",
-      "Kubernetes",
-      "Kafka"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Nginx", "Prometheus", "Terraform", "Kubernetes", "Kafka"],
+    "certifications": ["Google Data Analytics", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/jatin-mishra-4046": {
@@ -10225,11 +8054,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "Express",
-      "Next.js"
-    ],
+    "skills": ["TypeScript", "Express", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10254,13 +8079,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Java Spring",
-      "Flask",
-      "gRPC",
-      "GraphQL",
-      "TypeScript"
-    ],
+    "skills": ["Java Spring", "Flask", "gRPC", "GraphQL", "TypeScript"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10285,15 +8104,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Node.js",
-      "MongoDB",
-      "tRPC",
-      "GraphQL"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Node.js", "MongoDB", "tRPC", "GraphQL"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/akash-shetty-5356": {
@@ -10324,11 +8136,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "UX Research",
-      "Figma",
-      "MongoDB"
-    ],
+    "skills": ["UX Research", "Figma", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10353,12 +8161,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Framer",
-      "UX Research",
-      "Motion Design",
-      "Prototyping"
-    ],
+    "skills": ["Framer", "UX Research", "Motion Design", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10383,13 +8186,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Redis",
-      "Kafka",
-      "gRPC",
-      "Docker",
-      "PostgreSQL"
-    ],
+    "skills": ["Redis", "Kafka", "gRPC", "Docker", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10406,11 +8203,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Prototyping",
-      "Design Systems",
-      "UX Research"
-    ],
+    "skills": ["Prototyping", "Design Systems", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10426,13 +8219,16 @@
         "end_year": 2025
       }
     ],
-    "experience": [],
-    "skills": [
-      "Vite",
-      "Tailwind CSS",
-      "MongoDB",
-      "Framer"
+    "experience": [
+      {
+        "title": "Full-Stack Developer Intern",
+        "company": "Razorpay",
+        "start": "2026-06",
+        "end": null,
+        "description": "Building internal dashboards in React with a Python backend."
+      }
     ],
+    "skills": ["Vite", "Tailwind CSS", "MongoDB", "Framer"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10449,14 +8245,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Prototyping",
-      "Framer",
-      "Design Systems",
-      "Figma",
-      "UX Research",
-      "Next.js"
-    ],
+    "skills": ["Prototyping", "Framer", "Design Systems", "Figma", "UX Research", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10488,13 +8277,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Go",
-      "Redis",
-      "Django",
-      "FastAPI",
-      "Java Spring"
-    ],
+    "skills": ["Go", "Redis", "Django", "FastAPI", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10511,14 +8294,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Solidity",
-      "ethers.js",
-      "IPFS",
-      "Hardhat",
-      "Foundry",
-      "MongoDB"
-    ],
+    "skills": ["Solidity", "ethers.js", "IPFS", "Hardhat", "Foundry", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10550,14 +8326,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "UX Research",
-      "Motion Design",
-      "Prototyping",
-      "Framer",
-      "Spark"
-    ],
+    "skills": ["Design Systems", "UX Research", "Motion Design", "Prototyping", "Framer", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10574,12 +8343,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "TypeScript",
-      "Next.js",
-      "Node.js",
-      "Figma"
-    ],
+    "skills": ["TypeScript", "Next.js", "Node.js", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10611,11 +8375,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "gRPC",
-      "Go",
-      "Kafka"
-    ],
+    "skills": ["gRPC", "Go", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10632,12 +8392,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Jetpack Compose",
-      "Swift",
-      "Firebase",
-      "Flutter"
-    ],
+    "skills": ["Jetpack Compose", "Swift", "Firebase", "Flutter"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10662,15 +8417,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Flutter",
-      "Swift",
-      "Kotlin"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Google Data Analytics"
-    ],
+    "skills": ["Flutter", "Swift", "Kotlin"],
+    "certifications": ["Meta Frontend Developer", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/shaurya-yadav-6679": {
@@ -10686,17 +8434,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kafka",
-      "FastAPI",
-      "Flask",
-      "Java Spring",
-      "MongoDB"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Kafka", "FastAPI", "Flask", "Java Spring", "MongoDB"],
+    "certifications": ["TensorFlow Developer", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/manan-gupta-5280": {
@@ -10720,12 +8459,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Framer",
-      "Figma",
-      "Design Systems",
-      "Next.js"
-    ],
+    "skills": ["Framer", "Figma", "Design Systems", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10750,14 +8484,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "Framer"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Figma", "Prototyping", "Framer"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/prisha-chopra-7945": {
@@ -10781,14 +8509,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Go",
-      "Flask",
-      "Django",
-      "Java Spring",
-      "GraphQL",
-      "Express"
-    ],
+    "skills": ["Go", "Flask", "Django", "Java Spring", "GraphQL", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10820,13 +8541,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Tailwind CSS",
-      "Next.js",
-      "MongoDB",
-      "PostgreSQL",
-      "Vite"
-    ],
+    "skills": ["Tailwind CSS", "Next.js", "MongoDB", "PostgreSQL", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10858,11 +8573,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "UX Research",
-      "Design Systems"
-    ],
+    "skills": ["Prototyping", "UX Research", "Design Systems"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10879,14 +8590,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Framer",
-      "Design Systems",
-      "UX Research",
-      "Motion Design",
-      "Figma",
-      "Tailwind CSS"
-    ],
+    "skills": ["Framer", "Design Systems", "UX Research", "Motion Design", "Figma", "Tailwind CSS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10903,13 +8607,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ethers.js",
-      "Foundry",
-      "Solidity",
-      "The Graph",
-      "Node.js"
-    ],
+    "skills": ["ethers.js", "Foundry", "Solidity", "The Graph", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10941,14 +8639,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Foundry",
-      "The Graph",
-      "Hardhat",
-      "Solidity",
-      "IPFS",
-      "ethers.js"
-    ],
+    "skills": ["Foundry", "The Graph", "Hardhat", "Solidity", "IPFS", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -10973,14 +8664,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "Design Systems"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Figma", "Prototyping", "Design Systems"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/manan-sen-9427": {
@@ -11011,15 +8696,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Tableau",
-      "Pandas",
-      "NumPy",
-      "PyTorch"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Tableau", "Pandas", "NumPy", "PyTorch"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/neha-singh-8886": {
@@ -11043,14 +8721,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Flutter",
-      "Jetpack Compose",
-      "Swift"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Flutter", "Jetpack Compose", "Swift"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/siddharth-kumar-4730": {
@@ -11074,12 +8746,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Framer",
-      "Figma",
-      "Prototyping",
-      "Motion Design"
-    ],
+    "skills": ["Framer", "Figma", "Prototyping", "Motion Design"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11096,14 +8763,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vite",
-      "React",
-      "gRPC"
-    ],
+    "skills": ["PostgreSQL", "TypeScript", "Tailwind CSS", "Vite", "React", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11135,17 +8795,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Swift",
-      "Flutter",
-      "React Native",
-      "Firebase",
-      "Jetpack Compose"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Swift", "Flutter", "React Native", "Firebase", "Jetpack Compose"],
+    "certifications": ["Meta Frontend Developer", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/charvi-singhal-7046": {
@@ -11161,11 +8812,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Jetpack Compose",
-      "Firebase",
-      "React Native"
-    ],
+    "skills": ["Jetpack Compose", "Firebase", "React Native"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11197,14 +8844,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "UX Research",
-      "Prototyping",
-      "Motion Design",
-      "Framer",
-      "Figma"
-    ],
+    "skills": ["Design Systems", "UX Research", "Prototyping", "Motion Design", "Framer", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11221,13 +8861,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "dbt",
-      "Pandas",
-      "Airflow",
-      "Tableau"
-    ],
+    "skills": ["DuckDB", "dbt", "Pandas", "Airflow", "Tableau"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11244,16 +8878,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kotlin",
-      "Flutter",
-      "Firebase",
-      "PostgreSQL"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Kotlin", "Flutter", "Firebase", "PostgreSQL"],
+    "certifications": ["AWS Cloud Practitioner", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/arjun-verma-5970": {
@@ -11284,13 +8910,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Tableau",
-      "dbt",
-      "Pandas",
-      "SQL",
-      "Spark"
-    ],
+    "skills": ["Tableau", "dbt", "Pandas", "SQL", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11322,12 +8942,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Foundry",
-      "IPFS",
-      "The Graph",
-      "ethers.js"
-    ],
+    "skills": ["Foundry", "IPFS", "The Graph", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11344,12 +8959,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Vite",
-      "React",
-      "tRPC",
-      "Express"
-    ],
+    "skills": ["Vite", "React", "tRPC", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11374,14 +8984,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Motion Design",
-      "Framer"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Design Systems", "Motion Design", "Framer"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/navya-nanda-4458": {
@@ -11405,14 +9009,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "Framer",
-      "UX Research",
-      "Figma",
-      "Prototyping"
-    ],
+    "skills": ["Motion Design", "Design Systems", "Framer", "UX Research", "Figma", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11429,15 +9026,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Embedded C",
-      "Raspberry Pi",
-      "LoRaWAN",
-      "Arduino"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["Embedded C", "Raspberry Pi", "LoRaWAN", "Arduino"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/riya-shetty-9370": {
@@ -11453,13 +9043,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "gRPC",
-      "Docker",
-      "GraphQL",
-      "Java Spring",
-      "Express"
-    ],
+    "skills": ["gRPC", "Docker", "GraphQL", "Java Spring", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11491,14 +9075,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "Express",
-      "tRPC",
-      "React",
-      "MongoDB",
-      "Node.js"
-    ],
+    "skills": ["PostgreSQL", "Express", "tRPC", "React", "MongoDB", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11523,18 +9100,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Motion Design",
-      "Figma",
-      "Prototyping",
-      "Design Systems",
-      "UX Research",
-      "Tableau"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Motion Design", "Figma", "Prototyping", "Design Systems", "UX Research", "Tableau"],
+    "certifications": ["Google Data Analytics", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/karan-shetty-6269": {
@@ -11558,13 +9125,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "Vite",
-      "TypeScript",
-      "MongoDB",
-      "Next.js"
-    ],
+    "skills": ["PostgreSQL", "Vite", "TypeScript", "MongoDB", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11589,13 +9150,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express"
-    ],
+    "skills": ["PostgreSQL", "Next.js", "Tailwind CSS", "Node.js", "Express"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11612,13 +9167,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React Native",
-      "Swift",
-      "Flutter",
-      "Firebase",
-      "Kotlin"
-    ],
+    "skills": ["React Native", "Swift", "Flutter", "Firebase", "Kotlin"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11635,11 +9184,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "Express",
-      "Next.js"
-    ],
+    "skills": ["tRPC", "Express", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11656,17 +9201,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Go",
-      "Kafka",
-      "Flask",
-      "Docker",
-      "FastAPI"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Go", "Kafka", "Flask", "Docker", "FastAPI"],
+    "certifications": ["Neo4j Certified Professional", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/om-singhal-5749": {
@@ -11682,13 +9218,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "React",
-      "TypeScript",
-      "MongoDB",
-      "Node.js"
-    ],
+    "skills": ["PostgreSQL", "React", "TypeScript", "MongoDB", "Node.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11705,15 +9235,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Next.js",
-      "React",
-      "Design Systems"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Next.js", "React", "Design Systems"],
+    "certifications": ["Neo4j Certified Professional", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sara-trivedi-2595": {
@@ -11729,11 +9252,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Solidity",
-      "Hardhat",
-      "Foundry"
-    ],
+    "skills": ["Solidity", "Hardhat", "Foundry"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11750,14 +9269,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ESP32",
-      "Raspberry Pi",
-      "Embedded C",
-      "LoRaWAN",
-      "Arduino",
-      "Go"
-    ],
+    "skills": ["ESP32", "Raspberry Pi", "Embedded C", "LoRaWAN", "Arduino", "Go"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11782,14 +9294,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Next.js",
-      "Node.js",
-      "Express"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Next.js", "Node.js", "Express"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/devansh-thakur-1133": {
@@ -11805,11 +9311,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Arduino",
-      "Raspberry Pi",
-      "Go"
-    ],
+    "skills": ["Arduino", "Raspberry Pi", "Go"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11834,13 +9336,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Framer",
-      "Prototyping",
-      "Figma",
-      "Airflow"
-    ],
+    "skills": ["Design Systems", "Framer", "Prototyping", "Figma", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11857,12 +9353,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "LangChain",
-      "HuggingFace",
-      "RAG",
-      "OpenAI API"
-    ],
+    "skills": ["LangChain", "HuggingFace", "RAG", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11887,12 +9378,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "Design Systems",
-      "Framer",
-      "React"
-    ],
+    "skills": ["Prototyping", "Design Systems", "Framer", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11909,11 +9395,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Embedded C",
-      "ESP32",
-      "Redis"
-    ],
+    "skills": ["Embedded C", "ESP32", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11938,13 +9420,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "TypeScript",
-      "Next.js",
-      "Node.js",
-      "Tailwind CSS",
-      "MongoDB"
-    ],
+    "skills": ["TypeScript", "Next.js", "Node.js", "Tailwind CSS", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -11976,18 +9452,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "MQTT",
-      "Embedded C",
-      "LoRaWAN",
-      "ESP32",
-      "Arduino",
-      "Raspberry Pi"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["MQTT", "Embedded C", "LoRaWAN", "ESP32", "Arduino", "Raspberry Pi"],
+    "certifications": ["Neo4j Certified Professional", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/kartik-mishra-8424": {
@@ -12011,11 +9477,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "MongoDB",
-      "React",
-      "Vite"
-    ],
+    "skills": ["MongoDB", "React", "Vite"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12032,11 +9494,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "dbt",
-      "Airflow"
-    ],
+    "skills": ["DuckDB", "dbt", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12053,12 +9511,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Swift",
-      "Jetpack Compose",
-      "Kotlin",
-      "PostgreSQL"
-    ],
+    "skills": ["Swift", "Jetpack Compose", "Kotlin", "PostgreSQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12090,13 +9543,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "UX Research",
-      "Prototyping",
-      "Spark"
-    ],
+    "skills": ["Motion Design", "Design Systems", "UX Research", "Prototyping", "Spark"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12113,14 +9560,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tableau",
-      "DuckDB",
-      "NumPy",
-      "dbt",
-      "Pandas",
-      "SQL"
-    ],
+    "skills": ["Tableau", "DuckDB", "NumPy", "dbt", "Pandas", "SQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12137,14 +9577,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "PostgreSQL",
-      "Express",
-      "Node.js",
-      "Tailwind CSS",
-      "Next.js"
-    ],
+    "skills": ["React", "PostgreSQL", "Express", "Node.js", "Tailwind CSS", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12176,15 +9609,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Swift",
-      "Kotlin",
-      "Firebase"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Swift", "Kotlin", "Firebase"],
+    "certifications": ["Meta Frontend Developer", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/naina-khanna-1791": {
@@ -12200,11 +9626,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "tRPC",
-      "Go"
-    ],
+    "skills": ["React", "tRPC", "Go"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12236,11 +9658,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Redis",
-      "Django",
-      "Kafka"
-    ],
+    "skills": ["Redis", "Django", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12272,13 +9690,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "LoRaWAN",
-      "Embedded C",
-      "Arduino",
-      "MQTT",
-      "Kafka"
-    ],
+    "skills": ["LoRaWAN", "Embedded C", "Arduino", "MQTT", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12310,13 +9722,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "Framer",
-      "Design Systems",
-      "Figma",
-      "MongoDB"
-    ],
+    "skills": ["Prototyping", "Framer", "Design Systems", "Figma", "MongoDB"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12341,11 +9747,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Kubernetes",
-      "Prometheus",
-      "Terraform"
-    ],
+    "skills": ["Kubernetes", "Prometheus", "Terraform"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12377,14 +9779,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Next.js",
-      "Express",
-      "React",
-      "MongoDB",
-      "Tailwind CSS",
-      "tRPC"
-    ],
+    "skills": ["Next.js", "Express", "React", "MongoDB", "Tailwind CSS", "tRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12416,14 +9811,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "React",
-      "Tailwind CSS",
-      "UX Research"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["React", "Tailwind CSS", "UX Research"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/oviya-patel-8719": {
@@ -12439,17 +9828,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Tableau",
-      "SQL",
-      "dbt",
-      "DuckDB",
-      "Spark"
-    ],
-    "certifications": [
-      "Meta Frontend Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Tableau", "SQL", "dbt", "DuckDB", "Spark"],
+    "certifications": ["Meta Frontend Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aditya-bansal-3655": {
@@ -12480,11 +9860,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "UX Research",
-      "Prototyping"
-    ],
+    "skills": ["Design Systems", "UX Research", "Prototyping"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12501,13 +9877,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kubernetes",
-      "Nginx",
-      "AWS",
-      "Prometheus",
-      "Terraform"
-    ],
+    "skills": ["Kubernetes", "Nginx", "AWS", "Prometheus", "Terraform"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12539,13 +9909,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Prometheus",
-      "AWS",
-      "Terraform",
-      "GCP",
-      "Kubernetes"
-    ],
+    "skills": ["Prometheus", "AWS", "Terraform", "GCP", "Kubernetes"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12570,17 +9934,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Hardhat",
-      "ethers.js",
-      "The Graph",
-      "IPFS",
-      "MongoDB"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["Hardhat", "ethers.js", "The Graph", "IPFS", "MongoDB"],
+    "certifications": ["Neo4j Certified Professional", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/rohan-trivedi-8885": {
@@ -12596,13 +9951,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Design Systems",
-      "Prototyping",
-      "UX Research",
-      "Motion Design",
-      "Figma"
-    ],
+    "skills": ["Design Systems", "Prototyping", "UX Research", "Motion Design", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12634,12 +9983,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Spark",
-      "Tableau",
-      "DuckDB",
-      "Python"
-    ],
+    "skills": ["Spark", "Tableau", "DuckDB", "Python"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12656,14 +10000,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Raspberry Pi",
-      "ESP32",
-      "Arduino",
-      "MQTT",
-      "Embedded C",
-      "LoRaWAN"
-    ],
+    "skills": ["Raspberry Pi", "ESP32", "Arduino", "MQTT", "Embedded C", "LoRaWAN"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12688,11 +10025,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "LoRaWAN",
-      "Arduino",
-      "MQTT"
-    ],
+    "skills": ["LoRaWAN", "Arduino", "MQTT"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12724,16 +10057,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Raspberry Pi",
-      "Arduino",
-      "MQTT",
-      "Embedded C",
-      "ESP32"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Raspberry Pi", "Arduino", "MQTT", "Embedded C", "ESP32"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/naina-kaur-8575": {
@@ -12764,12 +10089,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Motion Design",
-      "Figma",
-      "Prototyping",
-      "Pandas"
-    ],
+    "skills": ["Motion Design", "Figma", "Prototyping", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12786,11 +10106,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "tRPC",
-      "Tailwind CSS",
-      "Next.js"
-    ],
+    "skills": ["tRPC", "Tailwind CSS", "Next.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12822,14 +10138,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "React",
-      "Express",
-      "Vite",
-      "TypeScript",
-      "PostgreSQL",
-      "Java Spring"
-    ],
+    "skills": ["React", "Express", "Vite", "TypeScript", "PostgreSQL", "Java Spring"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12846,15 +10155,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kubernetes",
-      "AWS",
-      "GitHub Actions"
-    ],
-    "certifications": [
-      "Google Data Analytics",
-      "TensorFlow Developer"
-    ],
+    "skills": ["Kubernetes", "AWS", "GitHub Actions"],
+    "certifications": ["Google Data Analytics", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/sahana-dhillon-5773": {
@@ -12870,11 +10172,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "LLM Fine-tuning",
-      "TensorFlow",
-      "OpenAI API"
-    ],
+    "skills": ["LLM Fine-tuning", "TensorFlow", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12891,13 +10189,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Nginx",
-      "Terraform",
-      "AWS",
-      "Prometheus",
-      "Kafka"
-    ],
+    "skills": ["Nginx", "Terraform", "AWS", "Prometheus", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12914,11 +10206,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ESP32",
-      "Embedded C",
-      "Raspberry Pi"
-    ],
+    "skills": ["ESP32", "Embedded C", "Raspberry Pi"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12935,12 +10223,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Kubernetes",
-      "GitHub Actions",
-      "Nginx",
-      "Prometheus"
-    ],
+    "skills": ["Kubernetes", "GitHub Actions", "Nginx", "Prometheus"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -12965,15 +10248,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "ESP32",
-      "Embedded C",
-      "Raspberry Pi",
-      "MQTT"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["ESP32", "Embedded C", "Raspberry Pi", "MQTT"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aman-kumar-8717": {
@@ -12997,15 +10273,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "GitHub Actions",
-      "Nginx",
-      "Kubernetes",
-      "Prometheus"
-    ],
-    "certifications": [
-      "Meta Frontend Developer"
-    ],
+    "skills": ["GitHub Actions", "Nginx", "Kubernetes", "Prometheus"],
+    "certifications": ["Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/pari-malik-3589": {
@@ -13021,14 +10290,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "AWS",
-      "Prometheus",
-      "GCP",
-      "GitHub Actions",
-      "Kubernetes",
-      "Nginx"
-    ],
+    "skills": ["AWS", "Prometheus", "GCP", "GitHub Actions", "Kubernetes", "Nginx"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13053,13 +10315,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "Motion Design",
-      "Framer",
-      "UX Research",
-      "Figma"
-    ],
+    "skills": ["Prototyping", "Motion Design", "Framer", "UX Research", "Figma"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13084,11 +10340,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Nginx",
-      "Kubernetes",
-      "gRPC"
-    ],
+    "skills": ["Nginx", "Kubernetes", "gRPC"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13113,11 +10365,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "UX Research"
-    ],
+    "skills": ["Figma", "Prototyping", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13134,16 +10382,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "TypeScript",
-      "Tailwind CSS",
-      "Vite",
-      "Next.js",
-      "Framer"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["TypeScript", "Tailwind CSS", "Vite", "Next.js", "Framer"],
+    "certifications": ["AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/samaira-shetty-6296": {
@@ -13159,12 +10399,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "ethers.js",
-      "Foundry",
-      "Hardhat",
-      "The Graph"
-    ],
+    "skills": ["ethers.js", "Foundry", "Hardhat", "The Graph"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13196,11 +10431,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "Express",
-      "Django"
-    ],
+    "skills": ["PostgreSQL", "Express", "Django"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13232,15 +10463,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "Figma",
-      "Prototyping",
-      "Motion Design"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["Design Systems", "Figma", "Prototyping", "Motion Design"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/nikhil-mishra-2353": {
@@ -13264,16 +10488,8 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "TensorFlow",
-      "HuggingFace",
-      "OpenCV",
-      "Airflow"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["TensorFlow", "HuggingFace", "OpenCV", "Airflow"],
+    "certifications": ["TensorFlow Developer", "Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/daksh-bansal-4635": {
@@ -13297,16 +10513,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "MongoDB",
-      "Next.js",
-      "tRPC",
-      "Node.js",
-      "UX Research"
-    ],
-    "certifications": [
-      "Google Data Analytics"
-    ],
+    "skills": ["MongoDB", "Next.js", "tRPC", "Node.js", "UX Research"],
+    "certifications": ["Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/uday-bhardwaj-1068": {
@@ -13322,13 +10530,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Java Spring",
-      "Docker",
-      "Go",
-      "gRPC",
-      "GraphQL"
-    ],
+    "skills": ["Java Spring", "Docker", "Go", "gRPC", "GraphQL"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13360,14 +10562,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "DuckDB",
-      "NumPy",
-      "Tableau",
-      "dbt",
-      "Spark",
-      "LangChain"
-    ],
+    "skills": ["DuckDB", "NumPy", "Tableau", "dbt", "Spark", "LangChain"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13384,14 +10579,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Express",
-      "Vite",
-      "React",
-      "Tailwind CSS",
-      "Next.js",
-      "TypeScript"
-    ],
+    "skills": ["Express", "Vite", "React", "Tailwind CSS", "Next.js", "TypeScript"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13408,14 +10596,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React",
-      "Tailwind CSS",
-      "tRPC",
-      "TypeScript",
-      "Next.js",
-      "Framer"
-    ],
+    "skills": ["React", "Tailwind CSS", "tRPC", "TypeScript", "Next.js", "Framer"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13432,11 +10613,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GCP",
-      "AWS",
-      "Kafka"
-    ],
+    "skills": ["GCP", "AWS", "Kafka"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13453,16 +10630,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "TensorFlow",
-      "Transformers",
-      "OpenCV",
-      "PyTorch"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["TensorFlow", "Transformers", "OpenCV", "PyTorch"],
+    "certifications": ["AWS Cloud Practitioner", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/ahana-kapoor-5832": {
@@ -13493,18 +10662,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "MQTT",
-      "Arduino",
-      "Embedded C",
-      "Raspberry Pi",
-      "LoRaWAN",
-      "Kafka"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "Google Data Analytics"
-    ],
+    "skills": ["MQTT", "Arduino", "Embedded C", "Raspberry Pi", "LoRaWAN", "Kafka"],
+    "certifications": ["Neo4j Certified Professional", "Google Data Analytics"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/mihir-deshmukh-3312": {
@@ -13535,17 +10694,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "UX Research",
-      "Prototyping",
-      "Framer",
-      "Design Systems",
-      "NumPy"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "Meta Frontend Developer"
-    ],
+    "skills": ["UX Research", "Prototyping", "Framer", "Design Systems", "NumPy"],
+    "certifications": ["TensorFlow Developer", "Meta Frontend Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/rohan-kaur-4146": {
@@ -13561,14 +10711,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Nginx",
-      "GCP",
-      "Kubernetes",
-      "Prometheus",
-      "GitHub Actions",
-      "AWS"
-    ],
+    "skills": ["Nginx", "GCP", "Kubernetes", "Prometheus", "GitHub Actions", "AWS"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13585,16 +10728,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "PostgreSQL",
-      "Next.js",
-      "TypeScript",
-      "React"
-    ],
-    "certifications": [
-      "AWS Cloud Practitioner",
-      "TensorFlow Developer"
-    ],
+    "skills": ["PostgreSQL", "Next.js", "TypeScript", "React"],
+    "certifications": ["AWS Cloud Practitioner", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dia-dubey-4706": {
@@ -13610,13 +10745,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Spark",
-      "DuckDB",
-      "Pandas",
-      "SQL",
-      "OpenAI API"
-    ],
+    "skills": ["Spark", "DuckDB", "Pandas", "SQL", "OpenAI API"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13633,14 +10762,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Swift",
-      "Kotlin",
-      "Jetpack Compose",
-      "Flutter",
-      "React Native",
-      "TypeScript"
-    ],
+    "skills": ["Swift", "Kotlin", "Jetpack Compose", "Flutter", "React Native", "TypeScript"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13665,14 +10787,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "Next.js",
-      "MongoDB",
-      "TypeScript",
-      "tRPC",
-      "Vite",
-      "React"
-    ],
+    "skills": ["Next.js", "MongoDB", "TypeScript", "tRPC", "Vite", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13697,15 +10812,8 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "Figma",
-      "Prototyping",
-      "DuckDB"
-    ],
-    "certifications": [
-      "TensorFlow Developer",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Figma", "Prototyping", "DuckDB"],
+    "certifications": ["TensorFlow Developer", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/diya-mishra-9465": {
@@ -13729,18 +10837,8 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "ethers.js",
-      "IPFS",
-      "The Graph",
-      "Hardhat",
-      "Foundry",
-      "PostgreSQL"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "TensorFlow Developer"
-    ],
+    "skills": ["ethers.js", "IPFS", "The Graph", "Hardhat", "Foundry", "PostgreSQL"],
+    "certifications": ["Neo4j Certified Professional", "TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/akshara-joshi-8914": {
@@ -13764,15 +10862,8 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "GCP",
-      "Prometheus",
-      "Terraform",
-      "Django"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["GCP", "Prometheus", "Terraform", "Django"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/vaani-chauhan-4388": {
@@ -13796,11 +10887,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "PostgreSQL",
-      "Next.js",
-      "UX Research"
-    ],
+    "skills": ["PostgreSQL", "Next.js", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13832,13 +10919,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "MQTT",
-      "ESP32",
-      "Raspberry Pi",
-      "Embedded C",
-      "LoRaWAN"
-    ],
+    "skills": ["MQTT", "ESP32", "Raspberry Pi", "Embedded C", "LoRaWAN"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13855,12 +10936,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Design Systems",
-      "Prototyping",
-      "Motion Design",
-      "Pandas"
-    ],
+    "skills": ["Design Systems", "Prototyping", "Motion Design", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13877,17 +10953,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Go",
-      "Java Spring",
-      "Docker",
-      "Flask",
-      "Kafka"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["Go", "Java Spring", "Docker", "Flask", "Kafka"],
+    "certifications": ["Neo4j Certified Professional", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/nisha-shah-9723": {
@@ -13918,12 +10985,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Raspberry Pi",
-      "Embedded C",
-      "MQTT",
-      "Docker"
-    ],
+    "skills": ["Raspberry Pi", "Embedded C", "MQTT", "Docker"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13940,12 +11002,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Airflow",
-      "Spark",
-      "NumPy",
-      "OpenCV"
-    ],
+    "skills": ["Airflow", "Spark", "NumPy", "OpenCV"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -13970,15 +11027,8 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "gRPC",
-      "Kafka",
-      "Java Spring",
-      "Docker"
-    ],
-    "certifications": [
-      "TensorFlow Developer"
-    ],
+    "skills": ["gRPC", "Kafka", "Java Spring", "Docker"],
+    "certifications": ["TensorFlow Developer"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/aditi-chadha-1696": {
@@ -13994,12 +11044,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "The Graph",
-      "Hardhat",
-      "Foundry",
-      "ethers.js"
-    ],
+    "skills": ["The Graph", "Hardhat", "Foundry", "ethers.js"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14031,13 +11076,7 @@
         "description": "Supported the platform team."
       }
     ],
-    "skills": [
-      "Prototyping",
-      "UX Research",
-      "Framer",
-      "Figma",
-      "Motion Design"
-    ],
+    "skills": ["Prototyping", "UX Research", "Framer", "Figma", "Motion Design"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14062,12 +11101,7 @@
         "description": "Ran weekly workshops for juniors."
       }
     ],
-    "skills": [
-      "Vite",
-      "Next.js",
-      "Express",
-      "React"
-    ],
+    "skills": ["Vite", "Next.js", "Express", "React"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14084,14 +11118,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Motion Design",
-      "Design Systems",
-      "Prototyping",
-      "Framer",
-      "Figma",
-      "UX Research"
-    ],
+    "skills": ["Motion Design", "Design Systems", "Prototyping", "Framer", "Figma", "UX Research"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14116,12 +11143,7 @@
         "description": "Contributed to the frontend rewrite."
       }
     ],
-    "skills": [
-      "SQL",
-      "NumPy",
-      "Airflow",
-      "OpenCV"
-    ],
+    "skills": ["SQL", "NumPy", "Airflow", "OpenCV"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14153,13 +11175,7 @@
         "description": "Built data pipelines for reporting."
       }
     ],
-    "skills": [
-      "Design Systems",
-      "UX Research",
-      "Framer",
-      "Motion Design",
-      "Airflow"
-    ],
+    "skills": ["Design Systems", "UX Research", "Framer", "Motion Design", "Airflow"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14176,16 +11192,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "GitHub Actions",
-      "AWS",
-      "Nginx",
-      "Redis"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional",
-      "AWS Cloud Practitioner"
-    ],
+    "skills": ["GitHub Actions", "AWS", "Nginx", "Redis"],
+    "certifications": ["Neo4j Certified Professional", "AWS Cloud Practitioner"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/dev-tandon-8020": {
@@ -14201,17 +11209,8 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "Design Systems",
-      "Motion Design",
-      "Figma",
-      "UX Research",
-      "Prototyping",
-      "Spark"
-    ],
-    "certifications": [
-      "Neo4j Certified Professional"
-    ],
+    "skills": ["Design Systems", "Motion Design", "Figma", "UX Research", "Prototyping", "Spark"],
+    "certifications": ["Neo4j Certified Professional"],
     "source": "synthetic_seed"
   },
   "https://linkedin.com/in/vedant-nair-3035": {
@@ -14227,12 +11226,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "DuckDB",
-      "dbt",
-      "Spark",
-      "Pandas"
-    ],
+    "skills": ["DuckDB", "dbt", "Spark", "Pandas"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14249,11 +11243,7 @@
       }
     ],
     "experience": [],
-    "skills": [
-      "React Native",
-      "Swift",
-      "Firebase"
-    ],
+    "skills": ["React Native", "Swift", "Firebase"],
     "certifications": [],
     "source": "synthetic_seed"
   },
@@ -14278,11 +11268,7 @@
         "description": "Worked on internal tooling."
       }
     ],
-    "skills": [
-      "LoRaWAN",
-      "Embedded C",
-      "Redis"
-    ],
+    "skills": ["LoRaWAN", "Embedded C", "Redis"],
     "certifications": [],
     "source": "synthetic_seed"
   }
