@@ -1,159 +1,147 @@
-# ⚡ Ignite Hackathon Stack (Monorepo)
+# ⚡ PersonaCRM — Universal Context Layer for Hackathon Organizers
 
-An ultra-fast, zero-friction monorepo template built for hackathons.
-Pre-configured with **React + Vite**, **Express Node.js**, **CORS**, **Auto-deploy CI/CD on Vercel & Render**, **Anti-Sleep Keep-Alive**, **NVIDIA Nemotron 3.5 30B AI (5-Key Rotation)**, and **Pre-commit Automated Quality Checks**.
-
-> 👥 **Collaborator / Teammate Quickstart**: Read [COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) for ready-to-use AI prompts and rapid hacking instructions!
-> 📚 **Neo4j + Cognee + Render Workflows Deep Dive**: Read [study.md](./study.md) for the complete architectural analysis, code templates, and winning project playbooks!
-> 📡 **Full API Reference + PS-Drop Playbook**: Read [backend/API_DOCS.md](./backend/API_DOCS.md) for every microservice endpoint and how to connect them on a new problem statement.
-> 🎓 **GraphAcademy Applied Summary**: Read [courses.md](./courses.md) — the 4 core Neo4j courses distilled into project-ready patterns (modeling, refactoring, GraphRAG, agent memory) mapped to this stack.
+> **Ignite with Delhi · Context Layer Track**  
+> *Transforming dead participant databases into an intelligent, verified Knowledge Graph with zero-hallucination AI scouting, claim-gap detection, and automated talent matching.*
 
 ---
 
-## 📁 Project Structure
+## 📌 Executive Summary
+
+Most developer communities and hackathon platforms store user data in silos: a flat registration CSV here, an attendance log there. None of these fragments reveal who a developer actually is: **what they build, what they are genuinely good at, and how their reliability evolves over time.**
+
+When an organizer plans their next hackathon, they face high-stakes questions:
+- *Who are our top PyTorch builders from Delhi colleges who actually ship and win?*
+- *Who won a prize in past editions but has gone quiet in the last 90 days?*
+- *Who claims AI/ML on their form but has an empty GitHub profile (Claim Gap)?*
+- *Who would make a reliable, patient mentor for beginner tracks?*
+
+**PersonaCRM** builds a living **Graph Context Layer (Neo4j AuraDB)** over 600 past participants across 24 hackathons. It cross-verifies platform submissions against external GitHub commit histories, synthesizes behavioral personas, and exposes the entire context layer to organizers through an instant, **zero-hallucination AI Scout**.
+
+---
+
+## 🏛️ Architecture & System Design
+
+PersonaCRM follows a strict 3-tier architecture separating raw storage, context synthesis, and downstream intelligence:
 
 ```
-ignite_with_delhi/
-├── frontend/                  # React + Vite Client
-│   ├── src/
-│   │   ├── App.jsx            # Live Backend Monitor & API Playground
-│   │   ├── index.css          # Glassmorphism Modern Dark UI
-│   │   └── main.jsx
-│   ├── vercel.json            # SPA rewrites & Vercel deployment config
-│   └── package.json
-│
-├── backend/                   # Express.js REST API
-│   ├── server.js              # Express server with /health, /api endpoints & CORS
-│   ├── keepAlive.js           # Internal self-pinger to prevent Render sleep
-│   └── package.json
-│
-├── .github/
-│   └── workflows/
-│       ├── ci.yml             # Code formatting & build verification on push
-│       └── keep_alive.yml     # Cron job pinging Render every 10 min
-│
-├── scripts/
-│   └── keep_alive.js          # Standalone ping script
-│
-├── render.yaml                # Render Infrastructure-as-Code Blueprint
-├── .husky/                    # Git pre-commit hooks for auto-formatting
-└── package.json               # Monorepo unified commands
+┌──────────────────────────────────────────────────────────────────────────┐
+│                             PRESENTATION TIER                            │
+│   React 18 + Vite 6 · Tailwind CSS · Fraunces + IBM Plex Design System   │
+│                                                                          │
+│  [/crm] Directory & Drawer │ [/crm/scout] AI Scout │ [/crm/intake] Intake│
+└────────────────────────────────────▲─────────────────────────────────────┘
+                                     │ REST / Streaming
+┌────────────────────────────────────▼─────────────────────────────────────┐
+│                           CONTEXT LAYER TIER                             │
+│                                                                          │
+│  ┌───────────────────────┐   ┌────────────────────────────────────────┐  │
+│  │   Neo4j AuraDB Graph  │   │        Context Synthesis Engine        │  │
+│  │  7,500+ Nodes         │◄──┤  • Independent Evidence Formula        │  │
+│  │  21,000+ Relationships│   │  • Least-Squares Trajectory Regression │  │
+│  │  Multi-Hop Traversal  │   │  • Claim-vs-Evidence Gap Detection     │  │
+│  └───────────────────────┘   └────────────────────────────────────────┘  │
+│                                                   ▲                      │
+│                                                   │ Ingestion            │
+│  ┌───────────────────────────┐       ┌────────────┴───────────────────┐  │
+│  │ Cognee Semantic GraphRAG  │       │  Deterministic Entity Resolver │  │
+│  │ (Unstructured Text & PDF) │       │  (Exact -> Fuzzy -> Disambig)  │  │
+│  └───────────────────────────┘       └────────────────────────────────┘  │
+└────────────────────────────────────▲─────────────────────────────────────┘
+                                     │ Batch & Real-Time Sync
+┌────────────────────────────────────▼─────────────────────────────────────┐
+│                             RAW DATA TIER                                │
+│   Platform Database: Users, Participations, Projects, Results, Mentors   │
+│   External Data: GitHub Commits, Repositories, LinkedIn History          │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 Quick Start (Local Development)
+## ✨ Key Capabilities & Features
 
-### 1. Install All Dependencies
+### 1. 🗃️ Talent Directory & Profile Drawer (`/crm`)
+- **600 Candidate Directory**: High-density 32px rows, live engagement score meter, facet chips (College, Skill, Persona, Status), and 25-per-page pagination.
+- **Keyboard-First Navigation**: Use `j` and `k` to navigate rows, `Enter` to open profile drawer, and `Esc` to close.
+- **7-Section Context Profile Drawer**:
+  - **⚠️ Claim-vs-Evidence Gap**: Flags candidates whose self-reported resume claims lack verified GitHub or project backing (e.g., *"Declared Machine Learning; GitHub is 88% JavaScript/FastAPI"*).
+  - **Behavioral Personas**: Deterministic badges (`Serial Winner`, `Rising Star`, `Dormant High-Potential`, `Consistent Builder`, `Starter, Not Finisher`, `Ghost`).
+  - **Temporal Trajectory & Tech Drift**: Chronological score progression via SVG sparkline and technology drift tracking (*Set difference between earliest and latest projects*).
+  - **Verifiable Evidence Trail**: Every single claim links directly to the originating hackathon, project repo, or commit log.
 
+### 2. 🤖 AI Scout Command Center (`/crm/scout`)
+- **58% / 42% Responsive Split Screen**: Real-time candidate table on the left, natural language intelligence briefing on the right.
+- **Zero-Hallucination & Sub-100ms Latency**:
+  - **Tier 1 Composable Cypher Templates**: Executes pre-compiled graph queries in <100ms without LLM latency or hallucination risk.
+  - **Tier 2 Guarded Text2Cypher**: NVIDIA Nemotron with schema injection and AST read-only enforcement (`CREATE`/`DELETE`/`DROP` blocked).
+- **First-Class Disambiguation**: Proactively detects identical names (e.g., *Shiv Sharma at IIT Delhi* vs *Shiv Sharma at Amity Noida*) and prompts the organizer to choose with interactive cards.
+- **Interactive Citation Grounding**: Clicking numbered chips (`[1]`, `[2]`) in the briefing scrolls and flashes the corresponding table row in glowing gold for 600ms.
+- **Match Reason Differentiator**: Explicit qualification reasoning displayed per row.
+- **Downstream Action Bar**: Multi-select candidates to trigger batch hackathon invites or mentor assignments.
+
+### 3. ⚡ Real-Time Participant Intake (`/crm/intake`)
+- **Dynamic Ingestion Form**: 440px form with drag-and-drop resume PDF validation (≤10MB) and one-click sample loader.
+- **5-Stage Live Concurrent Stepper**:
+  - Stage 1: Ingest PDF & extract text
+  - **Stages 2 & 3 run concurrently**: External GitHub commit verification and Neo4j graph resolution execute in parallel.
+  - Stage 4: Claim-gap and hidden strength derivation
+  - Stage 5: Context narrative generation
+- **Live Elapsed Stopwatch** and real-time **Cognee Async Indexing** status.
+- **Instant Profile Swap**: Form transforms into an actionable profile card with deep links: *"View in database →"* and *"Ask the Scout about them →"*.
+
+### 4. 🕸️ Interactive Knowledge Graph Explorer (`/crm/graph`)
+- Live 2D force-directed WebGL/Canvas simulation connected to Neo4j AuraDB.
+- Visual node encoding: Gold concentric circles for Winners, Green squares for Hackathons, Red triangles for Skill hubs, Orange diamonds for Prize projects, and Hollow squares for Colleges.
+- **Click-to-Trace**: Click any person node to illuminate their entire hackathon, team, project, and skill network.
+
+### 5. 🌐 Domain Generalizability
+- The context layer is strictly domain-agnostic.
+- Swap `config/domain.hackathon.json` with `config/domain.fooddelivery.json` to immediately repurpose the engine for delivery partner retention, customer spending patterns, and driver churn prediction with zero code changes.
+
+---
+
+## 🧪 Evaluator Verification & Quick Test Guide
+
+Start the servers locally:
 ```bash
-# In the root directory:
-npm install
-npm --prefix frontend install
-npm --prefix backend install
+# Terminal 1: Backend
+npm run dev:backend
+
+# Terminal 2: Frontend
+npm run dev:frontend
 ```
+Open **[http://localhost:5173/crm](http://localhost:5173/crm)** in your browser.
 
-### 2. Run Frontend + Backend Concurrently
+### Recommended Evaluation Prompts (in AI Scout `/crm/scout`):
 
-```bash
-npm run dev
-```
-
-- **Frontend UI (Live Vercel)**: [https://frontend-beryl-seven-82.vercel.app](https://frontend-beryl-seven-82.vercel.app)
-- **Backend API (Live Render)**: [https://ignite-backend-kt07.onrender.com](https://ignite-backend-kt07.onrender.com)
-- **Backend Health Check**: [https://ignite-backend-kt07.onrender.com/health](https://ignite-backend-kt07.onrender.com/health)
-- **NVIDIA AI Status**: [https://ignite-backend-kt07.onrender.com/api/ai/status](https://ignite-backend-kt07.onrender.com/api/ai/status)
-- **Local Frontend**: [http://localhost:5173](http://localhost:5173)
-- **Local Backend**: [http://localhost:5001](http://localhost:5001)
-
----
-
-## 🤖 NVIDIA AI Quick-Connect (Nemotron 3.5 Lightning 30B)
-
-Pre-configured with **5-Key Automatic Pool Rotation & Failover**. Never hit rate limits during demo!
-
-### AI Endpoints:
-
-- `GET /api/ai/status`: Check model status & active key pool.
-- `POST /api/ai/generate`:
-  ```json
-  {
-    "prompt": "Your hackathon prompt here",
-    "systemPrompt": "Optional system prompt",
-    "temperature": 0.6,
-    "maxTokens": 1024
-  }
-  ```
-- `POST /api/ai/chat`:
-  ```json
-  {
-    "messages": [
-      { "role": "system", "content": "You are an assistant." },
-      { "role": "user", "content": "Hello!" }
-    ]
-  }
-  ```
+| Test Category | Prompt to Enter | Expected Result | Response Time |
+| :--- | :--- | :--- | :---: |
+| **Ambiguity & Identity** | `Is Shiv Sharma in our database?` | Triggers **2-Card Disambiguation UI** (IIT Delhi vs Amity Noida) | **~90ms** |
+| **Hallucination Check** | `Is Aarav Malhotra in our database?` | Deterministic **"Not in database"** — zero fake profiles | **~15ms** |
+| **Typo Tolerance** | `Do we have anyone called Ananya Iyar?` | Auto-corrects to Ananya Iyer (`U0007`) via fuzzy resolver | **~10ms** |
+| **Fraud / Claim Gap** | `Tell me about Devansh Kapoor` | Explains ML claim vs 88% JS/FastAPI reality | **~2ms** |
+| **Churned Talent** | `Who should we re-invite who has gone quiet since winning?` | Filters `Dormant High-Potential` past podium winners | **~350ms** |
+| **Mentor Scouting** | `Who would make a good mentor this year?` | Ranks past winners by peer review & submission rate | **~130ms** |
+| **Hinglish Query** | `Jo log jeete hain lekin ab gayab hain unhe dikhao` | Native Hinglish extraction of dormant winners | **~190ms** |
+| **Track Discovery** | `Find ML builders from Delhi colleges who have won something` | Full Cypher query reveal + table citations | **~300ms** |
 
 ---
 
-## 🌐 1-Time Deployment Setup (Do This Once)
+## 🛠️ Technology Stack
 
-### 🅰️ Deploy Backend to Render (Free)
-
-1. Go to [dashboard.render.com](https://dashboard.render.com/) and click **New +** -> **Web Service**.
-2. Connect your GitHub repository: `satvikkesarwani/ignite_with_delhi`.
-3. Fill in these settings:
-   - **Name**: `ignite-backend` (or your hackathon project name)
-   - **Root Directory**: `backend` _(CRITICAL)_
-   - **Runtime**: `Node`
-   - **Build Command**: `npm install`
-   - **Start Command**: `npm start`
-   - **Plan**: `Free`
-4. Add Environment Variable (Optional for self-ping):
-   - `RENDER_EXTERNAL_URL` = `https://your-service-name.onrender.com`
-5. Click **Create Web Service**. Copy your backend URL once live!
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | React 18, Vite 6, Tailwind CSS | High-density CRM client, Popstate routing |
+| **Design System** | Fraunces (Serif), IBM Plex Sans & Mono | Production typography, 32px dense tables |
+| **Primary Graph DB** | **Neo4j AuraDB** (Cloud) | 7,500+ nodes, 21,000+ relationships, multi-hop Cypher |
+| **Semantic Memory** | **Cognee** (Python FastAPI) | ECL pipeline (Extract-Cognify-Load) for GraphRAG |
+| **LLM & Inference** | **NVIDIA Nemotron 3.5 30B** | 5-key pool rotation, context narrative synthesis |
+| **Backend API** | Node.js Express (ESM) | REST API, streaming endpoints, route guardrails |
+| **CI / CD** | GitHub Actions, Prettier, ESLint | Automated linting, code quality & test verification |
 
 ---
 
-### 🅱️ Deploy Frontend to Vercel (Free)
+## 👥 Ignite with Delhi — Team
 
-1. Go to [vercel.com/new](https://vercel.com/new) and import `satvikkesarwani/ignite_with_delhi`.
-2. In Project Settings:
-   - **Root Directory**: Click edit and select `frontend` _(CRITICAL)_
-   - **Framework Preset**: `Vite`
-3. In **Environment Variables**:
-   - `VITE_API_URL` = `https://your-backend-name.onrender.com` (Your live Render URL from step A)
-4. Click **Deploy**.
-
----
-
-## 🛡️ Render Anti-Sleep Keep-Alive Setup
-
-Render free tier sleeps after 15 minutes of inactivity (causing 50s+ cold starts). We have 3 layers to prevent this:
-
-1. **GitHub Actions Workflow** (Automated):
-   - In your GitHub repo, go to **Settings** -> **Secrets and variables** -> **Actions** -> **New repository secret**.
-   - Direct link: [https://github.com/satvikkesarwani/ignite_with_delhi/settings/secrets/actions](https://github.com/satvikkesarwani/ignite_with_delhi/settings/secrets/actions)
-   - Name: `RENDER_BACKEND_URL`
-   - Value: `https://your-backend-name.onrender.com`
-   - The workflow will automatically ping your backend every 10 minutes!
-2. **Internal Self-Pinger**:
-   - Backend automatically pings its own `/health` if `RENDER_EXTERNAL_URL` is set in Render environment.
-3. **Local Runner Script**:
-   - Run `node scripts/keep_alive.js https://your-backend-name.onrender.com` anywhere.
-
----
-
-## 🔥 Hackathon Workflow (Tomorrow)
-
-Whenever you make changes during the hackathon:
-
-```bash
-git add .
-git commit -m "feat: added awesome feature"
-git push origin main
-```
-
-1. **Pre-commit hook**: Automatically formats code and removes formatting issues.
-2. **GitHub Actions CI**: Runs quality and build checks.
-3. **Vercel & Render**: Automatically detect the push to `main` and deploy both frontend & backend in ~60 seconds!
+- **Track:** Context Layer Track
+- **Project:** PersonaCRM
+- **Repository:** [https://github.com/satvikkesarwani/ignite_with_delhi](https://github.com/satvikkesarwani/ignite_with_delhi)
