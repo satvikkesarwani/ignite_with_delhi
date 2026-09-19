@@ -1077,6 +1077,20 @@ const shivs = users.filter((u) => u.full_name.trim() === 'Shiv Sharma');
 const neo4jWinner = results.find((r) => r.prize_track === 'Best use of Neo4j' && projects.find((p) => p.project_id === r.project_id)?.hackIdx === 22);
 const neo4jWinnerProject = projects.find((p) => p.project_id === neo4jWinner?.project_id);
 
+/** People a user has shared a team with more than once, computed from participations — never hard-coded. */
+const repeatMatesOf = (uid) => {
+  const teamsOf = (u) => participations.filter((p) => p.user_id === u && p.team_id).map((p) => p.team_id);
+  const mine = new Set(teamsOf(uid));
+  const counts = new Map();
+  for (const p of participations) {
+    if (p.user_id === uid || !p.team_id || !mine.has(p.team_id)) continue;
+    counts.set(p.user_id, (counts.get(p.user_id) || 0) + 1);
+  }
+  const repeats = [...counts.entries()].filter(([, n]) => n > 1);
+  const nameOf = (u) => users.find((x) => x.user_id === u)?.full_name.trim();
+  return repeats.length ? repeats.map(([u, n]) => `${nameOf(u)} (${u}) — ${n} times`).join('; ') : 'No one more than once.';
+};
+
 const evalQuestions = [
   { id: 'Q01', type: 'existence', question: 'Is Ananya Iyer in our database?', expected_answer: 'Yes — U0007, IIIT Delhi, ML/AI.', evidence_files: ['users.csv'] },
   { id: 'Q02', type: 'ambiguity', question: 'Is Shiv Sharma in our database?', expected_answer: `Ambiguous — ${shivs.length} people share that name (${shivs.map((s) => `${s.user_id} at ${s.collegeShort}`).join(', ')}). The agent must ask which one.`, evidence_files: ['users.csv'] },
@@ -1094,7 +1108,7 @@ const evalQuestions = [
   { id: 'Q14', type: 'ranking', question: "What is Shiv Sharma from IIT Delhi's strongest language on GitHub?", expected_answer: `Python (${githubProfiles['shivsharma-ml'].top_languages[0].pct}% of ${githubProfiles['shivsharma-ml'].public_repos} repos).`, evidence_files: ['github_profiles.json'] },
   { id: 'Q15', type: 'ranking', question: 'Who won the Best use of Neo4j track at the Data & Graph event?', expected_answer: `Project ${neo4jWinnerProject?.title} (${neo4jWinnerProject?.project_id}), which includes Vikram Rao (U0013).`, evidence_files: ['results.csv'] },
   { id: 'Q16', type: 'trend', question: 'Who has won something but gone quiet?', expected_answer: `Rohan Mehta (U0008) — ${u8.prizes} prizes, last active ${u8.lastActive}.`, evidence_files: ['results.csv', 'interactions.csv'] },
-  { id: 'Q17', type: 'count', question: 'Who has Shiv Sharma from IIT Delhi teamed up with more than once?', expected_answer: 'Ananya Iyer (U0007) — twice.', evidence_files: ['participations.csv', 'teams.csv'] },
+  { id: 'Q17', type: 'count', question: 'Who has Shiv Sharma from IIT Delhi teamed up with more than once?', expected_answer: repeatMatesOf('U0001'), evidence_files: ['participations.csv', 'teams.csv'] },
   { id: 'Q18', type: 'count', question: "What is Shiv Sharma from IIT Delhi's average mentor rating?", expected_answer: String(u1.avgMentor), evidence_files: ['mentor_sessions.csv'] },
   { id: 'Q19', type: 'existence', question: 'Does anyone declare machine learning skills they cannot evidence?', expected_answer: 'Devansh Kapoor (U0015) — declares Machine Learning, Deep Learning and PyTorch, but GitHub is 88% JavaScript across 4 repos and LinkedIn says Frontend Developer Intern.', evidence_files: ['users.csv', 'github_profiles.json'] },
   { id: 'Q20', type: 'count', question: 'How many people are in our database?', expected_answer: String(users.length), evidence_files: ['users.csv'] },

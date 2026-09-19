@@ -59,6 +59,30 @@ export function matchCollege(text) {
   return null;
 }
 
+/**
+ * Like matchCollege, but returns a college ONLY when the text points at exactly one.
+ * "amity" -> Amity Noida; "delhi" -> null (six colleges have Delhi in their name).
+ * Used to read a college hint out of the middle of a sentence, where a wrong guess
+ * would silently pick the wrong person.
+ */
+export function uniqueCollege(text) {
+  const t = String(text || '')
+    .trim()
+    .toLowerCase();
+  if (t.length < 3) return null;
+  if (COLLEGE_INDEX.has(t)) return COLLEGE_INDEX.get(t);
+  if (t.length < 4) return null;
+  const hits = new Map();
+  for (const c of COLLEGES) {
+    for (const spelling of [c.name, c.short, ...c.variants]) {
+      const sp = spelling.toLowerCase();
+      if (sp.includes(t) || (t.includes(sp) && sp.length >= 3))
+        hits.set(c.name, { name: c.name, short: c.short });
+    }
+  }
+  return hits.size === 1 ? [...hits.values()][0] : null;
+}
+
 /** Every spelling of a college, for Cypher `IN` filters against messy source rows. */
 export function collegeSpellings(nameOrShort) {
   const canon = canonicalCollege(nameOrShort);

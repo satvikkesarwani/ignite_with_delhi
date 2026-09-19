@@ -17,7 +17,14 @@
 import crypto from 'crypto';
 import { resolve } from './resolveService.js';
 import { segment, parseSegment } from './retrievalService.js';
-import { profileStore, canonicalCollege, toRow } from './profileStore.js';
+import {
+  profileStore,
+  canonicalCollege,
+  toRow,
+  normalizeName,
+  uniqueCollege,
+  collegeSpellings,
+} from './profileStore.js';
 import { generateChat } from './aiService.js';
 import { neo4jService } from './neo4jService.js';
 import { memoryService } from './memoryService.js';
@@ -46,6 +53,70 @@ const remember = (s, role, text) => {
 const NOT_NAMES =
   /\b(developers?|engineers?|builders?|people|students?|participants?|users?|members?|everyone|anyone|someone|hackathons?|winners?|mentors?|teams?|projects?|colleges?|skills?|top|best|most|all)\b/i;
 
+const escRe = (t) => String(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Find a KNOWN person's full name anywhere in the sentence (the gazetteer).
+ *
+ * Matching sentence shapes ("tell me about X", "is X in our database") only finds names in
+ * the shapes we thought of. "How many prizes has Ananya Iyer won?" is none of them, so it
+ * fell through to a segment search and answered "177 people match". A known name is a known
+ * name wherever it sits, so scan for it. Longest match wins.
+ */
+function findKnownName(message) {
+  const hay = ` ${normalizeName(message)} `;
+  let best = null;
+  for (const p of profileStore.all()) {
+    const n = normalizeName(p.identity.full_name);
+    if (n.length >= 5 && hay.includes(` ${n} `) && (!best || n.length > best.length)) best = n;
+  }
+  return best;
+}
+
+/**
+ * "Shiv Sharma from IIT Delhi's average mentor rating" -> "from IIT Delhi", so two people who
+ * share a name can be told apart. Only accepts a college that is unambiguous.
+ */
+function collegeAfterName(message, name) {
+  const tokens = name.split(' ').map(escRe).join('[^A-Za-z0-9]+');
+  const m = message.match(
+    new RegExp(`${tokens}[^A-Za-z0-9]+(?:from|at|of|in)\\s+([^?.!,;]+)`, 'i')
+  );
+  if (!m) return null;
+  const words = m[1]
+    .replace(/['’]s\b/g, '')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 6);
+  // Shortest prefix that names exactly one college ("IIT Delhi", "Amity") — not the longest, which
+  // swallowed "IIT Delhi teamed up with more" and then deleted the question along with it.
+  for (let k = 1; k <= words.length; k++) {
+    const college = uniqueCollege(words.slice(0, k).join(' '));
+    if (!college) continue;
+    // Extend only along the college's own name: "Delhi Technological" -> "... University".
+    const own = new Set(
+      collegeSpellings(college.name)
+        .join(' ')
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter(Boolean)
+    );
+    let end = k;
+    while (end < words.length && own.has(words[end].toLowerCase().replace(/[^a-z0-9]/g, ''))) end++;
+    return words.slice(0, end).join(' ');
+  }
+  return null;
+}
+
+/** Remove the person (and their college hint) from the sentence, so what is left is the question. */
+function stripName(text, query) {
+  const tokens = normalizeName(query).split(' ').filter(Boolean);
+  if (!tokens.length) return text;
+  return text
+    .replace(new RegExp(tokens.map(escRe).join('[^A-Za-z0-9]+'), 'i'), ' ')
+    .replace(/['’]s\b/, '');
+}
+
 /** Pull a person's name (or email, or id) out of a sentence. Returns a raw string or null. */
 function extractName(message) {
   const m = message.trim();
@@ -53,6 +124,13 @@ function extractName(message) {
   if (id) return id[0].toUpperCase();
   const email = m.match(/\S+@\S+\.\S+/);
   if (email) return email[0];
+
+  // 1. A known person's full name anywhere in the sentence — the most reliable signal there is.
+  const known = findKnownName(m);
+  if (known) {
+    const college = collegeAfterName(m, known);
+    return college ? `${known} from ${college}` : known;
+  }
 
   const patterns = [
     /\b(?:is|are)\s+(.+?)\s+(?:in|on|part of|a member of|registered (?:in|on|with)|listed (?:in|on)|present in)\s+(?:our|the|this)\s+(?:database|db|platform|system|user base|records|directory|list)/i,
@@ -593,7 +671,7 @@ export async function chat({ message, sessionId }) {
       /\b(in (?:our|the) (?:database|platform|user base|system|records|directory)|do we have|is there|anyone (?:called|named))\b/i.test(
         text
       );
-    const remaining = userId ? text.replace(/\bU\d{4}\b/i, '') : text.replace(nameQuery, '');
+    const remaining = userId ? text.replace(/\bU\d{4}\b/i, '') : stripName(text, nameQuery);
     const facet = facetAnswer(profile, remaining);
 
     if (isExistence && !facet) {

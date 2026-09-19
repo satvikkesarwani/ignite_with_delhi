@@ -115,7 +115,7 @@
     "id": "Q17",
     "type": "count",
     "question": "Who has Shiv Sharma from IIT Delhi teamed up with more than once?",
-    "expected_answer": "Ananya Iyer (U0007) — twice.",
+    "expected_answer": "Ananya Iyer (U0007) — 2 times; Kunal Nanda (U0281) — 2 times",
     "evidence_files": ["participations.csv", "teams.csv"]
   },
   {

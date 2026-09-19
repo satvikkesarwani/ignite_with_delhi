@@ -492,6 +492,25 @@ function buildEvidence(p, f, skills) {
 // The narrative — the only LLM call, and it happens offline at build time so
 // the agent can answer "tell me about X" with zero model calls.
 
+/** On a retry, say precisely why the last draft was rejected — far more effective than just re-rolling. */
+function retryNote(reason) {
+  if (!reason || reason === 'no attempt') return '';
+  const fixes = {
+    'invents a year of study':
+      'It described a year of study ("third-year" etc.). Do not mention year of study at all; say only "graduating in <year>".',
+    'too short':
+      'It was too short. Write 4 to 6 full sentences covering identity, evidenced skills, behaviour over time, and a judgement line.',
+    'too long': 'It was too long. Keep it to 5 sentences, under 1200 characters.',
+    'uses gendered pronouns': 'It used gendered pronouns. Use the person\'s name or "they" only.',
+    'does not end with a full stop (truncated)':
+      'It was cut off mid-sentence. Write a shorter paragraph and end it with a full stop.',
+    'contains a timestamp fragment': 'It contained a timestamp. Never write dates in numeric form.',
+    'leaks a project id':
+      'It mentioned a project id. Refer to projects by their title or not at all.',
+  };
+  return `\n\nYour previous draft was rejected. ${fixes[reason] || reason}`;
+}
+
 const NARRATIVE_RULES = [
   'Hard rules:',
   '- Do not mention confidence numbers, project IDs (like P0145) or the score of any individual project.',
@@ -573,7 +592,7 @@ export async function generateNarrative(profile, cfg) {
   // truncation mid-clause). Validate hard, retry once at a higher temperature, and let the
   // caller fall back to the deterministic template rather than store garbage.
   let lastReason = 'no attempt';
-  for (const temperature of [0.4, 0.6]) {
+  for (const temperature of [0.4, 0.5, 0.6]) {
     const res = await generateChat({
       messages: [
         {
@@ -582,7 +601,7 @@ export async function generateNarrative(profile, cfg) {
         },
         {
           role: 'user',
-          content: `Profile data:\n${JSON.stringify(payload, null, 1)}\n\nWrite the profile now.`,
+          content: `Profile data:\n${JSON.stringify(payload, null, 1)}\n\nWrite the profile now.${retryNote(lastReason)}`,
         },
       ],
       temperature,

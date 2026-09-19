@@ -22,7 +22,12 @@ for (const q of qs) {
   const expected = String(q.expected_answer);
   // The expected answer starts with the number the agent must state.
   const lead = expected.match(/^[\d.]+/)?.[0];
-  const ok = lead ? new RegExp(`(^|[^\\d.])${lead.replace('.', '\\.')}([^\\d]|$)`).test(r.answer) : false;
+  const numeric = lead ? new RegExp(`(^|[^\\d.])${lead.replace('.', '\\.')}([^\\d]|$)`).test(r.answer) : false;
+  // "has no prizes" is a correct way to say 0
+  // A name-led expectation ("Ananya Iyer (U0007) — 2 times; ...") passes when every named person appears.
+  const names = lead ? [] : expected.match(/[A-Z][a-z]+ [A-Z][a-z]+/g) || [];
+  const namesOk = names.length > 0 && names.every((n) => r.answer.includes(n));
+  const ok = numeric || namesOk || (lead === '0' && /\b(no|none|zero)\b/i.test(r.answer));
   if (ok) pass++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  ${q.id}  expected ${expected.slice(0, 40).padEnd(40)}  [${r.strategy}, llm=${r.llm_calls}]`);
   if (!ok) console.log(`        got: ${r.answer.slice(0, 200)}`);
