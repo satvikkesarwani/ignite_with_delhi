@@ -1,0 +1,859 @@
+{
+  "user_id": "U0007",
+  "version": 1,
+  "built_at": "2026-09-19T08:17:46.229Z",
+  "identity": {
+    "full_name": "Ananya Iyer",
+    "email": "ananya.iyer@iiitd.ac.in",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "ML/AI",
+    "github_username": "ananya-iyer",
+    "linkedin_url": "https://linkedin.com/in/ananya-iyer-007",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 8,
+    "hackathons_attended": 8,
+    "no_shows": 0,
+    "projects_submitted": 8,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2024-06-25",
+        "hackathon": "Yamuna Build Fest",
+        "hackathon_id": "H005",
+        "prize_track": "Overall",
+        "project_id": "P0047",
+        "project_title": "DoseDiary",
+        "rank": 1,
+        "score": 91
+      },
+      {
+        "date": "2025-06-12",
+        "hackathon": "ProtoDelhi",
+        "hackathon_id": "H014",
+        "prize_track": "Overall",
+        "project_id": "P0140",
+        "project_title": "ReportReader",
+        "rank": 1,
+        "score": 93
+      },
+      {
+        "date": "2025-07-23",
+        "hackathon": "CircuitBreak",
+        "hackathon_id": "H015",
+        "prize_track": "Overall",
+        "project_id": "P0152",
+        "project_title": "SignSpeak",
+        "rank": 2,
+        "score": 88
+      },
+      {
+        "date": "2026-05-23",
+        "hackathon": "Ignite Delhi Monsoon II",
+        "hackathon_id": "H022",
+        "prize_track": "Best use of Neo4j",
+        "project_id": "P0233",
+        "project_title": "MeetingMemory",
+        "rank": null,
+        "score": 90
+      },
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Best use of Tavily",
+        "project_id": "P0256",
+        "project_title": "PromptForge",
+        "rank": null,
+        "score": 92
+      }
+    ],
+    "prize_count": 5,
+    "projects": [
+      {
+        "project_id": "P0021",
+        "title": "MeetingMemory",
+        "date": "2024-04-06",
+        "score": 33,
+        "tech": ["FastAPI", "Neo4j", "PyTorch", "Express", "Tailwind CSS"]
+      },
+      {
+        "project_id": "P0047",
+        "title": "DoseDiary",
+        "date": "2024-06-25",
+        "score": 91,
+        "tech": ["PyTorch", "Transformers", "LangChain", "HuggingFace", "OpenAI API"]
+      },
+      {
+        "project_id": "P0089",
+        "title": "FanFund",
+        "date": "2024-12-04",
+        "score": 67,
+        "tech": ["Go", "FastAPI", "gRPC", "Hardhat"]
+      },
+      {
+        "project_id": "P0140",
+        "title": "ReportReader",
+        "date": "2025-06-12",
+        "score": 93,
+        "tech": ["PyTorch", "RAG", "FastAPI"]
+      },
+      {
+        "project_id": "P0152",
+        "title": "SignSpeak",
+        "date": "2025-07-23",
+        "score": 88,
+        "tech": ["Airflow", "tRPC", "Firebase", "Express", "Spark"]
+      },
+      {
+        "project_id": "P0196",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 53,
+        "tech": ["Tableau", "MQTT", "LoRaWAN"]
+      },
+      {
+        "project_id": "P0233",
+        "title": "MeetingMemory",
+        "date": "2026-05-23",
+        "score": 90,
+        "tech": ["Transformers", "Vector Databases", "Next.js"]
+      },
+      {
+        "project_id": "P0256",
+        "title": "PromptForge",
+        "date": "2026-08-08",
+        "score": 92,
+        "tech": ["HuggingFace", "Vector Databases", "Redis"]
+      }
+    ],
+    "best_rank": 1,
+    "avg_score": 75.9,
+    "first_seen": "2024-04-06",
+    "last_active": "2026-08-21",
+    "days_since_active": 29,
+    "mentor_sessions": 6,
+    "avg_mentor_score": 4.83,
+    "interactions": 34,
+    "interactions_by_type": {
+      "discord_message": 10,
+      "comment": 8,
+      "question": 8,
+      "profile_update": 4,
+      "answered_question": 2,
+      "workshop_attended": 2
+    },
+    "workshops": 2,
+    "answers_given": 2,
+    "distinct_teammates": 12,
+    "repeat_teammates": [
+      {
+        "name": "Devansh Mittal",
+        "times": 2,
+        "user_id": "U0061"
+      },
+      {
+        "name": "Pranav Gandhi",
+        "times": 2,
+        "user_id": "U0504"
+      },
+      {
+        "name": "Om Subramanian",
+        "times": 2,
+        "user_id": "U0596"
+      },
+      {
+        "name": "Shiv Sharma",
+        "times": 2,
+        "user_id": "U0001"
+      }
+    ],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 3 projects, best P0140 (scored 93)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in P0047 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0256 (scored 92)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0047 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vector Databases",
+      "cluster": "Graph",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0256 (scored 92)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.83,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "76% of 31 public repos",
+          "weight": 0.76
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0140 (scored 93)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in 3 projects, best P0140 (scored 93)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0021 (scored 33)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0233 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0021 (scored 33)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0089 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0256 (scored 92)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0047 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0196 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tableau",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0196 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0089 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LoRaWAN",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0196 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0089 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "14% of 31 public repos",
+          "weight": 0.14
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.07,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "7% of 31 public repos",
+          "weight": 0.07
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Rust",
+      "cluster": "Other",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "3% of 31 public repos",
+          "weight": 0.03
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["8 of 8 attended events produced a submission"]
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 1,
+      "evidence": ["teamed with Devansh Mittal 2 times", "teamed with Pranav Gandhi 2 times"]
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 1,
+      "evidence": ["5 prizes, best finish rank 1"]
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.85,
+      "evidence": ["34 platform interactions"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Serial Winner", "Rising Star"],
+  "trajectory": {
+    "direction": "rising",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-04-06",
+        "score": 33,
+        "project_id": "P0021"
+      },
+      {
+        "date": "2024-06-25",
+        "score": 91,
+        "project_id": "P0047"
+      },
+      {
+        "date": "2024-12-04",
+        "score": 67,
+        "project_id": "P0089"
+      },
+      {
+        "date": "2025-06-12",
+        "score": 93,
+        "project_id": "P0140"
+      },
+      {
+        "date": "2025-07-23",
+        "score": 88,
+        "project_id": "P0152"
+      },
+      {
+        "date": "2026-01-04",
+        "score": 53,
+        "project_id": "P0196"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 90,
+        "project_id": "P0233"
+      },
+      {
+        "date": "2026-08-08",
+        "score": 92,
+        "project_id": "P0256"
+      }
+    ],
+    "tech_drift": {
+      "from": ["FastAPI", "Neo4j", "PyTorch", "Express"],
+      "to": ["Vector Databases", "Next.js", "Redis"]
+    }
+  },
+  "engagement": {
+    "value": 94,
+    "components": {
+      "recency": 92,
+      "frequency": 100,
+      "depth": 85,
+      "outcome": 100
+    }
+  },
+  "narrative": "Ananya Iyer is a third-year Computer Science student at IIIT Delhi with a focus on ML/AI. She is demonstrably good at building and scoring highly on PyTorch, LangChain, HuggingFace, and Transformers projects, with evidence including a PyTorch project that scored 93 and LangChain and HuggingFace projects scoring 91 and 92 respectively. Her involvement has been consistently active across eight registered and attended hackathons, maintaining a perfect attendance record with zero no-shows and a 100% submission rate, and her performance trajectory shows a rising pattern with scores improving from 33 to 92 over time. For an organizer deciding whether to invite her, she is a reliable serial finisher who delivers strong results, though her recent activity has been quiet for 29 days, so it is worth confirming her current availability before extending an invitation.",
+  "narrative_status": "llm",
+  "evidence": [
+    {
+      "claim": "Registered for 8 hackathons, attended 8",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 8 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Yamuna Build Fest with \"DoseDiary\" (score 91)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0047",
+      "observed_at": "2024-06-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at ProtoDelhi with \"ReportReader\" (score 93)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0140",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at CircuitBreak with \"SignSpeak\" (score 88)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0152",
+      "observed_at": "2025-07-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Best use of Neo4j at Ignite Delhi Monsoon II with \"MeetingMemory\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0233",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Best use of Tavily at Ignite Delhi Grand Finale with \"PromptForge\" (score 92)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0256",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "6 mentor sessions, average rating 4.83",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "34 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "PyTorch: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: used in 3 projects, best P0140 (scored 93)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: used in P0047 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "HuggingFace: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "HuggingFace: used in 2 projects, best P0256 (scored 92)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Transformers: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Transformers: used in 2 projects, best P0047 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vector Databases: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vector Databases: used in 2 projects, best P0256 (scored 92)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Python: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.83
+    },
+    {
+      "claim": "Python: 76% of 31 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ananya-iyer",
+      "observed_at": null,
+      "confidence": 0.83
+    },
+    {
+      "claim": "RAG: used in P0140 (scored 93)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "FastAPI: used in 3 projects, best P0140 (scored 93)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

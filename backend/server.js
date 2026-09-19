@@ -11,6 +11,7 @@ import { cognifyService } from './cognifyService.js';
 import { tavilyService } from './tavilyService.js';
 import { memoryService } from './memoryService.js';
 import { logger, createLogger } from './logger.js';
+import { crmRouter } from './crmRoutes.js';
 
 dotenv.config();
 
@@ -854,6 +855,9 @@ app.post('/api/echo', (req, res) => {
     },
   });
 });
+
+// ---- PersonaCRM context-layer API (docs/CONTRACT.md). Mounted before the 404 catch-all. ----
+app.use(crmRouter);
 
 // ---- 404 catch-all: unknown routes are logged, not silently dropped ----
 app.use((req, res) => {

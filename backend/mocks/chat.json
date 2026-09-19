@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "sessionId": "mock",
+  "answer": "I found two people named Shiv Sharma — Shiv Sharma at IIT Delhi (ML/AI, 7 hackathons, 3 prizes); Shiv Sharma at Amity Noida (Backend, 2 hackathons, no prizes). Which one?",
+  "resolution": {
+    "status": "ambiguous",
+    "match_type": "exact_name",
+    "user_id": null,
+    "matches": [
+      {
+        "user_id": "U0001",
+        "full_name": "Shiv Sharma",
+        "college": "IIT Delhi",
+        "role_pref": "ML/AI",
+        "hackathons_attended": 7,
+        "prize_count": 3,
+        "distinguisher": "IIT Delhi · ML/AI · 7 hackathons"
+      },
+      {
+        "user_id": "U0002",
+        "full_name": "Shiv Sharma",
+        "college": "Amity Noida",
+        "role_pref": "Backend",
+        "hackathons_attended": 2,
+        "prize_count": 0,
+        "distinguisher": "Amity Noida · Backend · 2 hackathons"
+      }
+    ]
+  },
+  "citations": [],
+  "table": [],
+  "strategy": "resolve:ambiguous",
+  "cypher": null,
+  "llm_calls": 0,
+  "matches": [
+    {
+      "user_id": "U0001",
+      "full_name": "Shiv Sharma",
+      "college": "IIT Delhi",
+      "role_pref": "ML/AI",
+      "hackathons_attended": 7,
+      "prize_count": 3,
+      "distinguisher": "IIT Delhi · ML/AI · 7 hackathons"
+    },
+    {
+      "user_id": "U0002",
+      "full_name": "Shiv Sharma",
+      "college": "Amity Noida",
+      "role_pref": "Backend",
+      "hackathons_attended": 2,
+      "prize_count": 0,
+      "distinguisher": "Amity Noida · Backend · 2 hackathons"
+    }
+  ],
+  "latency_ms": 1
+}

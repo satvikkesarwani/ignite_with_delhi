@@ -510,7 +510,7 @@ export const STORY_USERS = [
       langs: [['C++', 57], ['C', 29], ['Python', 14]],
       bio: 'Embedded systems.',
     },
-    notes: 'Near-miss for the absent name "Aarav Malhotra". Existence check must return NOT FOUND for Malhotra and suggest Malik.',
+    notes: 'Near-miss first name for the absent "Aarav Malhotra". The existence check must return NOT FOUND for Malhotra; suggestions are ranked by similarity and are labelled as different people.',
   },
 ];
 

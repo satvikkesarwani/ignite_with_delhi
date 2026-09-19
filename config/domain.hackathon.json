@@ -161,7 +161,7 @@
     {
       "key": "mentor_material",
       "label": "Mentor material",
-      "rule": "avg_mentor_score >= 4.5 && answers_given >= 5",
+      "rule": "avg_mentor_score >= 4.5 && answers_given >= 3 && mentor_sessions >= 2",
       "score": "avg_mentor_score / 5"
     },
     {
@@ -208,7 +208,7 @@
     {
       "key": "mentor_material",
       "label": "Mentor Material",
-      "rule": "avg_mentor_score >= 4.5 && answers_given >= 5"
+      "rule": "avg_mentor_score >= 4.5 && answers_given >= 3 && mentor_sessions >= 2"
     },
     {
       "key": "consistent_builder",
@@ -276,5 +276,5 @@
       "availability": 0.1
     }
   },
-  "narrative_prompt": "You are writing a short profile of a hackathon participant for the organizer who runs the platform. Use ONLY the values in the JSON below. Never state a number that is not in the input. If a field is null, omit it entirely rather than guessing. Write 4 to 6 sentences covering, in order: who they are, what they are demonstrably good at and the evidence for it, how their involvement has changed over time, and one line of practical judgement for an organizer deciding whether to invite them. Plain, specific, unexcited prose. No bullet points, no headings, no marketing language, no emoji."
+  "narrative_prompt": "You are writing a short profile of a hackathon participant for the organizer who runs the platform. Use ONLY the values in the JSON below. Never state a number that is not in the input. If a field is null, omit it entirely rather than guessing. Write 4 to 6 sentences covering, in order: who they are, what they are demonstrably good at and the evidence for it, how their involvement has changed over time, and one line of practical judgement for an organizer deciding whether to invite them. Plain, specific, unexcited prose. No bullet points, no headings, no marketing language, no emoji. Never use gendered pronouns (he, she, his, her, him) — names do not tell you someone's pronouns. Refer to the person by name or as 'they'. Do not describe their year of study; if you mention timing, say 'graduating in <year>'."
 }

@@ -1,0 +1,490 @@
+{
+  "nodes": [
+    {
+      "id": "U0001",
+      "label": "Shiv Sharma",
+      "type": "Person",
+      "group": "Person",
+      "properties": {
+        "college": "Indian Institute of Technology Delhi",
+        "role_pref": "ML/AI"
+      }
+    },
+    {
+      "id": "H024",
+      "label": "Ignite Delhi Grand Finale",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "GenAI & Agents"
+      }
+    },
+    {
+      "id": "H021",
+      "label": "ForgeDelhi",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "GenAI & Agents"
+      }
+    },
+    {
+      "id": "H018",
+      "label": "HackYamuna",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "Open Source & DevTools"
+      }
+    },
+    {
+      "id": "H014",
+      "label": "ProtoDelhi",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "HealthTech"
+      }
+    },
+    {
+      "id": "H010",
+      "label": "Ignite Delhi Monsoon",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "Data & Graph"
+      }
+    },
+    {
+      "id": "H006",
+      "label": "Ignite Delhi Spring",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "Open Source & DevTools"
+      }
+    },
+    {
+      "id": "P0252",
+      "label": "PaperTrail",
+      "type": "Project",
+      "group": "Prize",
+      "properties": {
+        "score": 89,
+        "prize": "Best use of Cognee"
+      }
+    },
+    {
+      "id": "P0215",
+      "label": "MeetingMemory",
+      "type": "Project",
+      "group": "Project",
+      "properties": {
+        "score": 65,
+        "prize": null
+      }
+    },
+    {
+      "id": "P0185",
+      "label": "ReviewRadar",
+      "type": "Project",
+      "group": "Project",
+      "properties": {
+        "score": 70,
+        "prize": null
+      }
+    },
+    {
+      "id": "P0140",
+      "label": "ReportReader",
+      "type": "Project",
+      "group": "Prize",
+      "properties": {
+        "score": 93,
+        "prize": "rank 1"
+      }
+    },
+    {
+      "id": "P0106",
+      "label": "RouteKnot",
+      "type": "Project",
+      "group": "Prize",
+      "properties": {
+        "score": 81,
+        "prize": "rank 3"
+      }
+    },
+    {
+      "id": "P0021",
+      "label": "MeetingMemory",
+      "type": "Project",
+      "group": "Project",
+      "properties": {
+        "score": 33,
+        "prize": null
+      }
+    },
+    {
+      "id": "S:PyTorch",
+      "label": "PyTorch",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:RAG",
+      "label": "RAG",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:FastAPI",
+      "label": "FastAPI",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:Neo4j",
+      "label": "Neo4j",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:Node.js",
+      "label": "Node.js",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:Express",
+      "label": "Express",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:Python",
+      "label": "Python",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "C:Indian Institute of Technology Delhi",
+      "label": "IIT Delhi",
+      "type": "College",
+      "group": "College",
+      "properties": {}
+    },
+    {
+      "id": "U0281",
+      "label": "Kunal Nanda",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 2
+      }
+    },
+    {
+      "id": "U0007",
+      "label": "Ananya Iyer",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 2
+      }
+    },
+    {
+      "id": "U0172",
+      "label": "Rahul Verma",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 1
+      }
+    },
+    {
+      "id": "U0272",
+      "label": "Sneha Malik",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 1
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "U0001-ATTENDED-H024",
+      "source": "U0001",
+      "target": "H024",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0001-ATTENDED-H021",
+      "source": "U0001",
+      "target": "H021",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0001-ATTENDED-H018",
+      "source": "U0001",
+      "target": "H018",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0001-ATTENDED-H014",
+      "source": "U0001",
+      "target": "H014",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0001-ATTENDED-H010",
+      "source": "U0001",
+      "target": "H010",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0001-ATTENDED-H006",
+      "source": "U0001",
+      "target": "H006",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0001-BUILT-P0252",
+      "source": "U0001",
+      "target": "P0252",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0252-SUBMITTED_AT-H024",
+      "source": "P0252",
+      "target": "H024",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-BUILT-P0215",
+      "source": "U0001",
+      "target": "P0215",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0215-SUBMITTED_AT-H021",
+      "source": "P0215",
+      "target": "H021",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-BUILT-P0185",
+      "source": "U0001",
+      "target": "P0185",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0185-SUBMITTED_AT-H018",
+      "source": "P0185",
+      "target": "H018",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-BUILT-P0140",
+      "source": "U0001",
+      "target": "P0140",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0140-SUBMITTED_AT-H014",
+      "source": "P0140",
+      "target": "H014",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-BUILT-P0106",
+      "source": "U0001",
+      "target": "P0106",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0106-SUBMITTED_AT-H010",
+      "source": "P0106",
+      "target": "H010",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-BUILT-P0021",
+      "source": "U0001",
+      "target": "P0021",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:PyTorch",
+      "source": "U0001",
+      "target": "S:PyTorch",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:RAG",
+      "source": "U0001",
+      "target": "S:RAG",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:FastAPI",
+      "source": "U0001",
+      "target": "S:FastAPI",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:Neo4j",
+      "source": "U0001",
+      "target": "S:Neo4j",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:Node.js",
+      "source": "U0001",
+      "target": "S:Node.js",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:Express",
+      "source": "U0001",
+      "target": "S:Express",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-HAS_SKILL-S:Python",
+      "source": "U0001",
+      "target": "S:Python",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0001-STUDIED_AT-C:Indian Institute of Technology Delhi",
+      "source": "U0001",
+      "target": "C:Indian Institute of Technology Delhi",
+      "label": "STUDIED_AT",
+      "type": "STUDIED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0001-TEAMMATE_OF-U0281",
+      "source": "U0001",
+      "target": "U0281",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 2
+      }
+    },
+    {
+      "id": "U0001-TEAMMATE_OF-U0007",
+      "source": "U0001",
+      "target": "U0007",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 2
+      }
+    },
+    {
+      "id": "U0001-TEAMMATE_OF-U0172",
+      "source": "U0001",
+      "target": "U0172",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 1
+      }
+    },
+    {
+      "id": "U0001-TEAMMATE_OF-U0272",
+      "source": "U0001",
+      "target": "U0272",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 1
+      }
+    }
+  ]
+}

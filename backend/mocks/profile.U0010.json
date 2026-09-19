@@ -1,0 +1,374 @@
+{
+  "user_id": "U0010",
+  "version": 1,
+  "built_at": "2026-09-19T08:17:46.230Z",
+  "identity": {
+    "full_name": "Meera Joshi",
+    "email": "meera.joshi.ipu@gmail.com",
+    "college": "Guru Gobind Singh Indraprastha University",
+    "degree": "BCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Frontend",
+    "github_username": "meeraj",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 9,
+    "hackathons_attended": 8,
+    "no_shows": 1,
+    "projects_submitted": 1,
+    "submission_rate": 0.13,
+    "prizes": [],
+    "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0232",
+        "title": "PromptForge",
+        "date": "2026-05-23",
+        "score": 53,
+        "tech": ["React", "Tailwind CSS", "tRPC", "HuggingFace"]
+      }
+    ],
+    "best_rank": null,
+    "avg_score": 53,
+    "first_seen": "2024-01-13",
+    "last_active": "2026-05-23",
+    "days_since_active": 119,
+    "mentor_sessions": 4,
+    "avg_mentor_score": 3,
+    "interactions": 21,
+    "interactions_by_type": {
+      "question": 5,
+      "comment": 7,
+      "discord_message": 3,
+      "workshop_attended": 5,
+      "answered_question": 1
+    },
+    "workshops": 5,
+    "answers_given": 1,
+    "distinct_teammates": 13,
+    "repeat_teammates": [
+      {
+        "name": "Lavanya Krishnan",
+        "times": 2,
+        "user_id": "U0062"
+      },
+      {
+        "name": "Aarohi Malhotra",
+        "times": 2,
+        "user_id": "U0159"
+      },
+      {
+        "name": "Advait Patel",
+        "times": 2,
+        "user_id": "U0303"
+      },
+      {
+        "name": "Akash Shetty",
+        "times": 2,
+        "user_id": "U0450"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.73,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "61% of 7 public repos",
+          "weight": 0.61
+        },
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.27,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "27% of 7 public repos",
+          "weight": 0.27
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.12,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "12% of 7 public repos",
+          "weight": 0.12
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 1,
+      "evidence": ["teamed with Lavanya Krishnan 2 times", "teamed with Aarohi Malhotra 2 times"]
+    },
+    {
+      "trait": "starter_not_finisher",
+      "label": "Starter, not finisher",
+      "score": 0.87,
+      "evidence": ["attended 8 events but submitted only 1"]
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.53,
+      "evidence": ["21 platform interactions"]
+    }
+  ],
+  "personas": ["Starter, Not Finisher", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2026-05-23",
+        "score": 53,
+        "project_id": "P0232"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 58,
+    "components": {
+      "recency": 67,
+      "frequency": 100,
+      "depth": 53,
+      "outcome": 0
+    }
+  },
+  "narrative": "Meera Joshi is a BCA student in Computer Science and Engineering at Guru Gobind Singh Indraprastha University, currently in her third year and preferring frontend work. She has registered for nine hackathons and attended eight, with one no-show and a single project submission that scored 53; her engagement score of 58 and 21 interactions suggest modest but consistent platform activity. Meera demonstrably has frontend skills in React and Tailwind CSS, both self-declared and evidenced by her submission P0232, and she also experimented with HuggingFace and tRPC within that same project, though her overall submission rate of 0.13 and average score of 53 indicate limited output relative to participation. Her involvement trajectory shows a cooling status with insufficient data, and the trait \"Starter, not finisher\" aligns with her pattern of initiating events but submitting only one project. For an organizer deciding whether to invite her, it is practical to note that while she has foundational frontend knowledge and some community interaction, her track record of completing projects is thin, and inviting her to a team should be contingent on clear expectations around delivery and mentorship support.",
+  "narrative_status": "llm",
+  "evidence": [
+    {
+      "claim": "Registered for 9 hackathons, attended 8",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "4 mentor sessions, average rating 3",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "21 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "React: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "React: used in P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: used in P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "HuggingFace: used in P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: used in P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "JavaScript: 61% of 7 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#meeraj",
+      "observed_at": null,
+      "confidence": 0.73
+    },
+    {
+      "claim": "JavaScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.73
+    },
+    {
+      "claim": "Figma: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "CSS: 27% of 7 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#meeraj",
+      "observed_at": null,
+      "confidence": 0.27
+    },
+    {
+      "claim": "HTML: 12% of 7 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#meeraj",
+      "observed_at": null,
+      "confidence": 0.12
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

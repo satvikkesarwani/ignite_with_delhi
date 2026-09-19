@@ -124,12 +124,23 @@ if (!NO_LLM && profiles.size) {
   console.log('\n');
 } else {
   const { templateFallback } = await import('./lib/narrativeFallback.mjs');
+  let kept = 0;
   for (const profile of profiles.values()) {
-    profile.narrative = templateFallback(profile);
-    profile.narrative_status = 'template';
+    // Never clobber a real LLM narrative with a template one.
+    const existing = readProfileFromDisk(profile.user_id);
+    if (existing?.narrative_status === 'llm' && existing.narrative) {
+      profile.narrative = existing.narrative;
+      profile.narrative_status = 'llm';
+      kept++;
+    } else {
+      profile.narrative = templateFallback(profile);
+      profile.narrative_status = 'template';
+    }
     await persistProfile(profile);
   }
-  console.log(`  wrote ${profiles.size} template narratives (--no-llm)\n`);
+  console.log(
+    `  wrote ${profiles.size} profiles (${kept} kept their LLM narrative, rest template)\n`
+  );
 }
 
 // ------------------------------------------------------------------ summary

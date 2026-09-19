@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "people": 600,
+  "hackathons": 24,
+  "projects": 256,
+  "profiles_built": 600,
+  "llm_narratives": 17,
+  "active_last_90d": 189,
+  "consented": 548,
+  "graph": "live",
+  "mode": "mock"
+}

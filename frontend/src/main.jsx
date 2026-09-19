@@ -1,7 +1,12 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.jsx';
-import './index.css';
+// The original playground and the CRM are separate lazy chunks so neither one's global CSS reaches the other.
+const LegacyApp = lazy(() => import('./LegacyApp.jsx'));
+
+// PersonaCRM lives at /crm and is code-split, so its Tailwind layer and fonts never load for "/".
+const CrmApp = lazy(() => import('./crm/CrmApp.jsx'));
+const isCrm = window.location.pathname.startsWith('/crm');
+// index.css is imported by LegacyApp.jsx, deliberately not here.
 
 // ---- Frontend error net: every uncaught error/rejection is timestamped in console ----
 // Judges ke saamne kuch bhi toote toh console mein turant dikhta hai (F12 se).
@@ -52,6 +57,14 @@ window.fetch = async (...args) => {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {isCrm ? (
+      <Suspense fallback={null}>
+        <CrmApp />
+      </Suspense>
+    ) : (
+      <Suspense fallback={null}>
+        <LegacyApp />
+      </Suspense>
+    )}
   </StrictMode>
 );

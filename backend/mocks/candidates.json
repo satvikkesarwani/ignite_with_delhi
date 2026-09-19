@@ -1,0 +1,478 @@
+{
+  "success": true,
+  "total": 12,
+  "limit": 50,
+  "offset": 0,
+  "facets": {
+    "colleges": [
+      {
+        "value": "DTU",
+        "count": 60
+      },
+      {
+        "value": "NSUT",
+        "count": 48
+      },
+      {
+        "value": "IIIT Delhi",
+        "count": 44
+      },
+      {
+        "value": "IIT Delhi",
+        "count": 40
+      },
+      {
+        "value": "JMI",
+        "count": 37
+      },
+      {
+        "value": "Bennett",
+        "count": 32
+      },
+      {
+        "value": "IGDTUW",
+        "count": 32
+      },
+      {
+        "value": "Amity Noida",
+        "count": 31
+      },
+      {
+        "value": "JIIT Noida",
+        "count": 28
+      },
+      {
+        "value": "MAIT",
+        "count": 24
+      },
+      {
+        "value": "GGSIPU",
+        "count": 23
+      },
+      {
+        "value": "BVCOE",
+        "count": 22
+      },
+      {
+        "value": "Chitkara",
+        "count": 20
+      },
+      {
+        "value": "VIT",
+        "count": 19
+      },
+      {
+        "value": "BITS Pilani",
+        "count": 19
+      },
+      {
+        "value": "IIT Roorkee",
+        "count": 19
+      },
+      {
+        "value": "MIT Manipal",
+        "count": 18
+      },
+      {
+        "value": "SRM",
+        "count": 16
+      },
+      {
+        "value": "Thapar",
+        "count": 15
+      },
+      {
+        "value": "IIT Bombay",
+        "count": 12
+      },
+      {
+        "value": "PES",
+        "count": 12
+      },
+      {
+        "value": "COEP",
+        "count": 11
+      },
+      {
+        "value": "Ashoka",
+        "count": 8
+      },
+      {
+        "value": "SNU",
+        "count": 5
+      },
+      {
+        "value": "IIIT Hyderabad",
+        "count": 5
+      }
+    ],
+    "skills": [
+      {
+        "value": "TypeScript",
+        "count": 155
+      },
+      {
+        "value": "Python",
+        "count": 122
+      },
+      {
+        "value": "Vite",
+        "count": 100
+      },
+      {
+        "value": "Node.js",
+        "count": 93
+      },
+      {
+        "value": "PostgreSQL",
+        "count": 89
+      },
+      {
+        "value": "Go",
+        "count": 87
+      },
+      {
+        "value": "Next.js",
+        "count": 86
+      },
+      {
+        "value": "MongoDB",
+        "count": 85
+      },
+      {
+        "value": "FastAPI",
+        "count": 79
+      },
+      {
+        "value": "Redis",
+        "count": 79
+      },
+      {
+        "value": "React",
+        "count": 79
+      },
+      {
+        "value": "Express",
+        "count": 73
+      },
+      {
+        "value": "Tailwind CSS",
+        "count": 71
+      },
+      {
+        "value": "tRPC",
+        "count": 71
+      },
+      {
+        "value": "Docker",
+        "count": 67
+      },
+      {
+        "value": "Django",
+        "count": 66
+      },
+      {
+        "value": "GraphQL",
+        "count": 66
+      },
+      {
+        "value": "Java Spring",
+        "count": 66
+      },
+      {
+        "value": "JavaScript",
+        "count": 62
+      },
+      {
+        "value": "Kafka",
+        "count": 59
+      },
+      {
+        "value": "gRPC",
+        "count": 59
+      },
+      {
+        "value": "SQL",
+        "count": 55
+      },
+      {
+        "value": "Qdrant",
+        "count": 51
+      },
+      {
+        "value": "Tableau",
+        "count": 50
+      },
+      {
+        "value": "scikit-learn",
+        "count": 50
+      },
+      {
+        "value": "Flask",
+        "count": 50
+      },
+      {
+        "value": "HTML",
+        "count": 48
+      },
+      {
+        "value": "PyTorch",
+        "count": 47
+      },
+      {
+        "value": "RAG",
+        "count": 46
+      },
+      {
+        "value": "Pandas",
+        "count": 46
+      }
+    ],
+    "personas": [
+      {
+        "value": "Steady Participant",
+        "count": 228
+      },
+      {
+        "value": "One-Time Participant",
+        "count": 162
+      },
+      {
+        "value": "Newcomer",
+        "count": 141
+      },
+      {
+        "value": "Dormant High-Potential",
+        "count": 54
+      },
+      {
+        "value": "Consistent Builder",
+        "count": 41
+      },
+      {
+        "value": "Registered, Never Attended",
+        "count": 21
+      },
+      {
+        "value": "Rising Star",
+        "count": 17
+      },
+      {
+        "value": "Starter, Not Finisher",
+        "count": 14
+      },
+      {
+        "value": "Serial Winner",
+        "count": 13
+      },
+      {
+        "value": "Mentor Material",
+        "count": 4
+      },
+      {
+        "value": "Ghost",
+        "count": 1
+      }
+    ],
+    "statuses": [
+      {
+        "value": "cooling",
+        "count": 175
+      },
+      {
+        "value": "lapsed",
+        "count": 169
+      },
+      {
+        "value": "active",
+        "count": 130
+      },
+      {
+        "value": "dormant",
+        "count": 126
+      }
+    ]
+  },
+  "rows": [
+    {
+      "user_id": "U0001",
+      "full_name": "Shiv Sharma",
+      "email": "shiv.sharma@iitd.ac.in",
+      "college": "IIT Delhi",
+      "city": "Delhi",
+      "personas": ["Serial Winner", "Rising Star"],
+      "top_skills": ["Python", "PyTorch", "RAG"],
+      "hackathons_attended": 7,
+      "prize_count": 3,
+      "engagement": 80,
+      "last_active": "2026-09-16",
+      "status": "active",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0002",
+      "full_name": "Shiv Sharma",
+      "email": "shivsharma2027@gmail.com",
+      "college": "Amity Noida",
+      "city": "Noida",
+      "personas": ["Steady Participant"],
+      "top_skills": ["Neo4j", "React", "Cypher"],
+      "hackathons_attended": 2,
+      "prize_count": 0,
+      "engagement": 11,
+      "last_active": "2025-10-10",
+      "status": "dormant",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0007",
+      "full_name": "Ananya Iyer",
+      "email": "ananya.iyer@iiitd.ac.in",
+      "college": "IIIT Delhi",
+      "city": "Delhi",
+      "personas": ["Serial Winner", "Rising Star"],
+      "top_skills": ["PyTorch", "LangChain", "HuggingFace"],
+      "hackathons_attended": 8,
+      "prize_count": 5,
+      "engagement": 94,
+      "last_active": "2026-08-21",
+      "status": "active",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0008",
+      "full_name": "Rohan Mehta",
+      "email": "rohan.mehta.nsut@gmail.com",
+      "college": "NSUT",
+      "city": "Delhi",
+      "personas": ["Dormant High-Potential", "Steady Participant"],
+      "top_skills": ["Go", "PostgreSQL", "Redis"],
+      "hackathons_attended": 3,
+      "prize_count": 2,
+      "engagement": 26,
+      "last_active": "2025-06-25",
+      "status": "lapsed",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0009",
+      "full_name": "Kabir Singh",
+      "email": "kabir.singh@bennett.edu.in",
+      "college": "Bennett",
+      "city": "Greater Noida",
+      "personas": ["Rising Star", "Mentor Material"],
+      "top_skills": ["TypeScript", "FastAPI", "Node.js"],
+      "hackathons_attended": 4,
+      "prize_count": 1,
+      "engagement": 54,
+      "last_active": "2026-08-11",
+      "status": "active",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0010",
+      "full_name": "Meera Joshi",
+      "email": "meera.joshi.ipu@gmail.com",
+      "college": "GGSIPU",
+      "city": "Delhi",
+      "personas": ["Starter, Not Finisher", "Steady Participant"],
+      "top_skills": ["React", "Tailwind CSS", "HuggingFace"],
+      "hackathons_attended": 8,
+      "prize_count": 0,
+      "engagement": 58,
+      "last_active": "2026-05-23",
+      "status": "cooling",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0011",
+      "full_name": "Arjun Khanna",
+      "email": "arjun.khanna.mait@gmail.com",
+      "college": "MAIT",
+      "city": "Delhi",
+      "personas": ["Ghost"],
+      "top_skills": [],
+      "hackathons_attended": 0,
+      "prize_count": 0,
+      "engagement": 25,
+      "last_active": "2026-06-18",
+      "status": "cooling",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0012",
+      "full_name": "Sneha Reddy",
+      "email": "sneha.reddy@igdtuw.ac.in",
+      "college": "IGDTUW",
+      "city": "Delhi",
+      "personas": ["Mentor Material", "Consistent Builder"],
+      "top_skills": ["Python", "FastAPI", "Docker"],
+      "hackathons_attended": 5,
+      "prize_count": 1,
+      "engagement": 73,
+      "last_active": "2026-09-01",
+      "status": "active",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0013",
+      "full_name": "Vikram Rao",
+      "email": "vikram.rao@iitd.ac.in",
+      "college": "IIT Delhi",
+      "city": "Delhi",
+      "personas": ["Rising Star", "Steady Participant"],
+      "top_skills": ["Python", "Cypher", "Neo4j"],
+      "hackathons_attended": 3,
+      "prize_count": 1,
+      "engagement": 45,
+      "last_active": "2026-07-03",
+      "status": "cooling",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0014",
+      "full_name": "Ishita Bansal",
+      "email": "ishita.bansal@jiit.ac.in",
+      "college": "JIIT Noida",
+      "city": "Noida",
+      "personas": ["Rising Star", "Consistent Builder"],
+      "top_skills": ["Python", "LangChain", "RAG"],
+      "hackathons_attended": 4,
+      "prize_count": 2,
+      "engagement": 59,
+      "last_active": "2026-08-30",
+      "status": "active",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0015",
+      "full_name": "Devansh Kapoor",
+      "email": "devansh.kapoor2027@vit.ac.in",
+      "college": "VIT",
+      "city": "Vellore",
+      "personas": ["Steady Participant"],
+      "top_skills": ["JavaScript", "FastAPI", "Node.js"],
+      "hackathons_attended": 3,
+      "prize_count": 0,
+      "engagement": 44,
+      "last_active": "2026-09-16",
+      "status": "active",
+      "consent_flag": true
+    },
+    {
+      "user_id": "U0016",
+      "full_name": "Nisha Pillai",
+      "email": "nisha.pillai@srmist.edu.in",
+      "college": "SRM",
+      "city": "Chennai",
+      "personas": ["Steady Participant"],
+      "top_skills": ["Python", "FastAPI", "Pandas"],
+      "hackathons_attended": 3,
+      "prize_count": 0,
+      "engagement": 24,
+      "last_active": "2026-01-12",
+      "status": "dormant",
+      "consent_flag": false
+    }
+  ]
+}

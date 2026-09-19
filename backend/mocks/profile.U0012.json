@@ -1,0 +1,601 @@
+{
+  "user_id": "U0012",
+  "version": 1,
+  "built_at": "2026-09-19T08:17:46.230Z",
+  "identity": {
+    "full_name": "Sneha Reddy",
+    "email": "sneha.reddy@igdtuw.ac.in",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "snehareddy",
+    "linkedin_url": "https://linkedin.com/in/sneha-reddy-012",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 5,
+    "no_shows": 0,
+    "projects_submitted": 5,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-11-19",
+        "hackathon": "HackYamuna",
+        "hackathon_id": "H018",
+        "prize_track": "Overall",
+        "project_id": "P0189",
+        "project_title": "DepDrift",
+        "rank": 2,
+        "score": 85
+      }
+    ],
+    "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0059",
+        "title": "LogLens",
+        "date": "2024-08-09",
+        "score": 69,
+        "tech": ["PostgreSQL", "Django", "Next.js"]
+      },
+      {
+        "project_id": "P0107",
+        "title": "ShellSeeker",
+        "date": "2025-01-10",
+        "score": 42,
+        "tech": ["Docker", "GraphQL", "Pinecone", "Qdrant"]
+      },
+      {
+        "project_id": "P0145",
+        "title": "DermScan",
+        "date": "2025-06-12",
+        "score": 32,
+        "tech": ["Docker", "PyTorch", "Python"]
+      },
+      {
+        "project_id": "P0189",
+        "title": "DepDrift",
+        "date": "2025-11-19",
+        "score": 85,
+        "tech": ["GraphQL", "Kafka", "MongoDB", "React"]
+      },
+      {
+        "project_id": "P0241",
+        "title": "CiteWeb",
+        "date": "2026-07-03",
+        "score": 42,
+        "tech": ["FastAPI", "GraphQL", "Knowledge Graphs", "Qdrant", "NetworkX"]
+      }
+    ],
+    "best_rank": 2,
+    "avg_score": 54,
+    "first_seen": "2024-08-07",
+    "last_active": "2026-09-01",
+    "days_since_active": 18,
+    "mentor_sessions": 7,
+    "avg_mentor_score": 4.86,
+    "interactions": 44,
+    "interactions_by_type": {
+      "workshop_attended": 7,
+      "answered_question": 28,
+      "discord_message": 5,
+      "question": 2,
+      "comment": 2
+    },
+    "workshops": 7,
+    "answers_given": 28,
+    "distinct_teammates": 11,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.96,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "68% of 19 public repos",
+          "weight": 0.68
+        },
+        {
+          "type": "project",
+          "detail": "used in P0145 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0107 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in P0059 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 3 projects, best P0189 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0145 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0189 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0189 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0059 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0059 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0189 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Qdrant",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0107 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pinecone",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0107 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.18,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "18% of 19 public repos",
+          "weight": 0.18
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Dockerfile",
+      "cluster": "Other",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "9% of 19 public repos",
+          "weight": 0.09
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "5% of 19 public repos",
+          "weight": 0.05
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["5 of 5 attended events produced a submission"]
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 1,
+      "evidence": ["44 platform interactions"]
+    },
+    {
+      "trait": "mentor_material",
+      "label": "Mentor material",
+      "score": 0.97,
+      "evidence": ["average mentor rating 4.86 across 7 sessions", "answered 28 questions"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Mentor Material", "Consistent Builder"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-08-09",
+        "score": 69,
+        "project_id": "P0059"
+      },
+      {
+        "date": "2025-01-10",
+        "score": 42,
+        "project_id": "P0107"
+      },
+      {
+        "date": "2025-06-12",
+        "score": 32,
+        "project_id": "P0145"
+      },
+      {
+        "date": "2025-11-19",
+        "score": 85,
+        "project_id": "P0189"
+      },
+      {
+        "date": "2026-07-03",
+        "score": 42,
+        "project_id": "P0241"
+      }
+    ],
+    "tech_drift": {
+      "from": ["PostgreSQL", "Django", "Next.js", "Docker"],
+      "to": ["Kafka", "MongoDB", "React", "FastAPI"]
+    }
+  },
+  "engagement": {
+    "value": 73,
+    "components": {
+      "recency": 95,
+      "frequency": 63,
+      "depth": 100,
+      "outcome": 20
+    }
+  },
+  "narrative": "Sneha Reddy is a B.Tech Computer Science student at Indira Gandhi Delhi Technical University for Women, currently in her third year and oriented toward backend roles. She is demonstrably good at backend and full-stack skills, with concrete evidence from her project submissions: she built P0145, a Python and Docker project that scored 32, and P0059, a PostgreSQL project that scored 69, the highest in her scores-in-order list. Her involvement has been steady and active since she began participating, maintaining a perfect submission rate of one project per registered hackathon and attending all five events she registered for, with zero no-shows; over time she has consistently engaged through mentor sessions, workshops, and answering questions, accumulating 44 interactions and 28 answers given. For an organizer deciding whether to invite her, one practical line of judgement is that her track record of submitting every registered project and mentoring seven sessions suggests she is reliable and capable, but her average score of 54 and recent drop to 32 on her most recent project indicate she may need supportive challenges rather than high-stakes competition.",
+  "narrative_status": "llm",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 5",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-09-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 5 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-09-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at HackYamuna with \"DepDrift\" (score 85)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0189",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "7 mentor sessions, average rating 4.86",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-09-01",
+      "confidence": 1
+    },
+    {
+      "claim": "44 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-09-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.96
+    },
+    {
+      "claim": "Python: 68% of 19 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#snehareddy",
+      "observed_at": null,
+      "confidence": 0.96
+    },
+    {
+      "claim": "Python: used in P0145 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.96
+    },
+    {
+      "claim": "FastAPI: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: used in P0241 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: used in 2 projects, best P0107 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: used in P0059 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: used in 3 projects, best P0189 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: used in P0145 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: used in P0189 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: used in P0189 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

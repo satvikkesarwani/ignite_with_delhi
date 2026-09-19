@@ -1,0 +1,369 @@
+{
+  "nodes": [
+    {
+      "id": "U0015",
+      "label": "Devansh Kapoor",
+      "type": "Person",
+      "group": "Person",
+      "properties": {
+        "college": "Vellore Institute of Technology",
+        "role_pref": "ML/AI"
+      }
+    },
+    {
+      "id": "H020",
+      "label": "MetroHacks",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "Web3"
+      }
+    },
+    {
+      "id": "H015",
+      "label": "CircuitBreak",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "Social Impact"
+      }
+    },
+    {
+      "id": "H009",
+      "label": "Capital Code Jam",
+      "type": "Hackathon",
+      "group": "Hackathon",
+      "properties": {
+        "theme_track": "Web3"
+      }
+    },
+    {
+      "id": "P0206",
+      "label": "VoteProof",
+      "type": "Project",
+      "group": "Project",
+      "properties": {
+        "score": 68,
+        "prize": null
+      }
+    },
+    {
+      "id": "P0153",
+      "label": "MealLink",
+      "type": "Project",
+      "group": "Project",
+      "properties": {
+        "score": 48,
+        "prize": null
+      }
+    },
+    {
+      "id": "P0093",
+      "label": "FanFund",
+      "type": "Project",
+      "group": "Project",
+      "properties": {
+        "score": 69,
+        "prize": null
+      }
+    },
+    {
+      "id": "S:JavaScript",
+      "label": "JavaScript",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.88
+      }
+    },
+    {
+      "id": "S:Express",
+      "label": "Express",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:React",
+      "label": "React",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:Next.js",
+      "label": "Next.js",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:TypeScript",
+      "label": "TypeScript",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:PostgreSQL",
+      "label": "PostgreSQL",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "S:Node.js",
+      "label": "Node.js",
+      "type": "Skill",
+      "group": "Skill",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "C:Vellore Institute of Technology",
+      "label": "VIT",
+      "type": "College",
+      "group": "College",
+      "properties": {}
+    },
+    {
+      "id": "U0443",
+      "label": "Vihaan Gupta",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 2
+      }
+    },
+    {
+      "id": "U0338",
+      "label": "Chirag Malik",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 1
+      }
+    },
+    {
+      "id": "U0323",
+      "label": "Prateek Pillai",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 1
+      }
+    },
+    {
+      "id": "U0293",
+      "label": "Anjali Malik",
+      "type": "Person",
+      "group": "Teammate",
+      "properties": {
+        "times": 1
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "U0015-ATTENDED-H020",
+      "source": "U0015",
+      "target": "H020",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0015-ATTENDED-H015",
+      "source": "U0015",
+      "target": "H015",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0015-ATTENDED-H009",
+      "source": "U0015",
+      "target": "H009",
+      "label": "ATTENDED",
+      "type": "ATTENDED",
+      "properties": {}
+    },
+    {
+      "id": "U0015-BUILT-P0206",
+      "source": "U0015",
+      "target": "P0206",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0206-SUBMITTED_AT-H020",
+      "source": "P0206",
+      "target": "H020",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0015-BUILT-P0153",
+      "source": "U0015",
+      "target": "P0153",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0153-SUBMITTED_AT-H015",
+      "source": "P0153",
+      "target": "H015",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0015-BUILT-P0093",
+      "source": "U0015",
+      "target": "P0093",
+      "label": "BUILT",
+      "type": "BUILT",
+      "properties": {}
+    },
+    {
+      "id": "P0093-SUBMITTED_AT-H009",
+      "source": "P0093",
+      "target": "H009",
+      "label": "SUBMITTED_AT",
+      "type": "SUBMITTED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:JavaScript",
+      "source": "U0015",
+      "target": "S:JavaScript",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.88
+      }
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:Express",
+      "source": "U0015",
+      "target": "S:Express",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:React",
+      "source": "U0015",
+      "target": "S:React",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:Next.js",
+      "source": "U0015",
+      "target": "S:Next.js",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:TypeScript",
+      "source": "U0015",
+      "target": "S:TypeScript",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:PostgreSQL",
+      "source": "U0015",
+      "target": "S:PostgreSQL",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0015-HAS_SKILL-S:Node.js",
+      "source": "U0015",
+      "target": "S:Node.js",
+      "label": "HAS_SKILL",
+      "type": "HAS_SKILL",
+      "properties": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "U0015-STUDIED_AT-C:Vellore Institute of Technology",
+      "source": "U0015",
+      "target": "C:Vellore Institute of Technology",
+      "label": "STUDIED_AT",
+      "type": "STUDIED_AT",
+      "properties": {}
+    },
+    {
+      "id": "U0015-TEAMMATE_OF-U0443",
+      "source": "U0015",
+      "target": "U0443",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 2
+      }
+    },
+    {
+      "id": "U0015-TEAMMATE_OF-U0338",
+      "source": "U0015",
+      "target": "U0338",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 1
+      }
+    },
+    {
+      "id": "U0015-TEAMMATE_OF-U0323",
+      "source": "U0015",
+      "target": "U0323",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 1
+      }
+    },
+    {
+      "id": "U0015-TEAMMATE_OF-U0293",
+      "source": "U0015",
+      "target": "U0293",
+      "label": "TEAMMATE_OF",
+      "type": "TEAMMATE_OF",
+      "properties": {
+        "times": 1
+      }
+    }
+  ]
+}

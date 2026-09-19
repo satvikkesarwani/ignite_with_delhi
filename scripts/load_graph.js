@@ -511,7 +511,7 @@ if (want('external')) {
 if (want('derived')) {
   // A skill actually used in a submitted project is much stronger evidence than
   // a self-declaration, so it gets its own typed edge with its own confidence.
-  const projSkillRows = [];
+  const bestBySkill = new Map(); // "user|skill" -> {n, best}
   const teamMembers = new Map();
   for (const p of parts) {
     if (!p.team_id) continue;
@@ -524,19 +524,43 @@ if (want('derived')) {
     const score = num(resultBy.get(pr.project_id)?.score);
     for (const uid of members) {
       for (const skill of list(pr.tech_stack)) {
-        projSkillRows.push({ user_id: uid, skill, project_id: pr.project_id, score });
+        const key = uid + '|' + skill;
+        const cur = bestBySkill.get(key) || {
+          user_id: uid,
+          skill,
+          n: 0,
+          project_id: null,
+          score: null,
+        };
+        cur.n += 1;
+        if (cur.score === null || (score ?? -1) > cur.score) {
+          cur.project_id = pr.project_id;
+          cur.score = score;
+        }
+        bestBySkill.set(key, cur);
       }
     }
   }
+  const projSkillRows = [...bestBySkill.values()].map((e) => ({
+    user_id: e.user_id,
+    skill: e.skill,
+    project_id: e.project_id,
+    evidence:
+      e.n === 1
+        ? 'used in ' + e.project_id + (e.score !== null ? ' (scored ' + e.score + ')' : '')
+        : 'used in ' +
+          e.n +
+          ' projects, best ' +
+          e.project_id +
+          (e.score !== null ? ' (scored ' + e.score + ')' : ''),
+  }));
   await batch(
     'project skills -> person',
     `UNWIND $rows AS row
      MATCH (p:Person {user_id: row.user_id})
      MATCH (s:Skill {name: row.skill})
      MERGE (p)-[r:HAS_SKILL {source: 'project'}]->(s)
-     SET r.confidence = 0.8,
-         r.evidence = 'built ' + row.project_id + coalesce(' (scored ' + toString(toInteger(row.score)) + ')', ''),
-         r.project_id = row.project_id`,
+     SET r.confidence = 0.8, r.evidence = row.evidence, r.project_id = row.project_id`,
     projSkillRows
   );
 

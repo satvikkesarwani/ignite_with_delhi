@@ -1,0 +1,606 @@
+{
+  "user_id": "U0009",
+  "version": 1,
+  "built_at": "2026-09-19T08:22:35.784Z",
+  "identity": {
+    "full_name": "Kabir Singh",
+    "email": "kabir.singh@bennett.edu.in",
+    "college": "Bennett University",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2028,
+    "city": "Greater Noida",
+    "role_pref": "Full-stack",
+    "github_username": "kabirbuilds",
+    "linkedin_url": "https://linkedin.com/in/kabir-singh-009",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 4,
+    "no_shows": 0,
+    "projects_submitted": 4,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Overall",
+        "project_id": "P0251",
+        "project_title": "SchemaSage",
+        "rank": 1,
+        "score": 91
+      }
+    ],
+    "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0188",
+        "title": "LogLens",
+        "date": "2025-11-19",
+        "score": 52,
+        "tech": ["Vite", "TypeScript", "Tailwind CSS", "React", "FastAPI", "Nginx"]
+      },
+      {
+        "project_id": "P0212",
+        "title": "FanFund",
+        "date": "2026-02-20",
+        "score": 68,
+        "tech": ["Docker", "FastAPI", "Hardhat", "Foundry"]
+      },
+      {
+        "project_id": "P0234",
+        "title": "CodeCartographer",
+        "date": "2026-05-23",
+        "score": 79,
+        "tech": ["React", "Next.js", "Tailwind CSS", "FastAPI", "Transformers", "Cypher"]
+      },
+      {
+        "project_id": "P0251",
+        "title": "SchemaSage",
+        "date": "2026-08-08",
+        "score": 91,
+        "tech": ["RAG", "Redis", "Node.js", "FastAPI", "TensorFlow", "Go"]
+      }
+    ],
+    "best_rank": 1,
+    "avg_score": 72.5,
+    "first_seen": "2025-11-18",
+    "last_active": "2026-08-11",
+    "days_since_active": 39,
+    "mentor_sessions": 4,
+    "avg_mentor_score": 4.5,
+    "interactions": 18,
+    "interactions_by_type": {
+      "answered_question": 3,
+      "workshop_attended": 3,
+      "discord_message": 5,
+      "comment": 5,
+      "question": 2
+    },
+    "workshops": 3,
+    "answers_given": 3,
+    "distinct_teammates": 10,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.93,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "48% of 11 public repos",
+          "weight": 0.48
+        },
+        {
+          "type": "project",
+          "detail": "used in P0188 (scored 52)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 4 projects, best P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0234 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0212 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0234 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in 2 projects, best P0234 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0234 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0234 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0212 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0188 (scored 52)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0212 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Nginx",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0188 (scored 52)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "used in P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.33,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "33% of 11 public repos",
+          "weight": 0.33
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "14% of 11 public repos",
+          "weight": 0.14
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "5% of 11 public repos",
+          "weight": 0.05
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["4 of 4 attended events produced a submission"]
+    },
+    {
+      "trait": "mentor_material",
+      "label": "Mentor material",
+      "score": 0.9,
+      "evidence": ["average mentor rating 4.5 across 4 sessions", "answered 3 questions"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Rising Star", "Mentor Material"],
+  "trajectory": {
+    "direction": "rising",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-11-19",
+        "score": 52,
+        "project_id": "P0188"
+      },
+      {
+        "date": "2026-02-20",
+        "score": 68,
+        "project_id": "P0212"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 79,
+        "project_id": "P0234"
+      },
+      {
+        "date": "2026-08-08",
+        "score": 91,
+        "project_id": "P0251"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Vite", "TypeScript", "Nginx", "Docker"],
+      "to": ["Next.js", "Transformers", "Cypher", "RAG"]
+    }
+  },
+  "engagement": {
+    "value": 54,
+    "components": {
+      "recency": 89,
+      "frequency": 50,
+      "depth": 45,
+      "outcome": 20
+    }
+  },
+  "narrative": "Kabir Singh is a Bennett University Computer Science and Engineering student graduating in 2028 who has attended all four hackathons they registered for, submitting projects each time with a 100 percent completion rate. They are demonstrably strong in TypeScript and FastAPI, with TypeScript appearing in 48 percent of their 11 public repositories and FastAPI powering their best-scoring project P0251, which earned a 91. Their involvement has progressed from consistent participation to earning a top rank in the Overall track at Ignite Delhi Grand Finale with SchemaSage, and they now contribute mentor sessions and answers to the community. For an organizer deciding whether to invite them, they are a reliable finisher who delivers high-scoring work when engaged, making them a safe bet for team roles that require follow-through.",
+  "narrative_status": "llm",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Grand Finale with \"SchemaSage\" (score 91)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0251",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "4 mentor sessions, average rating 4.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-11",
+      "confidence": 1
+    },
+    {
+      "claim": "18 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-11",
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.93
+    },
+    {
+      "claim": "TypeScript: 48% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#kabirbuilds",
+      "observed_at": null,
+      "confidence": 0.93
+    },
+    {
+      "claim": "TypeScript: used in P0188 (scored 52)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.93
+    },
+    {
+      "claim": "FastAPI: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: used in 4 projects, best P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: used in P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "React: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "React: used in 2 projects, best P0234 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "RAG: used in P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Docker: used in P0212 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: used in P0234 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: used in 2 projects, best P0234 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

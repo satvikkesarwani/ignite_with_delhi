@@ -4,229 +4,174 @@
     "type": "existence",
     "question": "Is Ananya Iyer in our database?",
     "expected_answer": "Yes — U0007, IIIT Delhi, ML/AI.",
-    "evidence_files": [
-      "users.csv"
-    ]
+    "evidence_files": ["users.csv"]
   },
   {
     "id": "Q02",
     "type": "ambiguity",
     "question": "Is Shiv Sharma in our database?",
     "expected_answer": "Ambiguous — 2 people share that name (U0001 at IIT Delhi, U0002 at Amity Noida). The agent must ask which one.",
-    "evidence_files": [
-      "users.csv"
-    ]
+    "evidence_files": ["users.csv"]
   },
   {
     "id": "Q03",
     "type": "not_found",
     "question": "Is Aarav Malhotra in our database?",
-    "expected_answer": "No. Closest match is Aarav Malik (U0017). Must not invent a profile.",
-    "evidence_files": [
-      "users.csv"
-    ]
+    "expected_answer": "No. There is no Aarav Malhotra. The agent must say so plainly and must not invent a profile; it may offer the nearest names, clearly labelled as different people.",
+    "evidence_files": ["users.csv"]
   },
   {
     "id": "Q04",
     "type": "existence",
     "question": "Do we have anyone called Ananya Iyar?",
     "expected_answer": "Fuzzy match to Ananya Iyer (U0007); should flag it as an approximate match.",
-    "evidence_files": [
-      "users.csv"
-    ]
+    "evidence_files": ["users.csv"]
   },
   {
     "id": "Q05",
     "type": "count",
     "question": "How many hackathons has Shiv Sharma from IIT Delhi attended?",
     "expected_answer": "7",
-    "evidence_files": [
-      "participations.csv"
-    ]
+    "evidence_files": ["participations.csv"]
   },
   {
     "id": "Q06",
     "type": "count",
     "question": "How many projects has Shiv Sharma from IIT Delhi submitted?",
     "expected_answer": "6",
-    "evidence_files": [
-      "projects.csv"
-    ]
+    "evidence_files": ["projects.csv"]
   },
   {
     "id": "Q07",
     "type": "count",
     "question": "How many prizes has Ananya Iyer won?",
     "expected_answer": "5",
-    "evidence_files": [
-      "results.csv"
-    ]
+    "evidence_files": ["results.csv"]
   },
   {
     "id": "Q08",
     "type": "trend",
     "question": "Is Kabir Singh improving over time?",
     "expected_answer": "Yes — rising. Scores in chronological order: 52, 68, 79, 91.",
-    "evidence_files": [
-      "results.csv"
-    ]
+    "evidence_files": ["results.csv"]
   },
   {
     "id": "Q09",
     "type": "count",
     "question": "How many submissions does Meera Joshi have?",
     "expected_answer": "1",
-    "evidence_files": [
-      "projects.csv"
-    ]
+    "evidence_files": ["projects.csv"]
   },
   {
     "id": "Q10",
     "type": "count",
     "question": "How many events has Arjun Khanna actually attended?",
     "expected_answer": "0 attended out of 6 registrations — 6 no-shows.",
-    "evidence_files": [
-      "participations.csv"
-    ]
+    "evidence_files": ["participations.csv"]
   },
   {
     "id": "Q11",
     "type": "ranking",
     "question": "Who would make the best mentor this year?",
     "expected_answer": "Sneha Reddy (U0012) — average mentor score 4.86 across 7 sessions.",
-    "evidence_files": [
-      "mentor_sessions.csv"
-    ]
+    "evidence_files": ["mentor_sessions.csv"]
   },
   {
     "id": "Q12",
     "type": "consent",
     "question": "Can we email Nisha Pillai about the next hackathon?",
     "expected_answer": "No — consent_flag is false and she has an unsubscribed touchpoint.",
-    "evidence_files": [
-      "users.csv",
-      "crm_touchpoints.csv"
-    ]
+    "evidence_files": ["users.csv", "crm_touchpoints.csv"]
   },
   {
     "id": "Q13",
     "type": "trend",
     "question": "When was Rohan Mehta last active?",
     "expected_answer": "2025-06-25",
-    "evidence_files": [
-      "interactions.csv",
-      "participations.csv"
-    ]
+    "evidence_files": ["interactions.csv", "participations.csv"]
   },
   {
     "id": "Q14",
     "type": "ranking",
     "question": "What is Shiv Sharma from IIT Delhi's strongest language on GitHub?",
     "expected_answer": "Python (70% of 22 repos).",
-    "evidence_files": [
-      "github_profiles.json"
-    ]
+    "evidence_files": ["github_profiles.json"]
   },
   {
     "id": "Q15",
     "type": "ranking",
     "question": "Who won the Best use of Neo4j track at the Data & Graph event?",
     "expected_answer": "Project RouteKnot (P0245), which includes Vikram Rao (U0013).",
-    "evidence_files": [
-      "results.csv"
-    ]
+    "evidence_files": ["results.csv"]
   },
   {
     "id": "Q16",
     "type": "trend",
     "question": "Who has won something but gone quiet?",
     "expected_answer": "Rohan Mehta (U0008) — 2 prizes, last active 2025-06-25.",
-    "evidence_files": [
-      "results.csv",
-      "interactions.csv"
-    ]
+    "evidence_files": ["results.csv", "interactions.csv"]
   },
   {
     "id": "Q17",
     "type": "count",
     "question": "Who has Shiv Sharma from IIT Delhi teamed up with more than once?",
     "expected_answer": "Ananya Iyer (U0007) — twice.",
-    "evidence_files": [
-      "participations.csv",
-      "teams.csv"
-    ]
+    "evidence_files": ["participations.csv", "teams.csv"]
   },
   {
     "id": "Q18",
     "type": "count",
     "question": "What is Shiv Sharma from IIT Delhi's average mentor rating?",
     "expected_answer": "4.6",
-    "evidence_files": [
-      "mentor_sessions.csv"
-    ]
+    "evidence_files": ["mentor_sessions.csv"]
   },
   {
     "id": "Q19",
     "type": "existence",
     "question": "Does anyone declare machine learning skills they cannot evidence?",
     "expected_answer": "Devansh Kapoor (U0015) — declares Machine Learning, Deep Learning and PyTorch, but GitHub is 88% JavaScript across 4 repos and LinkedIn says Frontend Developer Intern.",
-    "evidence_files": [
-      "users.csv",
-      "github_profiles.json"
-    ]
+    "evidence_files": ["users.csv", "github_profiles.json"]
   },
   {
     "id": "Q20",
     "type": "count",
     "question": "How many people are in our database?",
     "expected_answer": "600",
-    "evidence_files": [
-      "users.csv"
-    ]
+    "evidence_files": ["users.csv"]
   },
   {
     "id": "Q21",
     "type": "count",
     "question": "How many hackathons have we run?",
     "expected_answer": "24",
-    "evidence_files": [
-      "hackathons.csv"
-    ]
+    "evidence_files": ["hackathons.csv"]
   },
   {
     "id": "Q22",
     "type": "ranking",
     "question": "What is Shivam Sharma's best finish?",
     "expected_answer": "Rank 3.",
-    "evidence_files": [
-      "results.csv"
-    ]
+    "evidence_files": ["results.csv"]
   },
   {
     "id": "Q23",
     "type": "count",
     "question": "How many prizes has Shiv Sharma from Amity won?",
     "expected_answer": "0",
-    "evidence_files": [
-      "results.csv"
-    ]
+    "evidence_files": ["results.csv"]
   },
   {
     "id": "Q24",
     "type": "count",
     "question": "How many workshops has Sneha Reddy attended?",
     "expected_answer": "7",
-    "evidence_files": [
-      "interactions.csv"
-    ]
+    "evidence_files": ["interactions.csv"]
   },
   {
     "id": "Q25",
     "type": "count",
     "question": "How many people have consented to outreach?",
     "expected_answer": "548",
-    "evidence_files": [
-      "users.csv"
-    ]
+    "evidence_files": ["users.csv"]
   }
 ]

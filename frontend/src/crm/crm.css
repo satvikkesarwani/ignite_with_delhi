@@ -1,0 +1,196 @@
+/*
+ * PersonaCRM design system — "editorial intelligence terminal".
+ *
+ * Warm near-black paper, one ochre accent, dense data-first tables, a serif
+ * that argues with a mono. Deliberately NOT the glass/indigo look of the dev
+ * playground at "/", which keeps working untouched.
+ *
+ * Tailwind is loaded WITHOUT its global reset (no preflight) so it cannot
+ * disturb App.jsx; a small reset is scoped to .crm-root instead. The default
+ * palette, shadows and large radii are switched off below so nobody can reach
+ * for blue-600 or a drop shadow by habit.
+ */
+
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@theme inline {
+  --color-*: initial;
+  --shadow-*: initial;
+  --drop-shadow-*: initial;
+  --radius-*: initial;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-positive: var(--positive);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius: 4px;
+
+  --font-serif: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
+
+/* ------------------------------------------------------------------ tokens
+ * Dark is the default and the demo mode. Light exists for completeness and is
+ * only reached through an explicit data-theme="light", never via the OS setting,
+ * so a presenter's laptop can't flip the projector look mid-demo.
+ */
+:root:has(.crm-root) {
+  --bg: #12100e; /* warm near-black — not slate, not zinc */
+  --surface: #1a1815;
+  --surface-2: #211e1a;
+  --border: #2a2723;
+  --border-strong: #3a352f;
+  --text: #ede8e0;
+  --muted: #9a9186;
+  --faint: #6b645b;
+  --accent: #c8892a; /* ochre */
+  --accent-ink: #1a1208;
+  --positive: #6e8b6b; /* sage */
+  --warning: #c4873f;
+  --danger: #b4553f; /* clay */
+  color-scheme: dark;
+}
+
+:root:has(.crm-root)[data-theme='light'] {
+  --bg: #f4efe6;
+  --surface: #fbf8f2;
+  --surface-2: #efe9dd;
+  --border: #ddd5c6;
+  --border-strong: #c9bfac;
+  --text: #1c1915;
+  --muted: #6b645b;
+  --faint: #93897b;
+  --accent: #a86d14;
+  --accent-ink: #fbf3e3;
+  --positive: #4d6a4a;
+  --warning: #9a6320;
+  --danger: #973e2a;
+  color-scheme: light;
+}
+
+html:has(.crm-root),
+body:has(.crm-root) {
+  background: var(--bg);
+  margin: 0;
+}
+
+/* ------------------------------------------------------------ scoped base */
+@layer base {
+  .crm-root {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-feature-settings: 'tnum' 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  .crm-root,
+  .crm-root *,
+  .crm-root *::before,
+  .crm-root *::after {
+    box-sizing: border-box;
+  }
+  .crm-root h1,
+  .crm-root h2,
+  .crm-root h3,
+  .crm-root h4,
+  .crm-root p,
+  .crm-root ul,
+  .crm-root ol,
+  .crm-root dl,
+  .crm-root dd,
+  .crm-root figure {
+    margin: 0;
+  }
+  .crm-root ul,
+  .crm-root ol {
+    padding: 0;
+    list-style: none;
+  }
+  .crm-root button,
+  .crm-root input,
+  .crm-root select,
+  .crm-root textarea {
+    font: inherit;
+    color: inherit;
+  }
+  .crm-root button {
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .crm-root a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .crm-root table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .crm-root ::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .crm-root :focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .crm-root ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .crm-root ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border: 2px solid var(--bg);
+  }
+  .crm-root ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* Numerals everywhere data lives. */
+.crm-num {
+  /* Literal stack, not var(--font-mono): the dev playground's index.css defines a global
+     --font-mono (JetBrains Mono) that would otherwise win. */
+  font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Skeleton row shimmer: a slow fade, never a spinner. */
+@keyframes crm-fade {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+.crm-skeleton {
+  background: var(--surface-2);
+  animation: crm-fade 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crm-skeleton {
+    animation: none;
+  }
+}

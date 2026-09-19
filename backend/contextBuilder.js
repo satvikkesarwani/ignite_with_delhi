@@ -293,6 +293,15 @@ export function assembleProfile(sig, cfg) {
     submission_rate: attended ? round(submitted / attended, 2) : null,
     prizes: prizes.map((x) => ({ ...x, date: String(x.date).slice(0, 10) })),
     prize_count: prizes.length,
+    projects: (sig.scoreEntries || [])
+      .map((e) => ({
+        project_id: e.project_id,
+        title: e.title,
+        date: String(e.date).slice(0, 10),
+        score: e.score,
+        tech: e.tech || [],
+      }))
+      .sort((a, b) => a.date.localeCompare(b.date)),
     best_rank: ranks.length ? Math.min(...ranks) : null,
     avg_score: scoresOnly.length
       ? round(scoresOnly.reduce((a, b) => a + b, 0) / scoresOnly.length, 1)
@@ -483,32 +492,33 @@ function buildEvidence(p, f, skills) {
 // The narrative — the only LLM call, and it happens offline at build time so
 // the agent can answer "tell me about X" with zero model calls.
 
-function templateNarrative(profile) {
-  const f = profile.facts;
-  const i = profile.identity;
-  const top = profile.skills
-    .filter((s) => s.confidence >= 0.5)
-    .slice(0, 3)
-    .map((s) => s.skill);
-  const bits = [
-    `${i.full_name} is a ${i.degree} ${i.branch} student at ${i.college}${i.grad_year ? `, graduating ${i.grad_year}` : ''}.`,
-  ];
-  if (f.hackathons_attended)
-    bits.push(
-      `They have attended ${f.hackathons_attended} of ${f.hackathons_registered} hackathons they registered for and submitted ${f.projects_submitted} projects.`
-    );
-  else if (f.hackathons_registered)
-    bits.push(
-      `They registered for ${f.hackathons_registered} hackathons but have not attended any.`
-    );
-  else bits.push('They have signed up but not yet joined an event.');
-  if (f.prize_count)
-    bits.push(
-      `They have ${f.prize_count} prize${f.prize_count > 1 ? 's' : ''}, best finish rank ${f.best_rank ?? '—'}.`
-    );
-  if (top.length) bits.push(`Strongest evidenced skills: ${top.join(', ')}.`);
-  bits.push(`Last active ${f.last_active} (${profile.trajectory.status}).`);
-  return bits.join(' ');
+const NARRATIVE_RULES = [
+  'Hard rules:',
+  '- Do not mention confidence numbers, project IDs (like P0145) or the score of any individual project.',
+  '- A skill backed by repositories or projects is "evidenced", never "declared". Only names listed in skills_declared_without_evidence are merely claimed.',
+  '- Never write dates in numeric or timestamp form; write months and years in words if you need them.',
+  '- Finish every sentence. End the paragraph with a full stop.',
+].join('\n');
+
+/** Drop project ids and per-project scores from an evidence string before the model sees it. */
+function scrubEvidence(detail) {
+  return String(detail)
+    .replace(/,?\s*best\s+P\d+/gi, '')
+    .replace(/\s*\(scored [\d.]+\)/gi, '')
+    .replace(/\bP\d{4}\b/g, 'a submitted project')
+    .trim();
+}
+
+/** Returns a reason the text is unusable, or null if it is fine. */
+export function narrativeProblem(text) {
+  if (!text || text.length < 220) return 'too short';
+  if (text.length > 1700) return 'too long';
+  if (!/[.!?]["')\]]?$/.test(text)) return 'does not end with a full stop (truncated)';
+  if (/\d{1,3}:\d{2}:\d{2}/.test(text)) return 'contains a timestamp fragment';
+  if (/\bP\d{4}\b/.test(text)) return 'leaks a project id';
+  if (/\b(he|she|his|her|him|hers)\b/i.test(text)) return 'uses gendered pronouns';
+  if (/\b(third|second|first|fourth)[- ]year\b/i.test(text)) return 'invents a year of study';
+  return null;
 }
 
 export async function generateNarrative(profile, cfg) {
@@ -543,13 +553,11 @@ export async function generateNarrative(profile, cfg) {
       project: p.project_title,
       date: p.date,
     })),
-    top_skills: profile.skills
-      .slice(0, 6)
-      .map((s) => ({
-        skill: s.skill,
-        confidence: s.confidence,
-        evidence: s.sources.map((x) => x.detail),
-      })),
+    top_skills: profile.skills.slice(0, 6).map((s) => ({
+      skill: s.skill,
+      confidence: s.confidence,
+      evidence: s.sources.map((x) => scrubEvidence(x.detail)),
+    })),
     skills_declared_without_evidence: profile.skills.filter((s) => s.claim_gap).map((s) => s.skill),
     traits: profile.traits.map((t) => t.label),
     personas: profile.personas,
@@ -561,24 +569,32 @@ export async function generateNarrative(profile, cfg) {
     engagement: profile.engagement.value,
   };
 
-  const res = await generateChat({
-    messages: [
-      {
-        role: 'system',
-        content: `${cfg.narrative_prompt}\n\n/no_think — output only the finished paragraph, no preamble, no headings.`,
-      },
-      {
-        role: 'user',
-        content: `Profile data:\n${JSON.stringify(payload, null, 1)}\n\nWrite the profile now.`,
-      },
-    ],
-    temperature: 0.4,
-    maxTokens: 400,
-  });
-
-  const text = (res.content || '').replace(/^\s*(here'?s?|profile:)\s*/i, '').trim();
-  if (!text || text.length < 60) throw new Error('narrative too short');
-  return text;
+  // The model occasionally degenerates (a sentence that trails off into a timestamp, a
+  // truncation mid-clause). Validate hard, retry once at a higher temperature, and let the
+  // caller fall back to the deterministic template rather than store garbage.
+  let lastReason = 'no attempt';
+  for (const temperature of [0.4, 0.6]) {
+    const res = await generateChat({
+      messages: [
+        {
+          role: 'system',
+          content: `${cfg.narrative_prompt}\n\n${NARRATIVE_RULES}\n\n/no_think — output only the finished paragraph, no preamble, no headings.`,
+        },
+        {
+          role: 'user',
+          content: `Profile data:\n${JSON.stringify(payload, null, 1)}\n\nWrite the profile now.`,
+        },
+      ],
+      temperature,
+      maxTokens: 620,
+    });
+    const candidate = (res.content || '').replace(/^\s*(here'?s?|profile:)\s*/i, '').trim();
+    const problem = narrativeProblem(candidate);
+    if (!problem) return candidate;
+    lastReason = problem;
+    log.warn('Narrative rejected', { user: profile.user_id, problem, temperature });
+  }
+  throw new Error(`narrative failed validation: ${lastReason}`);
 }
 
 // =============================================================== persistence
@@ -593,6 +609,11 @@ export async function persistProfile(profile) {
      MERGE (cp:ContextProfile {user_id: $uid})
      SET cp.json = $json, cp.narrative = $narrative, cp.narrative_status = $status,
          cp.engagement = $engagement, cp.personas = $personas, cp.trajectory_status = $trajStatus,
+         cp.trajectory_direction = $trajDirection,
+         cp.prize_count = $prizeCount, cp.hackathons_attended = $attended,
+         cp.submission_rate = $submissionRate, cp.avg_mentor_score = $avgMentor,
+         cp.interactions = $interactions, cp.days_since_active = $daysSince,
+         cp.last_active = $lastActive, cp.no_shows = $noShows,
          cp.built_at = $builtAt, cp.version = 1
      MERGE (cp)-[:ABOUT]->(p)`,
     {
@@ -603,6 +624,16 @@ export async function persistProfile(profile) {
       engagement: profile.engagement.value,
       personas: profile.personas,
       trajStatus: profile.trajectory.status,
+      trajDirection: profile.trajectory.direction,
+      // Scalars the retrieval layer filters and sorts on directly in Cypher.
+      prizeCount: profile.facts.prize_count,
+      attended: profile.facts.hackathons_attended,
+      submissionRate: profile.facts.submission_rate ?? 0,
+      avgMentor: profile.facts.avg_mentor_score ?? 0,
+      interactions: profile.facts.interactions,
+      daysSince: profile.facts.days_since_active ?? 9999,
+      lastActive: profile.facts.last_active,
+      noShows: profile.facts.no_shows,
       builtAt: profile.built_at,
     }
   );

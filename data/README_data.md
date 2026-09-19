@@ -10,44 +10,44 @@ enrichment runs only on the intake form path, for real people who submit it them
 
 ## Files
 
-| File | Rows |
-| --- | --- |
-| `users.csv` | 600 |
-| `hackathons.csv` | 24 |
-| `teams.csv` | 352 |
-| `participations.csv` | 1139 |
-| `projects.csv` | 256 |
-| `results.csv` | 256 |
-| `mentors.csv` | 30 |
-| `mentor_sessions.csv` | 468 |
-| `interactions.csv` | 3342 |
-| `crm_touchpoints.csv` | 835 |
-| `github_profiles.json` | 503 |
-| `linkedin_profiles.json` | 489 |
+| File                     | Rows |
+| ------------------------ | ---- |
+| `users.csv`              | 600  |
+| `hackathons.csv`         | 24   |
+| `teams.csv`              | 352  |
+| `participations.csv`     | 1139 |
+| `projects.csv`           | 256  |
+| `results.csv`            | 256  |
+| `mentors.csv`            | 30   |
+| `mentor_sessions.csv`    | 468  |
+| `interactions.csv`       | 3342 |
+| `crm_touchpoints.csv`    | 835  |
+| `github_profiles.json`   | 503  |
+| `linkedin_profiles.json` | 489  |
 
 ## Story users
 
 Hand-authored. Every demo beat and eval question depends on these being exact.
 
-| ID | Name | What it tests |
-| --- | --- | --- |
-| U0001 | Shiv Sharma | Primary demo subject. Shares an exact name with U0002 — the disambiguation trap. |
-| U0002 | Shiv Sharma | Exact name collision with U0001. Different college, no wins, no external profiles. |
-| U0003 | Shivam Sharma | Near-miss name for "Shiv Sharma" fuzzy matching. |
-| U0004 | Shiv Verma | Third "Shiv" variant. Attended once, never submitted. |
-| U0005 | Priya Nair | Same real person as U0006 — identical github_username, different email. Undeclared duplicate. |
-| U0006 | Priya Nair | Duplicate of U0005. Entity-resolution demo: same github, same college, same grad year. |
-| U0007 | Ananya Iyer | Serial winner. 5 prizes across 8 events, still active. The "tell me about her" demo. |
-| U0008 | Rohan Mehta | Dormant high-potential. Two podiums, then silent since 2025-07. Three unopened emails. The win-back demo. |
-| U0009 | Kabir Singh | Rising star. Scores 52 -> 68 -> 79 -> 91 with a first place last out. Trajectory demo. |
-| U0010 | Meera Joshi | Serial starter. 9 registrations, 8 attended, 1 submission. submission_rate ~0.125. |
-| U0011 | Arjun Khanna | Habitual no-show. 6 registrations, 0 attended. no_show_risk trait must fire. |
-| U0012 | Sneha Reddy | Mentor material. Highest mentor score, 44 interactions mostly answering others, 6 workshops. |
-| U0013 | Vikram Rao | Graph specialist. Won Best use of Neo4j. The "who fits the Neo4j track" matchmaking answer. |
-| U0014 | Ishita Bansal | Agent builder. Won Best use of Tavily. Second matchmaking answer. |
-| U0015 | Devansh Kapoor | CLAIM-GAP DEMO. Declares ML/DL/PyTorch. GitHub is 88% JavaScript across 4 repos, LinkedIn says frontend, projects are all web. The context layer must flag this. |
-| U0016 | Nisha Pillai | consent_flag=false with an unsubscribed touchpoint. Outreach MUST skip her, visibly. |
-| U0017 | Aarav Malik | Near-miss for the absent name "Aarav Malhotra". Existence check must return NOT FOUND for Malhotra and suggest Malik. |
+| ID    | Name           | What it tests                                                                                                                                                                            |
+| ----- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| U0001 | Shiv Sharma    | Primary demo subject. Shares an exact name with U0002 — the disambiguation trap.                                                                                                         |
+| U0002 | Shiv Sharma    | Exact name collision with U0001. Different college, no wins, no external profiles.                                                                                                       |
+| U0003 | Shivam Sharma  | Near-miss name for "Shiv Sharma" fuzzy matching.                                                                                                                                         |
+| U0004 | Shiv Verma     | Third "Shiv" variant. Attended once, never submitted.                                                                                                                                    |
+| U0005 | Priya Nair     | Same real person as U0006 — identical github_username, different email. Undeclared duplicate.                                                                                            |
+| U0006 | Priya Nair     | Duplicate of U0005. Entity-resolution demo: same github, same college, same grad year.                                                                                                   |
+| U0007 | Ananya Iyer    | Serial winner. 5 prizes across 8 events, still active. The "tell me about her" demo.                                                                                                     |
+| U0008 | Rohan Mehta    | Dormant high-potential. Two podiums, then silent since 2025-07. Three unopened emails. The win-back demo.                                                                                |
+| U0009 | Kabir Singh    | Rising star. Scores 52 -> 68 -> 79 -> 91 with a first place last out. Trajectory demo.                                                                                                   |
+| U0010 | Meera Joshi    | Serial starter. 9 registrations, 8 attended, 1 submission. submission_rate ~0.125.                                                                                                       |
+| U0011 | Arjun Khanna   | Habitual no-show. 6 registrations, 0 attended. no_show_risk trait must fire.                                                                                                             |
+| U0012 | Sneha Reddy    | Mentor material. Highest mentor score, 44 interactions mostly answering others, 6 workshops.                                                                                             |
+| U0013 | Vikram Rao     | Graph specialist. Won Best use of Neo4j. The "who fits the Neo4j track" matchmaking answer.                                                                                              |
+| U0014 | Ishita Bansal  | Agent builder. Won Best use of Tavily. Second matchmaking answer.                                                                                                                        |
+| U0015 | Devansh Kapoor | CLAIM-GAP DEMO. Declares ML/DL/PyTorch. GitHub is 88% JavaScript across 4 repos, LinkedIn says frontend, projects are all web. The context layer must flag this.                         |
+| U0016 | Nisha Pillai   | consent_flag=false with an unsubscribed touchpoint. Outreach MUST skip her, visibly.                                                                                                     |
+| U0017 | Aarav Malik    | Near-miss first name for the absent "Aarav Malhotra". The existence check must return NOT FOUND for Malhotra; suggestions are ranked by similarity and are labelled as different people. |
 
 ## Must NOT exist
 
@@ -56,25 +56,25 @@ Hand-authored. Every demo beat and eval question depends on these being exact.
 
 ## Verified story-user stats
 
-| ID | Registered | Attended | No-shows | Submitted | Prizes | Avg mentor | Last active |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| U0001 | 7 | 7 | 0 | 6 | 3 | 4.6 | 2026-09-16 |
-| U0002 | 2 | 2 | 0 | 2 | 0 | 3 | 2025-10-10 |
-| U0003 | 3 | 3 | 0 | 3 | 1 | 4 | 2026-04-17 |
-| U0004 | 1 | 1 | 0 | 0 | 0 | — | 2025-08-27 |
-| U0005 | 3 | 3 | 0 | 3 | 0 | 4.5 | 2026-07-28 |
-| U0006 | 2 | 2 | 0 | 2 | 0 | 5 | 2026-08-28 |
-| U0007 | 8 | 8 | 0 | 8 | 5 | 4.83 | 2026-08-21 |
-| U0008 | 3 | 3 | 0 | 3 | 2 | 4.33 | 2025-06-25 |
-| U0009 | 4 | 4 | 0 | 4 | 1 | 4.5 | 2026-08-11 |
-| U0010 | 9 | 8 | 1 | 1 | 0 | 3 | 2026-05-23 |
-| U0011 | 6 | 0 | 6 | 0 | 0 | — | 2026-06-18 |
-| U0012 | 5 | 5 | 0 | 5 | 1 | 4.86 | 2026-09-01 |
-| U0013 | 3 | 3 | 0 | 3 | 1 | 4.67 | 2026-07-03 |
-| U0014 | 4 | 4 | 0 | 4 | 2 | 4.67 | 2026-08-30 |
-| U0015 | 3 | 3 | 0 | 3 | 0 | 3.5 | 2026-09-16 |
-| U0016 | 3 | 3 | 0 | 3 | 0 | 4 | 2026-01-12 |
-| U0017 | 2 | 2 | 0 | 2 | 0 | 4 | 2026-03-15 |
+| ID    | Registered | Attended | No-shows | Submitted | Prizes | Avg mentor | Last active |
+| ----- | ---------- | -------- | -------- | --------- | ------ | ---------- | ----------- |
+| U0001 | 7          | 7        | 0        | 6         | 3      | 4.6        | 2026-09-16  |
+| U0002 | 2          | 2        | 0        | 2         | 0      | 3          | 2025-10-10  |
+| U0003 | 3          | 3        | 0        | 3         | 1      | 4          | 2026-04-17  |
+| U0004 | 1          | 1        | 0        | 0         | 0      | —          | 2025-08-27  |
+| U0005 | 3          | 3        | 0        | 3         | 0      | 4.5        | 2026-07-28  |
+| U0006 | 2          | 2        | 0        | 2         | 0      | 5          | 2026-08-28  |
+| U0007 | 8          | 8        | 0        | 8         | 5      | 4.83       | 2026-08-21  |
+| U0008 | 3          | 3        | 0        | 3         | 2      | 4.33       | 2025-06-25  |
+| U0009 | 4          | 4        | 0        | 4         | 1      | 4.5        | 2026-08-11  |
+| U0010 | 9          | 8        | 1        | 1         | 0      | 3          | 2026-05-23  |
+| U0011 | 6          | 0        | 6        | 0         | 0      | —          | 2026-06-18  |
+| U0012 | 5          | 5        | 0        | 5         | 1      | 4.86       | 2026-09-01  |
+| U0013 | 3          | 3        | 0        | 3         | 1      | 4.67       | 2026-07-03  |
+| U0014 | 4          | 4        | 0        | 4         | 2      | 4.67       | 2026-08-30  |
+| U0015 | 3          | 3        | 0        | 3         | 0      | 3.5        | 2026-09-16  |
+| U0016 | 3          | 3        | 0        | 3         | 0      | 4          | 2026-01-12  |
+| U0017 | 2          | 2        | 0        | 2         | 0      | 4          | 2026-03-15  |
 
 ## Demo questions these support
 

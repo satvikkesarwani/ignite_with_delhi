@@ -51,7 +51,9 @@ function parseCsv(file) {
     rows.push(row);
   }
   const headers = rows.shift();
-  return rows.filter((r) => r.length === headers.length).map((r) => Object.fromEntries(headers.map((h, i) => [h, r[i]])));
+  return rows
+    .filter((r) => r.length === headers.length)
+    .map((r) => Object.fromEntries(headers.map((h, i) => [h, r[i]])));
 }
 
 const readJson = (f) => JSON.parse(fs.readFileSync(path.join(DATA, f), 'utf8'));
@@ -95,7 +97,6 @@ const projectIds = new Set(projects.map((p) => p.project_id));
 const mentorIds = new Set(mentors.map((m) => m.mentor_id));
 const hackById = new Map(hacks.map((h) => [h.hackathon_id, h]));
 const userById = new Map(users.map((u) => [u.user_id, u]));
-const teamById = new Map(teams.map((t) => [t.team_id, t]));
 const resultByProject = new Map(results_.map((r) => [r.project_id, r]));
 
 // ------------------------------------------------------------ primary keys
@@ -125,19 +126,44 @@ check('users.email unique', () => dupes(users, 'email'));
 // ----------------------------------------------------------- foreign keys
 
 check('FK participations -> user/hackathon/team', () =>
-  parts.filter((p) => !userIds.has(p.user_id) || !hackIds.has(p.hackathon_id) || (p.team_id && !teamIds.has(p.team_id))).map((p) => p.participation_id)
+  parts
+    .filter(
+      (p) =>
+        !userIds.has(p.user_id) ||
+        !hackIds.has(p.hackathon_id) ||
+        (p.team_id && !teamIds.has(p.team_id))
+    )
+    .map((p) => p.participation_id)
 );
-check('FK teams -> hackathon', () => teams.filter((t) => !hackIds.has(t.hackathon_id)).map((t) => t.team_id));
-check('FK projects -> team/hackathon', () => projects.filter((p) => !teamIds.has(p.team_id) || !hackIds.has(p.hackathon_id)).map((p) => p.project_id));
-check('FK results -> project', () => results_.filter((r) => !projectIds.has(r.project_id)).map((r) => r.project_id));
+check('FK teams -> hackathon', () =>
+  teams.filter((t) => !hackIds.has(t.hackathon_id)).map((t) => t.team_id)
+);
+check('FK projects -> team/hackathon', () =>
+  projects
+    .filter((p) => !teamIds.has(p.team_id) || !hackIds.has(p.hackathon_id))
+    .map((p) => p.project_id)
+);
+check('FK results -> project', () =>
+  results_.filter((r) => !projectIds.has(r.project_id)).map((r) => r.project_id)
+);
 check('FK mentor_sessions -> user/mentor/hackathon', () =>
-  sessions.filter((s) => !userIds.has(s.user_id) || !mentorIds.has(s.mentor_id) || !hackIds.has(s.hackathon_id)).map((s) => s.session_id)
+  sessions
+    .filter(
+      (s) => !userIds.has(s.user_id) || !mentorIds.has(s.mentor_id) || !hackIds.has(s.hackathon_id)
+    )
+    .map((s) => s.session_id)
 );
 check('FK interactions -> user (and hackathon when set)', () =>
-  interactions.filter((i) => !userIds.has(i.user_id) || (i.hackathon_id && !hackIds.has(i.hackathon_id))).map((i) => i.interaction_id)
+  interactions
+    .filter((i) => !userIds.has(i.user_id) || (i.hackathon_id && !hackIds.has(i.hackathon_id)))
+    .map((i) => i.interaction_id)
 );
-check('FK crm_touchpoints -> user', () => crm.filter((c) => !userIds.has(c.user_id)).map((c) => c.touchpoint_id));
-check('Every project has a result row', () => projects.filter((p) => !resultByProject.has(p.project_id)).map((p) => p.project_id));
+check('FK crm_touchpoints -> user', () =>
+  crm.filter((c) => !userIds.has(c.user_id)).map((c) => c.touchpoint_id)
+);
+check('Every project has a result row', () =>
+  projects.filter((p) => !resultByProject.has(p.project_id)).map((p) => p.project_id)
+);
 
 // ------------------------------------------------------- team consistency
 
@@ -147,7 +173,8 @@ check('No user on two teams in one hackathon', () => {
   for (const p of parts) {
     if (!p.team_id) continue;
     const key = `${p.user_id}@${p.hackathon_id}`;
-    if (seen.has(key) && seen.get(key) !== p.team_id) bad.push(`${key}: ${seen.get(key)} vs ${p.team_id}`);
+    if (seen.has(key) && seen.get(key) !== p.team_id)
+      bad.push(`${key}: ${seen.get(key)} vs ${p.team_id}`);
     seen.set(key, p.team_id);
   }
   return bad;
@@ -156,11 +183,15 @@ check('No user on two teams in one hackathon', () => {
 check('teams.team_size matches actual members', () => {
   const counts = new Map();
   for (const p of parts) if (p.team_id) counts.set(p.team_id, (counts.get(p.team_id) || 0) + 1);
-  return teams.filter((t) => Number(t.team_size) !== (counts.get(t.team_id) || 0)).map((t) => `${t.team_id}: declared ${t.team_size}, actual ${counts.get(t.team_id) || 0}`);
+  return teams
+    .filter((t) => Number(t.team_size) !== (counts.get(t.team_id) || 0))
+    .map((t) => `${t.team_id}: declared ${t.team_size}, actual ${counts.get(t.team_id) || 0}`);
 });
 
 check('no_show rows carry no team, attended rows do', () =>
-  parts.filter((p) => (p.status === 'no_show' && p.team_id) || (p.status === 'attended' && !p.team_id)).map((p) => `${p.participation_id} (${p.status})`)
+  parts
+    .filter((p) => (p.status === 'no_show' && p.team_id) || (p.status === 'attended' && !p.team_id))
+    .map((p) => `${p.participation_id} (${p.status})`)
 );
 
 // -------------------------------------------------------------- date order
@@ -200,16 +231,24 @@ check('mentor_session within hackathon window', () =>
 
 check('nothing dated after today (2026-09-19)', () => {
   const bad = [];
-  for (const h of hacks) if (h.end_date > TODAY) bad.push(`hackathon ${h.hackathon_id} ${h.end_date}`);
-  for (const p of projects) if (p.submitted_at.slice(0, 10) > TODAY) bad.push(`project ${p.project_id}`);
-  for (const i of interactions) if (i.timestamp.slice(0, 10) > TODAY) bad.push(`interaction ${i.interaction_id} ${i.timestamp}`);
-  for (const c of crm) if (c.sent_at.slice(0, 10) > TODAY) bad.push(`touchpoint ${c.touchpoint_id} ${c.sent_at}`);
-  for (const u of users) if (u.last_active > TODAY || u.signup_date > TODAY) bad.push(`user ${u.user_id}`);
+  for (const h of hacks)
+    if (h.end_date > TODAY) bad.push(`hackathon ${h.hackathon_id} ${h.end_date}`);
+  for (const p of projects)
+    if (p.submitted_at.slice(0, 10) > TODAY) bad.push(`project ${p.project_id}`);
+  for (const i of interactions)
+    if (i.timestamp.slice(0, 10) > TODAY)
+      bad.push(`interaction ${i.interaction_id} ${i.timestamp}`);
+  for (const c of crm)
+    if (c.sent_at.slice(0, 10) > TODAY) bad.push(`touchpoint ${c.touchpoint_id} ${c.sent_at}`);
+  for (const u of users)
+    if (u.last_active > TODAY || u.signup_date > TODAY) bad.push(`user ${u.user_id}`);
   return bad;
 });
 
 check('interactions not before the user signed up', () =>
-  interactions.filter((i) => i.timestamp.slice(0, 10) < userById.get(i.user_id)?.signup_date).map((i) => `${i.interaction_id}: ${i.timestamp} < ${userById.get(i.user_id)?.signup_date}`)
+  interactions
+    .filter((i) => i.timestamp.slice(0, 10) < userById.get(i.user_id)?.signup_date)
+    .map((i) => `${i.interaction_id}: ${i.timestamp} < ${userById.get(i.user_id)?.signup_date}`)
 );
 
 // -------------------------------------------------------- ranks and prizes
@@ -222,11 +261,15 @@ check('rank order consistent with score', () => {
   }
   const bad = [];
   for (const [hid, ps] of byHack) {
-    const ranked = ps.map((p) => ({ p, r: resultByProject.get(p.project_id) })).filter((x) => x.r && x.r.rank !== '');
+    const ranked = ps
+      .map((p) => ({ p, r: resultByProject.get(p.project_id) }))
+      .filter((x) => x.r && x.r.rank !== '');
     ranked.sort((a, b) => Number(a.r.rank) - Number(b.r.rank));
     for (let i = 1; i < ranked.length; i++) {
       if (Number(ranked[i].r.score) >= Number(ranked[i - 1].r.score)) {
-        bad.push(`${hid}: rank ${ranked[i].r.rank} scores ${ranked[i].r.score} >= rank ${ranked[i - 1].r.rank} scores ${ranked[i - 1].r.score}`);
+        bad.push(
+          `${hid}: rank ${ranked[i].r.rank} scores ${ranked[i].r.score} >= rank ${ranked[i - 1].r.rank} scores ${ranked[i - 1].r.score}`
+        );
       }
     }
     // nothing unranked may outscore the lowest podium finisher
@@ -234,7 +277,8 @@ check('rank order consistent with score', () => {
     if (lowest !== null) {
       for (const { p, r } of ps.map((p) => ({ p, r: resultByProject.get(p.project_id) }))) {
         if (!r || r.rank !== '' || r.prize_track) continue;
-        if (Number(r.score) >= lowest) bad.push(`${hid}: unranked ${p.project_id} scores ${r.score} >= podium low ${lowest}`);
+        if (Number(r.score) >= lowest)
+          bad.push(`${hid}: unranked ${p.project_id} scores ${r.score} >= podium low ${lowest}`);
       }
     }
   }
@@ -290,13 +334,20 @@ check('no touchpoint after an unsubscribe', () => {
   for (const [uid, rows] of byUser) {
     rows.sort((a, b) => a.sent_at.localeCompare(b.sent_at));
     const unsubIdx = rows.findIndex((r) => r.outcome === 'unsubscribed');
-    if (unsubIdx >= 0 && unsubIdx < rows.length - 1) bad.push(`${uid}: ${rows.length - 1 - unsubIdx} touchpoints after unsubscribe`);
+    if (unsubIdx >= 0 && unsubIdx < rows.length - 1)
+      bad.push(`${uid}: ${rows.length - 1 - unsubIdx} touchpoints after unsubscribe`);
   }
   return bad;
 });
 
 check('clicked implies opened, replied implies opened', () =>
-  crm.filter((c) => (c.clicked === 'true' && c.opened !== 'true') || (c.replied === 'true' && c.opened !== 'true')).map((c) => c.touchpoint_id)
+  crm
+    .filter(
+      (c) =>
+        (c.clicked === 'true' && c.opened !== 'true') ||
+        (c.replied === 'true' && c.opened !== 'true')
+    )
+    .map((c) => c.touchpoint_id)
 );
 
 // ---------------------------------------------------- external profile links
@@ -318,7 +369,9 @@ check('every linkedin_url has a profile and vice versa', () => {
 });
 
 check('external profiles are labelled synthetic', () =>
-  [...Object.values(github), ...Object.values(linkedin)].filter((p) => p.source !== 'synthetic_seed').map((p) => p.username || p.url)
+  [...Object.values(github), ...Object.values(linkedin)]
+    .filter((p) => p.source !== 'synthetic_seed')
+    .map((p) => p.username || p.url)
 );
 
 check('github top_languages sum to ~100', () =>
@@ -342,7 +395,9 @@ const statOf = (uid) => {
     noShows: ps.filter((p) => p.status === 'no_show').length,
     submitted: myProjects.length,
     prizes: myResults.filter((r) => r.rank !== '' || r.prize_track).length,
-    avgMentor: sess.length ? Number((sess.reduce((a, s) => a + Number(s.mentor_score), 0) / sess.length).toFixed(2)) : null,
+    avgMentor: sess.length
+      ? Number((sess.reduce((a, s) => a + Number(s.mentor_score), 0) / sess.length).toFixed(2))
+      : null,
   };
 };
 
@@ -353,10 +408,15 @@ check('story users match their declared specs', () => {
     const expectedReg = s.hackathons.length;
     const expectedAttended = expectedReg - (s.noShow?.length || 0);
     const expectedSubmitted = expectedAttended - (s.noSubmit?.length || 0);
-    const expectedPrizes = Object.values(s.forcedResults || {}).filter((f) => f.rank || f.prizeTrack).length;
-    if (st.registered !== expectedReg) bad.push(`${s.id} registered ${st.registered} != ${expectedReg}`);
-    if (st.attended !== expectedAttended) bad.push(`${s.id} attended ${st.attended} != ${expectedAttended}`);
-    if (st.submitted !== expectedSubmitted) bad.push(`${s.id} submitted ${st.submitted} != ${expectedSubmitted}`);
+    const expectedPrizes = Object.values(s.forcedResults || {}).filter(
+      (f) => f.rank || f.prizeTrack
+    ).length;
+    if (st.registered !== expectedReg)
+      bad.push(`${s.id} registered ${st.registered} != ${expectedReg}`);
+    if (st.attended !== expectedAttended)
+      bad.push(`${s.id} attended ${st.attended} != ${expectedAttended}`);
+    if (st.submitted !== expectedSubmitted)
+      bad.push(`${s.id} submitted ${st.submitted} != ${expectedSubmitted}`);
     if (st.prizes !== expectedPrizes) bad.push(`${s.id} prizes ${st.prizes} != ${expectedPrizes}`);
   }
   return bad;
@@ -377,13 +437,16 @@ check('U0015 claim gap: declares ML, GitHub is mostly JavaScript', () => {
   const u = userById.get('U0015');
   const gh = github[u.github_username];
   const bad = [];
-  if (!/Machine Learning/.test(u.declared_skills)) bad.push('U0015 no longer declares Machine Learning');
-  if (gh.top_languages[0].language !== 'JavaScript') bad.push(`top language is ${gh.top_languages[0].language}, expected JavaScript`);
+  if (!/Machine Learning/.test(u.declared_skills))
+    bad.push('U0015 no longer declares Machine Learning');
+  if (gh.top_languages[0].language !== 'JavaScript')
+    bad.push(`top language is ${gh.top_languages[0].language}, expected JavaScript`);
   return bad;
 });
 
 check('U0001 and U0007 are repeat teammates (2 shared teams)', () => {
-  const teamsOf = (uid) => new Set(parts.filter((p) => p.user_id === uid && p.team_id).map((p) => p.team_id));
+  const teamsOf = (uid) =>
+    new Set(parts.filter((p) => p.user_id === uid && p.team_id).map((p) => p.team_id));
   const a = teamsOf('U0001');
   const b = teamsOf('U0007');
   const shared = [...a].filter((t) => b.has(t));
@@ -417,7 +480,9 @@ check('banned probe names appear nowhere', () => {
   return BANNED_NAMES.filter((n) => haystack.includes(n));
 });
 
-check('U0017 Aarav Malik exists as the near-miss', () => (users.some((u) => u.full_name.trim() === 'Aarav Malik') ? [] : ['missing']));
+check('U0017 Aarav Malik exists as the near-miss', () =>
+  users.some((u) => u.full_name.trim() === 'Aarav Malik') ? [] : ['missing']
+);
 
 // -------------------------------------------------------------- text quality
 
@@ -446,7 +511,8 @@ check('judge feedback tone matches score band', () => {
   for (const r of results_) {
     const s = Number(r.score);
     if (!r.judge_feedback) bad.push(`${r.project_id}: empty feedback`);
-    if (s > 85 && /struggl|overscoped|failed twice|insufficient/i.test(r.judge_feedback)) bad.push(`${r.project_id}: harsh feedback on score ${s}`);
+    if (s > 85 && /struggl|overscoped|failed twice|insufficient/i.test(r.judge_feedback))
+      bad.push(`${r.project_id}: harsh feedback on score ${s}`);
   }
   return bad;
 });
@@ -464,8 +530,12 @@ for (const r of results) {
 }
 console.log('\n' + '-'.repeat(W));
 console.log(`  ${results.length - failed}/${results.length} checks passed`);
-console.log(`  users ${users.length} · hackathons ${hacks.length} · teams ${teams.length} · participations ${parts.length}`);
-console.log(`  projects ${projects.length} · mentor sessions ${sessions.length} · interactions ${interactions.length} · touchpoints ${crm.length}`);
+console.log(
+  `  users ${users.length} · hackathons ${hacks.length} · teams ${teams.length} · participations ${parts.length}`
+);
+console.log(
+  `  projects ${projects.length} · mentor sessions ${sessions.length} · interactions ${interactions.length} · touchpoints ${crm.length}`
+);
 console.log('-'.repeat(W) + '\n');
 
 if (failed) {

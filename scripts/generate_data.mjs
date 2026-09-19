@@ -1080,7 +1080,7 @@ const neo4jWinnerProject = projects.find((p) => p.project_id === neo4jWinner?.pr
 const evalQuestions = [
   { id: 'Q01', type: 'existence', question: 'Is Ananya Iyer in our database?', expected_answer: 'Yes — U0007, IIIT Delhi, ML/AI.', evidence_files: ['users.csv'] },
   { id: 'Q02', type: 'ambiguity', question: 'Is Shiv Sharma in our database?', expected_answer: `Ambiguous — ${shivs.length} people share that name (${shivs.map((s) => `${s.user_id} at ${s.collegeShort}`).join(', ')}). The agent must ask which one.`, evidence_files: ['users.csv'] },
-  { id: 'Q03', type: 'not_found', question: 'Is Aarav Malhotra in our database?', expected_answer: 'No. Closest match is Aarav Malik (U0017). Must not invent a profile.', evidence_files: ['users.csv'] },
+  { id: 'Q03', type: 'not_found', question: 'Is Aarav Malhotra in our database?', expected_answer: 'No. There is no Aarav Malhotra. The agent must say so plainly and must not invent a profile; it may offer the nearest names, clearly labelled as different people.', evidence_files: ['users.csv'] },
   { id: 'Q04', type: 'existence', question: 'Do we have anyone called Ananya Iyar?', expected_answer: 'Fuzzy match to Ananya Iyer (U0007); should flag it as an approximate match.', evidence_files: ['users.csv'] },
   { id: 'Q05', type: 'count', question: 'How many hackathons has Shiv Sharma from IIT Delhi attended?', expected_answer: String(u1.attended), evidence_files: ['participations.csv'] },
   { id: 'Q06', type: 'count', question: 'How many projects has Shiv Sharma from IIT Delhi submitted?', expected_answer: String(u1.submitted), evidence_files: ['projects.csv'] },
