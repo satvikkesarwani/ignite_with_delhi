@@ -9,6 +9,8 @@ import './crm.css';
 import { api } from './api';
 import { CrmLayout } from './CrmLayout';
 import { DatabaseView } from './DatabaseView';
+import { ScoutView } from './ScoutView';
+import { IntakeView } from './IntakeView';
 
 function useLocationPath() {
   const [path, setPath] = useState(window.location.pathname);
@@ -58,23 +60,11 @@ export default function CrmApp() {
   return (
     <CrmLayout currentPath={path} onNavigate={go} stats={stats} statsError={statsError}>
       {path === '/crm' && <DatabaseView />}
-      {path === '/crm/scout' && (
-        <PhasePlaceholder
-          phase="B2"
-          title="AI Scout Console"
-          description="Split-screen natural language query interface with template/hybrid/text2cypher routing and verified candidate results table."
-        />
-      )}
-      {path === '/crm/intake' && (
-        <PhasePlaceholder
-          phase="B3"
-          title="Participant Intake Pipeline"
-          description="Live intake registration with resume PDF parsing, Nemotron extraction, and multi-stage pipeline stepper."
-        />
-      )}
+      {path === '/crm/scout' && <ScoutView />}
+      {path === '/crm/intake' && <IntakeView onNavigate={go} />}
       {path === '/crm/graph' && (
         <PhasePlaceholder
-          phase="B1 / Graph"
+          phase="C1 / Graph"
           title="Context Graph Explorer"
           description="Interactive subgraph exploration showing participant, project, hackathon, and skill relationship topologies."
         />

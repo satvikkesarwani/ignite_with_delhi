@@ -190,8 +190,24 @@ body:has(.crm-root) {
   animation: crm-fade 1.6s ease-in-out infinite;
 }
 
+/* Row entrance animation: 120ms fade and 4px rise, subtle, no bounce */
+@keyframes crm-row-rise {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.crm-row-animate {
+  animation: crm-row-rise 120ms ease-out forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .crm-skeleton {
+  .crm-skeleton,
+  .crm-row-animate {
     animation: none;
   }
 }
