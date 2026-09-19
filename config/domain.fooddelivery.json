@@ -1,0 +1,61 @@
+{
+  "domain": "food_delivery_app",
+  "display_name": "Food Delivery App",
+  "entity": "Customer",
+  "entity_key": "customer_id",
+
+  "justification": "A food delivery app's context is entirely behavioural: what someone orders, how often, at what price point, and how they rate it. Nothing about a customer's GitHub or professional history predicts anything useful here, and scraping it would be an unjustified privacy intrusion. So every external source is deliberately switched OFF. This config is not wired to a dataset — it exists to show that the context layer is driven by configuration, not by hardcoded hackathon assumptions.",
+
+  "external_sources": {
+    "github": { "enabled": false, "reason": "Irrelevant to food ordering behaviour." },
+    "tavily": { "enabled": false, "reason": "No legitimate need to search the open web about a customer." },
+    "linkedin": { "enabled": false, "reason": "Irrelevant and intrusive for this use case." }
+  },
+
+  "signals": [
+    { "key": "orders_total", "type": "count", "cypher": "MATCH (c:Customer {customer_id:$id})-[:PLACED]->(o:Order) RETURN count(o)" },
+    { "key": "orders_last_90d", "type": "count", "cypher": "MATCH (c:Customer {customer_id:$id})-[:PLACED]->(o:Order) WHERE o.placed_at > date() - duration('P90D') RETURN count(o)" },
+    { "key": "avg_basket_inr", "type": "avg", "cypher": "MATCH (c:Customer {customer_id:$id})-[:PLACED]->(o:Order) RETURN avg(o.total_inr)" },
+    { "key": "cuisine_affinity", "type": "distribution", "cypher": "MATCH (c:Customer {customer_id:$id})-[:PLACED]->(:Order)-[:CONTAINS]->(:Dish)-[:OF_CUISINE]->(k:Cuisine) RETURN k.name, count(*)" },
+    { "key": "avg_rating_given", "type": "avg", "cypher": "MATCH (c:Customer {customer_id:$id})-[r:RATED]->(:Restaurant) RETURN avg(r.stars)" },
+    { "key": "reorder_rate", "type": "ratio", "numerator": "repeat_restaurant_orders", "denominator": "orders_total" },
+    { "key": "complaint_count", "type": "count", "cypher": "MATCH (c:Customer {customer_id:$id})-[:RAISED]->(t:SupportTicket) RETURN count(t)" },
+    { "key": "days_since_last_order", "type": "days_since", "from": "last_order_date" }
+  ],
+
+  "skill_sources": [],
+
+  "traits": [
+    { "key": "price_sensitive", "label": "Price sensitive", "rule": "avg_basket_inr < 250 && discount_order_share > 0.6" },
+    { "key": "weekend_regular", "label": "Weekend regular", "rule": "weekend_order_share > 0.7" },
+    { "key": "cuisine_loyalist", "label": "Cuisine loyalist", "rule": "top_cuisine_share > 0.6" },
+    { "key": "explorer", "label": "Explorer", "rule": "distinct_restaurants >= 15 && reorder_rate < 0.3" },
+    { "key": "high_value", "label": "High value", "rule": "avg_basket_inr > 700 && orders_last_90d >= 8" },
+    { "key": "churn_risk", "label": "Churn risk", "rule": "days_since_last_order > 45 && orders_total >= 10" }
+  ],
+
+  "personas": [
+    { "key": "loyal_regular", "label": "Loyal Regular", "rule": "orders_last_90d >= 12 && reorder_rate > 0.5" },
+    { "key": "lapsing_high_value", "label": "Lapsing High-Value", "rule": "avg_basket_inr > 600 && days_since_last_order > 45" },
+    { "key": "deal_hunter", "label": "Deal Hunter", "rule": "discount_order_share > 0.7" },
+    { "key": "new_customer", "label": "New Customer", "rule": "orders_total <= 2" }
+  ],
+  "max_personas": 2,
+
+  "status_thresholds": { "active": 21, "cooling": 45, "dormant": 120 },
+
+  "engagement": {
+    "components": {
+      "recency": { "weight": 0.35, "from": "days_since_last_order", "invert": true, "scale": 120 },
+      "frequency": { "weight": 0.3, "from": "orders_last_90d", "scale": 20 },
+      "depth": { "weight": 0.15, "from": "distinct_restaurants", "scale": 20 },
+      "outcome": { "weight": 0.2, "from": "avg_basket_inr", "scale": 1000 }
+    }
+  },
+
+  "matchmaking": {
+    "restaurant": { "cuisine_affinity": 0.45, "price_band_fit": 0.25, "delivery_radius": 0.2, "rating_alignment": 0.1 }
+  },
+
+  "narrative_prompt": "You are writing a short profile of a customer for the operations team of a food delivery app. Use ONLY the values in the JSON below. Never state a number that is not in the input. Write 3 to 4 sentences covering what they order, how their ordering has changed over time, and one line of practical judgement about retention. Plain, specific prose. No bullet points, no marketing language, no emoji."
+}

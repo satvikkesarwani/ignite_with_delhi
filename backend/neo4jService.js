@@ -311,7 +311,7 @@ class Neo4jService {
         stats: {
           nodeCount: 12,
           relCount: 16,
-          labels: ['ShellAccount', 'Director', 'Organization', 'Jurisdiction', 'RiskAlert'],
+          labels: ['Person', 'Hackathon', 'Team', 'Project', 'Skill', 'Result'],
         },
       };
     }
@@ -350,7 +350,7 @@ class Neo4jService {
         stats: {
           nodeCount: 12,
           relCount: 16,
-          labels: ['ShellAccount', 'Director', 'Organization', 'Jurisdiction', 'RiskAlert'],
+          labels: ['Person', 'Hackathon', 'Team', 'Project', 'Skill', 'Result'],
         },
       };
     } finally {
@@ -467,8 +467,8 @@ class Neo4jService {
         isMock: true,
         message: 'Mock Cypher query executed (Live Neo4j not configured)',
         records: [
-          { entity: 'Orion Holdings Ltd', jurisdiction: 'Panama', risk_score: 0.89 },
-          { entity: 'Apex Trading LLC', jurisdiction: 'Cayman Islands', risk_score: 0.94 },
+          { user_id: 'U0001', full_name: 'Shiv Sharma', college: 'IIT Delhi', hackathons_attended: 7 },
+          { user_id: 'U0007', full_name: 'Ananya Iyer', college: 'IIIT Delhi', hackathons_attended: 8 },
         ],
       };
     }
@@ -528,138 +528,48 @@ class Neo4jService {
     }
   }
 
+  /**
+   * Offline fallback graph, shown when AuraDB is paused or unreachable.
+   * Mirrors the real hackathon domain — a judge must never see data from a
+   * different problem statement on screen.
+   */
   getMockGraph() {
     return {
       isMock: true,
-      message: 'Demo Forensic Knowledge Graph (Simulated Cognee ECL Dataset)',
+      message: 'Demo hackathon knowledge graph (AuraDB unavailable — serving offline fallback)',
       nodes: [
-        {
-          id: '1',
-          label: 'Atlas Global Corp',
-          type: 'Organization',
-          group: 'Organization',
-          properties: { jurisdiction: 'Delaware', established: 2019 },
-        },
-        {
-          id: '2',
-          label: 'Sarah Vance',
-          type: 'Director',
-          group: 'Director',
-          properties: { role: 'Managing Director', nationality: 'UK' },
-        },
-        {
-          id: '3',
-          label: 'Apex Holding Ltd',
-          type: 'ShellAccount',
-          group: 'ShellAccount',
-          properties: { account_number: 'KY-99201', jurisdiction: 'Cayman Islands' },
-        },
-        {
-          id: '4',
-          label: 'Vortex Capital SA',
-          type: 'ShellAccount',
-          group: 'ShellAccount',
-          properties: { account_number: 'PA-10488', jurisdiction: 'Panama' },
-        },
-        {
-          id: '5',
-          label: 'TX-901842 ($1.2M)',
-          type: 'Transaction',
-          group: 'Transaction',
-          properties: { amount: 1200000, currency: 'USD', date: '2026-03-01' },
-        },
-        {
-          id: '6',
-          label: 'TX-901843 ($450K)',
-          type: 'Transaction',
-          group: 'Transaction',
-          properties: { amount: 450000, currency: 'EUR', date: '2026-03-02' },
-        },
-        {
-          id: '7',
-          label: 'Sanction Risk Flag',
-          type: 'RiskAlert',
-          group: 'RiskAlert',
-          properties: { severity: 'CRITICAL', rule: 'Layered Shell Structure' },
-        },
-        {
-          id: '8',
-          label: 'Michael Zhang',
-          type: 'Director',
-          group: 'Director',
-          properties: { role: 'Beneficial Owner', nationality: 'Singapore' },
-        },
-        {
-          id: '9',
-          label: 'Zenith Logistics',
-          type: 'Organization',
-          group: 'Organization',
-          properties: { jurisdiction: 'Hong Kong' },
-        },
-        {
-          id: '10',
-          label: 'TX-901844 ($890K)',
-          type: 'Transaction',
-          group: 'Transaction',
-          properties: { amount: 890000, currency: 'USD', date: '2026-03-03' },
-        },
-        {
-          id: '11',
-          label: 'Cayman Islands',
-          type: 'Jurisdiction',
-          group: 'Jurisdiction',
-          properties: { tax_haven: true, risk_rating: 'High' },
-        },
-        {
-          id: '12',
-          label: 'Panama',
-          type: 'Jurisdiction',
-          group: 'Jurisdiction',
-          properties: { tax_haven: true, risk_rating: 'High' },
-        },
+        { id: 'U0001', label: 'Shiv Sharma', type: 'Person', group: 'Person', properties: { college: 'IIT Delhi', role_pref: 'ML/AI', grad_year: 2026 } },
+        { id: 'U0007', label: 'Ananya Iyer', type: 'Person', group: 'Person', properties: { college: 'IIIT Delhi', role_pref: 'ML/AI', grad_year: 2026 } },
+        { id: 'U0013', label: 'Vikram Rao', type: 'Person', group: 'Person', properties: { college: 'IIT Delhi', role_pref: 'Data', grad_year: 2026 } },
+        { id: 'H014', label: 'Ignite Delhi Monsoon', type: 'Hackathon', group: 'Hackathon', properties: { theme_track: 'HealthTech', start_date: '2025-06-13' } },
+        { id: 'H023', label: 'Ignite Delhi Grand Finale', type: 'Hackathon', group: 'Hackathon', properties: { theme_track: 'GenAI & Agents', start_date: '2026-08-15' } },
+        { id: 'T0148', label: 'Quantum Tensors', type: 'Team', group: 'Team', properties: { team_size: 3 } },
+        { id: 'P0121', label: 'DoseDiary', type: 'Project', group: 'Project', properties: { tech_stack: 'Python|PyTorch|FastAPI' } },
+        { id: 'R0121', label: 'Rank 1 · 93', type: 'Result', group: 'Result', properties: { rank: 1, score: 93, prize_track: 'Overall' } },
+        { id: 'S-python', label: 'Python', type: 'Skill', group: 'Skill', properties: { cluster: 'ML/AI' } },
+        { id: 'S-neo4j', label: 'Neo4j', type: 'Skill', group: 'Skill', properties: { cluster: 'Graph' } },
+        { id: 'C-iitd', label: 'IIT Delhi', type: 'College', group: 'College', properties: { city: 'Delhi' } },
+        { id: 'M012', label: 'Mentor · Applied NLP', type: 'Mentor', group: 'Mentor', properties: { company: 'Hasura' } },
       ],
       links: [
-        { id: 'l1', source: '2', target: '1', label: 'DIRECTOR_OF', type: 'DIRECTOR_OF' },
-        { id: 'l2', source: '1', target: '3', label: 'BENEFICIAL_OWNER', type: 'BENEFICIAL_OWNER' },
-        {
-          id: 'l3',
-          source: '3',
-          target: '4',
-          label: 'TRANSFERRED_FUNDS',
-          type: 'TRANSFERRED_FUNDS',
-        },
-        { id: 'l4', source: '3', target: '5', label: 'INITIATED', type: 'INITIATED' },
-        { id: 'l5', source: '5', target: '4', label: 'DESTINATION', type: 'DESTINATION' },
-        {
-          id: 'l6',
-          source: '4',
-          target: '6',
-          label: 'SPLIT_TRANSACTION',
-          type: 'SPLIT_TRANSACTION',
-        },
-        { id: 'l7', source: '6', target: '9', label: 'PAID_TO', type: 'PAID_TO' },
-        { id: 'l8', source: '4', target: '7', label: 'TRIGGERED', type: 'TRIGGERED' },
-        {
-          id: 'l9',
-          source: '8',
-          target: '3',
-          label: 'CONTROLLING_SHAREHOLDER',
-          type: 'CONTROLLING_SHAREHOLDER',
-        },
-        { id: 'l10', source: '3', target: '11', label: 'LOCATED_IN', type: 'LOCATED_IN' },
-        { id: 'l11', source: '4', target: '12', label: 'LOCATED_IN', type: 'LOCATED_IN' },
-        { id: 'l12', source: '9', target: '10', label: 'FEE_PAYMENT', type: 'FEE_PAYMENT' },
-        { id: 'l13', source: '10', target: '1', label: 'REPATRIATED_TO', type: 'REPATRIATED_TO' },
-        {
-          id: 'l14',
-          source: '7',
-          target: '5',
-          label: 'FLAGGED_TRANSACTION',
-          type: 'FLAGGED_TRANSACTION',
-        },
+        { id: 'l1', source: 'U0001', target: 'H014', label: 'ATTENDED', type: 'ATTENDED' },
+        { id: 'l2', source: 'U0007', target: 'H014', label: 'ATTENDED', type: 'ATTENDED' },
+        { id: 'l3', source: 'U0001', target: 'T0148', label: 'MEMBER_OF', type: 'MEMBER_OF' },
+        { id: 'l4', source: 'U0007', target: 'T0148', label: 'MEMBER_OF', type: 'MEMBER_OF' },
+        { id: 'l5', source: 'T0148', target: 'P0121', label: 'BUILT', type: 'BUILT' },
+        { id: 'l6', source: 'P0121', target: 'R0121', label: 'ACHIEVED', type: 'ACHIEVED' },
+        { id: 'l7', source: 'U0001', target: 'S-python', label: 'HAS_SKILL', type: 'HAS_SKILL' },
+        { id: 'l8', source: 'U0013', target: 'S-neo4j', label: 'HAS_SKILL', type: 'HAS_SKILL' },
+        { id: 'l9', source: 'U0001', target: 'C-iitd', label: 'STUDIED_AT', type: 'STUDIED_AT' },
+        { id: 'l10', source: 'U0013', target: 'C-iitd', label: 'STUDIED_AT', type: 'STUDIED_AT' },
+        { id: 'l11', source: 'U0001', target: 'U0007', label: 'TEAMMATE_OF', type: 'TEAMMATE_OF' },
+        { id: 'l12', source: 'U0013', target: 'H023', label: 'ATTENDED', type: 'ATTENDED' },
+        { id: 'l13', source: 'U0001', target: 'H023', label: 'ATTENDED', type: 'ATTENDED' },
+        { id: 'l14', source: 'U0001', target: 'M012', label: 'MENTORED_BY', type: 'MENTORED_BY' },
+        { id: 'l15', source: 'P0121', target: 'S-python', label: 'USES', type: 'USES' },
       ],
       totalNodes: 12,
-      totalLinks: 14,
+      totalLinks: 15,
     };
   }
 

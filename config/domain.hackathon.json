@@ -1,0 +1,82 @@
+{
+  "domain": "hackathon_platform",
+  "display_name": "Hackathon Listing Platform",
+  "entity": "Person",
+  "entity_key": "user_id",
+
+  "justification": "A hackathon platform's value to an organizer is technical capability and reliability over time. Platform-native activity (events attended, projects submitted, judged scores, mentor ratings, community answers) tells you how someone behaves; external professional context (GitHub repositories and languages) tells you what they can actually build. Both are relevant here, which is why external enrichment is switched on for this domain and off for the food-delivery config.",
+
+  "external_sources": {
+    "github": { "enabled": true, "mode": "live_on_intake", "note": "Public GitHub API on the intake path only. The 600 seeded users carry synthetic_seed profiles instead." },
+    "tavily": { "enabled": true, "mode": "live_on_intake", "note": "Public web footprint for people who submit the form themselves." },
+    "linkedin": { "enabled": false, "mode": "synthetic_seed", "note": "Never scraped. Terms of service prohibit it; we model the shape instead and label it." }
+  },
+
+  "signals": [
+    { "key": "hackathons_registered", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:REGISTERED_FOR]->(h:Hackathon) RETURN count(h)" },
+    { "key": "hackathons_attended", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:ATTENDED]->(h:Hackathon) RETURN count(h)" },
+    { "key": "no_shows", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[r:REGISTERED_FOR]->(:Hackathon) WHERE r.status='no_show' RETURN count(r)" },
+    { "key": "projects_submitted", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:MEMBER_OF]->(:Team)-[:BUILT]->(pr:Project) RETURN count(DISTINCT pr)" },
+    { "key": "submission_rate", "type": "ratio", "numerator": "projects_submitted", "denominator": "hackathons_attended" },
+    { "key": "prize_count", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:MEMBER_OF]->(:Team)-[:BUILT]->(:Project)-[:ACHIEVED]->(r:Result) WHERE r.rank IS NOT NULL OR r.prize_track IS NOT NULL RETURN count(r)" },
+    { "key": "best_rank", "type": "min", "cypher": "MATCH (p:Person {user_id:$id})-[:MEMBER_OF]->(:Team)-[:BUILT]->(:Project)-[:ACHIEVED]->(r:Result) WHERE r.rank IS NOT NULL RETURN min(r.rank)" },
+    { "key": "avg_score", "type": "avg", "cypher": "MATCH (p:Person {user_id:$id})-[:MEMBER_OF]->(:Team)-[:BUILT]->(:Project)-[:ACHIEVED]->(r:Result) RETURN avg(r.score)" },
+    { "key": "avg_mentor_score", "type": "avg", "cypher": "MATCH (p:Person {user_id:$id})-[:PERFORMED]->(s:MentorSession) RETURN avg(s.mentor_score)" },
+    { "key": "mentor_sessions", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:PERFORMED]->(s:MentorSession) RETURN count(s)" },
+    { "key": "interactions", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:POSTED]->(i:Interaction) RETURN count(i)" },
+    { "key": "workshops", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:POSTED]->(i:Interaction) WHERE i.type='workshop_attended' RETURN count(i)" },
+    { "key": "answers_given", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:POSTED]->(i:Interaction) WHERE i.type='answered_question' RETURN count(i)" },
+    { "key": "distinct_teammates", "type": "count", "cypher": "MATCH (p:Person {user_id:$id})-[:TEAMMATE_OF]-(o:Person) RETURN count(DISTINCT o)" },
+    { "key": "last_active", "type": "date", "cypher": "MATCH (p:Person {user_id:$id}) RETURN p.last_active" },
+    { "key": "days_since_active", "type": "days_since", "from": "last_active" }
+  ],
+
+  "skill_sources": [
+    { "type": "declared", "weight": 0.3, "template": "self-declared at signup" },
+    { "type": "github", "weight": 0.9, "template": "{pct}% of {repos} public repos" },
+    { "type": "project", "weight": 0.8, "template": "built {project_id} with it, scored {score}" },
+    { "type": "feedback", "weight": 0.6, "template": "noted in judge or mentor feedback" }
+  ],
+  "confidence_cap": 0.97,
+
+  "traits": [
+    { "key": "serial_finisher", "label": "Serial finisher", "rule": "submission_rate >= 0.7 && hackathons_attended >= 3", "score": "submission_rate" },
+    { "key": "starter_not_finisher", "label": "Starter, not finisher", "rule": "submission_rate < 0.35 && hackathons_attended >= 3", "score": "1 - submission_rate" },
+    { "key": "no_show_risk", "label": "No-show risk", "rule": "no_shows >= 2 && (no_shows / hackathons_registered) > 0.5", "score": "no_shows / hackathons_registered" },
+    { "key": "team_player", "label": "Team player", "rule": "repeat_teammates.length >= 1", "score": "min(1, repeat_teammates.length / 3)" },
+    { "key": "lone_wolf", "label": "Lone wolf", "rule": "hackathons_attended >= 2 && distinct_teammates <= 1", "score": "0.8" },
+    { "key": "mentor_material", "label": "Mentor material", "rule": "avg_mentor_score >= 4.5 && answers_given >= 5", "score": "avg_mentor_score / 5" },
+    { "key": "competitive_performer", "label": "Competitive performer", "rule": "prize_count >= 2", "score": "min(1, prize_count / 5)" },
+    { "key": "community_active", "label": "Community active", "rule": "interactions >= 20", "score": "min(1, interactions / 40)" },
+    { "key": "specialist", "label": "Specialist", "rule": "skill_clusters <= 2 && projects_submitted >= 2", "score": "0.7" },
+    { "key": "generalist", "label": "Generalist", "rule": "skill_clusters >= 4", "score": "0.7" }
+  ],
+
+  "personas": [
+    { "key": "serial_winner", "label": "Serial Winner", "rule": "prize_count >= 3 && days_since_active <= 180" },
+    { "key": "rising_star", "label": "Rising Star", "rule": "trajectory_direction == 'rising' && hackathons_attended >= 3" },
+    { "key": "dormant_high_potential", "label": "Dormant High-Potential", "rule": "prize_count >= 1 && days_since_active > 180" },
+    { "key": "mentor_material", "label": "Mentor Material", "rule": "avg_mentor_score >= 4.5 && answers_given >= 5" },
+    { "key": "consistent_builder", "label": "Consistent Builder", "rule": "submission_rate >= 0.7 && hackathons_attended >= 4" },
+    { "key": "ghost", "label": "Ghost", "rule": "hackathons_registered >= 3 && hackathons_attended == 0" },
+    { "key": "newcomer", "label": "Newcomer", "rule": "hackathons_attended <= 1 && days_since_signup <= 120" }
+  ],
+  "max_personas": 2,
+
+  "status_thresholds": { "active": 60, "cooling": 180, "dormant": 365 },
+
+  "engagement": {
+    "components": {
+      "recency": { "weight": 0.3, "from": "days_since_active", "invert": true, "scale": 365 },
+      "frequency": { "weight": 0.25, "from": "hackathons_attended", "scale": 8 },
+      "depth": { "weight": 0.25, "from": "interactions", "scale": 40 },
+      "outcome": { "weight": 0.2, "from": "prize_count", "scale": 5 }
+    }
+  },
+
+  "matchmaking": {
+    "team": { "role_complementarity": 0.4, "skill_coverage_gain": 0.25, "collaboration_signal": 0.15, "reliability": 0.1, "availability": 0.1 }
+  },
+
+  "narrative_prompt": "You are writing a short profile of a hackathon participant for the organizer who runs the platform. Use ONLY the values in the JSON below. Never state a number that is not in the input. If a field is null, omit it entirely rather than guessing. Write 4 to 6 sentences covering, in order: who they are, what they are demonstrably good at and the evidence for it, how their involvement has changed over time, and one line of practical judgement for an organizer deciding whether to invite them. Plain, specific, unexcited prose. No bullet points, no headings, no marketing language, no emoji."
+}
