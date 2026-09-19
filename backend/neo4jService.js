@@ -6,6 +6,32 @@ import { createLogger } from './logger.js';
 
 const log = createLogger('neo4j');
 
+/**
+ * Converts driver types to plain JSON before anything leaves this module.
+ *
+ * A leaked Neo4j Integer serialises as {low, high} and is the single most
+ * common integration bug on this stack — it silently breaks every number the
+ * frontend renders. Convert once, here, for everything.
+ */
+export function toPlain(value) {
+  if (value === null || value === undefined) return value;
+  if (neo4j.isInt(value)) return value.toNumber();
+  if (Array.isArray(value)) return value.map(toPlain);
+  if (typeof value === 'object') {
+    // Temporal types (Date, DateTime, LocalDateTime) stringify correctly
+    if (
+      typeof value.toString === 'function' &&
+      value.constructor?.name?.match(/^(Date|DateTime|LocalDateTime|LocalTime|Time|Duration)$/)
+    ) {
+      return value.toString();
+    }
+    const out = {};
+    for (const [k, v] of Object.entries(value)) out[k] = toPlain(v);
+    return out;
+  }
+  return value;
+}
+
 const candidateEnvs = [
   path.resolve('.env'),
   path.resolve('backend/.env'),
@@ -467,8 +493,18 @@ class Neo4jService {
         isMock: true,
         message: 'Mock Cypher query executed (Live Neo4j not configured)',
         records: [
-          { user_id: 'U0001', full_name: 'Shiv Sharma', college: 'IIT Delhi', hackathons_attended: 7 },
-          { user_id: 'U0007', full_name: 'Ananya Iyer', college: 'IIIT Delhi', hackathons_attended: 8 },
+          {
+            user_id: 'U0001',
+            full_name: 'Shiv Sharma',
+            college: 'IIT Delhi',
+            hackathons_attended: 7,
+          },
+          {
+            user_id: 'U0007',
+            full_name: 'Ananya Iyer',
+            college: 'IIIT Delhi',
+            hackathons_attended: 8,
+          },
         ],
       };
     }
@@ -480,7 +516,7 @@ class Neo4jService {
         const obj = {};
         rec.keys.forEach((k) => {
           const val = rec.get(k);
-          obj[k] = val && val.properties ? val.properties : val;
+          obj[k] = toPlain(val && val.properties ? val.properties : val);
         });
         return obj;
       });
@@ -500,6 +536,53 @@ class Neo4jService {
     } finally {
       await session.close();
     }
+  }
+
+  /**
+   * Bulk write via `UNWIND $rows`, chunked into its own transaction per batch.
+   *
+   * Row-by-row `session.run` against AuraDB free tier takes 20+ minutes for our
+   * dataset and can time out; this keeps a full load under a couple of minutes.
+   * `cypher` must begin with `UNWIND $rows AS row`.
+   */
+  async runBatch(cypher, rows, { batchSize = 500, label = 'batch', onProgress } = {}) {
+    if (this.isMockMode || !this.driver) {
+      return { success: false, error: 'Neo4j not configured — cannot bulk load in mock mode' };
+    }
+    if (!rows.length) return { success: true, batches: 0, rows: 0, counters: {} };
+
+    const startedAt = Date.now();
+    const totals = { nodesCreated: 0, relationshipsCreated: 0, propertiesSet: 0 };
+    let batches = 0;
+
+    for (let i = 0; i < rows.length; i += batchSize) {
+      const chunk = rows.slice(i, i + batchSize);
+      const session = this.driver.session();
+      try {
+        const res = await session.run(cypher, { rows: chunk });
+        const c = res.summary.counters;
+        // driver v6 exposes counters directly; v5 used updates()
+        const stats = typeof c?.updates === 'function' ? c.updates() : c || {};
+        totals.nodesCreated += stats.nodesCreated || 0;
+        totals.relationshipsCreated += stats.relationshipsCreated || 0;
+        totals.propertiesSet += stats.propertiesSet || 0;
+        batches++;
+        if (onProgress) onProgress(Math.min(i + batchSize, rows.length), rows.length);
+      } catch (err) {
+        log.error('Batch failed', { label, offset: i, message: err.message, code: err.code });
+        return {
+          success: false,
+          error: `${label} batch at offset ${i}: ${err.message}`,
+          partial: totals,
+        };
+      } finally {
+        await session.close();
+      }
+    }
+
+    const durationMs = Date.now() - startedAt;
+    log.info('Batch write complete', { label, rows: rows.length, batches, durationMs, ...totals });
+    return { success: true, batches, rows: rows.length, durationMs, counters: totals };
   }
 
   async warmUp() {
@@ -538,18 +621,90 @@ class Neo4jService {
       isMock: true,
       message: 'Demo hackathon knowledge graph (AuraDB unavailable — serving offline fallback)',
       nodes: [
-        { id: 'U0001', label: 'Shiv Sharma', type: 'Person', group: 'Person', properties: { college: 'IIT Delhi', role_pref: 'ML/AI', grad_year: 2026 } },
-        { id: 'U0007', label: 'Ananya Iyer', type: 'Person', group: 'Person', properties: { college: 'IIIT Delhi', role_pref: 'ML/AI', grad_year: 2026 } },
-        { id: 'U0013', label: 'Vikram Rao', type: 'Person', group: 'Person', properties: { college: 'IIT Delhi', role_pref: 'Data', grad_year: 2026 } },
-        { id: 'H014', label: 'Ignite Delhi Monsoon', type: 'Hackathon', group: 'Hackathon', properties: { theme_track: 'HealthTech', start_date: '2025-06-13' } },
-        { id: 'H023', label: 'Ignite Delhi Grand Finale', type: 'Hackathon', group: 'Hackathon', properties: { theme_track: 'GenAI & Agents', start_date: '2026-08-15' } },
-        { id: 'T0148', label: 'Quantum Tensors', type: 'Team', group: 'Team', properties: { team_size: 3 } },
-        { id: 'P0121', label: 'DoseDiary', type: 'Project', group: 'Project', properties: { tech_stack: 'Python|PyTorch|FastAPI' } },
-        { id: 'R0121', label: 'Rank 1 · 93', type: 'Result', group: 'Result', properties: { rank: 1, score: 93, prize_track: 'Overall' } },
-        { id: 'S-python', label: 'Python', type: 'Skill', group: 'Skill', properties: { cluster: 'ML/AI' } },
-        { id: 'S-neo4j', label: 'Neo4j', type: 'Skill', group: 'Skill', properties: { cluster: 'Graph' } },
-        { id: 'C-iitd', label: 'IIT Delhi', type: 'College', group: 'College', properties: { city: 'Delhi' } },
-        { id: 'M012', label: 'Mentor · Applied NLP', type: 'Mentor', group: 'Mentor', properties: { company: 'Hasura' } },
+        {
+          id: 'U0001',
+          label: 'Shiv Sharma',
+          type: 'Person',
+          group: 'Person',
+          properties: { college: 'IIT Delhi', role_pref: 'ML/AI', grad_year: 2026 },
+        },
+        {
+          id: 'U0007',
+          label: 'Ananya Iyer',
+          type: 'Person',
+          group: 'Person',
+          properties: { college: 'IIIT Delhi', role_pref: 'ML/AI', grad_year: 2026 },
+        },
+        {
+          id: 'U0013',
+          label: 'Vikram Rao',
+          type: 'Person',
+          group: 'Person',
+          properties: { college: 'IIT Delhi', role_pref: 'Data', grad_year: 2026 },
+        },
+        {
+          id: 'H014',
+          label: 'Ignite Delhi Monsoon',
+          type: 'Hackathon',
+          group: 'Hackathon',
+          properties: { theme_track: 'HealthTech', start_date: '2025-06-13' },
+        },
+        {
+          id: 'H023',
+          label: 'Ignite Delhi Grand Finale',
+          type: 'Hackathon',
+          group: 'Hackathon',
+          properties: { theme_track: 'GenAI & Agents', start_date: '2026-08-15' },
+        },
+        {
+          id: 'T0148',
+          label: 'Quantum Tensors',
+          type: 'Team',
+          group: 'Team',
+          properties: { team_size: 3 },
+        },
+        {
+          id: 'P0121',
+          label: 'DoseDiary',
+          type: 'Project',
+          group: 'Project',
+          properties: { tech_stack: 'Python|PyTorch|FastAPI' },
+        },
+        {
+          id: 'R0121',
+          label: 'Rank 1 · 93',
+          type: 'Result',
+          group: 'Result',
+          properties: { rank: 1, score: 93, prize_track: 'Overall' },
+        },
+        {
+          id: 'S-python',
+          label: 'Python',
+          type: 'Skill',
+          group: 'Skill',
+          properties: { cluster: 'ML/AI' },
+        },
+        {
+          id: 'S-neo4j',
+          label: 'Neo4j',
+          type: 'Skill',
+          group: 'Skill',
+          properties: { cluster: 'Graph' },
+        },
+        {
+          id: 'C-iitd',
+          label: 'IIT Delhi',
+          type: 'College',
+          group: 'College',
+          properties: { city: 'Delhi' },
+        },
+        {
+          id: 'M012',
+          label: 'Mentor · Applied NLP',
+          type: 'Mentor',
+          group: 'Mentor',
+          properties: { company: 'Hasura' },
+        },
       ],
       links: [
         { id: 'l1', source: 'U0001', target: 'H014', label: 'ATTENDED', type: 'ATTENDED' },

@@ -24,7 +24,10 @@
     "cognee:start": "./services/cognee-service/.venv/bin/python services/cognee-service/api.py",
     "graph:warmup": "./services/cognee-service/.venv/bin/python scripts/warmup_neo4j.py",
     "keep-alive": "node scripts/keep_alive.js",
-    "prepare": "husky || true"
+    "prepare": "husky || true",
+    "data:load": "node scripts/load_graph.js",
+    "data:verify": "node scripts/verify_graph.js",
+    "profiles:build": "node scripts/build_profiles.js"
   },
   "lint-staged": {
     "*.{js,jsx}": [
