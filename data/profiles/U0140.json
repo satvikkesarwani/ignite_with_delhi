@@ -1,7 +1,7 @@
 {
   "user_id": "U0140",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.070Z",
+  "built_at": "2026-09-19T08:17:46.243Z",
   "identity": {
     "full_name": "Shreya Malik",
     "email": "shreya.malik@jiitnoida.ac.in",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0083",
+        "title": "PotholePatrol",
+        "date": "2024-10-26",
+        "score": 60,
+        "tech": ["ESP32", "Embedded C", "Java Spring", "MQTT", "Arduino"]
+      },
+      {
+        "project_id": "P0090",
+        "title": "SupplyStamp",
+        "date": "2024-12-04",
+        "score": 70,
+        "tech": ["Tailwind CSS", "IPFS", "Docker", "gRPC", "Foundry", "Hardhat"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 65,
     "first_seen": "2024-10-24",
@@ -68,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -82,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -96,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -110,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -124,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -138,7 +154,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -152,7 +168,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -166,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -180,7 +196,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -194,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -208,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -380,7 +396,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Shreya Malik is a B.Tech Information Technology student at Jaypee Institute of Information Technology, graduating in 2027, who signed up as a DevOps builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Capital Code Jam with \"SupplyStamp\" (scored 70). Their strongest evidenced skills are Docker, Tailwind CSS, Arduino, based on built P0090 (scored 70). They declare Kubernetes, Prometheus, GitHub Actions with no supporting repository or project evidence on the platform. Last active 2025-02-18, 578 days ago — lapsed.",
+  "narrative": "Shreya Malik is a B.Tech Information Technology student at Jaypee Institute of Information Technology, graduating in 2027, who signed up as a DevOps builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Capital Code Jam with \"SupplyStamp\" (scored 70). Their strongest evidenced skills are Docker, Tailwind CSS, Arduino, based on used in P0090 (scored 70). They declare Kubernetes, Prometheus, GitHub Actions with no supporting repository or project evidence on the platform. Last active 2025-02-18, 578 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -412,56 +428,56 @@
       "confidence": 1
     },
     {
-      "claim": "Docker: built P0090 (scored 70)",
+      "claim": "Docker: used in P0090 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0090 (scored 70)",
+      "claim": "Tailwind CSS: used in P0090 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0083 (scored 60)",
+      "claim": "Arduino: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0083 (scored 60)",
+      "claim": "ESP32: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0083 (scored 60)",
+      "claim": "Embedded C: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MQTT: built P0083 (scored 60)",
+      "claim": "MQTT: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Foundry: built P0090 (scored 70)",
+      "claim": "Foundry: used in P0090 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "IPFS: built P0090 (scored 70)",
+      "claim": "IPFS: used in P0090 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

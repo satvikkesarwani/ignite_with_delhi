@@ -1,7 +1,7 @@
 {
   "user_id": "U0550",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.101Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Tanish Ahuja",
     "email": "tanish.ahuja@nsut.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0131",
+        "title": "LegalRAG",
+        "date": "2025-05-09",
+        "score": 59,
+        "tech": ["Python", "OpenCV", "FastAPI", "Go", "Pinecone", "LLM Fine-tuning"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 59,
     "first_seen": "2025-05-09",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0131 (scored 59)",
+          "detail": "used in P0131 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0131 (scored 59)",
+          "detail": "used in P0131 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -95,7 +104,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0131 (scored 59)",
+          "detail": "used in P0131 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -109,7 +118,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0131 (scored 59)",
+          "detail": "used in P0131 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -123,7 +132,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0131 (scored 59)",
+          "detail": "used in P0131 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -137,7 +146,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0131 (scored 59)",
+          "detail": "used in P0131 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -231,7 +240,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Python: built P0131 (scored 59)",
+      "claim": "Python: used in P0131 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -245,35 +254,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "OpenCV: built P0131 (scored 59)",
+      "claim": "OpenCV: used in P0131 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0131 (scored 59)",
+      "claim": "FastAPI: used in P0131 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0131 (scored 59)",
+      "claim": "Go: used in P0131 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LLM Fine-tuning: built P0131 (scored 59)",
+      "claim": "LLM Fine-tuning: used in P0131 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pinecone: built P0131 (scored 59)",
+      "claim": "Pinecone: used in P0131 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

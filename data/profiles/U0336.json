@@ -1,7 +1,7 @@
 {
   "user_id": "U0336",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.085Z",
+  "built_at": "2026-09-19T08:17:46.257Z",
   "identity": {
     "full_name": "Armaan Pandey",
     "email": "armaan.pandey10@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0033",
+        "title": "ShelterFind",
+        "date": "2024-05-21",
+        "score": 65,
+        "tech": ["Spark", "Firebase", "tRPC", "PostgreSQL", "Tailwind CSS", "React"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 65,
     "first_seen": "2024-05-20",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -126,7 +135,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -265,7 +274,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Armaan Pandey is a B.Tech Mechanical Engineering student at Ashoka University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are React, PostgreSQL, Tailwind CSS, based on built P0033 (scored 65). They declare Next.js, Figma, Prototyping with no supporting repository or project evidence on the platform. Last active 2024-11-01, 687 days ago — lapsed.",
+  "narrative": "Armaan Pandey is a B.Tech Mechanical Engineering student at Ashoka University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are React, PostgreSQL, Tailwind CSS, based on used in P0033 (scored 65). They declare Next.js, Figma, Prototyping with no supporting repository or project evidence on the platform. Last active 2024-11-01, 687 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -290,42 +299,42 @@
       "confidence": 1
     },
     {
-      "claim": "React: built P0033 (scored 65)",
+      "claim": "React: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0033 (scored 65)",
+      "claim": "PostgreSQL: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0033 (scored 65)",
+      "claim": "Tailwind CSS: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Firebase: built P0033 (scored 65)",
+      "claim": "Firebase: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0033 (scored 65)",
+      "claim": "tRPC: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0033 (scored 65)",
+      "claim": "Spark: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0625",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.106Z",
+  "built_at": "2026-09-19T08:17:46.278Z",
   "identity": {
     "full_name": "Ananya Kumar",
     "email": "ananya.kumar@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0054",
+        "title": "LogLens",
+        "date": "2024-08-09",
+        "score": 76,
+        "tech": ["Kafka", "Vite", "Django", "GraphQL", "Java Spring"]
+      },
+      {
+        "project_id": "P0215",
+        "title": "MeetingMemory",
+        "date": "2026-04-06",
+        "score": 65,
+        "tech": ["Python", "PyTorch", "FastAPI", "Knowledge Graphs"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 70.5,
     "first_seen": "2024-05-20",
@@ -79,7 +95,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in P0215 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -98,7 +114,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0054 (scored 76)",
+          "detail": "used in P0054 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -117,7 +133,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0054 (scored 76)",
+          "detail": "used in P0054 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -131,7 +147,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in P0215 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -145,7 +161,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in P0215 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -159,7 +175,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0054 (scored 76)",
+          "detail": "used in P0054 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -173,7 +189,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in P0215 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -187,7 +203,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0054 (scored 76)",
+          "detail": "used in P0054 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -201,7 +217,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0054 (scored 76)",
+          "detail": "used in P0054 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -341,7 +357,7 @@
       "confidence": 0.88
     },
     {
-      "claim": "Python: built P0215 (scored 65)",
+      "claim": "Python: used in P0215 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -355,7 +371,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Kafka: built P0054 (scored 76)",
+      "claim": "Kafka: used in P0054 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -369,42 +385,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Java Spring: built P0054 (scored 76)",
+      "claim": "Java Spring: used in P0054 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0215 (scored 65)",
+      "claim": "PyTorch: used in P0215 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "FastAPI: built P0215 (scored 65)",
+      "claim": "FastAPI: used in P0215 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0054 (scored 76)",
+      "claim": "GraphQL: used in P0054 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0215 (scored 65)",
+      "claim": "Knowledge Graphs: used in P0215 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0054 (scored 76)",
+      "claim": "Vite: used in P0054 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

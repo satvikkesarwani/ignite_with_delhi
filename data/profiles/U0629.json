@@ -1,7 +1,7 @@
 {
   "user_id": "U0629",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.106Z",
+  "built_at": "2026-09-19T08:17:46.279Z",
   "identity": {
     "full_name": "Raghav Bansal",
     "email": "raghav.bansal68@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0068",
+        "title": "WasteWise",
+        "date": "2024-09-15",
+        "score": 85,
+        "tech": ["React", "Vite", "Express", "SQL", "dbt", "Tableau"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 85,
     "first_seen": "2024-09-14",
@@ -73,7 +82,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -92,7 +101,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -111,7 +120,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -125,7 +134,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -139,7 +148,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -153,7 +162,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -289,7 +298,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0068 (scored 85)",
+      "claim": "Express: used in P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -303,7 +312,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0068 (scored 85)",
+      "claim": "React: used in P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -317,28 +326,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vite: built P0068 (scored 85)",
+      "claim": "Vite: used in P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0068 (scored 85)",
+      "claim": "SQL: used in P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0068 (scored 85)",
+      "claim": "dbt: used in P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0068 (scored 85)",
+      "claim": "Tableau: used in P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

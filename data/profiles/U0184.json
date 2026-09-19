@@ -1,7 +1,7 @@
 {
   "user_id": "U0184",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.073Z",
+  "built_at": "2026-09-19T08:17:46.246Z",
   "identity": {
     "full_name": "Gauri Joshi",
     "email": "gauri.joshi82@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0100",
+        "title": "ShellSeeker",
+        "date": "2025-01-10",
+        "score": 72,
+        "tech": ["FastAPI", "Qdrant", "Vector Databases", "Knowledge Graphs"]
+      },
+      {
+        "project_id": "P0199",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 62,
+        "tech": ["Java Spring", "Docker", "Go", "gRPC", "GraphQL"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 67,
     "first_seen": "2025-01-10",
@@ -74,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0100 (scored 72)",
+          "detail": "used in P0100 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -88,7 +104,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -102,7 +118,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0100 (scored 72)",
+          "detail": "used in P0100 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -116,7 +132,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -130,7 +146,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -144,7 +160,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0100 (scored 72)",
+          "detail": "used in P0100 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -158,7 +174,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -172,7 +188,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -186,7 +202,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0100 (scored 72)",
+          "detail": "used in P0100 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -383,56 +399,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0100 (scored 72)",
+      "claim": "FastAPI: used in P0100 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0199 (scored 62)",
+      "claim": "Docker: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0100 (scored 72)",
+      "claim": "Vector Databases: used in P0100 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0199 (scored 62)",
+      "claim": "Go: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0199 (scored 62)",
+      "claim": "GraphQL: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0100 (scored 72)",
+      "claim": "Knowledge Graphs: used in P0100 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "gRPC: built P0199 (scored 62)",
+      "claim": "gRPC: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Java Spring: built P0199 (scored 62)",
+      "claim": "Java Spring: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

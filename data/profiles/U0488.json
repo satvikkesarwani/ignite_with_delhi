@@ -1,7 +1,7 @@
 {
   "user_id": "U0488",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.095Z",
+  "built_at": "2026-09-19T08:17:46.268Z",
   "identity": {
     "full_name": "Sanjana Kapoor",
     "email": "sanjana.kapoor77@gmail.com",
@@ -54,6 +54,29 @@
       }
     ],
     "prize_count": 3,
+    "projects": [
+      {
+        "project_id": "P0115",
+        "title": "FraudFence",
+        "date": "2025-02-17",
+        "score": 62,
+        "tech": ["Airflow", "Redis", "dbt", "Flask"]
+      },
+      {
+        "project_id": "P0248",
+        "title": "RouteKnot",
+        "date": "2026-07-03",
+        "score": 58,
+        "tech": ["Qdrant", "NetworkX", "Pandas"]
+      },
+      {
+        "project_id": "P0255",
+        "title": "Interviewer",
+        "date": "2026-08-08",
+        "score": 63,
+        "tech": ["Express", "Next.js", "Vite", "OpenAI API", "HuggingFace"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 61,
     "first_seen": "2025-02-15",
@@ -88,7 +111,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -102,7 +125,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -116,7 +139,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0248 (scored 58)",
+          "detail": "used in P0248 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -130,7 +153,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -144,7 +167,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -158,7 +181,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -172,7 +195,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -186,7 +209,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0248 (scored 58)",
+          "detail": "used in P0248 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -200,7 +223,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -214,7 +237,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -228,7 +251,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -242,7 +265,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0248 (scored 58)",
+          "detail": "used in P0248 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -431,7 +454,7 @@
       "outcome": 60
     }
   },
-  "narrative": "Sanjana Kapoor is a B.Des Mathematics and Computing student at Vellore Institute of Technology, graduating in 2026, who signed up as a Product builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 3 prizes, including rank 3 at StackSprint with \"FraudFence\" (scored 62). Their strongest evidenced skills are Express, Next.js, Pandas, based on built P0255 (scored 63). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2026-08-17 — currently active.",
+  "narrative": "Sanjana Kapoor is a B.Des Mathematics and Computing student at Vellore Institute of Technology, graduating in 2026, who signed up as a Product builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 3 prizes, including rank 3 at StackSprint with \"FraudFence\" (scored 62). Their strongest evidenced skills are Express, Next.js, Pandas, based on used in P0255 (scored 63). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2026-08-17 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -484,56 +507,56 @@
       "confidence": 1
     },
     {
-      "claim": "Express: built P0255 (scored 63)",
+      "claim": "Express: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0255 (scored 63)",
+      "claim": "Next.js: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0248 (scored 58)",
+      "claim": "Pandas: used in P0248 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0115 (scored 62)",
+      "claim": "Airflow: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0115 (scored 62)",
+      "claim": "dbt: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0255 (scored 63)",
+      "claim": "HuggingFace: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0115 (scored 62)",
+      "claim": "Redis: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NetworkX: built P0248 (scored 58)",
+      "claim": "NetworkX: used in P0248 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

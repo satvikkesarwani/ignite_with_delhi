@@ -1,7 +1,7 @@
 {
   "user_id": "U0011",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.056Z",
+  "built_at": "2026-09-19T08:17:46.230Z",
   "identity": {
     "full_name": "Arjun Khanna",
     "email": "arjun.khanna.mait@gmail.com",
@@ -23,6 +23,7 @@
     "submission_rate": null,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2024-05-02",
@@ -118,8 +119,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Arjun Khanna is a B.Tech Information Technology student at Maharaja Agrasen Institute of Technology, graduating in 2027, who signed up as a Product builder. They have registered for 6 hackathons but have not attended any of them. They declare Figma, SQL, Product Management with no supporting repository or project evidence on the platform. Last active 2026-06-18, 93 days ago — cooling off.",
-  "narrative_status": "template",
+  "narrative": "Arjun Khanna is a B.Tech Information Technology student at Maharaja Agrasen Institute of Technology, graduating in 2027 and preferring product roles. Despite registering for six hackathons, he has attended none and accrued six no-shows, with zero projects submitted and no prizes earned; his top skills—Figma, SQL, and Product Management—are self-declared at signup with no supporting evidence, and he has given zero answers or mentor sessions, resulting in an engagement score of 25 and a \"Ghost\" persona marking him as a no-show risk whose activity has been cooling for 93 days.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 6 hackathons, attended 0",

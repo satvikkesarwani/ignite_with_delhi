@@ -1,7 +1,7 @@
 {
   "user_id": "U0346",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.086Z",
+  "built_at": "2026-09-19T08:17:46.258Z",
   "identity": {
     "full_name": "Uday Sinha",
     "email": "uday.sinha85@gmail.com",
@@ -23,6 +23,22 @@
     "submission_rate": 0.67,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0137",
+        "title": "PromptForge",
+        "date": "2025-05-09",
+        "score": 63,
+        "tech": ["PyTorch", "Express", "Transformers", "scikit-learn", "gRPC"]
+      },
+      {
+        "project_id": "P0146",
+        "title": "DoseDiary",
+        "date": "2025-06-12",
+        "score": 46,
+        "tech": ["Swift", "scikit-learn", "OpenAI API", "TensorFlow"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 54.5,
     "first_seen": "2025-05-09",
@@ -68,7 +84,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -82,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0137 (scored 63)",
+          "detail": "used in P0137 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -96,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0137 (scored 63)",
+          "detail": "used in P0137 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -110,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0137 (scored 63)",
+          "detail": "used in P0137 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -124,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -138,7 +154,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in 2 projects, best P0137 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -152,7 +168,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -166,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0137 (scored 63)",
+          "detail": "used in P0137 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -349,56 +365,56 @@
       "confidence": 0.87
     },
     {
-      "claim": "Swift: built P0146 (scored 46)",
+      "claim": "Swift: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.87
     },
     {
-      "claim": "PyTorch: built P0137 (scored 63)",
+      "claim": "PyTorch: used in P0137 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0137 (scored 63)",
+      "claim": "Express: used in P0137 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Transformers: built P0137 (scored 63)",
+      "claim": "Transformers: used in P0137 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0146 (scored 46)",
+      "claim": "OpenAI API: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0146 (scored 46)",
+      "claim": "scikit-learn: used in 2 projects, best P0137 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0146 (scored 46)",
+      "claim": "TensorFlow: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "gRPC: built P0137 (scored 63)",
+      "claim": "gRPC: used in P0137 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0439",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.265Z",
   "identity": {
     "full_name": "Sanjana Ghosh",
     "email": "sanjana.ghosh@thapar.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0110",
+        "title": "SIPSense",
+        "date": "2025-02-17",
+        "score": 60,
+        "tech": ["PostgreSQL", "TypeScript", "GraphQL"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 60,
     "first_seen": "2025-02-15",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0110 (scored 60)",
+          "detail": "used in P0110 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -76,7 +85,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0110 (scored 60)",
+          "detail": "used in P0110 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -90,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0110 (scored 60)",
+          "detail": "used in P0110 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -233,21 +242,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0110 (scored 60)",
+      "claim": "PostgreSQL: used in P0110 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0110 (scored 60)",
+      "claim": "TypeScript: used in P0110 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0110 (scored 60)",
+      "claim": "GraphQL: used in P0110 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

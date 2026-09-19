@@ -1,7 +1,7 @@
 {
   "user_id": "U0331",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.085Z",
+  "built_at": "2026-09-19T08:17:46.257Z",
   "identity": {
     "full_name": "Lavanya Pandey",
     "email": "lavanya.pandey@iitbombay.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0074",
+        "title": "WaterWatch",
+        "date": "2024-09-15",
+        "score": 43,
+        "tech": ["Express", "TypeScript", "dbt", "NumPy", "SQL", "Airflow"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 43,
     "first_seen": "2024-09-14",
@@ -65,7 +74,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0074 (scored 43)",
+          "detail": "used in P0074 (scored 43)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0074 (scored 43)",
+          "detail": "used in P0074 (scored 43)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0074 (scored 43)",
+          "detail": "used in P0074 (scored 43)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0074 (scored 43)",
+          "detail": "used in P0074 (scored 43)",
           "weight": 0.8
         }
       ],
@@ -126,7 +135,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0074 (scored 43)",
+          "detail": "used in P0074 (scored 43)",
           "weight": 0.8
         }
       ],
@@ -140,7 +149,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0074 (scored 43)",
+          "detail": "used in P0074 (scored 43)",
           "weight": 0.8
         }
       ],
@@ -297,7 +306,7 @@
       "confidence": 0.87
     },
     {
-      "claim": "TypeScript: built P0074 (scored 43)",
+      "claim": "TypeScript: used in P0074 (scored 43)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -311,35 +320,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0074 (scored 43)",
+      "claim": "Express: used in P0074 (scored 43)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0074 (scored 43)",
+      "claim": "SQL: used in P0074 (scored 43)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0074 (scored 43)",
+      "claim": "Airflow: used in P0074 (scored 43)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0074 (scored 43)",
+      "claim": "dbt: used in P0074 (scored 43)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0074 (scored 43)",
+      "claim": "NumPy: used in P0074 (scored 43)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

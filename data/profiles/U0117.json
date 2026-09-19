@@ -1,7 +1,7 @@
 {
   "user_id": "U0117",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.069Z",
+  "built_at": "2026-09-19T08:17:46.241Z",
   "identity": {
     "full_name": "Ananya Kapoor",
     "email": "ananya.kapoor@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0040",
+        "title": "VaxTrack",
+        "date": "2024-06-25",
+        "score": 40,
+        "tech": ["Django", "Redis", "RAG"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 40,
     "first_seen": "2024-06-25",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0040 (scored 40)",
+          "detail": "used in P0040 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0040 (scored 40)",
+          "detail": "used in P0040 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0040 (scored 40)",
+          "detail": "used in P0040 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -244,21 +253,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "Django: built P0040 (scored 40)",
+      "claim": "Django: used in P0040 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "RAG: built P0040 (scored 40)",
+      "claim": "RAG: used in P0040 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0040 (scored 40)",
+      "claim": "Redis: used in P0040 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

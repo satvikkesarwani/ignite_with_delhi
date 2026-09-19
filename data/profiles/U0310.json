@@ -1,7 +1,7 @@
 {
   "user_id": "U0310",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.084Z",
+  "built_at": "2026-09-19T08:17:46.255Z",
   "identity": {
     "full_name": "Prateek Rao",
     "email": "prateek.rao60@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0212",
+        "title": "FanFund",
+        "date": "2026-02-20",
+        "score": 68,
+        "tech": ["Docker", "FastAPI", "Hardhat", "Foundry"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 68,
     "first_seen": "2026-02-18",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0212 (scored 68)",
+          "detail": "used in P0212 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0212 (scored 68)",
+          "detail": "used in P0212 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0212 (scored 68)",
+          "detail": "used in P0212 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0212 (scored 68)",
+          "detail": "used in P0212 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -232,28 +241,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0212 (scored 68)",
+      "claim": "Docker: used in P0212 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0212 (scored 68)",
+      "claim": "FastAPI: used in P0212 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Foundry: built P0212 (scored 68)",
+      "claim": "Foundry: used in P0212 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Hardhat: built P0212 (scored 68)",
+      "claim": "Hardhat: used in P0212 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

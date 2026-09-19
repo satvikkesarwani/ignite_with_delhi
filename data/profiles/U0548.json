@@ -1,7 +1,7 @@
 {
   "user_id": "U0548",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.101Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Oviya Patel",
     "email": "oviya.patel@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0114",
+        "title": "SplitFair",
+        "date": "2025-02-17",
+        "score": 59,
+        "tech": ["dbt", "SQL", "DuckDB", "Spark", "Django"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 59,
     "first_seen": "2025-02-15",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -118,7 +127,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -132,7 +141,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -268,7 +277,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0114 (scored 59)",
+      "claim": "SQL: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -282,7 +291,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "dbt: built P0114 (scored 59)",
+      "claim": "dbt: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -296,7 +305,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "DuckDB: built P0114 (scored 59)",
+      "claim": "DuckDB: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -310,14 +319,14 @@
       "confidence": 0.86
     },
     {
-      "claim": "Spark: built P0114 (scored 59)",
+      "claim": "Spark: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Django: built P0114 (scored 59)",
+      "claim": "Django: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

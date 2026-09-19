@@ -1,7 +1,7 @@
 {
   "user_id": "U0186",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.073Z",
+  "built_at": "2026-09-19T08:17:46.246Z",
   "identity": {
     "full_name": "Simran Jain",
     "email": "simran.jain@ggsipu.ac.in",
@@ -23,6 +23,7 @@
     "submission_rate": 0,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2025-01-10",

@@ -1,7 +1,7 @@
 {
   "user_id": "U0103",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.068Z",
+  "built_at": "2026-09-19T08:17:46.240Z",
   "identity": {
     "full_name": "Vihaan Chauhan",
     "email": "vihaan.chauhan@iitdelhi.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0019",
+        "title": "CreditBridge",
+        "date": "2024-02-22",
+        "score": 44,
+        "tech": ["NumPy", "Vite", "Java Spring", "GraphQL", "Node.js", "FastAPI"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 44,
     "first_seen": "2024-02-22",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0019 (scored 44)",
+          "detail": "used in P0019 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0019 (scored 44)",
+          "detail": "used in P0019 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0019 (scored 44)",
+          "detail": "used in P0019 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0019 (scored 44)",
+          "detail": "used in P0019 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -117,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0019 (scored 44)",
+          "detail": "used in P0019 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -131,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0019 (scored 44)",
+          "detail": "used in P0019 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -330,42 +339,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "NumPy: built P0019 (scored 44)",
+      "claim": "NumPy: used in P0019 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0019 (scored 44)",
+      "claim": "FastAPI: used in P0019 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0019 (scored 44)",
+      "claim": "Node.js: used in P0019 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0019 (scored 44)",
+      "claim": "GraphQL: used in P0019 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0019 (scored 44)",
+      "claim": "Vite: used in P0019 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Java Spring: built P0019 (scored 44)",
+      "claim": "Java Spring: used in P0019 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

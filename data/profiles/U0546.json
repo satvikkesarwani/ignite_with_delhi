@@ -1,7 +1,7 @@
 {
   "user_id": "U0546",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.100Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Shivam Varma",
     "email": "shivam.varma4@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0165",
+        "title": "GridGaze",
+        "date": "2025-08-27",
+        "score": 52,
+        "tech": ["MongoDB", "tRPC", "dbt"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 52,
     "first_seen": "2025-08-27",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0165 (scored 52)",
+          "detail": "used in P0165 (scored 52)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0165 (scored 52)",
+          "detail": "used in P0165 (scored 52)",
           "weight": 0.8
         }
       ],
@@ -94,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0165 (scored 52)",
+          "detail": "used in P0165 (scored 52)",
           "weight": 0.8
         }
       ],
@@ -223,7 +232,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0165 (scored 52)",
+      "claim": "MongoDB: used in P0165 (scored 52)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -237,14 +246,14 @@
       "confidence": 0.86
     },
     {
-      "claim": "tRPC: built P0165 (scored 52)",
+      "claim": "tRPC: used in P0165 (scored 52)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "dbt: built P0165 (scored 52)",
+      "claim": "dbt: used in P0165 (scored 52)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0434",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.092Z",
+  "built_at": "2026-09-19T08:17:46.265Z",
   "identity": {
     "full_name": "Bhavya Srivastava",
     "email": "bhavya.srivastava@dtu.ac.in",
@@ -44,6 +44,36 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0039",
+        "title": "TriageTalk",
+        "date": "2024-06-25",
+        "score": 76,
+        "tech": ["Java Spring", "Firebase", "Python", "Docker", "Jetpack Compose"]
+      },
+      {
+        "project_id": "P0090",
+        "title": "SupplyStamp",
+        "date": "2024-12-04",
+        "score": 70,
+        "tech": ["Tailwind CSS", "IPFS", "Docker", "gRPC", "Foundry", "Hardhat"]
+      },
+      {
+        "project_id": "P0167",
+        "title": "WasteWise",
+        "date": "2025-08-27",
+        "score": 77,
+        "tech": ["TypeScript", "SQL", "Spark", "Vite", "DuckDB", "NumPy"]
+      },
+      {
+        "project_id": "P0208",
+        "title": "SupplyStamp",
+        "date": "2026-02-20",
+        "score": 54,
+        "tech": ["Flask", "Vite", "IPFS", "Hardhat", "Foundry"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 69.3,
     "first_seen": "2024-06-25",
@@ -83,7 +113,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0039 (scored 76)",
+          "detail": "used in P0039 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -102,7 +132,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0167 (scored 77)",
+          "detail": "used in P0167 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -121,7 +151,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0167 (scored 77)",
+          "detail": "used in P0167 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -135,7 +165,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in 2 projects, best P0039 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -149,7 +179,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0167 (scored 77)",
+          "detail": "used in P0167 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -163,7 +193,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -177,7 +207,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0167 (scored 77)",
+          "detail": "used in P0167 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -191,7 +221,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0039 (scored 76)",
+          "detail": "used in P0039 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -205,7 +235,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in 2 projects, best P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -219,7 +249,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in 2 projects, best P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -233,7 +263,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in 2 projects, best P0167 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -247,7 +277,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in 2 projects, best P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -261,7 +291,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0039 (scored 76)",
+          "detail": "used in P0039 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -275,7 +305,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0167 (scored 77)",
+          "detail": "used in P0167 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -289,7 +319,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0090 (scored 70)",
+          "detail": "used in P0090 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -303,7 +333,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in P0208 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -317,7 +347,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0039 (scored 76)",
+          "detail": "used in P0039 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -466,7 +496,7 @@
       "confidence": 0.92
     },
     {
-      "claim": "Python: built P0039 (scored 76)",
+      "claim": "Python: used in P0039 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -480,7 +510,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0167 (scored 77)",
+      "claim": "SQL: used in P0167 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -494,42 +524,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Spark: built P0167 (scored 77)",
+      "claim": "Spark: used in P0167 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0090 (scored 70)",
+      "claim": "Docker: used in 2 projects, best P0039 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0167 (scored 77)",
+      "claim": "TypeScript: used in P0167 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0090 (scored 70)",
+      "claim": "Tailwind CSS: used in P0090 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0167 (scored 77)",
+      "claim": "DuckDB: used in P0167 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Firebase: built P0039 (scored 76)",
+      "claim": "Firebase: used in P0039 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

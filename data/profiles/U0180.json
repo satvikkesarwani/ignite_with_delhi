@@ -1,7 +1,7 @@
 {
   "user_id": "U0180",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.073Z",
+  "built_at": "2026-09-19T08:17:46.246Z",
   "identity": {
     "full_name": "Mihir Saxena",
     "email": "mihir.saxena@gmail.com",
@@ -23,6 +23,29 @@
     "submission_rate": 0.75,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0010",
+        "title": "CreditBridge",
+        "date": "2024-02-22",
+        "score": 45,
+        "tech": ["TypeScript", "Go", "Django", "Pandas", "Express"]
+      },
+      {
+        "project_id": "P0027",
+        "title": "MealLink",
+        "date": "2024-05-21",
+        "score": 59,
+        "tech": ["TypeScript", "Node.js", "Tailwind CSS", "tRPC", "React Native"]
+      },
+      {
+        "project_id": "P0198",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 32,
+        "tech": ["Embedded C", "Arduino", "FastAPI", "LoRaWAN"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 45.3,
     "first_seen": "2024-02-22",
@@ -67,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in 2 projects, best P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -81,7 +104,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0198 (scored 32)",
+          "detail": "used in P0198 (scored 32)",
           "weight": 0.8
         }
       ],
@@ -95,7 +118,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -109,7 +132,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -123,7 +146,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -137,7 +160,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -151,7 +174,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -165,7 +188,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0198 (scored 32)",
+          "detail": "used in P0198 (scored 32)",
           "weight": 0.8
         }
       ],
@@ -179,7 +202,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0198 (scored 32)",
+          "detail": "used in P0198 (scored 32)",
           "weight": 0.8
         }
       ],
@@ -193,7 +216,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -207,7 +230,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0198 (scored 32)",
+          "detail": "used in P0198 (scored 32)",
           "weight": 0.8
         }
       ],
@@ -221,7 +244,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -235,7 +258,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -443,56 +466,56 @@
       "confidence": 0.89
     },
     {
-      "claim": "TypeScript: built P0027 (scored 59)",
+      "claim": "TypeScript: used in 2 projects, best P0027 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.89
     },
     {
-      "claim": "FastAPI: built P0198 (scored 32)",
+      "claim": "FastAPI: used in P0198 (scored 32)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0027 (scored 59)",
+      "claim": "Node.js: used in P0027 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0010 (scored 45)",
+      "claim": "Express: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0027 (scored 59)",
+      "claim": "Tailwind CSS: used in P0027 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0010 (scored 45)",
+      "claim": "Pandas: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0010 (scored 45)",
+      "claim": "Go: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0198 (scored 32)",
+      "claim": "Arduino: used in P0198 (scored 32)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

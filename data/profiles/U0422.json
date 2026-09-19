@@ -1,7 +1,7 @@
 {
   "user_id": "U0422",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.091Z",
+  "built_at": "2026-09-19T08:17:46.263Z",
   "identity": {
     "full_name": "Harsh Mishra",
     "email": "harsh.mishra@bennett.ac.in",
@@ -44,6 +44,22 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0029",
+        "title": "SignSpeak",
+        "date": "2024-05-21",
+        "score": 76,
+        "tech": ["Kotlin", "MongoDB", "DuckDB", "PostgreSQL", "Vite", "React"]
+      },
+      {
+        "project_id": "P0092",
+        "title": "CarbonCred",
+        "date": "2024-12-04",
+        "score": 77,
+        "tech": ["GraphQL", "Go", "Docker", "FastAPI", "IPFS"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 76.5,
     "first_seen": "2024-05-20",
@@ -82,7 +98,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -96,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0092 (scored 77)",
+          "detail": "used in P0092 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -110,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -124,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0092 (scored 77)",
+          "detail": "used in P0092 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -138,7 +154,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -152,7 +168,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -166,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -180,7 +196,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0092 (scored 77)",
+          "detail": "used in P0092 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -194,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0092 (scored 77)",
+          "detail": "used in P0092 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -208,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0092 (scored 77)",
+          "detail": "used in P0092 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -222,7 +238,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -397,56 +413,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Kotlin: built P0029 (scored 76)",
+      "claim": "Kotlin: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0092 (scored 77)",
+      "claim": "FastAPI: used in P0092 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0029 (scored 76)",
+      "claim": "MongoDB: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0092 (scored 77)",
+      "claim": "Docker: used in P0092 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0029 (scored 76)",
+      "claim": "React: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0029 (scored 76)",
+      "claim": "PostgreSQL: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0029 (scored 76)",
+      "claim": "DuckDB: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0092 (scored 77)",
+      "claim": "Go: used in P0092 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

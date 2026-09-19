@@ -1,7 +1,7 @@
 {
   "user_id": "U0287",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.082Z",
+  "built_at": "2026-09-19T08:17:46.254Z",
   "identity": {
     "full_name": "Reyansh Patel",
     "email": "reyansh.patel9@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0111",
+        "title": "MicroHedge",
+        "date": "2025-02-17",
+        "score": 83,
+        "tech": ["GraphQL", "Docker", "FastAPI", "Node.js", "PostgreSQL", "Redis"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 83,
     "first_seen": "2025-02-15",
@@ -66,7 +75,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -94,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -108,7 +117,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -122,7 +131,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -136,7 +145,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -245,7 +254,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Reyansh Patel is a B.E. Electronics and Communication student at Netaji Subhas University of Technology, graduating in 2027, who signed up as a ML/AI builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 2 at StackSprint with \"MicroHedge\" (scored 83). Their strongest evidenced skills are FastAPI, Node.js, Docker, based on built P0111 (scored 83). They declare PyTorch, DuckDB with no supporting repository or project evidence on the platform. Last active 2025-02-26, 570 days ago — lapsed.",
+  "narrative": "Reyansh Patel is a B.E. Electronics and Communication student at Netaji Subhas University of Technology, graduating in 2027, who signed up as a ML/AI builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 2 at StackSprint with \"MicroHedge\" (scored 83). Their strongest evidenced skills are FastAPI, Node.js, Docker, based on used in P0111 (scored 83). They declare PyTorch, DuckDB with no supporting repository or project evidence on the platform. Last active 2025-02-26, 570 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -277,42 +286,42 @@
       "confidence": 1
     },
     {
-      "claim": "FastAPI: built P0111 (scored 83)",
+      "claim": "FastAPI: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0111 (scored 83)",
+      "claim": "Node.js: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0111 (scored 83)",
+      "claim": "Docker: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0111 (scored 83)",
+      "claim": "PostgreSQL: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0111 (scored 83)",
+      "claim": "Redis: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0111 (scored 83)",
+      "claim": "GraphQL: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

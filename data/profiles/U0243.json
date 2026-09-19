@@ -1,7 +1,7 @@
 {
   "user_id": "U0243",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.077Z",
+  "built_at": "2026-09-19T08:17:46.251Z",
   "identity": {
     "full_name": "Charvi Dhillon",
     "email": "charvi.dhillon@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0016",
+        "title": "FraudFence",
+        "date": "2024-02-22",
+        "score": 62,
+        "tech": ["Tailwind CSS", "TypeScript", "PostgreSQL", "Redis", "gRPC", "FastAPI"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62,
     "first_seen": "2024-02-22",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0016 (scored 62)",
+          "detail": "used in P0016 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0016 (scored 62)",
+          "detail": "used in P0016 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0016 (scored 62)",
+          "detail": "used in P0016 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -114,7 +123,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0016 (scored 62)",
+          "detail": "used in P0016 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -128,7 +137,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0016 (scored 62)",
+          "detail": "used in P0016 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -142,7 +151,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0016 (scored 62)",
+          "detail": "used in P0016 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -285,7 +294,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0016 (scored 62)",
+      "claim": "FastAPI: used in P0016 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -299,7 +308,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Redis: built P0016 (scored 62)",
+      "claim": "Redis: used in P0016 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -313,28 +322,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "gRPC: built P0016 (scored 62)",
+      "claim": "gRPC: used in P0016 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0016 (scored 62)",
+      "claim": "TypeScript: used in P0016 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0016 (scored 62)",
+      "claim": "PostgreSQL: used in P0016 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0016 (scored 62)",
+      "claim": "Tailwind CSS: used in P0016 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

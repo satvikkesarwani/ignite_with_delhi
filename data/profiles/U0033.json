@@ -1,7 +1,7 @@
 {
   "user_id": "U0033",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.058Z",
+  "built_at": "2026-09-19T08:17:46.232Z",
   "identity": {
     "full_name": "Tanmay Dhillon",
     "email": "tanmay.dhillon3@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.33,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0121",
+        "title": "SkillPath",
+        "date": "2025-03-27",
+        "score": 66,
+        "tech": ["Vite", "PostgreSQL", "TypeScript", "React", "Transformers"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 66,
     "first_seen": "2024-08-07",
@@ -67,7 +76,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -86,7 +95,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -105,7 +114,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -124,7 +133,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -138,7 +147,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -288,7 +297,7 @@
       "confidence": 0.89
     },
     {
-      "claim": "TypeScript: built P0121 (scored 66)",
+      "claim": "TypeScript: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -302,7 +311,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0121 (scored 66)",
+      "claim": "React: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -316,7 +325,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0121 (scored 66)",
+      "claim": "PostgreSQL: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -330,14 +339,14 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vite: built P0121 (scored 66)",
+      "claim": "Vite: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Transformers: built P0121 (scored 66)",
+      "claim": "Transformers: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

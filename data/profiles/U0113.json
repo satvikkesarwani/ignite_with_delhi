@@ -1,7 +1,7 @@
 {
   "user_id": "U0113",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.068Z",
+  "built_at": "2026-09-19T08:17:46.241Z",
   "identity": {
     "full_name": "Kabir Shah",
     "email": "kabir.shah@iitroorkee.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0226",
+        "title": "LegalRAG",
+        "date": "2026-05-23",
+        "score": 36,
+        "tech": ["React", "PostgreSQL", "Node.js", "Next.js", "Express", "Java Spring"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 36,
     "first_seen": "2026-05-21",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -126,7 +135,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -300,7 +309,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Kabir Shah is a B.Des Data Science student at Indian Institute of Technology Roorkee, graduating in 2026, who signed up as a Product builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Node.js, Express, React, based on built P0226 (scored 36). They declare Figma, Prototyping, Framer with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-07-30 — currently active.",
+  "narrative": "Kabir Shah is a B.Des Data Science student at Indian Institute of Technology Roorkee, graduating in 2026, who signed up as a Product builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Node.js, Express, React, based on used in P0226 (scored 36). They declare Figma, Prototyping, Framer with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-07-30 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -339,42 +348,42 @@
       "confidence": 1
     },
     {
-      "claim": "Node.js: built P0226 (scored 36)",
+      "claim": "Node.js: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0226 (scored 36)",
+      "claim": "Express: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0226 (scored 36)",
+      "claim": "React: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0226 (scored 36)",
+      "claim": "Next.js: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0226 (scored 36)",
+      "claim": "PostgreSQL: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Java Spring: built P0226 (scored 36)",
+      "claim": "Java Spring: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0554",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.101Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Mayank Nair",
     "email": "mayank.nair@iitdelhi.ac.in",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0008",
+        "title": "AttendAR",
+        "date": "2024-01-14",
+        "score": 44,
+        "tech": ["LLM Fine-tuning", "tRPC", "MongoDB"]
+      },
+      {
+        "project_id": "P0036",
+        "title": "MindLog",
+        "date": "2024-06-25",
+        "score": 73,
+        "tech": ["LLM Fine-tuning", "Redis", "Transformers"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 58.5,
     "first_seen": "2024-01-13",
@@ -56,7 +72,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0008 (scored 44)",
+          "detail": "used in P0008 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -70,7 +86,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -84,7 +100,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -98,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0008 (scored 44)",
+          "detail": "used in P0008 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -112,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in 2 projects, best P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -219,7 +235,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Mayank Nair is a B.E. Mathematics and Computing student at Indian Institute of Technology Delhi, graduating in 2029, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are MongoDB, Transformers, Redis, based on built P0008 (scored 44). They declare Foundry, IPFS with no supporting repository or project evidence on the platform. Last active 2026-01-09, 253 days ago — dormant and worth re-engaging. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative": "Mayank Nair is a B.E. Mathematics and Computing student at Indian Institute of Technology Delhi, graduating in 2029, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are MongoDB, Transformers, Redis, based on used in P0008 (scored 44). They declare Foundry, IPFS with no supporting repository or project evidence on the platform. Last active 2026-01-09, 253 days ago — dormant and worth re-engaging. They have not consented to outreach, so they must be excluded from campaigns.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -244,35 +260,35 @@
       "confidence": 1
     },
     {
-      "claim": "MongoDB: built P0008 (scored 44)",
+      "claim": "MongoDB: used in P0008 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Transformers: built P0036 (scored 73)",
+      "claim": "Transformers: used in P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0036 (scored 73)",
+      "claim": "Redis: used in P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0008 (scored 44)",
+      "claim": "tRPC: used in P0008 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LLM Fine-tuning: built P0036 (scored 73)",
+      "claim": "LLM Fine-tuning: used in 2 projects, best P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0443",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.265Z",
   "identity": {
     "full_name": "Vihaan Gupta",
     "email": "vihaan.gupta64@gmail.com",
@@ -34,6 +34,43 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0068",
+        "title": "WasteWise",
+        "date": "2024-09-15",
+        "score": 85,
+        "tech": ["React", "Vite", "Express", "SQL", "dbt", "Tableau"]
+      },
+      {
+        "project_id": "P0093",
+        "title": "FanFund",
+        "date": "2024-12-04",
+        "score": 69,
+        "tech": ["React", "IPFS", "Tailwind CSS", "tRPC", "The Graph", "FastAPI"]
+      },
+      {
+        "project_id": "P0134",
+        "title": "PaperTrail",
+        "date": "2025-05-09",
+        "score": 62,
+        "tech": ["Redis", "LangChain", "TensorFlow", "scikit-learn"]
+      },
+      {
+        "project_id": "P0153",
+        "title": "MealLink",
+        "date": "2025-07-23",
+        "score": 48,
+        "tech": ["React", "Tableau", "Flutter", "Express", "Node.js"]
+      },
+      {
+        "project_id": "P0204",
+        "title": "SupplyStamp",
+        "date": "2026-02-20",
+        "score": 40,
+        "tech": ["Java Spring", "IPFS", "React", "Solidity"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 60.8,
     "first_seen": "2024-01-13",
@@ -86,7 +123,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in 4 projects, best P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -105,7 +142,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -124,7 +161,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in 2 projects, best P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -138,7 +175,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -152,7 +189,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -166,7 +203,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -180,7 +217,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in 2 projects, best P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -194,7 +231,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -208,7 +245,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -222,7 +259,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -236,7 +273,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -250,7 +287,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -264,7 +301,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -278,7 +315,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -292,7 +329,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in 2 projects, best P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -306,7 +343,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0068 (scored 85)",
+          "detail": "used in P0068 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -320,7 +357,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -334,7 +371,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -348,7 +385,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -515,7 +552,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0204 (scored 40)",
+      "claim": "React: used in 4 projects, best P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -529,7 +566,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Solidity: built P0204 (scored 40)",
+      "claim": "Solidity: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -543,42 +580,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "IPFS: built P0204 (scored 40)",
+      "claim": "IPFS: used in 2 projects, best P0093 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0134 (scored 62)",
+      "claim": "LangChain: used in P0134 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "FastAPI: built P0093 (scored 69)",
+      "claim": "FastAPI: used in P0093 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0153 (scored 48)",
+      "claim": "Node.js: used in P0153 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0153 (scored 48)",
+      "claim": "Express: used in 2 projects, best P0068 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0093 (scored 69)",
+      "claim": "Tailwind CSS: used in P0093 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

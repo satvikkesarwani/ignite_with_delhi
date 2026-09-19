@@ -1,7 +1,7 @@
 {
   "user_id": "U0007",
   "version": 1,
-  "built_at": "2026-09-19T08:03:54.690Z",
+  "built_at": "2026-09-19T08:32:18.554Z",
   "identity": {
     "full_name": "Ananya Iyer",
     "email": "ananya.iyer@iiitd.ac.in",
@@ -74,6 +74,64 @@
       }
     ],
     "prize_count": 5,
+    "projects": [
+      {
+        "project_id": "P0021",
+        "title": "MeetingMemory",
+        "date": "2024-04-06",
+        "score": 33,
+        "tech": ["FastAPI", "Neo4j", "PyTorch", "Express", "Tailwind CSS"]
+      },
+      {
+        "project_id": "P0047",
+        "title": "DoseDiary",
+        "date": "2024-06-25",
+        "score": 91,
+        "tech": ["PyTorch", "Transformers", "LangChain", "HuggingFace", "OpenAI API"]
+      },
+      {
+        "project_id": "P0089",
+        "title": "FanFund",
+        "date": "2024-12-04",
+        "score": 67,
+        "tech": ["Go", "FastAPI", "gRPC", "Hardhat"]
+      },
+      {
+        "project_id": "P0140",
+        "title": "ReportReader",
+        "date": "2025-06-12",
+        "score": 93,
+        "tech": ["PyTorch", "RAG", "FastAPI"]
+      },
+      {
+        "project_id": "P0152",
+        "title": "SignSpeak",
+        "date": "2025-07-23",
+        "score": 88,
+        "tech": ["Airflow", "tRPC", "Firebase", "Express", "Spark"]
+      },
+      {
+        "project_id": "P0196",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 53,
+        "tech": ["Tableau", "MQTT", "LoRaWAN"]
+      },
+      {
+        "project_id": "P0233",
+        "title": "MeetingMemory",
+        "date": "2026-05-23",
+        "score": 90,
+        "tech": ["Transformers", "Vector Databases", "Next.js"]
+      },
+      {
+        "project_id": "P0256",
+        "title": "PromptForge",
+        "date": "2026-08-08",
+        "score": 92,
+        "tech": ["HuggingFace", "Vector Databases", "Redis"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 75.9,
     "first_seen": "2024-04-06",
@@ -136,7 +194,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0140 (scored 93)",
+          "detail": "used in 3 projects, best P0140 (scored 93)",
           "weight": 0.8
         }
       ],
@@ -155,7 +213,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -174,7 +232,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0256 (scored 92)",
+          "detail": "used in 2 projects, best P0256 (scored 92)",
           "weight": 0.8
         }
       ],
@@ -193,7 +251,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0233 (scored 90)",
+          "detail": "used in 2 projects, best P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -212,7 +270,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0256 (scored 92)",
+          "detail": "used in 2 projects, best P0256 (scored 92)",
           "weight": 0.8
         }
       ],
@@ -245,7 +303,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0140 (scored 93)",
+          "detail": "used in P0140 (scored 93)",
           "weight": 0.8
         }
       ],
@@ -259,7 +317,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0140 (scored 93)",
+          "detail": "used in 3 projects, best P0140 (scored 93)",
           "weight": 0.8
         }
       ],
@@ -273,7 +331,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0021 (scored 33)",
+          "detail": "used in P0021 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -287,7 +345,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0152 (scored 88)",
+          "detail": "used in 2 projects, best P0152 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -301,7 +359,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0233 (scored 90)",
+          "detail": "used in P0233 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -315,7 +373,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0021 (scored 33)",
+          "detail": "used in P0021 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -329,7 +387,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0152 (scored 88)",
+          "detail": "used in P0152 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -343,7 +401,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0089 (scored 67)",
+          "detail": "used in P0089 (scored 67)",
           "weight": 0.8
         }
       ],
@@ -357,7 +415,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0256 (scored 92)",
+          "detail": "used in P0256 (scored 92)",
           "weight": 0.8
         }
       ],
@@ -371,7 +429,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -385,7 +443,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0152 (scored 88)",
+          "detail": "used in P0152 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -399,7 +457,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0196 (scored 53)",
+          "detail": "used in P0196 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -413,7 +471,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0152 (scored 88)",
+          "detail": "used in P0152 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -427,7 +485,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0196 (scored 53)",
+          "detail": "used in P0196 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -441,7 +499,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0089 (scored 67)",
+          "detail": "used in P0089 (scored 67)",
           "weight": 0.8
         }
       ],
@@ -455,7 +513,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0196 (scored 53)",
+          "detail": "used in P0196 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -469,7 +527,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0152 (scored 88)",
+          "detail": "used in P0152 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -483,7 +541,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0089 (scored 67)",
+          "detail": "used in P0089 (scored 67)",
           "weight": 0.8
         }
       ],
@@ -625,7 +683,7 @@
       "outcome": 100
     }
   },
-  "narrative": "Ananya Iyer is a third-year Computer Science student at IIIT Delhi with a focus on ML/AI. She is demonstrably good at building and scoring highly on PyTorch, LangChain, HuggingFace, and Transformers projects, with evidence including a PyTorch project that scored 93 and LangChain and HuggingFace projects scoring 91 and 92 respectively. Her involvement has been consistently active across eight registered and attended hackathons, maintaining a perfect attendance record with zero no-shows and a 100% submission rate, and her performance trajectory shows a rising pattern with scores improving from 33 to 92 over time. For an organizer deciding whether to invite her, she is a reliable serial finisher who delivers strong results, though her recent activity has been quiet for 29 days, so it is worth confirming her current availability before extending an invitation.",
+  "narrative": "Ananya Iyer is a Computer Science and Engineering student at Indraprastha Institute of Information Technology Delhi who has completed eight hackathons with a perfect attendance record and no no-shows. Their demonstrated proficiency in PyTorch, LangChain, and HuggingFace is evidenced by consistent use across multiple submitted projects, and Python skills further validated by activity in 76% of 31 public repositories. Over time their involvement has evolved from early participation to a rising trajectory marked by scores ranging from 33 to 93, with recent performance showing strong finishes including two overall first-place rankings at Yamuna Build Fest and ProtoDelhi. They are a serial finisher and community-active generalist who continues to engage actively on the platform. For an organizer deciding whether to invite them, they represent a reliably high-performing competitor who consistently delivers results and merits consideration for future events.",
   "narrative_status": "llm",
   "evidence": [
     {
@@ -706,7 +764,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0140 (scored 93)",
+      "claim": "PyTorch: used in 3 projects, best P0140 (scored 93)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -720,7 +778,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0047 (scored 91)",
+      "claim": "LangChain: used in P0047 (scored 91)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -734,7 +792,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "HuggingFace: built P0256 (scored 92)",
+      "claim": "HuggingFace: used in 2 projects, best P0256 (scored 92)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -748,7 +806,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Transformers: built P0233 (scored 90)",
+      "claim": "Transformers: used in 2 projects, best P0047 (scored 91)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -762,7 +820,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vector Databases: built P0256 (scored 92)",
+      "claim": "Vector Databases: used in 2 projects, best P0256 (scored 92)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -783,14 +841,14 @@
       "confidence": 0.83
     },
     {
-      "claim": "RAG: built P0140 (scored 93)",
+      "claim": "RAG: used in P0140 (scored 93)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "FastAPI: built P0140 (scored 93)",
+      "claim": "FastAPI: used in 3 projects, best P0140 (scored 93)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

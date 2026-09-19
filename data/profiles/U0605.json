@@ -1,7 +1,7 @@
 {
   "user_id": "U0605",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.105Z",
+  "built_at": "2026-09-19T08:17:46.276Z",
   "identity": {
     "full_name": "Hemant Singh",
     "email": "hemant.singh@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0226",
+        "title": "LegalRAG",
+        "date": "2026-05-23",
+        "score": 36,
+        "tech": ["React", "PostgreSQL", "Node.js", "Next.js", "Express", "Java Spring"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 36,
     "first_seen": "2026-05-21",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -119,7 +128,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -138,7 +147,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -157,7 +166,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0226 (scored 36)",
+          "detail": "used in P0226 (scored 36)",
           "weight": 0.8
         }
       ],
@@ -230,7 +239,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0226 (scored 36)",
+      "claim": "Node.js: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -244,7 +253,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0226 (scored 36)",
+      "claim": "Express: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -258,7 +267,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0226 (scored 36)",
+      "claim": "React: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -272,7 +281,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0226 (scored 36)",
+      "claim": "Next.js: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -286,7 +295,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0226 (scored 36)",
+      "claim": "PostgreSQL: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -300,7 +309,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Java Spring: built P0226 (scored 36)",
+      "claim": "Java Spring: used in P0226 (scored 36)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

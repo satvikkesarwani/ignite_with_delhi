@@ -1,7 +1,7 @@
 {
   "user_id": "U0602",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.105Z",
+  "built_at": "2026-09-19T08:17:46.276Z",
   "identity": {
     "full_name": "Sanjana Sen",
     "email": "sanjana.sen@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0094",
+        "title": "VoteProof",
+        "date": "2024-12-04",
+        "score": 83,
+        "tech": ["ethers.js", "Hardhat", "The Graph", "PostgreSQL", "Docker", "Solidity"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 83,
     "first_seen": "2024-12-04",
@@ -66,7 +75,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0094 (scored 83)",
+          "detail": "used in P0094 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0094 (scored 83)",
+          "detail": "used in P0094 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -94,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0094 (scored 83)",
+          "detail": "used in P0094 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -108,7 +117,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0094 (scored 83)",
+          "detail": "used in P0094 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -122,7 +131,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0094 (scored 83)",
+          "detail": "used in P0094 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -136,7 +145,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0094 (scored 83)",
+          "detail": "used in P0094 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -261,7 +270,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Sanjana Sen is a B.Tech Information Technology student at Jamia Millia Islamia, graduating in 2026, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 1 at Capital Code Jam with \"VoteProof\" (scored 83). Their strongest evidenced skills are Docker, PostgreSQL, The Graph, based on built P0094 (scored 83). They declare Prototyping, Design Systems, Motion Design with no supporting repository or project evidence on the platform. Mentors rated them 2.5 out of 5 across 2 sessions. Last active 2026-06-25, 86 days ago — cooling off.",
+  "narrative": "Sanjana Sen is a B.Tech Information Technology student at Jamia Millia Islamia, graduating in 2026, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 1 at Capital Code Jam with \"VoteProof\" (scored 83). Their strongest evidenced skills are Docker, PostgreSQL, The Graph, based on used in P0094 (scored 83). They declare Prototyping, Design Systems, Motion Design with no supporting repository or project evidence on the platform. Mentors rated them 2.5 out of 5 across 2 sessions. Last active 2026-06-25, 86 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -300,42 +309,42 @@
       "confidence": 1
     },
     {
-      "claim": "Docker: built P0094 (scored 83)",
+      "claim": "Docker: used in P0094 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0094 (scored 83)",
+      "claim": "PostgreSQL: used in P0094 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "The Graph: built P0094 (scored 83)",
+      "claim": "The Graph: used in P0094 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0094 (scored 83)",
+      "claim": "Solidity: used in P0094 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ethers.js: built P0094 (scored 83)",
+      "claim": "ethers.js: used in P0094 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Hardhat: built P0094 (scored 83)",
+      "claim": "Hardhat: used in P0094 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

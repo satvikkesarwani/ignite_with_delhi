@@ -1,7 +1,7 @@
 {
   "user_id": "U0451",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.266Z",
   "identity": {
     "full_name": "Anirudh Mishra",
     "email": "anirudh.mishra@gmail.com",
@@ -23,6 +23,7 @@
     "submission_rate": null,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2026-01-26",

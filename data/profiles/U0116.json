@@ -1,7 +1,7 @@
 {
   "user_id": "U0116",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.069Z",
+  "built_at": "2026-09-19T08:17:46.241Z",
   "identity": {
     "full_name": "Manan Deshmukh",
     "email": "manan.deshmukh@jiitnoida.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0008",
+        "title": "AttendAR",
+        "date": "2024-01-14",
+        "score": 44,
+        "tech": ["LLM Fine-tuning", "tRPC", "MongoDB"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 44,
     "first_seen": "2024-01-13",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0008 (scored 44)",
+          "detail": "used in P0008 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0008 (scored 44)",
+          "detail": "used in P0008 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0008 (scored 44)",
+          "detail": "used in P0008 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -232,21 +241,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "LLM Fine-tuning: built P0008 (scored 44)",
+      "claim": "LLM Fine-tuning: used in P0008 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0008 (scored 44)",
+      "claim": "MongoDB: used in P0008 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0008 (scored 44)",
+      "claim": "tRPC: used in P0008 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

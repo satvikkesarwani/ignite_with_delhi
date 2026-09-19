@@ -1,7 +1,7 @@
 {
   "user_id": "U0587",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.103Z",
+  "built_at": "2026-09-19T08:17:46.274Z",
   "identity": {
     "full_name": "Samaira Shetty",
     "email": "samaira.shetty@vit.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0091",
+        "title": "CarbonCred",
+        "date": "2024-12-04",
+        "score": 66,
+        "tech": ["MongoDB", "Next.js", "tRPC"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 66,
     "first_seen": "2024-12-04",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0091 (scored 66)",
+          "detail": "used in P0091 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0091 (scored 66)",
+          "detail": "used in P0091 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0091 (scored 66)",
+          "detail": "used in P0091 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -174,7 +183,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Samaira Shetty is a MCA Computer Science and Engineering student at Vellore Institute of Technology, graduating in 2026, who signed up as a Web3 builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are MongoDB, Next.js, tRPC, based on built P0091 (scored 66). They declare The Graph, Foundry, ethers.js with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2024-12-07, 651 days ago — lapsed.",
+  "narrative": "Samaira Shetty is a MCA Computer Science and Engineering student at Vellore Institute of Technology, graduating in 2026, who signed up as a Web3 builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are MongoDB, Next.js, tRPC, based on used in P0091 (scored 66). They declare The Graph, Foundry, ethers.js with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2024-12-07, 651 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -213,21 +222,21 @@
       "confidence": 1
     },
     {
-      "claim": "MongoDB: built P0091 (scored 66)",
+      "claim": "MongoDB: used in P0091 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0091 (scored 66)",
+      "claim": "Next.js: used in P0091 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0091 (scored 66)",
+      "claim": "tRPC: used in P0091 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

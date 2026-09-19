@@ -1,7 +1,7 @@
 {
   "user_id": "U0584",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.103Z",
+  "built_at": "2026-09-19T08:17:46.273Z",
   "identity": {
     "full_name": "Manvi Yadav",
     "email": "manvi.yadav@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0060",
+        "title": "FlakeFinder",
+        "date": "2024-08-09",
+        "score": 65,
+        "tech": ["gRPC", "Kubernetes", "Go", "Kafka", "Flask", "MongoDB"]
+      },
+      {
+        "project_id": "P0158",
+        "title": "CarbonLedger",
+        "date": "2025-08-27",
+        "score": 85,
+        "tech": ["TypeScript", "Pandas", "DuckDB", "tRPC", "Spark", "NumPy"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 75,
     "first_seen": "2024-01-13",
@@ -69,7 +85,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0060 (scored 65)",
+          "detail": "used in P0060 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -83,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0158 (scored 85)",
+          "detail": "used in P0158 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -97,7 +113,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0158 (scored 85)",
+          "detail": "used in P0158 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -111,7 +127,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0158 (scored 85)",
+          "detail": "used in P0158 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -125,7 +141,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0060 (scored 65)",
+          "detail": "used in P0060 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -139,7 +155,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0060 (scored 65)",
+          "detail": "used in P0060 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -153,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0158 (scored 85)",
+          "detail": "used in P0158 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -167,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0158 (scored 85)",
+          "detail": "used in P0158 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -181,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0158 (scored 85)",
+          "detail": "used in P0158 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -195,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0060 (scored 65)",
+          "detail": "used in P0060 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -209,7 +225,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0060 (scored 65)",
+          "detail": "used in P0060 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -223,7 +239,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0060 (scored 65)",
+          "detail": "used in P0060 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -339,7 +355,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Manvi Yadav is a MCA Electrical Engineering student at Bennett University, graduating in 2025, who signed up as a Product builder. They have attended 5 of the 5 hackathons they registered for and submitted 2 projects (a 40% submission rate). They have won 1 prize, including rank 2 at Ignite Delhi Winter II with \"CarbonLedger\" (scored 85). Their strongest evidenced skills are MongoDB, TypeScript, Pandas, based on built P0060 (scored 65). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-07-07, 74 days ago — cooling off.",
+  "narrative": "Manvi Yadav is a MCA Electrical Engineering student at Bennett University, graduating in 2025, who signed up as a Product builder. They have attended 5 of the 5 hackathons they registered for and submitted 2 projects (a 40% submission rate). They have won 1 prize, including rank 2 at Ignite Delhi Winter II with \"CarbonLedger\" (scored 85). Their strongest evidenced skills are MongoDB, TypeScript, Pandas, based on used in P0060 (scored 65). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-07-07, 74 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -385,56 +401,56 @@
       "confidence": 1
     },
     {
-      "claim": "MongoDB: built P0060 (scored 65)",
+      "claim": "MongoDB: used in P0060 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0158 (scored 85)",
+      "claim": "TypeScript: used in P0158 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0158 (scored 85)",
+      "claim": "Pandas: used in P0158 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0158 (scored 85)",
+      "claim": "DuckDB: used in P0158 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0060 (scored 65)",
+      "claim": "Go: used in P0060 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kubernetes: built P0060 (scored 65)",
+      "claim": "Kubernetes: used in P0060 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0158 (scored 85)",
+      "claim": "tRPC: used in P0158 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0158 (scored 85)",
+      "claim": "Spark: used in P0158 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

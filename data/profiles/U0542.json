@@ -1,7 +1,7 @@
 {
   "user_id": "U0542",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.100Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Samarth Yadav",
     "email": "samarth.yadav52@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0237",
+        "title": "SchemaSage",
+        "date": "2026-05-23",
+        "score": 65,
+        "tech": ["Django", "PyTorch", "scikit-learn", "Python"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 65,
     "first_seen": "2026-05-21",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0237 (scored 65)",
+          "detail": "used in P0237 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0237 (scored 65)",
+          "detail": "used in P0237 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -94,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0237 (scored 65)",
+          "detail": "used in P0237 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -108,7 +117,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0237 (scored 65)",
+          "detail": "used in P0237 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -251,7 +260,7 @@
       "confidence": 0.92
     },
     {
-      "claim": "Python: built P0237 (scored 65)",
+      "claim": "Python: used in P0237 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -265,21 +274,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "Django: built P0237 (scored 65)",
+      "claim": "Django: used in P0237 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0237 (scored 65)",
+      "claim": "PyTorch: used in P0237 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0237 (scored 65)",
+      "claim": "scikit-learn: used in P0237 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

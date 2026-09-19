@@ -1,7 +1,7 @@
 {
   "user_id": "U0253",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.079Z",
+  "built_at": "2026-09-19T08:17:46.252Z",
   "identity": {
     "full_name": "Ankit Tandon",
     "email": "ankit.tandon@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0020",
+        "title": "CreditBridge",
+        "date": "2024-02-22",
+        "score": 37,
+        "tech": ["Redis", "NumPy", "gRPC"]
+      },
+      {
+        "project_id": "P0239",
+        "title": "Interviewer",
+        "date": "2026-05-23",
+        "score": 88,
+        "tech": ["tRPC", "MongoDB", "LangChain", "RAG", "OpenAI API", "Docker"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62.5,
     "first_seen": "2024-02-22",
@@ -72,7 +88,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -91,7 +107,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -105,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -119,7 +135,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -133,7 +149,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -147,7 +163,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0020 (scored 37)",
+          "detail": "used in P0020 (scored 37)",
           "weight": 0.8
         }
       ],
@@ -161,7 +177,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -175,7 +191,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0020 (scored 37)",
+          "detail": "used in P0020 (scored 37)",
           "weight": 0.8
         }
       ],
@@ -189,7 +205,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0020 (scored 37)",
+          "detail": "used in P0020 (scored 37)",
           "weight": 0.8
         }
       ],
@@ -372,7 +388,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0239 (scored 88)",
+      "claim": "MongoDB: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -386,49 +402,49 @@
       "confidence": 0.86
     },
     {
-      "claim": "tRPC: built P0239 (scored 88)",
+      "claim": "tRPC: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0239 (scored 88)",
+      "claim": "LangChain: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0239 (scored 88)",
+      "claim": "RAG: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0239 (scored 88)",
+      "claim": "Docker: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0020 (scored 37)",
+      "claim": "Redis: used in P0020 (scored 37)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0239 (scored 88)",
+      "claim": "OpenAI API: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0020 (scored 37)",
+      "claim": "NumPy: used in P0020 (scored 37)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

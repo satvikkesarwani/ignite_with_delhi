@@ -1,7 +1,7 @@
 {
   "user_id": "U0353",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.086Z",
+  "built_at": "2026-09-19T08:17:46.258Z",
   "identity": {
     "full_name": "Siddharth Mishra",
     "email": "siddharth.mishra@igdtuw.ac.in",
@@ -44,6 +44,29 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0011",
+        "title": "TaxTrail",
+        "date": "2024-02-22",
+        "score": 71,
+        "tech": ["FastAPI", "Docker", "Java Spring", "Django", "Go", "NumPy"]
+      },
+      {
+        "project_id": "P0154",
+        "title": "ShelterFind",
+        "date": "2025-07-23",
+        "score": 54,
+        "tech": ["Pandas", "Express", "TypeScript"]
+      },
+      {
+        "project_id": "P0174",
+        "title": "ShellSeeker",
+        "date": "2025-10-04",
+        "score": 71,
+        "tech": ["Docker", "Java Spring", "gRPC", "Qdrant"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 65.3,
     "first_seen": "2024-02-22",
@@ -82,7 +105,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0011 (scored 71)",
+          "detail": "used in P0011 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -101,7 +124,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0011 (scored 71)",
+          "detail": "used in P0011 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -120,7 +143,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0174 (scored 71)",
+          "detail": "used in 2 projects, best P0011 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -139,7 +162,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0174 (scored 71)",
+          "detail": "used in P0174 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -158,7 +181,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0174 (scored 71)",
+          "detail": "used in 2 projects, best P0011 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -177,7 +200,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0154 (scored 54)",
+          "detail": "used in P0154 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -191,7 +214,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0154 (scored 54)",
+          "detail": "used in P0154 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -205,7 +228,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0154 (scored 54)",
+          "detail": "used in P0154 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -219,7 +242,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0011 (scored 71)",
+          "detail": "used in P0011 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -233,7 +256,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0011 (scored 71)",
+          "detail": "used in P0011 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -247,7 +270,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0174 (scored 71)",
+          "detail": "used in P0174 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -405,7 +428,7 @@
       "confidence": 0.92
     },
     {
-      "claim": "Go: built P0011 (scored 71)",
+      "claim": "Go: used in P0011 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -419,7 +442,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0011 (scored 71)",
+      "claim": "FastAPI: used in P0011 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -433,7 +456,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0174 (scored 71)",
+      "claim": "Docker: used in 2 projects, best P0011 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -447,7 +470,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "gRPC: built P0174 (scored 71)",
+      "claim": "gRPC: used in P0174 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -461,7 +484,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Java Spring: built P0174 (scored 71)",
+      "claim": "Java Spring: used in 2 projects, best P0011 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -475,21 +498,21 @@
       "confidence": 0.82
     },
     {
-      "claim": "TypeScript: built P0154 (scored 54)",
+      "claim": "TypeScript: used in P0154 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.82
     },
     {
-      "claim": "Express: built P0154 (scored 54)",
+      "claim": "Express: used in P0154 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0154 (scored 54)",
+      "claim": "Pandas: used in P0154 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

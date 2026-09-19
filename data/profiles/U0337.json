@@ -1,7 +1,7 @@
 {
   "user_id": "U0337",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.085Z",
+  "built_at": "2026-09-19T08:17:46.257Z",
   "identity": {
     "full_name": "Aman Basu",
     "email": "aman.basu@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0134",
+        "title": "PaperTrail",
+        "date": "2025-05-09",
+        "score": 62,
+        "tech": ["Redis", "LangChain", "TensorFlow", "scikit-learn"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62,
     "first_seen": "2025-05-09",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0134 (scored 62)",
+          "detail": "used in P0134 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -286,28 +295,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Redis: built P0134 (scored 62)",
+      "claim": "Redis: used in P0134 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0134 (scored 62)",
+      "claim": "LangChain: used in P0134 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0134 (scored 62)",
+      "claim": "scikit-learn: used in P0134 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0134 (scored 62)",
+      "claim": "TensorFlow: used in P0134 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

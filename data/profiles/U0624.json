@@ -1,7 +1,7 @@
 {
   "user_id": "U0624",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.106Z",
+  "built_at": "2026-09-19T08:17:46.278Z",
   "identity": {
     "full_name": "Kunal Agarwal",
     "email": "kunal.agarwal@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0136",
+        "title": "CodeCartographer",
+        "date": "2025-05-09",
+        "score": 72,
+        "tech": ["React", "Qdrant", "Python", "PyTorch", "LLM Fine-tuning", "RAG"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 72,
     "first_seen": "2025-05-09",
@@ -57,7 +66,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -71,7 +80,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -113,7 +122,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -127,7 +136,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -271,7 +280,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Kunal Agarwal is a B.Tech Mathematics and Computing student at Bharati Vidyapeeth College of Engineering, graduating in 2029, who signed up as a Web3 builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, PyTorch, RAG, based on built P0136 (scored 72). They declare tRPC, The Graph, Foundry with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-05-27, 115 days ago — cooling off.",
+  "narrative": "Kunal Agarwal is a B.Tech Mathematics and Computing student at Bharati Vidyapeeth College of Engineering, graduating in 2029, who signed up as a Web3 builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, PyTorch, RAG, based on used in P0136 (scored 72). They declare tRPC, The Graph, Foundry with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-05-27, 115 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -310,42 +319,42 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0136 (scored 72)",
+      "claim": "Python: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PyTorch: built P0136 (scored 72)",
+      "claim": "PyTorch: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0136 (scored 72)",
+      "claim": "RAG: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0136 (scored 72)",
+      "claim": "React: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LLM Fine-tuning: built P0136 (scored 72)",
+      "claim": "LLM Fine-tuning: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Qdrant: built P0136 (scored 72)",
+      "claim": "Qdrant: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

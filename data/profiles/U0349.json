@@ -1,7 +1,7 @@
 {
   "user_id": "U0349",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.086Z",
+  "built_at": "2026-09-19T08:17:46.258Z",
   "identity": {
     "full_name": "Nidhi Verma",
     "email": "nidhi.verma68@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0043",
+        "title": "PhysioPose",
+        "date": "2024-06-25",
+        "score": 55,
+        "tech": ["Flutter", "Kotlin", "React Native", "scikit-learn", "Python"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 55,
     "first_seen": "2024-06-25",
@@ -55,7 +64,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -69,7 +78,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -83,7 +92,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -97,7 +106,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -111,7 +120,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -269,7 +278,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Nidhi Verma is a BCA Electrical Engineering student at Vellore Institute of Technology, graduating in 2027, who signed up as a Frontend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, Flutter, Kotlin, based on built P0043 (scored 55). They declare Express, MongoDB, PostgreSQL with no supporting repository or project evidence on the platform. Last active 2024-06-25, 816 days ago — lapsed.",
+  "narrative": "Nidhi Verma is a BCA Electrical Engineering student at Vellore Institute of Technology, graduating in 2027, who signed up as a Frontend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, Flutter, Kotlin, based on used in P0043 (scored 55). They declare Express, MongoDB, PostgreSQL with no supporting repository or project evidence on the platform. Last active 2024-06-25, 816 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -301,35 +310,35 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0043 (scored 55)",
+      "claim": "Python: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0043 (scored 55)",
+      "claim": "Flutter: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kotlin: built P0043 (scored 55)",
+      "claim": "Kotlin: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0043 (scored 55)",
+      "claim": "scikit-learn: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React Native: built P0043 (scored 55)",
+      "claim": "React Native: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

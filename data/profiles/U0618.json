@@ -1,7 +1,7 @@
 {
   "user_id": "U0618",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.105Z",
+  "built_at": "2026-09-19T08:17:46.278Z",
   "identity": {
     "full_name": "Saanvi Patel",
     "email": "saanvi.patel8@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0095",
+        "title": "DAOdesk",
+        "date": "2024-12-04",
+        "score": 42,
+        "tech": ["Solidity", "Foundry", "Next.js", "ethers.js", "IPFS"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 42,
     "first_seen": "2024-12-04",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0095 (scored 42)",
+          "detail": "used in P0095 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0095 (scored 42)",
+          "detail": "used in P0095 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0095 (scored 42)",
+          "detail": "used in P0095 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0095 (scored 42)",
+          "detail": "used in P0095 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0095 (scored 42)",
+          "detail": "used in P0095 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -244,7 +253,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Saanvi Patel is a B.Tech Electrical Engineering student at Delhi Technological University, graduating in 2025, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Next.js, Solidity, Foundry, based on built P0095 (scored 42). They declare ESP32, Embedded C, MQTT with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 3 sessions. Last active 2026-07-03, 78 days ago — cooling off. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative": "Saanvi Patel is a B.Tech Electrical Engineering student at Delhi Technological University, graduating in 2025, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Next.js, Solidity, Foundry, based on used in P0095 (scored 42). They declare ESP32, Embedded C, MQTT with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 3 sessions. Last active 2026-07-03, 78 days ago — cooling off. They have not consented to outreach, so they must be excluded from campaigns.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -276,35 +285,35 @@
       "confidence": 1
     },
     {
-      "claim": "Next.js: built P0095 (scored 42)",
+      "claim": "Next.js: used in P0095 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0095 (scored 42)",
+      "claim": "Solidity: used in P0095 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Foundry: built P0095 (scored 42)",
+      "claim": "Foundry: used in P0095 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "IPFS: built P0095 (scored 42)",
+      "claim": "IPFS: used in P0095 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ethers.js: built P0095 (scored 42)",
+      "claim": "ethers.js: used in P0095 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0523",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.099Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Disha Varma",
     "email": "disha.varma80@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0018",
+        "title": "SplitFair",
+        "date": "2024-02-22",
+        "score": 54,
+        "tech": ["React", "gRPC", "Redis", "SQL"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 54,
     "first_seen": "2024-02-22",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -260,28 +269,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0018 (scored 54)",
+      "claim": "React: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0018 (scored 54)",
+      "claim": "SQL: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0018 (scored 54)",
+      "claim": "Redis: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "gRPC: built P0018 (scored 54)",
+      "claim": "gRPC: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

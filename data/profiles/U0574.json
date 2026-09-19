@@ -1,7 +1,7 @@
 {
   "user_id": "U0574",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.102Z",
+  "built_at": "2026-09-19T08:17:46.272Z",
   "identity": {
     "full_name": "Sahana Dhillon",
     "email": "sahana.dhillon@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0241",
+        "title": "CiteWeb",
+        "date": "2026-07-03",
+        "score": 42,
+        "tech": ["FastAPI", "GraphQL", "Knowledge Graphs", "Qdrant", "NetworkX"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 42,
     "first_seen": "2024-05-20",
@@ -63,7 +72,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0241 (scored 42)",
+          "detail": "used in P0241 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -77,7 +86,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0241 (scored 42)",
+          "detail": "used in P0241 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -91,7 +100,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0241 (scored 42)",
+          "detail": "used in P0241 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -105,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0241 (scored 42)",
+          "detail": "used in P0241 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -119,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0241 (scored 42)",
+          "detail": "used in P0241 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -230,7 +239,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Sahana Dhillon is a B.Des Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2028, who signed up as a ML/AI builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are FastAPI, GraphQL, NetworkX, based on built P0241 (scored 42). They declare OpenAI API, LLM Fine-tuning, TensorFlow with no supporting repository or project evidence on the platform. Mentors rated them 3.33 out of 5 across 3 sessions. Last active 2026-07-10, 71 days ago — cooling off.",
+  "narrative": "Sahana Dhillon is a B.Des Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2028, who signed up as a ML/AI builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are FastAPI, GraphQL, NetworkX, based on used in P0241 (scored 42). They declare OpenAI API, LLM Fine-tuning, TensorFlow with no supporting repository or project evidence on the platform. Mentors rated them 3.33 out of 5 across 3 sessions. Last active 2026-07-10, 71 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -269,35 +278,35 @@
       "confidence": 1
     },
     {
-      "claim": "FastAPI: built P0241 (scored 42)",
+      "claim": "FastAPI: used in P0241 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0241 (scored 42)",
+      "claim": "GraphQL: used in P0241 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NetworkX: built P0241 (scored 42)",
+      "claim": "NetworkX: used in P0241 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0241 (scored 42)",
+      "claim": "Knowledge Graphs: used in P0241 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Qdrant: built P0241 (scored 42)",
+      "claim": "Qdrant: used in P0241 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

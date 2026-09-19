@@ -1,7 +1,7 @@
 {
   "user_id": "U0380",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.088Z",
+  "built_at": "2026-09-19T08:17:46.260Z",
   "identity": {
     "full_name": "Mishka Shah",
     "email": "mishka.shah@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0127",
+        "title": "GrantMatch",
+        "date": "2025-05-09",
+        "score": 81,
+        "tech": ["GraphQL", "Next.js", "Vite", "Knowledge Graphs", "PyTorch", "Go"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 81,
     "first_seen": "2025-05-09",
@@ -71,7 +80,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0127 (scored 81)",
+          "detail": "used in P0127 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0127 (scored 81)",
+          "detail": "used in P0127 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0127 (scored 81)",
+          "detail": "used in P0127 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -113,7 +122,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0127 (scored 81)",
+          "detail": "used in P0127 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -127,7 +136,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0127 (scored 81)",
+          "detail": "used in P0127 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -141,7 +150,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0127 (scored 81)",
+          "detail": "used in P0127 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -284,42 +293,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "GraphQL: built P0127 (scored 81)",
+      "claim": "GraphQL: used in P0127 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0127 (scored 81)",
+      "claim": "PyTorch: used in P0127 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0127 (scored 81)",
+      "claim": "Next.js: used in P0127 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0127 (scored 81)",
+      "claim": "Go: used in P0127 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0127 (scored 81)",
+      "claim": "Knowledge Graphs: used in P0127 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0127 (scored 81)",
+      "claim": "Vite: used in P0127 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

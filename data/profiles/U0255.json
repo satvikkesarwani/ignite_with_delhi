@@ -1,7 +1,7 @@
 {
   "user_id": "U0255",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.079Z",
+  "built_at": "2026-09-19T08:17:46.252Z",
   "identity": {
     "full_name": "Tanvi Kumar",
     "email": "tanvi.kumar77@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0135",
+        "title": "GrantMatch",
+        "date": "2025-05-09",
+        "score": 53,
+        "tech": ["PostgreSQL", "Pinecone", "RAG", "OpenCV", "gRPC"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 53,
     "first_seen": "2025-05-09",
@@ -55,7 +64,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0135 (scored 53)",
+          "detail": "used in P0135 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -69,7 +78,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0135 (scored 53)",
+          "detail": "used in P0135 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -83,7 +92,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0135 (scored 53)",
+          "detail": "used in P0135 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -97,7 +106,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0135 (scored 53)",
+          "detail": "used in P0135 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -111,7 +120,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0135 (scored 53)",
+          "detail": "used in P0135 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -236,7 +245,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Tanvi Kumar is a B.Tech Electrical Engineering student at Shiv Nadar University, graduating in 2026, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are RAG, PostgreSQL, OpenCV, based on built P0135 (scored 53). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-08-16 — currently active.",
+  "narrative": "Tanvi Kumar is a B.Tech Electrical Engineering student at Shiv Nadar University, graduating in 2026, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are RAG, PostgreSQL, OpenCV, based on used in P0135 (scored 53). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-08-16 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -275,35 +284,35 @@
       "confidence": 1
     },
     {
-      "claim": "RAG: built P0135 (scored 53)",
+      "claim": "RAG: used in P0135 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0135 (scored 53)",
+      "claim": "PostgreSQL: used in P0135 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0135 (scored 53)",
+      "claim": "OpenCV: used in P0135 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "gRPC: built P0135 (scored 53)",
+      "claim": "gRPC: used in P0135 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pinecone: built P0135 (scored 53)",
+      "claim": "Pinecone: used in P0135 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

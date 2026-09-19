@@ -1,7 +1,7 @@
 {
   "user_id": "U0288",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.082Z",
+  "built_at": "2026-09-19T08:17:46.254Z",
   "identity": {
     "full_name": "Dhruv Kumar",
     "email": "dhruv.kumar22@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0132",
+        "title": "SchemaSage",
+        "date": "2025-05-09",
+        "score": 77,
+        "tech": ["scikit-learn", "OpenCV", "Vector Databases", "Python"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 77,
     "first_seen": "2025-05-09",
@@ -71,7 +80,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -113,7 +122,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -275,28 +284,28 @@
       "confidence": 0.82
     },
     {
-      "claim": "Python: built P0132 (scored 77)",
+      "claim": "Python: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.82
     },
     {
-      "claim": "Vector Databases: built P0132 (scored 77)",
+      "claim": "Vector Databases: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0132 (scored 77)",
+      "claim": "scikit-learn: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0132 (scored 77)",
+      "claim": "OpenCV: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0164",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.072Z",
+  "built_at": "2026-09-19T08:17:46.245Z",
   "identity": {
     "full_name": "Ira Srivastava",
     "email": "ira.srivastava@jiitnoida.ac.in",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0013",
+        "title": "TaxTrail",
+        "date": "2024-02-22",
+        "score": 84,
+        "tech": ["Vite", "GraphQL", "FastAPI"]
+      },
+      {
+        "project_id": "P0083",
+        "title": "PotholePatrol",
+        "date": "2024-10-26",
+        "score": 60,
+        "tech": ["ESP32", "Embedded C", "Java Spring", "MQTT", "Arduino"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 72,
     "first_seen": "2024-02-22",
@@ -71,7 +87,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0013 (scored 84)",
+          "detail": "used in P0013 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -85,7 +101,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0013 (scored 84)",
+          "detail": "used in P0013 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -99,7 +115,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0013 (scored 84)",
+          "detail": "used in P0013 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -113,7 +129,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -127,7 +143,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -141,7 +157,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -155,7 +171,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -169,7 +185,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -296,56 +312,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vite: built P0013 (scored 84)",
+      "claim": "Vite: used in P0013 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0013 (scored 84)",
+      "claim": "FastAPI: used in P0013 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0013 (scored 84)",
+      "claim": "GraphQL: used in P0013 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0083 (scored 60)",
+      "claim": "Arduino: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0083 (scored 60)",
+      "claim": "ESP32: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0083 (scored 60)",
+      "claim": "Embedded C: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MQTT: built P0083 (scored 60)",
+      "claim": "MQTT: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Java Spring: built P0083 (scored 60)",
+      "claim": "Java Spring: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

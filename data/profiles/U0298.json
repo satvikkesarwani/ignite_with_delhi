@@ -1,7 +1,7 @@
 {
   "user_id": "U0298",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.083Z",
+  "built_at": "2026-09-19T08:17:46.255Z",
   "identity": {
     "full_name": "Lavanya Tandon",
     "email": "lavanya.tandon@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0091",
+        "title": "CarbonCred",
+        "date": "2024-12-04",
+        "score": 66,
+        "tech": ["MongoDB", "Next.js", "tRPC"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 66,
     "first_seen": "2024-12-04",
@@ -60,7 +69,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0091 (scored 66)",
+          "detail": "used in P0091 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -79,7 +88,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0091 (scored 66)",
+          "detail": "used in P0091 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0091 (scored 66)",
+          "detail": "used in P0091 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -234,7 +243,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0091 (scored 66)",
+      "claim": "MongoDB: used in P0091 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -248,7 +257,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0091 (scored 66)",
+      "claim": "Next.js: used in P0091 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -262,7 +271,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "tRPC: built P0091 (scored 66)",
+      "claim": "tRPC: used in P0091 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

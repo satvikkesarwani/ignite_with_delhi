@@ -1,7 +1,7 @@
 {
   "user_id": "U0076",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.062Z",
+  "built_at": "2026-09-19T08:17:46.236Z",
   "identity": {
     "full_name": "Tara Agarwal",
     "email": "tara.agarwal@bitspilani.ac.in",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0009",
+        "title": "TaxTrail",
+        "date": "2024-02-22",
+        "score": 57,
+        "tech": ["Kafka", "NumPy", "FastAPI", "Java Spring", "Go", "gRPC"]
+      },
+      {
+        "project_id": "P0147",
+        "title": "TriageTalk",
+        "date": "2025-06-12",
+        "score": 40,
+        "tech": ["gRPC", "Django", "Kotlin", "Jetpack Compose"]
+      },
+      {
+        "project_id": "P0178",
+        "title": "RouteKnot",
+        "date": "2025-10-04",
+        "score": 89,
+        "tech": ["Python", "RAG", "Vector Databases", "TensorFlow"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 62,
     "first_seen": "2024-02-22",
@@ -78,7 +101,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0147 (scored 40)",
+          "detail": "used in P0147 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -97,7 +120,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0147 (scored 40)",
+          "detail": "used in P0147 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -111,7 +134,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -125,7 +148,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -139,7 +162,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -153,7 +176,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -167,7 +190,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -181,7 +204,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0147 (scored 40)",
+          "detail": "used in P0147 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -195,7 +218,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -209,7 +232,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -223,7 +246,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -237,7 +260,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0147 (scored 40)",
+          "detail": "used in 2 projects, best P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -251,7 +274,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -457,7 +480,7 @@
       "confidence": 0.89
     },
     {
-      "claim": "Kotlin: built P0147 (scored 40)",
+      "claim": "Kotlin: used in P0147 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -471,49 +494,49 @@
       "confidence": 0.86
     },
     {
-      "claim": "Jetpack Compose: built P0147 (scored 40)",
+      "claim": "Jetpack Compose: used in P0147 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Python: built P0178 (scored 89)",
+      "claim": "Python: used in P0178 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0178 (scored 89)",
+      "claim": "RAG: used in P0178 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "FastAPI: built P0009 (scored 57)",
+      "claim": "FastAPI: used in P0009 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0178 (scored 89)",
+      "claim": "Vector Databases: used in P0178 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0009 (scored 57)",
+      "claim": "Go: used in P0009 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Django: built P0147 (scored 40)",
+      "claim": "Django: used in P0147 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

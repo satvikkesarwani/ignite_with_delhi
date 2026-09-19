@@ -1,7 +1,7 @@
 {
   "user_id": "U0119",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.069Z",
+  "built_at": "2026-09-19T08:17:46.241Z",
   "identity": {
     "full_name": "Advait Basu",
     "email": "advait.basu@iitroorkee.ac.in",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0071",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 61,
+        "tech": ["Next.js", "Tableau", "LoRaWAN"]
+      },
+      {
+        "project_id": "P0132",
+        "title": "SchemaSage",
+        "date": "2025-05-09",
+        "score": 77,
+        "tech": ["scikit-learn", "OpenCV", "Vector Databases", "Python"]
+      },
+      {
+        "project_id": "P0217",
+        "title": "SchemaSage",
+        "date": "2026-04-06",
+        "score": 63,
+        "tech": ["Vite", "MongoDB", "Django", "scikit-learn"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 67,
     "first_seen": "2024-09-14",
@@ -75,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -89,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0217 (scored 63)",
+          "detail": "used in P0217 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -103,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0071 (scored 61)",
+          "detail": "used in P0071 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -117,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -131,7 +154,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0071 (scored 61)",
+          "detail": "used in P0071 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -145,7 +168,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0217 (scored 63)",
+          "detail": "used in P0217 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -159,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0071 (scored 61)",
+          "detail": "used in P0071 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -173,7 +196,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0217 (scored 63)",
+          "detail": "used in P0217 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -187,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0217 (scored 63)",
+          "detail": "used in 2 projects, best P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -201,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -362,7 +385,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Advait Basu is a BCA Information Technology student at Indian Institute of Technology Roorkee, graduating in 2028, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Autumn with \"SchemaSage\" (scored 77). Their strongest evidenced skills are Python, MongoDB, Next.js, based on built P0132 (scored 77). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 2 sessions. Last active 2026-04-10, 162 days ago — cooling off.",
+  "narrative": "Advait Basu is a BCA Information Technology student at Indian Institute of Technology Roorkee, graduating in 2028, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Autumn with \"SchemaSage\" (scored 77). Their strongest evidenced skills are Python, MongoDB, Next.js, based on used in P0132 (scored 77). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 2 sessions. Last active 2026-04-10, 162 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -401,56 +424,56 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0132 (scored 77)",
+      "claim": "Python: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0217 (scored 63)",
+      "claim": "MongoDB: used in P0217 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0071 (scored 61)",
+      "claim": "Next.js: used in P0071 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0132 (scored 77)",
+      "claim": "Vector Databases: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0071 (scored 61)",
+      "claim": "Tableau: used in P0071 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0217 (scored 63)",
+      "claim": "Vite: used in P0217 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LoRaWAN: built P0071 (scored 61)",
+      "claim": "LoRaWAN: used in P0071 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Django: built P0217 (scored 63)",
+      "claim": "Django: used in P0217 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

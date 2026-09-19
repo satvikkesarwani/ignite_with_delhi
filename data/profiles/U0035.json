@@ -1,7 +1,7 @@
 {
   "user_id": "U0035",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.058Z",
+  "built_at": "2026-09-19T08:17:46.232Z",
   "identity": {
     "full_name": "Nidhi Mittal",
     "email": "nidhi.mittal@gmail.com",
@@ -23,6 +23,7 @@
     "submission_rate": null,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2025-08-19",

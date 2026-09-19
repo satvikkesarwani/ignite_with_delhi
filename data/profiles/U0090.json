@@ -1,7 +1,7 @@
 {
   "user_id": "U0090",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.063Z",
+  "built_at": "2026-09-19T08:17:46.239Z",
   "identity": {
     "full_name": "Sarthak Basu",
     "email": "sarthak.basu@nsut.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0069",
+        "title": "WaterWatch",
+        "date": "2024-09-15",
+        "score": 48,
+        "tech": ["SQL", "Tableau", "TypeScript", "DuckDB", "Node.js", "Embedded C"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 48,
     "first_seen": "2024-09-14",
@@ -65,7 +74,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0069 (scored 48)",
+          "detail": "used in P0069 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0069 (scored 48)",
+          "detail": "used in P0069 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0069 (scored 48)",
+          "detail": "used in P0069 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0069 (scored 48)",
+          "detail": "used in P0069 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -126,7 +135,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0069 (scored 48)",
+          "detail": "used in P0069 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -140,7 +149,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0069 (scored 48)",
+          "detail": "used in P0069 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -325,7 +334,7 @@
       "confidence": 0.89
     },
     {
-      "claim": "SQL: built P0069 (scored 48)",
+      "claim": "SQL: used in P0069 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -339,35 +348,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tableau: built P0069 (scored 48)",
+      "claim": "Tableau: used in P0069 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0069 (scored 48)",
+      "claim": "Node.js: used in P0069 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0069 (scored 48)",
+      "claim": "TypeScript: used in P0069 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0069 (scored 48)",
+      "claim": "DuckDB: used in P0069 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0069 (scored 48)",
+      "claim": "Embedded C: used in P0069 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

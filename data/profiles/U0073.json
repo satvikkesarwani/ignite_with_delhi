@@ -1,7 +1,7 @@
 {
   "user_id": "U0073",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.062Z",
+  "built_at": "2026-09-19T08:17:46.236Z",
   "identity": {
     "full_name": "Raghav Pandey",
     "email": "raghav.pandey@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0038",
+        "title": "MindLog",
+        "date": "2024-06-25",
+        "score": 84,
+        "tech": ["gRPC", "RAG", "PyTorch", "HuggingFace"]
+      },
+      {
+        "project_id": "P0101",
+        "title": "ShellSeeker",
+        "date": "2025-01-10",
+        "score": 66,
+        "tech": ["Neo4j", "Spark", "Knowledge Graphs"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 75,
     "first_seen": "2024-06-25",
@@ -70,7 +86,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0038 (scored 84)",
+          "detail": "used in P0038 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -84,7 +100,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0038 (scored 84)",
+          "detail": "used in P0038 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -98,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0101 (scored 66)",
+          "detail": "used in P0101 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -112,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0038 (scored 84)",
+          "detail": "used in P0038 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -126,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0101 (scored 66)",
+          "detail": "used in P0101 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -140,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0101 (scored 66)",
+          "detail": "used in P0101 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -154,7 +170,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0038 (scored 84)",
+          "detail": "used in P0038 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -312,7 +328,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Raghav Pandey is a B.Tech Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2026, who signed up as a Design builder. They have attended 2 of the 4 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 2 at Yamuna Build Fest with \"MindLog\" (scored 84). Their strongest evidenced skills are PyTorch, RAG, Neo4j, based on built P0038 (scored 84). They declare Tailwind CSS, Figma, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-03-03, 200 days ago — dormant and worth re-engaging. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative": "Raghav Pandey is a B.Tech Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2026, who signed up as a Design builder. They have attended 2 of the 4 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 2 at Yamuna Build Fest with \"MindLog\" (scored 84). Their strongest evidenced skills are PyTorch, RAG, Neo4j, based on used in P0038 (scored 84). They declare Tailwind CSS, Figma, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-03-03, 200 days ago — dormant and worth re-engaging. They have not consented to outreach, so they must be excluded from campaigns.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -351,49 +367,49 @@
       "confidence": 1
     },
     {
-      "claim": "PyTorch: built P0038 (scored 84)",
+      "claim": "PyTorch: used in P0038 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0038 (scored 84)",
+      "claim": "RAG: used in P0038 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Neo4j: built P0101 (scored 66)",
+      "claim": "Neo4j: used in P0101 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0038 (scored 84)",
+      "claim": "HuggingFace: used in P0038 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0101 (scored 66)",
+      "claim": "Knowledge Graphs: used in P0101 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0101 (scored 66)",
+      "claim": "Spark: used in P0101 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "gRPC: built P0038 (scored 84)",
+      "claim": "gRPC: used in P0038 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

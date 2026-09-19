@@ -1,7 +1,7 @@
 {
   "user_id": "U0408",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.089Z",
+  "built_at": "2026-09-19T08:17:46.262Z",
   "identity": {
     "full_name": "Rudra Malhotra",
     "email": "rudra.malhotra@ashoka.ac.in",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0076",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 54,
+        "tech": ["Next.js", "TypeScript", "NumPy", "SQL"]
+      },
+      {
+        "project_id": "P0144",
+        "title": "BloodBridge",
+        "date": "2025-06-12",
+        "score": 74,
+        "tech": ["Jetpack Compose", "Swift", "Flutter"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 64,
     "first_seen": "2024-09-14",
@@ -62,7 +78,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -81,7 +97,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -95,7 +111,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -109,7 +125,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0144 (scored 74)",
+          "detail": "used in P0144 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -123,7 +139,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0144 (scored 74)",
+          "detail": "used in P0144 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -137,7 +153,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0144 (scored 74)",
+          "detail": "used in P0144 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -151,7 +167,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -299,7 +315,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0076 (scored 54)",
+      "claim": "Next.js: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -313,42 +329,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0076 (scored 54)",
+      "claim": "TypeScript: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0076 (scored 54)",
+      "claim": "SQL: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0144 (scored 74)",
+      "claim": "Flutter: used in P0144 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Swift: built P0144 (scored 74)",
+      "claim": "Swift: used in P0144 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Jetpack Compose: built P0144 (scored 74)",
+      "claim": "Jetpack Compose: used in P0144 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0076 (scored 54)",
+      "claim": "NumPy: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

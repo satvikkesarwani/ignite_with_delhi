@@ -1,7 +1,7 @@
 {
   "user_id": "U0212",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.075Z",
+  "built_at": "2026-09-19T08:17:46.248Z",
   "identity": {
     "full_name": "Aradhya Sahni",
     "email": "aradhya.sahni59@gmail.com",
@@ -23,6 +23,7 @@
     "submission_rate": null,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2024-04-22",

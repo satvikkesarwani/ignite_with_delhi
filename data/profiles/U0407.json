@@ -1,7 +1,7 @@
 {
   "user_id": "U0407",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.089Z",
+  "built_at": "2026-09-19T08:17:46.262Z",
   "identity": {
     "full_name": "Gauri Dubey",
     "email": "gauri.dubey87@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0065",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 58,
+        "tech": ["Pandas", "Tableau", "Airflow", "PostgreSQL", "DuckDB", "dbt"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 58,
     "first_seen": "2024-09-14",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -117,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -131,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -307,42 +316,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Pandas: built P0065 (scored 58)",
+      "claim": "Pandas: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0065 (scored 58)",
+      "claim": "PostgreSQL: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0065 (scored 58)",
+      "claim": "Airflow: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0065 (scored 58)",
+      "claim": "dbt: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0065 (scored 58)",
+      "claim": "DuckDB: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0065 (scored 58)",
+      "claim": "Tableau: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

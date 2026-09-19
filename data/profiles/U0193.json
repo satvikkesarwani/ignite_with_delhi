@@ -1,7 +1,7 @@
 {
   "user_id": "U0193",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.074Z",
+  "built_at": "2026-09-19T08:17:46.246Z",
   "identity": {
     "full_name": "Ishaan Sharma",
     "email": "ishaan.sharma@mitmanipal.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0041",
+        "title": "BloodBridge",
+        "date": "2024-06-25",
+        "score": 68,
+        "tech": ["Docker", "Flask", "Redis", "Python", "RAG"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 68,
     "first_seen": "2024-06-25",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0041 (scored 68)",
+          "detail": "used in P0041 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0041 (scored 68)",
+          "detail": "used in P0041 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0041 (scored 68)",
+          "detail": "used in P0041 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -119,7 +128,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0041 (scored 68)",
+          "detail": "used in P0041 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -133,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0041 (scored 68)",
+          "detail": "used in P0041 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -262,7 +271,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0041 (scored 68)",
+      "claim": "Docker: used in P0041 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -276,7 +285,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Redis: built P0041 (scored 68)",
+      "claim": "Redis: used in P0041 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -290,7 +299,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Flask: built P0041 (scored 68)",
+      "claim": "Flask: used in P0041 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -304,14 +313,14 @@
       "confidence": 0.84
     },
     {
-      "claim": "Python: built P0041 (scored 68)",
+      "claim": "Python: used in P0041 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.84
     },
     {
-      "claim": "RAG: built P0041 (scored 68)",
+      "claim": "RAG: used in P0041 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

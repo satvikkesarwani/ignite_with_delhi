@@ -1,7 +1,7 @@
 {
   "user_id": "U0163",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.072Z",
+  "built_at": "2026-09-19T08:17:46.245Z",
   "identity": {
     "full_name": "Sneha Kapoor",
     "email": "sneha.kapoor69@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0244",
+        "title": "ShellSeeker",
+        "date": "2026-07-03",
+        "score": 76,
+        "tech": ["Cypher", "Pandas", "Qdrant"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 76,
     "first_seen": "2026-07-01",
@@ -67,7 +76,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0244 (scored 76)",
+          "detail": "used in P0244 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0244 (scored 76)",
+          "detail": "used in P0244 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -95,7 +104,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0244 (scored 76)",
+          "detail": "used in P0244 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -227,7 +236,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Sneha Kapoor is a MCA Computer Science and Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a DevOps builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including Best use of Tavily at HackHorizon with \"ShellSeeker\" (scored 76). Their strongest evidenced skills are Pandas, Cypher, Qdrant, based on built P0244 (scored 76). They declare GitHub Actions, GCP, Terraform with no supporting repository or project evidence on the platform. Last active 2026-07-23 — currently active.",
+  "narrative": "Sneha Kapoor is a MCA Computer Science and Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a DevOps builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including Best use of Tavily at HackHorizon with \"ShellSeeker\" (scored 76). Their strongest evidenced skills are Pandas, Cypher, Qdrant, based on used in P0244 (scored 76). They declare GitHub Actions, GCP, Terraform with no supporting repository or project evidence on the platform. Last active 2026-07-23 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -266,21 +275,21 @@
       "confidence": 1
     },
     {
-      "claim": "Pandas: built P0244 (scored 76)",
+      "claim": "Pandas: used in P0244 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Cypher: built P0244 (scored 76)",
+      "claim": "Cypher: used in P0244 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Qdrant: built P0244 (scored 76)",
+      "claim": "Qdrant: used in P0244 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

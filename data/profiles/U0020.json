@@ -1,7 +1,7 @@
 {
   "user_id": "U0020",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.057Z",
+  "built_at": "2026-09-19T08:17:46.231Z",
   "identity": {
     "full_name": "Rajat Krishnan",
     "email": "rajat.krishnan@jmi.ac.in",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0229",
+        "title": "Interviewer",
+        "date": "2026-05-23",
+        "score": 85,
+        "tech": ["TypeScript", "Kafka", "HuggingFace", "Redis"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 85,
     "first_seen": "2026-05-21",
@@ -72,7 +81,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0229 (scored 85)",
+          "detail": "used in P0229 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -86,7 +95,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0229 (scored 85)",
+          "detail": "used in P0229 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0229 (scored 85)",
+          "detail": "used in P0229 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -114,7 +123,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0229 (scored 85)",
+          "detail": "used in P0229 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -320,28 +329,28 @@
       "confidence": 0.82
     },
     {
-      "claim": "TypeScript: built P0229 (scored 85)",
+      "claim": "TypeScript: used in P0229 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.82
     },
     {
-      "claim": "HuggingFace: built P0229 (scored 85)",
+      "claim": "HuggingFace: used in P0229 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0229 (scored 85)",
+      "claim": "Redis: used in P0229 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kafka: built P0229 (scored 85)",
+      "claim": "Kafka: used in P0229 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

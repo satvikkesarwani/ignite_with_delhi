@@ -1,7 +1,7 @@
 {
   "user_id": "U0593",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.103Z",
+  "built_at": "2026-09-19T08:17:46.275Z",
   "identity": {
     "full_name": "Uday Bhardwaj",
     "email": "uday.bhardwaj@gmail.com",
@@ -54,6 +54,43 @@
       }
     ],
     "prize_count": 3,
+    "projects": [
+      {
+        "project_id": "P0084",
+        "title": "ParkPulse",
+        "date": "2024-10-26",
+        "score": 66,
+        "tech": ["NumPy", "gRPC", "GraphQL", "MQTT", "Embedded C"]
+      },
+      {
+        "project_id": "P0119",
+        "title": "SkillPath",
+        "date": "2025-03-27",
+        "score": 72,
+        "tech": ["TypeScript", "PostgreSQL", "Swift", "Kotlin", "Tailwind CSS"]
+      },
+      {
+        "project_id": "P0162",
+        "title": "SolarSight",
+        "date": "2025-08-27",
+        "score": 62,
+        "tech": ["MQTT", "Arduino", "Pandas", "NumPy", "DuckDB", "Raspberry Pi"]
+      },
+      {
+        "project_id": "P0199",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 62,
+        "tech": ["Java Spring", "Docker", "Go", "gRPC", "GraphQL"]
+      },
+      {
+        "project_id": "P0216",
+        "title": "PaperTrail",
+        "date": "2026-04-06",
+        "score": 72,
+        "tech": ["Transformers", "PyTorch", "PostgreSQL", "Pinecone", "Django", "OpenCV"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 66.8,
     "first_seen": "2024-10-24",
@@ -97,7 +134,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -116,7 +153,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -135,7 +172,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in 2 projects, best P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -154,7 +191,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in 2 projects, best P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -173,7 +210,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0199 (scored 62)",
+          "detail": "used in P0199 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -187,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0216 (scored 72)",
+          "detail": "used in P0216 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -201,7 +238,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -215,7 +252,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0216 (scored 72)",
+          "detail": "used in 2 projects, best P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -229,7 +266,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -243,7 +280,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -257,7 +294,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -271,7 +308,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0216 (scored 72)",
+          "detail": "used in P0216 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -285,7 +322,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -299,7 +336,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -313,7 +350,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0084 (scored 66)",
+          "detail": "used in P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -327,7 +364,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in 2 projects, best P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -341,7 +378,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -355,7 +392,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -369,7 +406,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0216 (scored 72)",
+          "detail": "used in P0216 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -383,7 +420,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in 2 projects, best P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -397,7 +434,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0216 (scored 72)",
+          "detail": "used in P0216 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -411,7 +448,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0216 (scored 72)",
+          "detail": "used in P0216 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -565,7 +602,7 @@
       "confidence": 0.92
     },
     {
-      "claim": "Go: built P0199 (scored 62)",
+      "claim": "Go: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -579,7 +616,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0199 (scored 62)",
+      "claim": "Docker: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -593,7 +630,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "GraphQL: built P0199 (scored 62)",
+      "claim": "GraphQL: used in 2 projects, best P0084 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -607,7 +644,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "gRPC: built P0199 (scored 62)",
+      "claim": "gRPC: used in 2 projects, best P0084 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -621,28 +658,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Java Spring: built P0199 (scored 62)",
+      "claim": "Java Spring: used in P0199 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0216 (scored 72)",
+      "claim": "PyTorch: used in P0216 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0119 (scored 72)",
+      "claim": "TypeScript: used in P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0216 (scored 72)",
+      "claim": "PostgreSQL: used in 2 projects, best P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

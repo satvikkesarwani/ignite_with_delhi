@@ -1,7 +1,7 @@
 {
   "user_id": "U0480",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.095Z",
+  "built_at": "2026-09-19T08:17:46.268Z",
   "identity": {
     "full_name": "Shaurya Rao",
     "email": "shaurya.rao71@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0105",
+        "title": "RouteKnot",
+        "date": "2025-01-10",
+        "score": 84,
+        "tech": ["Neo4j", "Django", "NetworkX"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 84,
     "first_seen": "2024-01-13",
@@ -68,7 +77,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0105 (scored 84)",
+          "detail": "used in P0105 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -82,7 +91,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0105 (scored 84)",
+          "detail": "used in P0105 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -96,7 +105,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0105 (scored 84)",
+          "detail": "used in P0105 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -235,7 +244,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Shaurya Rao is a B.E. Computer Science and Engineering student at Delhi Technological University, graduating in 2029, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 1 project (a 33% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Monsoon with \"RouteKnot\" (scored 84). Their strongest evidenced skills are Neo4j, NetworkX, Django, based on built P0105 (scored 84). They declare Kubernetes, Nginx, Terraform with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-06-09, 102 days ago — cooling off.",
+  "narrative": "Shaurya Rao is a B.E. Computer Science and Engineering student at Delhi Technological University, graduating in 2029, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 1 project (a 33% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Monsoon with \"RouteKnot\" (scored 84). Their strongest evidenced skills are Neo4j, NetworkX, Django, based on used in P0105 (scored 84). They declare Kubernetes, Nginx, Terraform with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-06-09, 102 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -281,21 +290,21 @@
       "confidence": 1
     },
     {
-      "claim": "Neo4j: built P0105 (scored 84)",
+      "claim": "Neo4j: used in P0105 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NetworkX: built P0105 (scored 84)",
+      "claim": "NetworkX: used in P0105 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Django: built P0105 (scored 84)",
+      "claim": "Django: used in P0105 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

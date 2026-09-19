@@ -1,7 +1,7 @@
 {
   "user_id": "U0082",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.063Z",
+  "built_at": "2026-09-19T08:17:46.237Z",
   "identity": {
     "full_name": "Dhruv Agarwal",
     "email": "dhruv.agarwal86@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0053",
+        "title": "MigrateMate",
+        "date": "2024-08-09",
+        "score": 61,
+        "tech": ["Docker", "Go", "FastAPI", "Node.js", "GraphQL", "Flask"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 61,
     "first_seen": "2024-08-07",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0053 (scored 61)",
+          "detail": "used in P0053 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0053 (scored 61)",
+          "detail": "used in P0053 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0053 (scored 61)",
+          "detail": "used in P0053 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0053 (scored 61)",
+          "detail": "used in P0053 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0053 (scored 61)",
+          "detail": "used in P0053 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -126,7 +135,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0053 (scored 61)",
+          "detail": "used in P0053 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -286,7 +295,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Dhruv Agarwal is a B.Tech Electronics and Communication student at Indian Institute of Technology Bombay, graduating in 2026, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are FastAPI, Node.js, Docker, based on built P0053 (scored 61). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2025-09-28, 356 days ago — dormant and worth re-engaging.",
+  "narrative": "Dhruv Agarwal is a B.Tech Electronics and Communication student at Indian Institute of Technology Bombay, graduating in 2026, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are FastAPI, Node.js, Docker, based on used in P0053 (scored 61). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2025-09-28, 356 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -318,42 +327,42 @@
       "confidence": 1
     },
     {
-      "claim": "FastAPI: built P0053 (scored 61)",
+      "claim": "FastAPI: used in P0053 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0053 (scored 61)",
+      "claim": "Node.js: used in P0053 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0053 (scored 61)",
+      "claim": "Docker: used in P0053 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0053 (scored 61)",
+      "claim": "Go: used in P0053 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0053 (scored 61)",
+      "claim": "GraphQL: used in P0053 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flask: built P0053 (scored 61)",
+      "claim": "Flask: used in P0053 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0404",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.089Z",
+  "built_at": "2026-09-19T08:17:46.261Z",
   "identity": {
     "full_name": "Saanvi Malik",
     "email": "saanvi.malik@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0111",
+        "title": "MicroHedge",
+        "date": "2025-02-17",
+        "score": 83,
+        "tech": ["GraphQL", "Docker", "FastAPI", "Node.js", "PostgreSQL", "Redis"]
+      },
+      {
+        "project_id": "P0234",
+        "title": "CodeCartographer",
+        "date": "2026-05-23",
+        "score": 79,
+        "tech": ["React", "Next.js", "Tailwind CSS", "FastAPI", "Transformers", "Cypher"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 81,
     "first_seen": "2024-02-22",
@@ -78,7 +94,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -97,7 +113,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0234 (scored 79)",
+          "detail": "used in P0234 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -116,7 +132,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -135,7 +151,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0234 (scored 79)",
+          "detail": "used in P0234 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -149,7 +165,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0234 (scored 79)",
+          "detail": "used in 2 projects, best P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -163,7 +179,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -177,7 +193,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0234 (scored 79)",
+          "detail": "used in P0234 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -191,7 +207,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0234 (scored 79)",
+          "detail": "used in P0234 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -205,7 +221,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -219,7 +235,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -233,7 +249,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0234 (scored 79)",
+          "detail": "used in P0234 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -373,7 +389,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0111 (scored 83)",
+      "claim": "Node.js: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -387,7 +403,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0234 (scored 79)",
+      "claim": "Next.js: used in P0234 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -401,7 +417,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0111 (scored 83)",
+      "claim": "PostgreSQL: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -415,35 +431,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tailwind CSS: built P0234 (scored 79)",
+      "claim": "Tailwind CSS: used in P0234 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0234 (scored 79)",
+      "claim": "FastAPI: used in 2 projects, best P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0111 (scored 83)",
+      "claim": "Docker: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0234 (scored 79)",
+      "claim": "React: used in P0234 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Transformers: built P0234 (scored 79)",
+      "claim": "Transformers: used in P0234 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

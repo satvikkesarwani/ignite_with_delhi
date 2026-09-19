@@ -1,7 +1,7 @@
 {
   "user_id": "U0627",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.106Z",
+  "built_at": "2026-09-19T08:17:46.279Z",
   "identity": {
     "full_name": "Rahul Tandon",
     "email": "rahul.tandon29@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.25,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0162",
+        "title": "SolarSight",
+        "date": "2025-08-27",
+        "score": 62,
+        "tech": ["MQTT", "Arduino", "Pandas", "NumPy", "DuckDB", "Raspberry Pi"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62,
     "first_seen": "2025-02-15",
@@ -65,7 +74,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -79,7 +88,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -93,7 +102,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -107,7 +116,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -121,7 +130,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -135,7 +144,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -286,7 +295,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Rahul Tandon is a B.Tech Data Science student at Indian Institute of Technology Bombay, graduating in 2025, who signed up as a Product builder. They have attended 4 of the 4 hackathons they registered for and submitted 1 project (a 25% submission rate). Their strongest evidenced skills are Pandas, DuckDB, Arduino, based on built P0162 (scored 62). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.5 out of 5 across 2 sessions. Last active 2026-07-15, 66 days ago — cooling off.",
+  "narrative": "Rahul Tandon is a B.Tech Data Science student at Indian Institute of Technology Bombay, graduating in 2025, who signed up as a Product builder. They have attended 4 of the 4 hackathons they registered for and submitted 1 project (a 25% submission rate). Their strongest evidenced skills are Pandas, DuckDB, Arduino, based on used in P0162 (scored 62). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.5 out of 5 across 2 sessions. Last active 2026-07-15, 66 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -325,42 +334,42 @@
       "confidence": 1
     },
     {
-      "claim": "Pandas: built P0162 (scored 62)",
+      "claim": "Pandas: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0162 (scored 62)",
+      "claim": "DuckDB: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0162 (scored 62)",
+      "claim": "Arduino: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MQTT: built P0162 (scored 62)",
+      "claim": "MQTT: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Raspberry Pi: built P0162 (scored 62)",
+      "claim": "Raspberry Pi: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0162 (scored 62)",
+      "claim": "NumPy: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

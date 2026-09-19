@@ -1,7 +1,7 @@
 {
   "user_id": "U0525",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.099Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Sanjana Pandey",
     "email": "sanjana.pandey40@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0128",
+        "title": "PaperTrail",
+        "date": "2025-05-09",
+        "score": 84,
+        "tech": ["Node.js", "MongoDB", "Vite", "Cypher", "OpenCV", "scikit-learn"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 84,
     "first_seen": "2025-05-09",
@@ -72,7 +81,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0128 (scored 84)",
+          "detail": "used in P0128 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -91,7 +100,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0128 (scored 84)",
+          "detail": "used in P0128 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -105,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0128 (scored 84)",
+          "detail": "used in P0128 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -119,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0128 (scored 84)",
+          "detail": "used in P0128 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -133,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0128 (scored 84)",
+          "detail": "used in P0128 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -147,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0128 (scored 84)",
+          "detail": "used in P0128 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -295,7 +304,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0128 (scored 84)",
+      "claim": "Node.js: used in P0128 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -309,35 +318,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0128 (scored 84)",
+      "claim": "MongoDB: used in P0128 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Cypher: built P0128 (scored 84)",
+      "claim": "Cypher: used in P0128 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0128 (scored 84)",
+      "claim": "Vite: used in P0128 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0128 (scored 84)",
+      "claim": "scikit-learn: used in P0128 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0128 (scored 84)",
+      "claim": "OpenCV: used in P0128 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

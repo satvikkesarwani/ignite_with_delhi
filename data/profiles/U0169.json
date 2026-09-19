@@ -1,7 +1,7 @@
 {
   "user_id": "U0169",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.072Z",
+  "built_at": "2026-09-19T08:17:46.245Z",
   "identity": {
     "full_name": "Aarohi Srivastava",
     "email": "aarohi.srivastava56@gmail.com",
@@ -23,6 +23,29 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0036",
+        "title": "MindLog",
+        "date": "2024-06-25",
+        "score": 73,
+        "tech": ["LLM Fine-tuning", "Redis", "Transformers"]
+      },
+      {
+        "project_id": "P0224",
+        "title": "SupportSieve",
+        "date": "2026-04-06",
+        "score": 45,
+        "tech": ["scikit-learn", "Node.js", "HuggingFace", "PyTorch"]
+      },
+      {
+        "project_id": "P0228",
+        "title": "MeetingMemory",
+        "date": "2026-05-23",
+        "score": 42,
+        "tech": ["Node.js", "MongoDB", "React", "PostgreSQL", "RAG", "Qdrant"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 53.3,
     "first_seen": "2024-06-25",
@@ -62,7 +85,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0228 (scored 42)",
+          "detail": "used in 2 projects, best P0224 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -81,7 +104,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0228 (scored 42)",
+          "detail": "used in P0228 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -100,7 +123,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0228 (scored 42)",
+          "detail": "used in P0228 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -119,7 +142,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0228 (scored 42)",
+          "detail": "used in P0228 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -133,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0224 (scored 45)",
+          "detail": "used in P0224 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -147,7 +170,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0228 (scored 42)",
+          "detail": "used in P0228 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -161,7 +184,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0224 (scored 45)",
+          "detail": "used in P0224 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -175,7 +198,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -189,7 +212,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -203,7 +226,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0224 (scored 45)",
+          "detail": "used in P0224 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -217,7 +240,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -231,7 +254,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0228 (scored 42)",
+          "detail": "used in P0228 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -289,13 +312,19 @@
       "evidence": ["3 of 3 attended events produced a submission"]
     },
     {
+      "trait": "mentor_material",
+      "label": "Mentor material",
+      "score": 0.9,
+      "evidence": ["average mentor rating 4.5 across 2 sessions", "answered 3 questions"]
+    },
+    {
       "trait": "generalist",
       "label": "Generalist",
       "score": 0.7,
       "evidence": []
     }
   ],
-  "personas": ["Steady Participant"],
+  "personas": ["Mentor Material", "Steady Participant"],
   "trajectory": {
     "direction": "declining",
     "status": "cooling",
@@ -376,7 +405,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0228 (scored 42)",
+      "claim": "Node.js: used in 2 projects, best P0224 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -390,7 +419,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0228 (scored 42)",
+      "claim": "MongoDB: used in P0228 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -404,7 +433,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0228 (scored 42)",
+      "claim": "React: used in P0228 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -418,35 +447,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0228 (scored 42)",
+      "claim": "PostgreSQL: used in P0228 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0224 (scored 45)",
+      "claim": "PyTorch: used in P0224 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0228 (scored 42)",
+      "claim": "RAG: used in P0228 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0224 (scored 45)",
+      "claim": "HuggingFace: used in P0224 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Transformers: built P0036 (scored 73)",
+      "claim": "Transformers: used in P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

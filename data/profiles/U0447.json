@@ -1,7 +1,7 @@
 {
   "user_id": "U0447",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.266Z",
   "identity": {
     "full_name": "Jatin Mishra",
     "email": "jatin.mishra@srm.ac.in",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0201",
+        "title": "ParkPulse",
+        "date": "2026-01-04",
+        "score": 55,
+        "tech": ["ESP32", "MQTT", "Tableau", "Arduino"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 55,
     "first_seen": "2026-01-03",
@@ -67,7 +76,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0201 (scored 55)",
+          "detail": "used in P0201 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0201 (scored 55)",
+          "detail": "used in P0201 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -95,7 +104,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0201 (scored 55)",
+          "detail": "used in P0201 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -109,7 +118,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0201 (scored 55)",
+          "detail": "used in P0201 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -225,7 +234,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Jatin Mishra is a B.Tech Electrical Engineering student at SRM Institute of Science and Technology, graduating in 2025, who signed up as a Frontend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Spring II with \"ParkPulse\" (scored 55). Their strongest evidenced skills are Arduino, ESP32, MQTT, based on built P0201 (scored 55). They declare Express, Next.js with no supporting repository or project evidence on the platform. Last active 2026-01-15, 247 days ago — dormant and worth re-engaging.",
+  "narrative": "Jatin Mishra is a B.Tech Electrical Engineering student at SRM Institute of Science and Technology, graduating in 2025, who signed up as a Frontend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Spring II with \"ParkPulse\" (scored 55). Their strongest evidenced skills are Arduino, ESP32, MQTT, based on used in P0201 (scored 55). They declare Express, Next.js with no supporting repository or project evidence on the platform. Last active 2026-01-15, 247 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -264,28 +273,28 @@
       "confidence": 1
     },
     {
-      "claim": "Arduino: built P0201 (scored 55)",
+      "claim": "Arduino: used in P0201 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0201 (scored 55)",
+      "claim": "ESP32: used in P0201 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MQTT: built P0201 (scored 55)",
+      "claim": "MQTT: used in P0201 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0201 (scored 55)",
+      "claim": "Tableau: used in P0201 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

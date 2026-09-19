@@ -1,7 +1,7 @@
 {
   "user_id": "U0015",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.056Z",
+  "built_at": "2026-09-19T08:22:35.784Z",
   "identity": {
     "full_name": "Devansh Kapoor",
     "email": "devansh.kapoor2027@vit.ac.in",
@@ -23,6 +23,29 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0093",
+        "title": "FanFund",
+        "date": "2024-12-04",
+        "score": 69,
+        "tech": ["React", "IPFS", "Tailwind CSS", "tRPC", "The Graph", "FastAPI"]
+      },
+      {
+        "project_id": "P0153",
+        "title": "MealLink",
+        "date": "2025-07-23",
+        "score": 48,
+        "tech": ["React", "Tableau", "Flutter", "Express", "Node.js"]
+      },
+      {
+        "project_id": "P0206",
+        "title": "VoteProof",
+        "date": "2026-02-20",
+        "score": 68,
+        "tech": ["Redis", "TypeScript", "Tailwind CSS", "PostgreSQL", "Next.js", "Express"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 61.7,
     "first_seen": "2024-12-04",
@@ -77,7 +100,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -91,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -105,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0206 (scored 68)",
+          "detail": "used in 2 projects, best P0206 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -119,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in 2 projects, best P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -133,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0206 (scored 68)",
+          "detail": "used in P0206 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -147,7 +170,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0206 (scored 68)",
+          "detail": "used in P0206 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -161,7 +184,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0206 (scored 68)",
+          "detail": "used in P0206 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -175,7 +198,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0206 (scored 68)",
+          "detail": "used in 2 projects, best P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -189,7 +212,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0206 (scored 68)",
+          "detail": "used in P0206 (scored 68)",
           "weight": 0.8
         }
       ],
@@ -203,7 +226,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -217,7 +240,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -231,7 +254,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -245,7 +268,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0093 (scored 69)",
+          "detail": "used in P0093 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -259,7 +282,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -406,8 +429,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Devansh Kapoor is a B.Tech Computer Science and Engineering student at Vellore Institute of Technology, graduating in 2027, who signed up as a ML/AI builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). Their strongest evidenced skills are JavaScript, FastAPI, Node.js, based on 88% of 4 public repos. They declare Python, PyTorch, Machine Learning with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-09-16 — currently active.",
-  "narrative_status": "template",
+  "narrative": "Devansh Kapoor is a Computer Science and Engineering student at Vellore Institute of Technology graduating in 2027. They are demonstrably good at JavaScript, with 88% of their four public repositories built around the language, and have applied FastAPI, Node.js, and Express across multiple projects, including a FastAPI project that scored 69. Their involvement has been steady and active, having registered for and attended three hackathons with no no-shows, submitting all three projects and maintaining a 100% submission rate. For an organizer deciding whether to invite them, they are a reliable steady participant who consistently finishes what they start and engages consistently, making them a safe addition to any team.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 3 hackathons, attended 3",
@@ -445,49 +468,49 @@
       "confidence": 0.88
     },
     {
-      "claim": "FastAPI: built P0093 (scored 69)",
+      "claim": "FastAPI: used in P0093 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0153 (scored 48)",
+      "claim": "Node.js: used in P0153 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0206 (scored 68)",
+      "claim": "Express: used in 2 projects, best P0206 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0153 (scored 48)",
+      "claim": "React: used in 2 projects, best P0093 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0206 (scored 68)",
+      "claim": "Next.js: used in P0206 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0206 (scored 68)",
+      "claim": "TypeScript: used in P0206 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0206 (scored 68)",
+      "claim": "PostgreSQL: used in P0206 (scored 68)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -119,7 +119,7 @@ function evidenceFor(profile, re, max = 4) {
 const FACETS = [
   {
     key: 'activity',
-    re: /\b(active|activity|participat\w*|attend\w*|how many (?:hackathons|events)|engag\w*|involve\w*|how often|regular)\b/i,
+    re: /\b(active|activity|participat\w*|attend\w*|how many (?:hackathons|events)|engag\w*|involve\w*|how often|regular|workshops?)\b/i,
     ev: /registered|interaction|submitted/i,
     answer: (p) => {
       const f = p.facts;
@@ -196,7 +196,7 @@ const FACETS = [
   },
   {
     key: 'projects',
-    re: /\b(built|build|projects?|created|made|shipped|work(?:ed)? on|portfolio)\b/i,
+    re: /\b(built|build|projects?|created|made|shipped|work(?:ed)? on|portfolio|submi\w+)\b/i,
     ev: /submitted|rank|best use/i,
     answer: (p) => {
       const pr = p.facts.projects || [];
@@ -334,14 +334,12 @@ function overview(profile) {
   if (!profile.identity.consent_flag) flags.push('Note: has not consented to outreach.');
   return {
     answer: [profile.narrative, `Key facts: ${line}.`, ...flags].filter(Boolean).join('\n\n'),
-    citations: profile.evidence
-      .slice(0, 5)
-      .map((e) => ({
-        claim: e.claim,
-        source_type: e.source_type,
-        source_ref: e.source_ref,
-        user_id: profile.user_id,
-      })),
+    citations: profile.evidence.slice(0, 5).map((e) => ({
+      claim: e.claim,
+      source_type: e.source_type,
+      source_ref: e.source_ref,
+      user_id: profile.user_id,
+    })),
   };
 }
 
@@ -355,14 +353,12 @@ async function llmAnswer(profile, message, turns) {
       prizes: profile.facts.prizes.slice(0, 5),
       projects: profile.facts.projects.slice(0, 8),
     },
-    skills: profile.skills
-      .slice(0, 8)
-      .map((s) => ({
-        skill: s.skill,
-        confidence: s.confidence,
-        claim_gap: s.claim_gap,
-        evidence: s.sources.map((x) => x.detail),
-      })),
+    skills: profile.skills.slice(0, 8).map((s) => ({
+      skill: s.skill,
+      confidence: s.confidence,
+      claim_gap: s.claim_gap,
+      evidence: s.sources.map((x) => x.detail),
+    })),
     traits: profile.traits.map((t) => t.label),
     personas: profile.personas,
     trajectory: {

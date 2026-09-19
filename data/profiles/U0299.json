@@ -1,7 +1,7 @@
 {
   "user_id": "U0299",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.083Z",
+  "built_at": "2026-09-19T08:17:46.255Z",
   "identity": {
     "full_name": "Atharv Varma",
     "email": "atharv.varma@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0072",
+        "title": "CarbonLedger",
+        "date": "2024-09-15",
+        "score": 53,
+        "tech": ["Express", "PostgreSQL", "DuckDB"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 53,
     "first_seen": "2024-09-14",
@@ -60,7 +69,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0072 (scored 53)",
+          "detail": "used in P0072 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -79,7 +88,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0072 (scored 53)",
+          "detail": "used in P0072 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -93,7 +102,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0072 (scored 53)",
+          "detail": "used in P0072 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -180,7 +189,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0072 (scored 53)",
+      "claim": "Express: used in P0072 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -194,14 +203,14 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0072 (scored 53)",
+      "claim": "PostgreSQL: used in P0072 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "DuckDB: built P0072 (scored 53)",
+      "claim": "DuckDB: used in P0072 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

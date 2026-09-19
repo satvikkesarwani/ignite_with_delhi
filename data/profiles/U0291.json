@@ -1,7 +1,7 @@
 {
   "user_id": "U0291",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.083Z",
+  "built_at": "2026-09-19T08:17:46.254Z",
   "identity": {
     "full_name": "Yuvraj Varma",
     "email": "yuvraj.varma9@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0253",
+        "title": "StandupBot",
+        "date": "2026-08-08",
+        "score": 62,
+        "tech": ["LangChain", "MongoDB", "OpenAI API", "Transformers", "LLM Fine-tuning", "PyTorch"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62,
     "first_seen": "2026-08-08",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -94,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -108,7 +117,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -122,7 +131,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -136,7 +145,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -223,7 +232,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Transformers: built P0253 (scored 62)",
+      "claim": "Transformers: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -237,35 +246,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "OpenAI API: built P0253 (scored 62)",
+      "claim": "OpenAI API: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0253 (scored 62)",
+      "claim": "PyTorch: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LangChain: built P0253 (scored 62)",
+      "claim": "LangChain: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0253 (scored 62)",
+      "claim": "MongoDB: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LLM Fine-tuning: built P0253 (scored 62)",
+      "claim": "LLM Fine-tuning: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

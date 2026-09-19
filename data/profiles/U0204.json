@@ -1,7 +1,7 @@
 {
   "user_id": "U0204",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.074Z",
+  "built_at": "2026-09-19T08:17:46.247Z",
   "identity": {
     "full_name": "Harsh Ahuja",
     "email": "harsh.ahuja@bvcoe.ac.in",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0207",
+        "title": "CarbonCred",
+        "date": "2026-02-20",
+        "score": 77,
+        "tech": ["IPFS", "Solidity", "Kafka", "The Graph"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 77,
     "first_seen": "2024-02-22",
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0207 (scored 77)",
+          "detail": "used in P0207 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0207 (scored 77)",
+          "detail": "used in P0207 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0207 (scored 77)",
+          "detail": "used in P0207 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0207 (scored 77)",
+          "detail": "used in P0207 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -237,7 +246,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Harsh Ahuja is a B.Tech Mathematics and Computing student at Bharati Vidyapeeth College of Engineering, graduating in 2029, who signed up as a Data builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including rank 1 at MetroHacks with \"CarbonCred\" (scored 77). Their strongest evidenced skills are The Graph, Solidity, IPFS, based on built P0207 (scored 77). They declare Airflow, Tableau, Spark with no supporting repository or project evidence on the platform. Last active 2026-03-04, 199 days ago — dormant and worth re-engaging.",
+  "narrative": "Harsh Ahuja is a B.Tech Mathematics and Computing student at Bharati Vidyapeeth College of Engineering, graduating in 2029, who signed up as a Data builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including rank 1 at MetroHacks with \"CarbonCred\" (scored 77). Their strongest evidenced skills are The Graph, Solidity, IPFS, based on used in P0207 (scored 77). They declare Airflow, Tableau, Spark with no supporting repository or project evidence on the platform. Last active 2026-03-04, 199 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -276,28 +285,28 @@
       "confidence": 1
     },
     {
-      "claim": "The Graph: built P0207 (scored 77)",
+      "claim": "The Graph: used in P0207 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0207 (scored 77)",
+      "claim": "Solidity: used in P0207 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "IPFS: built P0207 (scored 77)",
+      "claim": "IPFS: used in P0207 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kafka: built P0207 (scored 77)",
+      "claim": "Kafka: used in P0207 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0231",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.076Z",
+  "built_at": "2026-09-19T08:17:46.249Z",
   "identity": {
     "full_name": "Sara Bansal",
     "email": "sara.bansal@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0133",
+        "title": "PaperTrail",
+        "date": "2025-05-09",
+        "score": 69,
+        "tech": ["TypeScript", "Kafka", "TensorFlow", "Transformers"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 69,
     "first_seen": "2024-09-14",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0133 (scored 69)",
+          "detail": "used in P0133 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0133 (scored 69)",
+          "detail": "used in P0133 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0133 (scored 69)",
+          "detail": "used in P0133 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0133 (scored 69)",
+          "detail": "used in P0133 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -267,28 +276,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Kafka: built P0133 (scored 69)",
+      "claim": "Kafka: used in P0133 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0133 (scored 69)",
+      "claim": "TypeScript: used in P0133 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Transformers: built P0133 (scored 69)",
+      "claim": "Transformers: used in P0133 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0133 (scored 69)",
+      "claim": "TensorFlow: used in P0133 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

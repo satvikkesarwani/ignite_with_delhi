@@ -1,7 +1,7 @@
 {
   "user_id": "U0386",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.088Z",
+  "built_at": "2026-09-19T08:17:46.260Z",
   "identity": {
     "full_name": "Samaira Srivastava",
     "email": "samaira.srivastava@gmail.com",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0032",
+        "title": "LegalAidLine",
+        "date": "2024-05-21",
+        "score": 49,
+        "tech": ["Node.js", "Swift", "Flutter", "Kotlin", "React", "Tableau"]
+      },
+      {
+        "project_id": "P0210",
+        "title": "DeedChain",
+        "date": "2026-02-20",
+        "score": 56,
+        "tech": ["MongoDB", "Foundry", "Solidity", "Hardhat", "gRPC"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 52.5,
     "first_seen": "2024-05-20",
@@ -57,7 +73,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0032 (scored 49)",
+          "detail": "used in P0032 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -71,7 +87,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0210 (scored 56)",
+          "detail": "used in P0210 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -85,7 +101,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0032 (scored 49)",
+          "detail": "used in P0032 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -99,7 +115,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0032 (scored 49)",
+          "detail": "used in P0032 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -113,7 +129,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0032 (scored 49)",
+          "detail": "used in P0032 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -127,7 +143,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0210 (scored 56)",
+          "detail": "used in P0210 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -141,7 +157,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0210 (scored 56)",
+          "detail": "used in P0210 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -155,7 +171,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0032 (scored 49)",
+          "detail": "used in P0032 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -169,7 +185,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0032 (scored 49)",
+          "detail": "used in P0032 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -183,7 +199,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0210 (scored 56)",
+          "detail": "used in P0210 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -197,7 +213,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0210 (scored 56)",
+          "detail": "used in P0210 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -327,7 +343,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Samaira Srivastava is a B.Tech Artificial Intelligence student at Amity University Noida, graduating in 2029, who signed up as a DevOps builder. They have attended 2 of the 3 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Node.js, MongoDB, React, based on built P0032 (scored 49). They declare Kubernetes, GraphQL, Prometheus with no supporting repository or project evidence on the platform. Mentors rated them 3 out of 5 across 2 sessions. Last active 2026-09-14 — currently active.",
+  "narrative": "Samaira Srivastava is a B.Tech Artificial Intelligence student at Amity University Noida, graduating in 2029, who signed up as a DevOps builder. They have attended 2 of the 3 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Node.js, MongoDB, React, based on used in P0032 (scored 49). They declare Kubernetes, GraphQL, Prometheus with no supporting repository or project evidence on the platform. Mentors rated them 3 out of 5 across 2 sessions. Last active 2026-09-14 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -366,56 +382,56 @@
       "confidence": 1
     },
     {
-      "claim": "Node.js: built P0032 (scored 49)",
+      "claim": "Node.js: used in P0032 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0210 (scored 56)",
+      "claim": "MongoDB: used in P0210 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0032 (scored 49)",
+      "claim": "React: used in P0032 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0032 (scored 49)",
+      "claim": "Flutter: used in P0032 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kotlin: built P0032 (scored 49)",
+      "claim": "Kotlin: used in P0032 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0210 (scored 56)",
+      "claim": "Solidity: used in P0210 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Foundry: built P0210 (scored 56)",
+      "claim": "Foundry: used in P0210 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0032 (scored 49)",
+      "claim": "Tableau: used in P0032 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

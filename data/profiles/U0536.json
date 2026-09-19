@@ -1,7 +1,7 @@
 {
   "user_id": "U0536",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.100Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Sahana Jain",
     "email": "sahana.jain4@gmail.com",
@@ -23,6 +23,29 @@
     "submission_rate": 0.6,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0007",
+        "title": "LabSim",
+        "date": "2024-01-14",
+        "score": 57,
+        "tech": ["MongoDB", "PostgreSQL", "Tailwind CSS", "React", "Express", "Node.js"]
+      },
+      {
+        "project_id": "P0084",
+        "title": "ParkPulse",
+        "date": "2024-10-26",
+        "score": 66,
+        "tech": ["NumPy", "gRPC", "GraphQL", "MQTT", "Embedded C"]
+      },
+      {
+        "project_id": "P0166",
+        "title": "CropCast",
+        "date": "2025-08-27",
+        "score": 71,
+        "tech": ["NumPy", "React", "Node.js"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 64.7,
     "first_seen": "2024-01-13",
@@ -62,7 +85,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0166 (scored 71)",
+          "detail": "used in 2 projects, best P0166 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -76,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0166 (scored 71)",
+          "detail": "used in 2 projects, best P0166 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -90,7 +113,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0007 (scored 57)",
+          "detail": "used in P0007 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -104,7 +127,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0007 (scored 57)",
+          "detail": "used in P0007 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -118,7 +141,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0166 (scored 71)",
+          "detail": "used in 2 projects, best P0166 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -132,7 +155,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0007 (scored 57)",
+          "detail": "used in P0007 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -146,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0007 (scored 57)",
+          "detail": "used in P0007 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -160,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0084 (scored 66)",
+          "detail": "used in P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -174,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0084 (scored 66)",
+          "detail": "used in P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -188,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0084 (scored 66)",
+          "detail": "used in P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -202,7 +225,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0084 (scored 66)",
+          "detail": "used in P0084 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -390,56 +413,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "NumPy: built P0166 (scored 71)",
+      "claim": "NumPy: used in 2 projects, best P0166 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0166 (scored 71)",
+      "claim": "Node.js: used in 2 projects, best P0166 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0007 (scored 57)",
+      "claim": "Express: used in P0007 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0007 (scored 57)",
+      "claim": "MongoDB: used in P0007 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0166 (scored 71)",
+      "claim": "React: used in 2 projects, best P0166 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0007 (scored 57)",
+      "claim": "PostgreSQL: used in P0007 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0007 (scored 57)",
+      "claim": "Tailwind CSS: used in P0007 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0084 (scored 66)",
+      "claim": "GraphQL: used in P0084 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

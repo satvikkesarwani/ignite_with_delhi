@@ -1,7 +1,7 @@
 {
   "user_id": "U0449",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.266Z",
   "identity": {
     "full_name": "Advika Varma",
     "email": "advika.varma57@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0161",
+        "title": "SolarSight",
+        "date": "2025-08-27",
+        "score": 42,
+        "tech": ["Node.js", "MongoDB", "PostgreSQL", "Spark", "Pandas"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 42,
     "first_seen": "2025-08-27",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -95,7 +104,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -109,7 +118,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -123,7 +132,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -252,7 +261,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0161 (scored 42)",
+      "claim": "Node.js: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -266,28 +275,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0161 (scored 42)",
+      "claim": "MongoDB: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0161 (scored 42)",
+      "claim": "PostgreSQL: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0161 (scored 42)",
+      "claim": "Pandas: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0161 (scored 42)",
+      "claim": "Spark: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

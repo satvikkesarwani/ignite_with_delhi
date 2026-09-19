@@ -1,7 +1,7 @@
 {
   "user_id": "U0445",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.266Z",
   "identity": {
     "full_name": "Hemant Kapoor",
     "email": "hemant.kapoor@iitdelhi.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0130",
+        "title": "Interviewer",
+        "date": "2025-05-09",
+        "score": 51,
+        "tech": ["Node.js", "RAG", "TensorFlow", "Vector Databases", "OpenAI API"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 51,
     "first_seen": "2025-05-09",
@@ -57,7 +66,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -71,7 +80,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -113,7 +122,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -259,7 +268,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Hemant Kapoor is a B.Tech Information Technology student at Indian Institute of Technology Delhi, graduating in 2026, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are RAG, Node.js, Vector Databases, based on built P0130 (scored 51). They declare Kubernetes, Prometheus, Nginx with no supporting repository or project evidence on the platform. Last active 2026-03-01, 202 days ago — dormant and worth re-engaging.",
+  "narrative": "Hemant Kapoor is a B.Tech Information Technology student at Indian Institute of Technology Delhi, graduating in 2026, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are RAG, Node.js, Vector Databases, based on used in P0130 (scored 51). They declare Kubernetes, Prometheus, Nginx with no supporting repository or project evidence on the platform. Last active 2026-03-01, 202 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -291,35 +300,35 @@
       "confidence": 1
     },
     {
-      "claim": "RAG: built P0130 (scored 51)",
+      "claim": "RAG: used in P0130 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0130 (scored 51)",
+      "claim": "Node.js: used in P0130 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0130 (scored 51)",
+      "claim": "Vector Databases: used in P0130 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0130 (scored 51)",
+      "claim": "OpenAI API: used in P0130 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0130 (scored 51)",
+      "claim": "TensorFlow: used in P0130 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

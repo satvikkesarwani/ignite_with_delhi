@@ -1,7 +1,7 @@
 {
   "user_id": "U0206",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.074Z",
+  "built_at": "2026-09-19T08:17:46.247Z",
   "identity": {
     "full_name": "Mayank Kulkarni",
     "email": "mayank.kulkarni@mait.ac.in",
@@ -23,6 +23,43 @@
     "submission_rate": 0.8,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0044",
+        "title": "VaxTrack",
+        "date": "2024-06-25",
+        "score": 65,
+        "tech": ["Kotlin", "Swift", "React Native"]
+      },
+      {
+        "project_id": "P0081",
+        "title": "PotholePatrol",
+        "date": "2024-10-26",
+        "score": 57,
+        "tech": ["Raspberry Pi", "ESP32", "Arduino", "LoRaWAN", "Embedded C"]
+      },
+      {
+        "project_id": "P0123",
+        "title": "GradeGrain",
+        "date": "2025-03-27",
+        "score": 64,
+        "tech": ["Swift", "MongoDB", "tRPC"]
+      },
+      {
+        "project_id": "P0235",
+        "title": "Interviewer",
+        "date": "2026-05-23",
+        "score": 65,
+        "tech": [
+          "PostgreSQL",
+          "HuggingFace",
+          "scikit-learn",
+          "LLM Fine-tuning",
+          "Qdrant",
+          "LangChain"
+        ]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62.8,
     "first_seen": "2024-06-25",
@@ -74,7 +111,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0044 (scored 65)",
+          "detail": "used in P0044 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -93,7 +130,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0123 (scored 64)",
+          "detail": "used in P0123 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -112,7 +149,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0123 (scored 64)",
+          "detail": "used in 2 projects, best P0044 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -131,7 +168,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0044 (scored 65)",
+          "detail": "used in P0044 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -145,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0235 (scored 65)",
+          "detail": "used in P0235 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -159,7 +196,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0235 (scored 65)",
+          "detail": "used in P0235 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -173,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0235 (scored 65)",
+          "detail": "used in P0235 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -187,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -201,7 +238,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -215,7 +252,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -229,7 +266,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0123 (scored 64)",
+          "detail": "used in P0123 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -243,7 +280,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -257,7 +294,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -271,7 +308,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0235 (scored 65)",
+          "detail": "used in P0235 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -285,7 +322,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0235 (scored 65)",
+          "detail": "used in P0235 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -299,7 +336,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0235 (scored 65)",
+          "detail": "used in P0235 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -462,7 +499,7 @@
       "confidence": 0.94
     },
     {
-      "claim": "Kotlin: built P0044 (scored 65)",
+      "claim": "Kotlin: used in P0044 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -476,7 +513,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0123 (scored 64)",
+      "claim": "MongoDB: used in P0123 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -490,7 +527,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Swift: built P0123 (scored 64)",
+      "claim": "Swift: used in 2 projects, best P0044 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -504,35 +541,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "React Native: built P0044 (scored 65)",
+      "claim": "React Native: used in P0044 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0235 (scored 65)",
+      "claim": "LangChain: used in P0235 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0235 (scored 65)",
+      "claim": "PostgreSQL: used in P0235 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0235 (scored 65)",
+      "claim": "HuggingFace: used in P0235 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0081 (scored 57)",
+      "claim": "Arduino: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0410",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.090Z",
+  "built_at": "2026-09-19T08:17:46.263Z",
   "identity": {
     "full_name": "Neel Rao",
     "email": "neel.rao32@gmail.com",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0018",
+        "title": "SplitFair",
+        "date": "2024-02-22",
+        "score": 54,
+        "tech": ["React", "gRPC", "Redis", "SQL"]
+      },
+      {
+        "project_id": "P0027",
+        "title": "MealLink",
+        "date": "2024-05-21",
+        "score": 59,
+        "tech": ["TypeScript", "Node.js", "Tailwind CSS", "tRPC", "React Native"]
+      },
+      {
+        "project_id": "P0108",
+        "title": "TalentGraph",
+        "date": "2025-01-10",
+        "score": 83,
+        "tech": ["Tableau", "Kafka", "Qdrant", "Cypher"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 65.3,
     "first_seen": "2024-02-22",
@@ -84,7 +107,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -103,7 +126,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -117,7 +140,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -131,7 +154,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -145,7 +168,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -159,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -173,7 +196,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -187,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -201,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -215,7 +238,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0027 (scored 59)",
+          "detail": "used in P0027 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -229,7 +252,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -243,7 +266,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0018 (scored 54)",
+          "detail": "used in P0018 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -257,7 +280,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -450,7 +473,7 @@
       "confidence": 0.87
     },
     {
-      "claim": "SQL: built P0018 (scored 54)",
+      "claim": "SQL: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -464,49 +487,49 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tableau: built P0108 (scored 83)",
+      "claim": "Tableau: used in P0108 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0027 (scored 59)",
+      "claim": "Node.js: used in P0027 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0018 (scored 54)",
+      "claim": "React: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0027 (scored 59)",
+      "claim": "TypeScript: used in P0027 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0027 (scored 59)",
+      "claim": "Tailwind CSS: used in P0027 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0018 (scored 54)",
+      "claim": "Redis: used in P0018 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Cypher: built P0108 (scored 83)",
+      "claim": "Cypher: used in P0108 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

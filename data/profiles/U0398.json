@@ -1,7 +1,7 @@
 {
   "user_id": "U0398",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.089Z",
+  "built_at": "2026-09-19T08:17:46.261Z",
   "identity": {
     "full_name": "Nidhi Bhardwaj",
     "email": "nidhi.bhardwaj@iitbombay.ac.in",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0238",
+        "title": "StandupBot",
+        "date": "2026-05-23",
+        "score": 78,
+        "tech": ["tRPC", "Vite", "React", "Redis", "gRPC", "NetworkX"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 78,
     "first_seen": "2025-01-10",
@@ -78,7 +87,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -92,7 +101,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -106,7 +115,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -120,7 +129,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -134,7 +143,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -148,7 +157,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -263,42 +272,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "gRPC: built P0238 (scored 78)",
+      "claim": "gRPC: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0238 (scored 78)",
+      "claim": "React: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0238 (scored 78)",
+      "claim": "Redis: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NetworkX: built P0238 (scored 78)",
+      "claim": "NetworkX: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0238 (scored 78)",
+      "claim": "tRPC: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0238 (scored 78)",
+      "claim": "Vite: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0071",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.061Z",
+  "built_at": "2026-09-19T08:17:46.236Z",
   "identity": {
     "full_name": "Samarth Mittal",
     "email": "samarth.mittal@outlook.com",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0150",
+        "title": "SafeRoute",
+        "date": "2025-07-23",
+        "score": 33,
+        "tech": ["Next.js", "Express", "PostgreSQL"]
+      },
+      {
+        "project_id": "P0165",
+        "title": "GridGaze",
+        "date": "2025-08-27",
+        "score": 52,
+        "tech": ["MongoDB", "tRPC", "dbt"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 42.5,
     "first_seen": "2025-07-21",
@@ -57,7 +73,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0150 (scored 33)",
+          "detail": "used in P0150 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -71,7 +87,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0165 (scored 52)",
+          "detail": "used in P0165 (scored 52)",
           "weight": 0.8
         }
       ],
@@ -85,7 +101,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0150 (scored 33)",
+          "detail": "used in P0150 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -99,7 +115,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0150 (scored 33)",
+          "detail": "used in P0150 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -113,7 +129,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0165 (scored 52)",
+          "detail": "used in P0165 (scored 52)",
           "weight": 0.8
         }
       ],
@@ -127,7 +143,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0165 (scored 52)",
+          "detail": "used in P0165 (scored 52)",
           "weight": 0.8
         }
       ],
@@ -264,7 +280,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Samarth Mittal is a B.E. Computer Science and Engineering student at Indian Institute of Technology Delhi, graduating in 2029, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Express, MongoDB, Next.js, based on built P0150 (scored 33). They declare The Graph, Solidity, Foundry with no supporting repository or project evidence on the platform. Last active 2026-02-15, 216 days ago — dormant and worth re-engaging.",
+  "narrative": "Samarth Mittal is a B.E. Computer Science and Engineering student at Indian Institute of Technology Delhi, graduating in 2029, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Express, MongoDB, Next.js, based on used in P0150 (scored 33). They declare The Graph, Solidity, Foundry with no supporting repository or project evidence on the platform. Last active 2026-02-15, 216 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -289,42 +305,42 @@
       "confidence": 1
     },
     {
-      "claim": "Express: built P0150 (scored 33)",
+      "claim": "Express: used in P0150 (scored 33)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0165 (scored 52)",
+      "claim": "MongoDB: used in P0165 (scored 52)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0150 (scored 33)",
+      "claim": "Next.js: used in P0150 (scored 33)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0150 (scored 33)",
+      "claim": "PostgreSQL: used in P0150 (scored 33)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0165 (scored 52)",
+      "claim": "dbt: used in P0165 (scored 52)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0165 (scored 52)",
+      "claim": "tRPC: used in P0165 (scored 52)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

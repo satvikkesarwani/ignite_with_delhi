@@ -1,7 +1,7 @@
 {
   "user_id": "U0269",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.081Z",
+  "built_at": "2026-09-19T08:17:46.253Z",
   "identity": {
     "full_name": "Pranav Patel",
     "email": "pranav.patel@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0129",
+        "title": "LegalRAG",
+        "date": "2025-05-09",
+        "score": 70,
+        "tech": ["LLM Fine-tuning", "OpenCV", "LangChain", "TensorFlow", "Python"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 70,
     "first_seen": "2024-12-04",
@@ -61,7 +70,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0129 (scored 70)",
+          "detail": "used in P0129 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -75,7 +84,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0129 (scored 70)",
+          "detail": "used in P0129 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -89,7 +98,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0129 (scored 70)",
+          "detail": "used in P0129 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -103,7 +112,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0129 (scored 70)",
+          "detail": "used in P0129 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -117,7 +126,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0129 (scored 70)",
+          "detail": "used in P0129 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -220,7 +229,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Pranav Patel is a B.Tech Electrical Engineering student at Netaji Subhas University of Technology, graduating in 2029, who signed up as a Data builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Python, LangChain, LLM Fine-tuning, based on built P0129 (scored 70). They declare Airflow, Tableau, Spark with no supporting repository or project evidence on the platform. Last active 2025-12-24, 269 days ago — dormant and worth re-engaging.",
+  "narrative": "Pranav Patel is a B.Tech Electrical Engineering student at Netaji Subhas University of Technology, graduating in 2029, who signed up as a Data builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Python, LangChain, LLM Fine-tuning, based on used in P0129 (scored 70). They declare Airflow, Tableau, Spark with no supporting repository or project evidence on the platform. Last active 2025-12-24, 269 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -245,35 +254,35 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0129 (scored 70)",
+      "claim": "Python: used in P0129 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LangChain: built P0129 (scored 70)",
+      "claim": "LangChain: used in P0129 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LLM Fine-tuning: built P0129 (scored 70)",
+      "claim": "LLM Fine-tuning: used in P0129 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0129 (scored 70)",
+      "claim": "TensorFlow: used in P0129 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0129 (scored 70)",
+      "claim": "OpenCV: used in P0129 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

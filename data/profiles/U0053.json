@@ -1,7 +1,7 @@
 {
   "user_id": "U0053",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.060Z",
+  "built_at": "2026-09-19T08:17:46.234Z",
   "identity": {
     "full_name": "Sahil Malhotra",
     "email": "sahil.malhotra@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0223",
+        "title": "SupportSieve",
+        "date": "2026-04-06",
+        "score": 69,
+        "tech": ["Python", "OpenCV", "TensorFlow", "scikit-learn"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 69,
     "first_seen": "2026-04-05",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0223 (scored 69)",
+          "detail": "used in P0223 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0223 (scored 69)",
+          "detail": "used in P0223 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0223 (scored 69)",
+          "detail": "used in P0223 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0223 (scored 69)",
+          "detail": "used in P0223 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -249,7 +258,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Sahil Malhotra is a B.Tech Mathematics and Computing student at Bennett University, graduating in 2029, who signed up as a Mobile builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, scikit-learn, TensorFlow, based on built P0223 (scored 69). They declare Flutter, tRPC, Jetpack Compose with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-08-31 — currently active.",
+  "narrative": "Sahil Malhotra is a B.Tech Mathematics and Computing student at Bennett University, graduating in 2029, who signed up as a Mobile builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, scikit-learn, TensorFlow, based on used in P0223 (scored 69). They declare Flutter, tRPC, Jetpack Compose with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-08-31 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -288,28 +297,28 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0223 (scored 69)",
+      "claim": "Python: used in P0223 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0223 (scored 69)",
+      "claim": "scikit-learn: used in P0223 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0223 (scored 69)",
+      "claim": "TensorFlow: used in P0223 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0223 (scored 69)",
+      "claim": "OpenCV: used in P0223 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

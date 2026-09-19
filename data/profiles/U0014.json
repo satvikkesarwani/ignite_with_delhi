@@ -1,7 +1,7 @@
 {
   "user_id": "U0014",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.056Z",
+  "built_at": "2026-09-19T08:32:18.556Z",
   "identity": {
     "full_name": "Ishita Bansal",
     "email": "ishita.bansal@jiit.ac.in",
@@ -44,6 +44,36 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0138",
+        "title": "CodeCartographer",
+        "date": "2025-05-09",
+        "score": 49,
+        "tech": ["Transformers", "TensorFlow", "OpenAI API", "Python"]
+      },
+      {
+        "project_id": "P0178",
+        "title": "RouteKnot",
+        "date": "2025-10-04",
+        "score": 89,
+        "tech": ["Python", "RAG", "Vector Databases", "TensorFlow"]
+      },
+      {
+        "project_id": "P0239",
+        "title": "Interviewer",
+        "date": "2026-05-23",
+        "score": 88,
+        "tech": ["tRPC", "MongoDB", "LangChain", "RAG", "OpenAI API", "Docker"]
+      },
+      {
+        "project_id": "P0253",
+        "title": "StandupBot",
+        "date": "2026-08-08",
+        "score": 62,
+        "tech": ["LangChain", "MongoDB", "OpenAI API", "Transformers", "LLM Fine-tuning", "PyTorch"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 72,
     "first_seen": "2025-05-09",
@@ -90,7 +120,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in 2 projects, best P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -109,7 +139,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in 2 projects, best P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -128,7 +158,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in 2 projects, best P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -147,7 +177,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -166,7 +196,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in 3 projects, best P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -180,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -194,7 +224,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in 2 projects, best P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -208,7 +238,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -222,7 +252,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in 2 projects, best P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -236,7 +266,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0239 (scored 88)",
+          "detail": "used in P0239 (scored 88)",
           "weight": 0.8
         }
       ],
@@ -250,7 +280,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0253 (scored 62)",
+          "detail": "used in P0253 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -264,7 +294,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0178 (scored 89)",
+          "detail": "used in 2 projects, best P0178 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -427,7 +457,7 @@
       "confidence": 0.97
     },
     {
-      "claim": "Python: built P0178 (scored 89)",
+      "claim": "Python: used in 2 projects, best P0178 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -441,7 +471,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0253 (scored 62)",
+      "claim": "LangChain: used in 2 projects, best P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -455,7 +485,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "RAG: built P0239 (scored 88)",
+      "claim": "RAG: used in 2 projects, best P0178 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -469,7 +499,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vector Databases: built P0178 (scored 89)",
+      "claim": "Vector Databases: used in P0178 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -483,28 +513,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "OpenAI API: built P0253 (scored 62)",
+      "claim": "OpenAI API: used in 3 projects, best P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0253 (scored 62)",
+      "claim": "PyTorch: used in P0253 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0253 (scored 62)",
+      "claim": "MongoDB: used in 2 projects, best P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0239 (scored 88)",
+      "claim": "Docker: used in P0239 (scored 88)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

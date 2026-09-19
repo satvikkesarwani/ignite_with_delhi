@@ -1,7 +1,7 @@
 {
   "user_id": "U0153",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.071Z",
+  "built_at": "2026-09-19T08:17:46.244Z",
   "identity": {
     "full_name": "Advait Sinha",
     "email": "advait.sinha@igdtuw.ac.in",
@@ -44,6 +44,29 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0033",
+        "title": "ShelterFind",
+        "date": "2024-05-21",
+        "score": 65,
+        "tech": ["Spark", "Firebase", "tRPC", "PostgreSQL", "Tailwind CSS", "React"]
+      },
+      {
+        "project_id": "P0088",
+        "title": "FloodFore",
+        "date": "2024-10-26",
+        "score": 78,
+        "tech": ["dbt", "NumPy", "Embedded C", "MQTT", "Airflow", "Raspberry Pi"]
+      },
+      {
+        "project_id": "P0189",
+        "title": "DepDrift",
+        "date": "2025-11-19",
+        "score": 85,
+        "tech": ["GraphQL", "Kafka", "MongoDB", "React"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 76,
     "first_seen": "2024-05-20",
@@ -84,7 +107,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0088 (scored 78)",
+          "detail": "used in P0088 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -103,7 +126,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -122,7 +145,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0088 (scored 78)",
+          "detail": "used in P0088 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -136,7 +159,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0189 (scored 85)",
+          "detail": "used in P0189 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -150,7 +173,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0189 (scored 85)",
+          "detail": "used in 2 projects, best P0189 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -164,7 +187,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -178,7 +201,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -192,7 +215,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0088 (scored 78)",
+          "detail": "used in P0088 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -206,7 +229,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0189 (scored 85)",
+          "detail": "used in P0189 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -220,7 +243,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -234,7 +257,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0088 (scored 78)",
+          "detail": "used in P0088 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -248,7 +271,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0088 (scored 78)",
+          "detail": "used in P0088 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -262,7 +285,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0033 (scored 65)",
+          "detail": "used in P0033 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -276,7 +299,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0088 (scored 78)",
+          "detail": "used in P0088 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -290,7 +313,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0189 (scored 85)",
+          "detail": "used in P0189 (scored 85)",
           "weight": 0.8
         }
       ],
@@ -474,7 +497,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "dbt: built P0088 (scored 78)",
+      "claim": "dbt: used in P0088 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -488,7 +511,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Spark: built P0033 (scored 65)",
+      "claim": "Spark: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -502,42 +525,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "NumPy: built P0088 (scored 78)",
+      "claim": "NumPy: used in P0088 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0189 (scored 85)",
+      "claim": "MongoDB: used in P0189 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0189 (scored 85)",
+      "claim": "React: used in 2 projects, best P0189 (scored 85)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0033 (scored 65)",
+      "claim": "PostgreSQL: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0033 (scored 65)",
+      "claim": "Tailwind CSS: used in P0033 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0088 (scored 78)",
+      "claim": "Airflow: used in P0088 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

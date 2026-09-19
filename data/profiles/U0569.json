@@ -1,7 +1,7 @@
 {
   "user_id": "U0569",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.102Z",
+  "built_at": "2026-09-19T08:17:46.272Z",
   "identity": {
     "full_name": "Sahana Subramanian",
     "email": "sahana.subramanian@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0081",
+        "title": "PotholePatrol",
+        "date": "2024-10-26",
+        "score": 57,
+        "tech": ["Raspberry Pi", "ESP32", "Arduino", "LoRaWAN", "Embedded C"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 57,
     "first_seen": "2024-10-24",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -112,7 +121,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -230,7 +239,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Sahana Subramanian is a B.E. Mathematics and Computing student at Netaji Subhas University of Technology, graduating in 2026, who signed up as a Full-stack builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Arduino, ESP32, Embedded C, based on built P0081 (scored 57). They declare Express, React, TypeScript with no supporting repository or project evidence on the platform. Last active 2024-10-31, 688 days ago — lapsed.",
+  "narrative": "Sahana Subramanian is a B.E. Mathematics and Computing student at Netaji Subhas University of Technology, graduating in 2026, who signed up as a Full-stack builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Arduino, ESP32, Embedded C, based on used in P0081 (scored 57). They declare Express, React, TypeScript with no supporting repository or project evidence on the platform. Last active 2024-10-31, 688 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -262,35 +271,35 @@
       "confidence": 1
     },
     {
-      "claim": "Arduino: built P0081 (scored 57)",
+      "claim": "Arduino: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0081 (scored 57)",
+      "claim": "ESP32: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0081 (scored 57)",
+      "claim": "Embedded C: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LoRaWAN: built P0081 (scored 57)",
+      "claim": "LoRaWAN: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Raspberry Pi: built P0081 (scored 57)",
+      "claim": "Raspberry Pi: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

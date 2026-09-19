@@ -1,7 +1,7 @@
 {
   "user_id": "U0539",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.100Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Samaira Kapoor",
     "email": "samaira.kapoor@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0119",
+        "title": "SkillPath",
+        "date": "2025-03-27",
+        "score": 72,
+        "tech": ["TypeScript", "PostgreSQL", "Swift", "Kotlin", "Tailwind CSS"]
+      },
+      {
+        "project_id": "P0240",
+        "title": "Interviewer",
+        "date": "2026-05-23",
+        "score": 61,
+        "tech": ["Vite", "OpenAI API", "scikit-learn", "LLM Fine-tuning"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 66.5,
     "first_seen": "2024-01-13",
@@ -78,7 +94,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -97,7 +113,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -111,7 +127,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -125,7 +141,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -139,7 +155,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -153,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0240 (scored 61)",
+          "detail": "used in P0240 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -167,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0240 (scored 61)",
+          "detail": "used in P0240 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -181,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0240 (scored 61)",
+          "detail": "used in P0240 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -195,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0240 (scored 61)",
+          "detail": "used in P0240 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -329,7 +345,7 @@
       "confidence": 0.92
     },
     {
-      "claim": "Kotlin: built P0119 (scored 72)",
+      "claim": "Kotlin: used in P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -343,49 +359,49 @@
       "confidence": 0.86
     },
     {
-      "claim": "Swift: built P0119 (scored 72)",
+      "claim": "Swift: used in P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0119 (scored 72)",
+      "claim": "TypeScript: used in P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0119 (scored 72)",
+      "claim": "PostgreSQL: used in P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0119 (scored 72)",
+      "claim": "Tailwind CSS: used in P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0240 (scored 61)",
+      "claim": "OpenAI API: used in P0240 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0240 (scored 61)",
+      "claim": "Vite: used in P0240 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0240 (scored 61)",
+      "claim": "scikit-learn: used in P0240 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

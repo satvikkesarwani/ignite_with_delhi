@@ -1,7 +1,7 @@
 {
   "user_id": "U0444",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.093Z",
+  "built_at": "2026-09-19T08:17:46.266Z",
   "identity": {
     "full_name": "Gaurav Malhotra",
     "email": "gaurav.malhotra60@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0081",
+        "title": "PotholePatrol",
+        "date": "2024-10-26",
+        "score": 57,
+        "tech": ["Raspberry Pi", "ESP32", "Arduino", "LoRaWAN", "Embedded C"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 57,
     "first_seen": "2024-10-24",
@@ -62,7 +71,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -76,7 +85,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -90,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -104,7 +113,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -118,7 +127,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0081 (scored 57)",
+          "detail": "used in P0081 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -229,7 +238,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Gaurav Malhotra is a B.Tech Electrical Engineering student at Netaji Subhas University of Technology, graduating in 2028, who signed up as a Frontend builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Arduino, ESP32, Embedded C, based on built P0081 (scored 57). They declare Express, Next.js, Motion Design with no supporting repository or project evidence on the platform. Last active 2026-02-25, 206 days ago — dormant and worth re-engaging.",
+  "narrative": "Gaurav Malhotra is a B.Tech Electrical Engineering student at Netaji Subhas University of Technology, graduating in 2028, who signed up as a Frontend builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Arduino, ESP32, Embedded C, based on used in P0081 (scored 57). They declare Express, Next.js, Motion Design with no supporting repository or project evidence on the platform. Last active 2026-02-25, 206 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -261,35 +270,35 @@
       "confidence": 1
     },
     {
-      "claim": "Arduino: built P0081 (scored 57)",
+      "claim": "Arduino: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0081 (scored 57)",
+      "claim": "ESP32: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0081 (scored 57)",
+      "claim": "Embedded C: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LoRaWAN: built P0081 (scored 57)",
+      "claim": "LoRaWAN: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Raspberry Pi: built P0081 (scored 57)",
+      "claim": "Raspberry Pi: used in P0081 (scored 57)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

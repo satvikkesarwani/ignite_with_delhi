@@ -1,7 +1,7 @@
 {
   "user_id": "U0315",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.084Z",
+  "built_at": "2026-09-19T08:17:46.256Z",
   "identity": {
     "full_name": "Avni Gupta",
     "email": "avni.gupta59@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0065",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 58,
+        "tech": ["Pandas", "Tableau", "Airflow", "PostgreSQL", "DuckDB", "dbt"]
+      },
+      {
+        "project_id": "P0108",
+        "title": "TalentGraph",
+        "date": "2025-01-10",
+        "score": 83,
+        "tech": ["Tableau", "Kafka", "Qdrant", "Cypher"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 70.5,
     "first_seen": "2024-09-14",
@@ -73,7 +89,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in 2 projects, best P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -87,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -101,7 +117,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -115,7 +131,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -129,7 +145,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -143,7 +159,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0065 (scored 58)",
+          "detail": "used in P0065 (scored 58)",
           "weight": 0.8
         }
       ],
@@ -157,7 +173,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -171,7 +187,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -185,7 +201,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0108 (scored 83)",
+          "detail": "used in P0108 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -326,56 +342,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tableau: built P0108 (scored 83)",
+      "claim": "Tableau: used in 2 projects, best P0108 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0065 (scored 58)",
+      "claim": "PostgreSQL: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0065 (scored 58)",
+      "claim": "Pandas: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0065 (scored 58)",
+      "claim": "Airflow: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0065 (scored 58)",
+      "claim": "dbt: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0065 (scored 58)",
+      "claim": "DuckDB: used in P0065 (scored 58)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Cypher: built P0108 (scored 83)",
+      "claim": "Cypher: used in P0108 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kafka: built P0108 (scored 83)",
+      "claim": "Kafka: used in P0108 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

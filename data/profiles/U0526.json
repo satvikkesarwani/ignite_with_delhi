@@ -1,7 +1,7 @@
 {
   "user_id": "U0526",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.099Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Aarav Khanna",
     "email": "aarav.khanna58@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0162",
+        "title": "SolarSight",
+        "date": "2025-08-27",
+        "score": 62,
+        "tech": ["MQTT", "Arduino", "Pandas", "NumPy", "DuckDB", "Raspberry Pi"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62,
     "first_seen": "2025-08-27",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -81,7 +90,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -114,7 +123,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -128,7 +137,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -142,7 +151,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0162 (scored 62)",
+          "detail": "used in P0162 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -306,7 +315,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Arduino: built P0162 (scored 62)",
+      "claim": "Arduino: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -320,7 +329,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MQTT: built P0162 (scored 62)",
+      "claim": "MQTT: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -334,28 +343,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Raspberry Pi: built P0162 (scored 62)",
+      "claim": "Raspberry Pi: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Pandas: built P0162 (scored 62)",
+      "claim": "Pandas: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0162 (scored 62)",
+      "claim": "DuckDB: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0162 (scored 62)",
+      "claim": "NumPy: used in P0162 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0024",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.057Z",
+  "built_at": "2026-09-19T08:17:46.231Z",
   "identity": {
     "full_name": "Advait Rao",
     "email": "advait.rao@dtu.ac.in",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0161",
+        "title": "SolarSight",
+        "date": "2025-08-27",
+        "score": 42,
+        "tech": ["Node.js", "MongoDB", "PostgreSQL", "Spark", "Pandas"]
+      },
+      {
+        "project_id": "P0175",
+        "title": "SupplyGraph",
+        "date": "2025-10-04",
+        "score": 81,
+        "tech": ["Vector Databases", "Pinecone", "Spark", "Qdrant", "Neo4j", "Knowledge Graphs"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 61.5,
     "first_seen": "2025-08-27",
@@ -69,7 +85,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0175 (scored 81)",
+          "detail": "used in P0175 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -83,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -97,7 +113,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -111,7 +127,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -125,7 +141,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0161 (scored 42)",
+          "detail": "used in P0161 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -139,7 +155,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0175 (scored 81)",
+          "detail": "used in P0175 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -153,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0175 (scored 81)",
+          "detail": "used in P0175 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -167,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0175 (scored 81)",
+          "detail": "used in 2 projects, best P0175 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -181,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0175 (scored 81)",
+          "detail": "used in P0175 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -195,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0175 (scored 81)",
+          "detail": "used in P0175 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -339,7 +355,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Advait Rao is a M.Tech Computer Science and Engineering student at Delhi Technological University, graduating in 2028, who signed up as a Web3 builder. They have attended 3 of the 4 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 1 prize, including rank 2 at DeltaBuild with \"SupplyGraph\" (scored 81). Their strongest evidenced skills are Neo4j, Node.js, MongoDB, based on built P0175 (scored 81). They declare The Graph, Solidity, Foundry with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-06-29, 82 days ago — cooling off.",
+  "narrative": "Advait Rao is a M.Tech Computer Science and Engineering student at Delhi Technological University, graduating in 2028, who signed up as a Web3 builder. They have attended 3 of the 4 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 1 prize, including rank 2 at DeltaBuild with \"SupplyGraph\" (scored 81). Their strongest evidenced skills are Neo4j, Node.js, MongoDB, based on used in P0175 (scored 81). They declare The Graph, Solidity, Foundry with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-06-29, 82 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -385,56 +401,56 @@
       "confidence": 1
     },
     {
-      "claim": "Neo4j: built P0175 (scored 81)",
+      "claim": "Neo4j: used in P0175 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0161 (scored 42)",
+      "claim": "Node.js: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0161 (scored 42)",
+      "claim": "MongoDB: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0161 (scored 42)",
+      "claim": "PostgreSQL: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0161 (scored 42)",
+      "claim": "Pandas: used in P0161 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0175 (scored 81)",
+      "claim": "Vector Databases: used in P0175 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0175 (scored 81)",
+      "claim": "Knowledge Graphs: used in P0175 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0175 (scored 81)",
+      "claim": "Spark: used in 2 projects, best P0175 (scored 81)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

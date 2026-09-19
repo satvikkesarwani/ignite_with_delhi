@@ -1,7 +1,7 @@
 {
   "user_id": "U0303",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.083Z",
+  "built_at": "2026-09-19T08:17:46.255Z",
   "identity": {
     "full_name": "Advait Patel",
     "email": "advait.patel@iitroorkee.ac.in",
@@ -44,6 +44,57 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0071",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 61,
+        "tech": ["Next.js", "Tableau", "LoRaWAN"]
+      },
+      {
+        "project_id": "P0080",
+        "title": "SignalSense",
+        "date": "2024-10-26",
+        "score": 65,
+        "tech": ["Embedded C", "Raspberry Pi", "GraphQL", "LoRaWAN", "Flask"]
+      },
+      {
+        "project_id": "P0132",
+        "title": "SchemaSage",
+        "date": "2025-05-09",
+        "score": 77,
+        "tech": ["scikit-learn", "OpenCV", "Vector Databases", "Python"]
+      },
+      {
+        "project_id": "P0177",
+        "title": "ShellSeeker",
+        "date": "2025-10-04",
+        "score": 65,
+        "tech": ["Neo4j", "SQL", "Cypher", "Vector Databases"]
+      },
+      {
+        "project_id": "P0184",
+        "title": "DepDrift",
+        "date": "2025-11-19",
+        "score": 71,
+        "tech": ["Vite", "GraphQL", "Redis", "Go", "Django", "Kafka"]
+      },
+      {
+        "project_id": "P0220",
+        "title": "SchemaSage",
+        "date": "2026-04-06",
+        "score": 75,
+        "tech": ["Django", "GraphQL", "React"]
+      },
+      {
+        "project_id": "P0232",
+        "title": "PromptForge",
+        "date": "2026-05-23",
+        "score": 53,
+        "tech": ["React", "Tailwind CSS", "tRPC", "HuggingFace"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 66.7,
     "first_seen": "2024-01-13",
@@ -106,7 +157,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -120,7 +171,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0177 (scored 65)",
+          "detail": "used in P0177 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -134,7 +185,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0232 (scored 53)",
+          "detail": "used in 2 projects, best P0220 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -148,7 +199,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0071 (scored 61)",
+          "detail": "used in P0071 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -162,7 +213,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0232 (scored 53)",
+          "detail": "used in P0232 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -176,7 +227,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0177 (scored 65)",
+          "detail": "used in P0177 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -190,7 +241,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0232 (scored 53)",
+          "detail": "used in P0232 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -204,7 +255,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0177 (scored 65)",
+          "detail": "used in 2 projects, best P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -218,7 +269,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0184 (scored 71)",
+          "detail": "used in P0184 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -232,7 +283,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0184 (scored 71)",
+          "detail": "used in P0184 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -246,7 +297,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0220 (scored 75)",
+          "detail": "used in 3 projects, best P0220 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -260,7 +311,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0177 (scored 65)",
+          "detail": "used in P0177 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -274,7 +325,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0080 (scored 65)",
+          "detail": "used in P0080 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -288,7 +339,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0232 (scored 53)",
+          "detail": "used in P0232 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -302,7 +353,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0071 (scored 61)",
+          "detail": "used in P0071 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -316,7 +367,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0184 (scored 71)",
+          "detail": "used in P0184 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -330,7 +381,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0080 (scored 65)",
+          "detail": "used in 2 projects, best P0080 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -344,7 +395,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0080 (scored 65)",
+          "detail": "used in P0080 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -358,7 +409,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0220 (scored 75)",
+          "detail": "used in 2 projects, best P0220 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -372,7 +423,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -386,7 +437,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0132 (scored 77)",
+          "detail": "used in P0132 (scored 77)",
           "weight": 0.8
         }
       ],
@@ -400,7 +451,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0184 (scored 71)",
+          "detail": "used in P0184 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -414,7 +465,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0080 (scored 65)",
+          "detail": "used in P0080 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -598,7 +649,7 @@
       "outcome": 40
     }
   },
-  "narrative": "Advait Patel is a B.Tech Computer Science and Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a Web3 builder. They have attended 8 of the 8 hackathons they registered for and submitted 7 projects (a 88% submission rate). They have won 2 prizes, including rank 2 at ForgeDelhi with \"SchemaSage\" (scored 75). Their strongest evidenced skills are Python, Neo4j, React, based on built P0132 (scored 77). They declare The Graph, Foundry, Hardhat with no supporting repository or project evidence on the platform. Last active 2026-09-15 — currently active.",
+  "narrative": "Advait Patel is a B.Tech Computer Science and Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a Web3 builder. They have attended 8 of the 8 hackathons they registered for and submitted 7 projects (a 88% submission rate). They have won 2 prizes, including rank 2 at ForgeDelhi with \"SchemaSage\" (scored 75). Their strongest evidenced skills are Python, Neo4j, React, based on used in P0132 (scored 77). They declare The Graph, Foundry, Hardhat with no supporting repository or project evidence on the platform. Last active 2026-09-15 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -644,56 +695,56 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0132 (scored 77)",
+      "claim": "Python: used in P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Neo4j: built P0177 (scored 65)",
+      "claim": "Neo4j: used in P0177 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0232 (scored 53)",
+      "claim": "React: used in 2 projects, best P0220 (scored 75)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0071 (scored 61)",
+      "claim": "Next.js: used in P0071 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0232 (scored 53)",
+      "claim": "Tailwind CSS: used in P0232 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0177 (scored 65)",
+      "claim": "SQL: used in P0177 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0232 (scored 53)",
+      "claim": "HuggingFace: used in P0232 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0177 (scored 65)",
+      "claim": "Vector Databases: used in 2 projects, best P0132 (scored 77)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

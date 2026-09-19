@@ -1,7 +1,7 @@
 {
   "user_id": "U0476",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.095Z",
+  "built_at": "2026-09-19T08:17:46.267Z",
   "identity": {
     "full_name": "Vanya Verma",
     "email": "vanya.verma@amitynoida.ac.in",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0043",
+        "title": "PhysioPose",
+        "date": "2024-06-25",
+        "score": 55,
+        "tech": ["Flutter", "Kotlin", "React Native", "scikit-learn", "Python"]
+      },
+      {
+        "project_id": "P0170",
+        "title": "AlumniAtlas",
+        "date": "2025-10-04",
+        "score": 59,
+        "tech": ["Neo4j", "Cypher", "Tableau", "Pinecone", "Knowledge Graphs"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 57,
     "first_seen": "2024-06-25",
@@ -57,7 +73,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -71,7 +87,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -85,7 +101,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -99,7 +115,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -113,7 +129,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -127,7 +143,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -141,7 +157,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -155,7 +171,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -169,7 +185,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0043 (scored 55)",
+          "detail": "used in P0043 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -183,7 +199,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -313,7 +329,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Vanya Verma is a B.Tech Electrical Engineering student at Amity University Noida, graduating in 2025, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Python, Neo4j, Cypher, based on built P0043 (scored 55). They declare The Graph, Solidity, Foundry with no supporting repository or project evidence on the platform. Last active 2026-08-16 — currently active.",
+  "narrative": "Vanya Verma is a B.Tech Electrical Engineering student at Amity University Noida, graduating in 2025, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Python, Neo4j, Cypher, based on used in P0043 (scored 55). They declare The Graph, Solidity, Foundry with no supporting repository or project evidence on the platform. Last active 2026-08-16 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -345,56 +361,56 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0043 (scored 55)",
+      "claim": "Python: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Neo4j: built P0170 (scored 59)",
+      "claim": "Neo4j: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Cypher: built P0170 (scored 59)",
+      "claim": "Cypher: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0170 (scored 59)",
+      "claim": "Knowledge Graphs: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0043 (scored 55)",
+      "claim": "Flutter: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kotlin: built P0043 (scored 55)",
+      "claim": "Kotlin: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0170 (scored 59)",
+      "claim": "Tableau: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0043 (scored 55)",
+      "claim": "scikit-learn: used in P0043 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

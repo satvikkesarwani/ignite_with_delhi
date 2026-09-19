@@ -1,7 +1,7 @@
 {
   "user_id": "U0218",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.075Z",
+  "built_at": "2026-09-19T08:17:46.248Z",
   "identity": {
     "full_name": "Aditi Khanna",
     "email": "aditi.khanna@mitmanipal.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0087",
+        "title": "StreetLightIQ",
+        "date": "2024-10-26",
+        "score": 62,
+        "tech": ["ESP32", "LoRaWAN", "Tableau", "FastAPI"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 62,
     "first_seen": "2024-10-24",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0087 (scored 62)",
+          "detail": "used in P0087 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0087 (scored 62)",
+          "detail": "used in P0087 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0087 (scored 62)",
+          "detail": "used in P0087 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0087 (scored 62)",
+          "detail": "used in P0087 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -256,7 +265,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Aditi Khanna is a M.Tech Mechanical Engineering student at Manipal Institute of Technology, graduating in 2025, who signed up as a Full-stack builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are FastAPI, ESP32, Tableau, based on built P0087 (scored 62). They declare Express, Next.js, Tailwind CSS with no supporting repository or project evidence on the platform. Last active 2026-01-23, 239 days ago — dormant and worth re-engaging.",
+  "narrative": "Aditi Khanna is a M.Tech Mechanical Engineering student at Manipal Institute of Technology, graduating in 2025, who signed up as a Full-stack builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are FastAPI, ESP32, Tableau, based on used in P0087 (scored 62). They declare Express, Next.js, Tailwind CSS with no supporting repository or project evidence on the platform. Last active 2026-01-23, 239 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -288,28 +297,28 @@
       "confidence": 1
     },
     {
-      "claim": "FastAPI: built P0087 (scored 62)",
+      "claim": "FastAPI: used in P0087 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0087 (scored 62)",
+      "claim": "ESP32: used in P0087 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0087 (scored 62)",
+      "claim": "Tableau: used in P0087 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LoRaWAN: built P0087 (scored 62)",
+      "claim": "LoRaWAN: used in P0087 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

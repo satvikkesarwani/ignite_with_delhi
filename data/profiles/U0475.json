@@ -1,7 +1,7 @@
 {
   "user_id": "U0475",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.095Z",
+  "built_at": "2026-09-19T08:17:46.267Z",
   "identity": {
     "full_name": "Naman Gupta",
     "email": "naman.gupta6@gmail.com",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0025",
+        "title": "SkillSetu",
+        "date": "2024-05-21",
+        "score": 53,
+        "tech": ["SQL", "TypeScript", "React Native", "tRPC", "Firebase", "DuckDB"]
+      },
+      {
+        "project_id": "P0111",
+        "title": "MicroHedge",
+        "date": "2025-02-17",
+        "score": 83,
+        "tech": ["GraphQL", "Docker", "FastAPI", "Node.js", "PostgreSQL", "Redis"]
+      },
+      {
+        "project_id": "P0130",
+        "title": "Interviewer",
+        "date": "2025-05-09",
+        "score": 51,
+        "tech": ["Node.js", "RAG", "TensorFlow", "Vector Databases", "OpenAI API"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 62.3,
     "first_seen": "2024-05-20",
@@ -74,7 +97,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in 2 projects, best P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -88,7 +111,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -102,7 +125,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -116,7 +139,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -130,7 +153,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0025 (scored 53)",
+          "detail": "used in P0025 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -144,7 +167,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -158,7 +181,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0025 (scored 53)",
+          "detail": "used in P0025 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -172,7 +195,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0025 (scored 53)",
+          "detail": "used in P0025 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -186,7 +209,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -200,7 +223,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -214,7 +237,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0111 (scored 83)",
+          "detail": "used in P0111 (scored 83)",
           "weight": 0.8
         }
       ],
@@ -228,7 +251,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -242,7 +265,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0025 (scored 53)",
+          "detail": "used in P0025 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -256,7 +279,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0025 (scored 53)",
+          "detail": "used in P0025 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -270,7 +293,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0025 (scored 53)",
+          "detail": "used in P0025 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -284,7 +307,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0130 (scored 51)",
+          "detail": "used in P0130 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -499,56 +522,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0130 (scored 51)",
+      "claim": "Node.js: used in 2 projects, best P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "RAG: built P0130 (scored 51)",
+      "claim": "RAG: used in P0130 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "FastAPI: built P0111 (scored 83)",
+      "claim": "FastAPI: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0111 (scored 83)",
+      "claim": "Docker: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0025 (scored 53)",
+      "claim": "TypeScript: used in P0025 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0111 (scored 83)",
+      "claim": "PostgreSQL: used in P0111 (scored 83)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0025 (scored 53)",
+      "claim": "SQL: used in P0025 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0025 (scored 53)",
+      "claim": "DuckDB: used in P0025 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

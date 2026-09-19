@@ -1,7 +1,7 @@
 {
   "user_id": "U0365",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.087Z",
+  "built_at": "2026-09-19T08:17:46.259Z",
   "identity": {
     "full_name": "Pranav Sen",
     "email": "pranav.sen@gmail.com",
@@ -23,6 +23,22 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0096",
+        "title": "FanFund",
+        "date": "2024-12-04",
+        "score": 69,
+        "tech": ["ethers.js", "Hardhat", "The Graph", "IPFS"]
+      },
+      {
+        "project_id": "P0122",
+        "title": "DoubtDesk",
+        "date": "2025-03-27",
+        "score": 63,
+        "tech": ["Next.js", "React", "TypeScript", "Swift", "MongoDB", "OpenAI API"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 66,
     "first_seen": "2024-01-13",
@@ -63,7 +79,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0096 (scored 69)",
+          "detail": "used in P0096 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -82,7 +98,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0096 (scored 69)",
+          "detail": "used in P0096 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -101,7 +117,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0096 (scored 69)",
+          "detail": "used in P0096 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -120,7 +136,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0096 (scored 69)",
+          "detail": "used in P0096 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -139,7 +155,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0122 (scored 63)",
+          "detail": "used in P0122 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -153,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0122 (scored 63)",
+          "detail": "used in P0122 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -167,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0122 (scored 63)",
+          "detail": "used in P0122 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -181,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0122 (scored 63)",
+          "detail": "used in P0122 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -195,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0122 (scored 63)",
+          "detail": "used in P0122 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -209,7 +225,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0122 (scored 63)",
+          "detail": "used in P0122 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -364,7 +380,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "The Graph: built P0096 (scored 69)",
+      "claim": "The Graph: used in P0096 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -378,7 +394,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "IPFS: built P0096 (scored 69)",
+      "claim": "IPFS: used in P0096 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -392,7 +408,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "ethers.js: built P0096 (scored 69)",
+      "claim": "ethers.js: used in P0096 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -406,7 +422,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Hardhat: built P0096 (scored 69)",
+      "claim": "Hardhat: used in P0096 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -420,28 +436,28 @@
       "confidence": 0.84
     },
     {
-      "claim": "TypeScript: built P0122 (scored 63)",
+      "claim": "TypeScript: used in P0122 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.84
     },
     {
-      "claim": "MongoDB: built P0122 (scored 63)",
+      "claim": "MongoDB: used in P0122 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0122 (scored 63)",
+      "claim": "React: used in P0122 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0122 (scored 63)",
+      "claim": "Next.js: used in P0122 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

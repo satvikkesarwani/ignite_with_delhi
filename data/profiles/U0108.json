@@ -1,7 +1,7 @@
 {
   "user_id": "U0108",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.068Z",
+  "built_at": "2026-09-19T08:17:46.240Z",
   "identity": {
     "full_name": "Isha Kumar",
     "email": "isha.kumar@pes.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0036",
+        "title": "MindLog",
+        "date": "2024-06-25",
+        "score": 73,
+        "tech": ["LLM Fine-tuning", "Redis", "Transformers"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 73,
     "first_seen": "2024-06-25",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0036 (scored 73)",
+          "detail": "used in P0036 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -202,7 +211,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Isha Kumar is a B.Tech Artificial Intelligence student at PES University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Transformers, Redis, LLM Fine-tuning, based on built P0036 (scored 73). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2025-07-07, 439 days ago — lapsed.",
+  "narrative": "Isha Kumar is a B.Tech Artificial Intelligence student at PES University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Transformers, Redis, LLM Fine-tuning, based on used in P0036 (scored 73). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2025-07-07, 439 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -234,21 +243,21 @@
       "confidence": 1
     },
     {
-      "claim": "Transformers: built P0036 (scored 73)",
+      "claim": "Transformers: used in P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0036 (scored 73)",
+      "claim": "Redis: used in P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LLM Fine-tuning: built P0036 (scored 73)",
+      "claim": "LLM Fine-tuning: used in P0036 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

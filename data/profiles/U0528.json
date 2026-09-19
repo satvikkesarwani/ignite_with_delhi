@@ -1,7 +1,7 @@
 {
   "user_id": "U0528",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.099Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Kartik Mishra",
     "email": "kartik.mishra@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0173",
+        "title": "SupplyGraph",
+        "date": "2025-10-04",
+        "score": 79,
+        "tech": ["Vector Databases", "Tableau", "Django", "Neo4j", "SQL", "Pinecone"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 79,
     "first_seen": "2025-10-04",
@@ -68,7 +77,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0173 (scored 79)",
+          "detail": "used in P0173 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -82,7 +91,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0173 (scored 79)",
+          "detail": "used in P0173 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -96,7 +105,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0173 (scored 79)",
+          "detail": "used in P0173 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -110,7 +119,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0173 (scored 79)",
+          "detail": "used in P0173 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -124,7 +133,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0173 (scored 79)",
+          "detail": "used in P0173 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -138,7 +147,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0173 (scored 79)",
+          "detail": "used in P0173 (scored 79)",
           "weight": 0.8
         }
       ],
@@ -263,7 +272,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Kartik Mishra is a M.Tech Electrical Engineering student at Amity Noida, graduating in 2027, who signed up as a Frontend builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at DeltaBuild with \"SupplyGraph\" (scored 79). Their strongest evidenced skills are Neo4j, SQL, Vector Databases, based on built P0173 (scored 79). They declare MongoDB, React, Vite with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-02-14, 217 days ago — dormant and worth re-engaging.",
+  "narrative": "Kartik Mishra is a M.Tech Electrical Engineering student at Amity Noida, graduating in 2027, who signed up as a Frontend builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at DeltaBuild with \"SupplyGraph\" (scored 79). Their strongest evidenced skills are Neo4j, SQL, Vector Databases, based on used in P0173 (scored 79). They declare MongoDB, React, Vite with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-02-14, 217 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -309,42 +318,42 @@
       "confidence": 1
     },
     {
-      "claim": "Neo4j: built P0173 (scored 79)",
+      "claim": "Neo4j: used in P0173 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0173 (scored 79)",
+      "claim": "SQL: used in P0173 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vector Databases: built P0173 (scored 79)",
+      "claim": "Vector Databases: used in P0173 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0173 (scored 79)",
+      "claim": "Tableau: used in P0173 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Django: built P0173 (scored 79)",
+      "claim": "Django: used in P0173 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pinecone: built P0173 (scored 79)",
+      "claim": "Pinecone: used in P0173 (scored 79)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

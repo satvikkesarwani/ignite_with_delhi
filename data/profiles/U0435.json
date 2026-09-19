@@ -1,7 +1,7 @@
 {
   "user_id": "U0435",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.092Z",
+  "built_at": "2026-09-19T08:17:46.265Z",
   "identity": {
     "full_name": "Advait Sethi",
     "email": "advait.sethi82@gmail.com",
@@ -23,6 +23,29 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0056",
+        "title": "LogLens",
+        "date": "2024-08-09",
+        "score": 71,
+        "tech": ["FastAPI", "Redis", "Terraform", "Docker", "GraphQL", "Django"]
+      },
+      {
+        "project_id": "P0148",
+        "title": "PhysioPose",
+        "date": "2025-06-12",
+        "score": 70,
+        "tech": ["Go", "Kafka", "Django", "RAG", "HuggingFace", "Java Spring"]
+      },
+      {
+        "project_id": "P0208",
+        "title": "SupplyStamp",
+        "date": "2026-02-20",
+        "score": 54,
+        "tech": ["Flask", "Vite", "IPFS", "Hardhat", "Foundry"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 65,
     "first_seen": "2024-08-07",
@@ -59,7 +82,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0148 (scored 70)",
+          "detail": "used in P0148 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -73,7 +96,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0056 (scored 71)",
+          "detail": "used in P0056 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -87,7 +110,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0056 (scored 71)",
+          "detail": "used in P0056 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -101,7 +124,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0148 (scored 70)",
+          "detail": "used in P0148 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -115,7 +138,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0148 (scored 70)",
+          "detail": "used in P0148 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -129,7 +152,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0056 (scored 71)",
+          "detail": "used in P0056 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -143,7 +166,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0056 (scored 71)",
+          "detail": "used in P0056 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -157,7 +180,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in P0208 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -171,7 +194,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in P0208 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -185,7 +208,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in P0208 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -199,7 +222,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in P0208 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -213,7 +236,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0056 (scored 71)",
+          "detail": "used in P0056 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -227,7 +250,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0148 (scored 70)",
+          "detail": "used in 2 projects, best P0056 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -241,7 +264,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0148 (scored 70)",
+          "detail": "used in P0148 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -255,7 +278,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0208 (scored 54)",
+          "detail": "used in P0208 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -269,7 +292,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0148 (scored 70)",
+          "detail": "used in P0148 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -424,7 +447,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Advait Sethi is a B.E. Electrical Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a Design builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). Their strongest evidenced skills are RAG, FastAPI, Docker, based on built P0148 (scored 70). They declare MongoDB, UX Research, Prototyping with no supporting repository or project evidence on the platform. Their judged scores have declined over time (71 → 70 → 54). Last active 2026-03-04, 199 days ago — dormant and worth re-engaging.",
+  "narrative": "Advait Sethi is a B.E. Electrical Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a Design builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). Their strongest evidenced skills are RAG, FastAPI, Docker, based on used in P0148 (scored 70). They declare MongoDB, UX Research, Prototyping with no supporting repository or project evidence on the platform. Their judged scores have declined over time (71 → 70 → 54). Last active 2026-03-04, 199 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -449,56 +472,56 @@
       "confidence": 1
     },
     {
-      "claim": "RAG: built P0148 (scored 70)",
+      "claim": "RAG: used in P0148 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "FastAPI: built P0056 (scored 71)",
+      "claim": "FastAPI: used in P0056 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0056 (scored 71)",
+      "claim": "Docker: used in P0056 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0148 (scored 70)",
+      "claim": "HuggingFace: used in P0148 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0148 (scored 70)",
+      "claim": "Go: used in P0148 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0056 (scored 71)",
+      "claim": "Redis: used in P0056 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "GraphQL: built P0056 (scored 71)",
+      "claim": "GraphQL: used in P0056 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Foundry: built P0208 (scored 54)",
+      "claim": "Foundry: used in P0208 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

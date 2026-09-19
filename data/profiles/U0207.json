@@ -1,7 +1,7 @@
 {
   "user_id": "U0207",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.075Z",
+  "built_at": "2026-09-19T08:17:46.247Z",
   "identity": {
     "full_name": "Parth Krishnan",
     "email": "parth.krishnan@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0160",
+        "title": "SolarSight",
+        "date": "2025-08-27",
+        "score": 55,
+        "tech": ["Node.js", "ESP32", "Vite", "Spark", "PostgreSQL"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 55,
     "first_seen": "2025-05-09",
@@ -58,7 +67,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0160 (scored 55)",
+          "detail": "used in P0160 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -72,7 +81,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0160 (scored 55)",
+          "detail": "used in P0160 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -86,7 +95,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0160 (scored 55)",
+          "detail": "used in P0160 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0160 (scored 55)",
+          "detail": "used in P0160 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -114,7 +123,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0160 (scored 55)",
+          "detail": "used in P0160 (scored 55)",
           "weight": 0.8
         }
       ],
@@ -253,7 +262,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Parth Krishnan is a MCA Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2026, who signed up as a ML/AI builder. They have attended 2 of the 3 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Node.js, PostgreSQL, ESP32, based on built P0160 (scored 55). They declare PyTorch, RAG, NumPy with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-08-21 — currently active.",
+  "narrative": "Parth Krishnan is a MCA Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2026, who signed up as a ML/AI builder. They have attended 2 of the 3 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Node.js, PostgreSQL, ESP32, based on used in P0160 (scored 55). They declare PyTorch, RAG, NumPy with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-08-21 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -285,35 +294,35 @@
       "confidence": 1
     },
     {
-      "claim": "Node.js: built P0160 (scored 55)",
+      "claim": "Node.js: used in P0160 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0160 (scored 55)",
+      "claim": "PostgreSQL: used in P0160 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0160 (scored 55)",
+      "claim": "ESP32: used in P0160 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0160 (scored 55)",
+      "claim": "Vite: used in P0160 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0160 (scored 55)",
+      "claim": "Spark: used in P0160 (scored 55)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

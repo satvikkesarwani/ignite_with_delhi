@@ -1,7 +1,7 @@
 {
   "user_id": "U0490",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.096Z",
+  "built_at": "2026-09-19T08:17:46.268Z",
   "identity": {
     "full_name": "Devansh Sethi",
     "email": "devansh.sethi@bennett.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0014",
+        "title": "CreditBridge",
+        "date": "2024-02-22",
+        "score": 49,
+        "tech": ["TypeScript", "MongoDB", "Next.js", "Kafka", "Go", "Docker"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 49,
     "first_seen": "2024-02-22",
@@ -57,7 +66,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0014 (scored 49)",
+          "detail": "used in P0014 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -71,7 +80,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0014 (scored 49)",
+          "detail": "used in P0014 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0014 (scored 49)",
+          "detail": "used in P0014 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0014 (scored 49)",
+          "detail": "used in P0014 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -113,7 +122,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0014 (scored 49)",
+          "detail": "used in P0014 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -127,7 +136,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0014 (scored 49)",
+          "detail": "used in P0014 (scored 49)",
           "weight": 0.8
         }
       ],
@@ -252,7 +261,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Devansh Sethi is a M.Tech Electronics and Communication student at Bennett University, graduating in 2028, who signed up as a Mobile builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are MongoDB, Docker, Next.js, based on built P0014 (scored 49). They declare PostgreSQL, Flutter, Firebase with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-06-04, 107 days ago — cooling off.",
+  "narrative": "Devansh Sethi is a M.Tech Electronics and Communication student at Bennett University, graduating in 2028, who signed up as a Mobile builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are MongoDB, Docker, Next.js, based on used in P0014 (scored 49). They declare PostgreSQL, Flutter, Firebase with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-06-04, 107 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -291,42 +300,42 @@
       "confidence": 1
     },
     {
-      "claim": "MongoDB: built P0014 (scored 49)",
+      "claim": "MongoDB: used in P0014 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0014 (scored 49)",
+      "claim": "Docker: used in P0014 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0014 (scored 49)",
+      "claim": "Next.js: used in P0014 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0014 (scored 49)",
+      "claim": "TypeScript: used in P0014 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0014 (scored 49)",
+      "claim": "Go: used in P0014 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kafka: built P0014 (scored 49)",
+      "claim": "Kafka: used in P0014 (scored 49)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

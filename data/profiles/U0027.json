@@ -1,7 +1,7 @@
 {
   "user_id": "U0027",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.057Z",
+  "built_at": "2026-09-19T08:17:46.232Z",
   "identity": {
     "full_name": "Shaurya Kulkarni",
     "email": "shaurya.kulkarni@mait.ac.in",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0076",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 54,
+        "tech": ["Next.js", "TypeScript", "NumPy", "SQL"]
+      },
+      {
+        "project_id": "P0123",
+        "title": "GradeGrain",
+        "date": "2025-03-27",
+        "score": 64,
+        "tech": ["Swift", "MongoDB", "tRPC"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 59,
     "first_seen": "2024-09-14",
@@ -61,7 +77,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -75,7 +91,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0123 (scored 64)",
+          "detail": "used in P0123 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -89,7 +105,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -103,7 +119,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -117,7 +133,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0123 (scored 64)",
+          "detail": "used in P0123 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -131,7 +147,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0123 (scored 64)",
+          "detail": "used in P0123 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -145,7 +161,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0076 (scored 54)",
+          "detail": "used in P0076 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -307,49 +323,49 @@
       "confidence": 0.84
     },
     {
-      "claim": "TypeScript: built P0076 (scored 54)",
+      "claim": "TypeScript: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.84
     },
     {
-      "claim": "MongoDB: built P0123 (scored 64)",
+      "claim": "MongoDB: used in P0123 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0076 (scored 54)",
+      "claim": "Next.js: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0076 (scored 54)",
+      "claim": "SQL: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0123 (scored 64)",
+      "claim": "tRPC: used in P0123 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Swift: built P0123 (scored 64)",
+      "claim": "Swift: used in P0123 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0076 (scored 54)",
+      "claim": "NumPy: used in P0076 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

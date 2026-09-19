@@ -1,7 +1,7 @@
 {
   "user_id": "U0556",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.101Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Aradhya Dubey",
     "email": "aradhya.dubey53@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.33,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0168",
+        "title": "GridGaze",
+        "date": "2025-08-27",
+        "score": 48,
+        "tech": ["DuckDB", "SQL", "Tableau", "tRPC", "Spark", "Arduino"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 48,
     "first_seen": "2024-04-06",
@@ -57,7 +66,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0168 (scored 48)",
+          "detail": "used in P0168 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -71,7 +80,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0168 (scored 48)",
+          "detail": "used in P0168 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0168 (scored 48)",
+          "detail": "used in P0168 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0168 (scored 48)",
+          "detail": "used in P0168 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -113,7 +122,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0168 (scored 48)",
+          "detail": "used in P0168 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -127,7 +136,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0168 (scored 48)",
+          "detail": "used in P0168 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -308,7 +317,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Aradhya Dubey is a MCA Information Technology student at College of Engineering Pune, graduating in 2026, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 1 project (a 33% submission rate). Their strongest evidenced skills are SQL, DuckDB, Arduino, based on built P0168 (scored 48). They declare Kubernetes, GitHub Actions, GCP with no supporting repository or project evidence on the platform. Last active 2026-02-21, 210 days ago — dormant and worth re-engaging.",
+  "narrative": "Aradhya Dubey is a MCA Information Technology student at College of Engineering Pune, graduating in 2026, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 1 project (a 33% submission rate). Their strongest evidenced skills are SQL, DuckDB, Arduino, based on used in P0168 (scored 48). They declare Kubernetes, GitHub Actions, GCP with no supporting repository or project evidence on the platform. Last active 2026-02-21, 210 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -340,42 +349,42 @@
       "confidence": 1
     },
     {
-      "claim": "SQL: built P0168 (scored 48)",
+      "claim": "SQL: used in P0168 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0168 (scored 48)",
+      "claim": "DuckDB: used in P0168 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0168 (scored 48)",
+      "claim": "Arduino: used in P0168 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0168 (scored 48)",
+      "claim": "tRPC: used in P0168 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0168 (scored 48)",
+      "claim": "Tableau: used in P0168 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0168 (scored 48)",
+      "claim": "Spark: used in P0168 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

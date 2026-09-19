@@ -1,7 +1,7 @@
 {
   "user_id": "U0183",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.073Z",
+  "built_at": "2026-09-19T08:17:46.246Z",
   "identity": {
     "full_name": "Aanya Kumar",
     "email": "aanya.kumar@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0195",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 50,
+        "tech": ["Tableau", "Docker", "LoRaWAN", "Embedded C"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 50,
     "first_seen": "2024-04-06",
@@ -57,7 +66,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0195 (scored 50)",
+          "detail": "used in P0195 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -71,7 +80,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0195 (scored 50)",
+          "detail": "used in P0195 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0195 (scored 50)",
+          "detail": "used in P0195 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0195 (scored 50)",
+          "detail": "used in P0195 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -215,7 +224,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Aanya Kumar is a M.Tech Mathematics and Computing student at College of Engineering Pune, graduating in 2026, who signed up as a Full-stack builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Docker, Embedded C, Tableau, based on built P0195 (scored 50). They declare Express, MongoDB, tRPC with no supporting repository or project evidence on the platform. Mentors rated them 2 out of 5 across 1 session. Last active 2026-03-29, 174 days ago — cooling off.",
+  "narrative": "Aanya Kumar is a M.Tech Mathematics and Computing student at College of Engineering Pune, graduating in 2026, who signed up as a Full-stack builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Docker, Embedded C, Tableau, based on used in P0195 (scored 50). They declare Express, MongoDB, tRPC with no supporting repository or project evidence on the platform. Mentors rated them 2 out of 5 across 1 session. Last active 2026-03-29, 174 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -254,28 +263,28 @@
       "confidence": 1
     },
     {
-      "claim": "Docker: built P0195 (scored 50)",
+      "claim": "Docker: used in P0195 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0195 (scored 50)",
+      "claim": "Embedded C: used in P0195 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0195 (scored 50)",
+      "claim": "Tableau: used in P0195 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LoRaWAN: built P0195 (scored 50)",
+      "claim": "LoRaWAN: used in P0195 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

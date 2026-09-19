@@ -1,7 +1,7 @@
 {
   "user_id": "U0004",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.054Z",
+  "built_at": "2026-09-19T08:22:35.783Z",
   "identity": {
     "full_name": "Shiv Verma",
     "email": "shiv.verma.design@gmail.com",
@@ -23,6 +23,7 @@
     "submission_rate": 0,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2025-08-27",
@@ -111,8 +112,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Shiv Verma is a B.Des Design student at Delhi Technological University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for, but have not submitted a project. They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2025-08-27, 388 days ago — lapsed.",
-  "narrative_status": "template",
+  "narrative": "Shiv Verma is a first-year Design student at Delhi Technological University who registered for one hackathon and attended it on record. Their profile lists Figma, UX Research, and Prototyping as self-declared skills, though each carries a confidence score of 0.3 and is supported only by the signup declaration. Since that single event, their activity has lapsed: they have not submitted any projects, earned prizes, or engaged further, and their last recorded interaction was on 2025-08-27, 388 days ago. For an organizer considering a future invitation, the practical judgement is that their participation history offers no demonstrated impact or sustained engagement, making them a low-priority candidate for events that value ongoing contribution.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 1 hackathons, attended 1",

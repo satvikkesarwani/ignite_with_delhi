@@ -1,7 +1,7 @@
 {
   "user_id": "U0092",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.067Z",
+  "built_at": "2026-09-19T08:17:46.239Z",
   "identity": {
     "full_name": "Diya Dhillon",
     "email": "diya.dhillon35@gmail.com",
@@ -23,6 +23,22 @@
     "submission_rate": 0.67,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0114",
+        "title": "SplitFair",
+        "date": "2025-02-17",
+        "score": 59,
+        "tech": ["dbt", "SQL", "DuckDB", "Spark", "Django"]
+      },
+      {
+        "project_id": "P0203",
+        "title": "DAOdesk",
+        "date": "2026-02-20",
+        "score": 51,
+        "tech": ["tRPC", "Vite", "Kafka", "Go", "Django", "Solidity"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 55,
     "first_seen": "2025-02-15",
@@ -63,7 +79,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0203 (scored 51)",
+          "detail": "used in P0203 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -82,7 +98,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0203 (scored 51)",
+          "detail": "used in 2 projects, best P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -101,7 +117,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0203 (scored 51)",
+          "detail": "used in P0203 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -115,7 +131,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -129,7 +145,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -143,7 +159,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -157,7 +173,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0203 (scored 51)",
+          "detail": "used in P0203 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -171,7 +187,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0203 (scored 51)",
+          "detail": "used in P0203 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -185,7 +201,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0203 (scored 51)",
+          "detail": "used in P0203 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -199,7 +215,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0114 (scored 59)",
+          "detail": "used in P0114 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -319,7 +335,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Go: built P0203 (scored 51)",
+      "claim": "Go: used in P0203 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -333,7 +349,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Django: built P0203 (scored 51)",
+      "claim": "Django: used in 2 projects, best P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -347,42 +363,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Kafka: built P0203 (scored 51)",
+      "claim": "Kafka: used in P0203 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "SQL: built P0114 (scored 59)",
+      "claim": "SQL: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0114 (scored 59)",
+      "claim": "dbt: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0114 (scored 59)",
+      "claim": "DuckDB: used in P0114 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0203 (scored 51)",
+      "claim": "tRPC: used in P0203 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0203 (scored 51)",
+      "claim": "Solidity: used in P0203 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

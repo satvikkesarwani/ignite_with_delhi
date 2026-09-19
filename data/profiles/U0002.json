@@ -1,7 +1,7 @@
 {
   "user_id": "U0002",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.054Z",
+  "built_at": "2026-09-19T08:22:35.782Z",
   "identity": {
     "full_name": "Shiv Sharma",
     "email": "shivsharma2027@gmail.com",
@@ -23,6 +23,22 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0120",
+        "title": "AttendAR",
+        "date": "2025-03-27",
+        "score": 50,
+        "tech": ["Firebase", "Flutter", "React", "Vite"]
+      },
+      {
+        "project_id": "P0170",
+        "title": "AlumniAtlas",
+        "date": "2025-10-04",
+        "score": 59,
+        "tech": ["Neo4j", "Cypher", "Tableau", "Pinecone", "Knowledge Graphs"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 54.5,
     "first_seen": "2025-03-25",
@@ -56,7 +72,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -70,7 +86,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0120 (scored 50)",
+          "detail": "used in P0120 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -84,7 +100,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -98,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -112,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0120 (scored 50)",
+          "detail": "used in P0120 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -126,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0120 (scored 50)",
+          "detail": "used in P0120 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -140,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -154,7 +170,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0120 (scored 50)",
+          "detail": "used in P0120 (scored 50)",
           "weight": 0.8
         }
       ],
@@ -168,7 +184,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0170 (scored 59)",
+          "detail": "used in P0170 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -270,8 +286,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Shiv Sharma is a B.Tech Information Technology student at Amity University Noida, graduating in 2027, who signed up as a Backend builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Neo4j, React, Cypher, based on built P0170 (scored 59). They declare Node.js, Express, MongoDB with no supporting repository or project evidence on the platform. Mentors rated them 3 out of 5 across 1 session. Last active 2025-10-10, 344 days ago — dormant and worth re-engaging.",
-  "narrative_status": "template",
+  "narrative": "Shiv Sharma is a B.Tech Information Technology student at Amity University Noida graduating in 2027 who has registered for two hackathons and attended both, submitting two projects with a 100% submission rate. They are demonstrably skilled in Neo4j, Cypher, and Knowledge Graphs, each with 0.8 confidence and evidence from project P0170 where they scored 59; they also have practical experience with React, Flutter, and Firebase from project P0120, where they scored 50. Their involvement has been consistent in attendance but shows a dormant trajectory with insufficient data, reflected in average scores of 54.5 and a mentor score of 3 from a single session, and they have been inactive for 344 days since 2025-10-10. For an organizer deciding whether to invite them, it is practical to note that their limited project scores and extended inactivity suggest they may not bring current competitive momentum, though their declared skills in backend-adjacent technologies could be refreshed with active re-engagement.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 2 hackathons, attended 2",
@@ -309,56 +325,56 @@
       "confidence": 1
     },
     {
-      "claim": "Neo4j: built P0170 (scored 59)",
+      "claim": "Neo4j: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0120 (scored 50)",
+      "claim": "React: used in P0120 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Cypher: built P0170 (scored 59)",
+      "claim": "Cypher: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Knowledge Graphs: built P0170 (scored 59)",
+      "claim": "Knowledge Graphs: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0120 (scored 50)",
+      "claim": "Flutter: used in P0120 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Firebase: built P0120 (scored 50)",
+      "claim": "Firebase: used in P0120 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tableau: built P0170 (scored 59)",
+      "claim": "Tableau: used in P0170 (scored 59)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0120 (scored 50)",
+      "claim": "Vite: used in P0120 (scored 50)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

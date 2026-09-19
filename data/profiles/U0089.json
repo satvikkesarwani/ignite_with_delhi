@@ -1,7 +1,7 @@
 {
   "user_id": "U0089",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.063Z",
+  "built_at": "2026-09-19T08:17:46.239Z",
   "identity": {
     "full_name": "Ishaan Nanda",
     "email": "ishaan.nanda40@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0026",
+        "title": "ShelterFind",
+        "date": "2024-05-21",
+        "score": 69,
+        "tech": ["Flutter", "Jetpack Compose", "Firebase", "Vite", "Airflow", "tRPC"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 69,
     "first_seen": "2024-05-20",
@@ -55,7 +64,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0026 (scored 69)",
+          "detail": "used in P0026 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -69,7 +78,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0026 (scored 69)",
+          "detail": "used in P0026 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -83,7 +92,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0026 (scored 69)",
+          "detail": "used in P0026 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -97,7 +106,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0026 (scored 69)",
+          "detail": "used in P0026 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -111,7 +120,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0026 (scored 69)",
+          "detail": "used in P0026 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -125,7 +134,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0026 (scored 69)",
+          "detail": "used in P0026 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -236,7 +245,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Ishaan Nanda is a MCA Computer Science and Engineering student at PES University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Airflow, Flutter, Firebase, based on built P0026 (scored 69). They declare Figma, UX Research, Design Systems with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2025-11-21, 302 days ago — dormant and worth re-engaging.",
+  "narrative": "Ishaan Nanda is a MCA Computer Science and Engineering student at PES University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Airflow, Flutter, Firebase, based on used in P0026 (scored 69). They declare Figma, UX Research, Design Systems with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2025-11-21, 302 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -275,42 +284,42 @@
       "confidence": 1
     },
     {
-      "claim": "Airflow: built P0026 (scored 69)",
+      "claim": "Airflow: used in P0026 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0026 (scored 69)",
+      "claim": "Flutter: used in P0026 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Firebase: built P0026 (scored 69)",
+      "claim": "Firebase: used in P0026 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0026 (scored 69)",
+      "claim": "tRPC: used in P0026 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0026 (scored 69)",
+      "claim": "Vite: used in P0026 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Jetpack Compose: built P0026 (scored 69)",
+      "claim": "Jetpack Compose: used in P0026 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

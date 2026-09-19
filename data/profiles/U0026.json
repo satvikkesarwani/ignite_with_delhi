@@ -1,7 +1,7 @@
 {
   "user_id": "U0026",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.057Z",
+  "built_at": "2026-09-19T08:17:46.232Z",
   "identity": {
     "full_name": "Hemant Singhal",
     "email": "hemant.singhal38@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0238",
+        "title": "StandupBot",
+        "date": "2026-05-23",
+        "score": 78,
+        "tech": ["tRPC", "Vite", "React", "Redis", "gRPC", "NetworkX"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 78,
     "first_seen": "2025-01-10",
@@ -74,7 +83,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -88,7 +97,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -102,7 +111,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -116,7 +125,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -130,7 +139,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -144,7 +153,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0238 (scored 78)",
+          "detail": "used in P0238 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -303,7 +312,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Hemant Singhal is a B.Tech Mechanical Engineering student at Indira Gandhi Delhi Technical University for Women, graduating in 2028, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including Best use of Cognee at Ignite Delhi Monsoon II with \"StandupBot\" (scored 78). Their strongest evidenced skills are React, Redis, NetworkX, based on built P0238 (scored 78). They declare MQTT, LoRaWAN, Raspberry Pi with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-05-28, 114 days ago — cooling off.",
+  "narrative": "Hemant Singhal is a B.Tech Mechanical Engineering student at Indira Gandhi Delhi Technical University for Women, graduating in 2028, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including Best use of Cognee at Ignite Delhi Monsoon II with \"StandupBot\" (scored 78). Their strongest evidenced skills are React, Redis, NetworkX, based on used in P0238 (scored 78). They declare MQTT, LoRaWAN, Raspberry Pi with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-05-28, 114 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -349,42 +358,42 @@
       "confidence": 1
     },
     {
-      "claim": "React: built P0238 (scored 78)",
+      "claim": "React: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0238 (scored 78)",
+      "claim": "Redis: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NetworkX: built P0238 (scored 78)",
+      "claim": "NetworkX: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0238 (scored 78)",
+      "claim": "tRPC: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0238 (scored 78)",
+      "claim": "Vite: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "gRPC: built P0238 (scored 78)",
+      "claim": "gRPC: used in P0238 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

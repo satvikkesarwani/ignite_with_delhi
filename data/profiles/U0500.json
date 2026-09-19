@@ -1,7 +1,7 @@
 {
   "user_id": "U0500",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.097Z",
+  "built_at": "2026-09-19T08:17:46.269Z",
   "identity": {
     "full_name": "Gaurav Reddy",
     "email": "gaurav.reddy@pes.ac.in",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0010",
+        "title": "CreditBridge",
+        "date": "2024-02-22",
+        "score": 45,
+        "tech": ["TypeScript", "Go", "Django", "Pandas", "Express"]
+      },
+      {
+        "project_id": "P0115",
+        "title": "FraudFence",
+        "date": "2025-02-17",
+        "score": 62,
+        "tech": ["Airflow", "Redis", "dbt", "Flask"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 53.5,
     "first_seen": "2024-02-22",
@@ -67,7 +83,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -81,7 +97,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -95,7 +111,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -109,7 +125,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -123,7 +139,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -137,7 +153,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -151,7 +167,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -165,7 +181,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0010 (scored 45)",
+          "detail": "used in P0010 (scored 45)",
           "weight": 0.8
         }
       ],
@@ -179,7 +195,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -314,7 +330,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Gaurav Reddy is a M.Tech Information Technology student at PES University, graduating in 2027, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at StackSprint with \"FraudFence\" (scored 62). Their strongest evidenced skills are Express, TypeScript, Pandas, based on built P0010 (scored 45). They declare Embedded C, LoRaWAN, Raspberry Pi with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2025-11-08, 315 days ago — dormant and worth re-engaging.",
+  "narrative": "Gaurav Reddy is a M.Tech Information Technology student at PES University, graduating in 2027, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at StackSprint with \"FraudFence\" (scored 62). Their strongest evidenced skills are Express, TypeScript, Pandas, based on used in P0010 (scored 45). They declare Embedded C, LoRaWAN, Raspberry Pi with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2025-11-08, 315 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -360,56 +376,56 @@
       "confidence": 1
     },
     {
-      "claim": "Express: built P0010 (scored 45)",
+      "claim": "Express: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0010 (scored 45)",
+      "claim": "TypeScript: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0010 (scored 45)",
+      "claim": "Pandas: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0115 (scored 62)",
+      "claim": "Airflow: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0115 (scored 62)",
+      "claim": "dbt: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0010 (scored 45)",
+      "claim": "Go: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0115 (scored 62)",
+      "claim": "Redis: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Django: built P0010 (scored 45)",
+      "claim": "Django: used in P0010 (scored 45)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

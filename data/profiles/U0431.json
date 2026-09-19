@@ -1,7 +1,7 @@
 {
   "user_id": "U0431",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.092Z",
+  "built_at": "2026-09-19T08:17:46.265Z",
   "identity": {
     "full_name": "Zayan Subramanian",
     "email": "zayan.subramanian@pes.ac.in",
@@ -44,6 +44,36 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0048",
+        "title": "PhysioPose",
+        "date": "2024-06-25",
+        "score": 64,
+        "tech": ["LangChain", "Python", "OpenCV", "RAG", "OpenAI API"]
+      },
+      {
+        "project_id": "P0057",
+        "title": "FlakeFinder",
+        "date": "2024-08-09",
+        "score": 61,
+        "tech": ["TypeScript", "GCP", "Terraform"]
+      },
+      {
+        "project_id": "P0079",
+        "title": "SignalSense",
+        "date": "2024-10-26",
+        "score": 84,
+        "tech": ["MQTT", "Django", "Embedded C"]
+      },
+      {
+        "project_id": "P0115",
+        "title": "FraudFence",
+        "date": "2025-02-17",
+        "score": 62,
+        "tech": ["Airflow", "Redis", "dbt", "Flask"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 67.8,
     "first_seen": "2024-06-25",
@@ -85,7 +115,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -104,7 +134,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -123,7 +153,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -142,7 +172,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -161,7 +191,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -175,7 +205,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0057 (scored 61)",
+          "detail": "used in P0057 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -189,7 +219,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -203,7 +233,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -217,7 +247,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0079 (scored 84)",
+          "detail": "used in P0079 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -231,7 +261,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0079 (scored 84)",
+          "detail": "used in P0079 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -245,7 +275,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0057 (scored 61)",
+          "detail": "used in P0057 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -259,7 +289,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0057 (scored 61)",
+          "detail": "used in P0057 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -273,7 +303,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0079 (scored 84)",
+          "detail": "used in P0079 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -287,7 +317,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -301,7 +331,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0115 (scored 62)",
+          "detail": "used in P0115 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -436,7 +466,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Python: built P0048 (scored 64)",
+      "claim": "Python: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -450,7 +480,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0048 (scored 64)",
+      "claim": "LangChain: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -464,7 +494,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "RAG: built P0048 (scored 64)",
+      "claim": "RAG: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -478,7 +508,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Airflow: built P0115 (scored 62)",
+      "claim": "Airflow: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -492,28 +522,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "OpenAI API: built P0048 (scored 64)",
+      "claim": "OpenAI API: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0057 (scored 61)",
+      "claim": "TypeScript: used in P0057 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0115 (scored 62)",
+      "claim": "dbt: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0115 (scored 62)",
+      "claim": "Redis: used in P0115 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0133",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.070Z",
+  "built_at": "2026-09-19T08:17:46.242Z",
   "identity": {
     "full_name": "Sahana Shah",
     "email": "sahana.shah@ggsipu.ac.in",
@@ -23,6 +23,22 @@
     "submission_rate": 0.67,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0146",
+        "title": "DoseDiary",
+        "date": "2025-06-12",
+        "score": 46,
+        "tech": ["Swift", "scikit-learn", "OpenAI API", "TensorFlow"]
+      },
+      {
+        "project_id": "P0204",
+        "title": "SupplyStamp",
+        "date": "2026-02-20",
+        "score": 40,
+        "tech": ["Java Spring", "IPFS", "React", "Solidity"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 43,
     "first_seen": "2025-03-25",
@@ -62,7 +78,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -76,7 +92,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -90,7 +106,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -104,7 +120,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -118,7 +134,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -132,7 +148,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -146,7 +162,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -160,7 +176,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0146 (scored 46)",
+          "detail": "used in P0146 (scored 46)",
           "weight": 0.8
         }
       ],
@@ -334,56 +350,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Java Spring: built P0204 (scored 40)",
+      "claim": "Java Spring: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0204 (scored 40)",
+      "claim": "React: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0146 (scored 46)",
+      "claim": "OpenAI API: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0204 (scored 40)",
+      "claim": "Solidity: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "IPFS: built P0204 (scored 40)",
+      "claim": "IPFS: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Swift: built P0146 (scored 46)",
+      "claim": "Swift: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0146 (scored 46)",
+      "claim": "scikit-learn: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TensorFlow: built P0146 (scored 46)",
+      "claim": "TensorFlow: used in P0146 (scored 46)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

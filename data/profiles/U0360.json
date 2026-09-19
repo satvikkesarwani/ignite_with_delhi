@@ -1,7 +1,7 @@
 {
   "user_id": "U0360",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.087Z",
+  "built_at": "2026-09-19T08:17:46.259Z",
   "identity": {
     "full_name": "Isha Pandey",
     "email": "isha.pandey17@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0125",
+        "title": "SyllabusSync",
+        "date": "2025-03-27",
+        "score": 70,
+        "tech": ["Next.js", "Flutter", "Node.js"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 70,
     "first_seen": "2025-03-25",
@@ -71,7 +80,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0125 (scored 70)",
+          "detail": "used in P0125 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -85,7 +94,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0125 (scored 70)",
+          "detail": "used in P0125 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -99,7 +108,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0125 (scored 70)",
+          "detail": "used in P0125 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -270,21 +279,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0125 (scored 70)",
+      "claim": "Next.js: used in P0125 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0125 (scored 70)",
+      "claim": "Node.js: used in P0125 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0125 (scored 70)",
+      "claim": "Flutter: used in P0125 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0457",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.094Z",
+  "built_at": "2026-09-19T08:17:46.266Z",
   "identity": {
     "full_name": "Zayan Chopra",
     "email": "zayan.chopra@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0144",
+        "title": "BloodBridge",
+        "date": "2025-06-12",
+        "score": 74,
+        "tech": ["Jetpack Compose", "Swift", "Flutter"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 74,
     "first_seen": "2025-06-12",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0144 (scored 74)",
+          "detail": "used in P0144 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0144 (scored 74)",
+          "detail": "used in P0144 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0144 (scored 74)",
+          "detail": "used in P0144 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -202,7 +211,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Zayan Chopra is a B.Des Electrical Engineering student at College of Engineering Pune, graduating in 2025, who signed up as a Design builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Flutter, Swift, Jetpack Compose, based on built P0144 (scored 74). They declare Next.js, Figma, UX Research with no supporting repository or project evidence on the platform. Last active 2026-03-20, 183 days ago — dormant and worth re-engaging. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative": "Zayan Chopra is a B.Des Electrical Engineering student at College of Engineering Pune, graduating in 2025, who signed up as a Design builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Flutter, Swift, Jetpack Compose, based on used in P0144 (scored 74). They declare Next.js, Figma, UX Research with no supporting repository or project evidence on the platform. Last active 2026-03-20, 183 days ago — dormant and worth re-engaging. They have not consented to outreach, so they must be excluded from campaigns.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -227,21 +236,21 @@
       "confidence": 1
     },
     {
-      "claim": "Flutter: built P0144 (scored 74)",
+      "claim": "Flutter: used in P0144 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Swift: built P0144 (scored 74)",
+      "claim": "Swift: used in P0144 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Jetpack Compose: built P0144 (scored 74)",
+      "claim": "Jetpack Compose: used in P0144 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

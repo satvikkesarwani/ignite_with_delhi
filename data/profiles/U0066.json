@@ -1,7 +1,7 @@
 {
   "user_id": "U0066",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.061Z",
+  "built_at": "2026-09-19T08:17:46.235Z",
   "identity": {
     "full_name": "Prateek Mittal",
     "email": "prateek.mittal@bvcoe.ac.in",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0044",
+        "title": "VaxTrack",
+        "date": "2024-06-25",
+        "score": 65,
+        "tech": ["Kotlin", "Swift", "React Native"]
+      },
+      {
+        "project_id": "P0119",
+        "title": "SkillPath",
+        "date": "2025-03-27",
+        "score": 72,
+        "tech": ["TypeScript", "PostgreSQL", "Swift", "Kotlin", "Tailwind CSS"]
+      },
+      {
+        "project_id": "P0227",
+        "title": "PromptForge",
+        "date": "2026-05-23",
+        "score": 42,
+        "tech": ["React", "FastAPI", "TypeScript", "Tailwind CSS", "PostgreSQL"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 59.7,
     "first_seen": "2024-06-25",
@@ -79,7 +102,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in 2 projects, best P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -98,7 +121,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in 2 projects, best P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -117,7 +140,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in 2 projects, best P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -131,7 +154,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -145,7 +168,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -159,7 +182,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in 2 projects, best P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -173,7 +196,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0119 (scored 72)",
+          "detail": "used in 2 projects, best P0119 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -187,7 +210,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0044 (scored 65)",
+          "detail": "used in P0044 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -360,7 +383,7 @@
       "confidence": 0.87
     },
     {
-      "claim": "TypeScript: built P0227 (scored 42)",
+      "claim": "TypeScript: used in 2 projects, best P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -374,7 +397,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0227 (scored 42)",
+      "claim": "PostgreSQL: used in 2 projects, best P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -388,42 +411,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tailwind CSS: built P0227 (scored 42)",
+      "claim": "Tailwind CSS: used in 2 projects, best P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0227 (scored 42)",
+      "claim": "FastAPI: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0227 (scored 42)",
+      "claim": "React: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Kotlin: built P0119 (scored 72)",
+      "claim": "Kotlin: used in 2 projects, best P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Swift: built P0119 (scored 72)",
+      "claim": "Swift: used in 2 projects, best P0119 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React Native: built P0044 (scored 65)",
+      "claim": "React Native: used in P0044 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

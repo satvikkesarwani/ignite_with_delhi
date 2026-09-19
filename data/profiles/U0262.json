@@ -1,7 +1,7 @@
 {
   "user_id": "U0262",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.081Z",
+  "built_at": "2026-09-19T08:17:46.253Z",
   "identity": {
     "full_name": "Rahul Yadav",
     "email": "rahul.yadav68@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0005",
+        "title": "ReadRight",
+        "date": "2024-01-14",
+        "score": 63,
+        "tech": ["React", "Vite", "RAG", "Jetpack Compose"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 63,
     "first_seen": "2024-01-13",
@@ -62,7 +71,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0005 (scored 63)",
+          "detail": "used in P0005 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -76,7 +85,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0005 (scored 63)",
+          "detail": "used in P0005 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -90,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0005 (scored 63)",
+          "detail": "used in P0005 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -104,7 +113,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0005 (scored 63)",
+          "detail": "used in P0005 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -273,28 +282,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "RAG: built P0005 (scored 63)",
+      "claim": "RAG: used in P0005 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0005 (scored 63)",
+      "claim": "React: used in P0005 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0005 (scored 63)",
+      "claim": "Vite: used in P0005 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Jetpack Compose: built P0005 (scored 63)",
+      "claim": "Jetpack Compose: used in P0005 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

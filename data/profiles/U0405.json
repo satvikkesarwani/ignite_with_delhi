@@ -1,7 +1,7 @@
 {
   "user_id": "U0405",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.089Z",
+  "built_at": "2026-09-19T08:17:46.261Z",
   "identity": {
     "full_name": "Aryan Dubey",
     "email": "aryan.dubey91@gmail.com",
@@ -44,6 +44,22 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0022",
+        "title": "LegalRAG",
+        "date": "2024-04-06",
+        "score": 54,
+        "tech": ["scikit-learn", "PostgreSQL", "OpenCV", "OpenAI API", "Java Spring", "LangChain"]
+      },
+      {
+        "project_id": "P0255",
+        "title": "Interviewer",
+        "date": "2026-08-08",
+        "score": 63,
+        "tech": ["Express", "Next.js", "Vite", "OpenAI API", "HuggingFace"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 58.5,
     "first_seen": "2024-02-22",
@@ -83,7 +99,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -102,7 +118,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -121,7 +137,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -135,7 +151,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0022 (scored 54)",
+          "detail": "used in P0022 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -149,7 +165,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0022 (scored 54)",
+          "detail": "used in P0022 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -163,7 +179,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -177,7 +193,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in 2 projects, best P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -191,7 +207,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0022 (scored 54)",
+          "detail": "used in P0022 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -205,7 +221,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0022 (scored 54)",
+          "detail": "used in P0022 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -219,7 +235,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0022 (scored 54)",
+          "detail": "used in P0022 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -373,7 +389,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0255 (scored 63)",
+      "claim": "Express: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -387,7 +403,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0255 (scored 63)",
+      "claim": "Next.js: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -401,42 +417,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vite: built P0255 (scored 63)",
+      "claim": "Vite: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0022 (scored 54)",
+      "claim": "LangChain: used in P0022 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0022 (scored 54)",
+      "claim": "PostgreSQL: used in P0022 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0255 (scored 63)",
+      "claim": "HuggingFace: used in P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0255 (scored 63)",
+      "claim": "OpenAI API: used in 2 projects, best P0255 (scored 63)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0022 (scored 54)",
+      "claim": "scikit-learn: used in P0022 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

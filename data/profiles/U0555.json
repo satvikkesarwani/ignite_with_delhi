@@ -1,7 +1,7 @@
 {
   "user_id": "U0555",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.101Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Mishka Pillai",
     "email": "mishka.pillai@gmail.com",
@@ -44,6 +44,50 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0017",
+        "title": "FraudFence",
+        "date": "2024-02-22",
+        "score": 70,
+        "tech": ["Redis", "Docker", "Java Spring", "GraphQL", "React"]
+      },
+      {
+        "project_id": "P0035",
+        "title": "MealLink",
+        "date": "2024-05-21",
+        "score": 60,
+        "tech": ["Node.js", "Vite", "TypeScript", "dbt", "tRPC"]
+      },
+      {
+        "project_id": "P0109",
+        "title": "SupplyGraph",
+        "date": "2025-01-10",
+        "score": 61,
+        "tech": ["dbt", "Knowledge Graphs", "Qdrant", "FastAPI", "Cypher", "Pinecone"]
+      },
+      {
+        "project_id": "P0121",
+        "title": "SkillPath",
+        "date": "2025-03-27",
+        "score": 66,
+        "tech": ["Vite", "PostgreSQL", "TypeScript", "React", "Transformers"]
+      },
+      {
+        "project_id": "P0149",
+        "title": "TriageTalk",
+        "date": "2025-06-12",
+        "score": 59,
+        "tech": ["Redis", "HuggingFace", "LLM Fine-tuning"]
+      },
+      {
+        "project_id": "P0256",
+        "title": "PromptForge",
+        "date": "2026-08-08",
+        "score": 92,
+        "tech": ["HuggingFace", "Vector Databases", "Redis"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 68,
     "first_seen": "2024-02-22",
@@ -90,7 +134,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0256 (scored 92)",
+          "detail": "used in 3 projects, best P0256 (scored 92)",
           "weight": 0.8
         }
       ],
@@ -104,7 +148,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0109 (scored 61)",
+          "detail": "used in P0109 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -118,7 +162,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0035 (scored 60)",
+          "detail": "used in P0035 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -132,7 +176,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0017 (scored 70)",
+          "detail": "used in P0017 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -146,7 +190,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in 2 projects, best P0017 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -160,7 +204,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in 2 projects, best P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -174,7 +218,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -188,7 +232,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0109 (scored 61)",
+          "detail": "used in 2 projects, best P0109 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -202,7 +246,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0256 (scored 92)",
+          "detail": "used in 2 projects, best P0256 (scored 92)",
           "weight": 0.8
         }
       ],
@@ -216,7 +260,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -230,7 +274,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0256 (scored 92)",
+          "detail": "used in P0256 (scored 92)",
           "weight": 0.8
         }
       ],
@@ -244,7 +288,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0017 (scored 70)",
+          "detail": "used in P0017 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -258,7 +302,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0109 (scored 61)",
+          "detail": "used in P0109 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -272,7 +316,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0109 (scored 61)",
+          "detail": "used in P0109 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -286,7 +330,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0035 (scored 60)",
+          "detail": "used in P0035 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -300,7 +344,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in 2 projects, best P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -314,7 +358,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0149 (scored 59)",
+          "detail": "used in P0149 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -328,7 +372,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0017 (scored 70)",
+          "detail": "used in P0017 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -342,7 +386,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0109 (scored 61)",
+          "detail": "used in P0109 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -356,7 +400,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0109 (scored 61)",
+          "detail": "used in P0109 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -575,56 +619,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Redis: built P0256 (scored 92)",
+      "claim": "Redis: used in 3 projects, best P0256 (scored 92)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0109 (scored 61)",
+      "claim": "FastAPI: used in P0109 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0035 (scored 60)",
+      "claim": "Node.js: used in P0035 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0017 (scored 70)",
+      "claim": "Docker: used in P0017 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0121 (scored 66)",
+      "claim": "React: used in 2 projects, best P0017 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0121 (scored 66)",
+      "claim": "TypeScript: used in 2 projects, best P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0121 (scored 66)",
+      "claim": "PostgreSQL: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "dbt: built P0109 (scored 61)",
+      "claim": "dbt: used in 2 projects, best P0109 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

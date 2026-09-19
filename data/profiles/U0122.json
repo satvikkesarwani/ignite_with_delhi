@@ -1,7 +1,7 @@
 {
   "user_id": "U0122",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.069Z",
+  "built_at": "2026-09-19T08:17:46.242Z",
   "identity": {
     "full_name": "Ishaan Joshi",
     "email": "ishaan.joshi@gmail.com",
@@ -23,6 +23,29 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0083",
+        "title": "PotholePatrol",
+        "date": "2024-10-26",
+        "score": 60,
+        "tech": ["ESP32", "Embedded C", "Java Spring", "MQTT", "Arduino"]
+      },
+      {
+        "project_id": "P0121",
+        "title": "SkillPath",
+        "date": "2025-03-27",
+        "score": 66,
+        "tech": ["Vite", "PostgreSQL", "TypeScript", "React", "Transformers"]
+      },
+      {
+        "project_id": "P0186",
+        "title": "MigrateMate",
+        "date": "2025-11-19",
+        "score": 39,
+        "tech": ["Flask", "Docker", "AWS", "GCP", "Go"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 55,
     "first_seen": "2024-10-24",
@@ -62,7 +85,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -76,7 +99,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0186 (scored 39)",
+          "detail": "used in P0186 (scored 39)",
           "weight": 0.8
         }
       ],
@@ -90,7 +113,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -104,7 +127,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -118,7 +141,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -132,7 +155,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0186 (scored 39)",
+          "detail": "used in P0186 (scored 39)",
           "weight": 0.8
         }
       ],
@@ -146,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -160,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -174,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -188,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -202,7 +225,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0121 (scored 66)",
+          "detail": "used in P0121 (scored 66)",
           "weight": 0.8
         }
       ],
@@ -216,7 +239,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0186 (scored 39)",
+          "detail": "used in P0186 (scored 39)",
           "weight": 0.8
         }
       ],
@@ -230,7 +253,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0186 (scored 39)",
+          "detail": "used in P0186 (scored 39)",
           "weight": 0.8
         }
       ],
@@ -244,7 +267,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0186 (scored 39)",
+          "detail": "used in P0186 (scored 39)",
           "weight": 0.8
         }
       ],
@@ -258,7 +281,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0083 (scored 60)",
+          "detail": "used in P0083 (scored 60)",
           "weight": 0.8
         }
       ],
@@ -431,56 +454,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Transformers: built P0121 (scored 66)",
+      "claim": "Transformers: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Docker: built P0186 (scored 39)",
+      "claim": "Docker: used in P0186 (scored 39)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0121 (scored 66)",
+      "claim": "React: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "TypeScript: built P0121 (scored 66)",
+      "claim": "TypeScript: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0121 (scored 66)",
+      "claim": "PostgreSQL: used in P0121 (scored 66)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0186 (scored 39)",
+      "claim": "Go: used in P0186 (scored 39)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0083 (scored 60)",
+      "claim": "Arduino: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0083 (scored 60)",
+      "claim": "ESP32: used in P0083 (scored 60)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

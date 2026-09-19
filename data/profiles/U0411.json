@@ -1,7 +1,7 @@
 {
   "user_id": "U0411",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.090Z",
+  "built_at": "2026-09-19T08:17:46.263Z",
   "identity": {
     "full_name": "Arjun Mittal",
     "email": "arjun.mittal@amitynoida.ac.in",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0001",
+        "title": "SkillPath",
+        "date": "2024-01-14",
+        "score": 74,
+        "tech": ["PostgreSQL", "LangChain", "tRPC", "Vite"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 74,
     "first_seen": "2024-01-13",
@@ -74,7 +83,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0001 (scored 74)",
+          "detail": "used in P0001 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -93,7 +102,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0001 (scored 74)",
+          "detail": "used in P0001 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -107,7 +116,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0001 (scored 74)",
+          "detail": "used in P0001 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -121,7 +130,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0001 (scored 74)",
+          "detail": "used in P0001 (scored 74)",
           "weight": 0.8
         }
       ],
@@ -243,7 +252,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0001 (scored 74)",
+      "claim": "PostgreSQL: used in P0001 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -257,21 +266,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vite: built P0001 (scored 74)",
+      "claim": "Vite: used in P0001 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0001 (scored 74)",
+      "claim": "LangChain: used in P0001 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0001 (scored 74)",
+      "claim": "tRPC: used in P0001 (scored 74)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

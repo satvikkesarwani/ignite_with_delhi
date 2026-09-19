@@ -1,7 +1,7 @@
 {
   "user_id": "U0565",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.102Z",
+  "built_at": "2026-09-19T08:17:46.272Z",
   "identity": {
     "full_name": "Neel Chauhan",
     "email": "neel.chauhan27@gmail.com",
@@ -64,6 +64,43 @@
       }
     ],
     "prize_count": 4,
+    "projects": [
+      {
+        "project_id": "P0009",
+        "title": "TaxTrail",
+        "date": "2024-02-22",
+        "score": 57,
+        "tech": ["Kafka", "NumPy", "FastAPI", "Java Spring", "Go", "gRPC"]
+      },
+      {
+        "project_id": "P0034",
+        "title": "LegalAidLine",
+        "date": "2024-05-21",
+        "score": 80,
+        "tech": ["Next.js", "NumPy", "React"]
+      },
+      {
+        "project_id": "P0085",
+        "title": "FloodFore",
+        "date": "2024-10-26",
+        "score": 70,
+        "tech": ["Raspberry Pi", "MQTT", "Arduino", "Embedded C", "ESP32"]
+      },
+      {
+        "project_id": "P0213",
+        "title": "DAOdesk",
+        "date": "2026-02-20",
+        "score": 69,
+        "tech": ["Express", "FastAPI", "Hardhat", "Flask"]
+      },
+      {
+        "project_id": "P0255",
+        "title": "Interviewer",
+        "date": "2026-08-08",
+        "score": 63,
+        "tech": ["Express", "Next.js", "Vite", "OpenAI API", "HuggingFace"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 67.8,
     "first_seen": "2024-02-22",
@@ -110,7 +147,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -129,7 +166,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -148,7 +185,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -167,7 +204,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -186,7 +223,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -200,7 +237,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0213 (scored 69)",
+          "detail": "used in 2 projects, best P0213 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -214,7 +251,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in 2 projects, best P0213 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -228,7 +265,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0034 (scored 80)",
+          "detail": "used in P0034 (scored 80)",
           "weight": 0.8
         }
       ],
@@ -242,7 +279,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in 2 projects, best P0034 (scored 80)",
           "weight": 0.8
         }
       ],
@@ -256,7 +293,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -270,7 +307,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -284,7 +321,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -298,7 +335,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0255 (scored 63)",
+          "detail": "used in P0255 (scored 63)",
           "weight": 0.8
         }
       ],
@@ -312,7 +349,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0213 (scored 69)",
+          "detail": "used in P0213 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -326,7 +363,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0034 (scored 80)",
+          "detail": "used in 2 projects, best P0034 (scored 80)",
           "weight": 0.8
         }
       ],
@@ -340,7 +377,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -354,7 +391,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -368,7 +405,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0213 (scored 69)",
+          "detail": "used in P0213 (scored 69)",
           "weight": 0.8
         }
       ],
@@ -382,7 +419,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0009 (scored 57)",
+          "detail": "used in P0009 (scored 57)",
           "weight": 0.8
         }
       ],
@@ -563,7 +600,7 @@
       "confidence": 0.89
     },
     {
-      "claim": "Arduino: built P0085 (scored 70)",
+      "claim": "Arduino: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -577,7 +614,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "ESP32: built P0085 (scored 70)",
+      "claim": "ESP32: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -591,7 +628,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Embedded C: built P0085 (scored 70)",
+      "claim": "Embedded C: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -605,7 +642,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MQTT: built P0085 (scored 70)",
+      "claim": "MQTT: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -619,28 +656,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Raspberry Pi: built P0085 (scored 70)",
+      "claim": "Raspberry Pi: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0213 (scored 69)",
+      "claim": "FastAPI: used in 2 projects, best P0213 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0255 (scored 63)",
+      "claim": "Express: used in 2 projects, best P0213 (scored 69)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0034 (scored 80)",
+      "claim": "React: used in P0034 (scored 80)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

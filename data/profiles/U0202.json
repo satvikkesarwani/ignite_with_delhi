@@ -1,7 +1,7 @@
 {
   "user_id": "U0202",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.074Z",
+  "built_at": "2026-09-19T08:17:46.247Z",
   "identity": {
     "full_name": "Riya Bansal",
     "email": "riya.bansal54@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0205",
+        "title": "SupplyStamp",
+        "date": "2026-02-20",
+        "score": 42,
+        "tech": ["MongoDB", "Node.js", "Vite", "The Graph"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 42,
     "first_seen": "2026-02-18",
@@ -60,7 +69,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0205 (scored 42)",
+          "detail": "used in P0205 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -79,7 +88,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0205 (scored 42)",
+          "detail": "used in P0205 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -93,7 +102,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0205 (scored 42)",
+          "detail": "used in P0205 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -107,7 +116,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0205 (scored 42)",
+          "detail": "used in P0205 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -276,7 +285,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0205 (scored 42)",
+      "claim": "MongoDB: used in P0205 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -290,21 +299,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "Vite: built P0205 (scored 42)",
+      "claim": "Vite: used in P0205 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0205 (scored 42)",
+      "claim": "Node.js: used in P0205 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "The Graph: built P0205 (scored 42)",
+      "claim": "The Graph: used in P0205 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0045",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.059Z",
+  "built_at": "2026-09-19T08:17:46.233Z",
   "identity": {
     "full_name": "Vivaan Saxena",
     "email": "vivaan.saxena@iitdelhi.ac.in",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0066",
+        "title": "CropCast",
+        "date": "2024-09-15",
+        "score": 56,
+        "tech": ["Pandas", "Node.js", "PostgreSQL", "Next.js", "Tableau", "Airflow"]
+      },
+      {
+        "project_id": "P0103",
+        "title": "CiteWeb",
+        "date": "2025-01-10",
+        "score": 70,
+        "tech": ["Neo4j", "Spark", "NetworkX", "Knowledge Graphs", "Vector Databases", "Kafka"]
+      },
+      {
+        "project_id": "P0154",
+        "title": "ShelterFind",
+        "date": "2025-07-23",
+        "score": 54,
+        "tech": ["Pandas", "Express", "TypeScript"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 60,
     "first_seen": "2024-09-14",
@@ -80,7 +103,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0066 (scored 56)",
+          "detail": "used in P0066 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -99,7 +122,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0154 (scored 54)",
+          "detail": "used in P0154 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -118,7 +141,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0066 (scored 56)",
+          "detail": "used in P0066 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -137,7 +160,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0154 (scored 54)",
+          "detail": "used in P0154 (scored 54)",
           "weight": 0.8
         }
       ],
@@ -156,7 +179,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0066 (scored 56)",
+          "detail": "used in P0066 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -170,7 +193,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0103 (scored 70)",
+          "detail": "used in P0103 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -184,7 +207,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0154 (scored 54)",
+          "detail": "used in 2 projects, best P0066 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -198,7 +221,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0066 (scored 56)",
+          "detail": "used in P0066 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -212,7 +235,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0103 (scored 70)",
+          "detail": "used in P0103 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -226,7 +249,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0103 (scored 70)",
+          "detail": "used in P0103 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -240,7 +263,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0103 (scored 70)",
+          "detail": "used in P0103 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -254,7 +277,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0066 (scored 56)",
+          "detail": "used in P0066 (scored 56)",
           "weight": 0.8
         }
       ],
@@ -268,7 +291,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0103 (scored 70)",
+          "detail": "used in P0103 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -282,7 +305,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0103 (scored 70)",
+          "detail": "used in P0103 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -454,7 +477,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0066 (scored 56)",
+      "claim": "Node.js: used in P0066 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -468,7 +491,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0154 (scored 54)",
+      "claim": "Express: used in P0154 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -482,7 +505,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0066 (scored 56)",
+      "claim": "Next.js: used in P0066 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -496,7 +519,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "TypeScript: built P0154 (scored 54)",
+      "claim": "TypeScript: used in P0154 (scored 54)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -510,28 +533,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0066 (scored 56)",
+      "claim": "PostgreSQL: used in P0066 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Neo4j: built P0103 (scored 70)",
+      "claim": "Neo4j: used in P0103 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0154 (scored 54)",
+      "claim": "Pandas: used in 2 projects, best P0066 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0066 (scored 56)",
+      "claim": "Airflow: used in P0066 (scored 56)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

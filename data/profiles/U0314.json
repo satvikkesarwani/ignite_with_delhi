@@ -1,7 +1,7 @@
 {
   "user_id": "U0314",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.084Z",
+  "built_at": "2026-09-19T08:17:46.256Z",
   "identity": {
     "full_name": "Kiara Thakur",
     "email": "kiara.thakur@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0166",
+        "title": "CropCast",
+        "date": "2025-08-27",
+        "score": 71,
+        "tech": ["NumPy", "React", "Node.js"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 71,
     "first_seen": "2025-03-25",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0166 (scored 71)",
+          "detail": "used in P0166 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0166 (scored 71)",
+          "detail": "used in P0166 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0166 (scored 71)",
+          "detail": "used in P0166 (scored 71)",
           "weight": 0.8
         }
       ],
@@ -200,7 +209,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Kiara Thakur is a B.E. Information Technology student at Indian Institute of Technology Roorkee, graduating in 2027, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Node.js, React, NumPy, based on built P0166 (scored 71). They declare MQTT, Raspberry Pi with no supporting repository or project evidence on the platform. Last active 2026-08-17 — currently active.",
+  "narrative": "Kiara Thakur is a B.E. Information Technology student at Indian Institute of Technology Roorkee, graduating in 2027, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Node.js, React, NumPy, based on used in P0166 (scored 71). They declare MQTT, Raspberry Pi with no supporting repository or project evidence on the platform. Last active 2026-08-17 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -232,21 +241,21 @@
       "confidence": 1
     },
     {
-      "claim": "Node.js: built P0166 (scored 71)",
+      "claim": "Node.js: used in P0166 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0166 (scored 71)",
+      "claim": "React: used in P0166 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0166 (scored 71)",
+      "claim": "NumPy: used in P0166 (scored 71)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0571",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.102Z",
+  "built_at": "2026-09-19T08:17:46.272Z",
   "identity": {
     "full_name": "Madhav Patel",
     "email": "madhav.patel96@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0227",
+        "title": "PromptForge",
+        "date": "2026-05-23",
+        "score": 42,
+        "tech": ["React", "FastAPI", "TypeScript", "Tailwind CSS", "PostgreSQL"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 42,
     "first_seen": "2026-05-21",
@@ -61,7 +70,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -80,7 +89,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -94,7 +103,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -108,7 +117,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -122,7 +131,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0227 (scored 42)",
+          "detail": "used in P0227 (scored 42)",
           "weight": 0.8
         }
       ],
@@ -293,7 +302,7 @@
       "confidence": 0.92
     },
     {
-      "claim": "TypeScript: built P0227 (scored 42)",
+      "claim": "TypeScript: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -307,28 +316,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0227 (scored 42)",
+      "claim": "FastAPI: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0227 (scored 42)",
+      "claim": "React: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0227 (scored 42)",
+      "claim": "PostgreSQL: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0227 (scored 42)",
+      "claim": "Tailwind CSS: used in P0227 (scored 42)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

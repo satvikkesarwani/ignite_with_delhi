@@ -1,7 +1,7 @@
 {
   "user_id": "U0162",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.072Z",
+  "built_at": "2026-09-19T08:17:46.245Z",
   "identity": {
     "full_name": "Chirag Khanna",
     "email": "chirag.khanna@mait.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0182",
+        "title": "MigrateMate",
+        "date": "2025-11-19",
+        "score": 34,
+        "tech": ["tRPC", "Express", "Redis", "Docker"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 34,
     "first_seen": "2025-11-18",
@@ -56,7 +65,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0182 (scored 34)",
+          "detail": "used in P0182 (scored 34)",
           "weight": 0.8
         }
       ],
@@ -70,7 +79,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0182 (scored 34)",
+          "detail": "used in P0182 (scored 34)",
           "weight": 0.8
         }
       ],
@@ -84,7 +93,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0182 (scored 34)",
+          "detail": "used in P0182 (scored 34)",
           "weight": 0.8
         }
       ],
@@ -98,7 +107,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0182 (scored 34)",
+          "detail": "used in P0182 (scored 34)",
           "weight": 0.8
         }
       ],
@@ -244,7 +253,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Chirag Khanna is a BCA Artificial Intelligence student at Maharaja Agrasen Institute of Technology, graduating in 2026, who signed up as a Data builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Express, Docker, Redis, based on built P0182 (scored 34). They declare Pandas, SQL, dbt with no supporting repository or project evidence on the platform. Last active 2026-07-30 — currently active.",
+  "narrative": "Chirag Khanna is a BCA Artificial Intelligence student at Maharaja Agrasen Institute of Technology, graduating in 2026, who signed up as a Data builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Express, Docker, Redis, based on used in P0182 (scored 34). They declare Pandas, SQL, dbt with no supporting repository or project evidence on the platform. Last active 2026-07-30 — currently active.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -276,28 +285,28 @@
       "confidence": 1
     },
     {
-      "claim": "Express: built P0182 (scored 34)",
+      "claim": "Express: used in P0182 (scored 34)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0182 (scored 34)",
+      "claim": "Docker: used in P0182 (scored 34)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0182 (scored 34)",
+      "claim": "Redis: used in P0182 (scored 34)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "tRPC: built P0182 (scored 34)",
+      "claim": "tRPC: used in P0182 (scored 34)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

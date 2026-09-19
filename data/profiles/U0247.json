@@ -1,7 +1,7 @@
 {
   "user_id": "U0247",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.078Z",
+  "built_at": "2026-09-19T08:17:46.252Z",
   "identity": {
     "full_name": "Mihir Malik",
     "email": "mihir.malik@dtu.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0048",
+        "title": "PhysioPose",
+        "date": "2024-06-25",
+        "score": 64,
+        "tech": ["LangChain", "Python", "OpenCV", "RAG", "OpenAI API"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 64,
     "first_seen": "2024-06-25",
@@ -58,7 +67,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -72,7 +81,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -86,7 +95,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -100,7 +109,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -114,7 +123,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0048 (scored 64)",
+          "detail": "used in P0048 (scored 64)",
           "weight": 0.8
         }
       ],
@@ -260,7 +269,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Mihir Malik is a B.Tech Mathematics and Computing student at Delhi Technological University (DTU), graduating in 2027, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, LangChain, RAG, based on built P0048 (scored 64). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Last active 2024-07-30, 781 days ago — lapsed.",
+  "narrative": "Mihir Malik is a B.Tech Mathematics and Computing student at Delhi Technological University (DTU), graduating in 2027, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, LangChain, RAG, based on used in P0048 (scored 64). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Last active 2024-07-30, 781 days ago — lapsed.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -292,35 +301,35 @@
       "confidence": 1
     },
     {
-      "claim": "Python: built P0048 (scored 64)",
+      "claim": "Python: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LangChain: built P0048 (scored 64)",
+      "claim": "LangChain: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0048 (scored 64)",
+      "claim": "RAG: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenAI API: built P0048 (scored 64)",
+      "claim": "OpenAI API: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0048 (scored 64)",
+      "claim": "OpenCV: used in P0048 (scored 64)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

@@ -1,7 +1,7 @@
 {
   "user_id": "U0237",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.077Z",
+  "built_at": "2026-09-19T08:17:46.250Z",
   "identity": {
     "full_name": "Aman Gandhi",
     "email": "aman.gandhi@bvcoe.ac.in",
@@ -34,6 +34,29 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0073",
+        "title": "WasteWise",
+        "date": "2024-09-15",
+        "score": 84,
+        "tech": ["SQL", "Node.js", "Express", "MongoDB"]
+      },
+      {
+        "project_id": "P0136",
+        "title": "CodeCartographer",
+        "date": "2025-05-09",
+        "score": 72,
+        "tech": ["React", "Qdrant", "Python", "PyTorch", "LLM Fine-tuning", "RAG"]
+      },
+      {
+        "project_id": "P0149",
+        "title": "TriageTalk",
+        "date": "2025-06-12",
+        "score": 59,
+        "tech": ["Redis", "HuggingFace", "LLM Fine-tuning"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 71.7,
     "first_seen": "2024-09-14",
@@ -81,7 +104,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0073 (scored 84)",
+          "detail": "used in P0073 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -100,7 +123,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0073 (scored 84)",
+          "detail": "used in P0073 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -119,7 +142,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -133,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -147,7 +170,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -161,7 +184,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -175,7 +198,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0073 (scored 84)",
+          "detail": "used in P0073 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -189,7 +212,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0073 (scored 84)",
+          "detail": "used in P0073 (scored 84)",
           "weight": 0.8
         }
       ],
@@ -203,7 +226,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0149 (scored 59)",
+          "detail": "used in P0149 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -217,7 +240,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0149 (scored 59)",
+          "detail": "used in P0149 (scored 59)",
           "weight": 0.8
         }
       ],
@@ -231,7 +254,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0149 (scored 59)",
+          "detail": "used in 2 projects, best P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -245,7 +268,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0136 (scored 72)",
+          "detail": "used in P0136 (scored 72)",
           "weight": 0.8
         }
       ],
@@ -368,7 +391,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0073 (scored 84)",
+      "claim": "Node.js: used in P0073 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -382,7 +405,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Express: built P0073 (scored 84)",
+      "claim": "Express: used in P0073 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -396,42 +419,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "React: built P0136 (scored 72)",
+      "claim": "React: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Python: built P0136 (scored 72)",
+      "claim": "Python: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PyTorch: built P0136 (scored 72)",
+      "claim": "PyTorch: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "RAG: built P0136 (scored 72)",
+      "claim": "RAG: used in P0136 (scored 72)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0073 (scored 84)",
+      "claim": "MongoDB: used in P0073 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0073 (scored 84)",
+      "claim": "SQL: used in P0073 (scored 84)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

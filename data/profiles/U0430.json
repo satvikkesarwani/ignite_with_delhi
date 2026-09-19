@@ -1,7 +1,7 @@
 {
   "user_id": "U0430",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.092Z",
+  "built_at": "2026-09-19T08:17:46.265Z",
   "identity": {
     "full_name": "Manvi Ahuja",
     "email": "manvi.ahuja10@gmail.com",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0249",
+        "title": "Interviewer",
+        "date": "2026-08-08",
+        "score": 73,
+        "tech": ["Python", "gRPC", "Java Spring"]
+      }
+    ],
     "best_rank": 2,
     "avg_score": 73,
     "first_seen": "2026-08-08",
@@ -73,7 +82,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0249 (scored 73)",
+          "detail": "used in P0249 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -87,7 +96,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0249 (scored 73)",
+          "detail": "used in P0249 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -101,7 +110,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0249 (scored 73)",
+          "detail": "used in P0249 (scored 73)",
           "weight": 0.8
         }
       ],
@@ -223,21 +232,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "Python: built P0249 (scored 73)",
+      "claim": "Python: used in P0249 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "gRPC: built P0249 (scored 73)",
+      "claim": "gRPC: used in P0249 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Java Spring: built P0249 (scored 73)",
+      "claim": "Java Spring: used in P0249 (scored 73)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

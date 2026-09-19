@@ -1,7 +1,7 @@
 {
   "user_id": "U0357",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.087Z",
+  "built_at": "2026-09-19T08:17:46.258Z",
   "identity": {
     "full_name": "Zara Menon",
     "email": "zara.menon15@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0194",
+        "title": "PotholePatrol",
+        "date": "2026-01-04",
+        "score": 48,
+        "tech": ["Tableau", "Pandas", "LoRaWAN", "Spark", "dbt"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 48,
     "first_seen": "2025-11-18",
@@ -60,7 +69,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0194 (scored 48)",
+          "detail": "used in P0194 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -79,7 +88,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0194 (scored 48)",
+          "detail": "used in P0194 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -93,7 +102,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0194 (scored 48)",
+          "detail": "used in P0194 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -107,7 +116,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0194 (scored 48)",
+          "detail": "used in P0194 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -121,7 +130,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0194 (scored 48)",
+          "detail": "used in P0194 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -271,7 +280,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Pandas: built P0194 (scored 48)",
+      "claim": "Pandas: used in P0194 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -285,28 +294,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tableau: built P0194 (scored 48)",
+      "claim": "Tableau: used in P0194 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "dbt: built P0194 (scored 48)",
+      "claim": "dbt: used in P0194 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LoRaWAN: built P0194 (scored 48)",
+      "claim": "LoRaWAN: used in P0194 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Spark: built P0194 (scored 48)",
+      "claim": "Spark: used in P0194 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

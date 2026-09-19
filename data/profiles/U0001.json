@@ -1,7 +1,7 @@
 {
   "user_id": "U0001",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.054Z",
+  "built_at": "2026-09-19T08:32:18.553Z",
   "identity": {
     "full_name": "Shiv Sharma",
     "email": "shiv.sharma@iitd.ac.in",
@@ -54,6 +54,50 @@
       }
     ],
     "prize_count": 3,
+    "projects": [
+      {
+        "project_id": "P0021",
+        "title": "MeetingMemory",
+        "date": "2024-04-06",
+        "score": 33,
+        "tech": ["FastAPI", "Neo4j", "PyTorch", "Express", "Tailwind CSS"]
+      },
+      {
+        "project_id": "P0106",
+        "title": "RouteKnot",
+        "date": "2025-01-10",
+        "score": 81,
+        "tech": ["NetworkX", "Knowledge Graphs", "Pinecone", "Vector Databases"]
+      },
+      {
+        "project_id": "P0140",
+        "title": "ReportReader",
+        "date": "2025-06-12",
+        "score": 93,
+        "tech": ["PyTorch", "RAG", "FastAPI"]
+      },
+      {
+        "project_id": "P0185",
+        "title": "ReviewRadar",
+        "date": "2025-11-19",
+        "score": 70,
+        "tech": ["FastAPI", "Terraform", "Docker", "AWS", "Redis", "Go"]
+      },
+      {
+        "project_id": "P0215",
+        "title": "MeetingMemory",
+        "date": "2026-04-06",
+        "score": 65,
+        "tech": ["Python", "PyTorch", "FastAPI", "Knowledge Graphs"]
+      },
+      {
+        "project_id": "P0252",
+        "title": "PaperTrail",
+        "date": "2026-08-08",
+        "score": 89,
+        "tech": ["PyTorch", "RAG", "Neo4j", "Node.js", "Qdrant", "OpenAI API"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 71.8,
     "first_seen": "2024-04-06",
@@ -111,7 +155,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in P0215 (scored 65)",
           "weight": 0.8
         }
       ],
@@ -130,7 +174,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0252 (scored 89)",
+          "detail": "used in 4 projects, best P0140 (scored 93)",
           "weight": 0.8
         }
       ],
@@ -149,7 +193,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0252 (scored 89)",
+          "detail": "used in 2 projects, best P0140 (scored 93)",
           "weight": 0.8
         }
       ],
@@ -168,7 +212,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in 4 projects, best P0140 (scored 93)",
           "weight": 0.8
         }
       ],
@@ -187,7 +231,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0252 (scored 89)",
+          "detail": "used in 2 projects, best P0252 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -201,7 +245,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0252 (scored 89)",
+          "detail": "used in P0252 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -215,7 +259,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0021 (scored 33)",
+          "detail": "used in P0021 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -229,7 +273,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0185 (scored 70)",
+          "detail": "used in P0185 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -243,7 +287,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0021 (scored 33)",
+          "detail": "used in P0021 (scored 33)",
           "weight": 0.8
         }
       ],
@@ -257,7 +301,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0106 (scored 81)",
+          "detail": "used in P0106 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -271,7 +315,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0185 (scored 70)",
+          "detail": "used in P0185 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -285,7 +329,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0185 (scored 70)",
+          "detail": "used in P0185 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -299,7 +343,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0106 (scored 81)",
+          "detail": "used in P0106 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -313,7 +357,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0215 (scored 65)",
+          "detail": "used in 2 projects, best P0106 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -327,7 +371,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0252 (scored 89)",
+          "detail": "used in P0252 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -341,7 +385,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0185 (scored 70)",
+          "detail": "used in P0185 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -355,7 +399,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0185 (scored 70)",
+          "detail": "used in P0185 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -369,7 +413,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0252 (scored 89)",
+          "detail": "used in P0252 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -383,7 +427,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0106 (scored 81)",
+          "detail": "used in P0106 (scored 81)",
           "weight": 0.8
         }
       ],
@@ -529,8 +573,8 @@
       "outcome": 60
     }
   },
-  "narrative": "Shiv Sharma is a B.Tech Computer Science and Engineering student at Indian Institute of Technology Delhi, graduating in 2026, who signed up as a ML/AI builder. They have attended 7 of the 7 hackathons they registered for and submitted 6 projects (a 86% submission rate). They have won 3 prizes, including rank 1 at ProtoDelhi with \"ReportReader\" (scored 93). Their strongest evidenced skills are Python, PyTorch, RAG, based on self-declared at signup. They declare LangChain with no supporting repository or project evidence on the platform. Mentors rated them 4.6 out of 5 across 5 sessions. Their judged scores are improving over time (33 → 81 → 93 → 70 → 65 → 89). Last active 2026-09-16 — currently active.",
-  "narrative_status": "template",
+  "narrative": "Shiv Sharma is a final-year Computer Science and Engineering student at Indian Institute of Technology Delhi with a focus on ML/AI. They are demonstrably good at Python, a skill evidenced by 70% of their 22 public repositories and its use in submitted projects; PyTorch, used across four projects; and RAG, applied in two projects. Their involvement has progressed from early participation to consistent engagement, as shown by seven hackathons registered and attended, zero no-shows, and a steady rise in scores from 33 to 93 across their trajectory. They have earned three prizes, including a first-place overall finish at ProtoDelhi with ReportReader, and maintain a strong submission rate of 0.86 with six projects submitted. For an organizer deciding whether to invite them, they are a reliable serial finisher with a rising competitive record and active community participation, making them a safe and valuable addition to any team or event.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 7 hackathons, attended 7",
@@ -603,7 +647,7 @@
       "confidence": 0.96
     },
     {
-      "claim": "Python: built P0215 (scored 65)",
+      "claim": "Python: used in P0215 (scored 65)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -617,7 +661,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0252 (scored 89)",
+      "claim": "PyTorch: used in 4 projects, best P0140 (scored 93)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -631,7 +675,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "RAG: built P0252 (scored 89)",
+      "claim": "RAG: used in 2 projects, best P0140 (scored 93)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -645,7 +689,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "FastAPI: built P0215 (scored 65)",
+      "claim": "FastAPI: used in 4 projects, best P0140 (scored 93)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -659,28 +703,28 @@
       "confidence": 0.86
     },
     {
-      "claim": "Neo4j: built P0252 (scored 89)",
+      "claim": "Neo4j: used in 2 projects, best P0252 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0252 (scored 89)",
+      "claim": "Node.js: used in P0252 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0021 (scored 33)",
+      "claim": "Express: used in P0021 (scored 33)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Docker: built P0185 (scored 70)",
+      "claim": "Docker: used in P0185 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

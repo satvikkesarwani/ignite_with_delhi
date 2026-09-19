@@ -1,7 +1,7 @@
 {
   "user_id": "U0545",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.100Z",
+  "built_at": "2026-09-19T08:17:46.271Z",
   "identity": {
     "full_name": "Rajat Mehta",
     "email": "rajat.mehta2@gmail.com",
@@ -23,6 +23,22 @@
     "submission_rate": 0.67,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0042",
+        "title": "DermScan",
+        "date": "2024-06-25",
+        "score": 51,
+        "tech": ["LangChain", "OpenCV", "scikit-learn"]
+      },
+      {
+        "project_id": "P0204",
+        "title": "SupplyStamp",
+        "date": "2026-02-20",
+        "score": 40,
+        "tech": ["Java Spring", "IPFS", "React", "Solidity"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 45.5,
     "first_seen": "2024-06-25",
@@ -56,7 +72,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0042 (scored 51)",
+          "detail": "used in P0042 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -70,7 +86,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -84,7 +100,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -98,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -112,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0042 (scored 51)",
+          "detail": "used in P0042 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -126,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0042 (scored 51)",
+          "detail": "used in P0042 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -140,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0204 (scored 40)",
+          "detail": "used in P0204 (scored 40)",
           "weight": 0.8
         }
       ],
@@ -284,7 +300,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Rajat Mehta is a B.Tech Computer Science and Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2028, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 2 projects (a 67% submission rate). Their strongest evidenced skills are LangChain, React, Solidity, based on built P0042 (scored 51). They declare Kubernetes, Prometheus, Terraform with no supporting repository or project evidence on the platform. Last active 2026-07-12, 69 days ago — cooling off.",
+  "narrative": "Rajat Mehta is a B.Tech Computer Science and Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2028, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 2 projects (a 67% submission rate). Their strongest evidenced skills are LangChain, React, Solidity, based on used in P0042 (scored 51). They declare Kubernetes, Prometheus, Terraform with no supporting repository or project evidence on the platform. Last active 2026-07-12, 69 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -316,49 +332,49 @@
       "confidence": 1
     },
     {
-      "claim": "LangChain: built P0042 (scored 51)",
+      "claim": "LangChain: used in P0042 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0204 (scored 40)",
+      "claim": "React: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Solidity: built P0204 (scored 40)",
+      "claim": "Solidity: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "IPFS: built P0204 (scored 40)",
+      "claim": "IPFS: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0042 (scored 51)",
+      "claim": "scikit-learn: used in P0042 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0042 (scored 51)",
+      "claim": "OpenCV: used in P0042 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Java Spring: built P0204 (scored 40)",
+      "claim": "Java Spring: used in P0204 (scored 40)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

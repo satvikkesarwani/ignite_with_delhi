@@ -1,7 +1,7 @@
 {
   "user_id": "U0008",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.055Z",
+  "built_at": "2026-09-19T08:22:35.783Z",
   "identity": {
     "full_name": "Rohan Mehta",
     "email": "rohan.mehta.nsut@gmail.com",
@@ -44,6 +44,29 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0070",
+        "title": "GridGaze",
+        "date": "2024-09-15",
+        "score": 44,
+        "tech": ["Tailwind CSS", "Next.js", "PostgreSQL", "Pandas"]
+      },
+      {
+        "project_id": "P0112",
+        "title": "SplitFair",
+        "date": "2025-02-17",
+        "score": 90,
+        "tech": ["Go", "PostgreSQL", "Redis", "MongoDB", "Node.js"]
+      },
+      {
+        "project_id": "P0141",
+        "title": "VaxTrack",
+        "date": "2025-06-12",
+        "score": 86,
+        "tech": ["Flutter", "Kotlin", "HuggingFace", "LangChain"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 73.3,
     "first_seen": "2024-09-14",
@@ -94,7 +117,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -113,7 +136,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in 2 projects, best P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -132,7 +155,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -146,7 +169,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -160,7 +183,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -174,7 +197,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -188,7 +211,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0070 (scored 44)",
+          "detail": "used in P0070 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -202,7 +225,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0070 (scored 44)",
+          "detail": "used in P0070 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -216,7 +239,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0070 (scored 44)",
+          "detail": "used in P0070 (scored 44)",
           "weight": 0.8
         }
       ],
@@ -230,7 +253,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -244,7 +267,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -258,7 +281,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -397,8 +420,8 @@
       "outcome": 40
     }
   },
-  "narrative": "Rohan Mehta is a B.Tech Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2025, who signed up as a Backend builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 2 prizes, including rank 1 at StackSprint with \"SplitFair\" (scored 90). Their strongest evidenced skills are Go, PostgreSQL, Redis, based on self-declared at signup. They declare Docker, Kubernetes with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Their judged scores are improving over time (44 → 90 → 86). Last active 2025-06-25, 451 days ago — lapsed.",
-  "narrative_status": "template",
+  "narrative": "Rohan Mehta is a Computer Science and Engineering student at Netaji Subhas University of Technology graduating in 2025 who has registered for and attended three hackathons with zero no-shows and a perfect submission rate. They are demonstrably good at backend technologies, particularly Go, PostgreSQL, and Redis, with Go confidence at 0.94 supported by the fact that 58% of their 18 public repos use it and it was used in project P0112 where they scored 90; they also scored 90 in P0112 using PostgreSQL and Redis, and 86 in P0141 using LangChain. Their involvement has changed over time as shown by their scores in order—44, 90, 86—indicating a lapsed but rising trajectory from an initial lower performance to strong showings in their second and third events, and they currently sit in a dormant high-potential persona status with 451 days since last active on 2025-06-25. For an organizer deciding whether to invite them, one practical judgement is that despite their lapsed status and long inactivity, their consistent submission record, perfect attendance, and proven high-scoring performances in recent hackathons suggest they remain a reliable competitor worth re-engaging.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 3 hackathons, attended 3",
@@ -464,7 +487,7 @@
       "confidence": 0.94
     },
     {
-      "claim": "Go: built P0112 (scored 90)",
+      "claim": "Go: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -478,7 +501,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "PostgreSQL: built P0112 (scored 90)",
+      "claim": "PostgreSQL: used in 2 projects, best P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -492,42 +515,42 @@
       "confidence": 0.86
     },
     {
-      "claim": "Redis: built P0112 (scored 90)",
+      "claim": "Redis: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0141 (scored 86)",
+      "claim": "LangChain: used in P0141 (scored 86)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0112 (scored 90)",
+      "claim": "Node.js: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0112 (scored 90)",
+      "claim": "MongoDB: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Next.js: built P0070 (scored 44)",
+      "claim": "Next.js: used in P0070 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0070 (scored 44)",
+      "claim": "Tailwind CSS: used in P0070 (scored 44)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

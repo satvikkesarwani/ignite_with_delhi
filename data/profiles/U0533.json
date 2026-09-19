@@ -1,7 +1,7 @@
 {
   "user_id": "U0533",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.099Z",
+  "built_at": "2026-09-19T08:17:46.270Z",
   "identity": {
     "full_name": "Pranav Bhat",
     "email": "pranav.bhat@gmail.com",
@@ -23,6 +23,7 @@
     "submission_rate": null,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2025-11-11",

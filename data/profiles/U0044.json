@@ -1,7 +1,7 @@
 {
   "user_id": "U0044",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.059Z",
+  "built_at": "2026-09-19T08:17:46.233Z",
   "identity": {
     "full_name": "Sahana Iyer",
     "email": "sahana.iyer@dtu.ac.in",
@@ -23,6 +23,15 @@
     "submission_rate": 0.5,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0155",
+        "title": "SignSpeak",
+        "date": "2025-07-23",
+        "score": 47,
+        "tech": ["Node.js", "tRPC", "Tailwind CSS", "Pandas", "SQL"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 47,
     "first_seen": "2024-10-24",
@@ -63,7 +72,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0155 (scored 47)",
+          "detail": "used in P0155 (scored 47)",
           "weight": 0.8
         }
       ],
@@ -82,7 +91,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0155 (scored 47)",
+          "detail": "used in P0155 (scored 47)",
           "weight": 0.8
         }
       ],
@@ -101,7 +110,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0155 (scored 47)",
+          "detail": "used in P0155 (scored 47)",
           "weight": 0.8
         }
       ],
@@ -115,7 +124,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0155 (scored 47)",
+          "detail": "used in P0155 (scored 47)",
           "weight": 0.8
         }
       ],
@@ -129,7 +138,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0155 (scored 47)",
+          "detail": "used in P0155 (scored 47)",
           "weight": 0.8
         }
       ],
@@ -256,7 +265,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0155 (scored 47)",
+      "claim": "Node.js: used in P0155 (scored 47)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -270,7 +279,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tailwind CSS: built P0155 (scored 47)",
+      "claim": "Tailwind CSS: used in P0155 (scored 47)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -284,21 +293,21 @@
       "confidence": 0.86
     },
     {
-      "claim": "tRPC: built P0155 (scored 47)",
+      "claim": "tRPC: used in P0155 (scored 47)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Pandas: built P0155 (scored 47)",
+      "claim": "Pandas: used in P0155 (scored 47)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0155 (scored 47)",
+      "claim": "SQL: used in P0155 (scored 47)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

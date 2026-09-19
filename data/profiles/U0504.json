@@ -1,7 +1,7 @@
 {
   "user_id": "U0504",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.097Z",
+  "built_at": "2026-09-19T08:17:46.269Z",
   "identity": {
     "full_name": "Pranav Gandhi",
     "email": "pranav.gandhi85@gmail.com",
@@ -54,6 +54,43 @@
       }
     ],
     "prize_count": 3,
+    "projects": [
+      {
+        "project_id": "P0029",
+        "title": "SignSpeak",
+        "date": "2024-05-21",
+        "score": 76,
+        "tech": ["Kotlin", "MongoDB", "DuckDB", "PostgreSQL", "Vite", "React"]
+      },
+      {
+        "project_id": "P0047",
+        "title": "DoseDiary",
+        "date": "2024-06-25",
+        "score": 91,
+        "tech": ["PyTorch", "Transformers", "LangChain", "HuggingFace", "OpenAI API"]
+      },
+      {
+        "project_id": "P0153",
+        "title": "MealLink",
+        "date": "2025-07-23",
+        "score": 48,
+        "tech": ["React", "Tableau", "Flutter", "Express", "Node.js"]
+      },
+      {
+        "project_id": "P0196",
+        "title": "SignalSense",
+        "date": "2026-01-04",
+        "score": 53,
+        "tech": ["Tableau", "MQTT", "LoRaWAN"]
+      },
+      {
+        "project_id": "P0244",
+        "title": "ShellSeeker",
+        "date": "2026-07-03",
+        "score": 76,
+        "tech": ["Cypher", "Pandas", "Qdrant"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 68.8,
     "first_seen": "2024-05-20",
@@ -98,7 +135,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0196 (scored 53)",
+          "detail": "used in 2 projects, best P0196 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -112,7 +149,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -126,7 +163,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -140,7 +177,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -154,7 +191,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -168,7 +205,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -182,7 +219,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in 2 projects, best P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -196,7 +233,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -210,7 +247,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0244 (scored 76)",
+          "detail": "used in P0244 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -224,7 +261,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -238,7 +275,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -252,7 +289,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -266,7 +303,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0244 (scored 76)",
+          "detail": "used in P0244 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -280,7 +317,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0047 (scored 91)",
+          "detail": "used in P0047 (scored 91)",
           "weight": 0.8
         }
       ],
@@ -294,7 +331,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0153 (scored 48)",
+          "detail": "used in P0153 (scored 48)",
           "weight": 0.8
         }
       ],
@@ -308,7 +345,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -322,7 +359,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0196 (scored 53)",
+          "detail": "used in P0196 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -336,7 +373,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0029 (scored 76)",
+          "detail": "used in P0029 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -350,7 +387,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0196 (scored 53)",
+          "detail": "used in P0196 (scored 53)",
           "weight": 0.8
         }
       ],
@@ -364,7 +401,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0244 (scored 76)",
+          "detail": "used in P0244 (scored 76)",
           "weight": 0.8
         }
       ],
@@ -608,56 +645,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tableau: built P0196 (scored 53)",
+      "claim": "Tableau: used in 2 projects, best P0196 (scored 53)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "PyTorch: built P0047 (scored 91)",
+      "claim": "PyTorch: used in P0047 (scored 91)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "LangChain: built P0047 (scored 91)",
+      "claim": "LangChain: used in P0047 (scored 91)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0153 (scored 48)",
+      "claim": "Node.js: used in P0153 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Express: built P0153 (scored 48)",
+      "claim": "Express: used in P0153 (scored 48)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0029 (scored 76)",
+      "claim": "MongoDB: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "React: built P0153 (scored 48)",
+      "claim": "React: used in 2 projects, best P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0029 (scored 76)",
+      "claim": "PostgreSQL: used in P0029 (scored 76)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

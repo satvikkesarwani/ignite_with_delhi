@@ -1,7 +1,7 @@
 {
   "user_id": "U0637",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.107Z",
+  "built_at": "2026-09-19T08:17:46.279Z",
   "identity": {
     "full_name": "Vedant Nair",
     "email": "vedant.nair@gmail.com",
@@ -23,6 +23,15 @@
     "submission_rate": 1,
     "prizes": [],
     "prize_count": 0,
+    "projects": [
+      {
+        "project_id": "P0028",
+        "title": "LegalAidLine",
+        "date": "2024-05-21",
+        "score": 61,
+        "tech": ["DuckDB", "dbt", "Next.js"]
+      }
+    ],
     "best_rank": null,
     "avg_score": 61,
     "first_seen": "2024-05-20",
@@ -60,7 +69,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0028 (scored 61)",
+          "detail": "used in P0028 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -79,7 +88,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0028 (scored 61)",
+          "detail": "used in P0028 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -93,7 +102,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0028 (scored 61)",
+          "detail": "used in P0028 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -257,7 +266,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "dbt: built P0028 (scored 61)",
+      "claim": "dbt: used in P0028 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -271,14 +280,14 @@
       "confidence": 0.86
     },
     {
-      "claim": "DuckDB: built P0028 (scored 61)",
+      "claim": "DuckDB: used in P0028 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "Next.js: built P0028 (scored 61)",
+      "claim": "Next.js: used in P0028 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

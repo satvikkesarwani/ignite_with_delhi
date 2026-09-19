@@ -1,7 +1,7 @@
 {
   "user_id": "U0128",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.070Z",
+  "built_at": "2026-09-19T08:17:46.242Z",
   "identity": {
     "full_name": "Kunal Prasad",
     "email": "kunal.prasad@gmail.com",
@@ -44,6 +44,29 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0002",
+        "title": "LabSim",
+        "date": "2024-01-14",
+        "score": 75,
+        "tech": ["Express", "scikit-learn", "TypeScript", "Vite", "MongoDB"]
+      },
+      {
+        "project_id": "P0057",
+        "title": "FlakeFinder",
+        "date": "2024-08-09",
+        "score": 61,
+        "tech": ["TypeScript", "GCP", "Terraform"]
+      },
+      {
+        "project_id": "P0218",
+        "title": "StandupBot",
+        "date": "2026-04-06",
+        "score": 78,
+        "tech": ["Flask", "Java Spring", "Redis", "OpenCV"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 71.3,
     "first_seen": "2024-01-13",
@@ -83,7 +106,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0057 (scored 61)",
+          "detail": "used in P0057 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -102,7 +125,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0057 (scored 61)",
+          "detail": "used in P0057 (scored 61)",
           "weight": 0.8
         }
       ],
@@ -121,7 +144,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0057 (scored 61)",
+          "detail": "used in 2 projects, best P0002 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -135,7 +158,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0002 (scored 75)",
+          "detail": "used in P0002 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -149,7 +172,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0002 (scored 75)",
+          "detail": "used in P0002 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -163,7 +186,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0218 (scored 78)",
+          "detail": "used in P0218 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -177,7 +200,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0002 (scored 75)",
+          "detail": "used in P0002 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -191,7 +214,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0002 (scored 75)",
+          "detail": "used in P0002 (scored 75)",
           "weight": 0.8
         }
       ],
@@ -205,7 +228,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0218 (scored 78)",
+          "detail": "used in P0218 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -219,7 +242,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0218 (scored 78)",
+          "detail": "used in P0218 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -233,7 +256,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0218 (scored 78)",
+          "detail": "used in P0218 (scored 78)",
           "weight": 0.8
         }
       ],
@@ -412,7 +435,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "GCP: built P0057 (scored 61)",
+      "claim": "GCP: used in P0057 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -426,7 +449,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Terraform: built P0057 (scored 61)",
+      "claim": "Terraform: used in P0057 (scored 61)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -440,42 +463,42 @@
       "confidence": 0.82
     },
     {
-      "claim": "TypeScript: built P0057 (scored 61)",
+      "claim": "TypeScript: used in 2 projects, best P0002 (scored 75)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.82
     },
     {
-      "claim": "Express: built P0002 (scored 75)",
+      "claim": "Express: used in P0002 (scored 75)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MongoDB: built P0002 (scored 75)",
+      "claim": "MongoDB: used in P0002 (scored 75)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0218 (scored 78)",
+      "claim": "Redis: used in P0218 (scored 78)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0002 (scored 75)",
+      "claim": "Vite: used in P0002 (scored 75)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0002 (scored 75)",
+      "claim": "scikit-learn: used in P0002 (scored 75)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

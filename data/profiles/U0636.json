@@ -1,7 +1,7 @@
 {
   "user_id": "U0636",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.107Z",
+  "built_at": "2026-09-19T08:17:46.279Z",
   "identity": {
     "full_name": "Dev Tandon",
     "email": "dev.tandon@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0042",
+        "title": "DermScan",
+        "date": "2024-06-25",
+        "score": 51,
+        "tech": ["LangChain", "OpenCV", "scikit-learn"]
+      },
+      {
+        "project_id": "P0085",
+        "title": "FloodFore",
+        "date": "2024-10-26",
+        "score": 70,
+        "tech": ["Raspberry Pi", "MQTT", "Arduino", "Embedded C", "ESP32"]
+      }
+    ],
     "best_rank": 3,
     "avg_score": 60.5,
     "first_seen": "2024-06-25",
@@ -72,7 +88,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0042 (scored 51)",
+          "detail": "used in P0042 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -86,7 +102,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -100,7 +116,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -114,7 +130,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -128,7 +144,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -142,7 +158,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0085 (scored 70)",
+          "detail": "used in P0085 (scored 70)",
           "weight": 0.8
         }
       ],
@@ -156,7 +172,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0042 (scored 51)",
+          "detail": "used in P0042 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -170,7 +186,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0042 (scored 51)",
+          "detail": "used in P0042 (scored 51)",
           "weight": 0.8
         }
       ],
@@ -342,7 +358,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Dev Tandon is a B.Des Electrical Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2029, who signed up as a Product builder. They have attended 3 of the 3 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 1 prize, including rank 3 at NorthStar Hacks with \"FloodFore\" (scored 70). Their strongest evidenced skills are LangChain, Arduino, ESP32, based on built P0042 (scored 51). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.5 out of 5 across 2 sessions. Last active 2025-11-03, 320 days ago — dormant and worth re-engaging.",
+  "narrative": "Dev Tandon is a B.Des Electrical Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2029, who signed up as a Product builder. They have attended 3 of the 3 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 1 prize, including rank 3 at NorthStar Hacks with \"FloodFore\" (scored 70). Their strongest evidenced skills are LangChain, Arduino, ESP32, based on used in P0042 (scored 51). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.5 out of 5 across 2 sessions. Last active 2025-11-03, 320 days ago — dormant and worth re-engaging.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -388,56 +404,56 @@
       "confidence": 1
     },
     {
-      "claim": "LangChain: built P0042 (scored 51)",
+      "claim": "LangChain: used in P0042 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Arduino: built P0085 (scored 70)",
+      "claim": "Arduino: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0085 (scored 70)",
+      "claim": "ESP32: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Embedded C: built P0085 (scored 70)",
+      "claim": "Embedded C: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "MQTT: built P0085 (scored 70)",
+      "claim": "MQTT: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Raspberry Pi: built P0085 (scored 70)",
+      "claim": "Raspberry Pi: used in P0085 (scored 70)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "scikit-learn: built P0042 (scored 51)",
+      "claim": "scikit-learn: used in P0042 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "OpenCV: built P0042 (scored 51)",
+      "claim": "OpenCV: used in P0042 (scored 51)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

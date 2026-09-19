@@ -1,7 +1,7 @@
 {
   "user_id": "U0198",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.074Z",
+  "built_at": "2026-09-19T08:17:46.247Z",
   "identity": {
     "full_name": "Zara Pillai",
     "email": "zara.pillai@srm.ac.in",
@@ -23,6 +23,7 @@
     "submission_rate": 0,
     "prizes": [],
     "prize_count": 0,
+    "projects": [],
     "best_rank": null,
     "avg_score": null,
     "first_seen": "2024-06-25",

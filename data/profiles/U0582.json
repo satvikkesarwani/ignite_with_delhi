@@ -1,7 +1,7 @@
 {
   "user_id": "U0582",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.103Z",
+  "built_at": "2026-09-19T08:17:46.273Z",
   "identity": {
     "full_name": "Ishita Gupta",
     "email": "ishita.gupta6@gmail.com",
@@ -34,6 +34,22 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0067",
+        "title": "CarbonLedger",
+        "date": "2024-09-15",
+        "score": 62,
+        "tech": ["Tailwind CSS", "Node.js", "Vite"]
+      },
+      {
+        "project_id": "P0157",
+        "title": "GridGaze",
+        "date": "2025-08-27",
+        "score": 89,
+        "tech": ["ESP32", "Raspberry Pi", "Pandas", "SQL", "DuckDB", "Airflow"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 75.5,
     "first_seen": "2024-09-14",
@@ -75,7 +91,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0067 (scored 62)",
+          "detail": "used in P0067 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -89,7 +105,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0067 (scored 62)",
+          "detail": "used in P0067 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -103,7 +119,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0157 (scored 89)",
+          "detail": "used in P0157 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -117,7 +133,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0157 (scored 89)",
+          "detail": "used in P0157 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -131,7 +147,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0157 (scored 89)",
+          "detail": "used in P0157 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -145,7 +161,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0157 (scored 89)",
+          "detail": "used in P0157 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -159,7 +175,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0157 (scored 89)",
+          "detail": "used in P0157 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -173,7 +189,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0067 (scored 62)",
+          "detail": "used in P0067 (scored 62)",
           "weight": 0.8
         }
       ],
@@ -187,7 +203,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0157 (scored 89)",
+          "detail": "used in P0157 (scored 89)",
           "weight": 0.8
         }
       ],
@@ -337,7 +353,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Ishita Gupta is a B.E. Data Science student at Indian Institute of Technology Roorkee, graduating in 2027, who signed up as a Design builder. They have attended 2 of the 4 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Winter II with \"GridGaze\" (scored 89). Their strongest evidenced skills are Node.js, Tailwind CSS, Pandas, based on built P0067 (scored 62). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 3 sessions. Last active 2026-06-03, 108 days ago — cooling off.",
+  "narrative": "Ishita Gupta is a B.E. Data Science student at Indian Institute of Technology Roorkee, graduating in 2027, who signed up as a Design builder. They have attended 2 of the 4 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Winter II with \"GridGaze\" (scored 89). Their strongest evidenced skills are Node.js, Tailwind CSS, Pandas, based on used in P0067 (scored 62). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 3 sessions. Last active 2026-06-03, 108 days ago — cooling off.",
   "narrative_status": "template",
   "evidence": [
     {
@@ -376,56 +392,56 @@
       "confidence": 1
     },
     {
-      "claim": "Node.js: built P0067 (scored 62)",
+      "claim": "Node.js: used in P0067 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Tailwind CSS: built P0067 (scored 62)",
+      "claim": "Tailwind CSS: used in P0067 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Pandas: built P0157 (scored 89)",
+      "claim": "Pandas: used in P0157 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "SQL: built P0157 (scored 89)",
+      "claim": "SQL: used in P0157 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Airflow: built P0157 (scored 89)",
+      "claim": "Airflow: used in P0157 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "DuckDB: built P0157 (scored 89)",
+      "claim": "DuckDB: used in P0157 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "ESP32: built P0157 (scored 89)",
+      "claim": "ESP32: used in P0157 (scored 89)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0067 (scored 62)",
+      "claim": "Vite: used in P0067 (scored 62)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

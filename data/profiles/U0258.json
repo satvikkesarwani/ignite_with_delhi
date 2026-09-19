@@ -1,7 +1,7 @@
 {
   "user_id": "U0258",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.079Z",
+  "built_at": "2026-09-19T08:17:46.252Z",
   "identity": {
     "full_name": "Mishka Sharma",
     "email": "mishka.sharma@srm.ac.in",
@@ -34,6 +34,15 @@
       }
     ],
     "prize_count": 1,
+    "projects": [
+      {
+        "project_id": "P0156",
+        "title": "SkillSetu",
+        "date": "2025-07-23",
+        "score": 90,
+        "tech": ["Tailwind CSS", "MongoDB", "NumPy", "Vite", "PostgreSQL", "Node.js"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 90,
     "first_seen": "2025-07-21",
@@ -72,7 +81,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0156 (scored 90)",
+          "detail": "used in P0156 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -91,7 +100,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0156 (scored 90)",
+          "detail": "used in P0156 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -105,7 +114,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0156 (scored 90)",
+          "detail": "used in P0156 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -119,7 +128,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0156 (scored 90)",
+          "detail": "used in P0156 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -133,7 +142,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0156 (scored 90)",
+          "detail": "used in P0156 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -147,7 +156,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0156 (scored 90)",
+          "detail": "used in P0156 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -276,7 +285,7 @@
       "confidence": 0.86
     },
     {
-      "claim": "Node.js: built P0156 (scored 90)",
+      "claim": "Node.js: used in P0156 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
@@ -290,35 +299,35 @@
       "confidence": 0.86
     },
     {
-      "claim": "Tailwind CSS: built P0156 (scored 90)",
+      "claim": "Tailwind CSS: used in P0156 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0156 (scored 90)",
+      "claim": "MongoDB: used in P0156 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0156 (scored 90)",
+      "claim": "PostgreSQL: used in P0156 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Vite: built P0156 (scored 90)",
+      "claim": "Vite: used in P0156 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "NumPy: built P0156 (scored 90)",
+      "claim": "NumPy: used in P0156 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,

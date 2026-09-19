@@ -1,7 +1,7 @@
 {
   "user_id": "U0558",
   "version": 1,
-  "built_at": "2026-09-19T08:03:56.101Z",
+  "built_at": "2026-09-19T08:17:46.272Z",
   "identity": {
     "full_name": "Samaira Prasad",
     "email": "samaira.prasad69@gmail.com",
@@ -44,6 +44,22 @@
       }
     ],
     "prize_count": 2,
+    "projects": [
+      {
+        "project_id": "P0112",
+        "title": "SplitFair",
+        "date": "2025-02-17",
+        "score": 90,
+        "tech": ["Go", "PostgreSQL", "Redis", "MongoDB", "Node.js"]
+      },
+      {
+        "project_id": "P0141",
+        "title": "VaxTrack",
+        "date": "2025-06-12",
+        "score": 86,
+        "tech": ["Flutter", "Kotlin", "HuggingFace", "LangChain"]
+      }
+    ],
     "best_rank": 1,
     "avg_score": 88,
     "first_seen": "2025-02-15",
@@ -89,7 +105,7 @@
         },
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -103,7 +119,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -117,7 +133,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -131,7 +147,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -145,7 +161,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -159,7 +175,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -173,7 +189,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0112 (scored 90)",
+          "detail": "used in P0112 (scored 90)",
           "weight": 0.8
         }
       ],
@@ -187,7 +203,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -201,7 +217,7 @@
       "sources": [
         {
           "type": "project",
-          "detail": "built P0141 (scored 86)",
+          "detail": "used in P0141 (scored 86)",
           "weight": 0.8
         }
       ],
@@ -403,56 +419,56 @@
       "confidence": 0.86
     },
     {
-      "claim": "MongoDB: built P0112 (scored 90)",
+      "claim": "MongoDB: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.86
     },
     {
-      "claim": "LangChain: built P0141 (scored 86)",
+      "claim": "LangChain: used in P0141 (scored 86)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Node.js: built P0112 (scored 90)",
+      "claim": "Node.js: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "PostgreSQL: built P0112 (scored 90)",
+      "claim": "PostgreSQL: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "HuggingFace: built P0141 (scored 86)",
+      "claim": "HuggingFace: used in P0141 (scored 86)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Go: built P0112 (scored 90)",
+      "claim": "Go: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Redis: built P0112 (scored 90)",
+      "claim": "Redis: used in P0112 (scored 90)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
       "confidence": 0.8
     },
     {
-      "claim": "Flutter: built P0141 (scored 86)",
+      "claim": "Flutter: used in P0141 (scored 86)",
       "source_type": "csv",
       "source_ref": "users.csv",
       "observed_at": null,
