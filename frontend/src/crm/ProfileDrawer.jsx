@@ -108,34 +108,37 @@ function ScoreSparkline({ series }) {
   );
 }
 
-export function ProfileDrawer({ userId, onClose }) {
-  const [profile, setProfile] = useState(null);
-  const [loadingId, setLoadingId] = useState(null);
+export function ProfileDrawer({ userId, onClose, initialProfile }) {
+  const [fetchedProfile, setFetchedProfile] = useState(null);
   const [error, setError] = useState(null);
   const [evidenceOpen, setEvidenceOpen] = useState(false);
   const [expandedSkill, setExpandedSkill] = useState(null);
 
+  const profile =
+    initialProfile && initialProfile.user_id === userId ? initialProfile : fetchedProfile;
+
   useEffect(() => {
     if (!userId) return;
+    if (initialProfile && initialProfile.user_id === userId) {
+      return;
+    }
     let alive = true;
 
     api(`/api/crm/candidates/${userId}`)
       .then((data) => {
         if (!alive) return;
-        setProfile(data.profile);
-        setLoadingId(null);
+        setFetchedProfile(data.profile);
         setError(null);
       })
       .catch((err) => {
         if (!alive) return;
         setError(err);
-        setLoadingId(null);
       });
 
     return () => {
       alive = false;
     };
-  }, [userId]);
+  }, [userId, initialProfile]);
 
   // Close on Escape key
   useEffect(() => {
@@ -161,7 +164,7 @@ export function ProfileDrawer({ userId, onClose }) {
 
   if (!userId) return null;
 
-  const isLoading = loadingId === userId || (!profile && !error);
+  const isLoading = (profile?.user_id !== userId && !error) || (!profile && !error);
 
   const trajectoryDirectionIcon = {
     rising: <TrendingUp size={14} className="text-positive" />,
