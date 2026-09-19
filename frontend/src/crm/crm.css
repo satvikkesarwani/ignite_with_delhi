@@ -5,10 +5,7 @@
  * that argues with a mono. Deliberately NOT the glass/indigo look of the dev
  * playground at "/", which keeps working untouched.
  *
- * Tailwind is loaded WITHOUT its global reset (no preflight) so it cannot
- * disturb App.jsx; a small reset is scoped to .crm-root instead. The default
- * palette, shadows and large radii are switched off below so nobody can reach
- * for blue-600 or a drop shadow by habit.
+ * Scoped strictly to .crm-root so it never pollutes the legacy app.
  */
 
 @layer theme, base, components, utilities;
@@ -45,10 +42,9 @@
 }
 
 /* ------------------------------------------------------------------ tokens
- * Dark is the default and the demo mode. Light exists for completeness and is
- * only reached through an explicit data-theme="light", never via the OS setting,
- * so a presenter's laptop can't flip the projector look mid-demo.
+ * Dark is the default and the demo mode.
  */
+.crm-root,
 :root:has(.crm-root) {
   --bg: #12100e; /* warm near-black — not slate, not zinc */
   --surface: #1a1815;
@@ -66,6 +62,7 @@
   color-scheme: dark;
 }
 
+.crm-root[data-theme='light'],
 :root:has(.crm-root)[data-theme='light'] {
   --bg: #f4efe6;
   --surface: #fbf8f2;
@@ -87,6 +84,7 @@ html:has(.crm-root),
 body:has(.crm-root) {
   background: var(--bg);
   margin: 0;
+  padding: 0;
 }
 
 /* ------------------------------------------------------------ scoped base */
@@ -96,7 +94,7 @@ body:has(.crm-root) {
     background: var(--bg);
     color: var(--text);
     font-family: 'IBM Plex Sans', system-ui, sans-serif;
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 1.5;
     font-feature-settings: 'tnum' 1;
     -webkit-font-smoothing: antialiased;
@@ -154,8 +152,8 @@ body:has(.crm-root) {
     outline-offset: 2px;
   }
   .crm-root ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
   }
   .crm-root ::-webkit-scrollbar-thumb {
     background: var(--border-strong);
@@ -166,15 +164,18 @@ body:has(.crm-root) {
   }
 }
 
-/* Numerals everywhere data lives. */
+/* Numerals everywhere data lives */
 .crm-num {
-  /* Literal stack, not var(--font-mono): the dev playground's index.css defines a global
-     --font-mono (JetBrains Mono) that would otherwise win. */
   font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
   font-variant-numeric: tabular-nums;
 }
 
-/* Skeleton row shimmer: a slow fade, never a spinner. */
+/* 2% zebra striping on tables */
+.crm-table tbody tr:nth-child(even) {
+  background-color: rgba(237, 232, 224, 0.02);
+}
+
+/* Skeleton row shimmer */
 @keyframes crm-fade {
   0%,
   100% {
