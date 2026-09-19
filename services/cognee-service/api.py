@@ -149,6 +149,42 @@ def generate_schema(req: SchemaRequest):
     return result
 
 
+class EmbedEntitiesRequest(BaseModel):
+    label: str = "Entity"
+    limit: int = 500
+
+
+class EmbedTextsRequest(BaseModel):
+    texts: List[str]
+
+
+@app.post("/api/graph/embed-entities")
+def embed_entities_route(req: EmbedEntitiesRequest):
+    """U2: write FastEmbed vectors onto :Entity nodes + ensure the Neo4j vector index."""
+    logger.info("Embed-entities request | label=%s limit=%s", req.label, req.limit)
+    try:
+        from graph_embeddings import embed_entities
+
+        result = embed_entities(req.label, req.limit)
+        logger.info("Embed-entities done | %s", result)
+        return result
+    except Exception as e:
+        logger.exception("Embed-entities failed")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/embed")
+def embed_texts_route(req: EmbedTextsRequest):
+    """U2: embed arbitrary texts (used for query vectors in hybrid retrieval)."""
+    try:
+        from graph_embeddings import embed_texts
+
+        return {"embeddings": embed_texts(req.texts)}
+    except Exception as e:
+        logger.exception("Embed failed")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 if __name__ == "__main__":
     import os
 

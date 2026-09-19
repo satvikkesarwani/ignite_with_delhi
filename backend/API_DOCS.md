@@ -176,6 +176,74 @@ curl -X POST $BACKEND/api/tavily/research -H "Content-Type: application/json" \
 
 ---
 
+## 8️⃣ Tavily — Live Web Search (fresh data for the graph)
+
+| Method | Path                          | Purpose                                                                                                                  |
+| ------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| GET    | `/api/tavily/status`          | Key configured? + setup hint                                                                                             |
+| POST   | `/api/tavily/search`          | Web search: `{ query, searchDepth?, topic?, maxResults?, timeRange?, includeDomains?, excludeDomains?, includeAnswer? }` |
+| POST   | `/api/tavily/extract`         | Pull clean page content: `{ urls (1-20), query?, extractDepth?, format? }`                                               |
+| POST   | `/api/tavily/research`        | **Search + Nemotron synthesis**: cited answer from live web results                                                      |
+| POST   | `/api/tavily/ingest-to-graph` | **Web → Knowledge Graph**: search results → claim-check → Cognee ECL → AuraDB                                            |
+
+Key: `TAVILY_API_KEY` in `backend/.env` (format `tvly-...`). Without a key every
+endpoint returns honest `503` + setup hint (never fake success). Credits: basic
+search = 1, advanced = 2; 429 responses honor Tavily's `Retry-After` automatically.
+
+```bash
+# Live web search (with LLM answer):
+curl -X POST $BACKEND/api/tavily/search -H "Content-Type: application/json" \
+  -d '{"query":"latest FATF regulations 2026","topic":"news","maxResults":5}'
+
+# THE KILLER COMBO — fresh web data becomes knowledge-graph facts in one call:
+curl -X POST $BACKEND/api/tavily/ingest-to-graph -H "Content-Type: application/json" \
+  -d '{"query":"latest shell company enforcement cases","datasetName":"web_research"}'
+# → sources staged via claim-check → cognified → queryable via /api/cognify/query
+
+# Web-grounded cited answer:
+curl -X POST $BACKEND/api/tavily/research -H "Content-Type: application/json" \
+  -d '{"query":"...","maxResults":5}'
+```
+
+---
+
+## 9️⃣ Agent Memory + Advanced Graph Intelligence (U1-U5)
+
+| Method | Path                             | Purpose                                                                      |
+| ------ | -------------------------------- | ---------------------------------------------------------------------------- |
+| GET    | `/api/graph/schema`              | Live graph schema (APOC meta + instance samples)                             |
+| POST   | `/api/graph/text2cypher`         | **Natural language → Cypher** (read-only enforced, generated query returned) |
+| POST   | `/api/graph/embed-entities`      | Sync FastEmbed vectors onto `:Entity` nodes + ensure vector index            |
+| POST   | `/api/graph/hybrid-query`        | **Vector + graph in ONE query**: `{ query, topK?, hops? }`                   |
+| POST   | `/api/memory/trace`              | Persist an interaction `{ userText, toolUsed, executedQuery, ... }`          |
+| GET    | `/api/memory/session/:sessionId` | Full auditable reasoning trail                                               |
+| GET    | `/api/memory/sessions`           | Recent sessions                                                              |
+| POST   | `/api/graph/import-csv`          | LOAD CSV + MERGE: `{ nodes: {url,label,uniqueKey}, relationships?: [...] }`  |
+
+**Agent Memory Context Graph** (courses.md Module 6 — 35% agent pillar):
+every answer stores its reasoning trail as graph structure —
+`(:Session)-[:HAS_MESSAGE]->(:Message)-[:TRIGGERED]->(:ReasoningStep)-[:RETRIEVED_ENTITY]->(:Entity)`.
+
+```bash
+# Text2Cypher — generated query is returned for explainability:
+curl -X POST $BACKEND/api/graph/text2cypher -H "Content-Type: application/json" \
+  -d '{"question":"Which offshore accounts received funds and from which entities?"}'
+
+# Hybrid GraphRAG — vector seed + graph expansion in one Cypher query:
+curl -X POST $BACKEND/api/graph/hybrid-query -H "Content-Type: application/json" \
+  -d '{"query":"offshore shell company money transfers","topK":3,"hops":2}'
+
+# Inspect the agent reasoning trail:
+curl $BACKEND/api/memory/session/<sessionId>
+```
+
+**CSV import** (courses.md Module 4): identifiers are whitelist-validated, a
+uniqueness constraint is created first, MERGE makes re-imports idempotent,
+`CALL {...} IN TRANSACTIONS OF 500 ROWS` batches large files. Works with any
+public CSV URL (gists, S3 presigned, hosted files).
+
+---
+
 # 🚨 PS DROP PLAYBOOK — new problem statement → fully connected demo
 
 ### Step 0 — Boot (1 min)

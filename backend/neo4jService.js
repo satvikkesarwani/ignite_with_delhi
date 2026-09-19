@@ -58,6 +58,249 @@ class Neo4jService {
     }
   }
 
+  /** Raw session accessor for services with custom Cypher (memory, schema). Null in mock mode. */
+  getSession() {
+    if (this.isMockMode || !this.driver) return null;
+    return this.driver.session();
+  }
+
+  /**
+   * Live graph schema via apoc.meta.schema() with a manual Cypher fallback.
+   * Powers Text2Cypher prompts (U3) and any model-explorer surface (U4).
+   */
+  async getSchema() {
+    if (this.isMockMode || !this.driver) {
+      const mock = this.getMockGraph();
+      return {
+        isMock: true,
+        source: 'mock',
+        labels: Object.fromEntries(
+          [...new Set(mock.nodes.map((n) => n.type))].map((l) => [
+            l,
+            { count: mock.nodes.filter((n) => n.type === l).length, properties: {} },
+          ])
+        ),
+        relationships: Object.fromEntries(
+          [...new Set(mock.links.map((l) => l.type))].map((t) => [t, { count: 1 }])
+        ),
+      };
+    }
+
+    const session = this.driver.session();
+    try {
+      const apocRes = await session.run('CALL apoc.meta.schema() YIELD value AS schemaMap');
+      const schemaMap = apocRes.records[0]?.get('schemaMap') || {};
+      const labels = {};
+      const relationships = {};
+      for (const [key, val] of Object.entries(schemaMap)) {
+        if (val?.type === 'node') {
+          labels[key] = {
+            count: val.count || 0,
+            properties: Object.fromEntries(
+              Object.entries(val.properties || {}).map(([p, meta]) => [
+                p,
+                { type: meta.type, indexed: Boolean(meta.indexed), unique: Boolean(meta.unique) },
+              ])
+            ),
+          };
+        } else if (val?.type === 'relationship') {
+          relationships[key] = { count: val.count || 0 };
+        }
+      }
+      log.info('Schema introspected via APOC', {
+        labels: Object.keys(labels).length,
+        relTypes: Object.keys(relationships).length,
+      });
+
+      // Instance samples (courses.md Module 3): LLMs write far better Cypher when
+      // the prompt shows a few real node values, not just the structural schema.
+      const INTERNAL_LABELS = new Set([
+        'DocumentChunk',
+        'TextSummary',
+        'GraphMetadata',
+        '__Node__',
+      ]);
+      const samples = {};
+      const topLabels = Object.entries(labels)
+        .filter(([l]) => !INTERNAL_LABELS.has(l))
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, 4);
+      for (const [label] of topLabels) {
+        try {
+          const r = await session.run(`MATCH (n:\`${label}\`) RETURN n LIMIT 5`);
+          samples[label] = r.records
+            .map((rec) => {
+              const p = rec.get('n').properties || {};
+              return (
+                p.name ||
+                p.account_number ||
+                p.id ||
+                (p.description ? String(p.description).slice(0, 40) : null)
+              );
+            })
+            .filter(Boolean);
+        } catch (sampleErr) {
+          log.warn('Sampling failed for label', { label, message: sampleErr.message });
+        }
+      }
+      return { source: 'apoc.meta.schema', labels, relationships, samples };
+    } catch (err) {
+      log.warn('APOC schema failed — deriving schema via plain Cypher', { message: err.message });
+      const labels = {};
+      const labelCounts = await session.run(
+        'MATCH (n) UNWIND labels(n) AS l RETURN l AS label, count(*) AS cnt'
+      );
+      for (const r of labelCounts.records)
+        labels[r.get('label')] = { count: r.get('cnt').toNumber(), properties: {} };
+      const propCounts = await session.run(
+        'MATCH (n) UNWIND labels(n) AS l UNWIND keys(n) AS k RETURN l AS label, k AS prop, count(*) AS cnt'
+      );
+      for (const r of propCounts.records) {
+        const l = r.get('label');
+        if (labels[l]) labels[l].properties[r.get('prop')] = { type: 'unknown' };
+      }
+      const relCounts = await session.run(
+        'MATCH ()-[r]->() UNWIND type(r) AS t RETURN t AS relType, count(*) AS cnt'
+      );
+      const relationships = {};
+      for (const r of relCounts.records)
+        relationships[r.get('relType')] = { count: r.get('cnt').toNumber() };
+      return { source: 'cypher-fallback', labels, relationships };
+    } finally {
+      await session.close();
+    }
+  }
+
+  /**
+  /**
+   * U5 — CSV import (courses.md Module 4): LOAD CSV + MERGE (idempotent) +
+   * batched transactions. Identifiers are whitelisted — they cannot be
+   * parameterized in Cypher, so injection-safe validation is mandatory.
+   */
+  assertIdent(name, what) {
+    if (!/^[A-Za-z_][A-Za-z0-9_]*$/.test(String(name))) {
+      throw new Error(`Invalid ${what}: "${name}" (allowed: letters, digits, underscore)`);
+    }
+    return String(name);
+  }
+
+  async importCsvNodes({ url, label, uniqueKey }) {
+    this.assertIdent(label, 'label');
+    this.assertIdent(uniqueKey, 'uniqueKey');
+    const session = this.driver.session();
+    try {
+      await session.run(
+        `CREATE CONSTRAINT import_${label}_${uniqueKey} IF NOT EXISTS
+         FOR (n:\`${label}\`) REQUIRE n.\`${uniqueKey}\` IS UNIQUE`
+      );
+      const result = await session.run(
+        `LOAD CSV WITH HEADERS FROM $url AS row
+         CALL {
+           WITH row
+           MERGE (n:\`${label}\` { \`${uniqueKey}\`: row[$uniqueKeyCol] })
+           SET n += row
+         } IN TRANSACTIONS OF 500 ROWS`,
+        { url, uniqueKeyCol: uniqueKey }
+      );
+      const counters = result.summary.counters || {};
+      // driver v6 exposes counters as direct properties; v5 used updates()
+      const stats =
+        typeof counters.updates === 'function'
+          ? counters.updates()
+          : { nodesCreated: counters.nodesCreated, propertiesSet: counters.propertiesSet };
+      log.info('CSV nodes imported', { label, url: url.slice(0, 80), stats });
+      return {
+        success: true,
+        label,
+        nodesCreated: stats.nodesCreated || 0,
+        propertiesSet: stats.propertiesSet || 0,
+      };
+    } finally {
+      await session.close();
+    }
+  }
+
+  async importCsvRelationships({ url, type, fromLabel, fromKey, fromCol, toLabel, toKey, toCol }) {
+    [type, fromLabel, fromKey, toLabel, toKey].forEach((v, i) =>
+      this.assertIdent(v, ['type', 'fromLabel', 'fromKey', 'toLabel', 'toKey'][i])
+    );
+    const session = this.driver.session();
+    try {
+      const result = await session.run(
+        `LOAD CSV WITH HEADERS FROM $url AS row
+         CALL {
+           WITH row
+           MATCH (a:\`${fromLabel}\` { \`${fromKey}\`: row[$fromCol] })
+           MATCH (b:\`${toLabel}\` { \`${toKey}\`: row[$toCol] })
+           MERGE (a)-[r:\`${type}\`]->(b)
+           SET r += row
+         } IN TRANSACTIONS OF 500 ROWS`,
+        { url, fromCol, toCol }
+      );
+      const counters = result.summary.counters || {};
+      const stats =
+        typeof counters.updates === 'function'
+          ? counters.updates()
+          : { relationshipsCreated: counters.relationshipsCreated };
+      log.info('CSV relationships imported', { type, stats });
+      return {
+        success: true,
+        type,
+        relationshipsCreated: stats.relationshipsCreated || 0,
+      };
+    } finally {
+      await session.close();
+    }
+  }
+
+  /**
+   * U2 — Hybrid GraphRAG (courses.md Module 6): vector-seeded nodes expanded
+   * through graph traversal in ONE query. `embedding` comes from the Cognee
+   * microservice's FastEmbed model (same model built the index).
+   */
+  async hybridVectorQuery(embedding, { topK = 5, hops = 2 } = {}) {
+    if (this.isMockMode || !this.driver) {
+      return { isMock: true, seeds: [], message: 'Live Neo4j not configured' };
+    }
+    const safeHops = Math.min(Math.max(parseInt(hops, 10) || 2, 1), 3);
+    const cypher = `
+      CALL db.index.vector.queryNodes('entity_embeddings_idx', $topK, $embedding)
+      YIELD node, score
+      MATCH (node)-[r*1..${safeHops}]-(related)
+      WHERE related <> node
+      WITH node, score, related, [rel IN r | type(rel)] AS relTypes
+      RETURN node.name AS seed,
+             score,
+             collect(DISTINCT related.name)[..8] AS connectedEntities,
+             head(relTypes) AS firstRelationship
+      ORDER BY score DESC LIMIT $topK`;
+    const startedAt = Date.now();
+    log.info('Hybrid vector+graph query →', { topK, hops: safeHops });
+    const session = this.driver.session();
+    try {
+      const result = await session.run(cypher, {
+        topK: neo4j.int(topK),
+        embedding,
+      });
+      const rows = result.records.map((r) => ({
+        seed: r.get('seed'),
+        score: r.get('score'),
+        connectedEntities: r.get('connectedEntities'),
+        firstRelationship: r.get('firstRelationship'),
+      }));
+      log.info('Hybrid vector+graph query ←', {
+        seeds: rows.length,
+        durationMs: Date.now() - startedAt,
+      });
+      return { isMock: false, seeds: rows };
+    } catch (err) {
+      log.error('Hybrid query failed', { message: err.message, stack: err.stack });
+      throw err;
+    } finally {
+      await session.close();
+    }
+  }
+
   async checkHealth() {
     if (this.isMockMode || !this.driver) {
       return {

@@ -73,6 +73,18 @@ export default function GraphVisualizer({ backendUrl }) {
     return () => window.removeEventListener('graph:refresh', handleRefresh);
   }, [fetchGraph]);
 
+  // U6: 'graph:highlight' carries { names: [...] } from query results — matched
+  // nodes draw with a gold ring so Text2Cypher/GraphRAG answers light up the canvas.
+  const highlightRef = useRef(new Set());
+  useEffect(() => {
+    const handleHighlight = (event) => {
+      const names = event.detail?.names || [];
+      highlightRef.current = new Set(names.map((n) => String(n).toLowerCase()));
+    };
+    window.addEventListener('graph:highlight', handleHighlight);
+    return () => window.removeEventListener('graph:highlight', handleHighlight);
+  }, []);
+
   // Initialize node positions & simple force physics
   useEffect(() => {
     if (!graphData.nodes || !graphData.nodes.length) return;
@@ -197,18 +209,30 @@ export default function GraphVisualizer({ backendUrl }) {
         // Draw Nodes
         const activeSearch = searchRef.current;
         const activeSelection = selectedRef.current;
+        const highlights = highlightRef.current;
         nodes.forEach((n) => {
           const isMatch =
             !activeSearch ||
             n.label.toLowerCase().includes(activeSearch.toLowerCase()) ||
             n.type.toLowerCase().includes(activeSearch.toLowerCase());
+          const isHighlighted =
+            highlights.size > 0 && highlights.has(String(n.label).toLowerCase());
           const color = TYPE_COLORS[n.type] || TYPE_COLORS.Default;
           const radius = n.radius || 18;
+
+          // U6: gold ring for query-result highlights (answer evidence on canvas)
+          if (isHighlighted) {
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, radius + 7, 0, Math.PI * 2);
+            ctx.strokeStyle = '#fbbf24';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+          }
 
           // Glow
           ctx.beginPath();
           ctx.arc(n.x, n.y, radius + (n === activeSelection ? 6 : 2), 0, Math.PI * 2);
-          ctx.fillStyle = isMatch ? color : 'rgba(100, 116, 139, 0.2)';
+          ctx.fillStyle = isHighlighted ? '#fbbf24' : isMatch ? color : 'rgba(100, 116, 139, 0.2)';
           ctx.globalAlpha = isMatch ? 0.25 : 0.05;
           ctx.fill();
           ctx.globalAlpha = 1.0;

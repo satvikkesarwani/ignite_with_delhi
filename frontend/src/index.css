@@ -899,3 +899,65 @@ code {
     transform: translateY(0);
   }
 }
+
+/* ===== Text2Cypher + Reasoning Trail (U3/U1) ===== */
+.text2c-panel {
+  margin-top: 0.8rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: rgba(2, 6, 23, 0.5);
+}
+
+.cypher-code {
+  margin: 0.6rem 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #7dd3fc;
+  font-size: 0.78rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.trail-bar {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trail-panel {
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  background: rgba(168, 85, 247, 0.06);
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.trail-step {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trail-step:last-child {
+  border-bottom: none;
+}
+
+.trail-q {
+  font-size: 0.82rem;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.trail-meta {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+}
+
+.trail-meta code {
+  color: #c084fc;
+}

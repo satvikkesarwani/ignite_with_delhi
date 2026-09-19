@@ -41,6 +41,11 @@ export default function CognitiveStudio({ backendUrl }) {
   const [queryText, setQueryText] = useState(PRESETS[0].sampleQuery);
   const [queryResult, setQueryResult] = useState(null);
   const [queryLoading, setQueryLoading] = useState(false);
+  const [sessionId, setSessionId] = useState(null);
+  const [text2cResult, setText2cResult] = useState(null);
+  const [text2cLoading, setText2cLoading] = useState(false);
+  const [trail, setTrail] = useState(null);
+  const [trailLoading, setTrailLoading] = useState(false);
   const stepTimerRef = useRef(null);
 
   const handleSelectPreset = (preset) => {
@@ -94,22 +99,69 @@ export default function CognitiveStudio({ backendUrl }) {
     if (!queryText.trim()) return;
     setQueryLoading(true);
     setQueryResult(null);
+    setText2cResult(null);
 
     try {
       const res = await fetch(`${backendUrl}/api/cognify/query`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: queryText, context: inputText }),
+        body: JSON.stringify({ query: queryText, context: inputText, sessionId }),
       });
       const data = await res.json();
       if (!res.ok || !data.success) {
         throw new Error(data.error || `HTTP ${res.status}`);
       }
       setQueryResult(data);
+      setSessionId(data.sessionId || sessionId);
     } catch (err) {
       setQueryResult({ success: false, error: err.message });
     } finally {
       setQueryLoading(false);
+    }
+  };
+
+  // U3: Text2Cypher — natural language → generated Cypher (shown for explainability)
+  const handleText2Cypher = async () => {
+    if (!queryText.trim()) return;
+    setText2cLoading(true);
+    setText2cResult(null);
+
+    try {
+      const res = await fetch(`${backendUrl}/api/graph/text2cypher`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: queryText, sessionId }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
+      setText2cResult(data);
+      setSessionId(data.sessionId || sessionId);
+      // Highlight the matched entities on the graph canvas
+      const names = (data.records || [])
+        .flatMap((r) => Object.values(r))
+        .filter((v) => typeof v === 'string' && v.length < 60);
+      window.dispatchEvent(new CustomEvent('graph:highlight', { detail: { names } }));
+    } catch (err) {
+      setText2cResult({ success: false, error: err.message });
+    } finally {
+      setText2cLoading(false);
+    }
+  };
+
+  // U1: pull the auditable reasoning trail for this session from the graph
+  const handleShowTrail = async () => {
+    if (!sessionId) return;
+    setTrailLoading(true);
+    try {
+      const res = await fetch(`${backendUrl}/api/memory/session/${sessionId}`);
+      const data = await res.json();
+      setTrail(data);
+    } catch (err) {
+      setTrail({ success: false, error: err.message });
+    } finally {
+      setTrailLoading(false);
     }
   };
 
@@ -258,6 +310,14 @@ export default function CognitiveStudio({ backendUrl }) {
             <button onClick={handleExecuteQuery} disabled={queryLoading} className="btn-query">
               {queryLoading ? 'Reasoning...' : '⚡ Query Graph'}
             </button>
+            <button
+              onClick={handleText2Cypher}
+              disabled={text2cLoading}
+              className="btn-query"
+              title="LLM generates read-only Cypher, executes it, and shows the query"
+            >
+              {text2cLoading ? 'Generating…' : '🧬 Ask via Cypher'}
+            </button>
           </div>
 
           <div className="query-chips">
@@ -309,6 +369,63 @@ export default function CognitiveStudio({ backendUrl }) {
               </div>
             )}
           </div>
+
+          {/* U3: Text2Cypher result — generated Cypher shown for explainability */}
+          {text2cResult && (
+            <div
+              className={`text2c-panel ${text2cResult.success ? 'result-live' : 'result-error'}`}
+            >
+              <div className="result-badges">
+                <span className={`mode-badge ${text2cResult.success ? 'badge-live' : 'badge-sim'}`}>
+                  {text2cResult.success
+                    ? '🧬 Generated Cypher (read-only)'
+                    : '❌ Generation failed'}
+                </span>
+              </div>
+              {text2cResult.success ? (
+                <>
+                  <pre className="cypher-code">{text2cResult.cypher}</pre>
+                  {text2cResult.synthesis?.content && (
+                    <p className="response-text">{text2cResult.synthesis.content}</p>
+                  )}
+                </>
+              ) : (
+                <p className="result-error-text">{text2cResult.error}</p>
+              )}
+            </div>
+          )}
+
+          {/* U1: auditable reasoning trail from the Agent Memory Context Graph */}
+          <div className="trail-bar">
+            <button
+              onClick={handleShowTrail}
+              disabled={trailLoading || !sessionId}
+              className="btn-query"
+            >
+              {trailLoading ? 'Loading…' : '🧾 Show Reasoning Trail'}
+            </button>
+          </div>
+          {trail && (
+            <div className="trail-panel">
+              {trail.success ? (
+                trail.trail.length ? (
+                  trail.trail.map((t, i) => (
+                    <div key={i} className="trail-step">
+                      <div className="trail-q">Q: {t.userText}</div>
+                      <div className="trail-meta">
+                        tool: <code>{t.toolUsed}</code> · grounding: <code>{t.grounding}</code> ·
+                        entities: <code>{t.retrievedEntities.join(', ') || '—'}</code>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <p className="result-detail">No interactions recorded for this session yet.</p>
+                )
+              ) : (
+                <p className="result-error-text">{trail.error}</p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

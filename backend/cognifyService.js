@@ -246,6 +246,37 @@ class CognifyService {
       return { mode: 'fallback', reason: err.message, results: [] };
     }
   }
+
+  /**
+   * Generic proxy for auxiliary cognee-service endpoints (embeddings, entity
+   * embedding sync — U2). Returns { available:false } instead of throwing when
+   * the microservice is down so routes can degrade honestly.
+   */
+  async proxyPost(path, body = {}, requestId, timeoutMs = SEARCH_TIMEOUT_MS) {
+    const health = await this.checkServiceHealth(requestId);
+    if (!health.available) {
+      return { available: false, reason: health.reason };
+    }
+    try {
+      const res = await fetchWithTimeout(
+        `${this.serviceUrl}${path}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        },
+        timeoutMs,
+        requestId
+      );
+      if (!res.ok) {
+        return { available: false, reason: `${path} HTTP ${res.status}` };
+      }
+      return { available: true, data: await res.json() };
+    } catch (err) {
+      log.error('Cognee proxy call failed', { requestId, path, message: err.message });
+      return { available: false, reason: err.message };
+    }
+  }
 }
 
 export const cognifyService = new CognifyService();

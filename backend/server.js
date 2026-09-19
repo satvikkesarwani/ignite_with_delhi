@@ -8,7 +8,8 @@ import { neo4jService } from './neo4jService.js';
 import { claimCheckService } from './claimCheckService.js';
 import { renderWorkflowService } from './renderWorkflowService.js';
 import { cognifyService } from './cognifyService.js';
-import { tavilyService, TavilyError } from './tavilyService.js';
+import { tavilyService } from './tavilyService.js';
+import { memoryService } from './memoryService.js';
 import { logger, createLogger } from './logger.js';
 
 dotenv.config();
@@ -429,14 +430,347 @@ app.post('/api/cognify/query', async (req, res) => {
       ],
     });
 
+    // Stage 3 (U1): persist the interaction as an Agent Memory reasoning trail.
+    // Never fails the answer — memory errors are logged and swallowed.
+    const sessionId = req.body.sessionId || crypto.randomUUID().slice(0, 12);
+    const grounding = retrieval.mode === 'live' ? 'cognee_graph' : 'raw_text_fallback';
+    const memory = await memoryService
+      .traceQuery({
+        sessionId,
+        query,
+        grounding,
+        answerText: synthesis.content,
+        contextText: graphContext,
+      })
+      .catch((memErr) => {
+        req.log.warn('Memory trace skipped', { message: memErr.message });
+        return { stored: false, reason: memErr.message };
+      });
+
     res.json({
       success: true,
+      sessionId,
+      memory,
       grounding: retrieval.mode === 'live' ? 'cognee_graph' : 'raw_text_fallback',
       retrievalResults: retrieval.results.length,
       synthesis,
     });
   } catch (err) {
     req.log.error('Cognify query failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// U4: live graph schema (APOC meta with Cypher fallback) — feeds Text2Cypher + model views
+app.get('/api/graph/schema', async (req, res) => {
+  try {
+    const schema = await neo4jService.getSchema();
+    res.json({ success: true, ...schema });
+  } catch (err) {
+    req.log.error('Schema introspection failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// U2: sync FastEmbed vectors onto :Entity nodes + ensure the Neo4j vector index.
+// Proxies to the Cognee microservice (it owns the FastEmbed model). Idempotent.
+app.post('/api/graph/embed-entities', async (req, res) => {
+  try {
+    const { label = 'Entity', limit = 500 } = req.body || {};
+    const proxied = await cognifyService.proxyPost(
+      '/api/graph/embed-entities',
+      { label, limit },
+      req.requestId,
+      300000
+    );
+    if (!proxied.available) {
+      return res.status(503).json({ success: false, error: proxied.reason });
+    }
+    res.json({ success: true, ...proxied.data });
+  } catch (err) {
+    req.log.error('Entity embedding sync failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// U2: Hybrid GraphRAG — ONE query combines vector similarity + graph traversal
+app.post('/api/graph/hybrid-query', async (req, res) => {
+  try {
+    const { query, topK = 5, hops = 2, sessionId } = req.body;
+    if (!query) {
+      return res.status(400).json({ success: false, error: 'query is required' });
+    }
+
+    // 1. Query embedding from the same FastEmbed model that built the index
+    const embed = await cognifyService.proxyPost(
+      '/api/embed',
+      { texts: [query] },
+      req.requestId,
+      60000
+    );
+    if (!embed.available) {
+      return res.status(503).json({ success: false, error: embed.reason });
+    }
+    const embedding = embed.data.embeddings?.[0];
+    if (!embedding) {
+      return res.status(502).json({ success: false, error: 'Cognee returned no embedding' });
+    }
+
+    // 2. Vector seed → graph expansion in a single Cypher statement
+    const hybrid = await neo4jService.hybridVectorQuery(embedding, { topK, hops });
+    const sid = sessionId || crypto.randomUUID().slice(0, 12);
+
+    // 3. Synthesis grounded in the hybrid results + memory trail (U1)
+    const synthesis = await generateChat({
+      messages: [
+        {
+          role: 'system',
+          content:
+            'You are a graph analyst. Summarize the hybrid vector+graph retrieval results in 3-5 sentences answering the user question. /no_think — output only the final answer.',
+        },
+        {
+          role: 'user',
+          content: `Question: ${query}\nVector-seeded entities with their graph neighborhoods: ${JSON.stringify(
+            hybrid.seeds
+          ).slice(0, 2500)}`,
+        },
+      ],
+      maxTokens: 400,
+    });
+
+    const memory = await memoryService
+      .traceInteraction({
+        sessionId: sid,
+        userText: query,
+        toolUsed: 'hybrid_vector_graph_query',
+        executedQuery: `vector.queryNodes(topK=${topK}) + ${hops}-hop expansion`,
+        grounding: 'hybrid_vector_graph',
+        retrievedEntities: hybrid.seeds.map((s) => s.seed),
+        responsePreview: synthesis.content,
+      })
+      .catch((memErr) => ({ stored: false, reason: memErr.message }));
+
+    res.json({
+      success: true,
+      isMock: hybrid.isMock ?? false,
+      seeds: hybrid.seeds,
+      synthesis,
+      memory,
+      sessionId: sid,
+    });
+  } catch (err) {
+    req.log.error('Hybrid query failed', { message: err.message, stack: err.stack });
+    res.status(err.status || 500).json({ success: false, error: err.message });
+  }
+});
+
+// U5: CSV import — LOAD CSV + MERGE (idempotent) + batched transactions.
+// nodes: { url, label, uniqueKey } · relationships: { url, type, fromLabel,
+// fromKey, fromCol, toLabel, toKey, toCol }. Identifiers whitelisted (injection-safe).
+app.post('/api/graph/import-csv', async (req, res) => {
+  try {
+    const { nodes, relationships } = req.body || {};
+    if (!nodes && !relationships) {
+      return res
+        .status(400)
+        .json({ success: false, error: 'Provide "nodes" and/or "relationships" import specs' });
+    }
+    const results = {};
+    if (nodes) {
+      results.nodes = await neo4jService.importCsvNodes(nodes);
+    }
+    if (relationships) {
+      results.relationships = Array.isArray(relationships)
+        ? await Promise.all(relationships.map((r) => neo4jService.importCsvRelationships(r)))
+        : await neo4jService.importCsvRelationships(relationships);
+    }
+    req.log.info('CSV import complete', {
+      nodes: Boolean(nodes),
+      relationships: Boolean(relationships),
+    });
+    res.json({ success: true, results });
+  } catch (err) {
+    req.log.error('CSV import failed', { message: err.message, stack: err.stack });
+    res.status(err.status || 400).json({ success: false, error: err.message });
+  }
+});
+
+// U3: Text2Cypher — natural language → generated Cypher (read-only enforced) → results
+app.post('/api/graph/text2cypher', async (req, res) => {
+  try {
+    const { question, sessionId, synthesize = true } = req.body;
+    if (!question) {
+      return res.status(400).json({ success: false, error: 'question is required' });
+    }
+
+    // 1. Live schema → compact prompt (internal labels dropped, instance samples included —
+    // courses.md Module 3: LLMs ground far better with real values than bare structure)
+    const schema = await neo4jService.getSchema();
+    const schemaForPrompt = {
+      nodeLabels: Object.entries(schema.labels || {})
+        .filter(
+          ([l]) =>
+            !l.startsWith('__') && !['DocumentChunk', 'TextSummary', 'GraphMetadata'].includes(l)
+        )
+        .map(([label, v]) => ({
+          label,
+          count: v.count,
+          sampleValues: schema.samples?.[label] || [],
+        })),
+      relationshipTypes: Object.keys(schema.relationships || {}),
+    };
+    const schemaText = JSON.stringify(schemaForPrompt, null, 1);
+    const messages = [
+      {
+        role: 'system',
+        content: `You are a Neo4j Cypher expert. Convert the user's question into ONE read-only Cypher statement.
+Rules:
+- Output ONLY the Cypher statement — no explanations, no markdown fences, no comments.
+- Use ONLY the nodeLabels and relationshipTypes from the provided schema.
+- CRITICAL: relationship types must be copied EXACTLY as they appear in relationshipTypes
+  (e.g. "routed_funds_through"). If no type clearly matches the question, match any
+  relationship with bare "[r]" and RETURN type(r) so the caller sees what exists.
+- Node names are lowercase slugs like the sampleValues shown (e.g. "meridian_bvi").
+  Match with toLower(n.name) CONTAINS '<one distinctive word>' — NEVER full phrases.
+- READ-ONLY: the statement must start with MATCH, OPTIONAL MATCH, or CALL db.index.vector.queryNodes.
+- NEVER use CREATE, MERGE, DELETE, SET, REMOVE, DROP, LOAD CSV, or FOREACH.
+- ALWAYS end with a LIMIT (maximum 50).
+Example of a query that WORKS on this graph (follow this shape):
+MATCH (s:Entity)-[r*1..3]-(t:Entity) WHERE toLower(s.name) CONTAINS 'meridian' RETURN s.name, t.name, size(r) AS hops LIMIT 10
+Provided schema (with sample values): ${schemaText}`,
+      },
+      { role: 'user', content: question },
+    ];
+
+    // 2. Generate the Cypher (thinking off — deterministic, fast)
+    const gen = await generateChat({ messages, temperature: 0.1, maxTokens: 400 });
+    let cypher = gen.content
+      .replace(/```[a-z]*\n?/gi, '')
+      .split('\n')
+      .filter((l) => !l.trim().startsWith('//'))
+      .join('\n')
+      .trim();
+
+    // 3. Read-only safety gate — writes never reach the database
+    const WRITE_RE =
+      /\b(CREATE|MERGE|DELETE|DETACH|SET|REMOVE|DROP|LOAD CSV|FOREACH)\b|\bCALL\s+apoc\b/i;
+    const startsOk = /^(MATCH|OPTIONAL MATCH|CALL db\.index\.)/i.test(cypher);
+    if (!startsOk || WRITE_RE.test(cypher)) {
+      req.log.warn('Text2Cypher rejected unsafe/unparseable statement', {
+        cypher: cypher.slice(0, 200),
+      });
+      return res.status(422).json({
+        success: false,
+        error: 'Generated Cypher failed the read-only safety check',
+        generatedCypher: cypher,
+      });
+    }
+
+    // 4. Execute against the live graph
+    const exec = await neo4jService.runCypherQuery(cypher, {});
+
+    // 5. Nemotron synthesis over the raw records
+    let synthesis = null;
+    if (synthesize && exec.success) {
+      synthesis = await generateChat({
+        messages: [
+          {
+            role: 'system',
+            content:
+              'You are a graph analyst. Summarize the Cypher query results in 2-4 sentences answering the user question. /no_think — output only the final answer.',
+          },
+          {
+            role: 'user',
+            content: `Question: ${question}\nCypher executed:\n${cypher}\n\nResults (JSON): ${JSON.stringify(
+              exec.records
+            ).slice(0, 2500)}`,
+          },
+        ],
+        maxTokens: 300,
+      });
+    }
+
+    // 6. Memory trail (U1) — the reasoning step records the generated Cypher
+    const sid = sessionId || crypto.randomUUID().slice(0, 12);
+    const memory = await memoryService
+      .traceInteraction({
+        sessionId: sid,
+        userText: question,
+        toolUsed: 'text2cypher',
+        executedQuery: cypher,
+        grounding: 'text2cypher',
+        retrievedEntities: [],
+        responsePreview: synthesis?.content || JSON.stringify(exec.records).slice(0, 400),
+      })
+      .catch((memErr) => {
+        req.log.warn('Memory trace skipped', { message: memErr.message });
+        return { stored: false, reason: memErr.message };
+      });
+
+    res.json({
+      success: exec.success !== false,
+      cypher,
+      records: exec.records,
+      isMock: exec.isMock ?? false,
+      synthesis,
+      memory,
+      sessionId: sid,
+    });
+  } catch (err) {
+    req.log.error('Text2Cypher failed', { message: err.message, stack: err.stack });
+    res.status(err.status || 500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * AGENT MEMORY (U1) — graph-backed reasoning trails (courses.md Module 6).
+ */
+app.post('/api/memory/trace', async (req, res) => {
+  try {
+    const {
+      sessionId,
+      userText,
+      toolUsed,
+      executedQuery,
+      grounding,
+      retrievedEntities,
+      responsePreview,
+    } = req.body;
+    if (!userText) {
+      return res.status(400).json({ success: false, error: 'userText is required' });
+    }
+    const result = await memoryService.traceInteraction({
+      sessionId,
+      userText,
+      toolUsed: toolUsed || 'manual_trace',
+      executedQuery,
+      grounding,
+      retrievedEntities,
+      responsePreview,
+    });
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Memory trace failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/memory/session/:sessionId', async (req, res) => {
+  try {
+    const result = await memoryService.getSessionTrail(req.params.sessionId);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Memory trail failed', { message: err.message, stack: err.stack });
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.get('/api/memory/sessions', async (req, res) => {
+  try {
+    const result = await memoryService.listSessions(req.query.limit);
+    res.json({ success: true, ...result });
+  } catch (err) {
+    req.log.error('Memory session list failed', { message: err.message, stack: err.stack });
     res.status(500).json({ success: false, error: err.message });
   }
 });
