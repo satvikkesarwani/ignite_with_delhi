@@ -12,4 +12,9 @@ venv
 .cognee
 .cognee_system
 uploads
+.vercel
+data
+docs
+config
+*.md
 
