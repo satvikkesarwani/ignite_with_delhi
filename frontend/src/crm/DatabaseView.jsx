@@ -39,7 +39,7 @@ export function DatabaseView() {
   const [sortKey, setSortKey] = useState('engagement');
   const [sortOrder, setSortOrder] = useState('desc'); // 'asc' | 'desc'
   const [page, setPage] = useState(1);
-  const limit = 50;
+  const limit = 25;
 
   // Drawer selection from URL query or click
   const [selectedUserId, setSelectedUserId] = useState(() => {
@@ -63,20 +63,43 @@ export function DatabaseView() {
       } else {
         url.searchParams.delete('id');
       }
-      window.history.replaceState({}, '', url.toString());
+      window.history.pushState({}, '', url.toString());
     }
   };
 
-  // Debounce search input by 150ms
+  // Keyboard navigation: j/k to move highlight, Enter to open, Esc to close
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedUserId) return; // let drawer handle Esc
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+
+      if (e.key === 'j') {
+        e.preventDefault();
+        setFocusedIndex((prev) => Math.min(prev + 1, candidates.length - 1));
+      } else if (e.key === 'k') {
+        e.preventDefault();
+        setFocusedIndex((prev) => Math.max(prev - 1, 0));
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (candidates[focusedIndex]) {
+          selectUser(candidates[focusedIndex].user_id);
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [candidates, focusedIndex, selectedUserId]);
+
+  // Debounce search input
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(search);
-      setPage(1);
-    }, 150);
+      setPage(1); // reset to page 1 on search
+    }, 200);
     return () => clearTimeout(timer);
   }, [search]);
 
-  // Fetch candidates from API asynchronously inside effect
+  // Fetch candidates from API
   useEffect(() => {
     let ignore = false;
     const ctrl = new AbortController();
@@ -93,8 +116,9 @@ export function DatabaseView() {
     api(`/api/crm/candidates?${params.toString()}`, { signal: ctrl.signal })
       .then((res) => {
         if (!ignore) {
-          setCandidates(res.rows || []);
-          setTotal(res.total || 0);
+          const list = res.rows || res.candidates || [];
+          setCandidates(list);
+          setTotal(res.total ?? list.length);
           if (res.facets) {
             setFacets(res.facets);
           }
@@ -231,7 +255,8 @@ export function DatabaseView() {
     setFocusedIndex(0);
   };
 
-  const startRecord = Math.min((page - 1) * limit + 1, total);
+  const totalPages = Math.max(1, Math.ceil(total / limit));
+  const startRecord = total > 0 ? (page - 1) * limit + 1 : 0;
   const endRecord = Math.min(page * limit, total);
 
   return (
@@ -619,26 +644,35 @@ export function DatabaseView() {
 
       {/* Pagination Bar */}
       {total > limit && (
-        <div className="flex items-center justify-between border-t border-border pt-2.5">
+        <div className="flex items-center justify-between border-t border-border pt-2.5 pb-1">
           <div className="crm-num text-[11.5px] text-muted">
             Showing {startRecord}–{endRecord} of {total} candidates
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <Button
               variant="outline"
               size="sm"
               disabled={page <= 1}
-              onClick={() => setPage((p) => Math.max(1, p - 1))}
-              className="text-[11.5px] h-7 px-2"
+              onClick={() => {
+                setPage((p) => Math.max(1, p - 1));
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="text-[11.5px] h-7 px-2.5"
             >
               Previous
             </Button>
+            <div className="crm-num flex items-center px-2 text-[11.5px] text-muted">
+              Page <span className="mx-1 font-semibold text-text">{page}</span> of {totalPages}
+            </div>
             <Button
               variant="outline"
               size="sm"
               disabled={endRecord >= total}
-              onClick={() => setPage((p) => p + 1)}
-              className="text-[11.5px] h-7 px-2"
+              onClick={() => {
+                setPage((p) => p + 1);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="text-[11.5px] h-7 px-2.5"
             >
               Next
             </Button>
