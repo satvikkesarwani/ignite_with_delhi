@@ -35,7 +35,12 @@ export const NAV_ITEMS = [
 
 function connectionState(stats, error) {
   if (error) {
-    return { label: 'OFFLINE', tone: 'bg-danger', hint: 'backend unreachable' };
+    return {
+      label: 'OFFLINE',
+      tone: 'bg-danger',
+      // status 0 means the request never got an answer; anything else is the server's own message
+      hint: error.status ? `stats failed: ${error.message}` : 'backend unreachable',
+    };
   }
   if (!stats) {
     return { label: '…', tone: 'bg-faint', hint: 'connecting' };

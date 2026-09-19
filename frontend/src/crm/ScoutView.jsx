@@ -19,8 +19,8 @@ import { cn } from '@/lib/utils';
 const SUGGESTED_PROMPTS = [
   'Is Shiv Sharma in our database?',
   'Find ML builders from Delhi colleges who have won something',
-  'Who has gone quiet since winning?',
-  'Who would make a good mentor this year?',
+  'Who has won a prize but gone quiet?',
+  'Who won the Neo4j track?',
 ];
 
 function EngagementCell({ value }) {
@@ -50,14 +50,23 @@ export function ScoutView() {
   const [activeQueryTitle, setActiveQueryTitle] = useState('');
   const [tableRows, setTableRows] = useState([]);
   const [rationaleMap, setRationaleMap] = useState({});
+  const [totalMatches, setTotalMatches] = useState(null);
   const [selectedRowIds, setSelectedRowIds] = useState(new Set());
   const [flashingUserId, setFlashingUserId] = useState(null);
 
   // Drawer & Modal state
   const [drawerUserId, setDrawerUserId] = useState(null);
   const [outreachModalOpen, setOutreachModalOpen] = useState(false);
+  const [outreachTemplate, setOutreachTemplate] = useState('hackathon-invite');
+  const [outreachBusy, setOutreachBusy] = useState(false);
+  const [outreachResult, setOutreachResult] = useState(null);
+  const [outreachError, setOutreachError] = useState(null);
   const [openCypherIndex, setOpenCypherIndex] = useState(null);
 
+  // One id for the whole visit: the agent keeps "who we were just talking about" per session.
+  const sessionIdRef = useRef(
+    `scout-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`
+  );
   const messagesEndRef = useRef(null);
   const rowRefs = useRef({});
 
@@ -100,251 +109,46 @@ export function ScoutView() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isLoading]);
 
-  // Execute query handler
+  // Every message goes to the agent. It owns disambiguation, "he/she/they" follow-ups and segment
+  // search, and keeps that state per sessionId, so the UI must not answer anything itself.
   const executeQuery = useCallback(
     async (queryText) => {
       const text = queryText.trim();
       if (!text || isLoading) return;
 
       setInputQuery('');
-      const userMsg = { id: `u-${Date.now()}`, role: 'user', text };
-      setMessages((prev) => [...prev, userMsg]);
+      setMessages((prev) => [...prev, { id: `u-${Date.now()}`, role: 'user', text }]);
       setIsLoading(true);
 
       try {
-        const lower = text.toLowerCase();
-
-        // Check if user is resolving a disambiguation selection (e.g. U0001 or U0002)
-        if (lower.includes('u0001') || (lower.includes('shiv') && lower.includes('iit'))) {
-          // Resolved to Shiv Sharma (IIT Delhi)
-          await new Promise((r) => setTimeout(r, 180));
-          const resolvedMsg = {
-            id: `a-${Date.now()}`,
-            role: 'agent',
-            text: 'Resolved to Shiv Sharma (U0001) at IIT Delhi. Shiv has attended 7 hackathons with 3 wins, maintaining an 86% submission rate. His primary strengths are Python and PyTorch with 22 public repos and verified project evidence in the knowledge graph.',
-            strategy: 'template:profile_lookup',
-            latency_ms: 180,
-            cypher:
-              'MATCH (cp:ContextProfile)-[:ABOUT]->(p:Person {user_id: "U0001"})\nOPTIONAL MATCH (p)-[:STUDIED_AT]->(c:College)\nRETURN p, cp.narrative, cp.facts',
-            citations: [
-              { user_id: 'U0001', claim: '7 hackathons attended (participations.csv)' },
-              {
-                user_id: 'U0001',
-                claim: 'Won 1st place at Ignite Delhi Monsoon (results.csv#P0031)',
-              },
-              { user_id: 'U0001', claim: 'Python across 22 repos (github_synthetic_seed)' },
-            ],
-          };
-          setMessages((prev) => [...prev, resolvedMsg]);
-
-          const shivRow = {
-            user_id: 'U0001',
-            full_name: 'Shiv Sharma',
-            email: 'shiv.sharma@iitd.ac.in',
-            college: 'IIT Delhi',
-            city: 'Delhi',
-            personas: ['Serial Winner', 'Mentor Material'],
-            top_skills: ['Python', 'PyTorch', 'LangChain'],
-            hackathons_attended: 7,
-            prize_count: 3,
-            engagement: 78,
-            last_active: '2026-09-09',
-            status: 'active',
-            consent_flag: true,
-          };
-          setTableRows([shivRow]);
-          setRationaleMap({
-            U0001: '1 win at GenAI track, Python across 22 repos, active 10 days ago',
-          });
-          setActiveQueryTitle('Shiv Sharma (U0001) · IIT Delhi');
-          return;
-        }
-
-        if (lower.includes('u0002') || (lower.includes('shiv') && lower.includes('amity'))) {
-          // Resolved to Shiv Sharma (Amity Noida)
-          await new Promise((r) => setTimeout(r, 150));
-          const resolvedMsg = {
-            id: `a-${Date.now()}`,
-            role: 'agent',
-            text: 'Resolved to Shiv Sharma (U0002) at Amity Noida. Shiv has attended 2 hackathons in the Backend track with 0 prizes and an engagement score of 35/100.',
-            strategy: 'template:profile_lookup',
-            latency_ms: 150,
-            cypher:
-              'MATCH (cp:ContextProfile)-[:ABOUT]->(p:Person {user_id: "U0002"})\nOPTIONAL MATCH (p)-[:STUDIED_AT]->(c:College)\nRETURN p, cp.facts',
-            citations: [
-              { user_id: 'U0002', claim: '2 hackathons attended (participations.csv)' },
-              { user_id: 'U0002', claim: 'Declared Node.js, Express (signup)' },
-            ],
-          };
-          setMessages((prev) => [...prev, resolvedMsg]);
-
-          const shivAmityRow = {
-            user_id: 'U0002',
-            full_name: 'Shiv Sharma',
-            email: 'shiv.sharma.amity@gmail.com',
-            college: 'Amity Noida',
-            city: 'Noida',
-            personas: ['One-Time Participant'],
-            top_skills: ['Node.js', 'Express', 'SQL'],
-            hackathons_attended: 2,
-            prize_count: 0,
-            engagement: 35,
-            last_active: '2026-04-12',
-            status: 'dormant',
-            consent_flag: true,
-          };
-          setTableRows([shivAmityRow]);
-          setRationaleMap({
-            U0002: 'Backend focus, attended 2 hackathons, no prizes, dormant since April',
-          });
-          setActiveQueryTitle('Shiv Sharma (U0002) · Amity Noida');
-          return;
-        }
-
-        // Query 1: Shiv Sharma existence check / disambiguation
-        const isPersonCheck =
-          lower.includes('shiv') ||
-          lower.includes('is in our database') ||
-          lower.includes('in our database?') ||
-          lower.includes('who is');
-
-        if (isPersonCheck) {
-          const chatRes = await api('/api/agent/chat', {
-            method: 'POST',
-            body: { message: text, sessionId: 'scout-session' },
-          });
-
-          const matches = chatRes.matches || chatRes.resolution?.matches || [];
-          const agentMsg = {
-            id: `a-${Date.now()}`,
-            role: 'agent',
-            text: chatRes.answer,
-            strategy: chatRes.strategy || 'resolve:ambiguous',
-            latency_ms: chatRes.latency_ms || 1,
-            cypher: chatRes.cypher || null,
-            citations: chatRes.citations || [],
-            resolution: chatRes.resolution || null,
-            matches: matches,
-          };
-
-          setMessages((prev) => [...prev, agentMsg]);
-
-          if (chatRes.table?.length > 0) {
-            setTableRows(chatRes.table);
-            setActiveQueryTitle(text);
-          }
-          return;
-        }
-
-        // Query 3: Who has gone quiet since winning?
-        if (lower.includes('quiet') || lower.includes('dormant') || lower.includes('cooling')) {
-          const segRes = await api('/api/crm/segment', {
-            method: 'POST',
-            body: { query: 'Who has gone quiet since winning?' },
-          });
-
-          // Filter for dormant, cooling, or lapsed winners
-          const allRows = segRes.rows || [];
-          const quietRows = allRows
-            .filter((r) => r.prize_count > 0 && ['cooling', 'dormant', 'lapsed'].includes(r.status))
-            .slice(0, 8);
-
-          const rationales = segRes.rationale_by_user_id || {};
-          const rowsToShow = quietRows.length > 0 ? quietRows : allRows.slice(0, 8);
-          setTableRows(rowsToShow);
-          setRationaleMap(rationales);
-          setActiveQueryTitle('Quiet Winners (Prize winners with low recent activity)');
-
-          const agentMsg = {
-            id: `a-${Date.now()}`,
-            role: 'agent',
-            text: `Identified ${rowsToShow.length} participants with verified prize finishes who have gone cooling or dormant (no activity in >60 days). Highly recommended segment for win-back outreach campaigns.`,
-            strategy: 'template:dormant_prize_winners',
-            latency_ms: 210,
-            cypher:
-              'MATCH (cp:ContextProfile)-[:ABOUT]->(p:Person)\nWHERE cp.facts.prize_count > 0 AND cp.trajectory.status IN ["cooling", "dormant", "lapsed"]\nRETURN p.user_id, p.full_name, cp.facts.prize_count, p.last_active\nORDER BY cp.facts.prize_count DESC, p.last_active ASC',
-            citations: rowsToShow.slice(0, 3).map((r) => ({
-              user_id: r.user_id,
-              claim: rationales[r.user_id] || `${r.full_name} (${r.status})`,
-            })),
-          };
-
-          setMessages((prev) => [...prev, agentMsg]);
-          return;
-        }
-
-        // Query 4: Who would make a good mentor this year?
-        if (lower.includes('mentor')) {
-          const segRes = await api('/api/crm/segment', {
-            method: 'POST',
-            body: { query: 'Who would make a good mentor this year?' },
-          });
-
-          const allRows = segRes.rows || [];
-          const mentorRows = allRows
-            .filter(
-              (r) =>
-                r.personas?.includes('Mentor Material') ||
-                r.personas?.includes('Serial Winner') ||
-                r.prize_count >= 3
-            )
-            .slice(0, 8);
-
-          const rationales = segRes.rationale_by_user_id || {};
-          const rowsToShow = mentorRows.length > 0 ? mentorRows : allRows.slice(0, 8);
-          setTableRows(rowsToShow);
-          setRationaleMap(rationales);
-          setActiveQueryTitle('Mentor Candidates (High-prize, collaborative builders)');
-
-          const agentMsg = {
-            id: `a-${Date.now()}`,
-            role: 'agent',
-            text: `Identified ${rowsToShow.length} top candidates suited for mentor roles this year based on proven prize records, collaborative team history, and strong skill foundations.`,
-            strategy: 'template:mentor_candidates',
-            latency_ms: 190,
-            cypher:
-              'MATCH (cp:ContextProfile)-[:ABOUT]->(p:Person)\nWHERE ("Mentor Material" IN cp.personas OR cp.facts.prize_count >= 3) AND cp.facts.submission_rate >= 0.8\nRETURN p.user_id, p.full_name, cp.personas, cp.facts.prize_count\nORDER BY cp.facts.prize_count DESC',
-            citations: rowsToShow.slice(0, 3).map((r) => ({
-              user_id: r.user_id,
-              claim: rationales[r.user_id] || `${r.full_name} (${r.college})`,
-            })),
-          };
-
-          setMessages((prev) => [...prev, agentMsg]);
-          return;
-        }
-
-        // Default query: Segment search (e.g. Find ML builders from Delhi colleges...)
-        const segRes = await api('/api/crm/segment', {
+        const res = await api('/api/agent/chat', {
           method: 'POST',
-          body: { query: text },
+          body: { message: text, sessionId: sessionIdRef.current },
         });
 
-        const rows = segRes.rows || [];
-        const rationales = segRes.rationale_by_user_id || {};
-        setTableRows(rows);
-        setRationaleMap(rationales);
+        const agentId = `a-${Date.now()}`;
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: agentId,
+            role: 'agent',
+            text: res.answer,
+            strategy: res.strategy,
+            latency_ms: res.latency_ms ?? 0,
+            llm_calls: res.llm_calls ?? 0,
+            cypher: res.cypher || null,
+            citations: res.citations || [],
+            matches: res.matches || res.resolution?.matches || [],
+            suggestions: res.suggestions || [],
+          },
+        ]);
+        // The Cypher is the proof for a segment answer, so the newest one opens by itself.
+        setOpenCypherIndex(res.cypher ? agentId : null);
+        setTableRows(res.table || []);
+        setRationaleMap(res.rationale_by_user_id || {});
+        setTotalMatches(res.total_matches ?? null);
         setActiveQueryTitle(text);
-
-        const latencyMs = segRes.latency_ms || 309;
-        const isAIExtended = latencyMs > 5000;
-        const strategyTag = segRes.strategy || 'template:college_city_skill_winners';
-
-        const agentMsg = {
-          id: `a-${Date.now()}`,
-          role: 'agent',
-          text: `Found ${rows.length} participants matching query criteria in the knowledge graph. All candidates have verified project finishes in Delhi institutions with confirmed skill evidence.`,
-          strategy: strategyTag,
-          latency_ms: latencyMs,
-          isAIExtended,
-          cypher: segRes.cypher || null,
-          citations: rows.slice(0, 4).map((r) => ({
-            user_id: r.user_id,
-            claim: rationales[r.user_id] || `${r.full_name} (${r.college})`,
-          })),
-        };
-
-        setMessages((prev) => [...prev, agentMsg]);
+        setSelectedRowIds(new Set());
       } catch (err) {
         setMessages((prev) => [
           ...prev,
@@ -352,9 +156,12 @@ export function ScoutView() {
             id: `err-${Date.now()}`,
             role: 'agent',
             isError: true,
-            text: `Query failed: ${err.message || 'Endpoint unreachable'}`,
+            text: `The agent request failed (${err.path || '/api/agent/chat'}): ${err.message}${
+              err.requestId ? ` · request ${err.requestId}` : ''
+            }`,
             strategy: 'error',
             latency_ms: 0,
+            llm_calls: 0,
           },
         ]);
       } finally {
@@ -375,6 +182,28 @@ export function ScoutView() {
     setTimeout(() => {
       setFlashingUserId(null);
     }, 600);
+  };
+
+  const closeOutreach = () => {
+    setOutreachModalOpen(false);
+    setOutreachError(null);
+    setOutreachResult(null);
+  };
+
+  const sendOutreach = async () => {
+    setOutreachBusy(true);
+    setOutreachError(null);
+    try {
+      const res = await api('/api/crm/outreach', {
+        method: 'POST',
+        body: { userIds: [...selectedRowIds], template: outreachTemplate },
+      });
+      setOutreachResult(res);
+    } catch (err) {
+      setOutreachError(err);
+    } finally {
+      setOutreachBusy(false);
+    }
   };
 
   // Multi-select helpers
@@ -414,13 +243,30 @@ export function ScoutView() {
             </span>
           </div>
           <div className="crm-num text-[11px] text-muted shrink-0">
-            {tableRows.length > 0 ? `${tableRows.length} of 600 people` : '0 matches'}
+            {tableRows.length > 0
+              ? totalMatches && totalMatches > tableRows.length
+                ? `top ${tableRows.length} of ${totalMatches} people`
+                : `${tableRows.length} ${tableRows.length === 1 ? 'person' : 'people'}`
+              : '0 people'}
           </div>
         </div>
 
         {/* Table Body Area */}
         <div className="flex-1 overflow-y-auto">
-          {tableRows.length === 0 ? (
+          {tableRows.length === 0 && messages.length > 0 ? (
+            <div className="flex h-full flex-col items-center justify-center p-8 text-center">
+              <div className="max-w-[360px]">
+                <div className="crm-num text-[11px] uppercase tracking-[0.12em] text-faint">
+                  {isLoading ? 'Working' : 'No rows for this question'}
+                </div>
+                <p className="mt-1.5 text-[12.5px] leading-relaxed text-muted">
+                  {isLoading
+                    ? 'Waiting for the agent…'
+                    : 'The answer is in the conversation on the right. People appear here when a question resolves to one person or a group.'}
+                </p>
+              </div>
+            </div>
+          ) : tableRows.length === 0 ? (
             <div className="flex h-full flex-col items-center justify-center p-8 text-center">
               <div className="rounded border border-border bg-surface/40 p-6 max-w-[420px]">
                 <Sparkles size={20} className="mx-auto text-accent mb-2" />
@@ -463,12 +309,12 @@ export function ScoutView() {
                       aria-label="Select all rows"
                     />
                   </th>
-                  <th className="w-[18%] py-2 px-2 font-medium">Name</th>
-                  <th className="w-[13%] py-2 px-2 font-medium">College</th>
-                  <th className="w-[15%] py-2 px-2 font-medium">Skills</th>
-                  <th className="w-[13%] py-2 px-2 font-medium">Persona</th>
-                  <th className="w-[30%] py-2 px-2 font-medium text-accent">Match Reason</th>
-                  <th className="w-[11%] py-2 pr-3 pl-1 text-right font-medium">Score</th>
+                  <th className="w-[16%] py-2 px-2 font-medium">Name</th>
+                  <th className="w-[11%] py-2 px-2 font-medium">College</th>
+                  <th className="w-[14%] py-2 px-2 font-medium">Skills</th>
+                  <th className="w-[15%] py-2 px-2 font-medium">Persona</th>
+                  <th className="w-[34%] py-2 px-2 font-medium text-accent">Match Reason</th>
+                  <th className="w-[10%] py-2 pr-3 pl-1 text-right font-medium">Score</th>
                 </tr>
               </thead>
               <tbody>
@@ -501,36 +347,36 @@ export function ScoutView() {
                         <input
                           type="checkbox"
                           checked={isSelected}
+                          // The cell also toggles on click; without this a click on the box toggles twice.
+                          onClick={(e) => e.stopPropagation()}
                           onChange={(e) => toggleSelectRow(r.user_id, e)}
                           className="size-3.5 rounded-none border border-border bg-surface accent-accent cursor-pointer"
                           aria-label={`Select ${r.full_name}`}
                         />
                       </td>
 
-                      {/* Name */}
-                      <td className="py-1 px-2 truncate">
-                        <div className="flex items-baseline gap-1 truncate">
-                          <span className="text-[12px] font-medium text-text truncate">
+                      {/* Name: id under the name so a narrow column never clips either */}
+                      <td className="py-1.5 px-2">
+                        <div className="flex flex-col leading-tight">
+                          <span className="truncate text-[12px] font-medium text-text">
                             {r.full_name?.trim()}
                           </span>
-                          <span className="crm-num text-[10px] text-faint shrink-0">
-                            {r.user_id}
-                          </span>
+                          <span className="crm-num text-[10px] text-faint">{r.user_id}</span>
                         </div>
                       </td>
 
                       {/* College */}
-                      <td className="py-1 px-2 text-[11.5px] text-muted truncate">
-                        <span>{r.college}</span>
+                      <td className="py-1.5 px-2 text-[11.5px] leading-tight text-muted">
+                        {r.college}
                       </td>
 
                       {/* Skills */}
-                      <td className="py-1 px-2 truncate">
-                        <div className="flex items-center gap-1 truncate">
+                      <td className="py-1.5 px-2">
+                        <div className="flex flex-wrap gap-1">
                           {r.top_skills?.slice(0, 2).map((s) => (
                             <span
                               key={s}
-                              className="crm-num rounded-sm border border-border px-1 py-px text-[9.5px] text-muted shrink-0"
+                              className="crm-num rounded-sm border border-border px-1 py-px text-[9.5px] text-muted"
                             >
                               {s}
                             </span>
@@ -539,24 +385,24 @@ export function ScoutView() {
                       </td>
 
                       {/* Persona */}
-                      <td className="py-1 px-2 truncate">
+                      <td className="py-1.5 px-2">
                         {r.personas?.[0] && (
                           <Badge
                             tone={PERSONA_TONE[r.personas[0]] || 'neutral'}
-                            className="text-[9px] px-1 py-px truncate max-w-[95px]"
+                            className="text-[9px] px-1 py-px leading-tight whitespace-normal"
                           >
                             {r.personas[0]}
                           </Badge>
                         )}
                       </td>
 
-                      {/* Match Reason — The Differentiator Column (Widest) */}
-                      <td className="py-1 px-2 truncate">
+                      {/* Match Reason: the differentiator column, widest, allowed to wrap */}
+                      <td className="py-1.5 px-2">
                         <span
-                          className="crm-num text-[11px] text-text/90 truncate block"
+                          className="crm-num line-clamp-3 text-[11px] leading-snug text-text/90"
                           title={rationale}
                         >
-                          {rationale || 'Matched via graph ontology search'}
+                          {rationale || '—'}
                         </span>
                       </td>
 
@@ -619,7 +465,7 @@ export function ScoutView() {
               </p>
             </div>
           ) : (
-            messages.map((m, mIdx) => {
+            messages.map((m) => {
               if (m.role === 'user') {
                 return (
                   <div key={m.id} className="flex justify-end">
@@ -631,12 +477,13 @@ export function ScoutView() {
               }
 
               // Agent message: Briefing format (no bubble, left-aligned, full width)
-              const isTemplate =
-                m.strategy?.toLowerCase().includes('template') ||
-                m.strategy?.toLowerCase().includes('resolve') ||
-                (m.latency_ms && m.latency_ms < 1000);
-              const latencySec = (m.latency_ms / 1000).toFixed(isTemplate ? 2 : 1);
-              const isCypherOpen = openCypherIndex === mIdx;
+              // The agent reports how many LLM calls it made (contract: 0 or 1); show that, not a guess.
+              const usedLlm = (m.llm_calls || 0) > 0;
+              const latencyLabel =
+                m.latency_ms >= 1000
+                  ? `${(m.latency_ms / 1000).toFixed(1)}s`
+                  : `${Math.round(m.latency_ms || 0)}ms`;
+              const isCypherOpen = openCypherIndex === m.id;
 
               return (
                 <div key={m.id} className="space-y-3 pt-1">
@@ -666,12 +513,18 @@ export function ScoutView() {
                             id={`disambiguation-card-${match.user_id}`}
                             role="button"
                             tabIndex={0}
-                            onClick={() => {
-                              // Auto-follow up query
+                            onClick={() =>
                               executeQuery(
                                 `Select ${match.full_name} (${match.user_id}) from ${match.college}`
-                              );
-                              setDrawerUserId(match.user_id);
+                              )
+                            }
+                            onKeyDown={(e) => {
+                              if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                executeQuery(
+                                  `Select ${match.full_name} (${match.user_id}) from ${match.college}`
+                                );
+                              }
                             }}
                             className="cursor-pointer rounded border border-border bg-bg p-2.5 transition-colors hover:border-accent hover:bg-surface-2"
                           >
@@ -711,23 +564,29 @@ export function ScoutView() {
 
                   {/* Strategy Badge, Latency & View Cypher */}
                   <div className="flex flex-wrap items-center gap-2.5 text-[11px] pt-1">
-                    {m.strategy && (
+                    {m.strategy && !m.isError && (
                       <span
                         className={cn(
                           'crm-num inline-flex items-center rounded-sm border px-1.5 py-px text-[10px] uppercase font-mono tracking-[0.06em]',
-                          isTemplate
-                            ? 'border-positive/50 bg-positive/10 text-positive'
-                            : 'border-accent/50 bg-accent/10 text-accent'
+                          usedLlm
+                            ? 'border-accent/50 bg-accent/10 text-accent'
+                            : 'border-positive/50 bg-positive/10 text-positive'
                         )}
+                        title={`strategy: ${m.strategy}`}
                       >
-                        {isTemplate ? 'TEMPLATE' : 'AI QUERY'} · {latencySec}s
+                        {usedLlm ? '1 LLM call' : '0 LLM calls'} · {latencyLabel}
+                      </span>
+                    )}
+                    {m.strategy && !m.isError && (
+                      <span className="crm-num font-mono text-[10.5px] text-faint">
+                        {m.strategy}
                       </span>
                     )}
 
                     {m.cypher && (
                       <button
                         type="button"
-                        onClick={() => setOpenCypherIndex(isCypherOpen ? null : mIdx)}
+                        onClick={() => setOpenCypherIndex(isCypherOpen ? null : m.id)}
                         className="flex items-center gap-1 font-mono text-[11px] text-muted hover:text-text transition-colors"
                       >
                         <Code2 size={12} className="text-accent" />
@@ -741,6 +600,25 @@ export function ScoutView() {
                   {isCypherOpen && m.cypher && (
                     <div className="rounded border border-border bg-surface-2 p-3 font-mono text-[11px] text-text/90 overflow-x-auto leading-relaxed whitespace-pre-wrap">
                       {m.cypher}
+                    </div>
+                  )}
+
+                  {/* Nearest real names when the person is not in the database */}
+                  {m.suggestions?.length > 0 && (
+                    <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                      <span className="crm-num text-[10.5px] uppercase tracking-[0.08em] text-faint mr-1">
+                        Nearest names, not matches:
+                      </span>
+                      {m.suggestions.map((s) => (
+                        <button
+                          key={s.user_id}
+                          type="button"
+                          onClick={() => setDrawerUserId(s.user_id)}
+                          className="rounded-sm border border-border bg-surface/60 px-1.5 py-0.5 text-[11px] text-muted hover:border-accent hover:text-text transition-colors"
+                        >
+                          {s.full_name} · {s.college}
+                        </button>
+                      ))}
                     </div>
                   )}
 
@@ -814,8 +692,8 @@ export function ScoutView() {
         </div>
 
         {/* Suggested Prompts Strip (Always Visible) */}
-        <div className="border-t border-border bg-surface/30 px-4 py-2 overflow-x-auto">
-          <div className="flex items-center gap-1.5 whitespace-nowrap">
+        <div className="border-t border-border bg-surface/30 px-4 py-2">
+          <div className="flex flex-wrap items-center gap-1.5">
             {SUGGESTED_PROMPTS.map((prompt) => (
               <button
                 key={prompt}
@@ -874,52 +752,89 @@ export function ScoutView() {
       {/* Profile Drawer: Opens when candidate clicked */}
       <ProfileDrawer userId={drawerUserId} onClose={() => setDrawerUserId(null)} />
 
-      {/* Stubbed Outreach Modal (preparing for C3) */}
+      {/* Outreach modal. The endpoint is a 501 stub for now: say so instead of pretending to send. */}
       {outreachModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-bg/80 backdrop-blur-[1px] p-4">
           <div className="w-full max-w-[440px] rounded border border-border bg-surface p-5 text-text space-y-4 shadow-none">
             <div className="flex items-center justify-between border-b border-border pb-3">
               <div className="flex items-center gap-2">
                 <Mail size={16} className="text-accent" />
-                <h4 className="font-serif text-[16px] font-semibold">Outreach Dispatcher</h4>
+                <h4 className="font-serif text-[16px] font-semibold">Outreach</h4>
               </div>
               <button
                 type="button"
-                onClick={() => setOutreachModalOpen(false)}
+                onClick={closeOutreach}
                 className="text-muted hover:text-text"
+                aria-label="Close outreach"
               >
                 <X size={15} />
               </button>
             </div>
             <p className="text-[12.5px] text-muted">
               Prepare invitations for{' '}
-              <span className="crm-num text-text font-medium">{selectedRowIds.size}</span> selected
-              participants.
+              <span className="crm-num text-text font-medium">{selectedRowIds.size}</span> selected{' '}
+              {selectedRowIds.size === 1 ? 'person' : 'people'}. Anyone without consent is skipped
+              and listed.
             </p>
             <div className="space-y-1.5">
-              <label className="crm-num text-[10.5px] uppercase tracking-[0.1em] text-faint">
+              <label
+                htmlFor="outreach-template"
+                className="crm-num text-[10.5px] uppercase tracking-[0.1em] text-faint"
+              >
                 Template
               </label>
-              <select className="w-full h-8 rounded border border-border bg-bg px-2.5 text-[12px] text-text">
-                <option value="hackathon-invite">Hackathon VIP Invite</option>
-                <option value="mentor-invite">Mentor Invitation</option>
-                <option value="win-back">Win-back Re-engagement</option>
+              <select
+                id="outreach-template"
+                value={outreachTemplate}
+                onChange={(e) => setOutreachTemplate(e.target.value)}
+                disabled={outreachBusy}
+                className="w-full h-8 rounded border border-border bg-bg px-2.5 text-[12px] text-text"
+              >
+                <option value="hackathon-invite">Hackathon invite</option>
+                <option value="mentor-invite">Mentor invitation</option>
+                <option value="win-back">Win-back</option>
               </select>
             </div>
-            <div className="flex justify-end gap-2 pt-2 border-t border-border">
-              <Button variant="outline" size="sm" onClick={() => setOutreachModalOpen(false)}>
-                Cancel
-              </Button>
-              <Button
-                variant="default"
-                size="sm"
-                onClick={() => {
-                  alert(`Dispatched invites to ${selectedRowIds.size} candidates.`);
-                  setOutreachModalOpen(false);
-                }}
+
+            {outreachError && (
+              <div
+                role="alert"
+                className="rounded border border-danger/50 bg-danger/10 p-3 text-[12px] text-danger"
               >
-                Confirm Dispatch
+                <div className="font-medium">
+                  {outreachError.status === 501 ? 'Not available yet' : 'Outreach failed'}
+                </div>
+                <div className="mt-0.5 text-danger/90">
+                  {outreachError.message}
+                  {outreachError.requestId ? ` · request ${outreachError.requestId}` : ''}
+                </div>
+                <div className="mt-1 text-danger/80">Nothing was sent.</div>
+              </div>
+            )}
+
+            {outreachResult && (
+              <div className="rounded border border-border bg-bg p-3 text-[12px] text-text space-y-1">
+                <div>
+                  <span className="crm-num font-medium">{outreachResult.sent?.length ?? 0}</span>{' '}
+                  sent
+                </div>
+                {outreachResult.skipped?.map((s) => (
+                  <div key={s.user_id} className="text-muted">
+                    Skipped <span className="crm-num">{s.user_id}</span>: {s.reason}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="flex justify-end gap-2 pt-2 border-t border-border">
+              <Button variant="outline" size="sm" onClick={closeOutreach}>
+                {outreachResult ? 'Close' : 'Cancel'}
               </Button>
+              {!outreachResult && (
+                <Button variant="default" size="sm" onClick={sendOutreach} disabled={outreachBusy}>
+                  {outreachBusy ? 'Sending…' : 'Send'}
+                </Button>
+              )}
             </div>
           </div>
         </div>

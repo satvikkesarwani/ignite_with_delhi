@@ -21,7 +21,17 @@ async function cypher(query, params) {
 
 export async function getGraphOverview({ limit = 24, q, persona, college, skill, status } = {}) {
   const n = Math.min(Math.max(Number(limit) || 24, 3), MAX_PEOPLE);
-  const cast = listCandidates({ q, persona, college, skill, status, limit: n }).rows;
+  let cast;
+  if (q || persona || college || skill || status) {
+    cast = listCandidates({ q, persona, college, skill, status, limit: n }).rows;
+  } else {
+    // Unfiltered, the top people by engagement are almost all prize winners, which paints the whole
+    // graph one colour. Mix winners with strong non-winners so the groups are visibly distinct.
+    const pool = listCandidates({ limit: 200 }).rows;
+    const winners = pool.filter((r) => r.prize_count > 0).slice(0, Math.ceil(n * 0.5));
+    const others = pool.filter((r) => !(r.prize_count > 0)).slice(0, n - winners.length);
+    cast = [...winners, ...others];
+  }
   const ids = cast.map((r) => r.user_id);
   if (!ids.length)
     return { nodes: [], links: [], stats: { people: 0, nodes: 0, links: 0 }, source: 'none' };

@@ -10,8 +10,8 @@ import {
   MessageSquare,
   X,
   RotateCcw,
-  Zap,
 } from 'lucide-react';
+import { api } from './api';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -49,23 +49,20 @@ const INITIAL_STAGES = [
 export function IntakeView({ onNavigate }) {
   // Form fields
   const [formData, setFormData] = useState({
-    fullName: 'Aarav Patel',
-    email: 'aarav.patel@nsut.ac.in',
-    phone: '+91 98765 43210',
-    college: 'Netaji Subhas University of Technology',
-    city: 'Delhi',
+    fullName: '',
+    email: '',
+    phone: '',
+    college: '',
+    city: '',
     track: TRACKS[0],
-    githubUrl: 'https://github.com/aaravpatel-ai',
+    githubUrl: '',
   });
 
   // Inline validation state on blur
   const [touched, setTouched] = useState({});
   const [errors, setErrors] = useState({});
 
-  const [resumeFile, setResumeFile] = useState({
-    name: 'Aarav_Patel_Resume.pdf',
-    size: 342000, // ~334 KB
-  });
+  const [resumeFile, setResumeFile] = useState(null);
 
   const [fileError, setFileError] = useState(null);
   const [dragOver, setDragOver] = useState(false);
@@ -76,7 +73,6 @@ export function IntakeView({ onNavigate }) {
   const [stages, setStages] = useState(INITIAL_STAGES);
   const [cogneeStatus, setCogneeStatus] = useState('idle'); // idle | queued | indexing | done
   const [elapsedSec, setElapsedSec] = useState('0.0');
-  const [fastMode, setFastMode] = useState(true); // default fast for snappy testing
 
   // Result state
   const [resultProfile, setResultProfile] = useState(null);
@@ -135,7 +131,9 @@ export function IntakeView({ onNavigate }) {
     setResumeFile(file);
   };
 
-  // Run the multi-stage pipeline
+  // Submit to the real intake endpoint. Per docs/CONTRACT.md it answers with the stage list and
+  // the built profile; nothing here is simulated. While it is a 501 stub the failure is shown as
+  // "not available yet" and no stage is reported as run.
   const startPipeline = async () => {
     if (isRunning) return;
 
@@ -151,213 +149,45 @@ export function IntakeView({ onNavigate }) {
     setIsRunning(true);
     setResultProfile(null);
     setFailedStageError(null);
+    setIsReturningUser(false);
     setCogneeStatus('idle');
-
-    // Reset stages
     setStages(INITIAL_STAGES.map((s) => ({ ...s, status: 'pending', ms: null, detail: null })));
 
-    // Helper to update stage status
-    const updateStage = (id, updates) => {
-      setStages((prev) => prev.map((s) => (s.id === id ? { ...s, ...updates } : s)));
-    };
-
-    // Delays: fast demo vs realistic
-    const d1 = fastMode ? 600 : 900;
-    const d3 = fastMode ? 1400 : 2900;
-    const d2 = fastMode ? 1800 : 24100;
-    const d4 = fastMode ? 500 : 800;
-    const d5 = fastMode ? 700 : 1400;
+    const body = new FormData();
+    body.append('full_name', formData.fullName.trim());
+    body.append('email', formData.email.trim());
+    body.append('phone', formData.phone.trim());
+    body.append('college', formData.college.trim());
+    body.append('city', formData.city.trim());
+    body.append('track', formData.track);
+    body.append('github_url', formData.githubUrl.trim());
+    body.append('resume', resumeFile);
 
     try {
-      // Stage 1: Parse resume
-      updateStage('parse_resume', { status: 'running', detail: 'Reading document stream' });
-      await new Promise((r) => setTimeout(r, d1));
-      updateStage('parse_resume', {
-        status: 'done',
-        ms: 840,
-        detail: 'Parsed 3 pages · 4,210 tokens extracted',
-      });
+      const res = await api('/api/crm/intake', { method: 'POST', body });
 
-      // Stage 2 & Stage 3: RUN CONCURRENTLY! Both lit at once!
-      updateStage('structure_llm', {
-        status: 'running',
-        detail: 'Nemotron structured reasoning phase active',
-      });
-      updateStage('enrich_external', {
-        status: 'running',
-        detail: 'Querying GitHub API & Tavily external signals',
-      });
-
-      // Stage 3 finishes first
-      await new Promise((r) => setTimeout(r, d3));
-      updateStage('enrich_external', {
-        status: 'done',
-        ms: 2900,
-        detail: 'Verified 14 public repos, 3 ML projects',
-      });
-
-      // Stage 2 finishes next
-      const remainingD2 = Math.max(200, d2 - d3);
-      await new Promise((r) => setTimeout(r, remainingD2));
-      updateStage('structure_llm', {
-        status: 'done',
-        ms: 24100,
-        detail: 'Identified 12 verified skills, 4 institutions, 2 internships',
-      });
-
-      // Stage 4: Write to graph
-      updateStage('write_graph', {
-        status: 'running',
-        detail: 'Creating Person, Skill, College, Team edges',
-      });
-      await new Promise((r) => setTimeout(r, d4));
-      updateStage('write_graph', {
-        status: 'done',
-        ms: 610,
-        detail: '23 graph nodes, 38 relationships committed',
-      });
-
-      // Stage 5: Synthesize profile
-      updateStage('build_profile', {
-        status: 'running',
-        detail: 'Synthesizing narrative paragraph and engagement breakdown',
-      });
-      await new Promise((r) => setTimeout(r, d5));
-      updateStage('build_profile', {
-        status: 'done',
-        ms: 1400,
-        detail: 'Engagement score 82/100 computed',
-      });
-
-      // Enqueue Cognee in background (async sidecar)
-      setCogneeStatus('queued');
-      setTimeout(() => setCogneeStatus('indexing'), 1500);
-      setTimeout(() => setCogneeStatus('done'), 4200);
-
-      // Check returning status if Aarav was registered before
-      const isExisting = formData.fullName.toLowerCase().includes('returning');
-      setIsReturningUser(isExisting);
-
-      // Result ContextProfile
+      // The server reports every stage's real status and timing; mirror it.
+      setStages(
+        INITIAL_STAGES.map((s) => {
+          const reported = res.stages?.find((x) => x.name === s.id);
+          return reported
+            ? { ...s, status: reported.status, ms: reported.ms ?? null, detail: reported.detail }
+            : { ...s };
+        })
+      );
+      setIsReturningUser(Boolean(res.is_returning));
+      if (res.cognify_job_id) setCogneeStatus('queued');
       setResultProfile({
-        user_id: 'U0601',
-        identity: {
-          full_name: formData.fullName,
-          email: formData.email,
-          college: formData.college,
-          city: formData.city,
-          role_pref: formData.track,
-          grad_year: 2026,
-          github_username: formData.githubUrl.split('/').pop() || 'aaravpatel-ai',
-          linkedin_url: 'https://linkedin.com/in/aarav-patel',
-          consent_flag: true,
-        },
-        personas: ['Rising Star', 'Consistent Builder'],
-        engagement: {
-          value: 82,
-          components: { recency: 95, frequency: 78, depth: 85, outcome: 70 },
-        },
-        narrative: `${formData.fullName} is an upcoming ML and systems engineer from ${formData.college}. Their verified public work highlights strong implementations in graph querying, RAG pipelines, and high-frequency backend services.`,
-        skills: [
-          {
-            skill: 'Python',
-            confidence: 0.94,
-            cluster: 'ML/AI',
-            claim_gap: false,
-            hidden_strength: false,
-            sources: [{ type: 'github', detail: '14 public repos', weight: 0.9 }],
-          },
-          {
-            skill: 'PyTorch',
-            confidence: 0.88,
-            cluster: 'ML/AI',
-            claim_gap: false,
-            hidden_strength: false,
-            sources: [{ type: 'project', detail: 'built P0143', weight: 0.8 }],
-          },
-          {
-            skill: 'Neo4j',
-            confidence: 0.85,
-            cluster: 'Graph',
-            claim_gap: false,
-            hidden_strength: true,
-            sources: [{ type: 'github', detail: 'AuraDB graph commits', weight: 0.85 }],
-          },
-          {
-            skill: 'FastAPI',
-            confidence: 0.82,
-            cluster: 'Backend',
-            claim_gap: false,
-            hidden_strength: false,
-            sources: [{ type: 'declared', detail: 'resume', weight: 0.7 }],
-          },
-        ],
-        facts: {
-          hackathons_registered: 3,
-          hackathons_attended: 3,
-          no_shows: 0,
-          projects_submitted: 3,
-          submission_rate: 1.0,
-          prizes: [
-            {
-              hackathon: 'Ignite Delhi Winter',
-              hackathon_id: 'H019',
-              rank: 2,
-              prize_track: 'ML/AI',
-              date: '2026-01-18',
-              score: 88,
-            },
-          ],
-          prize_count: 1,
-          best_rank: 2,
-          avg_score: 88.0,
-          first_seen: '2025-11-10',
-          last_active: '2026-09-15',
-          days_since_active: 4,
-          mentor_sessions: 2,
-          avg_mentor_score: 4.8,
-          interactions: 14,
-          distinct_teammates: 6,
-        },
-        trajectory: {
-          direction: 'rising',
-          status: 'active',
-          score_series: [
-            { date: '2025-11-10', score: 76, hackathon_id: 'H016' },
-            { date: '2026-01-18', score: 88, hackathon_id: 'H019' },
-          ],
-          tech_drift: { from: ['React', 'Express'], to: ['Neo4j', 'FastAPI'] },
-        },
-        data_sources: ['resume', 'github_live', 'tavily'],
-        narrative_status: 'llm',
-        evidenceCount: isExisting ? 24 : 18,
-        previousEvidenceCount: isExisting ? 18 : 0,
-        evidence: [
-          {
-            claim: 'Parsed 12 verified skills from resume PDF',
-            source_type: 'resume',
-            source_ref: 'resume_pdf#aarav',
-            observed_at: '2026-09-19',
-            confidence: 0.95,
-          },
-          {
-            claim: 'Verified 14 public GitHub repos with Neo4j and Python code',
-            source_type: 'github_live',
-            source_ref: 'github.com/aaravpatel-ai',
-            observed_at: '2026-09-19',
-            confidence: 0.92,
-          },
-          {
-            claim: '2nd place winner at Ignite Delhi Winter in ML/AI track',
-            source_type: 'platform',
-            source_ref: 'results.csv#P019',
-            observed_at: '2026-01-18',
-            confidence: 1.0,
-          },
-        ],
+        ...res.profile,
+        user_id: res.user_id ?? res.profile?.user_id,
+        evidenceCount: res.profile?.evidence?.length ?? 0,
       });
     } catch (err) {
-      setFailedStageError(err.message || 'Pipeline execution failed');
+      setFailedStageError({
+        message: err.message || 'Intake request failed',
+        status: err.status,
+        requestId: err.requestId,
+      });
     } finally {
       setIsRunning(false);
     }
@@ -386,16 +216,6 @@ export function IntakeView({ onNavigate }) {
             <span className="crm-num text-[11px] uppercase tracking-[0.14em] text-accent">
               Intake Ingestion Engine
             </span>
-            {/* Fast mode demo toggle */}
-            <button
-              type="button"
-              onClick={() => setFastMode(!fastMode)}
-              className="flex items-center gap-1 font-mono text-[10.5px] text-faint hover:text-accent transition-colors"
-              title="Toggle fast simulation vs realistic 25s Nemotron timer"
-            >
-              <Zap size={11} className={fastMode ? 'text-accent' : 'text-faint'} />
-              <span>{fastMode ? 'Fast demo (4s)' : 'Realistic (28s)'}</span>
-            </button>
           </div>
           <h2 className="font-serif mt-1 text-[20px] font-semibold text-text">
             Register Participant
@@ -687,7 +507,18 @@ export function IntakeView({ onNavigate }) {
           <div className="rounded border border-danger/50 bg-danger/10 p-3.5 text-[12.5px] text-danger flex items-center justify-between">
             <div className="flex items-center gap-2">
               <AlertCircle size={15} />
-              <span>Pipeline warning: {failedStageError}. Preserving completed source stages.</span>
+              <div>
+                <div className="font-medium">
+                  {failedStageError.status === 501
+                    ? 'Intake is not available yet'
+                    : 'Intake failed'}
+                </div>
+                <div className="text-[12px] text-danger/90">
+                  {failedStageError.message}
+                  {failedStageError.requestId ? ` · request ${failedStageError.requestId}` : ''}
+                  {' · nothing was written to the graph'}
+                </div>
+              </div>
             </div>
             <Button
               variant="outline"
@@ -727,8 +558,7 @@ export function IntakeView({ onNavigate }) {
                 <div className="flex items-center justify-between border border-positive/50 bg-positive/10 px-3.5 py-2 text-[12px] text-positive rounded-sm">
                   <span>Existing participant — profile enriched with new signals</span>
                   <span className="crm-num text-[11px] font-mono">
-                    {resultProfile.previousEvidenceCount} → {resultProfile.evidenceCount} evidence
-                    items
+                    {resultProfile.evidenceCount} evidence items
                   </span>
                 </div>
               )}
@@ -750,7 +580,7 @@ export function IntakeView({ onNavigate }) {
                     Engagement
                   </div>
                   <div className="crm-num text-[26px] font-semibold text-text leading-none mt-0.5 font-mono">
-                    {resultProfile.engagement.value}
+                    {resultProfile.engagement?.value ?? '—'}
                     <span className="text-[12px] text-faint font-normal"> / 100</span>
                   </div>
                 </div>
@@ -764,14 +594,14 @@ export function IntakeView({ onNavigate }) {
               {/* Personas & Top Skills with confidence */}
               <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-3">
                 <div className="flex items-center gap-1.5">
-                  {resultProfile.personas.map((p) => (
+                  {(resultProfile.personas ?? []).map((p) => (
                     <Badge key={p} tone={PERSONA_TONE[p] || 'neutral'}>
                       {p}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex items-center gap-1.5 flex-wrap">
-                  {resultProfile.skills.map((s) => (
+                  {(resultProfile.skills ?? []).map((s) => (
                     <span
                       key={s.skill}
                       className="crm-num rounded-sm border border-border bg-bg/60 px-1.5 py-0.5 text-[10.5px] text-muted font-mono"

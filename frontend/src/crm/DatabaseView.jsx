@@ -515,7 +515,9 @@ export function DatabaseView() {
               <tr>
                 <td colSpan={9} className="py-12 text-center">
                   <div className="text-[13px] text-muted">
-                    No participants found matching the current filters.
+                    {error
+                      ? 'The list could not be loaded, see the error above.'
+                      : 'No participants found matching the current filters.'}
                   </div>
                   {hasActiveFilters && (
                     <Button
@@ -570,15 +572,23 @@ export function DatabaseView() {
                     {/* Personas: Bordered badges, not filled pills */}
                     <td className="py-1 px-2 truncate">
                       <div className="flex items-center gap-1 truncate">
-                        {r.personas?.slice(0, 2).map((p) => (
+                        {r.personas?.slice(0, 1).map((p) => (
                           <Badge
                             key={p}
                             tone={PERSONA_TONE[p] || 'neutral'}
-                            className="text-[9.5px] px-1 py-px tracking-[0.03em] truncate max-w-[105px]"
+                            className="text-[9.5px] px-1 py-px tracking-[0.03em] whitespace-nowrap"
                           >
                             {p}
                           </Badge>
                         ))}
+                        {r.personas?.length > 1 && (
+                          <span
+                            className="crm-num text-[10px] text-faint"
+                            title={r.personas.slice(1).join(', ')}
+                          >
+                            +{r.personas.length - 1}
+                          </span>
+                        )}
                       </div>
                     </td>
 

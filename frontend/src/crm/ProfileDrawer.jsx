@@ -159,8 +159,16 @@ export function ProfileDrawer({ userId, onClose, initialProfile }) {
 
   const sortedSkills = useMemo(() => {
     if (!profile || !profile.skills) return [];
-    return [...profile.skills].sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+    // Claim gaps first: an audit reader wants the unsupported claims before the long tail of verified skills.
+    return [...profile.skills].sort(
+      (a, b) =>
+        Number(Boolean(b.claim_gap)) - Number(Boolean(a.claim_gap)) ||
+        (b.confidence || 0) - (a.confidence || 0)
+    );
   }, [profile]);
+
+  const claimGaps = sortedSkills.filter((s) => s.claim_gap);
+  const evidencedInstead = sortedSkills.filter((s) => s.hidden_strength).slice(0, 3);
 
   if (!userId) return null;
 
@@ -309,6 +317,42 @@ export function ProfileDrawer({ userId, onClose, initialProfile }) {
                 </div>
               </section>
 
+              {/* CLAIM GAP — declared skills nothing supports, stated up front so it cannot be missed */}
+              {claimGaps.length > 0 && (
+                <section
+                  role="note"
+                  className="border border-danger/50 border-l-[3px] border-l-danger bg-danger/10 px-4 py-3"
+                >
+                  <div className="flex items-center gap-2 text-danger">
+                    <AlertTriangle size={14} strokeWidth={2} className="shrink-0" />
+                    <span className="crm-num text-[11px] font-medium uppercase tracking-[0.12em]">
+                      Claim gap · {claimGaps.length} declared{' '}
+                      {claimGaps.length === 1 ? 'skill' : 'skills'} with no evidence
+                    </span>
+                  </div>
+                  <p className="mt-1.5 text-[13px] leading-relaxed text-text">
+                    Declares{' '}
+                    <strong className="font-semibold">
+                      {claimGaps.map((s) => s.skill).join(', ')}
+                    </strong>
+                    , but no repository or project supports it.
+                    {evidencedInstead.length > 0 && (
+                      <>
+                        {' '}
+                        The evidence points to{' '}
+                        {evidencedInstead
+                          .map((s) => {
+                            const src = s.sources?.find((x) => x.type !== 'declared');
+                            return src ? `${s.skill} (${src.detail})` : s.skill;
+                          })
+                          .join(', ')}
+                        , which was never declared.
+                      </>
+                    )}
+                  </p>
+                </section>
+              )}
+
               {/* 2. NARRATIVE — Synthesized paragraph */}
               <section>
                 <div className="mb-2 flex items-center justify-between">
@@ -383,7 +427,9 @@ export function ProfileDrawer({ userId, onClose, initialProfile }) {
                   <span className="crm-num text-[11px] uppercase tracking-[0.12em] text-muted">
                     Demonstrated & Claimed Skills ({sortedSkills.length})
                   </span>
-                  <span className="crm-num text-[10.5px] text-faint">sorted by confidence</span>
+                  <span className="crm-num text-[10.5px] text-faint">
+                    claim gaps first, then confidence
+                  </span>
                 </div>
 
                 <div className="space-y-2">

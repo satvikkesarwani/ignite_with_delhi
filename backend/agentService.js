@@ -489,7 +489,7 @@ async function countAnswer(message) {
       const r = await segment(message);
       const n = r.total_matches ?? r.total ?? 0;
       return {
-        answer: `${n} ${n === 1 ? 'person matches' : 'people match'} ${r.criteria.join(', ')}.`,
+        answer: `${n} ${n === 1 ? 'person matches' : 'people match'}: ${r.criteria.join(', ')}.`,
         strategy: r.strategy,
         cypher: r.cypher,
         total: n,
@@ -573,9 +573,13 @@ export async function chat({ message, sessionId }) {
 
   // 1. Answering a disambiguation question we just asked.
   let userId = null;
+  let pickedFromCards = false;
   if (s.pending) {
     userId = pickPending(text, s.pending);
-    if (userId) s.pending = null;
+    if (userId) {
+      s.pending = null;
+      pickedFromCards = true;
+    }
   }
 
   // 2. Which person, if any, is this about?
@@ -688,6 +692,9 @@ export async function chat({ message, sessionId }) {
         remaining
       ) ||
       !remaining.replace(/[^a-z]/gi, '').length ||
+      // Choosing a card ("Select Shiv Sharma () from IIT Delhi") is a pick, not a question: answer
+      // from the stored narrative rather than spend a 25s LLM call on it.
+      pickedFromCards ||
       remaining.trim().split(/\s+/).length <= 4
     ) {
       const ov = overview(profile);
@@ -728,7 +735,7 @@ export async function chat({ message, sessionId }) {
     const shown = seg.rows.length;
     const total = seg.total_matches ?? shown;
     out.answer =
-      `${total} ${total === 1 ? 'person matches' : 'people match'} ${seg.criteria.length ? seg.criteria.join(', ') : 'your request'}` +
+      `${total} ${total === 1 ? 'person matches' : 'people match'}: ${seg.criteria.length ? seg.criteria.join(', ') : 'your request'}` +
       (total > shown ? `; showing the top ${shown} by ${seg.sort}` : '') +
       '. ' +
       (shown === 1
