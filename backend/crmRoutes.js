@@ -18,6 +18,9 @@ import { getStats, listCandidates, getProfile, getSubgraph } from './contextServ
 import { resolve } from './resolveService.js';
 import { segment } from './retrievalService.js';
 import { chat } from './agentService.js';
+import { intakeRouter } from './intakeRoutes.js';
+import { outreachRouter } from './outreachRoutes.js';
+import { matchRouter } from './matchRoutes.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const MOCKS = path.join(__dirname, 'mocks');
@@ -134,15 +137,9 @@ crmRouter.post(
   })
 );
 
-// ------------------------------------------------- later phases (clear stubs)
-
-const later = (phase, what) =>
-  route(async (req, res) => {
-    if (useMock() && mock(`${what}.json`)) return res.json(mock(`${what}.json`));
-    fail(req, res, 501, `${what} is implemented in phase ${phase} and is not available yet`);
-  });
-
-crmRouter.post('/api/crm/intake', later('C2', 'intake'));
-crmRouter.get('/api/crm/intake/:jobId/status', later('C2', 'intake-status'));
-crmRouter.post('/api/crm/outreach', later('C3', 'outreach'));
-crmRouter.post('/api/crm/match', later('C3', 'match'));
+// ------------------------------------------- later phases, one router file each
+// C2 owns intakeRoutes.js; C3 owns outreachRoutes.js and matchRoutes.js. Splitting them means
+// parallel phases never edit the same file.
+crmRouter.use(intakeRouter);
+crmRouter.use(outreachRouter);
+crmRouter.use(matchRouter);
