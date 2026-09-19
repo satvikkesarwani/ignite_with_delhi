@@ -1,7 +1,7 @@
 {
   "user_id": "U0009",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.784Z",
+  "built_at": "2026-09-19T08:32:18.555Z",
   "identity": {
     "full_name": "Kabir Singh",
     "email": "kabir.singh@bennett.edu.in",
@@ -472,7 +472,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Kabir Singh is a Bennett University Computer Science and Engineering student graduating in 2028 who has attended all four hackathons they registered for, submitting projects each time with a 100 percent completion rate. They are demonstrably strong in TypeScript and FastAPI, with TypeScript appearing in 48 percent of their 11 public repositories and FastAPI powering their best-scoring project P0251, which earned a 91. Their involvement has progressed from consistent participation to earning a top rank in the Overall track at Ignite Delhi Grand Finale with SchemaSage, and they now contribute mentor sessions and answers to the community. For an organizer deciding whether to invite them, they are a reliable finisher who delivers high-scoring work when engaged, making them a safe bet for team roles that require follow-through.",
+  "narrative": "Kabir Singh is a Bennett University student who has built a consistent record across four hackathon participations, completing every submission and attending every registered event. They are demonstrably strong in TypeScript, with evidence including 48% of their 11 public repositories and use in a submitted project, alongside practical experience with FastAPI, Node.js, and React across multiple projects. Their involvement has trended upward, with scores rising from 52 to 91 over their hackathon history, reflecting a trajectory of increasing performance and engagement. For an organizer deciding whether to invite them, it is practical to note that their proven ability to finish projects and contribute mentor sessions makes them a reliable participant for team-based tracks.",
   "narrative_status": "llm",
   "evidence": [
     {

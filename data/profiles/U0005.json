@@ -1,7 +1,7 @@
 {
   "user_id": "U0005",
   "version": 1,
-  "built_at": "2026-09-19T08:32:18.554Z",
+  "built_at": "2026-09-19T08:55:48.010Z",
   "identity": {
     "full_name": "Priya Nair",
     "email": "priya.nair@gmail.com",
@@ -385,8 +385,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Priya Nair is a B.Tech Computer Science and Engineering student at Delhi Technological University, graduating in 2026, who signed up as a Data builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). Their strongest evidenced skills are SQL, Pandas, Airflow, based on self-declared at signup. Mentors rated them 4.5 out of 5 across 2 sessions. Their judged scores have declined over time (69 → 74 → 47). Last active 2026-07-28 — currently active.",
-  "narrative_status": "template",
+  "narrative": "Priya Nair is a Delhi Technological University student graduating in 2026 who has attended three hackathons and submitted every project entered, maintaining a perfect no-show record. Their demonstrated strengths include SQL, used in a submitted project and across 6% of nine public repositories, Pandas applied in two submitted projects, and Python, which accounts for 74% of the same repository set; Airflow and Neo4j each appear in submitted work, while Node.js is also evidenced by a project submission. Over time their trajectory shows a declining score pattern from 69 to 74 to 47, yet they remain active with two mentor sessions and consistent engagement. For an organizer deciding on an invitation, they are a reliable finisher who follows through on commitments, making them a safe choice for team roles that value completion over peak performance.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 3 hackathons, attended 3",

@@ -1,7 +1,7 @@
 {
   "user_id": "U0011",
   "version": 1,
-  "built_at": "2026-09-19T08:17:46.230Z",
+  "built_at": "2026-09-19T08:32:18.555Z",
   "identity": {
     "full_name": "Arjun Khanna",
     "email": "arjun.khanna.mait@gmail.com",
@@ -119,7 +119,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Arjun Khanna is a B.Tech Information Technology student at Maharaja Agrasen Institute of Technology, graduating in 2027 and preferring product roles. Despite registering for six hackathons, he has attended none and accrued six no-shows, with zero projects submitted and no prizes earned; his top skills—Figma, SQL, and Product Management—are self-declared at signup with no supporting evidence, and he has given zero answers or mentor sessions, resulting in an engagement score of 25 and a \"Ghost\" persona marking him as a no-show risk whose activity has been cooling for 93 days.",
+  "narrative": "Arjun Khanna is a B.Tech Information Technology student at Maharaja Agrasen Institute of Technology graduating in 2027. They have registered for six hackathons but attended none, resulting in six no-shows and zero projects submitted, which indicates a pattern of disengagement. Their declared skills in Figma, SQL, and Product Management are self-declared at signup with no supporting evidence from repositories or completed work. Over time, their involvement has shifted from registration to complete absence, and their current status is described as cooling with insufficient data on recent performance. For an organizer deciding whether to invite them, it is practical to consider that their history of no-shows and lack of demonstrated skills makes them a risky participant for team-based events.",
   "narrative_status": "llm",
   "evidence": [
     {

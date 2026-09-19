@@ -1,7 +1,7 @@
 {
   "user_id": "U0004",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.783Z",
+  "built_at": "2026-09-19T08:52:11.193Z",
   "identity": {
     "full_name": "Shiv Verma",
     "email": "shiv.verma.design@gmail.com",
@@ -112,7 +112,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Shiv Verma is a first-year Design student at Delhi Technological University who registered for one hackathon and attended it on record. Their profile lists Figma, UX Research, and Prototyping as self-declared skills, though each carries a confidence score of 0.3 and is supported only by the signup declaration. Since that single event, their activity has lapsed: they have not submitted any projects, earned prizes, or engaged further, and their last recorded interaction was on 2025-08-27, 388 days ago. For an organizer considering a future invitation, the practical judgement is that their participation history offers no demonstrated impact or sustained engagement, making them a low-priority candidate for events that value ongoing contribution.",
+  "narrative": "Shiv Verma is a Delhi Technological University student graduating in 2027, currently enrolled in a B.Des program. Their profile lists Figma, UX Research, and Prototyping as top skills, but each is backed only by self-declared evidence at signup with no repository or project support, placing them in the skills_declared_without_evidence category. They registered for one hackathon, attended it once, and have not submitted any projects or prizes, resulting in a lapsed trajectory and insufficient data for future scoring. For an organizer deciding whether to invite them, the practical judgement is that their single attendance without project output offers little indication of sustained engagement or deliverable skill.",
   "narrative_status": "llm",
   "evidence": [
     {

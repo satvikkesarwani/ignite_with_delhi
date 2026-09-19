@@ -1,7 +1,7 @@
 {
   "user_id": "U0013",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.784Z",
+  "built_at": "2026-09-19T08:56:44.156Z",
   "identity": {
     "full_name": "Vikram Rao",
     "email": "vikram.rao@iitd.ac.in",
@@ -331,7 +331,7 @@
       "outcome": 20
     }
   },
-  "narrative": "Vikram Rao is a second-year M.Tech student at Indian Institute of Technology Delhi in Computer Science and Engineering. They are demonstrably good at Python and Neo4j, with confidence scores of 0.96 and 0.86 respectively; their Python use is supported by 72% of their 16 public repositories and the evidence for it, how their involvement has changed over time, and one line of practical judgement for an organizer deciding whether to invite them. Plain, specific, unexcited prose. No bullet points, no headings, no marketing language, no emoji. Never use gendered pronouns (he, she, his, her, him) — names do not tell you someone's pronouns. Refer to the person by name or as 'they'. Do not describe their year of study; if you mention timing, say 'graduating in <year>'.",
+  "narrative": "Vikram Rao is a graduate student at Indian Institute of Technology Delhi completing an M.Tech in Computer Science and Engineering, graduating in 2026. They are demonstrably good at Python, with evidence from 72% of their 16 public repositories and use in a submitted project, and they also show strong practical familiarity with Cypher and Neo4j, skills backed by work in two projects each. Their involvement has been consistent: they registered for and attended three hackathons, submitted all three projects with a 100% submission rate, and earned a prize for Best use of Neo4j at HackHorizon, while maintaining regular mentor engagement and a steady output of answers and workshop attendance. Their score trajectory shows an initial dip followed by a strong finish, reflecting a rising pattern despite recent cooling in activity. For an organizer deciding whether to invite them, it is practical to note that their proven track record of delivering submitted projects and winning niche tracks makes them a reliable contributor for data‑focused challenges.",
   "narrative_status": "llm",
   "evidence": [
     {

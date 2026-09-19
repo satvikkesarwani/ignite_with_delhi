@@ -1,7 +1,7 @@
 {
   "user_id": "U0006",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.783Z",
+  "built_at": "2026-09-19T08:32:18.554Z",
   "identity": {
     "full_name": "Priya Nair",
     "email": "priya.n@dtu.ac.in",
@@ -344,7 +344,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Priya Nair is a Delhi Technological University Computer Science and Engineering student graduating in 2026 who has registered for two hackathons and attended both, submitting two projects with a 100 percent submission rate. They are demonstrably proficient in Pandas and DuckDB, each self-declared at signup and used in P0247 where they scored 52, and they also show solid Python ability, with 74 percent of their nine public repos containing the language. Their involvement has been consistent and active, with a trajectory showing scores of 51 and 52 across their two events, and they have remained engaged through workshops, mentor sessions, and answers given on the platform. For an organizer deciding whether to invite them, they are a reliable participant with practical data skills and a steady presence, making them a safe addition to any team.",
+  "narrative": "Priya Nair is a Delhi Technological University student graduating in 2026 who registered for two hackathons and attended both without no-shows, submitting two projects with a consistent submission rate. They are demonstrably good at Python, with evidence from 74% of their nine public repositories, and also show practical experience with Pandas and DuckDB, each used in a submitted project. Their involvement has been steady and active, maintaining participation across two events and contributing answers and workshop attendance, though their trajectory shows insufficient data for clear directional growth. For an organizer deciding whether to invite them, it is practical to note that their consistent engagement and evidence-backed technical skills make them a reliable participant for data-focused projects.",
   "narrative_status": "llm",
   "evidence": [
     {

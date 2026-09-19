@@ -1,7 +1,7 @@
 {
   "user_id": "U0002",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.782Z",
+  "built_at": "2026-09-19T08:32:18.554Z",
   "identity": {
     "full_name": "Shiv Sharma",
     "email": "shivsharma2027@gmail.com",
@@ -286,7 +286,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Shiv Sharma is a B.Tech Information Technology student at Amity University Noida graduating in 2027 who has registered for two hackathons and attended both, submitting two projects with a 100% submission rate. They are demonstrably skilled in Neo4j, Cypher, and Knowledge Graphs, each with 0.8 confidence and evidence from project P0170 where they scored 59; they also have practical experience with React, Flutter, and Firebase from project P0120, where they scored 50. Their involvement has been consistent in attendance but shows a dormant trajectory with insufficient data, reflected in average scores of 54.5 and a mentor score of 3 from a single session, and they have been inactive for 344 days since 2025-10-10. For an organizer deciding whether to invite them, it is practical to note that their limited project scores and extended inactivity suggest they may not bring current competitive momentum, though their declared skills in backend-adjacent technologies could be refreshed with active re-engagement.",
+  "narrative": "Shiv Sharma is a B.Tech Information Technology student at Amity University Noida graduating in 2027 who prefers backend work. They are demonstrably good at Neo4j, React, Cypher, Knowledge Graphs, Flutter, and Firebase, each supported by evidence of use in a submitted project. Their involvement has shifted from an initial participation pattern to a dormant status, with scores of 50 and 59 and insufficient data on future direction. For an organizer deciding whether to invite them, it is practical to note that despite a solid submission rate and zero no-shows, their long inactivity and lack of mentor engagement suggest limited current momentum.",
   "narrative_status": "llm",
   "evidence": [
     {

@@ -1,7 +1,7 @@
 {
   "user_id": "U0016",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.785Z",
+  "built_at": "2026-09-19T08:32:18.556Z",
   "identity": {
     "full_name": "Nisha Pillai",
     "email": "nisha.pillai@srmist.edu.in",
@@ -385,7 +385,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Nisha Pillai is a third-year B.Tech Information Technology student at SRM Institute of Science and Technology who has registered for and attended three hackathons with a perfect attendance record and three project submissions. They are demonstrably proficient in Python, FastAPI, Pandas, dbt, Go, and Redis, with concrete evidence from their submissions that includes a best score of 67 on project P0082 using Go and Redis. Their involvement has declined over time, as reflected in a trajectory of scores dropping from 67 to 59 to 48 and a current status marked as dormant with 250 days since last activity. For an organizer deciding whether to invite them, it is practical to note that their consistent completion rate and technical range make them a reliable participant, though their recent inactivity and declining performance suggest they may not contribute high-impact results in a competitive setting.",
+  "narrative": "Nisha Pillai is a B.Tech Information Technology student at SRM Institute of Science and Technology who has maintained a consistent record across three registered hackathons, attending and submitting projects in each without a no-show. Their technical profile includes Python, FastAPI, Pandas, dbt, Go, and Redis, all of which are evidenced by use in submitted projects; Flutter and Firebase appear only in declared skills without supporting evidence. Over time their performance trajectory has declined from an initial score of 67 to 48, and their engagement status is now listed as dormant. For an organizer deciding on a future invitation, it is worth noting that despite a solid submission rate and steady participation history, the downward trend in scores and current dormancy suggest limited recent impact.",
   "narrative_status": "llm",
   "evidence": [
     {

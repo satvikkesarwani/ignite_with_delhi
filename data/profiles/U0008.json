@@ -1,7 +1,7 @@
 {
   "user_id": "U0008",
   "version": 1,
-  "built_at": "2026-09-19T08:22:35.783Z",
+  "built_at": "2026-09-19T08:32:18.555Z",
   "identity": {
     "full_name": "Rohan Mehta",
     "email": "rohan.mehta.nsut@gmail.com",
@@ -420,7 +420,7 @@
       "outcome": 40
     }
   },
-  "narrative": "Rohan Mehta is a Computer Science and Engineering student at Netaji Subhas University of Technology graduating in 2025 who has registered for and attended three hackathons with zero no-shows and a perfect submission rate. They are demonstrably good at backend technologies, particularly Go, PostgreSQL, and Redis, with Go confidence at 0.94 supported by the fact that 58% of their 18 public repos use it and it was used in project P0112 where they scored 90; they also scored 90 in P0112 using PostgreSQL and Redis, and 86 in P0141 using LangChain. Their involvement has changed over time as shown by their scores in order—44, 90, 86—indicating a lapsed but rising trajectory from an initial lower performance to strong showings in their second and third events, and they currently sit in a dormant high-potential persona status with 451 days since last active on 2025-06-25. For an organizer deciding whether to invite them, one practical judgement is that despite their lapsed status and long inactivity, their consistent submission record, perfect attendance, and proven high-scoring performances in recent hackathons suggest they remain a reliable competitor worth re-engaging.",
+  "narrative": "Rohan Mehta is a third‑year Computer Science and Engineering student at Netaji Subhas University of Technology graduating in 2025 who has attended all three hackathons they registered for, submitting projects in every instance with a 100 % submission rate. They are demonstrably good at Go, evidenced by 58 % of their 18 public repositories using the language and its application in a submitted project, and they also show strong practical skill with PostgreSQL and Redis, both used in submitted work. Their involvement has shifted from a lapsed status with early scores of 44 and 90 to a rising trajectory, culminating in two top‑rank finishes—first place at StackSprint with SplitFair and second place at ProtoDelhi with VaxTrack—while maintaining consistent mentor engagement across three sessions. For an organizer deciding whether to invite them, it is practical to note that their track record of completing every registered event and delivering prize‑winning projects suggests reliable follow‑through, though their current lapse in activity over the past 451 days may indicate reduced availability for future commitments.",
   "narrative_status": "llm",
   "evidence": [
     {
