@@ -1,0 +1,235 @@
+{
+  "user_id": "U0394",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.089Z",
+  "identity": {
+    "full_name": "Mishka Nanda",
+    "email": "mishka.nanda@ggsipu.ac.in",
+    "college": "Guru Gobind Singh Indraprastha University",
+    "degree": "M.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "DevOps",
+    "github_username": "mishka41",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-04-16",
+    "last_active": "2024-04-16",
+    "days_since_active": 886,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 0,
+    "interactions_by_type": {},
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 69 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GitHub Actions",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 69 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 69 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 0,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 0,
+      "outcome": 0
+    }
+  },
+  "narrative": "Mishka Nanda is a M.Tech Electrical Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2025, who signed up as a DevOps builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are Shell, based on 60% of 69 public repos. They declare Kubernetes, GraphQL, Prometheus with no supporting repository or project evidence on the platform. Last active 2024-04-16, 886 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-04-16",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Shell: 60% of 69 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#mishka41",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kubernetes: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "GraphQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Prometheus: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "GitHub Actions: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Go: 20% of 69 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#mishka41",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "HCL: 20% of 69 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#mishka41",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

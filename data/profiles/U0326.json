@@ -1,0 +1,382 @@
+{
+  "user_id": "U0326",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.085Z",
+  "identity": {
+    "full_name": "Siddharth Dubey",
+    "email": "siddharth.dubey@gmail.com",
+    "college": "Jamia Millia Islamia",
+    "degree": "BCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2029,
+    "city": "Bengaluru",
+    "role_pref": "Web3",
+    "github_username": "siddharth89",
+    "linkedin_url": "https://linkedin.com/in/siddharth-dubey-2937",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 1,
+    "no_shows": 1,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2024-12-04",
+        "hackathon": "Capital Code Jam",
+        "hackathon_id": "H009",
+        "prize_track": "Overall",
+        "project_id": "P0094",
+        "project_title": "VoteProof",
+        "rank": 1,
+        "score": 83
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 83,
+    "first_seen": "2024-12-04",
+    "last_active": "2026-04-01",
+    "days_since_active": 171,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 7,
+    "interactions_by_type": {
+      "comment": 2,
+      "workshop_attended": 2,
+      "discord_message": 2,
+      "question": 1
+    },
+    "workshops": 2,
+    "answers_given": 0,
+    "distinct_teammates": 1,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0094 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0094 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0094 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0094 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0094 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0094 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 4 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 4 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-12-04",
+        "score": 83,
+        "project_id": "P0094"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 28,
+    "components": {
+      "recency": 53,
+      "frequency": 13,
+      "depth": 18,
+      "outcome": 20
+    }
+  },
+  "narrative": "Siddharth Dubey is a BCA Computer Science and Engineering student at Jamia Millia Islamia, graduating in 2029, who signed up as a Web3 builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 1 at Capital Code Jam with \"VoteProof\" (scored 83). Their strongest evidenced skills are PostgreSQL, The Graph, ethers.js, based on self-declared at signup. They declare Foundry, IPFS with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-04-01, 171 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-04-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-04-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Capital Code Jam with \"VoteProof\" (score 83)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0094",
+      "observed_at": "2024-12-04",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-04-01",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-04-01",
+      "confidence": 1
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: built P0094 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "The Graph: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "The Graph: built P0094 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "ethers.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "ethers.js: built P0094 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Hardhat: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Hardhat: built P0094 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: built P0094 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Solidity: built P0094 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: 60% of 4 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#siddharth89",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "JavaScript: 40% of 4 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#siddharth89",
+      "observed_at": null,
+      "confidence": 0.4
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,352 @@
+{
+  "user_id": "U0247",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.078Z",
+  "identity": {
+    "full_name": "Mihir Malik",
+    "email": "mihir.malik@dtu.ac.in",
+    "college": "Delhi Technological University (DTU)",
+    "degree": "B.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "DevOps",
+    "github_username": "devmihir",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 64,
+    "first_seen": "2024-06-25",
+    "last_active": "2024-07-30",
+    "days_since_active": 781,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 6,
+    "interactions_by_type": {
+      "discord_message": 1,
+      "question": 2,
+      "workshop_attended": 1,
+      "comment": 1,
+      "profile_update": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 1,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 3,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 11 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 11 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "AWS",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Nginx",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Terraform",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-06-25",
+        "score": 64,
+        "project_id": "P0048"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 7,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 15,
+      "outcome": 0
+    }
+  },
+  "narrative": "Mihir Malik is a B.Tech Mathematics and Computing student at Delhi Technological University (DTU), graduating in 2027, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, LangChain, RAG, based on built P0048 (scored 64). They declare Kubernetes, Prometheus, AWS with no supporting repository or project evidence on the platform. Last active 2024-07-30, 781 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-07-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2024-07-30",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2024-07-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "LangChain: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "RAG: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenAI API: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenCV: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Shell: 60% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devmihir",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "HCL: 40% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devmihir",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Kubernetes: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

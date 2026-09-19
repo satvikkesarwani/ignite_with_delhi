@@ -1,0 +1,335 @@
+{
+  "user_id": "U0322",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.084Z",
+  "identity": {
+    "full_name": "Tanmay Mishra",
+    "email": "tanmay.mishra73@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "Web3",
+    "github_username": "tanmay_mishra",
+    "linkedin_url": "https://linkedin.com/in/tanmay-mishra-2503",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-08-27",
+        "hackathon": "Ignite Delhi Winter II",
+        "hackathon_id": "H016",
+        "prize_track": "Overall",
+        "project_id": "P0158",
+        "project_title": "CarbonLedger",
+        "rank": 2,
+        "score": 85
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 2,
+    "avg_score": 85,
+    "first_seen": "2025-08-27",
+    "last_active": "2025-09-12",
+    "days_since_active": 372,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 3,
+    "interactions_by_type": {
+      "comment": 1,
+      "answered_question": 2
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 2,
+      "clicked": 1,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.92,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "40% of 5 public repos",
+          "weight": 0.4
+        },
+        {
+          "type": "project",
+          "detail": "built P0158 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0158 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0158 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0158 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0158 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0158 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 5 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Dormant High-Potential"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2025-08-27",
+        "score": 85,
+        "project_id": "P0158"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 9,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 20
+    }
+  },
+  "narrative": "Tanmay Mishra is a B.Tech Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2027, who signed up as a Web3 builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 2 at Ignite Delhi Winter II with \"CarbonLedger\" (scored 85). Their strongest evidenced skills are TypeScript, Pandas, DuckDB, based on self-declared at signup. They declare The Graph, Foundry with no supporting repository or project evidence on the platform. Last active 2025-09-12, 372 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-09-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-09-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at Ignite Delhi Winter II with \"CarbonLedger\" (score 85)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0158",
+      "observed_at": "2025-08-27",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-09-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 2, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "TypeScript: 40% of 5 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#tanmay_mishra",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "TypeScript: built P0158 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Pandas: built P0158 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "DuckDB: built P0158 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: built P0158 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Spark: built P0158 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NumPy: built P0158 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Solidity: 60% of 5 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#tanmay_mishra",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "The Graph: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

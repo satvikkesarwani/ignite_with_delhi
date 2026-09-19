@@ -1,0 +1,240 @@
+{
+  "user_id": "U0344",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.086Z",
+  "identity": {
+    "full_name": "Hiral Pillai",
+    "email": "hiral.pillai@srm.ac.in",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "BCA",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2027,
+    "city": "Chennai",
+    "role_pref": "ML/AI",
+    "github_username": "hiralpillai",
+    "linkedin_url": "https://linkedin.com/in/hiral-pillai-2157",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-02-15",
+    "last_active": "2025-10-12",
+    "days_since_active": 342,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 8,
+    "interactions_by_type": {
+      "answered_question": 4,
+      "discord_message": 1,
+      "comment": 1,
+      "question": 2
+    },
+    "workshops": 0,
+    "answers_given": 4,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 10 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 10 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 13,
+    "components": {
+      "recency": 6,
+      "frequency": 25,
+      "depth": 20,
+      "outcome": 0
+    }
+  },
+  "narrative": "Hiral Pillai is a BCA Mathematics and Computing student at SRM Institute of Science and Technology, graduating in 2027, who signed up as a ML/AI builder. They have attended 2 of the 2 hackathons they registered for, but have not submitted a project. Their strongest evidenced skills are Python, based on 60% of 10 public repos. They declare PyTorch, Transformers, OpenAI API with no supporting repository or project evidence on the platform. Last active 2025-10-12, 342 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-10-12",
+      "confidence": 1
+    },
+    {
+      "claim": "8 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-10-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 60% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#hiralpillai",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "C++: 40% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#hiralpillai",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "PyTorch: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Transformers: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "OpenAI API: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "scikit-learn: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "TensorFlow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

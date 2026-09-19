@@ -1,0 +1,404 @@
+{
+  "user_id": "U0428",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.092Z",
+  "identity": {
+    "full_name": "Gauri Trivedi",
+    "email": "gauri.trivedi@ggsipu.ac.in",
+    "college": "Guru Gobind Singh Indraprastha University",
+    "degree": "B.Des",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "gauri_trivedi",
+    "linkedin_url": "https://linkedin.com/in/gauri-trivedi-8971",
+    "consent_flag": false
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 38,
+    "first_seen": "2024-02-22",
+    "last_active": "2025-06-12",
+    "days_since_active": 464,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 4,
+    "interactions": 6,
+    "interactions_by_type": {
+      "question": 2,
+      "discord_message": 1,
+      "comment": 2,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0015 (scored 36)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0147 (scored 40)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0015 (scored 36)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0147 (scored 40)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0015 (scored 36)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0015 (scored 36)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0147 (scored 40)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0015 (scored 36)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jetpack Compose",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0147 (scored 40)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 6 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 6 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 36,
+        "project_id": "P0015"
+      },
+      {
+        "date": "2025-06-12",
+        "score": 40,
+        "project_id": "P0147"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 10,
+    "components": {
+      "recency": 0,
+      "frequency": 25,
+      "depth": 15,
+      "outcome": 0
+    }
+  },
+  "narrative": "Gauri Trivedi is a B.Des Mechanical Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2027, who signed up as a Backend builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are GraphQL, Django, Kafka, based on self-declared at signup. They declare Docker, PostgreSQL with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 2 sessions. Last active 2025-06-12, 464 days ago — lapsed. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 4",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "GraphQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: built P0015 (scored 36)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Django: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Django: built P0147 (scored 40)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Kafka: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Kafka: built P0015 (scored 36)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "gRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "gRPC: built P0147 (scored 40)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0015 (scored 36)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0015 (scored 36)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Kotlin: built P0147 (scored 40)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0015 (scored 36)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

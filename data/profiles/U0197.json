@@ -1,0 +1,237 @@
+{
+  "user_id": "U0197",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.074Z",
+  "identity": {
+    "full_name": "Reyansh Reddy",
+    "email": "reyansh.reddy@mait.ac.in",
+    "college": "Maharaja Agrasen Institute of Technology",
+    "degree": "B.Des",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Product",
+    "github_username": "reyanshreddy",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-05-26",
+    "last_active": "2026-07-08",
+    "days_since_active": 73,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 1,
+    "interactions_by_type": {
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 18 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 18 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 18 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 25,
+    "components": {
+      "recency": 80,
+      "frequency": 0,
+      "depth": 3,
+      "outcome": 0
+    }
+  },
+  "narrative": "Reyansh Reddy is a B.Des Mechanical Engineering student at Maharaja Agrasen Institute of Technology, graduating in 2025, who signed up as a Product builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are CSS, based on 60% of 18 public repos. They declare Figma, Prototyping, Framer with no supporting repository or project evidence on the platform. Last active 2026-07-08, 73 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-08",
+      "confidence": 1
+    },
+    {
+      "claim": "1 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-08",
+      "confidence": 1
+    },
+    {
+      "claim": "CSS: 60% of 18 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#reyanshreddy",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Figma: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Prototyping: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Framer: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Design Systems: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "JavaScript: 20% of 18 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#reyanshreddy",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "HTML: 20% of 18 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#reyanshreddy",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

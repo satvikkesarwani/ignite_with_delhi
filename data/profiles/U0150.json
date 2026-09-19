@@ -1,0 +1,248 @@
+{
+  "user_id": "U0150",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.071Z",
+  "identity": {
+    "full_name": "Naman Malik",
+    "email": "naman.malik73@gmail.com",
+    "college": "Amity University Noida",
+    "degree": "BCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2027,
+    "city": "Bengaluru",
+    "role_pref": "Mobile",
+    "github_username": null,
+    "linkedin_url": "https://linkedin.com/in/naman-malik-5476",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 1,
+    "no_shows": 4,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 76,
+    "first_seen": "2025-10-04",
+    "last_active": "2026-06-29",
+    "days_since_active": 82,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 13,
+    "interactions_by_type": {
+      "discord_message": 4,
+      "answered_question": 1,
+      "comment": 3,
+      "question": 2,
+      "profile_update": 2,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 3,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0179 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Qdrant",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0179 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pinecone",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0179 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "no_show_risk",
+      "label": "No-show risk",
+      "score": 0.8,
+      "evidence": ["4 no-shows across 5 registrations"]
+    }
+  ],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-10-04",
+        "score": 76,
+        "project_id": "P0179"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 35,
+    "components": {
+      "recency": 78,
+      "frequency": 13,
+      "depth": 33,
+      "outcome": 0
+    }
+  },
+  "narrative": "Naman Malik is a BCA Computer Science and Engineering student at Amity University Noida, graduating in 2027, who signed up as a Mobile builder. They have attended 1 of the 5 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Neo4j, Qdrant, Pinecone, based on built P0179 (scored 76). They declare Firebase, Kotlin, Swift with no supporting repository or project evidence on the platform. Last active 2026-06-29, 82 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-06-29",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-06-29",
+      "confidence": 1
+    },
+    {
+      "claim": "13 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-06-29",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Neo4j: built P0179 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Qdrant: built P0179 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Pinecone: built P0179 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Firebase: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Kotlin: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Swift: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "linkedin_synthetic_seed"]
+}

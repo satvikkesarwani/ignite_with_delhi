@@ -1,0 +1,249 @@
+{
+  "user_id": "U0354",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.086Z",
+  "identity": {
+    "full_name": "Avni Khanna",
+    "email": "avni.khanna@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "MCA",
+    "branch": "Data Science",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "Design",
+    "github_username": "avni36",
+    "linkedin_url": "https://linkedin.com/in/avni-khanna-1042",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-09-04",
+    "last_active": "2025-09-04",
+    "days_since_active": 380,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 0,
+    "interactions_by_type": {},
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 10 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "UX Research",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Motion Design",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 10 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 10 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 0,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 0,
+      "outcome": 0
+    }
+  },
+  "narrative": "Avni Khanna is a MCA Data Science student at Netaji Subhas University of Technology, graduating in 2027, who signed up as a Design builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are JavaScript, based on 60% of 10 public repos. They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Last active 2025-09-04, 380 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-09-04",
+      "confidence": 1
+    },
+    {
+      "claim": "JavaScript: 60% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#avni36",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Figma: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "UX Research: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Prototyping: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Design Systems: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Motion Design: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "TypeScript: 20% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#avni36",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "CSS: 20% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#avni36",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

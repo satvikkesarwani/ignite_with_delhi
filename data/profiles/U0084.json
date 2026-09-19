@@ -1,0 +1,246 @@
+{
+  "user_id": "U0084",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.063Z",
+  "identity": {
+    "full_name": "Sahil Yadav",
+    "email": "sahil.yadav@mait.ac.in",
+    "college": "Maharaja Agrasen Institute of Technology",
+    "degree": "MCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Frontend",
+    "github_username": "sahil_yadav",
+    "linkedin_url": "https://linkedin.com/in/sahil-yadav-5570",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 0,
+    "no_shows": 1,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-01-31",
+    "last_active": "2024-06-02",
+    "days_since_active": 839,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 4,
+    "interactions_by_type": {
+      "answered_question": 2,
+      "discord_message": 1,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 10 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 10 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 10 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 10 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Registered, Never Attended"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 3,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 10,
+      "outcome": 0
+    }
+  },
+  "narrative": "Sahil Yadav is a MCA Computer Science and Engineering student at Maharaja Agrasen Institute of Technology, graduating in 2026, who signed up as a Frontend builder. They have registered for 1 hackathons but have not attended any of them. Their strongest evidenced skills are HTML, based on 60% of 10 public repos. They declare MongoDB, Tailwind CSS, tRPC with no supporting repository or project evidence on the platform. Last active 2024-06-02, 839 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-06-02",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2024-06-02",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "HTML: 60% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahil_yadav",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "MongoDB: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "tRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "CSS: 20% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahil_yadav",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "TypeScript: 10% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahil_yadav",
+      "observed_at": null,
+      "confidence": 0.1
+    },
+    {
+      "claim": "JavaScript: 10% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahil_yadav",
+      "observed_at": null,
+      "confidence": 0.1
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

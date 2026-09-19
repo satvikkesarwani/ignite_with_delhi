@@ -1,0 +1,420 @@
+{
+  "user_id": "U0317",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.084Z",
+  "identity": {
+    "full_name": "Eesha Chopra",
+    "email": "eesha.chopra52@gmail.com",
+    "college": "Jamia Millia Islamia",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2028,
+    "city": "Bengaluru",
+    "role_pref": "Frontend",
+    "github_username": "deveesha",
+    "linkedin_url": "https://linkedin.com/in/eesha-chopra-8163",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 68,
+    "first_seen": "2024-09-14",
+    "last_active": "2026-01-14",
+    "days_since_active": 248,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 7,
+    "interactions_by_type": {
+      "comment": 4,
+      "discord_message": 1,
+      "answered_question": 1,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 3,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0067 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0067 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0067 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 17 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 17 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 17 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 17 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2024-09-15",
+        "score": 62,
+        "project_id": "P0067"
+      },
+      {
+        "date": "2025-10-04",
+        "score": 74,
+        "project_id": "P0171"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 20,
+    "components": {
+      "recency": 32,
+      "frequency": 25,
+      "depth": 18,
+      "outcome": 0
+    }
+  },
+  "narrative": "Eesha Chopra is a B.Tech Data Science student at Jamia Millia Islamia, graduating in 2028, who signed up as a Frontend builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are Node.js, Tailwind CSS, Vite, based on self-declared at signup. They declare PostgreSQL, tRPC, Design Systems with no supporting repository or project evidence on the platform. Last active 2026-01-14, 248 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-01-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-01-14",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-01-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0067 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: built P0067 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0067 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Redis: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Cypher: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Knowledge Graphs: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Flask: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

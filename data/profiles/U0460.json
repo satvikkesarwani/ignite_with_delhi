@@ -1,0 +1,368 @@
+{
+  "user_id": "U0460",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.094Z",
+  "identity": {
+    "full_name": "Hemant Srivastava",
+    "email": "hemant.srivastava14@gmail.com",
+    "college": "Amity University Noida",
+    "degree": "M.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2029,
+    "city": "Noida",
+    "role_pref": "Product",
+    "github_username": "hemant_srivastava",
+    "linkedin_url": "https://linkedin.com/in/hemant-srivastava-2274",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2024-08-09",
+        "hackathon": "Ignite Delhi Spring",
+        "hackathon_id": "H006",
+        "prize_track": "Overall",
+        "project_id": "P0058",
+        "project_title": "SecretSweep",
+        "rank": 3,
+        "score": 75
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 75,
+    "first_seen": "2024-08-07",
+    "last_active": "2024-08-17",
+    "days_since_active": 763,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 4,
+    "interactions_by_type": {
+      "workshop_attended": 1,
+      "question": 2,
+      "discord_message": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0058 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0058 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0058 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0058 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 3 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "UX Research",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Motion Design",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Dormant High-Potential"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-08-09",
+        "score": 75,
+        "project_id": "P0058"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 10,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 10,
+      "outcome": 20
+    }
+  },
+  "narrative": "Hemant Srivastava is a M.Tech Mathematics and Computing student at Amity University Noida, graduating in 2029, who signed up as a Product builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Spring with \"SecretSweep\" (scored 75). Their strongest evidenced skills are TypeScript, tRPC, Django, based on built P0058 (scored 75). They declare UX Research, Prototyping, Framer with no supporting repository or project evidence on the platform. Last active 2024-08-17, 763 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-08-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2024-08-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Spring with \"SecretSweep\" (score 75)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0058",
+      "observed_at": "2024-08-09",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2024-08-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: built P0058 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: built P0058 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0058 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Java Spring: built P0058 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "C++: 60% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#hemant_srivastava",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "UX Research: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Prototyping: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Framer: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

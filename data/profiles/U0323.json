@@ -1,0 +1,443 @@
+{
+  "user_id": "U0323",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.084Z",
+  "identity": {
+    "full_name": "Prateek Pillai",
+    "email": "prateek.pillai39@gmail.com",
+    "college": "Manipal Institute of Technology",
+    "degree": "MCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Manipal",
+    "role_pref": "Mobile",
+    "github_username": "ppillai",
+    "linkedin_url": "https://linkedin.com/in/prateek-pillai-6068",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 0.67,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 53,
+    "first_seen": "2024-02-22",
+    "last_active": "2026-02-01",
+    "days_since_active": 230,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 4,
+    "interactions": 9,
+    "interactions_by_type": {
+      "question": 5,
+      "comment": 1,
+      "discord_message": 2,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 5,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0093 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0093 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0093 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0020 (scored 37)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0093 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0093 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0093 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0020 (scored 37)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0020 (scored 37)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "60% of 4 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Jetpack Compose",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 4 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 4 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Dart",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 4 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 37,
+        "project_id": "P0020"
+      },
+      {
+        "date": "2024-12-04",
+        "score": 69,
+        "project_id": "P0093"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 26,
+    "components": {
+      "recency": 37,
+      "frequency": 38,
+      "depth": 23,
+      "outcome": 0
+    }
+  },
+  "narrative": "Prateek Pillai is a MCA Computer Science and Engineering student at Manipal Institute of Technology, graduating in 2026, who signed up as a Mobile builder. They have attended 3 of the 3 hackathons they registered for and submitted 2 projects (a 67% submission rate). Their strongest evidenced skills are React, FastAPI, Tailwind CSS, based on self-declared at signup. They declare Flutter, Firebase, Jetpack Compose with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-02-01, 230 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-02-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-02-01",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 4",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-02-01",
+      "confidence": 1
+    },
+    {
+      "claim": "9 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-02-01",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "React: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "React: built P0093 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: built P0093 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0093 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0020 (scored 37)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: built P0093 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "The Graph: built P0093 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "IPFS: built P0093 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NumPy: built P0020 (scored 37)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

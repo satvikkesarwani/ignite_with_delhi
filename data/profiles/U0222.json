@@ -1,0 +1,350 @@
+{
+  "user_id": "U0222",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.076Z",
+  "identity": {
+    "full_name": "Yash Rao",
+    "email": "yash.rao@gmail.com",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "MCA",
+    "branch": "Information Technology",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "DevOps",
+    "github_username": "yash45",
+    "linkedin_url": "https://linkedin.com/in/yash-rao-3441",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 49,
+    "first_seen": "2024-09-14",
+    "last_active": "2025-11-17",
+    "days_since_active": 306,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 5,
+    "interactions": 8,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "question": 2,
+      "answered_question": 2,
+      "discord_message": 2,
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.84,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 6 public repos",
+          "weight": 0.2
+        },
+        {
+          "type": "project",
+          "detail": "built P0138 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0138 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0138 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0138 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 6 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Nginx",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Terraform",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 6 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "R",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 6 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2025-05-09",
+        "score": 49,
+        "project_id": "P0138"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 16,
+    "components": {
+      "recency": 16,
+      "frequency": 25,
+      "depth": 20,
+      "outcome": 0
+    }
+  },
+  "narrative": "Yash Rao is a MCA Information Technology student at Indraprastha Institute of Information Technology Delhi, graduating in 2026, who signed up as a DevOps builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Python, Transformers, OpenAI API, based on 20% of 6 public repos. They declare Kubernetes, Prometheus, GCP with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 3 sessions. Last active 2025-11-17, 306 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-11-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-11-17",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-11-17",
+      "confidence": 1
+    },
+    {
+      "claim": "8 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-11-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 20% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#yash45",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "Python: built P0138 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "Transformers: built P0138 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenAI API: built P0138 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TensorFlow: built P0138 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#yash45",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kubernetes: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Prometheus: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "GCP: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

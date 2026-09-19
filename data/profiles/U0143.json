@@ -1,0 +1,164 @@
+{
+  "user_id": "U0143",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.071Z",
+  "identity": {
+    "full_name": "Yash Mehta",
+    "email": "yash.mehta5@gmail.com",
+    "college": "Delhi Technological University",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Product",
+    "github_username": null,
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 2,
+    "no_shows": 1,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-12-04",
+    "last_active": "2026-05-29",
+    "days_since_active": 113,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 2.5,
+    "interactions": 10,
+    "interactions_by_type": {
+      "discord_message": 3,
+      "answered_question": 3,
+      "workshop_attended": 2,
+      "comment": 1,
+      "question": 1
+    },
+    "workshops": 2,
+    "answers_given": 3,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 33,
+    "components": {
+      "recency": 69,
+      "frequency": 25,
+      "depth": 25,
+      "outcome": 0
+    }
+  },
+  "narrative": "Yash Mehta is a B.Tech Computer Science and Engineering student at Delhi Technological University, graduating in 2025, who signed up as a Product builder. They have attended 2 of the 3 hackathons they registered for, but have not submitted a project. They declare Figma, Framer, Design Systems with no supporting repository or project evidence on the platform. Mentors rated them 2.5 out of 5 across 2 sessions. Last active 2026-05-29, 113 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-29",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 2.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-05-29",
+      "confidence": 1
+    },
+    {
+      "claim": "10 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-29",
+      "confidence": 1
+    },
+    {
+      "claim": "Figma: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Framer: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Design Systems: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform"]
+}

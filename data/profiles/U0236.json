@@ -1,0 +1,371 @@
+{
+  "user_id": "U0236",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.077Z",
+  "identity": {
+    "full_name": "Vanya Nanda",
+    "email": "vanya.nanda@gmail.com",
+    "college": "Indian Institute of Technology Roorkee",
+    "degree": "BCA",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2026,
+    "city": "Roorkee",
+    "role_pref": "DevOps",
+    "github_username": "vanya84",
+    "linkedin_url": "https://linkedin.com/in/vanya-nanda-8911",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-11-19",
+        "hackathon": "HackYamuna",
+        "hackathon_id": "H018",
+        "prize_track": "Overall",
+        "project_id": "P0190",
+        "project_title": "LogLens",
+        "rank": 3,
+        "score": 84
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 84,
+    "first_seen": "2025-11-18",
+    "last_active": "2026-09-07",
+    "days_since_active": 12,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 3,
+    "interactions_by_type": {
+      "question": 1,
+      "profile_update": 1,
+      "answered_question": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": true
+    }
+  },
+  "skills": [
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0190 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.82,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 40 public repos",
+          "weight": 0.1
+        },
+        {
+          "type": "project",
+          "detail": "built P0190 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0190 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0190 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0190 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 40 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "AWS",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Nginx",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Terraform",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 40 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 40 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-11-19",
+        "score": 84,
+        "project_id": "P0190"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 38,
+    "components": {
+      "recency": 97,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 20
+    }
+  },
+  "narrative": "Vanya Nanda is a BCA Mathematics and Computing student at Indian Institute of Technology Roorkee, graduating in 2026, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at HackYamuna with \"LogLens\" (scored 84). Their strongest evidenced skills are Prometheus, Go, PostgreSQL, based on self-declared at signup. They declare AWS, Nginx, Terraform with no supporting repository or project evidence on the platform. Last active 2026-09-07 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-09-07",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-09-07",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at HackYamuna with \"LogLens\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0190",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-09-07",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Prometheus: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Prometheus: built P0190 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Go: 10% of 40 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#vanya84",
+      "observed_at": null,
+      "confidence": 0.82
+    },
+    {
+      "claim": "Go: built P0190 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.82
+    },
+    {
+      "claim": "PostgreSQL: built P0190 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Kubernetes: built P0190 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0190 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HCL: 60% of 40 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#vanya84",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "AWS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Nginx: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

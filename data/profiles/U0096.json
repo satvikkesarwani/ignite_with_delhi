@@ -1,0 +1,428 @@
+{
+  "user_id": "U0096",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.067Z",
+  "identity": {
+    "full_name": "Daksh Sethi",
+    "email": "daksh.sethi@gmail.com",
+    "college": "Indian Institute of Technology Bombay",
+    "degree": "B.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Web3",
+    "github_username": "daksh-sethi",
+    "linkedin_url": "https://linkedin.com/in/daksh-sethi-6594",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 64,
+    "first_seen": "2024-05-20",
+    "last_active": "2026-04-14",
+    "days_since_active": 158,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 8,
+    "interactions_by_type": {
+      "workshop_attended": 4,
+      "discord_message": 2,
+      "answered_question": 2
+    },
+    "workshops": 4,
+    "answers_given": 2,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.92,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 3 public repos",
+          "weight": 0.6
+        },
+        {
+          "type": "project",
+          "detail": "built P0035 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0035 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "dbt",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0035 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0035 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0035 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-05-21",
+        "score": 60,
+        "project_id": "P0035"
+      },
+      {
+        "date": "2026-04-06",
+        "score": 68,
+        "project_id": "P0222"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 28,
+    "components": {
+      "recency": 57,
+      "frequency": 25,
+      "depth": 20,
+      "outcome": 0
+    }
+  },
+  "narrative": "Daksh Sethi is a B.Tech Mathematics and Computing student at Indian Institute of Technology Bombay, graduating in 2026, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are TypeScript, Next.js, Python, based on 60% of 3 public repos. They declare IPFS, ethers.js, Hardhat with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-04-14, 158 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-04-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-04-14",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-04-14",
+      "confidence": 1
+    },
+    {
+      "claim": "8 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-04-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: 60% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#daksh-sethi",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "TypeScript: built P0035 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Next.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Python: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0035 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "dbt: built P0035 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: built P0035 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

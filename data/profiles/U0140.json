@@ -1,0 +1,472 @@
+{
+  "user_id": "U0140",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.070Z",
+  "identity": {
+    "full_name": "Shreya Malik",
+    "email": "shreya.malik@jiitnoida.ac.in",
+    "college": "Jaypee Institute of Information Technology",
+    "degree": "B.Tech",
+    "branch": "Information Technology",
+    "grad_year": 2027,
+    "city": "Noida",
+    "role_pref": "DevOps",
+    "github_username": "devshreya",
+    "linkedin_url": "https://linkedin.com/in/shreya-malik-6850",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2024-12-04",
+        "hackathon": "Capital Code Jam",
+        "hackathon_id": "H009",
+        "prize_track": "Overall",
+        "project_id": "P0090",
+        "project_title": "SupplyStamp",
+        "rank": 3,
+        "score": 70
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 65,
+    "first_seen": "2024-10-24",
+    "last_active": "2025-02-18",
+    "days_since_active": 578,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 5,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "question": 1,
+      "answered_question": 1,
+      "profile_update": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 5,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0083 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0083 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0083 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0083 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0083 (scored 60)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GitHub Actions",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Nginx",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 12 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 12 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Dormant High-Potential", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-10-26",
+        "score": 60,
+        "project_id": "P0083"
+      },
+      {
+        "date": "2024-12-04",
+        "score": 70,
+        "project_id": "P0090"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 14,
+    "components": {
+      "recency": 0,
+      "frequency": 25,
+      "depth": 13,
+      "outcome": 20
+    }
+  },
+  "narrative": "Shreya Malik is a B.Tech Information Technology student at Jaypee Institute of Information Technology, graduating in 2027, who signed up as a DevOps builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Capital Code Jam with \"SupplyStamp\" (scored 70). Their strongest evidenced skills are Docker, Tailwind CSS, Arduino, based on built P0090 (scored 70). They declare Kubernetes, Prometheus, GitHub Actions with no supporting repository or project evidence on the platform. Last active 2025-02-18, 578 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-02-18",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-02-18",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Capital Code Jam with \"SupplyStamp\" (score 70)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0090",
+      "observed_at": "2024-12-04",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-02-18",
+      "confidence": 1
+    },
+    {
+      "claim": "Docker: built P0090 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0090 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Arduino: built P0083 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "ESP32: built P0083 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Embedded C: built P0083 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0083 (scored 60)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Foundry: built P0090 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "IPFS: built P0090 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

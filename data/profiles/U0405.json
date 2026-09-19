@@ -1,0 +1,447 @@
+{
+  "user_id": "U0405",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.089Z",
+  "identity": {
+    "full_name": "Aryan Dubey",
+    "email": "aryan.dubey91@gmail.com",
+    "college": "Amity University Noida",
+    "degree": "M.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2027,
+    "city": "Noida",
+    "role_pref": "Frontend",
+    "github_username": "aryand",
+    "linkedin_url": "https://linkedin.com/in/aryan-dubey-5132",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 3,
+    "no_shows": 1,
+    "projects_submitted": 2,
+    "submission_rate": 0.67,
+    "prizes": [
+      {
+        "date": "2024-04-06",
+        "hackathon": "BuildDelhi",
+        "hackathon_id": "H003",
+        "prize_track": "Overall",
+        "project_id": "P0022",
+        "project_title": "LegalRAG",
+        "rank": 1,
+        "score": 54
+      },
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Overall",
+        "project_id": "P0255",
+        "project_title": "Interviewer",
+        "rank": 3,
+        "score": 63
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 58.5,
+    "first_seen": "2024-02-22",
+    "last_active": "2026-08-08",
+    "days_since_active": 42,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 3.67,
+    "interactions": 6,
+    "interactions_by_type": {
+      "comment": 2,
+      "question": 1,
+      "discord_message": 2,
+      "answered_question": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 6,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0022 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0022 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0022 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0022 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0022 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 42 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 42 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 42 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-04-06",
+        "score": 54,
+        "project_id": "P0022"
+      },
+      {
+        "date": "2026-08-08",
+        "score": 63,
+        "project_id": "P0255"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 48,
+    "components": {
+      "recency": 88,
+      "frequency": 38,
+      "depth": 15,
+      "outcome": 40
+    }
+  },
+  "narrative": "Aryan Dubey is a M.Tech Mathematics and Computing student at Amity University Noida, graduating in 2027, who signed up as a Frontend builder. They have attended 3 of the 4 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 2 prizes, including rank 1 at BuildDelhi with \"LegalRAG\" (scored 54). Their strongest evidenced skills are Express, Next.js, Vite, based on self-declared at signup. Mentors rated them 3.67 out of 5 across 3 sessions. Last active 2026-08-08 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at BuildDelhi with \"LegalRAG\" (score 54)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0022",
+      "observed_at": "2024-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Grand Finale with \"Interviewer\" (score 63)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0255",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 3.67",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Express: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Express: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: built P0022 (scored 54)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0022 (scored 54)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HuggingFace: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenAI API: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "scikit-learn: built P0022 (scored 54)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

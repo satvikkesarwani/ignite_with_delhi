@@ -1,0 +1,220 @@
+{
+  "user_id": "U0225",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.076Z",
+  "identity": {
+    "full_name": "Charvi Jain",
+    "email": "charvi.jain@dtu.ac.in",
+    "college": "Delhi Technological University",
+    "degree": "B.E.",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Full-stack",
+    "github_username": "charvi_jain",
+    "linkedin_url": "https://linkedin.com/in/charvi-jain-2602",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-02-15",
+    "last_active": "2025-02-28",
+    "days_since_active": 568,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 5,
+    "interactions_by_type": {
+      "workshop_attended": 1,
+      "question": 1,
+      "comment": 1,
+      "discord_message": 1,
+      "answered_question": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 9 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 7,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 13,
+      "outcome": 0
+    }
+  },
+  "narrative": "Charvi Jain is a B.E. Mechanical Engineering student at Delhi Technological University, graduating in 2026, who signed up as a Full-stack builder. They have attended 1 of the 1 hackathons they registered for, but have not submitted a project. Their strongest evidenced skills are TypeScript, based on 60% of 9 public repos. They declare PostgreSQL, Tailwind CSS, tRPC with no supporting repository or project evidence on the platform. Last active 2025-02-28, 568 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-02-28",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-02-28",
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#charvi_jain",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "CSS: 40% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#charvi_jain",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "tRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Django: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

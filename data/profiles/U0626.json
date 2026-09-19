@@ -1,0 +1,308 @@
+{
+  "user_id": "U0626",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.106Z",
+  "identity": {
+    "full_name": "Aditi Chadha",
+    "email": "aditi.chadha@igdtuw.ac.in",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "M.Tech",
+    "branch": "Electronics and Communication",
+    "grad_year": 2028,
+    "city": "Delhi",
+    "role_pref": "Web3",
+    "github_username": "aditi_chadha",
+    "linkedin_url": "https://linkedin.com/in/aditi-chadha-1696",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 69,
+    "first_seen": "2024-01-13",
+    "last_active": "2024-08-15",
+    "days_since_active": 765,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 5,
+    "interactions_by_type": {
+      "workshop_attended": 1,
+      "comment": 3,
+      "discord_message": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0059 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0059 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0059 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 9 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 9 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-08-09",
+        "score": 69,
+        "project_id": "P0059"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 10,
+    "components": {
+      "recency": 0,
+      "frequency": 25,
+      "depth": 13,
+      "outcome": 0
+    }
+  },
+  "narrative": "Aditi Chadha is a M.Tech Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2028, who signed up as a Web3 builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Next.js, PostgreSQL, Django, based on built P0059 (scored 69). They declare The Graph, Foundry, ethers.js with no supporting repository or project evidence on the platform. Last active 2024-08-15, 765 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-08-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2024-08-15",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2024-08-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Next.js: built P0059 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0059 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0059 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Solidity: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#aditi_chadha",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "The Graph: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Foundry: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "ethers.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Hardhat: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

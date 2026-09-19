@@ -1,0 +1,285 @@
+{
+  "user_id": "U0138",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.070Z",
+  "identity": {
+    "full_name": "Om Mittal",
+    "email": "om.mittal95@gmail.com",
+    "college": "Jamia Millia Islamia",
+    "degree": "B.E.",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "ML/AI",
+    "github_username": "om58",
+    "linkedin_url": "https://linkedin.com/in/om-mittal-2534",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 32,
+    "first_seen": "2025-02-15",
+    "last_active": "2026-05-26",
+    "days_since_active": 116,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 7,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "discord_message": 2,
+      "question": 1,
+      "workshop_attended": 2,
+      "answered_question": 1
+    },
+    "workshops": 2,
+    "answers_given": 1,
+    "distinct_teammates": 5,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 2,
+      "clicked": 1,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0145 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0145 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0145 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 30 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 30 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-06-12",
+        "score": 32,
+        "project_id": "P0145"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 31,
+    "components": {
+      "recency": 68,
+      "frequency": 25,
+      "depth": 18,
+      "outcome": 0
+    }
+  },
+  "narrative": "Om Mittal is a B.E. Computer Science and Engineering student at Jamia Millia Islamia, graduating in 2026, who signed up as a ML/AI builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Python, PyTorch, Docker, based on self-declared at signup. They declare Airflow, LLM Fine-tuning with no supporting repository or project evidence on the platform. Last active 2026-05-26, 116 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-05-26",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 2, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Python: built P0145 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: built P0145 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: built P0145 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 30 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#om58",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "C++: 40% of 30 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#om58",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Airflow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "LLM Fine-tuning: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

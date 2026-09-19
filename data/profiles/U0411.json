@@ -1,0 +1,303 @@
+{
+  "user_id": "U0411",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.090Z",
+  "identity": {
+    "full_name": "Arjun Mittal",
+    "email": "arjun.mittal@amitynoida.ac.in",
+    "college": "Amity University Noida",
+    "degree": "B.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2025,
+    "city": "Noida",
+    "role_pref": "Frontend",
+    "github_username": "arjun_mittal",
+    "linkedin_url": "https://linkedin.com/in/arjun-mittal-8437",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [
+      {
+        "date": "2024-01-14",
+        "hackathon": "Ignite Delhi Winter",
+        "hackathon_id": "H001",
+        "prize_track": "Overall",
+        "project_id": "P0001",
+        "project_title": "SkillPath",
+        "rank": 2,
+        "score": 74
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 2,
+    "avg_score": 74,
+    "first_seen": "2024-01-13",
+    "last_active": "2026-05-25",
+    "days_since_active": 117,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 9,
+    "interactions_by_type": {
+      "workshop_attended": 1,
+      "comment": 2,
+      "answered_question": 3,
+      "question": 2,
+      "profile_update": 1
+    },
+    "workshops": 1,
+    "answers_given": 3,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0001 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0001 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0001 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0001 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 17 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 17 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-01-14",
+        "score": 74,
+        "project_id": "P0001"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 36,
+    "components": {
+      "recency": 68,
+      "frequency": 25,
+      "depth": 23,
+      "outcome": 20
+    }
+  },
+  "narrative": "Arjun Mittal is a B.Tech Electrical Engineering student at Amity University Noida, graduating in 2025, who signed up as a Frontend builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including rank 2 at Ignite Delhi Winter with \"SkillPath\" (scored 74). Their strongest evidenced skills are PostgreSQL, Vite, LangChain, based on self-declared at signup. They declare Express with no supporting repository or project evidence on the platform. Last active 2026-05-25, 117 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-05-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at Ignite Delhi Winter with \"SkillPath\" (score 74)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0001",
+      "observed_at": "2024-01-14",
+      "confidence": 1
+    },
+    {
+      "claim": "9 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: built P0001 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0001 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: built P0001 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: built P0001 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "C: 60% of 17 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#arjun_mittal",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "C++: 40% of 17 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#arjun_mittal",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Express: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,330 @@
+{
+  "user_id": "U0375",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.088Z",
+  "identity": {
+    "full_name": "Samarth Iyer",
+    "email": "samarth.iyer@gmail.com",
+    "college": "Guru Gobind Singh Indraprastha University",
+    "degree": "B.Tech",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Frontend",
+    "github_username": "samarth_iyer",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 66,
+    "first_seen": "2025-11-18",
+    "last_active": "2026-09-02",
+    "days_since_active": 17,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 4,
+    "interactions": 4,
+    "interactions_by_type": {
+      "comment": 2,
+      "discord_message": 1,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.89,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 7 public repos",
+          "weight": 0.2
+        },
+        {
+          "type": "project",
+          "detail": "built P0191 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0191 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0191 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0191 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 7 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 7 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-11-19",
+        "score": 66,
+        "project_id": "P0191"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 34,
+    "components": {
+      "recency": 95,
+      "frequency": 13,
+      "depth": 10,
+      "outcome": 0
+    }
+  },
+  "narrative": "Samarth Iyer is a B.Tech Mechanical Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2029, who signed up as a Frontend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are TypeScript, Tailwind CSS, Kafka, based on self-declared at signup. They declare Next.js, tRPC, Vite with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-09-02 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-09-02",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-09-02",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 4",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-09-02",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-09-02",
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.89
+    },
+    {
+      "claim": "TypeScript: 20% of 7 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#samarth_iyer",
+      "observed_at": null,
+      "confidence": 0.89
+    },
+    {
+      "claim": "TypeScript: built P0191 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.89
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: built P0191 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Kafka: built P0191 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "gRPC: built P0191 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HTML: 60% of 7 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#samarth_iyer",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Next.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "tRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

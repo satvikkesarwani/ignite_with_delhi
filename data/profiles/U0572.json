@@ -1,0 +1,307 @@
+{
+  "user_id": "U0572",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.102Z",
+  "identity": {
+    "full_name": "Advait Chadha",
+    "email": "advait.chadha@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2025,
+    "city": "Lucknow",
+    "role_pref": "DevOps",
+    "github_username": "advait-chadha",
+    "linkedin_url": "https://linkedin.com/in/advait-chadha-7400",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 66,
+    "first_seen": "2025-01-10",
+    "last_active": "2026-07-16",
+    "days_since_active": 65,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 3,
+    "interactions_by_type": {
+      "answered_question": 2,
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 1,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0101 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0101 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0101 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 64 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GitHub Actions",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "AWS",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 64 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 64 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 64 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-01-10",
+        "score": 66,
+        "project_id": "P0101"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 30,
+    "components": {
+      "recency": 82,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 0
+    }
+  },
+  "narrative": "Advait Chadha is a B.Tech Data Science student at Netaji Subhas University of Technology, graduating in 2025, who signed up as a DevOps builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Neo4j, Knowledge Graphs, Spark, based on built P0101 (scored 66). They declare Kubernetes, GitHub Actions, AWS with no supporting repository or project evidence on the platform. Last active 2026-07-16, 65 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-16",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-16",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-16",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Neo4j: built P0101 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Knowledge Graphs: built P0101 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Spark: built P0101 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Shell: 60% of 64 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#advait-chadha",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kubernetes: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "GitHub Actions: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "AWS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Python: 20% of 64 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#advait-chadha",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

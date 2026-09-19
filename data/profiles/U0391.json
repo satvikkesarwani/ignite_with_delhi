@@ -1,0 +1,365 @@
+{
+  "user_id": "U0391",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.088Z",
+  "identity": {
+    "full_name": "Lakshya Agarwal",
+    "email": "lakshya.agarwal@outlook.com",
+    "college": "Bennett University",
+    "degree": "B.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2027,
+    "city": "Greater Noida",
+    "role_pref": "Design",
+    "github_username": "lakshya_agarwal",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-05-09",
+        "hackathon": "Ignite Delhi Autumn",
+        "hackathon_id": "H013",
+        "prize_track": "Overall",
+        "project_id": "P0128",
+        "project_title": "PaperTrail",
+        "rank": 1,
+        "score": 84
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 84,
+    "first_seen": "2025-05-09",
+    "last_active": "2025-05-09",
+    "days_since_active": 498,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 3.5,
+    "interactions": 2,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 15 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 15 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Dormant High-Potential"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2025-05-09",
+        "score": 84,
+        "project_id": "P0128"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 9,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 5,
+      "outcome": 20
+    }
+  },
+  "narrative": "Lakshya Agarwal is a B.Tech Artificial Intelligence student at Bennett University, graduating in 2027, who signed up as a Design builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Autumn with \"PaperTrail\" (scored 84). Their strongest evidenced skills are Vite, Node.js, MongoDB, based on self-declared at signup. They declare Figma, Prototyping, Framer with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2025-05-09, 498 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Autumn with \"PaperTrail\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0128",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 3.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "2 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Cypher: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "scikit-learn: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenCV: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Swift: 60% of 15 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#lakshya_agarwal",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kotlin: 40% of 15 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#lakshya_agarwal",
+      "observed_at": null,
+      "confidence": 0.4
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

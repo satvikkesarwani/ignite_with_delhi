@@ -1,0 +1,311 @@
+{
+  "user_id": "U0517",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.099Z",
+  "identity": {
+    "full_name": "Raghav Krishnan",
+    "email": "raghav.krishnan96@gmail.com",
+    "college": "Indian Institute of Technology Delhi",
+    "degree": "BCA",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Full-stack",
+    "github_username": "raghav_krishnan",
+    "linkedin_url": "https://linkedin.com/in/raghav-krishnan-5772",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 33,
+    "first_seen": "2025-07-21",
+    "last_active": "2025-11-19",
+    "days_since_active": 304,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 2,
+    "interactions": 5,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "question": 2,
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 5,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0150 (scored 33)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0150 (scored 33)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0150 (scored 33)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 12 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 12 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2025-07-23",
+        "score": 33,
+        "project_id": "P0150"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 15,
+    "components": {
+      "recency": 17,
+      "frequency": 25,
+      "depth": 13,
+      "outcome": 0
+    }
+  },
+  "narrative": "Raghav Krishnan is a BCA Mathematics and Computing student at Indian Institute of Technology Delhi, graduating in 2025, who signed up as a Full-stack builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Express, Next.js, PostgreSQL, based on self-declared at signup. They declare Node.js with no supporting repository or project evidence on the platform. Mentors rated them 2 out of 5 across 1 session. Last active 2025-11-19, 304 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 2",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Express: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Express: built P0150 (scored 33)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: built P0150 (scored 33)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: built P0150 (scored 33)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "JavaScript: 60% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#raghav_krishnan",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "TypeScript: 20% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#raghav_krishnan",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "CSS: 10% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#raghav_krishnan",
+      "observed_at": null,
+      "confidence": 0.1
+    },
+    {
+      "claim": "HTML: 10% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#raghav_krishnan",
+      "observed_at": null,
+      "confidence": 0.1
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

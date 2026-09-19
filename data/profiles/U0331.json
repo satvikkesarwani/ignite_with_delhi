@@ -1,0 +1,364 @@
+{
+  "user_id": "U0331",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.085Z",
+  "identity": {
+    "full_name": "Lavanya Pandey",
+    "email": "lavanya.pandey@iitbombay.ac.in",
+    "college": "Indian Institute of Technology Bombay",
+    "degree": "B.E.",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2026,
+    "city": "Mumbai",
+    "role_pref": "Full-stack",
+    "github_username": "lavanya_pandey",
+    "linkedin_url": "https://linkedin.com/in/lavanya-pandey-7322",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 43,
+    "first_seen": "2024-09-14",
+    "last_active": "2024-09-24",
+    "days_since_active": 725,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 3,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "discord_message": 2
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.87,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "10% of 16 public repos",
+          "weight": 0.1
+        },
+        {
+          "type": "project",
+          "detail": "built P0074 (scored 43)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0074 (scored 43)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0074 (scored 43)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0074 (scored 43)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "dbt",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0074 (scored 43)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0074 (scored 43)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 16 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 16 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 16 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-09-15",
+        "score": 43,
+        "project_id": "P0074"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 5,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 0
+    }
+  },
+  "narrative": "Lavanya Pandey is a B.E. Mathematics and Computing student at Indian Institute of Technology Bombay, graduating in 2026, who signed up as a Full-stack builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are TypeScript, Express, SQL, based on self-declared at signup. They declare PostgreSQL, Tailwind CSS with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2024-09-24, 725 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-09-24",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2024-09-24",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2024-09-24",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2024-09-24",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "TypeScript: 10% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#lavanya_pandey",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "TypeScript: built P0074 (scored 43)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "Express: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Express: built P0074 (scored 43)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "SQL: built P0074 (scored 43)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Airflow: built P0074 (scored 43)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "dbt: built P0074 (scored 43)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NumPy: built P0074 (scored 43)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HTML: 60% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#lavanya_pandey",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

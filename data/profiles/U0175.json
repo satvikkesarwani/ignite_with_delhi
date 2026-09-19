@@ -1,0 +1,653 @@
+{
+  "user_id": "U0175",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.073Z",
+  "identity": {
+    "full_name": "Sarthak Chauhan",
+    "email": "sarthak.chauhan@vit.ac.in",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2027,
+    "city": "Vellore",
+    "role_pref": "ML/AI",
+    "github_username": "sarthak_chauhan",
+    "linkedin_url": "https://linkedin.com/in/sarthak-chauhan-1037",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 10,
+    "hackathons_attended": 8,
+    "no_shows": 2,
+    "projects_submitted": 7,
+    "submission_rate": 0.88,
+    "prizes": [
+      {
+        "date": "2024-08-09",
+        "hackathon": "Ignite Delhi Spring",
+        "hackathon_id": "H006",
+        "prize_track": "Overall",
+        "project_id": "P0063",
+        "project_title": "MigrateMate",
+        "rank": 1,
+        "score": 82
+      },
+      {
+        "date": "2024-04-06",
+        "hackathon": "BuildDelhi",
+        "hackathon_id": "H003",
+        "prize_track": "Overall",
+        "project_id": "P0024",
+        "project_title": "PaperTrail",
+        "rank": 2,
+        "score": 51
+      },
+      {
+        "date": "2024-05-21",
+        "hackathon": "HackFrontier",
+        "hackathon_id": "H004",
+        "prize_track": "Overall",
+        "project_id": "P0031",
+        "project_title": "MealLink",
+        "rank": 3,
+        "score": 72
+      }
+    ],
+    "prize_count": 3,
+    "best_rank": 1,
+    "avg_score": 59.9,
+    "first_seen": "2024-04-06",
+    "last_active": "2026-08-04",
+    "days_since_active": 46,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 21,
+    "interactions_by_type": {
+      "answered_question": 3,
+      "discord_message": 8,
+      "comment": 5,
+      "profile_update": 4,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 3,
+    "distinct_teammates": 15,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": true
+    }
+  },
+  "skills": [
+    {
+      "skill": "dbt",
+      "cluster": "Data",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0114 (scored 59)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0024 (scored 51)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0063 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0091 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0031 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0091 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0031 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0114 (scored 59)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0193 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0192 (scored 41)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0192 (scored 41)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0024 (scored 51)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0031 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0193 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0193 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0091 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0031 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0114 (scored 59)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0193 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0024 (scored 51)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0192 (scored 41)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0192 (scored 41)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 6 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 6 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.88,
+      "evidence": ["7 of 8 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.6,
+      "evidence": ["3 prizes, best finish rank 1"]
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.53,
+      "evidence": ["21 platform interactions"]
+    }
+  ],
+  "personas": ["Serial Winner", "Consistent Builder"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-04-06",
+        "score": 51,
+        "project_id": "P0024"
+      },
+      {
+        "date": "2024-05-21",
+        "score": 72,
+        "project_id": "P0031"
+      },
+      {
+        "date": "2024-08-09",
+        "score": 82,
+        "project_id": "P0063"
+      },
+      {
+        "date": "2024-12-04",
+        "score": 66,
+        "project_id": "P0091"
+      },
+      {
+        "date": "2025-02-17",
+        "score": 59,
+        "project_id": "P0114"
+      },
+      {
+        "date": "2025-11-19",
+        "score": 41,
+        "project_id": "P0192"
+      },
+      {
+        "date": "2026-01-04",
+        "score": 48,
+        "project_id": "P0193"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Express", "Python", "scikit-learn", "Next.js"],
+      "to": ["Go", "GraphQL", "gRPC", "Flask"]
+    }
+  },
+  "engagement": {
+    "value": 76,
+    "components": {
+      "recency": 87,
+      "frequency": 100,
+      "depth": 53,
+      "outcome": 60
+    }
+  },
+  "narrative": "Sarthak Chauhan is a B.Tech Computer Science and Engineering student at Vellore Institute of Technology, graduating in 2027, who signed up as a ML/AI builder. They have attended 8 of the 10 hackathons they registered for and submitted 7 projects (a 88% submission rate). They have won 3 prizes, including rank 1 at Ignite Delhi Spring with \"MigrateMate\" (scored 82). Their strongest evidenced skills are dbt, Python, Express, based on self-declared at signup. They declare RAG, OpenCV with no supporting repository or project evidence on the platform. Their judged scores have declined over time (51 → 72 → 82 → 66 → 59 → 41 → 48). Last active 2026-08-04 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 10 hackathons, attended 8",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 7 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Spring with \"MigrateMate\" (score 82)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0063",
+      "observed_at": "2024-08-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at BuildDelhi with \"PaperTrail\" (score 51)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0024",
+      "observed_at": "2024-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at HackFrontier with \"MealLink\" (score 72)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0031",
+      "observed_at": "2024-05-21",
+      "confidence": 1
+    },
+    {
+      "claim": "21 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "dbt: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "dbt: built P0114 (scored 59)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Python: built P0024 (scored 51)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Express: built P0063 (scored 82)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0091 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: built P0031 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0091 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: built P0031 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "SQL: built P0114 (scored 59)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,280 @@
+{
+  "user_id": "U0233",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.076Z",
+  "identity": {
+    "full_name": "Kabir Gupta",
+    "email": "kabir.gupta36@gmail.com",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Information Technology",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "kgupta",
+    "linkedin_url": "https://linkedin.com/in/kabir-gupta-7080",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-03-25",
+    "last_active": "2025-03-27",
+    "days_since_active": 541,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 6,
+    "interactions_by_type": {
+      "discord_message": 1,
+      "question": 3,
+      "profile_update": 1,
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 56 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 56 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 56 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 7,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 15,
+      "outcome": 0
+    }
+  },
+  "narrative": "Kabir Gupta is a B.Tech Information Technology student at Indraprastha Institute of Information Technology Delhi, graduating in 2026, who signed up as a Backend builder. They have attended 1 of the 1 hackathons they registered for, but have not submitted a project. Their strongest evidenced skills are TypeScript, based on 60% of 56 public repos. They declare Docker, Redis, gRPC with no supporting repository or project evidence on the platform. Last active 2025-03-27, 541 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-03-27",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-03-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: 60% of 56 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#kgupta",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Go: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Go: 20% of 56 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#kgupta",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Docker: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Redis: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "gRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Flask: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Java Spring: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Python: 20% of 56 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#kgupta",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

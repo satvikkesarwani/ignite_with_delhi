@@ -1,0 +1,348 @@
+{
+  "user_id": "U0501",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.097Z",
+  "identity": {
+    "full_name": "Riya Shetty",
+    "email": "riya.shetty97@gmail.com",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "B.Des",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "riyas",
+    "linkedin_url": "https://linkedin.com/in/riya-shetty-9370",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2024-02-22",
+        "hackathon": "CodeCapital",
+        "hackathon_id": "H002",
+        "prize_track": "Overall",
+        "project_id": "P0017",
+        "project_title": "FraudFence",
+        "rank": 3,
+        "score": 70
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 70,
+    "first_seen": "2024-02-22",
+    "last_active": "2024-03-07",
+    "days_since_active": 926,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 3,
+    "interactions_by_type": {
+      "discord_message": 1,
+      "answered_question": 1,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 6,
+      "opened": 3,
+      "clicked": 1,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0017 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0017 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0017 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0017 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0017 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 46 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 46 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Dormant High-Potential"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 70,
+        "project_id": "P0017"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 9,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 20
+    }
+  },
+  "narrative": "Riya Shetty is a B.Des Computer Science and Engineering student at Indira Gandhi Delhi Technical University for Women, graduating in 2025, who signed up as a Backend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at CodeCapital with \"FraudFence\" (scored 70). Their strongest evidenced skills are Docker, GraphQL, Java Spring, based on self-declared at signup. They declare Express, gRPC with no supporting repository or project evidence on the platform. Last active 2024-03-07, 926 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-03-07",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2024-03-07",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at CodeCapital with \"FraudFence\" (score 70)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0017",
+      "observed_at": "2024-02-22",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2024-03-07",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 6 outreach messages, opened 3, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Docker: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: built P0017 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: built P0017 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Java Spring: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Java Spring: built P0017 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "React: built P0017 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0017 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: 60% of 46 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#riyas",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Java: 40% of 46 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#riyas",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Express: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

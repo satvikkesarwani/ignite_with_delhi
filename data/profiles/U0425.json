@@ -1,0 +1,350 @@
+{
+  "user_id": "U0425",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.092Z",
+  "identity": {
+    "full_name": "Rajat Mittal",
+    "email": "rajat.mittal@gmail.com",
+    "college": "Delhi Technological University",
+    "degree": "BCA",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "rajatmittal",
+    "linkedin_url": "https://linkedin.com/in/rajat-mittal-8441",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [
+      {
+        "date": "2026-05-23",
+        "hackathon": "Ignite Delhi Monsoon II",
+        "hackathon_id": "H022",
+        "prize_track": "Overall",
+        "project_id": "P0225",
+        "project_title": "StandupBot",
+        "rank": 3,
+        "score": 82
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 82,
+    "first_seen": "2025-03-25",
+    "last_active": "2026-08-22",
+    "days_since_active": 28,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 3,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "discord_message": 2
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 4,
+    "repeat_teammates": [
+      {
+        "name": "Amrita Thakur",
+        "times": 2,
+        "user_id": "U0059"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0225 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0225 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0225 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 15 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 15 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 15 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 15 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Amrita Thakur 2 times"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2026-05-23",
+        "score": 82,
+        "project_id": "P0225"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 40,
+    "components": {
+      "recency": 92,
+      "frequency": 25,
+      "depth": 8,
+      "outcome": 20
+    }
+  },
+  "narrative": "Rajat Mittal is a BCA Mechanical Engineering student at Delhi Technological University, graduating in 2025, who signed up as a Backend builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Monsoon II with \"StandupBot\" (scored 82). Their strongest evidenced skills are Java Spring, Next.js, Vite, based on self-declared at signup. They declare Docker, Kafka, gRPC with no supporting repository or project evidence on the platform. Last active 2026-08-22 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Monsoon II with \"StandupBot\" (score 82)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0225",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Java Spring: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Java Spring: built P0225 (scored 82)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: built P0225 (scored 82)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0225 (scored 82)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: 60% of 15 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rajatmittal",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Docker: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Kafka: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "gRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Python: 20% of 15 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rajatmittal",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

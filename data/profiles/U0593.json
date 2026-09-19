@@ -1,0 +1,653 @@
+{
+  "user_id": "U0593",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.103Z",
+  "identity": {
+    "full_name": "Uday Bhardwaj",
+    "email": "uday.bhardwaj@gmail.com",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "ubhardwaj",
+    "linkedin_url": "https://linkedin.com/in/uday-bhardwaj-1068",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 5,
+    "no_shows": 0,
+    "projects_submitted": 5,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-03-27",
+        "hackathon": "HackTheCapital",
+        "hackathon_id": "H012",
+        "prize_track": "Overall",
+        "project_id": "P0119",
+        "project_title": "SkillPath",
+        "rank": 1,
+        "score": 72
+      },
+      {
+        "date": "2026-01-04",
+        "hackathon": "Ignite Delhi Spring II",
+        "hackathon_id": "H019",
+        "prize_track": "Overall",
+        "project_id": "P0199",
+        "project_title": "SignalSense",
+        "rank": 2,
+        "score": 62
+      },
+      {
+        "date": "2026-04-06",
+        "hackathon": "ForgeDelhi",
+        "hackathon_id": "H021",
+        "prize_track": "Overall",
+        "project_id": "P0216",
+        "project_title": "PaperTrail",
+        "rank": 3,
+        "score": 72
+      }
+    ],
+    "prize_count": 3,
+    "best_rank": 1,
+    "avg_score": 66.8,
+    "first_seen": "2024-10-24",
+    "last_active": "2026-04-06",
+    "days_since_active": 166,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 7,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "comment": 4,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 12,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.92,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "40% of 14 public repos",
+          "weight": 0.4
+        },
+        {
+          "type": "project",
+          "detail": "built P0199 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0199 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0199 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0199 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0199 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0216 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0216 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0216 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0084 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0216 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0216 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pinecone",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0216 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 14 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["5 of 5 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.6,
+      "evidence": ["3 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Serial Winner", "Consistent Builder"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-10-26",
+        "score": 66,
+        "project_id": "P0084"
+      },
+      {
+        "date": "2025-03-27",
+        "score": 72,
+        "project_id": "P0119"
+      },
+      {
+        "date": "2025-08-27",
+        "score": 62,
+        "project_id": "P0162"
+      },
+      {
+        "date": "2026-01-04",
+        "score": 62,
+        "project_id": "P0199"
+      },
+      {
+        "date": "2026-04-06",
+        "score": 72,
+        "project_id": "P0216"
+      }
+    ],
+    "tech_drift": {
+      "from": ["NumPy", "MQTT", "Embedded C", "TypeScript"],
+      "to": ["Java Spring", "Docker", "Go", "Transformers"]
+    }
+  },
+  "engagement": {
+    "value": 49,
+    "components": {
+      "recency": 55,
+      "frequency": 63,
+      "depth": 18,
+      "outcome": 60
+    }
+  },
+  "narrative": "Uday Bhardwaj is a B.Tech Data Science student at Indira Gandhi Delhi Technical University for Women, graduating in 2029, who signed up as a Backend builder. They have attended 5 of the 5 hackathons they registered for and submitted 5 projects (a 100% submission rate). They have won 3 prizes, including rank 1 at HackTheCapital with \"SkillPath\" (scored 72). Their strongest evidenced skills are Go, Docker, GraphQL, based on self-declared at signup. Last active 2026-04-06, 166 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 5",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 5 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at HackTheCapital with \"SkillPath\" (score 72)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0119",
+      "observed_at": "2025-03-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at Ignite Delhi Spring II with \"SignalSense\" (score 62)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0199",
+      "observed_at": "2026-01-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at ForgeDelhi with \"PaperTrail\" (score 72)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0216",
+      "observed_at": "2026-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Go: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Go: 40% of 14 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ubhardwaj",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Go: built P0199 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Docker: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: built P0199 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GraphQL: built P0199 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "gRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "gRPC: built P0199 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Java Spring: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Java Spring: built P0199 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: built P0216 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0216 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

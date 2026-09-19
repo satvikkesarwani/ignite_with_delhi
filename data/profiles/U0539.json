@@ -1,0 +1,396 @@
+{
+  "user_id": "U0539",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.100Z",
+  "identity": {
+    "full_name": "Samaira Kapoor",
+    "email": "samaira.kapoor@gmail.com",
+    "college": "Bharati Vidyapeeth College of Engineering",
+    "degree": "BCA",
+    "branch": "Data Science",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "Mobile",
+    "github_username": "samaira61",
+    "linkedin_url": "https://linkedin.com/in/samaira-kapoor-7159",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 4,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 0.5,
+    "prizes": [
+      {
+        "date": "2025-03-27",
+        "hackathon": "HackTheCapital",
+        "hackathon_id": "H012",
+        "prize_track": "Overall",
+        "project_id": "P0119",
+        "project_title": "SkillPath",
+        "rank": 1,
+        "score": 72
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 66.5,
+    "first_seen": "2024-01-13",
+    "last_active": "2026-07-03",
+    "days_since_active": 78,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 2.67,
+    "interactions": 11,
+    "interactions_by_type": {
+      "answered_question": 2,
+      "comment": 4,
+      "discord_message": 4,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 2,
+    "distinct_teammates": 6,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.92,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "40% of 6 public repos",
+          "weight": 0.4
+        },
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0240 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0240 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0240 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0240 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 6 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-03-27",
+        "score": 72,
+        "project_id": "P0119"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 61,
+        "project_id": "P0240"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 47,
+    "components": {
+      "recency": 79,
+      "frequency": 50,
+      "depth": 28,
+      "outcome": 20
+    }
+  },
+  "narrative": "Samaira Kapoor is a BCA Data Science student at Bharati Vidyapeeth College of Engineering, graduating in 2027, who signed up as a Mobile builder. They have attended 4 of the 4 hackathons they registered for and submitted 2 projects (a 50% submission rate). They have won 1 prize, including rank 1 at HackTheCapital with \"SkillPath\" (scored 72). Their strongest evidenced skills are Kotlin, Swift, TypeScript, based on self-declared at signup. They declare Firebase with no supporting repository or project evidence on the platform. Mentors rated them 2.67 out of 5 across 3 sessions. Last active 2026-07-03, 78 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at HackTheCapital with \"SkillPath\" (score 72)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0119",
+      "observed_at": "2025-03-27",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 2.67",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "11 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Kotlin: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Kotlin: 40% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#samaira61",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Kotlin: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Swift: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Swift: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "TypeScript: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenAI API: built P0240 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0240 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "scikit-learn: built P0240 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

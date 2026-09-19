@@ -1,0 +1,231 @@
+{
+  "user_id": "U0292",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.083Z",
+  "identity": {
+    "full_name": "DEV SINHA",
+    "email": "dev.sinha82@gmail.com",
+    "college": "Jamia Millia Islamia",
+    "degree": "B.Des",
+    "branch": "Data Science",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Mobile",
+    "github_username": "devs",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-09-15",
+    "last_active": "2025-09-15",
+    "days_since_active": 369,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 0,
+    "interactions_by_type": {},
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Dart",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 9 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 9 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 0,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 0,
+      "outcome": 0
+    }
+  },
+  "narrative": "DEV SINHA is a B.Des Data Science student at Jamia Millia Islamia, graduating in 2025, who signed up as a Mobile builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are Dart, based on 60% of 9 public repos. They declare Flutter, Firebase, React Native with no supporting repository or project evidence on the platform. Last active 2025-09-15, 369 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-09-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Dart: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devs",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kotlin: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Kotlin: 20% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devs",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Swift: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Swift: 20% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devs",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Flutter: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Firebase: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "React Native: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

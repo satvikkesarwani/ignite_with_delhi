@@ -1,0 +1,328 @@
+{
+  "user_id": "U0524",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.099Z",
+  "identity": {
+    "full_name": "Daksh Basu",
+    "email": "daksh.basu93@gmail.com",
+    "college": "Amity University Noida",
+    "degree": "B.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2027,
+    "city": "Noida",
+    "role_pref": "Hardware/IoT",
+    "github_username": "dbasu",
+    "linkedin_url": "https://linkedin.com/in/daksh-basu-7745",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 68,
+    "first_seen": "2026-04-05",
+    "last_active": "2026-05-15",
+    "days_since_active": 127,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 4,
+    "interactions_by_type": {
+      "answered_question": 1,
+      "workshop_attended": 1,
+      "comment": 1,
+      "discord_message": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.84,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        },
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0222 (scored 68)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2026-04-06",
+        "score": 68,
+        "project_id": "P0222"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 25,
+    "components": {
+      "recency": 65,
+      "frequency": 13,
+      "depth": 10,
+      "outcome": 0
+    }
+  },
+  "narrative": "Daksh Basu is a B.Tech Mathematics and Computing student at Amity University Noida, graduating in 2027, who signed up as a Hardware/IoT builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). Their strongest evidenced skills are Python, React, Next.js, based on 20% of 12 public repos. They declare Redis, ESP32, Embedded C with no supporting repository or project evidence on the platform. Last active 2026-05-15, 127 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-05-15",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 20% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#dbasu",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "Python: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "React: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "scikit-learn: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "LLM Fine-tuning: built P0222 (scored 68)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "JavaScript: 60% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#dbasu",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Redis: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,385 @@
+{
+  "user_id": "U0627",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.106Z",
+  "identity": {
+    "full_name": "Rahul Tandon",
+    "email": "rahul.tandon29@gmail.com",
+    "college": "Indian Institute of Technology Bombay",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2025,
+    "city": "Lucknow",
+    "role_pref": "Product",
+    "github_username": "rtandon",
+    "linkedin_url": "https://linkedin.com/in/rahul-tandon-8072",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 4,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.25,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 62,
+    "first_seen": "2025-02-15",
+    "last_active": "2026-07-15",
+    "days_since_active": 66,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 4.5,
+    "interactions": 11,
+    "interactions_by_type": {
+      "workshop_attended": 3,
+      "discord_message": 2,
+      "question": 2,
+      "comment": 2,
+      "answered_question": 1,
+      "profile_update": 1
+    },
+    "workshops": 3,
+    "answers_given": 1,
+    "distinct_teammates": 7,
+    "repeat_teammates": [
+      {
+        "name": "Amrita Thakur",
+        "times": 2,
+        "user_id": "U0059"
+      }
+    ],
+    "outreach": {
+      "sent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0162 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 12 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "UX Research",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Motion Design",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "starter_not_finisher",
+      "label": "Starter, not finisher",
+      "score": 0.75,
+      "evidence": ["attended 4 events but submitted only 1"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Amrita Thakur 2 times"]
+    }
+  ],
+  "personas": ["Starter, Not Finisher", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-08-27",
+        "score": 62,
+        "project_id": "P0162"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 44,
+    "components": {
+      "recency": 82,
+      "frequency": 50,
+      "depth": 28,
+      "outcome": 0
+    }
+  },
+  "narrative": "Rahul Tandon is a B.Tech Data Science student at Indian Institute of Technology Bombay, graduating in 2025, who signed up as a Product builder. They have attended 4 of the 4 hackathons they registered for and submitted 1 project (a 25% submission rate). Their strongest evidenced skills are Pandas, DuckDB, Arduino, based on built P0162 (scored 62). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.5 out of 5 across 2 sessions. Last active 2026-07-15, 66 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 4.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "11 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Pandas: built P0162 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "DuckDB: built P0162 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Arduino: built P0162 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0162 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Raspberry Pi: built P0162 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NumPy: built P0162 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "CSS: 60% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rtandon",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "TypeScript: 40% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rtandon",
+      "observed_at": null,
+      "confidence": 0.4
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

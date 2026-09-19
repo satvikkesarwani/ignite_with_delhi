@@ -1,0 +1,380 @@
+{
+  "user_id": "U0145",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.071Z",
+  "identity": {
+    "full_name": "Vedant Pillai",
+    "email": "vedant.pillai@iiitdelhi.ac.in",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2029,
+    "city": "Faridabad",
+    "role_pref": "ML/AI",
+    "github_username": "vedant-pillai",
+    "linkedin_url": "https://linkedin.com/in/vedant-pillai-8438",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Overall",
+        "project_id": "P0255",
+        "project_title": "Interviewer",
+        "rank": 3,
+        "score": 63
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 54.5,
+    "first_seen": "2025-06-12",
+    "last_active": "2026-08-19",
+    "days_since_active": 31,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 4,
+    "interactions_by_type": {
+      "comment": 3,
+      "profile_update": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 5,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0146 (scored 46)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0146 (scored 46)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0146 (scored 46)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 42 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 42 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-06-12",
+        "score": 46,
+        "project_id": "P0146"
+      },
+      {
+        "date": "2026-08-08",
+        "score": 63,
+        "project_id": "P0255"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 40,
+    "components": {
+      "recency": 92,
+      "frequency": 25,
+      "depth": 10,
+      "outcome": 20
+    }
+  },
+  "narrative": "Vedant Pillai is a B.Tech Electrical Engineering student at Indraprastha Institute of Information Technology Delhi, graduating in 2029, who signed up as a ML/AI builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Grand Finale with \"Interviewer\" (scored 63). Their strongest evidenced skills are OpenAI API, scikit-learn, TensorFlow, based on self-declared at signup. They declare RAG with no supporting repository or project evidence on the platform. Last active 2026-08-19 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Grand Finale with \"Interviewer\" (score 63)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0255",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-19",
+      "confidence": 1
+    },
+    {
+      "claim": "OpenAI API: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "OpenAI API: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "scikit-learn: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "scikit-learn: built P0146 (scored 46)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "TensorFlow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "TensorFlow: built P0146 (scored 46)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Express: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HuggingFace: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Swift: built P0146 (scored 46)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

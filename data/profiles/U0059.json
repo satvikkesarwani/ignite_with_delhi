@@ -1,0 +1,592 @@
+{
+  "user_id": "U0059",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.060Z",
+  "identity": {
+    "full_name": "Amrita Thakur",
+    "email": "amrita.thakur55@gmail.com",
+    "college": "Delhi Technological University",
+    "degree": "B.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Mobile",
+    "github_username": null,
+    "linkedin_url": "https://linkedin.com/in/amrita-thakur-6581",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 9,
+    "hackathons_attended": 9,
+    "no_shows": 0,
+    "projects_submitted": 5,
+    "submission_rate": 0.56,
+    "prizes": [
+      {
+        "date": "2024-10-26",
+        "hackathon": "NorthStar Hacks",
+        "hackathon_id": "H008",
+        "prize_track": "Overall",
+        "project_id": "P0079",
+        "project_title": "SignalSense",
+        "rank": 1,
+        "score": 84
+      },
+      {
+        "date": "2026-05-23",
+        "hackathon": "Ignite Delhi Monsoon II",
+        "hackathon_id": "H022",
+        "prize_track": "Overall",
+        "project_id": "P0225",
+        "project_title": "StandupBot",
+        "rank": 3,
+        "score": 82
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 72.6,
+    "first_seen": "2024-05-20",
+    "last_active": "2026-07-15",
+    "days_since_active": 66,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 21,
+    "interactions_by_type": {
+      "question": 7,
+      "answered_question": 3,
+      "workshop_attended": 6,
+      "discord_message": 4,
+      "comment": 1
+    },
+    "workshops": 6,
+    "answers_given": 3,
+    "distinct_teammates": 17,
+    "repeat_teammates": [
+      {
+        "name": "Chirag Sahni",
+        "times": 2,
+        "user_id": "U0157"
+      },
+      {
+        "name": "Rajat Mittal",
+        "times": 2,
+        "user_id": "U0425"
+      },
+      {
+        "name": "Rahul Tandon",
+        "times": 2,
+        "user_id": "U0627"
+      },
+      {
+        "name": "Priya Nair",
+        "times": 2,
+        "user_id": "U0005"
+      }
+    ],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0026 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0026 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0225 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Jetpack Compose",
+      "cluster": "Mobile",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0026 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0099 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0225 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0099 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0026 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vector Databases",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0099 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0099 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0099 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0026 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0225 (scored 82)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 1,
+      "evidence": ["teamed with Chirag Sahni 2 times", "teamed with Rajat Mittal 2 times"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.53,
+      "evidence": ["21 platform interactions"]
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-05-21",
+        "score": 69,
+        "project_id": "P0026"
+      },
+      {
+        "date": "2024-10-26",
+        "score": 84,
+        "project_id": "P0079"
+      },
+      {
+        "date": "2025-01-10",
+        "score": 74,
+        "project_id": "P0099"
+      },
+      {
+        "date": "2026-02-20",
+        "score": 54,
+        "project_id": "P0208"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 82,
+        "project_id": "P0225"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Flutter", "Jetpack Compose", "Firebase", "Airflow"],
+      "to": ["Flask", "IPFS", "Hardhat", "Foundry"]
+    }
+  },
+  "engagement": {
+    "value": 71,
+    "components": {
+      "recency": 82,
+      "frequency": 100,
+      "depth": 53,
+      "outcome": 40
+    }
+  },
+  "narrative": "Amrita Thakur is a B.Tech Electrical Engineering student at Delhi Technological University, graduating in 2026, who signed up as a Mobile builder. They have attended 9 of the 9 hackathons they registered for and submitted 5 projects (a 56% submission rate). They have won 2 prizes, including rank 1 at NorthStar Hacks with \"SignalSense\" (scored 84). Their strongest evidenced skills are Flutter, Firebase, Vite, based on self-declared at signup. Last active 2026-07-15, 66 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 9 hackathons, attended 9",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 5 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at NorthStar Hacks with \"SignalSense\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0079",
+      "observed_at": "2024-10-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Monsoon II with \"StandupBot\" (score 82)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0225",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "21 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Flutter: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Flutter: built P0026 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Firebase: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Firebase: built P0026 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0225 (scored 82)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Jetpack Compose: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Jetpack Compose: built P0026 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Neo4j: built P0099 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0225 (scored 82)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Pandas: built P0099 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Airflow: built P0026 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "linkedin_synthetic_seed"]
+}

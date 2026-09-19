@@ -1,0 +1,237 @@
+{
+  "user_id": "U0509",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.098Z",
+  "identity": {
+    "full_name": "Madhav Yadav",
+    "email": "madhav.yadav@gmail.com",
+    "college": "Guru Gobind Singh Indraprastha University",
+    "degree": "B.Des",
+    "branch": "Electrical Engineering",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Mobile",
+    "github_username": "madhav-yadav",
+    "linkedin_url": "https://linkedin.com/in/madhav-yadav-4500",
+    "consent_flag": false
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2026-05-17",
+    "last_active": "2026-07-29",
+    "days_since_active": 52,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 2,
+    "interactions_by_type": {
+      "discord_message": 2
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 3 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 3 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 27,
+    "components": {
+      "recency": 86,
+      "frequency": 0,
+      "depth": 5,
+      "outcome": 0
+    }
+  },
+  "narrative": "Madhav Yadav is a B.Des Electrical Engineering student at Guru Gobind Singh Indraprastha University, graduating in 2029, who signed up as a Mobile builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are Go, based on 60% of 3 public repos. They declare Flutter, Firebase, Kotlin with no supporting repository or project evidence on the platform. Last active 2026-07-29 — currently active. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-29",
+      "confidence": 1
+    },
+    {
+      "claim": "2 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-29",
+      "confidence": 1
+    },
+    {
+      "claim": "Go: 60% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#madhav-yadav",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Shell: 40% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#madhav-yadav",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Flutter: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Firebase: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Kotlin: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Swift: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "React Native: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

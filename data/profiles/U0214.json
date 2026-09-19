@@ -1,0 +1,280 @@
+{
+  "user_id": "U0214",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.075Z",
+  "identity": {
+    "full_name": "Atharv Nanda",
+    "email": "atharv.nanda@gmail.com",
+    "college": "Indian Institute of Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Web3",
+    "github_username": "atharv46",
+    "linkedin_url": "https://linkedin.com/in/atharv-nanda-3951",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 1,
+    "no_shows": 1,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-12-04",
+    "last_active": "2026-08-13",
+    "days_since_active": 37,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 6,
+    "interactions_by_type": {
+      "workshop_attended": 2,
+      "question": 2,
+      "comment": 1,
+      "discord_message": 1
+    },
+    "workshops": 2,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 2,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "60% of 11 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 11 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 11 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 34,
+    "components": {
+      "recency": 90,
+      "frequency": 13,
+      "depth": 15,
+      "outcome": 0
+    }
+  },
+  "narrative": "Atharv Nanda is a B.Tech Mathematics and Computing student at Indian Institute of Technology Delhi, graduating in 2026, who signed up as a Web3 builder. They have attended 1 of the 2 hackathons they registered for, but have not submitted a project. Their strongest evidenced skills are Solidity, based on self-declared at signup. They declare The Graph, Foundry, IPFS with no supporting repository or project evidence on the platform. Last active 2026-08-13 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-13",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-13",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Solidity: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.72
+    },
+    {
+      "claim": "Solidity: 60% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#atharv46",
+      "observed_at": null,
+      "confidence": 0.72
+    },
+    {
+      "claim": "The Graph: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Foundry: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "IPFS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "ethers.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Hardhat: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "TypeScript: 20% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#atharv46",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "JavaScript: 20% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#atharv46",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

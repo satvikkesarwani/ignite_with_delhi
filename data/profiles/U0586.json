@@ -1,0 +1,184 @@
+{
+  "user_id": "U0586",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.103Z",
+  "identity": {
+    "full_name": "Nisha Sethi",
+    "email": "nisha.sethi@iiitdelhi.ac.in",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Electronics and Communication",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Web3",
+    "github_username": "nisha_sethi",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-04-06",
+    "last_active": "2024-04-06",
+    "days_since_active": 896,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 0,
+    "interactions_by_type": {},
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 4,
+      "clicked": 2,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 5 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.58,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "40% of 5 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 0,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 0,
+      "outcome": 0
+    }
+  },
+  "narrative": "Nisha Sethi is a B.Tech Electronics and Communication student at Indraprastha Institute of Information Technology Delhi, graduating in 2025, who signed up as a Web3 builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are TypeScript, Solidity, based on 60% of 5 public repos. They declare ethers.js, Hardhat with no supporting repository or project evidence on the platform. Last active 2024-04-06, 896 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 4, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: 60% of 5 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#nisha_sethi",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Solidity: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.58
+    },
+    {
+      "claim": "Solidity: 40% of 5 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#nisha_sethi",
+      "observed_at": null,
+      "confidence": 0.58
+    },
+    {
+      "claim": "ethers.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Hardhat: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

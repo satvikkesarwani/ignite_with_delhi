@@ -1,0 +1,207 @@
+{
+  "user_id": "U0623",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.106Z",
+  "identity": {
+    "full_name": "Meera Singh",
+    "email": "meera.singh@gmail.com",
+    "college": "Manipal Institute of Technology",
+    "degree": "B.Tech",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2028,
+    "city": "Manipal",
+    "role_pref": "Data",
+    "github_username": "devmeera",
+    "linkedin_url": "https://linkedin.com/in/meera-singh-3660",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-06-17",
+    "last_active": "2024-06-17",
+    "days_since_active": 824,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 0,
+    "interactions_by_type": {},
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "R",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 9 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 0,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 0,
+      "outcome": 0
+    }
+  },
+  "narrative": "Meera Singh is a B.Tech Mechanical Engineering student at Manipal Institute of Technology, graduating in 2028, who signed up as a Data builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are R, based on 60% of 9 public repos. They declare Airflow, Spark, NumPy with no supporting repository or project evidence on the platform. Last active 2024-06-17, 824 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2024-06-17",
+      "confidence": 1
+    },
+    {
+      "claim": "R: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devmeera",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Python: 40% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devmeera",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Airflow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Spark: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "NumPy: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "OpenCV: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

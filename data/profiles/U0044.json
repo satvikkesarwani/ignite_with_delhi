@@ -1,0 +1,337 @@
+{
+  "user_id": "U0044",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.059Z",
+  "identity": {
+    "full_name": "Sahana Iyer",
+    "email": "sahana.iyer@dtu.ac.in",
+    "college": "Delhi Technological University",
+    "degree": "B.Des",
+    "branch": "Data Science",
+    "grad_year": 2025,
+    "city": "Kolkata",
+    "role_pref": "Frontend",
+    "github_username": "sahana90",
+    "linkedin_url": "https://linkedin.com/in/sahana-iyer-3206",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 47,
+    "first_seen": "2024-10-24",
+    "last_active": "2026-08-10",
+    "days_since_active": 40,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 3,
+    "interactions": 8,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "comment": 2,
+      "answered_question": 2,
+      "question": 1,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 2,
+    "distinct_teammates": 6,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0155 (scored 47)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0155 (scored 47)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0155 (scored 47)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0155 (scored 47)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0155 (scored 47)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 10 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 10 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 10 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-07-23",
+        "score": 47,
+        "project_id": "P0155"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 38,
+    "components": {
+      "recency": 89,
+      "frequency": 25,
+      "depth": 20,
+      "outcome": 0
+    }
+  },
+  "narrative": "Sahana Iyer is a B.Des Data Science student at Delhi Technological University, graduating in 2025, who signed up as a Frontend builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Node.js, Tailwind CSS, tRPC, based on self-declared at signup. Mentors rated them 3 out of 5 across 2 sessions. Last active 2026-08-10 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-10",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 3",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-10",
+      "confidence": 1
+    },
+    {
+      "claim": "8 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0155 (scored 47)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: built P0155 (scored 47)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "tRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "tRPC: built P0155 (scored 47)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Pandas: built P0155 (scored 47)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "SQL: built P0155 (scored 47)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "JavaScript: 60% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahana90",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "TypeScript: 20% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahana90",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "HTML: 20% of 10 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sahana90",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

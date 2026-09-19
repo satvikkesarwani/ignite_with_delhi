@@ -1,0 +1,343 @@
+{
+  "user_id": "U0258",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.079Z",
+  "identity": {
+    "full_name": "Mishka Sharma",
+    "email": "mishka.sharma@srm.ac.in",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2027,
+    "city": "Chennai",
+    "role_pref": "Full-stack",
+    "github_username": "mishka_sharma",
+    "linkedin_url": "https://linkedin.com/in/mishka-sharma-1441",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [
+      {
+        "date": "2025-07-23",
+        "hackathon": "CircuitBreak",
+        "hackathon_id": "H015",
+        "prize_track": "Overall",
+        "project_id": "P0156",
+        "project_title": "SkillSetu",
+        "rank": 1,
+        "score": 90
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 90,
+    "first_seen": "2025-07-21",
+    "last_active": "2026-08-24",
+    "days_since_active": 26,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 7,
+    "interactions_by_type": {
+      "answered_question": 1,
+      "discord_message": 5,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 14 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 14 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-07-23",
+        "score": 90,
+        "project_id": "P0156"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 43,
+    "components": {
+      "recency": 93,
+      "frequency": 25,
+      "depth": 18,
+      "outcome": 20
+    }
+  },
+  "narrative": "Mishka Sharma is a B.Tech Computer Science and Engineering student at SRM Institute of Science and Technology, graduating in 2027, who signed up as a Full-stack builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including rank 1 at CircuitBreak with \"SkillSetu\" (scored 90). Their strongest evidenced skills are Node.js, Tailwind CSS, MongoDB, based on self-declared at signup. They declare Next.js with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-08-24 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-24",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-24",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at CircuitBreak with \"SkillSetu\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0156",
+      "observed_at": "2025-07-23",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-24",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-24",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MongoDB: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NumPy: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "JavaScript: 60% of 14 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#mishka_sharma",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "TypeScript: 40% of 14 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#mishka_sharma",
+      "observed_at": null,
+      "confidence": 0.4
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

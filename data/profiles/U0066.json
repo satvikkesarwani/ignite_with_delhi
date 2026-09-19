@@ -1,0 +1,434 @@
+{
+  "user_id": "U0066",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.061Z",
+  "identity": {
+    "full_name": "Prateek Mittal",
+    "email": "prateek.mittal@bvcoe.ac.in",
+    "college": "Bharati Vidyapeeth College of Engineering",
+    "degree": "B.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2026,
+    "city": "Chandigarh",
+    "role_pref": "Frontend",
+    "github_username": "prateek-mittal",
+    "linkedin_url": "https://linkedin.com/in/prateek-mittal-5396",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 4,
+    "no_shows": 0,
+    "projects_submitted": 3,
+    "submission_rate": 0.75,
+    "prizes": [
+      {
+        "date": "2025-03-27",
+        "hackathon": "HackTheCapital",
+        "hackathon_id": "H012",
+        "prize_track": "Overall",
+        "project_id": "P0119",
+        "project_title": "SkillPath",
+        "rank": 1,
+        "score": 72
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 59.7,
+    "first_seen": "2024-06-25",
+    "last_active": "2026-07-14",
+    "days_since_active": 67,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 4.67,
+    "interactions": 13,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "discord_message": 2,
+      "workshop_attended": 2,
+      "comment": 5,
+      "question": 3
+    },
+    "workshops": 2,
+    "answers_given": 0,
+    "distinct_teammates": 9,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": true
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.87,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "10% of 14 public repos",
+          "weight": 0.1
+        },
+        {
+          "type": "project",
+          "detail": "built P0227 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0227 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0227 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0227 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0227 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0119 (scored 72)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0044 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 14 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 14 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 14 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.75,
+      "evidence": ["3 of 4 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Consistent Builder", "Steady Participant"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-06-25",
+        "score": 65,
+        "project_id": "P0044"
+      },
+      {
+        "date": "2025-03-27",
+        "score": 72,
+        "project_id": "P0119"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 42,
+        "project_id": "P0227"
+      }
+    ],
+    "tech_drift": {
+      "from": ["React Native"],
+      "to": ["React", "FastAPI"]
+    }
+  },
+  "engagement": {
+    "value": 49,
+    "components": {
+      "recency": 82,
+      "frequency": 50,
+      "depth": 33,
+      "outcome": 20
+    }
+  },
+  "narrative": "Prateek Mittal is a B.Tech Artificial Intelligence student at Bharati Vidyapeeth College of Engineering, graduating in 2026, who signed up as a Frontend builder. They have attended 4 of the 4 hackathons they registered for and submitted 3 projects (a 75% submission rate). They have won 1 prize, including rank 1 at HackTheCapital with \"SkillPath\" (scored 72). Their strongest evidenced skills are TypeScript, PostgreSQL, Tailwind CSS, based on self-declared at signup. They declare MongoDB with no supporting repository or project evidence on the platform. Mentors rated them 4.67 out of 5 across 3 sessions. Their judged scores have declined over time (65 → 72 → 42). Last active 2026-07-14, 67 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 3 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at HackTheCapital with \"SkillPath\" (score 72)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0119",
+      "observed_at": "2025-03-27",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 4.67",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "13 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "TypeScript: 10% of 14 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#prateek-mittal",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "TypeScript: built P0227 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: built P0227 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: built P0227 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: built P0227 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: built P0227 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Kotlin: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Swift: built P0119 (scored 72)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React Native: built P0044 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

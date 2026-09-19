@@ -1,0 +1,538 @@
+{
+  "user_id": "U0008",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.055Z",
+  "identity": {
+    "full_name": "Rohan Mehta",
+    "email": "rohan.mehta.nsut@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "rohanmehta-dev",
+    "linkedin_url": "https://linkedin.com/in/rohan-mehta-008",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 3,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-02-17",
+        "hackathon": "StackSprint",
+        "hackathon_id": "H011",
+        "prize_track": "Overall",
+        "project_id": "P0112",
+        "project_title": "SplitFair",
+        "rank": 1,
+        "score": 90
+      },
+      {
+        "date": "2025-06-12",
+        "hackathon": "ProtoDelhi",
+        "hackathon_id": "H014",
+        "prize_track": "Overall",
+        "project_id": "P0141",
+        "project_title": "VaxTrack",
+        "rank": 2,
+        "score": 86
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 73.3,
+    "first_seen": "2024-09-14",
+    "last_active": "2025-06-25",
+    "days_since_active": 451,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 4.33,
+    "interactions": 14,
+    "interactions_by_type": {
+      "comment": 3,
+      "question": 2,
+      "discord_message": 6,
+      "answered_question": 3
+    },
+    "workshops": 0,
+    "answers_given": 3,
+    "distinct_teammates": 7,
+    "repeat_teammates": [
+      {
+        "name": "Samaira Prasad",
+        "times": 2,
+        "user_id": "U0558"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.94,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "58% of 18 public repos",
+          "weight": 0.58
+        },
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0070 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0070 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0070 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.22,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "22% of 18 public repos",
+          "weight": 0.22
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.12,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "12% of 18 public repos",
+          "weight": 0.12
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "8% of 18 public repos",
+          "weight": 0.08
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["3 of 3 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Samaira Prasad 2 times"]
+    }
+  ],
+  "personas": ["Dormant High-Potential", "Steady Participant"],
+  "trajectory": {
+    "direction": "rising",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-09-15",
+        "score": 44,
+        "project_id": "P0070"
+      },
+      {
+        "date": "2025-02-17",
+        "score": 90,
+        "project_id": "P0112"
+      },
+      {
+        "date": "2025-06-12",
+        "score": 86,
+        "project_id": "P0141"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Tailwind CSS", "Next.js", "Pandas"],
+      "to": ["Flutter", "Kotlin", "HuggingFace", "LangChain"]
+    }
+  },
+  "engagement": {
+    "value": 26,
+    "components": {
+      "recency": 0,
+      "frequency": 38,
+      "depth": 35,
+      "outcome": 40
+    }
+  },
+  "narrative": "Rohan Mehta is a B.Tech Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2025, who signed up as a Backend builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 2 prizes, including rank 1 at StackSprint with \"SplitFair\" (scored 90). Their strongest evidenced skills are Go, PostgreSQL, Redis, based on self-declared at signup. They declare Docker, Kubernetes with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Their judged scores are improving over time (44 → 90 → 86). Last active 2025-06-25, 451 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-06-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 3 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-06-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at StackSprint with \"SplitFair\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0112",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at ProtoDelhi with \"VaxTrack\" (score 86)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0141",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 4.33",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-06-25",
+      "confidence": 1
+    },
+    {
+      "claim": "14 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-06-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Go: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.94
+    },
+    {
+      "claim": "Go: 58% of 18 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rohanmehta-dev",
+      "observed_at": null,
+      "confidence": 0.94
+    },
+    {
+      "claim": "Go: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.94
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Redis: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Redis: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: built P0141 (scored 86)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0070 (scored 44)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0070 (scored 44)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,321 @@
+{
+  "user_id": "U0402",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.089Z",
+  "identity": {
+    "full_name": "Advika Menon",
+    "email": "advika.menon@nsut.ac.in",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "M.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2028,
+    "city": "Bengaluru",
+    "role_pref": "Backend",
+    "github_username": "advika48",
+    "linkedin_url": "https://linkedin.com/in/advika-menon-1770",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-06-12",
+        "hackathon": "ProtoDelhi",
+        "hackathon_id": "H014",
+        "prize_track": "Overall",
+        "project_id": "P0143",
+        "project_title": "DoseDiary",
+        "rank": 3,
+        "score": 79
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 79,
+    "first_seen": "2025-06-12",
+    "last_active": "2025-09-11",
+    "days_since_active": 373,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 3,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0143 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0143 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0143 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0143 (scored 79)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 13 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 13 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Dormant High-Potential"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2025-06-12",
+        "score": 79,
+        "project_id": "P0143"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 9,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 20
+    }
+  },
+  "narrative": "Advika Menon is a M.Tech Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2028, who signed up as a Backend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at ProtoDelhi with \"DoseDiary\" (scored 79). Their strongest evidenced skills are Kafka, Flask, PyTorch, based on self-declared at signup. They declare FastAPI, Node.js with no supporting repository or project evidence on the platform. Last active 2025-09-11, 373 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-09-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-09-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at ProtoDelhi with \"DoseDiary\" (score 79)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0143",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-09-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Kafka: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Kafka: built P0143 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Flask: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Flask: built P0143 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: built P0143 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HuggingFace: built P0143 (scored 79)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: 60% of 13 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#advika48",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "TypeScript: 40% of 13 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#advika48",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "FastAPI: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

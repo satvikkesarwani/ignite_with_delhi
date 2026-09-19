@@ -1,0 +1,590 @@
+{
+  "user_id": "U0109",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.068Z",
+  "identity": {
+    "full_name": "Advika Trivedi",
+    "email": "advika.trivedi69@gmail.com",
+    "college": "Jamia Millia Islamia",
+    "degree": "B.Tech",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "devadvika",
+    "linkedin_url": "https://linkedin.com/in/advika-trivedi-3349",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 5,
+    "no_shows": 0,
+    "projects_submitted": 4,
+    "submission_rate": 0.8,
+    "prizes": [
+      {
+        "date": "2026-05-23",
+        "hackathon": "Ignite Delhi Monsoon II",
+        "hackathon_id": "H022",
+        "prize_track": "Overall",
+        "project_id": "P0229",
+        "project_title": "Interviewer",
+        "rank": 1,
+        "score": 85
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 64.8,
+    "first_seen": "2024-06-25",
+    "last_active": "2026-05-23",
+    "days_since_active": 119,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 4,
+    "interactions": 12,
+    "interactions_by_type": {
+      "answered_question": 3,
+      "comment": 5,
+      "discord_message": 2,
+      "question": 2
+    },
+    "workshops": 0,
+    "answers_given": 3,
+    "distinct_teammates": 9,
+    "repeat_teammates": [
+      {
+        "name": "Eesha Kumar",
+        "times": 2,
+        "user_id": "U0436"
+      }
+    ],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.92,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 3 public repos",
+          "weight": 0.6
+        },
+        {
+          "type": "project",
+          "detail": "built P0055 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0229 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0229 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.84,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        },
+        {
+          "type": "project",
+          "detail": "built P0229 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0043 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0055 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0055 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0159 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0229 (scored 85)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0055 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0043 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0043 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0159 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0159 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0159 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0055 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0159 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0043 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0043 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0055 (scored 66)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.8,
+      "evidence": ["4 of 5 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Eesha Kumar 2 times"]
+    }
+  ],
+  "personas": ["Consistent Builder", "Steady Participant"],
+  "trajectory": {
+    "direction": "rising",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-06-25",
+        "score": 55,
+        "project_id": "P0043"
+      },
+      {
+        "date": "2024-08-09",
+        "score": 66,
+        "project_id": "P0055"
+      },
+      {
+        "date": "2025-08-27",
+        "score": 53,
+        "project_id": "P0159"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 85,
+        "project_id": "P0229"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Flutter", "Kotlin", "React Native", "scikit-learn"],
+      "to": ["ESP32", "Raspberry Pi", "Vite", "Arduino"]
+    }
+  },
+  "engagement": {
+    "value": 47,
+    "components": {
+      "recency": 67,
+      "frequency": 63,
+      "depth": 30,
+      "outcome": 20
+    }
+  },
+  "narrative": "Advika Trivedi is a B.Tech Mechanical Engineering student at Jamia Millia Islamia, graduating in 2029, who signed up as a Backend builder. They have attended 5 of the 5 hackathons they registered for and submitted 4 projects (a 80% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Monsoon II with \"Interviewer\" (scored 85). Their strongest evidenced skills are Go, Redis, Kafka, based on 60% of 3 public repos. They declare Flask with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 2 sessions. Their judged scores are improving over time (55 → 66 → 53 → 85). Last active 2026-05-23, 119 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 5",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Monsoon II with \"Interviewer\" (score 85)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0229",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 4",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "12 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Go: 60% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devadvika",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Go: built P0055 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Redis: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Redis: built P0229 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Kafka: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Kafka: built P0229 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "TypeScript: 20% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#devadvika",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "TypeScript: built P0229 (scored 85)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "Python: built P0043 (scored 55)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "FastAPI: built P0055 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Express: built P0055 (scored 66)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Airflow: built P0159 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

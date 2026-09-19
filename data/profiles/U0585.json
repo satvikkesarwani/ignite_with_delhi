@@ -1,0 +1,565 @@
+{
+  "user_id": "U0585",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.103Z",
+  "identity": {
+    "full_name": "Isha Thakur",
+    "email": "isha.thakur10@gmail.com",
+    "college": "Manipal Institute of Technology",
+    "degree": "B.E.",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2028,
+    "city": "Manipal",
+    "role_pref": "Frontend",
+    "github_username": "ishathakurdev",
+    "linkedin_url": "https://linkedin.com/in/isha-thakur-4930",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 4,
+    "no_shows": 1,
+    "projects_submitted": 4,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-07-23",
+        "hackathon": "CircuitBreak",
+        "hackathon_id": "H015",
+        "prize_track": "Overall",
+        "project_id": "P0156",
+        "project_title": "SkillSetu",
+        "rank": 1,
+        "score": 90
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 66.5,
+    "first_seen": "2025-07-21",
+    "last_active": "2026-08-20",
+    "days_since_active": 30,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 4,
+    "interactions": 11,
+    "interactions_by_type": {
+      "answered_question": 1,
+      "discord_message": 2,
+      "profile_update": 2,
+      "question": 4,
+      "comment": 2
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 8,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.87,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "10% of 14 public repos",
+          "weight": 0.1
+        },
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0156 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0224 (scored 45)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0254 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0224 (scored 45)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0254 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0254 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0224 (scored 45)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0254 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0254 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pinecone",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0254 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 14 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 14 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 14 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["4 of 4 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Consistent Builder", "Steady Participant"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-07-23",
+        "score": 90,
+        "project_id": "P0156"
+      },
+      {
+        "date": "2025-08-27",
+        "score": 77,
+        "project_id": "P0167"
+      },
+      {
+        "date": "2026-04-06",
+        "score": 45,
+        "project_id": "P0224"
+      },
+      {
+        "date": "2026-08-08",
+        "score": 54,
+        "project_id": "P0254"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Tailwind CSS", "NumPy", "Vite", "TypeScript"],
+      "to": ["scikit-learn", "HuggingFace", "PyTorch", "LangChain"]
+    }
+  },
+  "engagement": {
+    "value": 51,
+    "components": {
+      "recency": 92,
+      "frequency": 50,
+      "depth": 28,
+      "outcome": 20
+    }
+  },
+  "narrative": "Isha Thakur is a B.E. Artificial Intelligence student at Manipal Institute of Technology, graduating in 2028, who signed up as a Frontend builder. They have attended 4 of the 5 hackathons they registered for and submitted 4 projects (a 100% submission rate). They have won 1 prize, including rank 1 at CircuitBreak with \"SkillSetu\" (scored 90). Their strongest evidenced skills are TypeScript, Tailwind CSS, Vite, based on self-declared at signup. They declare Next.js, Framer with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Their judged scores have declined over time (90 → 77 → 45 → 54). Last active 2026-08-20 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-20",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-20",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at CircuitBreak with \"SkillSetu\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0156",
+      "observed_at": "2025-07-23",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 4",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-20",
+      "confidence": 1
+    },
+    {
+      "claim": "11 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-20",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "TypeScript: 10% of 14 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ishathakurdev",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "TypeScript: built P0167 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.87
+    },
+    {
+      "claim": "Tailwind CSS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Tailwind CSS: built P0156 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0167 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PyTorch: built P0224 (scored 45)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "LangChain: built P0254 (scored 54)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0224 (scored 45)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0254 (scored 54)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0254 (scored 54)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

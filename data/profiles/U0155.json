@@ -1,0 +1,227 @@
+{
+  "user_id": "U0155",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.071Z",
+  "identity": {
+    "full_name": "Rohan Thakur",
+    "email": "rohan.thakur@iiitdelhi.ac.in",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "BCA",
+    "branch": "Information Technology",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "ML/AI",
+    "github_username": "rohant",
+    "linkedin_url": "https://linkedin.com/in/rohan-thakur-4353",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 0,
+    "no_shows": 1,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-02-09",
+    "last_active": "2025-11-13",
+    "days_since_active": 310,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 6,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "workshop_attended": 1,
+      "question": 2,
+      "comment": 1,
+      "answered_question": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 6 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 6 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 6 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Registered, Never Attended"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 8,
+    "components": {
+      "recency": 15,
+      "frequency": 0,
+      "depth": 15,
+      "outcome": 0
+    }
+  },
+  "narrative": "Rohan Thakur is a BCA Information Technology student at Indraprastha Institute of Information Technology Delhi, graduating in 2029, who signed up as a ML/AI builder. They have registered for 1 hackathons but have not attended any of them. Their strongest evidenced skills are Python, based on 60% of 6 public repos. They declare Transformers, NumPy, OpenCV with no supporting repository or project evidence on the platform. Last active 2025-11-13, 310 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-11-13",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-11-13",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 60% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rohant",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Transformers: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "NumPy: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "OpenCV: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Jupyter Notebook: 20% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rohant",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "C++: 20% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#rohant",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

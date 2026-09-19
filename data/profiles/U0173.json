@@ -1,0 +1,302 @@
+{
+  "user_id": "U0173",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.072Z",
+  "identity": {
+    "full_name": "Shreya Kaur",
+    "email": "shreya.kaur@gmail.com",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "M.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Data",
+    "github_username": "skaur",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 4,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.25,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 76,
+    "first_seen": "2025-05-09",
+    "last_active": "2026-08-25",
+    "days_since_active": 25,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 10,
+    "interactions_by_type": {
+      "workshop_attended": 3,
+      "discord_message": 4,
+      "question": 1,
+      "comment": 2
+    },
+    "workshops": 3,
+    "answers_given": 0,
+    "distinct_teammates": 7,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 3,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0180 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0180 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0180 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 17 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "R",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 17 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "dbt",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "starter_not_finisher",
+      "label": "Starter, not finisher",
+      "score": 0.75,
+      "evidence": ["attended 4 events but submitted only 1"]
+    }
+  ],
+  "personas": ["Starter, Not Finisher", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-11-19",
+        "score": 76,
+        "project_id": "P0180"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 47,
+    "components": {
+      "recency": 93,
+      "frequency": 50,
+      "depth": 25,
+      "outcome": 0
+    }
+  },
+  "narrative": "Shreya Kaur is a M.Tech Electrical Engineering student at Indira Gandhi Delhi Technical University for Women, graduating in 2026, who signed up as a Data builder. They have attended 4 of the 4 hackathons they registered for and submitted 1 project (a 25% submission rate). Their strongest evidenced skills are MongoDB, Next.js, tRPC, based on built P0180 (scored 76). They declare Pandas, dbt, DuckDB with no supporting repository or project evidence on the platform. Last active 2026-08-25 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-25",
+      "confidence": 1
+    },
+    {
+      "claim": "10 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "MongoDB: built P0180 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0180 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "tRPC: built P0180 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 17 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#skaur",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "R: 40% of 17 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#skaur",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Pandas: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "dbt: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "DuckDB: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

@@ -1,0 +1,503 @@
+{
+  "user_id": "U0616",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.105Z",
+  "identity": {
+    "full_name": "Akshara Joshi",
+    "email": "akshara.joshi@gmail.com",
+    "college": "Jamia Millia Islamia",
+    "degree": "BCA",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "DevOps",
+    "github_username": "aksharajoshidev",
+    "linkedin_url": "https://linkedin.com/in/akshara-joshi-8914",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 4,
+    "no_shows": 1,
+    "projects_submitted": 4,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2026-04-06",
+        "hackathon": "ForgeDelhi",
+        "hackathon_id": "H021",
+        "prize_track": "Overall",
+        "project_id": "P0220",
+        "project_title": "SchemaSage",
+        "rank": 2,
+        "score": 75
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 2,
+    "avg_score": 66.8,
+    "first_seen": "2024-10-24",
+    "last_active": "2026-07-30",
+    "days_since_active": 51,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 8,
+    "interactions_by_type": {
+      "question": 3,
+      "comment": 2,
+      "workshop_attended": 2,
+      "answered_question": 1
+    },
+    "workshops": 2,
+    "answers_given": 1,
+    "distinct_teammates": 7,
+    "repeat_teammates": [
+      {
+        "name": "Naina Kaur",
+        "times": 3,
+        "user_id": "U0566"
+      },
+      {
+        "name": "Advait Patel",
+        "times": 2,
+        "user_id": "U0303"
+      }
+    ],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0220 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0098 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0098 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0220 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0098 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0220 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LoRaWAN",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0171 (scored 74)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 11 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Terraform",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 11 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 11 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["4 of 4 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.67,
+      "evidence": ["teamed with Naina Kaur 3 times", "teamed with Advait Patel 2 times"]
+    }
+  ],
+  "personas": ["Rising Star", "Consistent Builder"],
+  "trajectory": {
+    "direction": "rising",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-10-26",
+        "score": 65,
+        "project_id": "P0080"
+      },
+      {
+        "date": "2024-12-04",
+        "score": 53,
+        "project_id": "P0098"
+      },
+      {
+        "date": "2025-10-04",
+        "score": 74,
+        "project_id": "P0171"
+      },
+      {
+        "date": "2026-04-06",
+        "score": 75,
+        "project_id": "P0220"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Embedded C", "Raspberry Pi", "LoRaWAN", "TypeScript"],
+      "to": ["Knowledge Graphs", "Redis", "Cypher", "React"]
+    }
+  },
+  "engagement": {
+    "value": 47,
+    "components": {
+      "recency": 86,
+      "frequency": 50,
+      "depth": 20,
+      "outcome": 20
+    }
+  },
+  "narrative": "Akshara Joshi is a BCA Mechanical Engineering student at Jamia Millia Islamia, graduating in 2025, who signed up as a DevOps builder. They have attended 4 of the 5 hackathons they registered for and submitted 4 projects (a 100% submission rate). They have won 1 prize, including rank 2 at ForgeDelhi with \"SchemaSage\" (scored 75). Their strongest evidenced skills are Django, Node.js, MongoDB, based on self-declared at signup. They declare Prometheus, GCP, Terraform with no supporting repository or project evidence on the platform. Their judged scores are improving over time (65 → 53 → 74 → 75). Last active 2026-07-30 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at ForgeDelhi with \"SchemaSage\" (score 75)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0220",
+      "observed_at": "2026-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "8 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Django: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Django: built P0220 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0098 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0098 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: built P0220 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: built P0098 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "GraphQL: built P0220 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Cypher: built P0171 (scored 74)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

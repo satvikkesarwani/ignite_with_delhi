@@ -1,0 +1,345 @@
+{
+  "user_id": "U0207",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.075Z",
+  "identity": {
+    "full_name": "Parth Krishnan",
+    "email": "parth.krishnan@gmail.com",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "MCA",
+    "branch": "Electronics and Communication",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "ML/AI",
+    "github_username": "parthk",
+    "linkedin_url": "https://linkedin.com/in/parth-krishnan-6710",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 2,
+    "no_shows": 1,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 55,
+    "first_seen": "2025-05-09",
+    "last_active": "2026-08-21",
+    "days_since_active": 29,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 3.5,
+    "interactions": 11,
+    "interactions_by_type": {
+      "discord_message": 3,
+      "question": 2,
+      "answered_question": 4,
+      "comment": 1,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 4,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0160 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0160 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0160 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0160 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0160 (scored 55)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 9 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2025-08-27",
+        "score": 55,
+        "project_id": "P0160"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 41,
+    "components": {
+      "recency": 92,
+      "frequency": 25,
+      "depth": 28,
+      "outcome": 0
+    }
+  },
+  "narrative": "Parth Krishnan is a MCA Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2026, who signed up as a ML/AI builder. They have attended 2 of the 3 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are Node.js, PostgreSQL, ESP32, based on built P0160 (scored 55). They declare PyTorch, RAG, NumPy with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-08-21 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 3.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "11 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Node.js: built P0160 (scored 55)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "PostgreSQL: built P0160 (scored 55)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "ESP32: built P0160 (scored 55)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0160 (scored 55)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Spark: built P0160 (scored 55)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#parthk",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Python: 40% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#parthk",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "PyTorch: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

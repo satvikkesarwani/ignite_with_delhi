@@ -1,0 +1,238 @@
+{
+  "user_id": "U0224",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.076Z",
+  "identity": {
+    "full_name": "Sara Ghosh",
+    "email": "sara.ghosh@dtu.ac.in",
+    "college": "Delhi Technological University",
+    "degree": "B.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "ML/AI",
+    "github_username": "sara-ghosh",
+    "linkedin_url": "https://linkedin.com/in/sara-ghosh-7904",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-01-06",
+    "last_active": "2025-06-12",
+    "days_since_active": 464,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 2,
+    "interactions_by_type": {
+      "discord_message": 1,
+      "workshop_attended": 1
+    },
+    "workshops": 1,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 35 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 35 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 35 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 1,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 5,
+      "outcome": 0
+    }
+  },
+  "narrative": "Sara Ghosh is a B.Tech Electrical Engineering student at Delhi Technological University, graduating in 2025, who signed up as a ML/AI builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are Python, based on 60% of 35 public repos. They declare PyTorch, LangChain, RAG with no supporting repository or project evidence on the platform. Last active 2025-06-12, 464 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "2 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 60% of 35 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sara-ghosh",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "PyTorch: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "LangChain: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "RAG: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "OpenCV: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Jupyter Notebook: 20% of 35 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sara-ghosh",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "C++: 20% of 35 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sara-ghosh",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,455 @@
+{
+  "user_id": "U0208",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.075Z",
+  "identity": {
+    "full_name": "Nirvaan Joshi",
+    "email": "nirvaan.joshi4@gmail.com",
+    "college": "Indian Institute of Technology Roorkee",
+    "degree": "B.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2026,
+    "city": "Roorkee",
+    "role_pref": "Frontend",
+    "github_username": "nirvaanjoshi",
+    "linkedin_url": "https://linkedin.com/in/nirvaan-joshi-5728",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 3,
+    "no_shows": 2,
+    "projects_submitted": 2,
+    "submission_rate": 0.67,
+    "prizes": [
+      {
+        "date": "2025-02-17",
+        "hackathon": "StackSprint",
+        "hackathon_id": "H011",
+        "prize_track": "Overall",
+        "project_id": "P0112",
+        "project_title": "SplitFair",
+        "rank": 1,
+        "score": 90
+      },
+      {
+        "date": "2026-01-04",
+        "hackathon": "Ignite Delhi Spring II",
+        "hackathon_id": "H019",
+        "prize_track": "Overall",
+        "project_id": "P0197",
+        "project_title": "NoiseMap",
+        "rank": 1,
+        "score": 63
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 76.5,
+    "first_seen": "2025-02-15",
+    "last_active": "2026-04-10",
+    "days_since_active": 162,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 17,
+    "interactions_by_type": {
+      "comment": 7,
+      "question": 3,
+      "profile_update": 2,
+      "discord_message": 4,
+      "answered_question": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 6,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": true
+    }
+  },
+  "skills": [
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0112 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0197 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0197 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0197 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 3 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 3 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 3 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-02-17",
+        "score": 90,
+        "project_id": "P0112"
+      },
+      {
+        "date": "2026-01-04",
+        "score": 63,
+        "project_id": "P0197"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 45,
+    "components": {
+      "recency": 56,
+      "frequency": 38,
+      "depth": 43,
+      "outcome": 40
+    }
+  },
+  "narrative": "Nirvaan Joshi is a B.Tech Artificial Intelligence student at Indian Institute of Technology Roorkee, graduating in 2026, who signed up as a Frontend builder. They have attended 3 of the 5 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 2 prizes, including rank 1 at StackSprint with \"SplitFair\" (scored 90). Their strongest evidenced skills are Node.js, MongoDB, PostgreSQL, based on self-declared at signup. They declare Next.js, Design Systems with no supporting repository or project evidence on the platform. Last active 2026-04-10, 162 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-04-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-04-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at StackSprint with \"SplitFair\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0112",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Spring II with \"NoiseMap\" (score 63)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0197",
+      "observed_at": "2026-01-04",
+      "confidence": 1
+    },
+    {
+      "claim": "17 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-04-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MongoDB: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MongoDB: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "PostgreSQL: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Go: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0112 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0197 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Raspberry Pi: built P0197 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Flask: built P0197 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,361 @@
+{
+  "user_id": "U0157",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.072Z",
+  "identity": {
+    "full_name": "Chirag Sahni",
+    "email": "chirag.sahni28@gmail.com",
+    "college": "Delhi Technological University",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Full-stack",
+    "github_username": "chirags",
+    "linkedin_url": "https://linkedin.com/in/chirag-sahni-2411",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.33,
+    "prizes": [
+      {
+        "date": "2024-10-26",
+        "hackathon": "NorthStar Hacks",
+        "hackathon_id": "H008",
+        "prize_track": "Overall",
+        "project_id": "P0079",
+        "project_title": "SignalSense",
+        "rank": 1,
+        "score": 84
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 84,
+    "first_seen": "2024-01-13",
+    "last_active": "2026-07-05",
+    "days_since_active": 76,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 12,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "comment": 6,
+      "workshop_attended": 1,
+      "answered_question": 1,
+      "question": 2
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 6,
+    "repeat_teammates": [
+      {
+        "name": "Amrita Thakur",
+        "times": 2,
+        "user_id": "U0059"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 9 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "PostgreSQL",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "starter_not_finisher",
+      "label": "Starter, not finisher",
+      "score": 0.67,
+      "evidence": ["attended 3 events but submitted only 1"]
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Amrita Thakur 2 times"]
+    }
+  ],
+  "personas": ["Starter, Not Finisher", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-10-26",
+        "score": 84,
+        "project_id": "P0079"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 45,
+    "components": {
+      "recency": 79,
+      "frequency": 38,
+      "depth": 30,
+      "outcome": 20
+    }
+  },
+  "narrative": "Chirag Sahni is a B.Tech Data Science student at Delhi Technological University, graduating in 2029, who signed up as a Full-stack builder. They have attended 3 of the 3 hackathons they registered for and submitted 1 project (a 33% submission rate). They have won 1 prize, including rank 1 at NorthStar Hacks with \"SignalSense\" (scored 84). Their strongest evidenced skills are Embedded C, MQTT, Django, based on built P0079 (scored 84). They declare React, TypeScript, PostgreSQL with no supporting repository or project evidence on the platform. Last active 2026-07-05, 76 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-05",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-05",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at NorthStar Hacks with \"SignalSense\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0079",
+      "observed_at": "2024-10-26",
+      "confidence": 1
+    },
+    {
+      "claim": "12 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-05",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Embedded C: built P0079 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0079 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0079 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "CSS: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#chirags",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "JavaScript: 40% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#chirags",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "React: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "PostgreSQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

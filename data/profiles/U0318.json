@@ -1,0 +1,162 @@
+{
+  "user_id": "U0318",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.084Z",
+  "identity": {
+    "full_name": "Nidhi Iyer",
+    "email": "nidhi.iyer@gmail.com",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "M.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "Hardware/IoT",
+    "github_username": null,
+    "linkedin_url": "https://linkedin.com/in/nidhi-iyer-2346",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 0,
+    "no_shows": 1,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-03-22",
+    "last_active": "2025-05-16",
+    "days_since_active": 491,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 5,
+    "interactions_by_type": {
+      "question": 1,
+      "discord_message": 3,
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "LoRaWAN",
+      "cluster": "IoT",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Registered, Never Attended"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 3,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 13,
+      "outcome": 0
+    }
+  },
+  "narrative": "Nidhi Iyer is a M.Tech Artificial Intelligence student at Indraprastha Institute of Information Technology Delhi, graduating in 2027, who signed up as a Hardware/IoT builder. They have registered for 1 hackathons but have not attended any of them. They declare LoRaWAN, Raspberry Pi, Django with no supporting repository or project evidence on the platform. Last active 2025-05-16, 491 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-05-16",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-05-16",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "LoRaWAN: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Raspberry Pi: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Django: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "linkedin_synthetic_seed"]
+}

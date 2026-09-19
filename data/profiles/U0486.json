@@ -1,0 +1,186 @@
+{
+  "user_id": "U0486",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.095Z",
+  "identity": {
+    "full_name": "Charvi Singhal",
+    "email": "charvi.singhal9@gmail.com",
+    "college": "Bennett University",
+    "degree": "M.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2027,
+    "city": "Bengaluru",
+    "role_pref": "Mobile",
+    "github_username": "csinghal",
+    "linkedin_url": "https://linkedin.com/in/charvi-singhal-7046",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-05-20",
+    "last_active": "2025-05-20",
+    "days_since_active": 487,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 0,
+    "interactions_by_type": {},
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 12 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Jetpack Compose",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 0,
+    "components": {
+      "recency": 0,
+      "frequency": 0,
+      "depth": 0,
+      "outcome": 0
+    }
+  },
+  "narrative": "Charvi Singhal is a M.Tech Mathematics and Computing student at Bennett University, graduating in 2027, who signed up as a Mobile builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are Swift, based on 60% of 12 public repos. They declare Firebase, Jetpack Compose, React Native with no supporting repository or project evidence on the platform. Last active 2025-05-20, 487 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-05-20",
+      "confidence": 1
+    },
+    {
+      "claim": "Swift: 60% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#csinghal",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kotlin: 40% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#csinghal",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Firebase: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Jetpack Compose: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "React Native: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

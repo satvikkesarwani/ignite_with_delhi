@@ -483,7 +483,7 @@ if (want('external')) {
      MATCH (s:Skill {name: row.skill})
      MERGE (p)-[r:HAS_SKILL {source: 'github'}]->(s)
      SET r.confidence = toFloat(row.pct) / 100.0,
-         r.evidence = toString(row.pct) + '% of ' + toString(row.repos) + ' public repos',
+         r.evidence = toString(toInteger(row.pct)) + '% of ' + toString(toInteger(row.repos)) + ' public repos',
          r.origin = 'synthetic_seed'`,
     ghSkillRows
   );
@@ -535,7 +535,7 @@ if (want('derived')) {
      MATCH (s:Skill {name: row.skill})
      MERGE (p)-[r:HAS_SKILL {source: 'project'}]->(s)
      SET r.confidence = 0.8,
-         r.evidence = 'built ' + row.project_id + coalesce(' (scored ' + toString(row.score) + ')', ''),
+         r.evidence = 'built ' + row.project_id + coalesce(' (scored ' + toString(toInteger(row.score)) + ')', ''),
          r.project_id = row.project_id`,
     projSkillRows
   );

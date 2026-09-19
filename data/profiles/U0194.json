@@ -1,0 +1,393 @@
+{
+  "user_id": "U0194",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.074Z",
+  "identity": {
+    "full_name": "Ankit Khanna",
+    "email": "ankit.khanna@igdtuw.ac.in",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "MCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2026,
+    "city": "Mumbai",
+    "role_pref": "Frontend",
+    "github_username": null,
+    "linkedin_url": "https://linkedin.com/in/ankit-khanna-5683",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 2,
+    "no_shows": 1,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-08-27",
+        "hackathon": "Ignite Delhi Winter II",
+        "hackathon_id": "H016",
+        "prize_track": "Overall",
+        "project_id": "P0164",
+        "project_title": "AirTrail",
+        "rank": 3,
+        "score": 83
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 62.5,
+    "first_seen": "2025-08-27",
+    "last_active": "2026-05-30",
+    "days_since_active": 112,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 4.33,
+    "interactions": 7,
+    "interactions_by_type": {
+      "question": 2,
+      "comment": 3,
+      "answered_question": 2
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 4,
+    "repeat_teammates": [
+      {
+        "name": "Shanaya Mehta",
+        "times": 2,
+        "user_id": "U0148"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0205 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0205 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0164 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0164 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "dbt",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0164 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0164 (scored 83)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0205 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0205 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Shanaya Mehta 2 times"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-08-27",
+        "score": 83,
+        "project_id": "P0164"
+      },
+      {
+        "date": "2026-02-20",
+        "score": 42,
+        "project_id": "P0205"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 35,
+    "components": {
+      "recency": 69,
+      "frequency": 25,
+      "depth": 18,
+      "outcome": 20
+    }
+  },
+  "narrative": "Ankit Khanna is a MCA Computer Science and Engineering student at Indira Gandhi Delhi Technical University for Women, graduating in 2026, who signed up as a Frontend builder. They have attended 2 of the 3 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Winter II with \"AirTrail\" (scored 83). Their strongest evidenced skills are Node.js, MongoDB, Next.js, based on self-declared at signup. They declare TypeScript, Tailwind CSS with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-05-30, 112 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-05-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-05-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Winter II with \"AirTrail\" (score 83)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0164",
+      "observed_at": "2025-08-27",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 4.33",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-05-30",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-05-30",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Node.js: built P0205 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MongoDB: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MongoDB: built P0205 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: built P0164 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Airflow: built P0164 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "dbt: built P0164 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Arduino: built P0164 (scored 83)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "The Graph: built P0205 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0205 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,373 @@
+{
+  "user_id": "U0358",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.087Z",
+  "identity": {
+    "full_name": "Aarav Sethi",
+    "email": "aarav.sethi@gmail.com",
+    "college": "Amity University",
+    "degree": "B.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2029,
+    "city": "Pune",
+    "role_pref": "ML/AI",
+    "github_username": "aaravs",
+    "linkedin_url": "https://linkedin.com/in/aarav-sethi-2342",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 1,
+    "no_shows": 1,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Overall",
+        "project_id": "P0251",
+        "project_title": "SchemaSage",
+        "rank": 1,
+        "score": 91
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 91,
+    "first_seen": "2026-08-08",
+    "last_active": "2026-08-21",
+    "days_since_active": 29,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 6,
+    "interactions_by_type": {
+      "question": 3,
+      "discord_message": 1,
+      "profile_update": 2
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 11 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 11 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2026-08-08",
+        "score": 91,
+        "project_id": "P0251"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 39,
+    "components": {
+      "recency": 92,
+      "frequency": 13,
+      "depth": 15,
+      "outcome": 20
+    }
+  },
+  "narrative": "Aarav Sethi is a B.Tech Artificial Intelligence student at Amity University, graduating in 2029, who signed up as a ML/AI builder. They have attended 1 of the 2 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Grand Finale with \"SchemaSage\" (scored 91). Their strongest evidenced skills are RAG, FastAPI, Node.js, based on self-declared at signup. They declare Python, Pandas, Transformers with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-08-21 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Grand Finale with \"SchemaSage\" (score 91)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0251",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-21",
+      "confidence": 1
+    },
+    {
+      "claim": "RAG: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "RAG: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TensorFlow: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#aaravs",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "C++: 40% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#aaravs",
+      "observed_at": null,
+      "confidence": 0.4
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,306 @@
+{
+  "user_id": "U0032",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.058Z",
+  "identity": {
+    "full_name": "Naman Sen",
+    "email": "naman.sen@mait.ac.in",
+    "college": "Maharaja Agrasen Institute of Technology",
+    "degree": "B.Tech",
+    "branch": "Information Technology",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Data",
+    "github_username": "namansen",
+    "linkedin_url": "https://linkedin.com/in/naman-sen-3623",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2025-07-21",
+    "last_active": "2026-04-26",
+    "days_since_active": 146,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 3.5,
+    "interactions": 4,
+    "interactions_by_type": {
+      "profile_update": 1,
+      "discord_message": 2,
+      "comment": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [
+      {
+        "name": "Sneha Menon",
+        "times": 2,
+        "user_id": "U0046"
+      },
+      {
+        "name": "Kiara Sharma",
+        "times": 2,
+        "user_id": "U0367"
+      }
+    ],
+    "outreach": {
+      "sent": 1,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 3 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pandas",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "R",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 3 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 3 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 3 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.67,
+      "evidence": ["teamed with Sneha Menon 2 times", "teamed with Kiara Sharma 2 times"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 27,
+    "components": {
+      "recency": 60,
+      "frequency": 25,
+      "depth": 10,
+      "outcome": 0
+    }
+  },
+  "narrative": "Naman Sen is a B.Tech Information Technology student at Maharaja Agrasen Institute of Technology, graduating in 2029, who signed up as a Data builder. They have attended 2 of the 2 hackathons they registered for, but have not submitted a project. Their strongest evidenced skills are Jupyter Notebook, based on 60% of 3 public repos. They declare Pandas, Airflow, DuckDB with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-04-26, 146 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-04-26",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 3.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-04-26",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-04-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 1 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#namansen",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Pandas: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Airflow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "DuckDB: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Spark: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "NumPy: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "R: 20% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#namansen",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "Python: 10% of 3 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#namansen",
+      "observed_at": null,
+      "confidence": 0.1
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

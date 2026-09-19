@@ -1,0 +1,329 @@
+{
+  "user_id": "U0574",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.102Z",
+  "identity": {
+    "full_name": "Sahana Dhillon",
+    "email": "sahana.dhillon@gmail.com",
+    "college": "Indira Gandhi Delhi Technical University for Women",
+    "degree": "B.Des",
+    "branch": "Electronics and Communication",
+    "grad_year": 2028,
+    "city": "Delhi",
+    "role_pref": "ML/AI",
+    "github_username": "sdhillon",
+    "linkedin_url": "https://linkedin.com/in/sahana-dhillon-5773",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 42,
+    "first_seen": "2024-05-20",
+    "last_active": "2026-07-10",
+    "days_since_active": 71,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 3.33,
+    "interactions": 7,
+    "interactions_by_type": {
+      "comment": 4,
+      "workshop_attended": 1,
+      "answered_question": 1,
+      "question": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 3,
+    "repeat_teammates": [
+      {
+        "name": "Madhav Bhardwaj",
+        "times": 2,
+        "user_id": "U0416"
+      }
+    ],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Qdrant",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0241 (scored 42)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 16 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 16 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Madhav Bhardwaj 2 times"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2026-07-03",
+        "score": 42,
+        "project_id": "P0241"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 35,
+    "components": {
+      "recency": 81,
+      "frequency": 25,
+      "depth": 18,
+      "outcome": 0
+    }
+  },
+  "narrative": "Sahana Dhillon is a B.Des Electronics and Communication student at Indira Gandhi Delhi Technical University for Women, graduating in 2028, who signed up as a ML/AI builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). Their strongest evidenced skills are FastAPI, GraphQL, NetworkX, based on built P0241 (scored 42). They declare OpenAI API, LLM Fine-tuning, TensorFlow with no supporting repository or project evidence on the platform. Mentors rated them 3.33 out of 5 across 3 sessions. Last active 2026-07-10, 71 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-10",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 3.33",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-07-10",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "FastAPI: built P0241 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "GraphQL: built P0241 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NetworkX: built P0241 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Knowledge Graphs: built P0241 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Qdrant: built P0241 (scored 42)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "C++: 60% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sdhillon",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "C: 40% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sdhillon",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "OpenAI API: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

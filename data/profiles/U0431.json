@@ -1,0 +1,524 @@
+{
+  "user_id": "U0431",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.092Z",
+  "identity": {
+    "full_name": "Zayan Subramanian",
+    "email": "zayan.subramanian@pes.ac.in",
+    "college": "PES University",
+    "degree": "B.Tech",
+    "branch": "Information Technology",
+    "grad_year": 2025,
+    "city": "Bengaluru",
+    "role_pref": "ML/AI",
+    "github_username": null,
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 6,
+    "hackathons_attended": 6,
+    "no_shows": 0,
+    "projects_submitted": 4,
+    "submission_rate": 0.67,
+    "prizes": [
+      {
+        "date": "2024-10-26",
+        "hackathon": "NorthStar Hacks",
+        "hackathon_id": "H008",
+        "prize_track": "Overall",
+        "project_id": "P0079",
+        "project_title": "SignalSense",
+        "rank": 1,
+        "score": 84
+      },
+      {
+        "date": "2025-02-17",
+        "hackathon": "StackSprint",
+        "hackathon_id": "H011",
+        "prize_track": "Overall",
+        "project_id": "P0115",
+        "project_title": "FraudFence",
+        "rank": 3,
+        "score": 62
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 67.8,
+    "first_seen": "2024-06-25",
+    "last_active": "2026-07-18",
+    "days_since_active": 63,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 20,
+    "interactions_by_type": {
+      "question": 2,
+      "comment": 4,
+      "answered_question": 3,
+      "profile_update": 4,
+      "workshop_attended": 4,
+      "discord_message": 3
+    },
+    "workshops": 4,
+    "answers_given": 3,
+    "distinct_teammates": 12,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 5,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0115 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0057 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "dbt",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0115 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0115 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0057 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Terraform",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0057 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0048 (scored 64)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0115 (scored 62)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.5,
+      "evidence": ["20 platform interactions"]
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-06-25",
+        "score": 64,
+        "project_id": "P0048"
+      },
+      {
+        "date": "2024-08-09",
+        "score": 61,
+        "project_id": "P0057"
+      },
+      {
+        "date": "2024-10-26",
+        "score": 84,
+        "project_id": "P0079"
+      },
+      {
+        "date": "2025-02-17",
+        "score": 62,
+        "project_id": "P0115"
+      }
+    ],
+    "tech_drift": {
+      "from": ["LangChain", "Python", "OpenCV", "RAG"],
+      "to": ["MQTT", "Django", "Embedded C", "Airflow"]
+    }
+  },
+  "engagement": {
+    "value": 64,
+    "components": {
+      "recency": 83,
+      "frequency": 75,
+      "depth": 50,
+      "outcome": 40
+    }
+  },
+  "narrative": "Zayan Subramanian is a B.Tech Information Technology student at PES University, graduating in 2025, who signed up as a ML/AI builder. They have attended 6 of the 6 hackathons they registered for and submitted 4 projects (a 67% submission rate). They have won 2 prizes, including rank 1 at NorthStar Hacks with \"SignalSense\" (scored 84). Their strongest evidenced skills are Python, LangChain, RAG, based on self-declared at signup. They declare Transformers with no supporting repository or project evidence on the platform. Last active 2026-07-18, 63 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 6 hackathons, attended 6",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-18",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-18",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at NorthStar Hacks with \"SignalSense\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0079",
+      "observed_at": "2024-10-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at StackSprint with \"FraudFence\" (score 62)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0115",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "20 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-18",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 5 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Python: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "RAG: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "RAG: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Airflow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Airflow: built P0115 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "OpenAI API: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "OpenAI API: built P0048 (scored 64)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "TypeScript: built P0057 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "dbt: built P0115 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0115 (scored 62)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform"]
+}

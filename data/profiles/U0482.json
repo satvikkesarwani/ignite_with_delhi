@@ -1,0 +1,247 @@
+{
+  "user_id": "U0482",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.095Z",
+  "identity": {
+    "full_name": "Siddharth Kumar",
+    "email": "siddharth.kumar@iitdelhi.ac.in",
+    "college": "Indian Institute of Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2027,
+    "city": "Delhi",
+    "role_pref": "Product",
+    "github_username": "siddharthkumar",
+    "linkedin_url": "https://linkedin.com/in/siddharth-kumar-4730",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 0,
+    "no_shows": 1,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2024-10-12",
+    "last_active": "2026-02-10",
+    "days_since_active": 221,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 4,
+    "interactions_by_type": {
+      "workshop_attended": 1,
+      "discord_message": 1,
+      "answered_question": 1,
+      "comment": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 3,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Motion Design",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Registered, Never Attended"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 14,
+    "components": {
+      "recency": 39,
+      "frequency": 0,
+      "depth": 10,
+      "outcome": 0
+    }
+  },
+  "narrative": "Siddharth Kumar is a B.Tech Data Science student at Indian Institute of Technology Delhi, graduating in 2027, who signed up as a Product builder. They have registered for 1 hackathons but have not attended any of them. Their strongest evidenced skills are TypeScript, based on 60% of 12 public repos. They declare Figma, Prototyping, Framer with no supporting repository or project evidence on the platform. Last active 2026-02-10, 221 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-02-10",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-02-10",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "TypeScript: 60% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#siddharthkumar",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Figma: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Prototyping: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Framer: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Motion Design: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "JavaScript: 20% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#siddharthkumar",
+      "observed_at": null,
+      "confidence": 0.2
+    },
+    {
+      "claim": "CSS: 20% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#siddharthkumar",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

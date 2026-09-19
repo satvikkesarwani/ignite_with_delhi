@@ -1,0 +1,342 @@
+{
+  "user_id": "U0288",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.082Z",
+  "identity": {
+    "full_name": "Dhruv Kumar",
+    "email": "dhruv.kumar22@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "B.Tech",
+    "branch": "Data Science",
+    "grad_year": 2026,
+    "city": "Delhi",
+    "role_pref": "Backend",
+    "github_username": "dkumar",
+    "linkedin_url": null,
+    "consent_flag": false
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-05-09",
+        "hackathon": "Ignite Delhi Autumn",
+        "hackathon_id": "H013",
+        "prize_track": "Overall",
+        "project_id": "P0132",
+        "project_title": "SchemaSage",
+        "rank": 3,
+        "score": 77
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 3,
+    "avg_score": 77,
+    "first_seen": "2025-05-09",
+    "last_active": "2025-05-21",
+    "days_since_active": 486,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 4.5,
+    "interactions": 3,
+    "interactions_by_type": {
+      "question": 1,
+      "comment": 2
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.82,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 16 public repos",
+          "weight": 0.1
+        },
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vector Databases",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 16 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 16 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 16 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Dormant High-Potential"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2025-05-09",
+        "score": 77,
+        "project_id": "P0132"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 9,
+    "components": {
+      "recency": 0,
+      "frequency": 13,
+      "depth": 8,
+      "outcome": 20
+    }
+  },
+  "narrative": "Dhruv Kumar is a B.Tech Data Science student at Netaji Subhas University of Technology, graduating in 2026, who signed up as a Backend builder. They have attended 1 of the 1 hackathons they registered for and submitted 1 project (a 100% submission rate). They have won 1 prize, including rank 3 at Ignite Delhi Autumn with \"SchemaSage\" (scored 77). Their strongest evidenced skills are Python, Vector Databases, scikit-learn, based on 10% of 16 public repos. They declare gRPC, Flask with no supporting repository or project evidence on the platform. Mentors rated them 4.5 out of 5 across 2 sessions. Last active 2025-05-21, 486 days ago — lapsed. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-05-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-05-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Autumn with \"SchemaSage\" (score 77)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0132",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 4.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-05-21",
+      "confidence": 1
+    },
+    {
+      "claim": "3 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-05-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 10% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#dkumar",
+      "observed_at": null,
+      "confidence": 0.82
+    },
+    {
+      "claim": "Python: built P0132 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.82
+    },
+    {
+      "claim": "Vector Databases: built P0132 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "scikit-learn: built P0132 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "OpenCV: built P0132 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: 60% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#dkumar",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Go: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Go: 20% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#dkumar",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "gRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Flask: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

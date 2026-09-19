@@ -1,0 +1,336 @@
+{
+  "user_id": "U0204",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.074Z",
+  "identity": {
+    "full_name": "Harsh Ahuja",
+    "email": "harsh.ahuja@bvcoe.ac.in",
+    "college": "Bharati Vidyapeeth College of Engineering",
+    "degree": "B.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Data",
+    "github_username": "harsh-ahuja",
+    "linkedin_url": "https://linkedin.com/in/harsh-ahuja-3959",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.5,
+    "prizes": [
+      {
+        "date": "2026-02-20",
+        "hackathon": "MetroHacks",
+        "hackathon_id": "H020",
+        "prize_track": "Overall",
+        "project_id": "P0207",
+        "project_title": "CarbonCred",
+        "rank": 1,
+        "score": 77
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 77,
+    "first_seen": "2024-02-22",
+    "last_active": "2026-03-04",
+    "days_since_active": 199,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 8,
+    "interactions_by_type": {
+      "profile_update": 2,
+      "answered_question": 2,
+      "comment": 1,
+      "question": 1,
+      "workshop_attended": 1,
+      "discord_message": 1
+    },
+    "workshops": 1,
+    "answers_given": 2,
+    "distinct_teammates": 3,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0207 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0207 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0207 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0207 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 13 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 13 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Tableau",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Dormant High-Potential", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2026-02-20",
+        "score": 77,
+        "project_id": "P0207"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 29,
+    "components": {
+      "recency": 45,
+      "frequency": 25,
+      "depth": 20,
+      "outcome": 20
+    }
+  },
+  "narrative": "Harsh Ahuja is a B.Tech Mathematics and Computing student at Bharati Vidyapeeth College of Engineering, graduating in 2029, who signed up as a Data builder. They have attended 2 of the 2 hackathons they registered for and submitted 1 project (a 50% submission rate). They have won 1 prize, including rank 1 at MetroHacks with \"CarbonCred\" (scored 77). Their strongest evidenced skills are The Graph, Solidity, IPFS, based on built P0207 (scored 77). They declare Airflow, Tableau, Spark with no supporting repository or project evidence on the platform. Last active 2026-03-04, 199 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-03-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-03-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at MetroHacks with \"CarbonCred\" (score 77)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0207",
+      "observed_at": "2026-02-20",
+      "confidence": 1
+    },
+    {
+      "claim": "8 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-03-04",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "The Graph: built P0207 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Solidity: built P0207 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "IPFS: built P0207 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Kafka: built P0207 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Jupyter Notebook: 60% of 13 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#harsh-ahuja",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "SQL: 40% of 13 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#harsh-ahuja",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Airflow: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Tableau: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

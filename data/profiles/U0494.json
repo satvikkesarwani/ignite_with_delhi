@@ -1,0 +1,439 @@
+{
+  "user_id": "U0494",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.096Z",
+  "identity": {
+    "full_name": "Rudra Sahni",
+    "email": "rudra.sahni@gmail.com",
+    "college": "Bharati Vidyapeeth College of Engineering",
+    "degree": "B.Tech",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2027,
+    "city": "Lucknow",
+    "role_pref": "Frontend",
+    "github_username": null,
+    "linkedin_url": "https://linkedin.com/in/rudra-sahni-5226",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 6,
+    "hackathons_attended": 6,
+    "no_shows": 0,
+    "projects_submitted": 4,
+    "submission_rate": 0.67,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 46.8,
+    "first_seen": "2024-02-22",
+    "last_active": "2026-07-14",
+    "days_since_active": 67,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 13,
+    "interactions_by_type": {
+      "discord_message": 2,
+      "comment": 3,
+      "workshop_attended": 2,
+      "profile_update": 2,
+      "answered_question": 2,
+      "question": 2
+    },
+    "workshops": 2,
+    "answers_given": 2,
+    "distinct_teammates": 12,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 3,
+      "opened": 3,
+      "clicked": 1,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0182 (scored 34)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0182 (scored 34)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0113 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0019 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0019 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0182 (scored 34)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0113 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0182 (scored 34)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0019 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Prometheus",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0062 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0019 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0062 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0062 (scored 48)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0019 (scored 44)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 44,
+        "project_id": "P0019"
+      },
+      {
+        "date": "2024-08-09",
+        "score": 48,
+        "project_id": "P0062"
+      },
+      {
+        "date": "2025-02-17",
+        "score": 61,
+        "project_id": "P0113"
+      },
+      {
+        "date": "2025-11-19",
+        "score": 34,
+        "project_id": "P0182"
+      }
+    ],
+    "tech_drift": {
+      "from": ["NumPy", "Java Spring", "GraphQL", "Node.js"],
+      "to": ["Express", "Go", "Redis", "Docker"]
+    }
+  },
+  "engagement": {
+    "value": 52,
+    "components": {
+      "recency": 82,
+      "frequency": 75,
+      "depth": 33,
+      "outcome": 0
+    }
+  },
+  "narrative": "Rudra Sahni is a B.Tech Mathematics and Computing student at Bharati Vidyapeeth College of Engineering, graduating in 2027, who signed up as a Frontend builder. They have attended 6 of the 6 hackathons they registered for and submitted 4 projects (a 67% submission rate). Their strongest evidenced skills are Express, tRPC, Vite, based on self-declared at signup. They declare React with no supporting repository or project evidence on the platform. Last active 2026-07-14, 67 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 6 hackathons, attended 6",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "13 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-14",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 3, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Express: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Express: built P0182 (scored 34)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "tRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "tRPC: built P0182 (scored 34)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Vite: built P0113 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: built P0019 (scored 44)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0019 (scored 44)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Docker: built P0182 (scored 34)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: built P0113 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0182 (scored 34)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "linkedin_synthetic_seed"]
+}

@@ -1,0 +1,651 @@
+{
+  "user_id": "U0565",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.102Z",
+  "identity": {
+    "full_name": "Neel Chauhan",
+    "email": "neel.chauhan27@gmail.com",
+    "college": "Birla Institute of Technology and Science Pilani",
+    "degree": "B.Des",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2028,
+    "city": "Pilani",
+    "role_pref": "Hardware/IoT",
+    "github_username": "neelchauhan",
+    "linkedin_url": "https://linkedin.com/in/neel-chauhan-2156",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 9,
+    "hackathons_attended": 7,
+    "no_shows": 2,
+    "projects_submitted": 5,
+    "submission_rate": 0.71,
+    "prizes": [
+      {
+        "date": "2024-05-21",
+        "hackathon": "HackFrontier",
+        "hackathon_id": "H004",
+        "prize_track": "Overall",
+        "project_id": "P0034",
+        "project_title": "LegalAidLine",
+        "rank": 1,
+        "score": 80
+      },
+      {
+        "date": "2024-10-26",
+        "hackathon": "NorthStar Hacks",
+        "hackathon_id": "H008",
+        "prize_track": "Overall",
+        "project_id": "P0085",
+        "project_title": "FloodFore",
+        "rank": 3,
+        "score": 70
+      },
+      {
+        "date": "2026-02-20",
+        "hackathon": "MetroHacks",
+        "hackathon_id": "H020",
+        "prize_track": "Overall",
+        "project_id": "P0213",
+        "project_title": "DAOdesk",
+        "rank": 3,
+        "score": 69
+      },
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Overall",
+        "project_id": "P0255",
+        "project_title": "Interviewer",
+        "rank": 3,
+        "score": 63
+      }
+    ],
+    "prize_count": 4,
+    "best_rank": 1,
+    "avg_score": 67.8,
+    "first_seen": "2024-02-22",
+    "last_active": "2026-08-13",
+    "days_since_active": 37,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 29,
+    "interactions_by_type": {
+      "workshop_attended": 4,
+      "answered_question": 7,
+      "comment": 3,
+      "discord_message": 9,
+      "profile_update": 3,
+      "question": 3
+    },
+    "workshops": 4,
+    "answers_given": 7,
+    "distinct_teammates": 13,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 4,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.89,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 16 public repos",
+          "weight": 0.2
+        },
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0213 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0034 (scored 80)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0009 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenAI API",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0255 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0213 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0034 (scored 80)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0009 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0009 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0213 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0009 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 16 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 16 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.8,
+      "evidence": ["4 prizes, best finish rank 1"]
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.72,
+      "evidence": ["29 platform interactions"]
+    },
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.71,
+      "evidence": ["5 of 7 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Serial Winner", "Consistent Builder"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 57,
+        "project_id": "P0009"
+      },
+      {
+        "date": "2024-05-21",
+        "score": 80,
+        "project_id": "P0034"
+      },
+      {
+        "date": "2024-10-26",
+        "score": 70,
+        "project_id": "P0085"
+      },
+      {
+        "date": "2026-02-20",
+        "score": 69,
+        "project_id": "P0213"
+      },
+      {
+        "date": "2026-08-08",
+        "score": 63,
+        "project_id": "P0255"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Kafka", "NumPy", "Java Spring", "Go"],
+      "to": ["Express", "Hardhat", "Flask", "Vite"]
+    }
+  },
+  "engagement": {
+    "value": 83,
+    "components": {
+      "recency": 90,
+      "frequency": 88,
+      "depth": 73,
+      "outcome": 80
+    }
+  },
+  "narrative": "Neel Chauhan is a B.Des Computer Science and Engineering student at Birla Institute of Technology and Science Pilani, graduating in 2028, who signed up as a Hardware/IoT builder. They have attended 7 of the 9 hackathons they registered for and submitted 5 projects (a 71% submission rate). They have won 4 prizes, including rank 1 at HackFrontier with \"LegalAidLine\" (scored 80). Their strongest evidenced skills are Arduino, ESP32, Embedded C, based on self-declared at signup. Last active 2026-08-13 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 9 hackathons, attended 7",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-13",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 5 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-13",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at HackFrontier with \"LegalAidLine\" (score 80)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0034",
+      "observed_at": "2024-05-21",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at NorthStar Hacks with \"FloodFore\" (score 70)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0085",
+      "observed_at": "2024-10-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at MetroHacks with \"DAOdesk\" (score 69)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0213",
+      "observed_at": "2026-02-20",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Grand Finale with \"Interviewer\" (score 63)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0255",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "29 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-13",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 4, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Arduino: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.89
+    },
+    {
+      "claim": "Arduino: 20% of 16 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#neelchauhan",
+      "observed_at": null,
+      "confidence": 0.89
+    },
+    {
+      "claim": "Arduino: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.89
+    },
+    {
+      "claim": "ESP32: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "ESP32: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Embedded C: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Embedded C: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MQTT: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MQTT: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Raspberry Pi: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Raspberry Pi: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "FastAPI: built P0213 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Express: built P0255 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: built P0034 (scored 80)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

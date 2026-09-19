@@ -1,0 +1,249 @@
+{
+  "user_id": "U0421",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.091Z",
+  "identity": {
+    "full_name": "Ishaan Iyer",
+    "email": "ishaan.iyer@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "MCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "Full-stack",
+    "github_username": "ishaani",
+    "linkedin_url": "https://linkedin.com/in/ishaan-iyer-9374",
+    "consent_flag": false
+  },
+  "facts": {
+    "hackathons_registered": 0,
+    "hackathons_attended": 0,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": null,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2026-05-22",
+    "last_active": "2026-06-24",
+    "days_since_active": 87,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 1,
+    "interactions_by_type": {
+      "question": 1
+    },
+    "workshops": 0,
+    "answers_given": 0,
+    "distinct_teammates": 0,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 9 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 9 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 9 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 9 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["Newcomer"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 24,
+    "components": {
+      "recency": 76,
+      "frequency": 0,
+      "depth": 3,
+      "outcome": 0
+    }
+  },
+  "narrative": "Ishaan Iyer is a MCA Computer Science and Engineering student at Netaji Subhas University of Technology, graduating in 2029, who signed up as a Full-stack builder. They have created an account but have not registered for an event yet. Their strongest evidenced skills are HTML, based on 60% of 9 public repos. They declare Node.js, React, Vite with no supporting repository or project evidence on the platform. Last active 2026-06-24, 87 days ago — cooling off. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 0 hackathons, attended 0",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-06-24",
+      "confidence": 1
+    },
+    {
+      "claim": "1 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-06-24",
+      "confidence": 1
+    },
+    {
+      "claim": "HTML: 60% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ishaani",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "TypeScript: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "TypeScript: 20% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ishaani",
+      "observed_at": null,
+      "confidence": 0.44
+    },
+    {
+      "claim": "Node.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "React: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Vite: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "JavaScript: 10% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ishaani",
+      "observed_at": null,
+      "confidence": 0.1
+    },
+    {
+      "claim": "CSS: 10% of 9 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#ishaani",
+      "observed_at": null,
+      "confidence": 0.1
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

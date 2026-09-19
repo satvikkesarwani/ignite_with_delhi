@@ -1,0 +1,397 @@
+{
+  "user_id": "U0464",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.094Z",
+  "identity": {
+    "full_name": "Sanjana Chopra",
+    "email": "sanjana.chopra3@gmail.com",
+    "college": "Netaji Subhas University of Technology",
+    "degree": "B.Des",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Mobile",
+    "github_username": "sanjanachopra",
+    "linkedin_url": "https://linkedin.com/in/sanjana-chopra-9163",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-06-12",
+        "hackathon": "ProtoDelhi",
+        "hackathon_id": "H014",
+        "prize_track": "Overall",
+        "project_id": "P0141",
+        "project_title": "VaxTrack",
+        "rank": 2,
+        "score": 86
+      },
+      {
+        "date": "2024-10-26",
+        "hackathon": "NorthStar Hacks",
+        "hackathon_id": "H008",
+        "prize_track": "Overall",
+        "project_id": "P0085",
+        "project_title": "FloodFore",
+        "rank": 3,
+        "score": 70
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 2,
+    "avg_score": 78,
+    "first_seen": "2024-10-24",
+    "last_active": "2026-08-15",
+    "days_since_active": 35,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 7,
+    "interactions_by_type": {
+      "workshop_attended": 1,
+      "answered_question": 1,
+      "comment": 3,
+      "discord_message": 2
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.94,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "60% of 5 public repos",
+          "weight": 0.6
+        },
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0141 (scored 86)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0085 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.58,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "40% of 5 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 2"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-10-26",
+        "score": 70,
+        "project_id": "P0085"
+      },
+      {
+        "date": "2025-06-12",
+        "score": 86,
+        "project_id": "P0141"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 46,
+    "components": {
+      "recency": 90,
+      "frequency": 25,
+      "depth": 18,
+      "outcome": 40
+    }
+  },
+  "narrative": "Sanjana Chopra is a B.Des Mathematics and Computing student at Netaji Subhas University of Technology, graduating in 2025, who signed up as a Mobile builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 2 prizes, including rank 2 at ProtoDelhi with \"VaxTrack\" (scored 86). Their strongest evidenced skills are Kotlin, Flutter, LangChain, based on self-declared at signup. Last active 2026-08-15 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at ProtoDelhi with \"VaxTrack\" (score 86)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0141",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at NorthStar Hacks with \"FloodFore\" (score 70)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0085",
+      "observed_at": "2024-10-26",
+      "confidence": 1
+    },
+    {
+      "claim": "7 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Kotlin: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.94
+    },
+    {
+      "claim": "Kotlin: 60% of 5 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#sanjanachopra",
+      "observed_at": null,
+      "confidence": 0.94
+    },
+    {
+      "claim": "Kotlin: built P0141 (scored 86)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.94
+    },
+    {
+      "claim": "Flutter: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Flutter: built P0141 (scored 86)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "LangChain: built P0141 (scored 86)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HuggingFace: built P0141 (scored 86)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Arduino: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "ESP32: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Embedded C: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0085 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

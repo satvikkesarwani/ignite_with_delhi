@@ -1,0 +1,704 @@
+{
+  "user_id": "U0303",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.083Z",
+  "identity": {
+    "full_name": "Advait Patel",
+    "email": "advait.patel@iitroorkee.ac.in",
+    "college": "Indian Institute of Technology Roorkee",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2029,
+    "city": "Mumbai",
+    "role_pref": "Web3",
+    "github_username": "advaitpateldev",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 8,
+    "hackathons_attended": 8,
+    "no_shows": 0,
+    "projects_submitted": 7,
+    "submission_rate": 0.88,
+    "prizes": [
+      {
+        "date": "2026-04-06",
+        "hackathon": "ForgeDelhi",
+        "hackathon_id": "H021",
+        "prize_track": "Overall",
+        "project_id": "P0220",
+        "project_title": "SchemaSage",
+        "rank": 2,
+        "score": 75
+      },
+      {
+        "date": "2025-05-09",
+        "hackathon": "Ignite Delhi Autumn",
+        "hackathon_id": "H013",
+        "prize_track": "Overall",
+        "project_id": "P0132",
+        "project_title": "SchemaSage",
+        "rank": 3,
+        "score": 77
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 2,
+    "avg_score": 66.7,
+    "first_seen": "2024-01-13",
+    "last_active": "2026-09-15",
+    "days_since_active": 4,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 27,
+    "interactions_by_type": {
+      "workshop_attended": 4,
+      "question": 3,
+      "answered_question": 5,
+      "discord_message": 10,
+      "profile_update": 1,
+      "comment": 4
+    },
+    "workshops": 4,
+    "answers_given": 5,
+    "distinct_teammates": 12,
+    "repeat_teammates": [
+      {
+        "name": "Shivam Singh",
+        "times": 2,
+        "user_id": "U0441"
+      },
+      {
+        "name": "Akshara Joshi",
+        "times": 2,
+        "user_id": "U0616"
+      },
+      {
+        "name": "Meera Joshi",
+        "times": 2,
+        "user_id": "U0010"
+      },
+      {
+        "name": "Advait Basu",
+        "times": 2,
+        "user_id": "U0119"
+      },
+      {
+        "name": "Samaira Kaur",
+        "times": 2,
+        "user_id": "U0146"
+      }
+    ],
+    "outreach": {
+      "sent": 4,
+      "opened": 3,
+      "clicked": 1,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0177 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0071 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0177 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HuggingFace",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vector Databases",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0177 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0184 (scored 71)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0184 (scored 71)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0220 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0177 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0232 (scored 53)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tableau",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0071 (scored 61)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0184 (scored 71)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LoRaWAN",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0220 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0132 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0184 (scored 71)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0080 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 1,
+      "evidence": ["teamed with Shivam Singh 2 times", "teamed with Akshara Joshi 2 times"]
+    },
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.88,
+      "evidence": ["7 of 8 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.68,
+      "evidence": ["27 platform interactions"]
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 2"]
+    }
+  ],
+  "personas": ["Consistent Builder", "Steady Participant"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-09-15",
+        "score": 61,
+        "project_id": "P0071"
+      },
+      {
+        "date": "2024-10-26",
+        "score": 65,
+        "project_id": "P0080"
+      },
+      {
+        "date": "2025-05-09",
+        "score": 77,
+        "project_id": "P0132"
+      },
+      {
+        "date": "2025-10-04",
+        "score": 65,
+        "project_id": "P0177"
+      },
+      {
+        "date": "2025-11-19",
+        "score": 71,
+        "project_id": "P0184"
+      },
+      {
+        "date": "2026-04-06",
+        "score": 75,
+        "project_id": "P0220"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 53,
+        "project_id": "P0232"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Next.js", "Tableau", "LoRaWAN", "Embedded C"],
+      "to": ["Django", "React", "Tailwind CSS", "tRPC"]
+    }
+  },
+  "engagement": {
+    "value": 80,
+    "components": {
+      "recency": 99,
+      "frequency": 100,
+      "depth": 68,
+      "outcome": 40
+    }
+  },
+  "narrative": "Advait Patel is a B.Tech Computer Science and Engineering student at Indian Institute of Technology Roorkee, graduating in 2029, who signed up as a Web3 builder. They have attended 8 of the 8 hackathons they registered for and submitted 7 projects (a 88% submission rate). They have won 2 prizes, including rank 2 at ForgeDelhi with \"SchemaSage\" (scored 75). Their strongest evidenced skills are Python, Neo4j, React, based on built P0132 (scored 77). They declare The Graph, Foundry, Hardhat with no supporting repository or project evidence on the platform. Last active 2026-09-15 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 8 hackathons, attended 8",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-09-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 7 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-09-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at ForgeDelhi with \"SchemaSage\" (score 75)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0220",
+      "observed_at": "2026-04-06",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Autumn with \"SchemaSage\" (score 77)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0132",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "27 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-09-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 3, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: built P0132 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Neo4j: built P0177 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "React: built P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0071 (scored 61)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "SQL: built P0177 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HuggingFace: built P0232 (scored 53)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vector Databases: built P0177 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

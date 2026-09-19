@@ -1,0 +1,437 @@
+{
+  "user_id": "U0281",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.082Z",
+  "identity": {
+    "full_name": "Kunal Nanda",
+    "email": "kunal.nanda@dtu.ac.in",
+    "college": "Delhi Technological University",
+    "degree": "M.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2028,
+    "city": "Ghaziabad",
+    "role_pref": "Full-stack",
+    "github_username": "kunalnanda",
+    "linkedin_url": "https://linkedin.com/in/kunal-nanda-3422",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 2,
+    "hackathons_attended": 2,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-06-12",
+        "hackathon": "ProtoDelhi",
+        "hackathon_id": "H014",
+        "prize_track": "Overall",
+        "project_id": "P0140",
+        "project_title": "ReportReader",
+        "rank": 1,
+        "score": 93
+      },
+      {
+        "date": "2025-01-10",
+        "hackathon": "Ignite Delhi Monsoon",
+        "hackathon_id": "H010",
+        "prize_track": "Overall",
+        "project_id": "P0106",
+        "project_title": "RouteKnot",
+        "rank": 3,
+        "score": 81
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 87,
+    "first_seen": "2025-01-10",
+    "last_active": "2026-02-08",
+    "days_since_active": 223,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 2.5,
+    "interactions": 5,
+    "interactions_by_type": {
+      "question": 2,
+      "comment": 1,
+      "discord_message": 1,
+      "answered_question": 1
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 3,
+    "repeat_teammates": [
+      {
+        "name": "Shiv Sharma",
+        "times": 2,
+        "user_id": "U0001"
+      }
+    ],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "PyTorch",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0140 (scored 93)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0140 (scored 93)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0140 (scored 93)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vector Databases",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0106 (scored 81)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0106 (scored 81)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0106 (scored 81)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Pinecone",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0106 (scored 81)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 18 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 18 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 18 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Dart",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 18 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Shiv Sharma 2 times"]
+    }
+  ],
+  "personas": ["Dormant High-Potential", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2025-01-10",
+        "score": 81,
+        "project_id": "P0106"
+      },
+      {
+        "date": "2025-06-12",
+        "score": 93,
+        "project_id": "P0140"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 29,
+    "components": {
+      "recency": 39,
+      "frequency": 25,
+      "depth": 13,
+      "outcome": 40
+    }
+  },
+  "narrative": "Kunal Nanda is a M.Tech Computer Science and Engineering student at Delhi Technological University, graduating in 2028, who signed up as a Full-stack builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). They have won 2 prizes, including rank 1 at ProtoDelhi with \"ReportReader\" (scored 93). Their strongest evidenced skills are PyTorch, RAG, FastAPI, based on built P0140 (scored 93). They declare Express, tRPC, Java Spring with no supporting repository or project evidence on the platform. Mentors rated them 2.5 out of 5 across 2 sessions. Last active 2026-02-08, 223 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 2 hackathons, attended 2",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-02-08",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-02-08",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at ProtoDelhi with \"ReportReader\" (score 93)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0140",
+      "observed_at": "2025-06-12",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Ignite Delhi Monsoon with \"RouteKnot\" (score 81)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0106",
+      "observed_at": "2025-01-10",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 2.5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-02-08",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-02-08",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "PyTorch: built P0140 (scored 93)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "RAG: built P0140 (scored 93)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "FastAPI: built P0140 (scored 93)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vector Databases: built P0106 (scored 81)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NetworkX: built P0106 (scored 81)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Knowledge Graphs: built P0106 (scored 81)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Pinecone: built P0106 (scored 81)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Kotlin: 60% of 18 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#kunalnanda",
+      "observed_at": null,
+      "confidence": 0.6
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

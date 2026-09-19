@@ -1,0 +1,341 @@
+{
+  "user_id": "U0480",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.095Z",
+  "identity": {
+    "full_name": "Shaurya Rao",
+    "email": "shaurya.rao71@gmail.com",
+    "college": "Delhi Technological University",
+    "degree": "B.E.",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2029,
+    "city": "Delhi",
+    "role_pref": "DevOps",
+    "github_username": "shauryarao",
+    "linkedin_url": null,
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 1,
+    "submission_rate": 0.33,
+    "prizes": [
+      {
+        "date": "2025-01-10",
+        "hackathon": "Ignite Delhi Monsoon",
+        "hackathon_id": "H010",
+        "prize_track": "Overall",
+        "project_id": "P0105",
+        "project_title": "RouteKnot",
+        "rank": 1,
+        "score": 84
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 84,
+    "first_seen": "2024-01-13",
+    "last_active": "2026-06-09",
+    "days_since_active": 102,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 10,
+    "interactions_by_type": {
+      "answered_question": 1,
+      "comment": 7,
+      "workshop_attended": 1,
+      "discord_message": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 5,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 3,
+      "clicked": 2,
+      "replied": 1,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0105 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0105 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0105 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 12 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Nginx",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Terraform",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 12 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 12 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 12 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "starter_not_finisher",
+      "label": "Starter, not finisher",
+      "score": 0.67,
+      "evidence": ["attended 3 events but submitted only 1"]
+    }
+  ],
+  "personas": ["Starter, Not Finisher", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-01-10",
+        "score": 84,
+        "project_id": "P0105"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 41,
+    "components": {
+      "recency": 72,
+      "frequency": 38,
+      "depth": 25,
+      "outcome": 20
+    }
+  },
+  "narrative": "Shaurya Rao is a B.E. Computer Science and Engineering student at Delhi Technological University, graduating in 2029, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 1 project (a 33% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Monsoon with \"RouteKnot\" (scored 84). Their strongest evidenced skills are Neo4j, NetworkX, Django, based on built P0105 (scored 84). They declare Kubernetes, Nginx, Terraform with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Last active 2026-06-09, 102 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-06-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-06-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Monsoon with \"RouteKnot\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0105",
+      "observed_at": "2025-01-10",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-06-09",
+      "confidence": 1
+    },
+    {
+      "claim": "10 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-06-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 3, replied 1",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Neo4j: built P0105 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NetworkX: built P0105 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0105 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "HCL: 60% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#shauryarao",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "Kubernetes: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Nginx: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Terraform: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "Python: 20% of 12 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#shauryarao",
+      "observed_at": null,
+      "confidence": 0.2
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed"]
+}

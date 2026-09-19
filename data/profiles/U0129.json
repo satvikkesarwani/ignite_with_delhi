@@ -1,0 +1,465 @@
+{
+  "user_id": "U0129",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.070Z",
+  "identity": {
+    "full_name": "Navya Gandhi",
+    "email": "navya.gandhi@jiitnoida.ac.in",
+    "college": "Jaypee Institute of Information Technology",
+    "degree": "B.Des",
+    "branch": "Electronics and Communication",
+    "grad_year": 2029,
+    "city": "Noida",
+    "role_pref": "DevOps",
+    "github_username": "navyagandhidev",
+    "linkedin_url": "https://linkedin.com/in/navya-gandhi-8787",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 3,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2026-01-04",
+        "hackathon": "Ignite Delhi Spring II",
+        "hackathon_id": "H019",
+        "prize_track": "Overall",
+        "project_id": "P0197",
+        "project_title": "NoiseMap",
+        "rank": 1,
+        "score": 63
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 57,
+    "first_seen": "2024-12-04",
+    "last_active": "2026-04-11",
+    "days_since_active": 161,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 5,
+    "interactions": 12,
+    "interactions_by_type": {
+      "comment": 4,
+      "discord_message": 2,
+      "profile_update": 1,
+      "answered_question": 2,
+      "workshop_attended": 1,
+      "question": 2
+    },
+    "workshops": 1,
+    "answers_given": 2,
+    "distinct_teammates": 6,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "GCP",
+      "cluster": "DevOps",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0186 (scored 39)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0197 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.84,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 11 public repos",
+          "weight": 0.2
+        },
+        {
+          "type": "project",
+          "detail": "built P0186 (scored 39)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0186 (scored 39)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0097 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0197 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0097 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0097 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0097 (scored 69)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "AWS",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0186 (scored 39)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0197 (scored 63)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "HCL",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 11 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GitHub Actions",
+      "cluster": "DevOps",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 11 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Shell",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 11 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["3 of 3 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "steady",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-12-04",
+        "score": 69,
+        "project_id": "P0097"
+      },
+      {
+        "date": "2025-11-19",
+        "score": 39,
+        "project_id": "P0186"
+      },
+      {
+        "date": "2026-01-04",
+        "score": 63,
+        "project_id": "P0197"
+      }
+    ],
+    "tech_drift": {
+      "from": ["IPFS", "The Graph", "Hardhat", "Tailwind CSS"],
+      "to": ["Raspberry Pi", "MQTT"]
+    }
+  },
+  "engagement": {
+    "value": 38,
+    "components": {
+      "recency": 56,
+      "frequency": 38,
+      "depth": 30,
+      "outcome": 20
+    }
+  },
+  "narrative": "Navya Gandhi is a B.Des Electronics and Communication student at Jaypee Institute of Information Technology, graduating in 2029, who signed up as a DevOps builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Spring II with \"NoiseMap\" (scored 63). Their strongest evidenced skills are GCP, Flask, Go, based on self-declared at signup. They declare GitHub Actions with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 3 sessions. Last active 2026-04-11, 161 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-04-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 3 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-04-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Spring II with \"NoiseMap\" (score 63)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0197",
+      "observed_at": "2026-01-04",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-04-11",
+      "confidence": 1
+    },
+    {
+      "claim": "12 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-04-11",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "GCP: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "GCP: built P0186 (scored 39)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Flask: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Flask: built P0197 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Go: 20% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#navyagandhidev",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "Go: built P0186 (scored 39)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.84
+    },
+    {
+      "claim": "Docker: built P0186 (scored 39)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0097 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0197 (scored 63)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "The Graph: built P0097 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "IPFS: built P0097 (scored 69)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

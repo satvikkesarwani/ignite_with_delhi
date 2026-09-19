@@ -1,0 +1,695 @@
+{
+  "user_id": "U0420",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.091Z",
+  "identity": {
+    "full_name": "Advika Sharma",
+    "email": "advika.sharma14@gmail.com",
+    "college": "Bennett University",
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2028,
+    "city": "Greater Noida",
+    "role_pref": "Web3",
+    "github_username": "advikasharmadev",
+    "linkedin_url": "https://linkedin.com/in/advika-sharma-3946",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 10,
+    "hackathons_attended": 8,
+    "no_shows": 2,
+    "projects_submitted": 6,
+    "submission_rate": 0.75,
+    "prizes": [
+      {
+        "date": "2025-05-09",
+        "hackathon": "Ignite Delhi Autumn",
+        "hackathon_id": "H013",
+        "prize_track": "Overall",
+        "project_id": "P0128",
+        "project_title": "PaperTrail",
+        "rank": 1,
+        "score": 84
+      },
+      {
+        "date": "2026-07-03",
+        "hackathon": "HackHorizon",
+        "hackathon_id": "H023",
+        "prize_track": "Best use of Neo4j",
+        "project_id": "P0245",
+        "project_title": "RouteKnot",
+        "rank": null,
+        "score": 90
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 68.7,
+    "first_seen": "2024-02-22",
+    "last_active": "2026-07-03",
+    "days_since_active": 78,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 3,
+    "interactions": 21,
+    "interactions_by_type": {
+      "answered_question": 4,
+      "discord_message": 4,
+      "comment": 7,
+      "question": 5,
+      "profile_update": 1
+    },
+    "workshops": 0,
+    "answers_given": 4,
+    "distinct_teammates": 13,
+    "repeat_teammates": [
+      {
+        "name": "Mayank Kulkarni",
+        "times": 3,
+        "user_id": "U0206"
+      },
+      {
+        "name": "Gaurav Malhotra",
+        "times": 2,
+        "user_id": "U0444"
+      },
+      {
+        "name": "Uday Gupta",
+        "times": 2,
+        "user_id": "U0513"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0245 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0014 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0014 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0014 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0014 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Cypher",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0245 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0245 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Knowledge Graphs",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0245 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0030 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kotlin",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0044 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0081 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0081 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0081 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Swift",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0044 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LoRaWAN",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0081 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Raspberry Pi",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0081 (scored 57)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "scikit-learn",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React Native",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0044 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0128 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0014 (scored 49)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "60% of 13 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 13 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "The Graph",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 1,
+      "evidence": ["teamed with Mayank Kulkarni 3 times", "teamed with Gaurav Malhotra 2 times"]
+    },
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.75,
+      "evidence": ["6 of 8 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.53,
+      "evidence": ["21 platform interactions"]
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Rising Star", "Consistent Builder"],
+  "trajectory": {
+    "direction": "rising",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 49,
+        "project_id": "P0014"
+      },
+      {
+        "date": "2024-05-21",
+        "score": 67,
+        "project_id": "P0030"
+      },
+      {
+        "date": "2024-06-25",
+        "score": 65,
+        "project_id": "P0044"
+      },
+      {
+        "date": "2024-10-26",
+        "score": 57,
+        "project_id": "P0081"
+      },
+      {
+        "date": "2025-05-09",
+        "score": 84,
+        "project_id": "P0128"
+      },
+      {
+        "date": "2026-07-03",
+        "score": 90,
+        "project_id": "P0245"
+      }
+    ],
+    "tech_drift": {
+      "from": ["TypeScript", "Next.js", "Kafka", "Go"],
+      "to": ["Cypher", "OpenCV", "scikit-learn", "Neo4j"]
+    }
+  },
+  "engagement": {
+    "value": 70,
+    "components": {
+      "recency": 79,
+      "frequency": 100,
+      "depth": 53,
+      "outcome": 40
+    }
+  },
+  "narrative": "Advika Sharma is a B.Tech Computer Science and Engineering student at Bennett University, graduating in 2028, who signed up as a Web3 builder. They have attended 8 of the 10 hackathons they registered for and submitted 6 projects (a 75% submission rate). They have won 2 prizes, including rank 1 at Ignite Delhi Autumn with \"PaperTrail\" (scored 84). Their strongest evidenced skills are Neo4j, Node.js, MongoDB, based on built P0245 (scored 90). They declare The Graph, IPFS, ethers.js with no supporting repository or project evidence on the platform. Mentors rated them 3 out of 5 across 3 sessions. Their judged scores are improving over time (49 → 67 → 65 → 57 → 84 → 90). Last active 2026-07-03, 78 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 10 hackathons, attended 8",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 6 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Autumn with \"PaperTrail\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0128",
+      "observed_at": "2025-05-09",
+      "confidence": 1
+    },
+    {
+      "claim": "Best use of Neo4j at HackHorizon with \"RouteKnot\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0245",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 3",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "21 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 1, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Neo4j: built P0245 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0128 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Docker: built P0014 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0014 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: built P0014 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: built P0014 (scored 49)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Cypher: built P0245 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

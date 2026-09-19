@@ -1,0 +1,473 @@
+{
+  "user_id": "U0613",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.105Z",
+  "identity": {
+    "full_name": "Samarth Menon",
+    "email": "samarth.menon@gmail.com",
+    "college": "Delhi Technological University",
+    "degree": "BCA",
+    "branch": "Data Science",
+    "grad_year": 2028,
+    "city": "Delhi",
+    "role_pref": "Frontend",
+    "github_username": "samarthmenon",
+    "linkedin_url": "https://linkedin.com/in/samarth-menon-7815",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 4,
+    "hackathons_attended": 4,
+    "no_shows": 0,
+    "projects_submitted": 3,
+    "submission_rate": 0.75,
+    "prizes": [
+      {
+        "date": "2024-10-26",
+        "hackathon": "NorthStar Hacks",
+        "hackathon_id": "H008",
+        "prize_track": "Overall",
+        "project_id": "P0079",
+        "project_title": "SignalSense",
+        "rank": 1,
+        "score": 84
+      },
+      {
+        "date": "2025-01-10",
+        "hackathon": "Ignite Delhi Monsoon",
+        "hackathon_id": "H010",
+        "prize_track": "Overall",
+        "project_id": "P0105",
+        "project_title": "RouteKnot",
+        "rank": 1,
+        "score": 84
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 1,
+    "avg_score": 81.3,
+    "first_seen": "2024-10-24",
+    "last_active": "2025-11-19",
+    "days_since_active": 304,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 3,
+    "interactions": 6,
+    "interactions_by_type": {
+      "answered_question": 2,
+      "question": 1,
+      "discord_message": 1,
+      "comment": 1,
+      "profile_update": 1
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 8,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 2,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": true
+    }
+  },
+  "skills": [
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0180 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0180 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0180 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0105 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NetworkX",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0105 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MQTT",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0079 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0105 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 15 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "React",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 15 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 15 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.75,
+      "evidence": ["3 of 4 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 1"]
+    }
+  ],
+  "personas": ["Dormant High-Potential", "Consistent Builder"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2024-10-26",
+        "score": 84,
+        "project_id": "P0079"
+      },
+      {
+        "date": "2025-01-10",
+        "score": 84,
+        "project_id": "P0105"
+      },
+      {
+        "date": "2025-11-19",
+        "score": 76,
+        "project_id": "P0180"
+      }
+    ],
+    "tech_drift": {
+      "from": ["MQTT", "Embedded C"],
+      "to": ["Next.js", "MongoDB", "tRPC"]
+    }
+  },
+  "engagement": {
+    "value": 29,
+    "components": {
+      "recency": 17,
+      "frequency": 50,
+      "depth": 15,
+      "outcome": 40
+    }
+  },
+  "narrative": "Samarth Menon is a BCA Data Science student at Delhi Technological University, graduating in 2028, who signed up as a Frontend builder. They have attended 4 of the 4 hackathons they registered for and submitted 3 projects (a 75% submission rate). They have won 2 prizes, including rank 1 at NorthStar Hacks with \"SignalSense\" (scored 84). Their strongest evidenced skills are MongoDB, Next.js, tRPC, based on self-declared at signup. They declare React, TypeScript, Vite with no supporting repository or project evidence on the platform. Mentors rated them 3 out of 5 across 2 sessions. Their judged scores have declined over time (84 → 84 → 76). Last active 2025-11-19, 304 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 4 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 3 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at NorthStar Hacks with \"SignalSense\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0079",
+      "observed_at": "2024-10-26",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Monsoon with \"RouteKnot\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0105",
+      "observed_at": "2025-01-10",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 3",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "6 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-11-19",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 2 outreach messages, opened 0, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "MongoDB: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "MongoDB: built P0180 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Next.js: built P0180 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "tRPC: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "tRPC: built P0180 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Neo4j: built P0105 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "NetworkX: built P0105 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Embedded C: built P0079 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MQTT: built P0079 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0105 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

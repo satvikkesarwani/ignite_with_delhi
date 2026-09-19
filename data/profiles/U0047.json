@@ -1,0 +1,206 @@
+{
+  "user_id": "U0047",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.059Z",
+  "identity": {
+    "full_name": "Tara Dhillon",
+    "email": "tara.dhillon66@gmail.com",
+    "college": "Birla Institute of Technology and Science Pilani",
+    "degree": "BCA",
+    "branch": "Computer Science and Engineering",
+    "grad_year": 2027,
+    "city": "Pilani",
+    "role_pref": "Web3",
+    "github_username": "tdhillon",
+    "linkedin_url": "https://linkedin.com/in/tara-dhillon-8030",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 1,
+    "hackathons_attended": 1,
+    "no_shows": 0,
+    "projects_submitted": 0,
+    "submission_rate": 0,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": null,
+    "first_seen": "2026-05-21",
+    "last_active": "2026-06-23",
+    "days_since_active": 88,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 4,
+    "interactions": 5,
+    "interactions_by_type": {
+      "discord_message": 1,
+      "answered_question": 1,
+      "workshop_attended": 1,
+      "question": 1,
+      "comment": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 2,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Solidity",
+      "cluster": "Web3",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 6 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 6 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ethers.js",
+      "cluster": "Web3",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [],
+  "personas": ["One-Time Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "cooling",
+    "score_series": [],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 29,
+    "components": {
+      "recency": 76,
+      "frequency": 13,
+      "depth": 13,
+      "outcome": 0
+    }
+  },
+  "narrative": "Tara Dhillon is a BCA Computer Science and Engineering student at Birla Institute of Technology and Science Pilani, graduating in 2027, who signed up as a Web3 builder. They have attended 1 of the 1 hackathons they registered for, but have not submitted a project. Their strongest evidenced skills are Solidity, based on 60% of 6 public repos. They declare Foundry, IPFS, ethers.js with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 3 sessions. Last active 2026-06-23, 88 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 1 hackathons, attended 1",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-06-23",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 4",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-06-23",
+      "confidence": 1
+    },
+    {
+      "claim": "5 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-06-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Solidity: 60% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#tdhillon",
+      "observed_at": null,
+      "confidence": 0.6
+    },
+    {
+      "claim": "JavaScript: 40% of 6 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#tdhillon",
+      "observed_at": null,
+      "confidence": 0.4
+    },
+    {
+      "claim": "Foundry: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "IPFS: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "ethers.js: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

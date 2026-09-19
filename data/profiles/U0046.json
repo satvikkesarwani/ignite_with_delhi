@@ -1,0 +1,468 @@
+{
+  "user_id": "U0046",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.059Z",
+  "identity": {
+    "full_name": "Sneha Menon",
+    "email": "sneha.menon@bennett.ac.in",
+    "college": "Bennett University",
+    "degree": "BCA",
+    "branch": "Mechanical Engineering",
+    "grad_year": 2025,
+    "city": "Greater Noida",
+    "role_pref": "Frontend",
+    "github_username": "devsneha",
+    "linkedin_url": "https://linkedin.com/in/sneha-menon-3538",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 6,
+    "hackathons_attended": 5,
+    "no_shows": 1,
+    "projects_submitted": 3,
+    "submission_rate": 0.6,
+    "prizes": [],
+    "prize_count": 0,
+    "best_rank": null,
+    "avg_score": 54.7,
+    "first_seen": "2024-05-20",
+    "last_active": "2026-02-27",
+    "days_since_active": 204,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 20,
+    "interactions_by_type": {
+      "profile_update": 2,
+      "comment": 10,
+      "discord_message": 3,
+      "workshop_attended": 1,
+      "answered_question": 3,
+      "question": 1
+    },
+    "workshops": 1,
+    "answers_given": 3,
+    "distinct_teammates": 7,
+    "repeat_teammates": [
+      {
+        "name": "Kiara Sharma",
+        "times": 2,
+        "user_id": "U0367"
+      },
+      {
+        "name": "Naman Sen",
+        "times": 2,
+        "user_id": "U0032"
+      }
+    ],
+    "outreach": {
+      "sent": 3,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0198 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0030 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "MongoDB",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0060 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0060 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kubernetes",
+      "cluster": "DevOps",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0060 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flutter",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0030 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0198 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0198 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0030 (scored 67)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LoRaWAN",
+      "cluster": "IoT",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0198 (scored 32)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Kafka",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0060 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0060 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0060 (scored 65)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "60% of 13 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 13 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 13 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.67,
+      "evidence": ["teamed with Kiara Sharma 2 times", "teamed with Naman Sen 2 times"]
+    },
+    {
+      "trait": "community_active",
+      "label": "Community active",
+      "score": 0.5,
+      "evidence": ["20 platform interactions"]
+    }
+  ],
+  "personas": ["Steady Participant"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "dormant",
+    "score_series": [
+      {
+        "date": "2024-05-21",
+        "score": 67,
+        "project_id": "P0030"
+      },
+      {
+        "date": "2024-08-09",
+        "score": 65,
+        "project_id": "P0060"
+      },
+      {
+        "date": "2026-01-04",
+        "score": 32,
+        "project_id": "P0198"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Vite", "Flutter", "Node.js"],
+      "to": ["Embedded C", "Arduino", "FastAPI", "LoRaWAN"]
+    }
+  },
+  "engagement": {
+    "value": 41,
+    "components": {
+      "recency": 44,
+      "frequency": 63,
+      "depth": 50,
+      "outcome": 0
+    }
+  },
+  "narrative": "Sneha Menon is a BCA Mechanical Engineering student at Bennett University, graduating in 2025, who signed up as a Frontend builder. They have attended 5 of the 6 hackathons they registered for and submitted 3 projects (a 60% submission rate). Their strongest evidenced skills are FastAPI, Node.js, MongoDB, based on built P0198 (scored 32). They declare Prototyping, tRPC with no supporting repository or project evidence on the platform. Their judged scores have declined over time (67 → 65 → 32). Last active 2026-02-27, 204 days ago — dormant and worth re-engaging.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 6 hackathons, attended 5",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-02-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 3 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-02-27",
+      "confidence": 1
+    },
+    {
+      "claim": "20 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-02-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 3 outreach messages, opened 2, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "FastAPI: built P0198 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0030 (scored 67)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "MongoDB: built P0060 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: built P0060 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Kubernetes: built P0060 (scored 65)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Flutter: built P0030 (scored 67)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Arduino: built P0198 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Embedded C: built P0198 (scored 32)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

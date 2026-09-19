@@ -1,0 +1,540 @@
+{
+  "user_id": "U0434",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.092Z",
+  "identity": {
+    "full_name": "Bhavya Srivastava",
+    "email": "bhavya.srivastava@dtu.ac.in",
+    "college": "Delhi Technological University",
+    "degree": "MCA",
+    "branch": "Mathematics and Computing",
+    "grad_year": 2029,
+    "city": "Chennai",
+    "role_pref": "Data",
+    "github_username": "bhavyas",
+    "linkedin_url": "https://linkedin.com/in/bhavya-srivastava-3235",
+    "consent_flag": false
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 5,
+    "no_shows": 0,
+    "projects_submitted": 4,
+    "submission_rate": 0.8,
+    "prizes": [
+      {
+        "date": "2024-06-25",
+        "hackathon": "Yamuna Build Fest",
+        "hackathon_id": "H005",
+        "prize_track": "Overall",
+        "project_id": "P0039",
+        "project_title": "TriageTalk",
+        "rank": 3,
+        "score": 76
+      },
+      {
+        "date": "2024-12-04",
+        "hackathon": "Capital Code Jam",
+        "hackathon_id": "H009",
+        "prize_track": "Overall",
+        "project_id": "P0090",
+        "project_title": "SupplyStamp",
+        "rank": 3,
+        "score": 70
+      }
+    ],
+    "prize_count": 2,
+    "best_rank": 3,
+    "avg_score": 69.3,
+    "first_seen": "2024-06-25",
+    "last_active": "2026-08-27",
+    "days_since_active": 23,
+    "mentor_sessions": 1,
+    "avg_mentor_score": 5,
+    "interactions": 11,
+    "interactions_by_type": {
+      "comment": 4,
+      "question": 4,
+      "answered_question": 2,
+      "discord_message": 1
+    },
+    "workshops": 0,
+    "answers_given": 2,
+    "distinct_teammates": 11,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.92,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 44 public repos",
+          "weight": 0.6
+        },
+        {
+          "type": "project",
+          "detail": "built P0039 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "SQL",
+      "cluster": "Data",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.86,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Tailwind CSS",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "DuckDB",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0039 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Foundry",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "IPFS",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Hardhat",
+      "cluster": "Web3",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jetpack Compose",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0039 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "NumPy",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0167 (scored 77)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "gRPC",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0090 (scored 70)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0208 (scored 54)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Java Spring",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0039 (scored 76)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "cluster": "Other",
+      "confidence": 0.4,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "40% of 44 public repos",
+          "weight": 0.4
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "OpenCV",
+      "cluster": "ML/AI",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 0.8,
+      "evidence": ["4 of 5 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.4,
+      "evidence": ["2 prizes, best finish rank 3"]
+    }
+  ],
+  "personas": ["Consistent Builder", "Steady Participant"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2024-06-25",
+        "score": 76,
+        "project_id": "P0039"
+      },
+      {
+        "date": "2024-12-04",
+        "score": 70,
+        "project_id": "P0090"
+      },
+      {
+        "date": "2025-08-27",
+        "score": 77,
+        "project_id": "P0167"
+      },
+      {
+        "date": "2026-02-20",
+        "score": 54,
+        "project_id": "P0208"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Java Spring", "Firebase", "Python", "Docker"],
+      "to": ["TypeScript", "SQL", "Spark", "Vite"]
+    }
+  },
+  "engagement": {
+    "value": 59,
+    "components": {
+      "recency": 94,
+      "frequency": 63,
+      "depth": 28,
+      "outcome": 40
+    }
+  },
+  "narrative": "Bhavya Srivastava is a MCA Mathematics and Computing student at Delhi Technological University, graduating in 2029, who signed up as a Data builder. They have attended 5 of the 5 hackathons they registered for and submitted 4 projects (a 80% submission rate). They have won 2 prizes, including rank 3 at Yamuna Build Fest with \"TriageTalk\" (scored 76). Their strongest evidenced skills are Python, SQL, Spark, based on 60% of 44 public repos. They declare OpenCV with no supporting repository or project evidence on the platform. Mentors rated them 5 out of 5 across 1 session. Their judged scores have declined over time (76 → 70 → 77 → 54). Last active 2026-08-27 — currently active. They have not consented to outreach, so they must be excluded from campaigns.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 5",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 4 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Yamuna Build Fest with \"TriageTalk\" (score 76)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0039",
+      "observed_at": "2024-06-25",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 3 at Capital Code Jam with \"SupplyStamp\" (score 70)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0090",
+      "observed_at": "2024-12-04",
+      "confidence": 1
+    },
+    {
+      "claim": "1 mentor sessions, average rating 5",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-27",
+      "confidence": 1
+    },
+    {
+      "claim": "11 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-27",
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 60% of 44 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#bhavyas",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "Python: built P0039 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.92
+    },
+    {
+      "claim": "SQL: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "SQL: built P0167 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Spark: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Spark: built P0167 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.86
+    },
+    {
+      "claim": "Docker: built P0090 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TypeScript: built P0167 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Tailwind CSS: built P0090 (scored 70)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "DuckDB: built P0167 (scored 77)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Firebase: built P0039 (scored 76)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

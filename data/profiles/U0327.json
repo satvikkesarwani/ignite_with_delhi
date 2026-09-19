@@ -1,0 +1,370 @@
+{
+  "user_id": "U0327",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.085Z",
+  "identity": {
+    "full_name": "Raghav Prasad",
+    "email": "raghav.prasad35@gmail.com",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2028,
+    "city": "Hyderabad",
+    "role_pref": "Product",
+    "github_username": null,
+    "linkedin_url": "https://linkedin.com/in/raghav-prasad-7102",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 5,
+    "hackathons_attended": 4,
+    "no_shows": 1,
+    "projects_submitted": 1,
+    "submission_rate": 0.25,
+    "prizes": [
+      {
+        "date": "2026-08-08",
+        "hackathon": "Ignite Delhi Grand Finale",
+        "hackathon_id": "H024",
+        "prize_track": "Overall",
+        "project_id": "P0251",
+        "project_title": "SchemaSage",
+        "rank": 1,
+        "score": 91
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 91,
+    "first_seen": "2025-08-27",
+    "last_active": "2026-08-22",
+    "days_since_active": 28,
+    "mentor_sessions": 3,
+    "avg_mentor_score": 4.33,
+    "interactions": 18,
+    "interactions_by_type": {
+      "comment": 4,
+      "question": 6,
+      "discord_message": 5,
+      "answered_question": 1,
+      "profile_update": 2
+    },
+    "workshops": 0,
+    "answers_given": 1,
+    "distinct_teammates": 9,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 4,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "RAG",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Node.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Go",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Redis",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TensorFlow",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0251 (scored 91)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "UX Research",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Prototyping",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Motion Design",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "starter_not_finisher",
+      "label": "Starter, not finisher",
+      "score": 0.75,
+      "evidence": ["attended 4 events but submitted only 1"]
+    }
+  ],
+  "personas": ["Starter, Not Finisher", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "active",
+    "score_series": [
+      {
+        "date": "2026-08-08",
+        "score": 91,
+        "project_id": "P0251"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 55,
+    "components": {
+      "recency": 92,
+      "frequency": 50,
+      "depth": 45,
+      "outcome": 20
+    }
+  },
+  "narrative": "Raghav Prasad is a B.Tech Artificial Intelligence student at Indraprastha Institute of Information Technology Delhi, graduating in 2028, who signed up as a Product builder. They have attended 4 of the 5 hackathons they registered for and submitted 1 project (a 25% submission rate). They have won 1 prize, including rank 1 at Ignite Delhi Grand Finale with \"SchemaSage\" (scored 91). Their strongest evidenced skills are RAG, FastAPI, Node.js, based on built P0251 (scored 91). They declare Figma, UX Research, Prototyping with no supporting repository or project evidence on the platform. Mentors rated them 4.33 out of 5 across 3 sessions. Last active 2026-08-22 — currently active.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 5 hackathons, attended 4",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 1 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at Ignite Delhi Grand Finale with \"SchemaSage\" (score 91)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0251",
+      "observed_at": "2026-08-08",
+      "confidence": 1
+    },
+    {
+      "claim": "3 mentor sessions, average rating 4.33",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "18 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-08-22",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 4, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "RAG: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "FastAPI: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Node.js: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Go: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Redis: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "TensorFlow: built P0251 (scored 91)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Figma: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    },
+    {
+      "claim": "UX Research: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.3
+    }
+  ],
+  "data_sources": ["platform", "linkedin_synthetic_seed"]
+}

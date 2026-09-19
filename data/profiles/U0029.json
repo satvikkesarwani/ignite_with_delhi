@@ -1,0 +1,412 @@
+{
+  "user_id": "U0029",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.058Z",
+  "identity": {
+    "full_name": "Gauri Verma",
+    "email": "gauri.verma@gmail.com",
+    "college": "Jaypee Institute of Information Technology",
+    "degree": "M.Tech",
+    "branch": "Artificial Intelligence",
+    "grad_year": 2025,
+    "city": "Noida",
+    "role_pref": "Hardware/IoT",
+    "github_username": "gauri_verma",
+    "linkedin_url": "https://linkedin.com/in/gauri-verma-5594",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 2,
+    "submission_rate": 0.67,
+    "prizes": [
+      {
+        "date": "2024-02-22",
+        "hackathon": "CodeCapital",
+        "hackathon_id": "H002",
+        "prize_track": "Overall",
+        "project_id": "P0013",
+        "project_title": "TaxTrail",
+        "rank": 1,
+        "score": 84
+      }
+    ],
+    "prize_count": 1,
+    "best_rank": 1,
+    "avg_score": 70,
+    "first_seen": "2024-02-22",
+    "last_active": "2025-02-17",
+    "days_since_active": 579,
+    "mentor_sessions": 2,
+    "avg_mentor_score": 2,
+    "interactions": 4,
+    "interactions_by_type": {
+      "comment": 1,
+      "workshop_attended": 1,
+      "discord_message": 1,
+      "answered_question": 1
+    },
+    "workshops": 1,
+    "answers_given": 1,
+    "distinct_teammates": 4,
+    "repeat_teammates": [],
+    "outreach": {
+      "sent": 4,
+      "opened": 3,
+      "clicked": 2,
+      "replied": 0,
+      "unsubscribed": true
+    }
+  },
+  "skills": [
+    {
+      "skill": "Python",
+      "cluster": "ML/AI",
+      "confidence": 0.82,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 11 public repos",
+          "weight": 0.1
+        },
+        {
+          "type": "project",
+          "detail": "built P0049 (scored 56)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LangChain",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0049 (scored 56)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0013 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "GraphQL",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0013 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vite",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0013 (scored 84)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Django",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0049 (scored 56)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "LLM Fine-tuning",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0049 (scored 56)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Arduino",
+      "cluster": "IoT",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        },
+        {
+          "type": "github",
+          "detail": "60% of 11 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Docker",
+      "cluster": "Backend",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "ESP32",
+      "cluster": "IoT",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Embedded C",
+      "cluster": "IoT",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "C++",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 11 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "C",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 11 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    }
+  ],
+  "personas": ["Dormant High-Potential", "Steady Participant"],
+  "trajectory": {
+    "direction": "insufficient_data",
+    "status": "lapsed",
+    "score_series": [
+      {
+        "date": "2024-02-22",
+        "score": 84,
+        "project_id": "P0013"
+      },
+      {
+        "date": "2024-06-25",
+        "score": 56,
+        "project_id": "P0049"
+      }
+    ],
+    "tech_drift": {
+      "from": [],
+      "to": []
+    }
+  },
+  "engagement": {
+    "value": 16,
+    "components": {
+      "recency": 0,
+      "frequency": 38,
+      "depth": 10,
+      "outcome": 20
+    }
+  },
+  "narrative": "Gauri Verma is a M.Tech Artificial Intelligence student at Jaypee Institute of Information Technology, graduating in 2025, who signed up as a Hardware/IoT builder. They have attended 3 of the 3 hackathons they registered for and submitted 2 projects (a 67% submission rate). They have won 1 prize, including rank 1 at CodeCapital with \"TaxTrail\" (scored 84). Their strongest evidenced skills are Python, LangChain, FastAPI, based on 10% of 11 public repos. They declare Docker, ESP32, Embedded C with no supporting repository or project evidence on the platform. Mentors rated them 2 out of 5 across 2 sessions. Last active 2025-02-17, 579 days ago — lapsed.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 2 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 1 at CodeCapital with \"TaxTrail\" (score 84)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0013",
+      "observed_at": "2024-02-22",
+      "confidence": 1
+    },
+    {
+      "claim": "2 mentor sessions, average rating 2",
+      "source_type": "csv",
+      "source_ref": "mentor_sessions.csv",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "4 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2025-02-17",
+      "confidence": 1
+    },
+    {
+      "claim": "Sent 4 outreach messages, opened 3, replied 0",
+      "source_type": "csv",
+      "source_ref": "crm_touchpoints.csv",
+      "observed_at": null,
+      "confidence": 1
+    },
+    {
+      "claim": "Python: 10% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#gauri_verma",
+      "observed_at": null,
+      "confidence": 0.82
+    },
+    {
+      "claim": "Python: built P0049 (scored 56)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.82
+    },
+    {
+      "claim": "LangChain: built P0049 (scored 56)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "FastAPI: built P0013 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "GraphQL: built P0013 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vite: built P0013 (scored 84)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Django: built P0049 (scored 56)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "LLM Fine-tuning: built P0049 (scored 56)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Arduino: self-declared at signup",
+      "source_type": "form",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.72
+    },
+    {
+      "claim": "Arduino: 60% of 11 public repos",
+      "source_type": "github",
+      "source_ref": "github_profiles.json#gauri_verma",
+      "observed_at": null,
+      "confidence": 0.72
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}

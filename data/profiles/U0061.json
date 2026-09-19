@@ -1,0 +1,550 @@
+{
+  "user_id": "U0061",
+  "version": 1,
+  "built_at": "2026-09-19T08:03:56.061Z",
+  "identity": {
+    "full_name": "Devansh Mittal",
+    "email": "devansh.mittal@iiitdelhi.ac.in",
+    "college": "Indraprastha Institute of Information Technology Delhi",
+    "degree": "B.Tech",
+    "branch": "Electrical Engineering",
+    "grad_year": 2025,
+    "city": "Delhi",
+    "role_pref": "Product",
+    "github_username": "devansh27",
+    "linkedin_url": "https://linkedin.com/in/devansh-mittal-2255",
+    "consent_flag": true
+  },
+  "facts": {
+    "hackathons_registered": 3,
+    "hackathons_attended": 3,
+    "no_shows": 0,
+    "projects_submitted": 3,
+    "submission_rate": 1,
+    "prizes": [
+      {
+        "date": "2025-07-23",
+        "hackathon": "CircuitBreak",
+        "hackathon_id": "H015",
+        "prize_track": "Overall",
+        "project_id": "P0152",
+        "project_title": "SignSpeak",
+        "rank": 2,
+        "score": 88
+      },
+      {
+        "date": "2026-07-03",
+        "hackathon": "HackHorizon",
+        "hackathon_id": "H023",
+        "prize_track": "Best use of Cognee",
+        "project_id": "P0246",
+        "project_title": "ShellSeeker",
+        "rank": null,
+        "score": 75
+      },
+      {
+        "date": "2026-05-23",
+        "hackathon": "Ignite Delhi Monsoon II",
+        "hackathon_id": "H022",
+        "prize_track": "Best use of Neo4j",
+        "project_id": "P0233",
+        "project_title": "MeetingMemory",
+        "rank": null,
+        "score": 90
+      }
+    ],
+    "prize_count": 3,
+    "best_rank": 2,
+    "avg_score": 84.3,
+    "first_seen": "2025-07-21",
+    "last_active": "2026-07-15",
+    "days_since_active": 66,
+    "mentor_sessions": 0,
+    "avg_mentor_score": null,
+    "interactions": 12,
+    "interactions_by_type": {
+      "workshop_attended": 2,
+      "question": 6,
+      "comment": 1,
+      "answered_question": 2,
+      "discord_message": 1
+    },
+    "workshops": 2,
+    "answers_given": 2,
+    "distinct_teammates": 6,
+    "repeat_teammates": [
+      {
+        "name": "Ananya Iyer",
+        "times": 2,
+        "user_id": "U0007"
+      }
+    ],
+    "outreach": {
+      "sent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "unsubscribed": false
+    }
+  },
+  "skills": [
+    {
+      "skill": "FastAPI",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0246 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Neo4j",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0246 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Express",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Next.js",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0233 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Airflow",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Transformers",
+      "cluster": "ML/AI",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0233 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Vector Databases",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0233 (scored 90)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Firebase",
+      "cluster": "Mobile",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "tRPC",
+      "cluster": "Web",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Spark",
+      "cluster": "Data",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0152 (scored 88)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Flask",
+      "cluster": "Backend",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0246 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Qdrant",
+      "cluster": "Graph",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "type": "project",
+          "detail": "built P0246 (scored 75)",
+          "weight": 0.8
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "TypeScript",
+      "cluster": "Web",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "60% of 4 public repos",
+          "weight": 0.6
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": true
+    },
+    {
+      "skill": "Figma",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "UX Research",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Framer",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Design Systems",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "Motion Design",
+      "cluster": "Design",
+      "confidence": 0.3,
+      "sources": [
+        {
+          "type": "declared",
+          "detail": "self-declared at signup",
+          "weight": 0.3
+        }
+      ],
+      "claim_gap": true,
+      "hidden_strength": false
+    },
+    {
+      "skill": "JavaScript",
+      "cluster": "Other",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "20% of 4 public repos",
+          "weight": 0.2
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "CSS",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 4 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    },
+    {
+      "skill": "HTML",
+      "cluster": "Other",
+      "confidence": 0.1,
+      "sources": [
+        {
+          "type": "github",
+          "detail": "10% of 4 public repos",
+          "weight": 0.1
+        }
+      ],
+      "claim_gap": false,
+      "hidden_strength": false
+    }
+  ],
+  "traits": [
+    {
+      "trait": "serial_finisher",
+      "label": "Serial finisher",
+      "score": 1,
+      "evidence": ["3 of 3 attended events produced a submission"]
+    },
+    {
+      "trait": "generalist",
+      "label": "Generalist",
+      "score": 0.7,
+      "evidence": []
+    },
+    {
+      "trait": "competitive_performer",
+      "label": "Competitive performer",
+      "score": 0.6,
+      "evidence": ["3 prizes, best finish rank 2"]
+    },
+    {
+      "trait": "team_player",
+      "label": "Team player",
+      "score": 0.33,
+      "evidence": ["teamed with Ananya Iyer 2 times"]
+    }
+  ],
+  "personas": ["Serial Winner", "Steady Participant"],
+  "trajectory": {
+    "direction": "declining",
+    "status": "cooling",
+    "score_series": [
+      {
+        "date": "2025-07-23",
+        "score": 88,
+        "project_id": "P0152"
+      },
+      {
+        "date": "2026-05-23",
+        "score": 90,
+        "project_id": "P0233"
+      },
+      {
+        "date": "2026-07-03",
+        "score": 75,
+        "project_id": "P0246"
+      }
+    ],
+    "tech_drift": {
+      "from": ["Airflow", "tRPC", "Firebase", "Express"],
+      "to": ["FastAPI", "Flask", "Qdrant", "Neo4j"]
+    }
+  },
+  "engagement": {
+    "value": 54,
+    "components": {
+      "recency": 82,
+      "frequency": 38,
+      "depth": 30,
+      "outcome": 60
+    }
+  },
+  "narrative": "Devansh Mittal is a B.Tech Electrical Engineering student at Indraprastha Institute of Information Technology Delhi, graduating in 2025, who signed up as a Product builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). They have won 3 prizes, including rank 2 at CircuitBreak with \"SignSpeak\" (scored 88). Their strongest evidenced skills are FastAPI, Neo4j, Express, based on built P0246 (scored 75). They declare Figma, UX Research, Framer with no supporting repository or project evidence on the platform. Their judged scores have declined over time (88 → 90 → 75). Last active 2026-07-15, 66 days ago — cooling off.",
+  "narrative_status": "template",
+  "evidence": [
+    {
+      "claim": "Registered for 3 hackathons, attended 3",
+      "source_type": "csv",
+      "source_ref": "participations.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Submitted 3 projects",
+      "source_type": "csv",
+      "source_ref": "projects.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "Rank 2 at CircuitBreak with \"SignSpeak\" (score 88)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0152",
+      "observed_at": "2025-07-23",
+      "confidence": 1
+    },
+    {
+      "claim": "Best use of Cognee at HackHorizon with \"ShellSeeker\" (score 75)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0246",
+      "observed_at": "2026-07-03",
+      "confidence": 1
+    },
+    {
+      "claim": "Best use of Neo4j at Ignite Delhi Monsoon II with \"MeetingMemory\" (score 90)",
+      "source_type": "csv",
+      "source_ref": "results.csv#P0233",
+      "observed_at": "2026-05-23",
+      "confidence": 1
+    },
+    {
+      "claim": "12 platform interactions",
+      "source_type": "csv",
+      "source_ref": "interactions.csv",
+      "observed_at": "2026-07-15",
+      "confidence": 1
+    },
+    {
+      "claim": "FastAPI: built P0246 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Neo4j: built P0246 (scored 75)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Express: built P0152 (scored 88)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Next.js: built P0233 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Airflow: built P0152 (scored 88)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Transformers: built P0233 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Vector Databases: built P0233 (scored 90)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    },
+    {
+      "claim": "Firebase: built P0152 (scored 88)",
+      "source_type": "csv",
+      "source_ref": "users.csv",
+      "observed_at": null,
+      "confidence": 0.8
+    }
+  ],
+  "data_sources": ["platform", "github_synthetic_seed", "linkedin_synthetic_seed"]
+}
