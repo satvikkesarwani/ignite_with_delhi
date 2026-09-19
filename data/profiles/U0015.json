@@ -1,7 +1,7 @@
 {
   "user_id": "U0015",
   "version": 1,
-  "built_at": "2026-09-19T08:32:18.556Z",
+  "built_at": "2026-09-19T09:01:56.111Z",
   "identity": {
     "full_name": "Devansh Kapoor",
     "email": "devansh.kapoor2027@vit.ac.in",
@@ -429,8 +429,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Devansh Kapoor is a B.Tech Computer Science and Engineering student at Vellore Institute of Technology, graduating in 2027, who signed up as a ML/AI builder. They have attended 3 of the 3 hackathons they registered for and submitted 3 projects (a 100% submission rate). Their strongest evidenced skills are JavaScript, FastAPI, Node.js, based on 88% of 4 public repos. They declare Python, PyTorch, Machine Learning with no supporting repository or project evidence on the platform. Mentors rated them 3.5 out of 5 across 2 sessions. Last active 2026-09-16 — currently active.",
-  "narrative_status": "template",
+  "narrative": "Devansh Kapoor is a Computer Science and Engineering student at Vellore Institute of Technology graduating in 2027. They are demonstrably good at JavaScript, with confidence supported by 88% of four public repositories; their skill set also includes FastAPI, Node.js, Express, React, and Next.js, each evidenced by use in submitted projects. Their involvement has been steady and active across three hackathons, all of which they attended without no-shows, submitting projects at a 100% rate and maintaining consistent engagement. For an organizer deciding whether to invite them, they are a reliable finisher who contributes code and mentorship sessions consistently, making them a safe addition to any team. One caveat: they declare Python, PyTorch, Machine Learning and Deep Learning, but no repository or project on the platform supports it; the evidence points to JavaScript, FastAPI and Node.js instead.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 3 hackathons, attended 3",

@@ -540,6 +540,30 @@ export function narrativeProblem(text) {
   return null;
 }
 
+/**
+ * The claim-vs-evidence gap is the single most distinctive thing this layer can say, and the
+ * LLM drops it when it is one field among thirty. So it is stated deterministically, and only
+ * when it is strong: at least three declared skills with nothing behind them, and they make up
+ * most of what the person declared (a person with one stray unsupported skill is not a story).
+ */
+export function claimGapSentence(profile) {
+  const declared = profile.skills.filter((s) => s.sources.some((x) => x.type === 'declared'));
+  const gaps = profile.skills.filter((s) => s.claim_gap);
+  if (gaps.length < 3 || gaps.length / Math.max(declared.length, 1) < 0.75) return null;
+  const evidenced = profile.skills.filter((s) => s.confidence >= 0.5 && !s.claim_gap).slice(0, 3);
+  if (!evidenced.length) return null;
+  const join = (arr) =>
+    arr.length > 1 ? `${arr.slice(0, -1).join(', ')} and ${arr[arr.length - 1]}` : arr[0];
+  return `One caveat: they declare ${join(gaps.slice(0, 4).map((s) => s.skill))}, but no repository or project on the platform supports it; the evidence points to ${join(evidenced.map((s) => s.skill))} instead.`;
+}
+
+export function withClaimGap(narrative, profile) {
+  const sentence = claimGapSentence(profile);
+  return sentence && !narrative.includes('no repository or project')
+    ? `${narrative} ${sentence}`
+    : narrative;
+}
+
 export async function generateNarrative(profile, cfg) {
   const payload = {
     name: profile.identity.full_name,
@@ -609,7 +633,7 @@ export async function generateNarrative(profile, cfg) {
     });
     const candidate = (res.content || '').replace(/^\s*(here'?s?|profile:)\s*/i, '').trim();
     const problem = narrativeProblem(candidate);
-    if (!problem) return candidate;
+    if (!problem) return withClaimGap(candidate, profile);
     lastReason = problem;
     log.warn('Narrative rejected', { user: profile.user_id, problem, temperature });
   }

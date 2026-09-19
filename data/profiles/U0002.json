@@ -286,7 +286,7 @@
       "outcome": 0
     }
   },
-  "narrative": "Shiv Sharma is a B.Tech Information Technology student at Amity University Noida graduating in 2027 who prefers backend work. They are demonstrably good at Neo4j, React, Cypher, Knowledge Graphs, Flutter, and Firebase, each supported by evidence of use in a submitted project. Their involvement has shifted from an initial participation pattern to a dormant status, with scores of 50 and 59 and insufficient data on future direction. For an organizer deciding whether to invite them, it is practical to note that despite a solid submission rate and zero no-shows, their long inactivity and lack of mentor engagement suggest limited current momentum.",
+  "narrative": "Shiv Sharma is a B.Tech Information Technology student at Amity University Noida graduating in 2027 who prefers backend work. They are demonstrably good at Neo4j, React, Cypher, Knowledge Graphs, Flutter, and Firebase, each supported by evidence of use in a submitted project. Their involvement has shifted from an initial participation pattern to a dormant status, with scores of 50 and 59 and insufficient data on future direction. For an organizer deciding whether to invite them, it is practical to note that despite a solid submission rate and zero no-shows, their long inactivity and lack of mentor engagement suggest limited current momentum. One caveat: they declare Node.js, Express, MongoDB and Docker, but no repository or project on the platform supports it; the evidence points to Neo4j, React and Cypher instead.",
   "narrative_status": "llm",
   "evidence": [
     {

@@ -1,7 +1,7 @@
 {
   "user_id": "U0017",
   "version": 1,
-  "built_at": "2026-09-19T08:32:18.556Z",
+  "built_at": "2026-09-19T09:02:31.746Z",
   "identity": {
     "full_name": "Aarav Malik",
     "email": "aarav.malik@thapar.edu",
@@ -314,8 +314,8 @@
       "outcome": 0
     }
   },
-  "narrative": "Aarav Malik is a B.Tech Electronics and Communication student at Thapar Institute of Engineering and Technology, graduating in 2027, who signed up as a Hardware/IoT builder. They have attended 2 of the 2 hackathons they registered for and submitted 2 projects (a 100% submission rate). Their strongest evidenced skills are FastAPI, React, TypeScript, based on used in P0188 (scored 52). They declare Arduino, ESP32, Embedded C with no supporting repository or project evidence on the platform. Mentors rated them 4 out of 5 across 1 session. Last active 2026-03-15, 188 days ago — dormant and worth re-engaging.",
-  "narrative_status": "template",
+  "narrative": "Aarav Malik is a participant who has registered for and attended two hackathons, submitting projects each time with a perfect submission rate. Their top skills include FastAPI, React, TypeScript, PostgreSQL, Tailwind CSS, and GraphQL, each supported by evidence of use in submitted projects. Over their involvement, their trajectory shows scores of 60 and 52, with a status marked as dormant and a direction of insufficient data. For an organizer deciding whether to invite them, it is worth noting that they have not engaged in the past 188 days and have given no answers during the event. One caveat: they declare Arduino, ESP32, Embedded C and MQTT, but no repository or project on the platform supports it; the evidence points to FastAPI, React and TypeScript instead.",
+  "narrative_status": "llm",
   "evidence": [
     {
       "claim": "Registered for 2 hackathons, attended 2",
