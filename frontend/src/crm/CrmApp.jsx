@@ -11,6 +11,7 @@ import { CrmLayout } from './CrmLayout';
 import { DatabaseView } from './DatabaseView';
 import { ScoutView } from './ScoutView';
 import { IntakeView } from './IntakeView';
+import { GraphView } from './GraphView';
 
 function useLocationPath() {
   const [path, setPath] = useState(window.location.pathname);
@@ -28,18 +29,6 @@ function useLocationPath() {
   }, []);
 
   return [path, go];
-}
-
-function PhasePlaceholder({ phase, title, description }) {
-  return (
-    <div className="mt-8 max-w-[500px] border border-border bg-surface/30 p-6">
-      <div className="crm-num text-[11px] font-medium uppercase tracking-[0.14em] text-accent">
-        Upcoming Module · Phase {phase}
-      </div>
-      <h3 className="font-serif mt-2 text-[18px] font-semibold text-text">{title}</h3>
-      <p className="mt-2 text-[13px] leading-relaxed text-muted">{description}</p>
-    </div>
-  );
 }
 
 export default function CrmApp() {
@@ -62,13 +51,7 @@ export default function CrmApp() {
       {path === '/crm' && <DatabaseView />}
       {path === '/crm/scout' && <ScoutView />}
       {path === '/crm/intake' && <IntakeView onNavigate={go} />}
-      {path === '/crm/graph' && (
-        <PhasePlaceholder
-          phase="C1 / Graph"
-          title="Context Graph Explorer"
-          description="Interactive subgraph exploration showing participant, project, hackathon, and skill relationship topologies."
-        />
-      )}
+      {path === '/crm/graph' && <GraphView />}
     </CrmLayout>
   );
 }
